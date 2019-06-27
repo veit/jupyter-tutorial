@@ -108,3 +108,20 @@ für `my-first-notebook.ipynb <my-first-notebook.ipynb>`_ folgendermaßen aus:
      "nbformat_minor": 2
     }
 
+Speichern un Checkpoints
+------------------------
+
+Beim Klick auf :menuselection:`Save and Checkpoint` wird eure ``ipynb``-Datei
+gespeichert. Aber was hat es mit dem *Checkpoint* auf sich?
+
+Jedesmal, wenn ihr ein neues Notebook anlegt, wird auch eine Datei angelegt,
+die üblicherweise all1 120 Sekunden automatisch eure Änderungen speichert.
+Dieser Checkpoint findet sich üblicherweise in einem versteckten Verzeichnis
+namens ``.ipynb_checkpoints/``. Diese Checkpoint-Datei ermöglicht euch daher,
+eure nicht gespeicherten Daten im Falle eines unerwarteten Problems
+wiederherzustellen. Ihr könnt in :menuselection:`File --> Revert to Checkpoint`
+zu einer der letzten Checkpoints zurückgehen.
+
+
+
+
