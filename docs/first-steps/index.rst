@@ -5,4 +5,5 @@ Erste Schritte
    :maxdepth: 2
 
    install.rst
+   create-notebook.rst
 
