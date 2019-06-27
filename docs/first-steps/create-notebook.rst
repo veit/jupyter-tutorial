@@ -53,12 +53,20 @@ Diese Datei beschreibt ein Notebook im `JSON
 <https://de.wikipedia.org/wiki/JavaScript_Object_Notation>`_-Format. Jede Zelle
 und ihr Inhalt einschließlich Bildern werden dort zusammen mit einigen Metadaten
 aufgelistet. Ihr könnt euch diese anschauen wenn ihr im Dashboard das Notebook
-auswählt und dann auf :menuselection:`edit` klickt:
+auswählt und dann auf :menuselection:`edit` klickt. So sieht z.B. die JSON-Datei
+für `my-first-notebook.ipynb <my-first-notebook.ipynb>`_ folgendermaßen aus:
 
 .. code-block:: json
 
     {
      "cells": [
+      {
+       "cell_type": "markdown",
+       "metadata": {},
+       "source": [
+        "# My first notebook"
+       ]
+      },
       {
        "cell_type": "code",
        "execution_count": 1,
@@ -75,13 +83,6 @@ auswählt und dann auf :menuselection:`edit` klickt:
        "source": [
         "print('Hello World!')"
        ]
-      },
-      {
-       "cell_type": "code",
-       "execution_count": null,
-       "metadata": {},
-       "outputs": [],
-       "source": []
       }
      ],
      "metadata": {
@@ -106,5 +107,4 @@ auswählt und dann auf :menuselection:`edit` klickt:
      "nbformat": 4,
      "nbformat_minor": 2
     }
-
 

@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 sphinx = "*"
 jupyter = "*"
+nbsphinx = "*"
 
 [dev-packages]
 
