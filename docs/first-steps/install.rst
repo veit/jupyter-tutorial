@@ -94,7 +94,11 @@ Daraufhin wird euer Standardwebbrowser mit dieser URL geöffnet.
 
 Wenn das Notebook in eurem Browser geöffnet wird, wird das Notebook-Dashboard
 mit einer Liste der Notebooks, Dateien und Unterverzeichnisse in dem Verzeichnis
-angezeigt, in dem der Notebook-Server gestartet wurde.
+angezeigt, in dem der Notebook-Server gestartet wurde. In den meisten Fällen möchtet
+ihr einen Notebook-Server in eurem Projektverzeichnis starten.
+
+.. image:: initial-jupyter-notebook.png
+
 
 
 
