@@ -8,9 +8,9 @@ Welcome to the Jupyter Tutorial
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
+   first-steps/index
+   glossary
 
 Indices and tables
 ==================
