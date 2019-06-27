@@ -7,6 +7,8 @@ name = "pypi"
 sphinx = "*"
 jupyter = "*"
 nbsphinx = "*"
+pandas = "*"
+matplotlib = "*"
 
 [dev-packages]
 

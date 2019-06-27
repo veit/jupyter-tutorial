@@ -6,4 +6,5 @@ Erste Schritte
 
    install.rst
    create-notebook.rst
+   example.ipynb
 
