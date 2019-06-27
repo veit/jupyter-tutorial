@@ -97,8 +97,5 @@ mit einer Liste der Notebooks, Dateien und Unterverzeichnisse in dem Verzeichnis
 angezeigt, in dem der Notebook-Server gestartet wurde. In den meisten Fällen möchtet
 ihr einen Notebook-Server in eurem Projektverzeichnis starten.
 
-.. image:: initial-jupyter-notebook.png
-
-
-
+.. image:: initial-jupyter-dashboard.png
 
