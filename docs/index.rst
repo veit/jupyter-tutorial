@@ -10,6 +10,7 @@ Welcome to the Jupyter Tutorial
    :maxdepth: 2
 
    first-steps/index
+   use-cases
    glossary
 
 Indices and tables
