@@ -12,7 +12,7 @@ Welcome to the Jupyter Tutorial
    first-steps/index
    use-cases
    jupyter-moons
-
+   config
 
 :ref:`genindex`
 
