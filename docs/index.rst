@@ -11,11 +11,13 @@ Welcome to the Jupyter Tutorial
 
    first-steps/index
    use-cases
-   glossary
+   jupyter-moons
+
+
+:ref:`genindex`
 
 .. Indices and tables
    ==================
 
-   * :ref:`genindex`
    * :ref:`modindex`
    * :ref:`search`

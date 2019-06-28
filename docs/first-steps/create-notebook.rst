@@ -29,22 +29,24 @@ Als nächstes solltet Ihr dieses Notebook umbenennen indem ihr auf den Titel
 Die Notebook-Oberfläche
 -----------------------
 
-Es gibt zwei wichtige Begriffe um Jupyter Notebooks zu beschreiben: *Cells* und
+Es gibt zwei wichtige Begriffe um Jupyter Notebooks zu beschreiben: *Zelle* und
 *Kernel*:
 
-*Kernel*
-    *Rechenmaschine*, die den in einem Notebook enthaltenen Code ausführt.
-*Cell*
-    Container für Text, der in einem Notebook angezeigt werden soll oder für
-    Code, der vom Kernel des Notebooks ausgeführt werden soll.
+.. glossary::
 
-    *Code*
-        enthält Code, der im Kernel ausgeführt werden soll und dessen Ausgabe
-        unterhalb angezeigt wird.
-    *Markdown*
-        enthält mit `Markdown
-        <https://daringfireball.net/projects/markdown/syntax>`_ formatierten
-        Text, der interpretiert wird sobald :menuselection:`Run` gedrückt wird.
+   *Notebook Kernel*
+       *Rechenmaschine*, die den in einem Notebook enthaltenen Code ausführt.
+   *Notebook Zelle*
+       Container für Text, der in einem Notebook angezeigt werden soll oder für
+       Code, der vom Kernel des Notebooks ausgeführt werden soll.
+
+       *Code*
+           enthält Code, der im Kernel ausgeführt werden soll und dessen Ausgabe
+           unterhalb angezeigt wird.
+       *Markdown*
+           enthält mit `Markdown
+           <https://daringfireball.net/projects/markdown/syntax>`_ formatierten
+           Text, der interpretiert wird sobald :menuselection:`Run` gedrückt wird.
 
 Was ist eine ``ipynb``-Datei?
 ------------------------------
