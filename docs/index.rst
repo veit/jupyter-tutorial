@@ -15,6 +15,11 @@ Jupyter Tutorial
     config
     kernels/index
 
+.. toctree::
+    :hidden:
+
+    glossary
+
 :ref:`genindex`
 
 .. Indices and tables
