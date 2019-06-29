@@ -7,12 +7,13 @@ Jupyter Tutorial
 ================
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   first-steps/index
-   use-cases
-   jupyter-moons
-   config
+    first-steps/index
+    use-cases
+    jupyter-moons
+    config
+    kernels/index
 
 :ref:`genindex`
 
