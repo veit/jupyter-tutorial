@@ -7,8 +7,6 @@ Jupytermonde
     nbviewer
     jupyterhub/index
 
-`JupyterHub <https://jupyterhub.readthedocs.io/>`_
-    ist ein Multi-User Server für Jupyter Notebooks
 `nbconvert <https://nbconvert.readthedocs.io/>`_ 
     onvertiert Notebooks in andere Formate
 `ipywidgets <https://ipywidgets.readthedocs.io/>`_ 
