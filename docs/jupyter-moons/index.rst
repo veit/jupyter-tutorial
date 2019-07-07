@@ -4,11 +4,10 @@ Jupytermonde
 .. toctree::
     :maxdepth: 2
 
+    nbconvert
     nbviewer
     jupyterhub/index
 
-`nbconvert <https://nbconvert.readthedocs.io/>`_ 
-    onvertiert Notebooks in andere Formate
 `ipywidgets <https://ipywidgets.readthedocs.io/>`_ 
     stellen interaktive Widgets für Jupyter Notebooks bereit
 `nbextensions <http://jupyter-contrib-nbextensions.readthedocs.io/en/latest>`_
