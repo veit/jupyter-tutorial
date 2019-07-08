@@ -1,6 +1,10 @@
 Jupyter Notebook Viewer
 =======================
 
+`nbviewer <https://github.com/jupyter/nbviewer>`_
+    :doc:`nbconvert` als Web-Service: Rendert Jupyter Notebooks als statische
+    Webseiten.
+
 Installation
 ------------
 
@@ -50,7 +54,7 @@ Installation
 
    .. code-block:: console
 
-    $ bin/python -m nbviewer --debug --no-cache
+    $ pipenv run python -m nbviewer --debug --no-cache
 
 Erweitern des Notebook-Viewers
 ------------------------------
