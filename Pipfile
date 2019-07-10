@@ -9,6 +9,9 @@ jupyter = "*"
 nbsphinx = "*"
 pandas = "*"
 matplotlib = "*"
+cython = "*"
+line-profiler = {git = "https://github.com/rkern/line_profiler.git"}
+memory-profiler = "*"
 
 [dev-packages]
 
