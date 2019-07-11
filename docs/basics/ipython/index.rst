@@ -15,6 +15,7 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
     start
     magics.ipynb
     shell.ipynb
+    display.ipynb
     debugging.ipynb
     profiling.ipynb
 
