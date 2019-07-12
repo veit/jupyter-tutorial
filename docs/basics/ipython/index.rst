@@ -16,6 +16,12 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
     magics.ipynb
     shell.ipynb
     display.ipynb
+    importing.ipynb
     debugging.ipynb
     profiling.ipynb
+
+.. toctree::
+    :hidden:
+
+    mypackage/foo.ipynb
 
