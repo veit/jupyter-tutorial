@@ -32,6 +32,7 @@ release = '0.1'
 # ones.
 extensions = [
     'nbsphinx',
+    'sphinx.ext.intersphinx',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -61,3 +62,21 @@ html_theme = 'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# -- intersphinx configuration -----------------------------------------------
+
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+    'pytest': ('https://docs.pytest.org/en/latest/', None)
+}
+
+def setup(app):
+    # from sphinx.ext.autodoc import cut_lines
+    # app.connect('autodoc-process-docstring', cut_lines(4, what=['module']))
+    app.add_object_type(
+        "label",
+        "label",
+        objname="label value",
+        indextemplate="pair: %s; label value",
+    )
+
