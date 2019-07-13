@@ -13,6 +13,9 @@ sphobjinv = "*"
 cython = "*"
 line-profiler = {git = "https://github.com/rkern/line_profiler.git"}
 memory-profiler = "*"
+pytest = "*"
+ipytest = "*"
+ipython-unittest = "*"
 
 [dev-packages]
 

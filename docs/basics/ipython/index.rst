@@ -18,6 +18,7 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
     display.ipynb
     importing.ipynb
     debugging.ipynb
+    testing/index
     profiling.ipynb
 
 .. toctree::
