@@ -110,8 +110,8 @@ für `my-first-notebook.ipynb <my-first-notebook.ipynb>`_ folgendermaßen aus:
      "nbformat_minor": 2
     }
 
-Speichern un Checkpoints
-------------------------
+Speichern und Checkpoints
+-------------------------
 
 Beim Klick auf :menuselection:`Save and Checkpoint` wird eure ``ipynb``-Datei
 gespeichert. Aber was hat es mit dem *Checkpoint* auf sich?
