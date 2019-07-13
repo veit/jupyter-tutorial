@@ -107,8 +107,6 @@ aktuelle Python-Umgebung erstellt, z.B.:
     sollten einen Namensraum für das Tool zum Lesen und Schreiben dieser
     Metadaten haben.
 
-.. code-block:: console
-
 Ihr könnt diese ``kernelspec``-Datei zu einem späteren Zeitpunkt editieren, z.B.
 um 
 
