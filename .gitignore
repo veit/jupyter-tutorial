@@ -1,0 +1,13 @@
+# Mac OS X
+.DS_Store
+
+# IPython
+.ipynb_checkpoints
+
+# Intersphinx objects
+_intersphinx
+
+# Examples
+fortune500.csv
+mprun_demo.py
+
