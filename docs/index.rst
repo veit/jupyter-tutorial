@@ -13,11 +13,6 @@ Jupyter Tutorial
     ipython/index
     jupyter/index
 
-.. toctree::
-    :hidden:
-
-    glossary
-
 :ref:`genindex`
 
 .. Indices and tables
