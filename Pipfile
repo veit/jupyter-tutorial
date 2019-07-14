@@ -16,6 +16,7 @@ memory-profiler = "*"
 pytest = "*"
 ipytest = "*"
 ipython-unittest = "*"
+bqplot = "*"
 
 [dev-packages]
 
