@@ -8,6 +8,7 @@ Jupyter
     config
     kernels/index
     nbconvert
+    ipywidgets/index
     nbviewer
     jupyterhub/index
 
