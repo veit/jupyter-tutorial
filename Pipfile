@@ -20,6 +20,7 @@ bqplot = "*"
 pythreejs = "*"
 ipyvolume = "*"
 ipyleaflet = "*"
+networkx = "*"
 
 [dev-packages]
 
