@@ -76,22 +76,62 @@ Verwenden auf der Kommandozeile
 
 ``pdf``
     erzeugt ein PDF über Latex. Unterstützt die gleichen Vorlagen wie ``latex``.
+
  ``slides``
-    erstellt `Reveal.js <https://revealjs.com/>`_-Slides
+    erstellt `Reveal.js <https://revealjs.com/>`_-Slides.
+
+``script``
+    konvertiert das Notebook in ein ausführbares Skript. Dies ist der einfachste
+    Weg, ein Python-Skript oder ein Skript in einer anderen Sprache zu erzeugen.
 
     .. note::
-        Um eine Zuordnung von Notebook-Cells zu Slides festzulegen, solltet ihr
-        in :menuselection:`View --> Cell Toolbar --> Slideshow` auswählen.
-        Daraufhin wird in jeder Zelle oben rechts ein Menü angezeigt mit den
-        Optionen: :menuselection:`Slide, Sub-Slide, Fragment, Skip, Notes`.
+        Enthält ein Notebook *Magics*, so können dies möglicherweise nur in einer
+        Jupyter-Session ausgeführt werden.
 
-    .. note::
-        Für Vortragsnotizen ist eine lokale Kopie von ``reveal.js``
-        erforderlich. Damit nbconvert diese findet, kann folgende Option
-        angegeben werden: ``--reveal-prefix /path/to/reveal.js``.
+    Wir können z.B. `docs/basics/ipython/mypackage/foo.ipynb
+    <../basics/ipython/mypackage/foo.ipynb>`_ in ein Python-Skript verwandeln mit:
+
+    .. code-block:: console
+
+        $ pipenv run jupyter nbconvert --to script docs/basics/ipython/mypackage/foo.ipynb
+        [NbConvertApp] Converting notebook docs/basics/ipython/mypackage/foo.ipynb to script
+        [NbConvertApp] Writing 245 bytes to docs/basics/ipython/mypackage/foo.py
+
+    Das Ergebnis ist dann `foo.py` mit:
+
+    .. code-block:: python
+
+        #!/usr/bin/env python
+        # coding: utf-8
+
+        # # `foo.ipynb`
+
+        # In[1]:
+        def bar():
+            return "bar"
+
+        # In[2]:
+        def has_ip_syntax():
+            listing = get_ipython().getoutput('ls')
+            return listing
+
+        # In[3]:
+        def whatsmyname():
+            return __name__
+
+.. note::
+    Um eine Zuordnung von Notebook-Cells zu Slides festzulegen, solltet ihr
+    in :menuselection:`View --> Cell Toolbar --> Slideshow` auswählen.
+    Daraufhin wird in jeder Zelle oben rechts ein Menü angezeigt mit den
+    Optionen: :menuselection:`Slide, Sub-Slide, Fragment, Skip, Notes`.
+
+.. note::
+    Für Vortragsnotizen ist eine lokale Kopie von ``reveal.js``
+    erforderlich. Damit nbconvert diese findet, kann folgende Option
+    angegeben werden: ``--reveal-prefix /path/to/reveal.js``.
 
 Weitere Angaben für ``FORMAT`` sind ``asciidoc``, ``custom``, ``html``,
-``markdown``, ``notebook``, ``rst`` und ``script``.
+``markdown``, ``notebook``, und ``rst``.
 
 Eigene Exporter
 ---------------
