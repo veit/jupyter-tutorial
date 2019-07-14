@@ -18,6 +18,7 @@ ipytest = "*"
 ipython-unittest = "*"
 bqplot = "*"
 pythreejs = "*"
+ipyvolume = "*"
 
 [dev-packages]
 
