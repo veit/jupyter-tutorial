@@ -88,8 +88,8 @@ Verwenden auf der Kommandozeile
         Enthält ein Notebook *Magics*, so können dies möglicherweise nur in einer
         Jupyter-Session ausgeführt werden.
 
-    Wir können z.B. `docs/basics/ipython/mypackage/foo.ipynb
-    <../basics/ipython/mypackage/foo.ipynb>`_ in ein Python-Skript verwandeln mit:
+    Wir können z.B. `docs/ipython/mypackage/foo.ipynb
+    <../ipython/mypackage/foo.ipynb>`_ in ein Python-Skript verwandeln mit:
 
     .. code-block:: console
 
@@ -97,7 +97,7 @@ Verwenden auf der Kommandozeile
         [NbConvertApp] Converting notebook docs/basics/ipython/mypackage/foo.ipynb to script
         [NbConvertApp] Writing 245 bytes to docs/basics/ipython/mypackage/foo.py
 
-    Das Ergebnis ist dann `foo.py` mit:
+    Das Ergebnis ist dann ``foo.py`` mit:
 
     .. code-block:: python
 

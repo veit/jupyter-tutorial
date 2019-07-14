@@ -11,7 +11,7 @@ Jupyter Tutorial
 
     first-steps/index
     use-cases
-    basics/index
+    ipython/index
     jupyter-moons/index
     config
     kernels/index
