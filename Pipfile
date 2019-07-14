@@ -19,6 +19,7 @@ ipython-unittest = "*"
 bqplot = "*"
 pythreejs = "*"
 ipyvolume = "*"
+ipyleaflet = "*"
 
 [dev-packages]
 
