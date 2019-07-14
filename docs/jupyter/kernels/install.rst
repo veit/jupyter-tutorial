@@ -1,28 +1,11 @@
-Kernel installieren
-===================
+Kernel installieren, anzeigen und starten
+=========================================
 
-Python 2 und 3
---------------
+Kernel Installieren
+-------------------
 
-.. note::
-    IPython 6.0 hat die Unterstützung für Python 2 eingestellt. Wenn ihr also
-    IPython für Python 2 installieren wollt, verwendet eine ältere Version:
-
-    .. code-block:: console
-
-        $ mkdir -p kernels/python2
-        $ cd !$
-        cd kernels/python2
-        $ pipenv --two
-        Creating a virtualenv for this project…
-        ...
-        $ pipenv install "ipykernel<=6"
-        Installing ipykernel<=6…
-        ...
-        $ pipenv run python2 -m ipykernel install --user
-        Installed kernelspec python2 in /Users/veit/Library/Jupyter/kernels/python2
-
-``ipykernel install`` kann u.a. mit folgenden Optionen aufgerufen werden:
+``pipenv run python -m ipykernel install`` kann u.a. mit folgenden Optionen
+aufgerufen werden:
 
 ``--user``
     installiert den Kernel für den aktuellen Nutzer und nicht systemweit
@@ -33,8 +16,8 @@ Python 2 und 3
     .. code-block:: console
 
         $ cd /path/to/your/jupyter/
-        $ pipenv run python -m ipykernel install --user --name myenv --display-name "MyPython"
-        Installed kernelspec myenv in /Users/veit/Library/Jupyter/kernels/myenv
+        $ pipenv run python -m ipykernel install --user --name mykernel --display-name "My Kernel"
+        Installed kernelspec mykernel in /Users/veit/Library/Jupyter/kernels/mykernel
 
 Mit ``ipykernel install`` wird eine ``kernelspec``-Datei im JSON-Format für die
 aktuelle Python-Umgebung erstellt, z.B.:
@@ -42,15 +25,15 @@ aktuelle Python-Umgebung erstellt, z.B.:
 .. code-block:: json
 
     {
-     "display_name": "Python 2",
-     "language": "python",
+     "display_name": "My Kernel",
+     "language": "python"
      "argv": [
-      "/Users/veit/.local/share/virtualenvs/python2-EcWzFUEK/bin/python2",
+      "/Users/veit/.local/share/virtualenvs/mykernel-7y9G693U/bin/python",
       "-m",
       "ipykernel_launcher",
       "-f",
       "{connection_file}"
-     ]
+     ],
     }
 
 ``display_name``
@@ -118,6 +101,7 @@ Verfügbare Kernel anzeigen
 
     $ pipenv run jupyter kernelspec list
     Available kernels:
+      mykernel    /Users/veit/Library/Jupyter/kernels/mykernel
       python2    /Users/veit/Library/Jupyter/kernels/python2
       python3    /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/bin/../share/jupyter/kernels/python3
 
@@ -126,7 +110,7 @@ Kernel starten
 
 .. code-block:: console
 
-    $ pipenv run jupyter console --kernel python2
+    $ pipenv run jupyter console --kernel mykernel
     Jupyter console 6.0.0
     Python 2.7.15 (default, Oct 22 2018, 19:33:46) 
     ...

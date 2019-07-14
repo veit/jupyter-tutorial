@@ -1,29 +1,6 @@
 Use Cases
 =========
 
-Data Science
-------------
-
-Die folgenden Jupyter-Kernels sind weit verbreitet in Data Science:
-
-* Python
-
-  * IPython: `GitHub <https://github.com/ipython/ipykernel>`_
-
-* R
-
-  * IRKernel: `Docs <https://irkernel.github.io/>`_ | `GitHub <https://github.com/IRkernel/IRkernel>`_
-  * IRdisplay: `GitHub <https://github.com/IRkernel/IRdisplay>`_
-  * Repr: `GitHub <https://github.com/IRkernel/repr>`_
-
-* Julia
-
-  * IJulia: `GitHub <https://github.com/JuliaLang/IJulia.jl>`_
-  * Interact.jl: `GitHub <https://github.com/JuliaGizmos/Interact.jl>`_
-
-Enterprise
-----------
-
 In einigien Unternehmen werden Jupyter Notebooks genutzt um explorativ die immer
 größer werdenden Datenmengen zu erschließen. Hierzu gehören:
 
@@ -49,5 +26,4 @@ größer werdenden Datenmengen zu erschließen. Hierzu gehören:
 
   * `Jupyter & Python in the corporate LAN
     <https://medium.com/@olivier.borderies/jupyter-python-in-the-corporate-lan-109e2ffde897>`_
-
 

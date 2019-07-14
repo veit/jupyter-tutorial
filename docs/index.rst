@@ -7,14 +7,11 @@ Jupyter Tutorial
 ================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     first-steps/index
-    use-cases
     ipython/index
-    jupyter-moons/index
-    config
-    kernels/index
+    jupyter/index
 
 .. toctree::
     :hidden:

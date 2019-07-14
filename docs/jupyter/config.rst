@@ -1,5 +1,5 @@
-Konfiguration
-=============
+Jupyter-Pfade und Konfiguration
+===============================
 
 Konfigurationsdateien werden üblicherweise im ``~/.jupyter``-Verzeichnis
 gespeichert. Mit der Umgebungsvariablen ``JUPYTER_CONFIG_DIR`` kann jedoch auch

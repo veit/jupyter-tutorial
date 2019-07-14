@@ -1,9 +1,12 @@
-Jupytermonde
-============
+Jupyter
+=======
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
+    use-cases
+    config
+    kernels/index
     nbconvert
     nbviewer
     jupyterhub/index
