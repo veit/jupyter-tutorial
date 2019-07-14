@@ -17,6 +17,7 @@ pytest = "*"
 ipytest = "*"
 ipython-unittest = "*"
 bqplot = "*"
+pythreejs = "*"
 
 [dev-packages]
 
