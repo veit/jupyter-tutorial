@@ -33,6 +33,7 @@ release = '0.1'
 extensions = [
     'nbsphinx',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.graphviz',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -84,4 +85,8 @@ def setup(app):
         objname="label value",
         indextemplate="pair: %s; label value",
     )
+
+# -- graphviz configuration --------------------------------------------------
+
+graphviz_output_format = 'svg'
 
