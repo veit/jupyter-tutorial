@@ -28,6 +28,7 @@ networkx = "*"
 numpy = "*"
 plotly = "<4"
 cufflinks = "*"
+ipysheet = "*"
 
 [dev-packages]
 
