@@ -16,11 +16,18 @@ memory-profiler = "*"
 pytest = "*"
 ipytest = "*"
 ipython-unittest = "*"
+jupyter-contrib-nbextensions = "*"
+yapf = "*"
+jupyter-latex-envs = "*"
 bqplot = "*"
 pythreejs = "*"
 ipyvolume = "*"
 ipyleaflet = "*"
 networkx = "*"
+"autopep8" = "*"
+numpy = "*"
+plotly = "<4"
+cufflinks = "*"
 
 [dev-packages]
 

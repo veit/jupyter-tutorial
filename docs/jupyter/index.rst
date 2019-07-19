@@ -57,7 +57,7 @@ Was wollt ihr machen?
             label="nbextensions",
             tooltip="Installieren und Verwenden verschiedener Notebook-Erweiterungen",
             target="_top",
-            href="../jupyter/nbextensions.html"]
+            href="../jupyter/nbextensions/index.html"]
         dash [
             label="Dashboards",
             tooltip="Installieren und Verwenden von Dashboards",
@@ -89,6 +89,6 @@ Was wollt ihr machen?
     kernels/index
     nbconvert
     ipywidgets/index
-    nbextensions
+    nbextensions/index
     nbviewer
 
