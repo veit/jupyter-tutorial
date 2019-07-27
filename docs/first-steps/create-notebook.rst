@@ -124,6 +124,20 @@ eure nicht gespeicherten Daten im Falle eines unerwarteten Problems
 wiederherzustellen. Ihr könnt in :menuselection:`File --> Revert to Checkpoint`
 zu einer der letzten Checkpoints zurückgehen.
 
+Tipps & Tricks
+--------------
 
-
+#. Gebt dem Notebook einen Titel (``# My title``) und ein aussagekräftiges
+   Vorwort um den Inhalt und Zweck des Notebooks zu beschreiben.
+#. Erstellt Überschriften und Dokumentationen in Markdown-Zellen um euer
+   Notebook zu strukturieren und eure Workflow-Schritte zu erläutern. Dabei ist
+   vollkommen egal ob ihr das für eure Kollegen oder für euer zukünftig selbst
+   macht.
+#. Verwendet *Table of Contents (2)* aus der :doc:`../nbextensions/list` um ein
+   Inhaltsverzeichnis zu erstellen.
+#. Verwendet die Notebook-Erweiterung :ref:`setup
+   </jupyter/nbextensions/setup.ipynb>`.
+#. Verwendet *Snippets* aus der :doc:`../nbextensions/list` um weitere, häufig
+   benötigte Code-Blöcke, z.B. typische Importanweisungen, bequem einfügen zu
+   können.
 
