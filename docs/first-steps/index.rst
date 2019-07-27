@@ -8,3 +8,8 @@ Erste Schritte
    create-notebook.rst
    example.ipynb
 
+.. toctree::
+    :hidden:
+
+    my-first-notebook.ipynb
+
