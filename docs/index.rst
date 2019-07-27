@@ -12,6 +12,7 @@ Jupyter Tutorial
     first-steps/index
     ipython/index
     jupyter/index
+    reproduce/index
 
 :ref:`genindex`
 
