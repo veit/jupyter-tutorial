@@ -84,6 +84,7 @@ Was wollt ihr machen?
     use-cases
     ../first-steps/install
     ../first-steps/create-notebook
+    shortcuts
     config
     jupyterhub/index
     kernels/index
