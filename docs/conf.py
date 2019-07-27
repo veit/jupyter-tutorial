@@ -73,6 +73,7 @@ html_static_path = ['_static']
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
+    'ipython': ('https://ipython.readthedocs.io/en/latest/', None),
     'pytest': ('https://docs.pytest.org/en/latest/', None),
     'nbconvert':  ('https://nbconvert.readthedocs.io/en/latest/', None),
     'jupyter-contrib-nbextensions':  ('https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/', None),

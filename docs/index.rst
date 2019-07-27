@@ -13,6 +13,7 @@ Jupyter Tutorial
     ipython/index
     jupyter/index
     reproduce/index
+    refactoring/index
 
 :ref:`genindex`
 
