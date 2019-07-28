@@ -7,11 +7,20 @@ Anforderungen
 * Python 2 oder Python 3
 * C/C++ compiler
 * ``git`` und ``curl``
-* ``gnupg2`` für ``gpg``-Subcommand
 
-.. code-block:: console
+  Für Linux:
+
+  .. code-block:: console
 
     $ apt install curl git environment-modules
+
+  … oder für Mac OS X:
+
+  .. code-block:: console
+
+    $ brew install curl git modules
+
+* ``gnupg2`` für ``gpg``-Subcommand
 
 Installation
 ------------
@@ -30,7 +39,7 @@ Shell konfigurieren
 
    .. code-block:: console
 
-    export SPACK_ROOT=/srv/jupyter/spack
+    export SPACK_ROOT=~/spack
     . $SPACK_ROOT/share/spack/setup-env.sh
 
 #. Die geänderte Konfiguration wird nun übernommen mit
@@ -51,28 +60,24 @@ Shell konfigurieren
 
     Concretized
     --------------------------------
-    netcdf@4.6.3%gcc@6.3.0~dap~hdf4 maxdims=1024 maxvars=8192 +mpi~parallel-netcdf+pic+shared arch=linux-debian9-x86_64
-        ^hdf5@1.10.5%gcc@6.3.0~cxx~debug~fortran+hl+mpi+pic+shared~szip~threadsafe arch=linux-debian9-x86_64
-            ^openmpi@3.1.3%gcc@6.3.0~cuda+cxx_exceptions fabrics=auto ~java~legacylaunchers~memchecker~pmi schedulers=auto ~sqlite3~thread_multiple+vt arch=linux-debian9-x86_64
-                ^hwloc@1.11.11%gcc@6.3.0~cairo~cuda~gl+libxml2~nvml+pci+shared arch=linux-debian9-x86_64
-                    ^libpciaccess@0.13.5%gcc@6.3.0 arch=linux-debian9-x86_64
-                        ^libtool@2.4.6%gcc@6.3.0 arch=linux-debian9-x86_64
-                            ^m4@1.4.18%gcc@6.3.0 patches=3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00,c0a408fbffb7255fcc75e26bd8edab116fc81d216bfd18b473668b7739a4158e,fc9b61654a3ba1a8d6cd78ce087e7c96366c290bc8d2c299f09828d793b853c8 +sigsegv arch=linux-debian9-x86_64
-                                ^libsigsegv@2.11%gcc@6.3.0 arch=linux-debian9-x86_64
-                        ^pkgconf@1.6.0%gcc@6.3.0 arch=linux-debian9-x86_64
-                        ^util-macros@1.19.1%gcc@6.3.0 arch=linux-debian9-x86_64
-                    ^libxml2@2.9.8%gcc@6.3.0~python arch=linux-debian9-x86_64
-                        ^libiconv@1.15%gcc@6.3.0 arch=linux-debian9-x86_64
-                        ^xz@5.2.4%gcc@6.3.0 arch=linux-debian9-x86_64
-                        ^zlib@1.2.11%gcc@6.3.0+optimize+pic+shared arch=linux-debian9-x86_64
-                    ^numactl@2.0.12%gcc@6.3.0 arch=linux-debian9-x86_64
-                        ^autoconf@2.69%gcc@6.3.0 arch=linux-debian9-x86_64
-                            ^perl@5.26.2%gcc@6.3.0+cpanm patches=0eac10ed90aeb0459ad8851f88081d439a4e41978e586ec743069e8b059370ac +shared+threads arch=linux-debian9-x86_64
-                                ^gdbm@1.18.1%gcc@6.3.0 arch=linux-debian9-x86_64
-                                    ^readline@7.0%gcc@6.3.0 arch=linux-debian9-x86_64
-                                        ^ncurses@6.1%gcc@6.3.0~symlinks~termlib arch=linux-debian9-x86_64
-                        ^automake@1.16.1%gcc@6.3.0 arch=linux-debian9-x86_64
-
+    netcdf@4.7.0%clang@10.0.1-apple~dap~hdf4 maxdims=1024 maxvars=8192 +mpi~parallel-netcdf patches=10a1c3f7fa05e2c82457482e272bbe04d66d0047b237ad0a73e87d63d848b16c +pic+shared arch=darwin-mojave-x86_64
+        ^autoconf@2.69%clang@10.0.1-apple arch=darwin-mojave-x86_64
+            ^m4@1.4.18%clang@10.0.1-apple patches=3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00,fc9b61654a3ba1a8d6cd78ce087e7c96366c290bc8d2c299f09828d793b853c8 +sigsegv arch=darwin-mojave-x86_64
+                ^libsigsegv@2.11%clang@10.0.1-apple arch=darwin-mojave-x86_64
+            ^perl@5.26.2%clang@10.0.1-apple+cpanm patches=0eac10ed90aeb0459ad8851f88081d439a4e41978e586ec743069e8b059370ac +shared+threads arch=darwin-mojave-x86_64
+                ^gdbm@1.18.1%clang@10.0.1-apple arch=darwin-mojave-x86_64
+                    ^readline@7.0%clang@10.0.1-apple arch=darwin-mojave-x86_64
+                        ^ncurses@6.1%clang@10.0.1-apple~symlinks~termlib arch=darwin-mojave-x86_64
+                            ^pkgconf@1.6.1%clang@10.0.1-apple arch=darwin-mojave-x86_64
+        ^automake@1.16.1%clang@10.0.1-apple arch=darwin-mojave-x86_64
+        ^hdf5@1.10.5%clang@10.0.1-apple~cxx~debug~fortran+hl+mpi+pic+shared~szip~threadsafe arch=darwin-mojave-x86_64
+            ^openmpi@3.1.4%clang@10.0.1-apple~cuda+cxx_exceptions fabrics=none ~java~legacylaunchers~memchecker~pmi schedulers=none ~sqlite3~thread_multiple+vt arch=darwin-mojave-x86_64
+                ^hwloc@1.11.11%clang@10.0.1-apple~cairo~cuda~gl+libxml2~nvml~pci+shared arch=darwin-mojave-x86_64
+                    ^libxml2@2.9.9%clang@10.0.1-apple~python arch=darwin-mojave-x86_64
+                        ^libiconv@1.15%clang@10.0.1-apple arch=darwin-mojave-x86_64
+                        ^xz@5.2.4%clang@10.0.1-apple arch=darwin-mojave-x86_64
+                        ^zlib@1.2.11%clang@10.0.1-apple+optimize+pic+shared arch=darwin-mojave-x86_64
+        ^libtool@2.4.6%clang@10.0.1-apple arch=darwin-mojave-x86_64
 
 Compiler-Konfiguration
 ----------------------
@@ -81,8 +86,8 @@ Compiler-Konfiguration
 
     $ spack compilers
     ==> Available compilers
-    -- gcc debian9-x86_64 -------------------------------------------
-    gcc@6.3.0
+    -- clang mojave-x86_64 ------------------------------------------
+    clang@10.0.1-apple
 
 GPG Signing
 -----------
