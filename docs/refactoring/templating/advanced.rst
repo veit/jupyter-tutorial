@@ -65,11 +65,20 @@ Auswahlvariablen
 ----------------
 
 Auswahlvariablen bieten verschiedene Möglichkeiten beim Erstellen eines
-Projekts. Abhängig von der Wahl des Benutzers rendert die Vorlage die Dinger
-anders, z.B.wenn in der ``cookiecutter.json``-Datei folgende Auswahl angeboten
-wird::
+Projekts. Abhängig von der Wahl des Benutzers rendert die Vorlage diese
+anders, z.B. wenn in der ``cookiecutter.json``-Datei folgende Auswahl angeboten
+wird:
 
-Dies wird dann ausgewertet in ``cookiecutter-namespace-template/{{cookiecutter.project_name}}/README.rst``::
+.. code-block:: json
+
+    {
+      "license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Other/Proprietary License"]
+    }
+
+Dies wird dann ausgewertet in
+``cookiecutter-namespace-template/{{cookiecutter.project_name}}/README.rst``
+
+.. code-block:: jinja
 
     {% set is_open_source = cookiecutter.license != 'Not open source' -%}
     {% if is_open_source %}
@@ -80,7 +89,9 @@ Dies wird dann ausgewertet in ``cookiecutter-namespace-template/{{cookiecutter.p
         …
     {% endif %}
 
-und in ``cookiecutter-namespace-template/hooks/post_gen_project.py``::
+und in ``cookiecutter-namespace-template/hooks/post_gen_project.py``:
+
+.. code-block:: python
 
     if 'Not open source' == '{{ cookiecutter.license }}':
         remove_file('LICENSE')
