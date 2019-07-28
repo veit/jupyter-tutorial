@@ -77,6 +77,7 @@ intersphinx_mapping = {
     'pytest': ('https://docs.pytest.org/en/latest/', None),
     'nbconvert':  ('https://nbconvert.readthedocs.io/en/latest/', None),
     'jupyter-contrib-nbextensions':  ('https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/', None),
+    'spack':  ('https://spack.readthedocs.io/en/latest/', None),
 }
 
 def setup(app):
