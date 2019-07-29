@@ -20,6 +20,13 @@ Anforderungen
 
     $ brew install curl git modules
 
+  Anschließend wird die Shell konfiguriert indem z.B. für die Bash folgendes in
+  die Bash-Konfiguration eingetragen wird:
+
+  .. code-block:: console
+
+    source /usr/local/opt/modules/init/bash
+
 * ``gnupg2`` für ``gpg``-Subcommand
 
 Installation
