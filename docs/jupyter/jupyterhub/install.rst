@@ -59,16 +59,6 @@ Installation
     $  cd jupyter-tutorial/
     $  pipenv install
 
-#. Testen der Installation:
-
-   .. code-block:: console
-
-    $  pipenv run jupyterhub
-    …
-    [I 2019-03-26 10:05:26.617 JupyterHub app:1912] JupyterHub is now running at http://:8000
-
-   Mit ctrl-c könnt ihr den Prozess wieder beenden.
-
 #. ``nodejs`` und ``npm`` installieren:
 
    .. code-block:: console
@@ -81,13 +71,32 @@ Installation
     # nodejs -v
     v10.15.3
     # npm -v
-    6.4.1
+    6.10.2
 
    ``10.x`` gibt dabei die Major-Version von ``nodejs`` an.
 
-#. Kopieren von ``npm/package-lock.json`` nach ``/root/``
+#. Installieren der ``npm``-Pakete:
 
    .. code-block:: console
 
-    # cp /srv/jupyter/jupyter-tutorial/npm/package-lock.json /root/
+    $ npm install
+
+#. Installieren des HTTP-Proxy:
+
+   .. code-block:: console
+
+    $ $ npm install -g configurable-http-proxy
+    /usr/local/bin/configurable-http-proxy -> /usr/local/lib/node_modules/configurable-http-proxy/bin/configurable-http-proxy
+    + configurable-http-proxy@4.1.0
+    added 47 packages from 62 contributors in 6.208s
+
+#. Testen der Installation:
+
+   .. code-block:: console
+
+    $  pipenv run jupyterhub
+    …
+    [I 2019-07-31 22:47:26.617 JupyterHub app:1912] JupyterHub is now running at http://:8000
+
+   Mit ctrl-c könnt ihr den Prozess wieder beenden.
 

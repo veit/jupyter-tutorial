@@ -29,6 +29,7 @@ numpy = "*"
 plotly = "<4"
 cufflinks = "*"
 ipysheet = "*"
+jupyterhub = "*"
 
 [dev-packages]
 
