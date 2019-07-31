@@ -70,7 +70,7 @@ Apache Webserver.
 
 #. Hierfür werden zunächst die Zusatzmodule aktiviert mit
 
-   .. code-block:: console
+   .. code-block:: apacheconf
 
     # a2enmod ssl rewrite proxy proxy_http proxy_wstunnel
 
@@ -165,7 +165,7 @@ Authentifizierung verwendet werden.
 
 #. Schließlich wird es in die ``jupyterhub_config.py``-Datei eingetragen:
 
-   .. code-block:: console
+   .. code-block:: python
 
     c.JupyterHub.cookie_secret_file = 'jupyterhub_cookie_secret'
 
@@ -187,7 +187,7 @@ Unterprozess des Hubs ist.
 
 #. Anschließend kann er in der Konfigurationsdatei eingetragen werde, z.B. mit
 
-   .. code-block:: console
+   .. code-block:: python
 
     c.JupyterHub.proxy_auth_token = '18a0335b7c2e7edeaf7466894a32bea8d1c3cff4b07860298dbe353ecb179fc6'
 
