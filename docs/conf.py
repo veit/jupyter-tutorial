@@ -75,6 +75,7 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
     'ipython': ('https://ipython.readthedocs.io/en/latest/', None),
     'pytest': ('https://docs.pytest.org/en/latest/', None),
+    'jupyterhub':  ('https://jupyterhub.readthedocs.io/en/stable/', None),
     'nbconvert':  ('https://nbconvert.readthedocs.io/en/latest/', None),
     'jupyter-contrib-nbextensions':  ('https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/', None),
     'pipenv': ('https://docs.pipenv.org/en/latest/', None),

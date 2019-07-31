@@ -8,5 +8,6 @@ JupyterHub
     :maxdepth: 1
 
     install
+    config
     nbviewer-service
 
