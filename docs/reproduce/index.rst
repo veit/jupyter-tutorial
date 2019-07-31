@@ -33,8 +33,8 @@ Produktionsumgebung wird vereinfacht.
 .. toctree::
     :maxdepth: 1
 
-    pipenv/index
     spack/index
+    pipenv/index
 
 .. toctree::
     :hidden:
