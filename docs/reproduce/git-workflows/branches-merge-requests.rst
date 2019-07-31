@@ -90,6 +90,6 @@ Wenn  auch das Deployment eurer Änderungen erfolgreich war, können eure
     Kommentar ``/close #42`` zu einem Merge Request beim Zusammenführen auch das
     Item mit der Nummer 42 geschlossen werden. Weitere Infos hierzu erhaltet ihr unter
     `GitLab quick actions
-    <>https://docs.gitlab.com/ee/user/project/quick_actions.html`_.
+    <https://docs.gitlab.com/ee/user/project/quick_actions.html>`_.
 
 
