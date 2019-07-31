@@ -2,10 +2,11 @@ JupyterHub
 ==========
 
 `JupyterHub <https://jupyterhub.readthedocs.io/>`_
-    ist ein Multi-User Server für Jupyter Notebooks
+    ist ein Multi-User Server für Jupyter Notebooks.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
+    install
     nbviewer-service
 

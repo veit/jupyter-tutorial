@@ -27,7 +27,7 @@ Was wollt ihr machen?
             label="JupyterHub",
             tooltip="JupyterHub\ninstallieren",
             target="_top",
-            href="../jupyter/jupyterhub"]
+            href="../jupyter/jupyterhub/index.html"]
         nbconvert [
             label="nbconvert",
             tooltip="nbconvert installieren und nutzen",
