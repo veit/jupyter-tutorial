@@ -1,5 +1,5 @@
-Installation und Konfiguration
-==============================
+Installation
+============
 
 #. Python≥3.5 und pip installieren:
 
@@ -10,22 +10,6 @@ Installation und Konfiguration
     # python3 -V
     Python 3.7.3
     # apt install python3-pip
-
-#. ``nodejs`` und ``npm`` installieren:
-
-   .. code-block:: console
-
-    # apt install curl
-    # cd ~
-    # curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
-    # bash nodesource_setup.sh
-    # apt install nodejs
-    # nodejs -v
-    v10.15.3
-    # npm -v
-    6.4.1
-
-   ``10.x`` gibt dabei die Major-Version von ``nodejs`` an.
 
 #. Service-User ``jupyter`` erstellen:
 
@@ -84,6 +68,22 @@ Installation und Konfiguration
     [I 2019-03-26 10:05:26.617 JupyterHub app:1912] JupyterHub is now running at http://:8000
 
    Mit ctrl-c könnt ihr den Prozess wieder beenden.
+
+#. ``nodejs`` und ``npm`` installieren:
+
+   .. code-block:: console
+
+    # apt install curl
+    # cd ~
+    # curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+    # bash nodesource_setup.sh
+    # apt install nodejs
+    # nodejs -v
+    v10.15.3
+    # npm -v
+    6.4.1
+
+   ``10.x`` gibt dabei die Major-Version von ``nodejs`` an.
 
 #. Kopieren von ``npm/package-lock.json`` nach ``/root/``
 
