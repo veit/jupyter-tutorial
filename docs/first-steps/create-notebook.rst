@@ -36,6 +36,7 @@ Es gibt zwei wichtige Begriffe um Jupyter Notebooks zu beschreiben: *Zelle* und
 
    *Notebook Kernel*
        *Rechenmaschine*, die den in einem Notebook enthaltenen Code ausführt.
+
    *Notebook Zelle*
        Container für Text, der in einem Notebook angezeigt werden soll oder für
        Code, der vom Kernel des Notebooks ausgeführt werden soll.

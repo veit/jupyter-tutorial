@@ -198,8 +198,8 @@ Third-Party-Tools wie `Cython <http://cython.org/>`_, `cffi
 Ansätze zum Erstellen von C- und C ++ - Erweiterungen für Python.
 
 .. seealso::
-   `Python Packaging User Guide: Binary Extensions
-   <https://packaging.python.org/guides/packaging-binary-extensions/>`_
+    `Python Packaging User Guide: Binary Extensions
+    <https://packaging.python.org/guides/packaging-binary-extensions/>`_
     behandelt nicht nur verschiedene verfügbare Tools, die die Erstellung von
     Binary Extensions vereinfachen, sondern erläutert auch die verschiedenen
     Gründe, warum das Erstellen eines Extension Module wünschenswert sein
@@ -262,7 +262,7 @@ Binary Extensions für Mac
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die Binärkompatibilität auf macOS wird durch das Zielsystem für die minimale
- Implementierung bestimmt, z. B. *10.9* , das in der Umgebungsvariable
+Implementierung bestimmt, z. B. *10.9* , das in der Umgebungsvariable
 ``MACOSX_DEPLOYMENT_TARGET`` definiert wird. Beim Erstellen mit
 setuptools/distutils wird das Deployment-Ziel mit dem Flag ``--plat-name``
 angegeben, z.B. ``macosx-10.9-x86_64``. Weitere Informationen zu
