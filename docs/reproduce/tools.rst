@@ -1,5 +1,5 @@
-Git-Tools
-=========
+Git-Tools für Notebooks
+=======================
 
 ``nbdime``
 ----------
