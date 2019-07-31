@@ -153,18 +153,18 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
 
     .. code-block:: console
 
-    $ spack install
-    ==> Concretizing python@3.7.4%gcc@9.1.0
-     -   zd32kkg  python@3.7.4%gcc@9.1.0+bz2+ctypes+dbm+lzma~nis~optimizations patches=210df3f28cde02a8135b58cc4168e70ab91dbf9097359d05938f1e2843875e57 +pic+pyexpat+pythoncmd+readline~shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=darwin-mojave-x86_64
-    [+]  qeu2v43      ^bzip2@1.0.8%gcc@9.1.0+shared arch=darwin-mojave-x86_64
-    [+]  ndtr5vr          ^diffutils@3.7%gcc@9.1.0 arch=darwin-mojave-x86_64
-     …
-    ==> Concretizing py-numpy ^python@3.7.4%gcc@9.1.0
-     -   hcfve7o  py-numpy@1.16.4%gcc@9.1.0+blas+lapack arch=darwin-mojave-x86_64
-     -   2ljoxvz      ^openblas@0.3.6%gcc@9.1.0+avx2~avx512 cpu_target=auto ~ilp64+pic+shared threads=none ~virtual_machine arch=darwin-mojave-x86_64
-     -   wo2w5s2      ^py-setuptools@41.0.1%gcc@9.1.0 arch=darwin-mojave-x86_64
-     -   zd32kkg          ^python@3.7.4%gcc@9.1.0+bz2+ctypes+dbm+lzma~nis~optimizations patches=210df3f28cde02a8135b58cc4168e70ab91dbf9097359d05938f1e2843875e57 +pic+pyexpat+pythoncmd+readline~shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=darwin-mojave-x86_64
-    …
+        $ spack install
+        ==> Concretizing python@3.7.4%gcc@9.1.0
+         -   zd32kkg  python@3.7.4%gcc@9.1.0+bz2+ctypes+dbm+lzma~nis~optimizations patches=210df3f28cde02a8135b58cc4168e70ab91dbf9097359d05938f1e2843875e57 +pic+pyexpat+pythoncmd+readline~shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=darwin-mojave-x86_64
+        [+]  qeu2v43      ^bzip2@1.0.8%gcc@9.1.0+shared arch=darwin-mojave-x86_64
+        [+]  ndtr5vr          ^diffutils@3.7%gcc@9.1.0 arch=darwin-mojave-x86_64
+         …
+        ==> Concretizing py-numpy ^python@3.7.4%gcc@9.1.0
+         -   hcfve7o  py-numpy@1.16.4%gcc@9.1.0+blas+lapack arch=darwin-mojave-x86_64
+         -   2ljoxvz      ^openblas@0.3.6%gcc@9.1.0+avx2~avx512 cpu_target=auto ~ilp64+pic+shared threads=none ~virtual_machine arch=darwin-mojave-x86_64
+         -   wo2w5s2      ^py-setuptools@41.0.1%gcc@9.1.0 arch=darwin-mojave-x86_64
+         -   zd32kkg          ^python@3.7.4%gcc@9.1.0+bz2+ctypes+dbm+lzma~nis~optimizations patches=210df3f28cde02a8135b58cc4168e70ab91dbf9097359d05938f1e2843875e57 +pic+pyexpat+pythoncmd+readline~shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=darwin-mojave-x86_64
+        …
 
 ``spack.lock``
     Mit ``spack install`` werden die Specs konkretisiert, in ``spack.lock`` geschrieben und  installiert.
