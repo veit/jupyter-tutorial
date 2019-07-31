@@ -28,7 +28,7 @@ System service für JupyterHub
 #. Konfigurieren von ``/etc/systemd/system/jupyterhub.service`` und
    ``/lib/systemd/system/jupyterhub.service``:
 
-   .. code-block:: console
+   .. code-block:: ini
 
     [Unit]
     Description=Jupyterhub
