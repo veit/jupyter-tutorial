@@ -13,4 +13,5 @@ Verwaltung von Abhängigkeiten.
     deterministic
     workflows
     env
+    spack
 
