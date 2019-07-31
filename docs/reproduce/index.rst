@@ -19,6 +19,7 @@ verworfen.
     tools
     git-integration
     best-practices
+    git-workflows/index
     dvc
 
 Paketmanagement
