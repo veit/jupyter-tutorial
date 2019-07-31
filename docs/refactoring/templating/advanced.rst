@@ -34,7 +34,7 @@ Wenn ihr Cookiecutter häufig verwendet, empfiehlt sich eine eigene User-Config:
 
     default_context:
         full_name: "Veit Schiele"
-        email: "veit.schiele@ise.fraunhofer.de"
+        email: "veit@cusy.io"
         github_username: "veit"
     cookiecutters_dir: "~/.cookiecutters/"
     replay_dir: "~/.cookiecutter_replay/"
@@ -46,7 +46,7 @@ Beim Aufruf von ``ookiecutter`` wird eine ``json``-Datei angelegt in
 ``/.cookiecutter_replay/``, z.B.
 ``~/.cookiecutter_replay/cookiecutter-namespace-template.json``::
 
-    {"cookiecutter": {"full_name": "Veit Schiele", "email": "veit.schiele@ise.fraunhofer.de", "github_username": "veit", "project_name": "vsc.example", "project_slug": "vsc.example", "namespace": "vsc", "package_name": "example", "project_short_description": "Python Namespace Package contains all you need to create a Python namespace package.", "pypi_username": "veit", "use_pytest": "y", "command_line_interface": "Click", "version": "0.1.0", "create_author_file": "y", "license": "MIT license", "_template": "https://github.com/veit/cookiecutter-namespace-template"}}
+    {"cookiecutter": {"full_name": "Veit Schiele", "email": "veit@cusy.io", "github_username": "veit", "project_name": "vsc.example", "project_slug": "vsc.example", "namespace": "vsc", "package_name": "example", "project_short_description": "Python Namespace Package contains all you need to create a Python namespace package.", "pypi_username": "veit", "use_pytest": "y", "command_line_interface": "Click", "version": "0.1.0", "create_author_file": "y", "license": "MIT license", "_template": "https://github.com/veit/cookiecutter-namespace-template"}}
 
 Sollen diese Informationen verwendet werden ohne diese erneut in der
 Kommandozeile bestätigen zu müssen, könnt ihr einfach z.B. folgendes eingeben::
