@@ -55,7 +55,7 @@ CookieCutter-Features
 
     default_context:
         full_name: "Veit Schiele"
-        email: "veit.schiele@ise.fraunhofer.de"
+        email: "veit@cusy.io"
         github_username: "veit"
     cookiecutters_dir: "~/.cookiecutters/"
 
