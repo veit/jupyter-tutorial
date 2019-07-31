@@ -13,4 +13,5 @@ derselben Maschine laufen können.
     install
     use
     envs
+    mirrors
 
