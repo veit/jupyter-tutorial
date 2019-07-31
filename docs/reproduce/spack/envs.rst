@@ -5,19 +5,24 @@ Environments, ``spack.yaml`` und ``spack.lock``
 
    .. code-block:: console
 
-    $ spack env create myproject
-    ==> Created environment 'myproject' in /srv/jupyter/spack/var/spack/environments/myproject
+    $ spack env create python-374
+    ==> Updating view at /Users/veit/spack/var/spack/environments/python-374/.spack-env/view
+    ==> Created environment 'python-374' in /Users/veit/spack/var/spack/environments/python-374
 
-    Alternativ kann sie auch an beliebigen anderen Orten gespeichert werden,
-    z.B.:
+   Alternativ kann sie auch an beliebigen anderen Orten gespeichert werden,
+   z.B.:
 
-    .. code-block:: console
+   .. code-block:: console
 
-        $ mkdir ~/jupyterhub/spackenvs/python-373
-        $ cd!$
-        cd~/jupyterhub/spackenvs/python-373
-        spack env create -d .
-        ==> Created environment in /srv/jupyter/jupyterhub/spackenvs/python-373
+    $ mkdir -p spackenvs/python-374
+    $ cd !$
+    cd spackenvs/python-374
+
+    $ mkdir ~/jupyterhub/spackenvs/python-374
+    $ cd!$
+    $ spack env create -d .
+    ==> Updating view at /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view
+    ==> Created environment in /Users/veit/jupyter-tutorial/spackenvs/python-374
 
 #. Überprüfen der virtuellen Umgebung:
 
@@ -25,13 +30,13 @@ Environments, ``spack.yaml`` und ``spack.lock``
 
     $ spack env list
     ==> 1 environments
-        myproject
+        python-374
 
 #. Aktivieren der virtuellen Umgebung:
 
    .. code-block:: console
 
-    $ spack env activate python-373
+    $ spack env activate python-374
 
 #. Überprüfen der Aktivierung:
 
@@ -42,7 +47,7 @@ Environments, ``spack.yaml`` und ``spack.lock``
    .. code-block:: console
 
     $ spack find
-    ==> In environment python-373
+    ==> In environment python-374
     ==> No root specs
 
     ==> 0 installed packages
@@ -53,7 +58,7 @@ Environments, ``spack.yaml`` und ``spack.lock``
    .. code-block:: console
 
     $ spack env status
-    ==> In environment python-373
+    ==> In environment python-374
 
 #. Schließlich könnt ihr die aktivierte Umgebung verlassen mit ´´spack env
    deactivate´´ oder kurz ´´despacktivate´´.
@@ -64,10 +69,12 @@ Environments, ``spack.yaml`` und ``spack.lock``
     $ spack env status
     ==> No active environment
     $ spack find
-    ==> 16 installed packages.
-    -- linux-debian8-x86_64 / gcc@4.9.2 -----------------------------
-    bzip2@1.0.6  openblas@0.2.20  pkgconf@1.4.0     py-numpy@1.13.3    py-pyparsing@2.2.0    py-six@1.10.0  python@3.6.3  sqlite@3.21.0
-    ncurses@6.0  openssl@1.0.2n   py-appdirs@1.4.3  py-packaging@16.8  py-setuptools@35.0.2  python@2.7.14  readline@7.0  zlib@1.2.11
+    ==> 17 installed packages
+    -- darwin-mojave-x86_64 / clang@10.0.1-apple --------------------
+    bzip2@1.0.8    libffi@3.2.1    perl@5.26.2           python@3.7.4   zlib@1.2.11
+    diffutils@3.7  ncurses@6.1     pkgconf@1.6.1         readline@7.0
+    expat@2.2.5    openblas@0.3.6  py-numpy@1.16.4       sqlite@3.28.0
+    gdbm@1.18.1    openssl@1.1.1b  py-setuptools@41.0.1  xz@5.2.4
 
 Compiler installieren
 ---------------------
@@ -76,54 +83,57 @@ Compiler installieren
 
    .. code-block:: console
 
-    $ spack env activate python-373
+    $ spack env activate python-374
     $ spack install gcc@9.1.0
 
 #. Konfiguration
 
    Um den neuen gcc-Compiler verwenden zu können, muss er in
-   ``~/.spack/linux/compilers.yaml`` eingetragen werden mit:
+   ``~/.spack/darwin/compilers.yaml`` eingetragen werden mit:
 
    .. code-block:: console
 
-    $ spack compiler find /srv/jupyter/spack/opt/spack/linux-debian9-x86_64/gcc-6.3.0/gcc-9.1.0-j6w6fukrrhmbcxectsqikzc3ezkztupx/
-    ==> Added 1 new compiler to /srv/jupyter/.spack/linux/compilers.yaml
-        gcc@9.1.0
+    $ spack compiler find ~/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/gcc-9.1.0-zjbhw3an52zst4lx2i5umeyolzmeshfh/
+    ==> Found no new compilers
     ==> Compilers are defined in the following files:
-        /srv/jupyter/.spack/linux/compilers.yaml
+        /Users/veit/.spack/darwin/compilers.yaml
 
 #. Überprüfen
 
    .. code-block:: console
 
     $ spack find
-    ==> In environment python-373
+    ==> In environment python-374
     ==> Root specs
     gcc@9.1.0
+
+    ==> 6 installed packages
+    -- darwin-mojave-x86_64 / clang@10.0.1-apple --------------------
+    gcc@9.1.0  gmp@6.1.2  isl@0.19  mpc@1.1.0  mpfr@3.1.6  zlib@1.2.11
 
 Pakete installieren
 -------------------
 
 .. code-block:: console
 
-    $ spack env activate python-373
-    $ spack install python@3.7.3
+    $ spack env activate python-374
+    $ spack install python@3.7.4
     $ spack find
-    ==> In environment python-373
+    ==> In environment python-374
     ==> Root specs
-    py-numpy  python@3.7.3
+    py-numpy  python@3.7.4
 
     ==> 14 installed packages
     -- linux-debian9-x86_64 / gcc@9.1.0 -----------------------------
     bzip2@1.0.6  expat@2.2.5  gdbm@1.18.1  libbsd@0.9.1  libffi@3.2.1  ncurses@6.1  openblas@0.3.5  openssl@1.1.1b  py-numpy@1.16.2  python@3.7.2  readline@7.0  sqlite@3.26.0  xz@5.2.4  zlib@1.2.11
 
-Mit ``spack cd -e python-373`` könnt ihr in dieses Verzeichnis wechseln, z.B.:
+Mit ``spack cd -e python-374`` könnt ihr in dieses Verzeichnis wechseln, z.B.:
 
 .. code-block:: console
 
-    $ spack cd -e python-373
+    $ spack cd -e python-374
     $ pwd
-    /srv/jupyter/spack/var/spack/environments/python-373
+    /Users/veit/spack/var/spack/environments/python-374
 
 Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
 
@@ -133,23 +143,28 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
     erstellt. 
 
     Alternativ zu ``spack install`` können in ``spack.yaml`` auch der
-    ``specs``-Liste Python-3.7.2, Numpy etc. hinzugefügt werden:
+    ``specs``-Liste Python-3.7.4, Numpy etc. hinzugefügt werden:
 
     .. code-block:: yaml
 
-        specs: [gcc@9.1.0, python@3.7.3, py-numpy ^python@3.7.3, …]
+        specs: [gcc@9.1.0, python@3.7.4%gcc@9.1.0, py-numpy ^python@3.7.4, …]
 
     Schließlich kann die virtuelle Umgebung erstellt werden mit:
 
     .. code-block:: console
 
-        $ spack install
-        ==> Concretizing gcc@9.1.0
-        [+]  ljq622m  gcc@9.1.0%gcc@9.1.0~binutils languages=c,c++,fortran ~nvptx~piclibs~strip arch=linux-debian9-x86_64
-        …
-        ==> Concretizing python@3.7.3
-        [+]  gmrdtwp  python@3.7.3%gcc@9.1.0+bz2+ctypes+dbm+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter~ucs4~uuid+zlib arch=linux-debian9-x86_64
-        …
+    $ spack install
+    ==> Concretizing python@3.7.4%gcc@9.1.0
+     -   zd32kkg  python@3.7.4%gcc@9.1.0+bz2+ctypes+dbm+lzma~nis~optimizations patches=210df3f28cde02a8135b58cc4168e70ab91dbf9097359d05938f1e2843875e57 +pic+pyexpat+pythoncmd+readline~shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=darwin-mojave-x86_64
+    [+]  qeu2v43      ^bzip2@1.0.8%gcc@9.1.0+shared arch=darwin-mojave-x86_64
+    [+]  ndtr5vr          ^diffutils@3.7%gcc@9.1.0 arch=darwin-mojave-x86_64
+     …
+    ==> Concretizing py-numpy ^python@3.7.4%gcc@9.1.0
+     -   hcfve7o  py-numpy@1.16.4%gcc@9.1.0+blas+lapack arch=darwin-mojave-x86_64
+     -   2ljoxvz      ^openblas@0.3.6%gcc@9.1.0+avx2~avx512 cpu_target=auto ~ilp64+pic+shared threads=none ~virtual_machine arch=darwin-mojave-x86_64
+     -   wo2w5s2      ^py-setuptools@41.0.1%gcc@9.1.0 arch=darwin-mojave-x86_64
+     -   zd32kkg          ^python@3.7.4%gcc@9.1.0+bz2+ctypes+dbm+lzma~nis~optimizations patches=210df3f28cde02a8135b58cc4168e70ab91dbf9097359d05938f1e2843875e57 +pic+pyexpat+pythoncmd+readline~shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=darwin-mojave-x86_64
+    …
 
 ``spack.lock``
     Mit ``spack install`` werden die Specs konkretisiert, in ``spack.lock`` geschrieben und  installiert.
@@ -159,27 +174,13 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
     .. code-block:: json
 
         {
-         "_meta": {
-          "file-type": "spack-lockfile",
-          "lockfile-version": 1
-         },
-         "roots": [
-          {
-           "hash": "ljq622m7dbysxnlwqo2kk4cwzv3ub3kg",
-           "spec": "gcc@9.1.0"
-          },
-          {
-           "hash": "gmrdtwpbfavonzrymzbzo667qv7vcpqp",
-           "spec": "python@3.7.3"
-          }
-         ],
          "concrete_specs": {
-          "ljq622m7dbysxnlwqo2kk4cwzv3ub3kg": {
-           "gcc": {
-            "version": "9.1.0",
+          "wlfygd7yywirujlpmgebjwozq5nbvftz": {
+           "libffi": {
+            "version": "3.2.1",
             "arch": {
-             "platform": "linux",
-             "platform_os": "debian9",
+             "platform": "darwin",
+             "platform_os": "mojave",
              "target": "x86_64"
             },
             "compiler": {
@@ -188,15 +189,6 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
             },
             "namespace": "builtin",
             "parameters": {
-             "binutils": false,
-             "languages": [
-              "c",
-              "c++",
-              "fortran"
-             ],
-             "nvptx": false,
-             "piclibs": false,
-             "strip": false,
              "cflags": [],
              "cppflags": [],
              "cxxflags": [],
@@ -204,15 +196,31 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
              "ldflags": [],
              "ldlibs": []
             },
-            "dependencies": {
-             "gmp": {
-              "hash": "zdqfauf7dalewqikb5hxdarnveugfolr",
-              "type": [
-               "build",
-               "link"
-              ]
-             },
-            }
+            "hash": "wlfygd7yywirujlpmgebjwozq5nbvftz"
+           }
+          },
+          "i5gui4jqndx6kpxt7q52fpjgexswatcp": {
+           "py-sphinxautomodapi": {
+            "version": "0.9",
+            "arch": {
+             "platform": "darwin",
+             "platform_os": "mojave",
+             "target": "x86_64"
+            },
+            "compiler": {
+             "name": "gcc",
+             "version": "9.1.0"
+            },
+            "namespace": "builtin",
+            "parameters": {
+             "cflags": [],
+             "cppflags": [],
+             "cxxflags": [],
+             "fflags": [],
+             "ldflags": [],
+             "ldlibs": []
+            },
+           …
            }
           }
          }
@@ -228,12 +236,12 @@ sieht dies z.B. folgendermaßen aus:
 .. code-block:: console
 
     $ spack add py-matplotlib ^python@3.7.3
-    ==> Adding py-matplotlib ^python@3.7.3 to environment /srv/jupyter/jupyterhub/spackenvs/python-373
+    ==> Adding py-matplotlib ^python@3.7.3 to environment /srv/jupyter/jupyterhub/spackenvs/python-374
     $ spack install
 
     ==> Concretizing py-matplotlib ^python@3.7.3
     …
-    ==> Installing environment /srv/jupyter/jupyterhub/spackenvs/python-373
+    ==> Installing environment /srv/jupyter/jupyterhub/spackenvs/python-374
     …
     ==> Successfully installed py-matplotlib
       Fetch: 2.22s.  Build: 52.67s.  Total: 54.89s.
@@ -241,25 +249,25 @@ sieht dies z.B. folgendermaßen aus:
 
 .. note::
    Falls von diesem Spack-Environment bereits ein :doc:`Pipenv-Environment
-   <../pipenv/env>`_ abgeleitet wurde, muss dieses neu gebaut werden um das
+   <../pipenv/env>` abgeleitet wurde, muss dieses neu gebaut werden um das
    zusätzliche Spack-Paket zu erhalten:
 
    .. code-block:: console
 
-    $ pipenv install --python=/srv/jupyter/jupyterhub/spackenvs/python-373/.spack-env/view/bin/python
+    $ pipenv install --python=/srv/jupyter/jupyterhub/spackenvs/python-374/.spack-env/view/bin/python
     Virtualenv already exists!
     Removing existing virtualenv…
     Creating a virtualenv for this project…
-    Pipfile: /srv/jupyter/jupyterhub/pipenvs/python-373/Pipfile
-    Using /srv/jupyter/jupyterhub/spackenvs/python-373/.spack-env/view/bin/python (3.7.3) to create virtualenv…
-    ⠹ Creating virtual environment...Using base prefix '/srv/jupyter/jupyterhub/spackenvs/python-373/.spack-env/view'
-    New python executable in /srv/jupyter/.local/share/virtualenvs/python-373-cwl7BqNA/bin/python
+    Pipfile: /srv/jupyter/jupyterhub/pipenvs/python-374/Pipfile
+    Using /srv/jupyter/jupyterhub/spackenvs/python-374/.spack-env/view/bin/python (3.7.3) to create virtualenv…
+    ⠹ Creating virtual environment...Using base prefix '/srv/jupyter/jupyterhub/spackenvs/python-374/.spack-env/view'
+    New python executable in /srv/jupyter/.local/share/virtualenvs/python-374-cwl7BqNA/bin/python
     Installing setuptools, pip, wheel...
     done.
-    Running virtualenv with interpreter /srv/jupyter/jupyterhub/spackenvs/python-373/.spack-env/view/bin/python
+    Running virtualenv with interpreter /srv/jupyter/jupyterhub/spackenvs/python-374/.spack-env/view/bin/python
 
     ✔ Successfully created virtual environment!
-    Virtualenv location: /srv/jupyter/.local/share/virtualenvs/python-373-cwl7BqNA
+    Virtualenv location: /srv/jupyter/.local/share/virtualenvs/python-374-cwl7BqNA
     Installing dependencies from Pipfile.lock (66106e)…
       🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 59/59 — 00:00:28
     To activate this project's virtualenv, run pipenv shell.
