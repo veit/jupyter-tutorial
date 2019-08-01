@@ -75,31 +75,30 @@ Apache Webserver.
     # a2enmod ssl rewrite proxy proxy_http proxy_wstunnel
 
 #. Anschließend kann der VirtualHost in
-   ``/etc/apache2/sites-available/jupyter.ise.fhg.de.conf`` konfiguriert
+   ``/etc/apache2/sites-available/jupyter.cusy.io.conf`` konfiguriert
    werden mit
 
    .. code-block:: console
 
      # redirect HTTP to HTTPS
      <VirtualHost 172.31.50.170:80>
-         ServerName jupyter.ise.fhg.de
-         ServerAdmin webmaster@localhost
+         ServerName jupyter.cusy.io
+         ServerAdmin webmaster@cusy.io
 
-         ErrorLog ${APACHE_LOG_DIR}/jupyter.ise.fhg.de_error.log
-         CustomLog ${APACHE_LOG_DIR}/jupyter.ise.fhg.de_access.log combined
+         ErrorLog ${APACHE_LOG_DIR}/jupyter.cusy.io_error.log
+         CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
 
-         Redirect / https://jupyter.ise.fhg.de/
+         Redirect / https://jupyter.cusy.io/
      </VirtualHost>
 
      <VirtualHost 172.31.50.170:443>
-       ServerName jupyter.ise.fhg.de
-       ServerAdmin webmaster@localhost
+       ServerName jupyter.cusy.io
+       ServerAdmin webmaster@cusy.io
 
        # configure SSL
        SSLEngine On
-       SSLCertificateFile /etc/ssl/certs/jupyter.ise.fhg.de_cert.pem
-       SSLCertificateKeyFile /etc/ssl/private/jupyter.ise.fhg.de_sec_key.pem
-       SSLCertificateChainFile /etc/ssl/certs/fhg_dfn_chain.pem
+       SSLCertificateFile /etc/ssl/certs/jupyter.cusy.io_cert.pem
+       SSLCertificateKeyFile /etc/ssl/private/jupyter.cusy.io_sec_key.pem
        SSLProtocol All -SSLv2 -SSLv3
        SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
 
@@ -117,15 +116,15 @@ Apache Webserver.
          ProxyPassReverse  http://127.0.0.1:8000/
        </Location>
 
-       ErrorLog ${APACHE_LOG_DIR}/jupyter.ise.fhg.de_error.log
-       CustomLog ${APACHE_LOG_DIR}/jupyter.ise.fhg.de_access.log combined
+       ErrorLog ${APACHE_LOG_DIR}/jupyter.cusy.io_error.log
+       CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
      </VirtualHost>
 
 #. Dieser VirtualHost wird aktiviert mit
 
    .. code-block:: console
 
-     # a2ensite jupyter.ise.fhg.de.conf
+     # a2ensite jupyter.cusy.io.conf
 
 #. Schließlich wird der Status des Apache-Webserver überprüft mit
 
@@ -143,7 +142,7 @@ Apache Webserver.
                ├─31779 /usr/sbin/apache2 -k start
                └─31780 /usr/sbin/apache2 -k start
 
-    Mar 27 06:25:01 sxv13130.ise.fhg.de systemd[1]: Reloaded The Apache HTTP Server.
+    Mar 27 06:25:01 jupyter.cusy.io systemd[1]: Reloaded The Apache HTTP Server.
 
 Cookie-Secret
 -------------
