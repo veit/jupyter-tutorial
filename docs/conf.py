@@ -22,7 +22,7 @@ copyright = '2019, Veit Schiele'
 author = 'Veit Schiele'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.1'
+release = '0.1.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -96,4 +96,7 @@ def setup(app):
 # -- graphviz configuration --------------------------------------------------
 
 graphviz_output_format = 'svg'
+
+# Fix for Sphinx < 2.0
+master_doc = 'index'
 
