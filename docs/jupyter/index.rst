@@ -62,7 +62,7 @@ Was wollt ihr machen?
             label="Dashboards",
             tooltip="Installieren und Verwenden von Dashboards",
             target="_blank",
-            href="https://github.com/jupyter/dashboards"]
+            href="../jupyter/dashboards/index.html"]
         // Edges
         what -> jupyter [label="Einzel-\nnutzer"]
         what -> hub [label="Team-\narbeit"]

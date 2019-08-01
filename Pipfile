@@ -30,6 +30,7 @@ plotly = "<4"
 cufflinks = "*"
 ipysheet = "*"
 jupyterhub = "*"
+jupyter-dashboards = "*"
 
 [dev-packages]
 
