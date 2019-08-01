@@ -1,7 +1,7 @@
 Jupyter-Tutorial
 ================
 
-* Dokumentation: https://jupyter-tutorial.readthedocs.io/en/latest/
+* Dokumentation: https://jupyter-tutorial.readthedocs.io/de/latest/
 * PDF: https://buildmedia.readthedocs.org/media/pdf/jupyter-tutorial/latest/jupyter-tutorial.pdf
 * GitHub-Repo: https://github.com/veit/jupyter-tutorial/
 * Lizenz: BSD license
