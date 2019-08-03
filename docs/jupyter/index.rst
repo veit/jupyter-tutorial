@@ -47,15 +47,15 @@ Was wollt ihr machen?
             shape=plaintext,
             label=" ",
             tooltip="Notebook-Erweiterungen installieren"]
+        embed [
+            shape=plaintext,
+            label="",
+            tooltip="Notebooks in andere Anwendungen einbinden"]
         examples [
             label="Beispiele",
             tooltip="Anwendungsbeispiele bei Netflix, Bloomberg etc.",
             target="_top",
             href="../jupyter/use-cases.html"]
-        embed [
-            shape=plaintext,
-            label="",
-            tooltip="Notebooks in andere Anwendungen einbinden"]
         // 3rd Level
         widgets [
             label="Widgets",
@@ -89,13 +89,13 @@ Was wollt ihr machen?
         nbconvert -> nbviewer [label="Konvertier-\nservice"]
         what -> kernels [label="Java, R,\nJulia etc."]
         what -> extensions [label="Notebook\nerweitern"]
-        what -> examples [label="Anwendungs-\nbeispiele"]
         what -> embed [label="Notebooks\neinbetten"]
+        what -> examples [label="Anwendungs-\nbeispiele"]
         extensions -> {widgets extend dash}
         embed -> {html sphinx}
         // Arangement
         {rank = same; what;}
-        {rank = same; jupyter; hub; nbconvert; kernels; extensions; examples;embed;}
+        {rank = same; jupyter; hub; nbconvert; kernels; extensions; embed; examples;}
         {rank = same; widgets; extend; dash;}
         {rank = same; html; sphinx}
     }
