@@ -52,12 +52,16 @@ Was wollt ihr machen?
             tooltip="Anwendungsbeispiele bei Netflix, Bloomberg etc.",
             target="_top",
             href="../jupyter/use-cases.html"]
+        embed [
+            shape=plaintext,
+            label="",
+            tooltip="Notebooks in andere Anwendungen einbinden"]
         // 3rd Level
         widgets [
             label="Widgets",
             tooltip="ipywidgets installieren und nutzen",
             target="_top",
-            href="../jupyter/ipywidgets/"]
+            href="../jupyter/ipywidgets/index.html"]
         extend [
             label="nbextensions",
             tooltip="Installieren und Verwenden verschiedener Notebook-Erweiterungen",
@@ -68,6 +72,16 @@ Was wollt ihr machen?
             tooltip="Installieren und Verwenden von Dashboards",
             target="_top",
             href="../jupyter/dashboards/index.html"]
+        html [
+            label="HTML",
+            tooltip="Einbinden von Notebooks in statisches HTML",
+            target="_top",
+            href="../jupyter/ipywidgets/embedding.html"]
+        sphinx [
+            label="Sphinx",
+            tooltip="Einbinden von Notebooks in den Sphinx Document Generator",
+            target="_blank",
+            href="https://nbsphinx.readthedocs.io/"]
         // Edges
         what -> jupyter [label="Einzel-\nnutzer"]
         what -> hub [label="Team-\narbeit"]
@@ -75,12 +89,15 @@ Was wollt ihr machen?
         nbconvert -> nbviewer [label="Konvertier-\nservice"]
         what -> kernels [label="Java, R,\nJulia etc."]
         what -> extensions [label="Notebook\nerweitern"]
-        what -> examples [label="Anwendungsbeispiele"]
+        what -> examples [label="Anwendungs-\nbeispiele"]
+        what -> embed [label="Notebooks\neinbetten"]
         extensions -> {widgets extend dash}
+        embed -> {html sphinx}
         // Arangement
         {rank = same; what;}
-        {rank = same; jupyter; hub; nbconvert; kernels; extensions; examples;}
+        {rank = same; jupyter; hub; nbconvert; kernels; extensions; examples;embed;}
         {rank = same; widgets; extend; dash;}
+        {rank = same; html; sphinx}
     }
 
 .. toctree::
@@ -94,6 +111,7 @@ Was wollt ihr machen?
     ipywidgets/index
     nbextensions/index
     dashboards/index
+    ../jupyter/ipywidgets/embedding
     use-cases
 
 .. toctree::
