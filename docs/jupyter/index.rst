@@ -52,7 +52,7 @@ Was wollt ihr machen?
             label="",
             tooltip="Notebooks in andere Anwendungen einbinden"]
         examples [
-            label="Beispiele",
+            label="Unternehmens-\nanwendungen",
             tooltip="Anwendungsbeispiele bei Netflix, Bloomberg etc.",
             target="_top",
             href="../jupyter/use-cases.html"]
@@ -90,7 +90,7 @@ Was wollt ihr machen?
         what -> kernels [label="Java, R,\nJulia etc."]
         what -> extensions [label="Notebook\nerweitern"]
         what -> embed [label="Notebooks\neinbetten"]
-        what -> examples [label="Anwendungs-\nbeispiele"]
+        what -> examples [label="Beispiele"]
         extensions -> {widgets extend dash}
         embed -> {html sphinx}
         // Arangement
