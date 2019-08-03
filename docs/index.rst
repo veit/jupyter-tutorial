@@ -9,6 +9,7 @@ Jupyter Tutorial
 .. toctree::
     :maxdepth: 1
 
+    readme
     first-steps/index
     ipython/index
     jupyter/index
