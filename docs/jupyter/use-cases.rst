@@ -1,5 +1,5 @@
-Use Cases
-=========
+Anwendungsbeispiele
+===================
 
 In einigien Unternehmen werden Jupyter Notebooks genutzt um explorativ die immer
 größer werdenden Datenmengen zu erschließen. Hierzu gehören:

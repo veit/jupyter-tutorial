@@ -1,5 +1,5 @@
-``ipywidgets`` 
-==============
+Interaktive Widgets für Jupyter Notebooks: ``ipywidgets`` 
+=========================================================
 
 `ipywidgets <https://ipywidgets.readthedocs.io/>`_ sind interaktive Widgets für
 Jupyter Notebooks. Sie  erweitern Notebooks um die Möglichkeit, dass Nutzer

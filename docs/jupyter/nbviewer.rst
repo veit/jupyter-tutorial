@@ -1,5 +1,5 @@
-Jupyter Notebook Viewer
-=======================
+Jupyter Notebook Viewer: ``nbviewer``
+=====================================
 
 `nbviewer <https://github.com/jupyter/nbviewer>`_
     :doc:`nbconvert` als Web-Service: Rendert Jupyter Notebooks als statische

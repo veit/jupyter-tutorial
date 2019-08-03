@@ -38,15 +38,20 @@ Was wollt ihr machen?
             tooltip="nbviewer installieren und nutzen",
             target="_top",
             href="../jupyter/nbviewer.html"]
-        kernel [
-            label="Kernel",
-            tooltip="Kernel installieren, anzeigen und starten",
+        kernels [
+            label="Kernels",
+            tooltip="Kernels installieren, anzeigen und starten",
             target="_top",
             href="../jupyter/kernels/install.html"]
-        custom [
+        extensions [
             shape=plaintext,
             label=" ",
             tooltip="Notebook-Erweiterungen installieren"]
+        examples [
+            label="Beispiele",
+            tooltip="Anwendungsbeispiele bei Netflix, Bloomberg etc.",
+            target="_top",
+            href="../jupyter/use-cases.html"]
         // 3rd Level
         widgets [
             label="Widgets",
@@ -68,28 +73,34 @@ Was wollt ihr machen?
         what -> hub [label="Team-\narbeit"]
         what -> nbconvert [label="Konvertieren"]
         nbconvert -> nbviewer [label="Konvertier-\nservice"]
-        what -> kernel [label="Java, R,\nJulia etc."]
-        what -> custom [label="Notebook\nerweitern"]
-        custom -> {widgets extend dash}
+        what -> kernels [label="Java, R,\nJulia etc."]
+        what -> extensions [label="Notebook\nerweitern"]
+        what -> examples [label="Anwendungsbeispiele"]
+        extensions -> {widgets extend dash}
         // Arangement
         {rank = same; what;}
-        {rank = same; jupyter; hub; nbconvert; kernel; custom;}
+        {rank = same; jupyter; hub; nbconvert; kernels; extensions; examples;}
         {rank = same; widgets; extend; dash;}
     }
 
 .. toctree::
     :maxdepth: 1
-    :caption: Inhalt
 
-    use-cases
     ../first-steps/install
+    jupyterhub/index
+    nbconvert
+    nbviewer
+    kernels/index
+    ipywidgets/index
+    nbextensions/index
+    dashboards/index
+    use-cases
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Feinabstimmung
+
     ../first-steps/create-notebook
     shortcuts
     config
-    jupyterhub/index
-    kernels/index
-    nbconvert
-    ipywidgets/index
-    nbextensions/index
-    nbviewer
 

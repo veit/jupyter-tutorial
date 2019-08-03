@@ -1,5 +1,5 @@
-``nbconvert``
-=============
+Jupyter Notebook Converter: ``nbconvert``
+=========================================
 
 `nbconvert <https://nbconvert.readthedocs.io/>`_ 
     konvertiert Notebooks in andere Formate

@@ -1,5 +1,5 @@
-Jupyter Notebook Extensions
-===========================
+Jupyter Notebook Extensions: ``nbextensions``
+=============================================
 
 :doc:`Jupyter Notebook Extensions <jupyter-contrib-nbextensions:index>` enthält
 eine Sammlung von Erweiterungen. Diese sind größtenteils in Javascript
