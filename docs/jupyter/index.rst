@@ -61,7 +61,7 @@ Was wollt ihr machen?
         dash [
             label="Dashboards",
             tooltip="Installieren und Verwenden von Dashboards",
-            target="_blank",
+            target="_top",
             href="../jupyter/dashboards/index.html"]
         // Edges
         what -> jupyter [label="Einzel-\nnutzer"]
