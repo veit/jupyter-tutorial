@@ -1,9 +1,12 @@
 Über das Jupyter-Tutorial
 =========================
 
-:Read the Docs: `jupyter-tutorial.readthedocs.io <https://jupyter-tutorial.readthedocs.io/>`_
+Aufbau und Nutzung einer Forschungsinfrastruktur auf Basis von :doc:`Jupyter
+Notebooks <jupyter-notebook:index>`.
+
+:HTML: `jupyter-tutorial.readthedocs.io <https://jupyter-tutorial.readthedocs.io/>`_
 :PDF: `jupyter-tutorial.pdf <https://buildmedia.readthedocs.org/media/pdf/jupyter-tutorial/latest/jupyter-tutorial.pdf>`_
-:GitHub: `github.com/veit/jupyter-tutorial <https://github.com/veit/jupyter-tutorial/>`_
+:Quellcode: `github.com/veit/jupyter-tutorial <https://github.com/veit/jupyter-tutorial/>`_
 :Lizenz: `BSD 3-Clause <https://github.com/veit/jupyter-tutorial/blob/master/LICENSE>`_
 
 Installation
