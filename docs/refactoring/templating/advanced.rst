@@ -5,12 +5,16 @@ Hooks
 -----
 
 Ihr könnt Pre- oder Post-Generate-Hooks schreiben. Dabei werden die
-Jinja-Template-Variablen in die Skripte integriert werden, z.B.::
+Jinja-Template-Variablen in die Skripte integriert werden, z.B.:
+
+.. code-block:: python
 
     if 'Not open source' == '{{ cookiecutter.license }}':
         remove_file('LICENSE')
 
-In einem Pre-Generate-Hook können z.B. Variablen validiert werden::
+In einem Pre-Generate-Hook können z.B. Variablen validiert werden:
+
+.. code-block:: python
 
     import re
     import sys
@@ -30,7 +34,9 @@ User Config
 -----------
 
 Wenn ihr Cookiecutter häufig verwendet, empfiehlt sich eine eigene User-Config:
-``~/cookiecutterrc``, z.B.::
+``~/cookiecutterrc``, z.B.:
+
+.. code-block:: bash
 
     default_context:
         full_name: "Veit Schiele"
@@ -44,16 +50,22 @@ Replay
 
 Beim Aufruf von ``ookiecutter`` wird eine ``json``-Datei angelegt in
 ``/.cookiecutter_replay/``, z.B.
-``~/.cookiecutter_replay/cookiecutter-namespace-template.json``::
+``~/.cookiecutter_replay/cookiecutter-namespace-template.json``:
+
+.. code-block:: json
 
     {"cookiecutter": {"full_name": "Veit Schiele", "email": "veit@cusy.io", "github_username": "veit", "project_name": "vsc.example", "project_slug": "vsc.example", "namespace": "vsc", "package_name": "example", "project_short_description": "Python Namespace Package contains all you need to create a Python namespace package.", "pypi_username": "veit", "use_pytest": "y", "command_line_interface": "Click", "version": "0.1.0", "create_author_file": "y", "license": "MIT license", "_template": "https://github.com/veit/cookiecutter-namespace-template"}}
 
 Sollen diese Informationen verwendet werden ohne diese erneut in der
-Kommandozeile bestätigen zu müssen, könnt ihr einfach z.B. folgendes eingeben::
+Kommandozeile bestätigen zu müssen, könnt ihr einfach z.B. folgendes eingeben:
+
+.. code-block:: console
 
     $ cookiecutter --replay gh:veit/cookiecutter-namespace-template
 
-Alternativ kann auch die Python-API verwendet werden::
+Alternativ kann auch die Python-API verwendet werden:
+
+.. code-block:: python
 
     from cookiecutter.main import cookiecutter
     cookiecutter('gh:'veit/cookiecutter-namespace-template, replay=True)

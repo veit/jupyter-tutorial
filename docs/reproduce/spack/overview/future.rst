@@ -1,8 +1,6 @@
 Zukünftige Features
 ===================
 
-
-
 * Lmod (Lua based module system)-Integration
 * Auflösen externer Abhängigkeiten
 * Benutzerdefinierte Compiler Flag Injection

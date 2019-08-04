@@ -11,6 +11,7 @@ Hier ist ein Beispiel für die Verzeichnisstruktur eines Mirror:
 
 .. code-block:: console
 
+    $ tree /path/to/mirror/
     /path/to/mirror/
     ├── autoconf
     │   └── autoconf-2.69.tar.gz

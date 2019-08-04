@@ -25,7 +25,7 @@ Anforderungen
 
   .. code-block:: console
 
-    source /usr/local/opt/modules/init/bash
+    $ source /usr/local/opt/modules/init/bash
 
 * ``gnupg2`` für ``gpg``-Subcommand
 
@@ -36,7 +36,7 @@ Installation
 
     $ git clone https://github.com/spack/spack.git
     Cloning into 'spack'...
-    …
+    ...
 
 Shell konfigurieren
 -------------------

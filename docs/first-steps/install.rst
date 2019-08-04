@@ -35,13 +35,17 @@ versehentlich systemweite Pakete überschrieben werden:
 
      Anschließend muss noch das ``bin``-Verzeichnis angehängt und zu ``PATH``
      hinzugefügt werden. Alternativ kann ``PATH`` dauerhaft gesetzt werden, indem
-     ``~/.profile`` oder ``~/.bash_profile`` geändert werden, in meinem Fall also::
+     ``~/.profile`` oder ``~/.bash_profile`` geändert werden, in meinem Fall also:
+
+     .. code-block:: bash
 
         export PATH=/home/veit/.local/bin:$PATH
 
    * Unter Windows kann das Verzeichnis ermittelt werden mit
      ``py -m site --user-site`` und anschließend ``site-packages`` durch
-     ``Scripts`` ersetzt werden. Dies ergibt dann z.B.::
+     ``Scripts`` ersetzt werden. Dies ergibt dann z.B.:
+
+     .. code-block:: console
 
         C:\Users\veit\AppData\Roaming\Python36\Scripts
 

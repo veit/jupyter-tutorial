@@ -65,18 +65,15 @@ Installationslayout
 
 .. code-block:: console
 
+    $ tree /Users/veit/spack/opt/spack/
     /Users/veit/spack/opt/spack/
-        linux-x86_64/
-            gcc-4.7.2/
-                mpileaks-1.1-0f54bf34cadk/
-            intel-14.1/
-                hdf5-1.8.15-lkf14aq3nqiz/
-        bgq/
-            xl-12.1/
-                hdf5-1-8.16-fqb3a15abrwx/
-        …
-
-
+    └── darwin-mojave-x86_64
+        ├── clang-10.0.1-apple
+        │   ├── autoconf-2.69-ymadj7a7gg52r76payi7jd7qu7qcuasp
+        │   │   ├── bin
+        │   │   │   ├── autoconf
+        │   │   │   ├── autoheader
+    ...
 
 * Jeder eindeutige Abhängigkeitsgraph erhält eine einzigartige Konfiguration
 * Jede Konfiguration ist in einem eindeutigen Verzeichnis installiert
@@ -94,33 +91,12 @@ Installationslayout
 
 .. code-block:: console
 
-    $ /srv/jupyterhub/spack/bin/spack list
-    ==> 2395 packages.
-    abinit                           libmongoc                              py-idna                         r-networkd3
-    abyss                            libmonitor                             py-igraph                       r-nlme
-    ack                              libnbc                                 py-imagesize                    r-nloptr
-    activeharmony                    libogg                                 py-iminuit                      r-nmf
-    adept-utils                      liboldx                                py-importlib                    r-nnet
-    adios                            libpcap                                py-ipaddress                    r-nnls
-    adios2                           libpciaccess                           py-ipdb                         r-nor1mix
-    adlbx                            libpfm4                                py-ipykernel                    r-np
-    adol-c                           libpipeline                            py-ipython                      r-numderiv
-    albert                           libpng                                 py-ipython-genutils             r-oligoclasses
-    alglib                           libpsl                                 py-ipywidgets                   r-oo
-    allinea-forge                    libpthread-stubs                       py-isort                        r-openssl
-    allinea-reports                  libquo                                 py-itsdangerous                 r-org-hs-eg-db
-    allpaths-lg                      libsigsegv                             py-jdcal                        r-organismdbi
-    alquimia                         libsm                                  py-jedi                         r-packrat
-    alsa-lib                         libsodium                              py-jinja2                       r-pacman
-    amg                              libspatialindex                        py-joblib                       r-pamr
-    amg2013                          libsplash                              py-jpype                        r-party
-    amp                              libssh2                                py-jsonschema                   r-partykit
-    ampliconnoise                    libsvm                                 py-junit-xml                    r-pathview
-    amr-exp-parabolic                libszip                                py-jupyter-client               r-pbapply
-    amrex                            libtermkey                             py-jupyter-console              r-pbdzmq
-    andi                             libtiff                                py-jupyter-core                 r-pbkrtest
-    angsd                            libtool                                py-jupyter-notebook             r-pcamethods
-    ant                              libunistring                           py-keras                        r-pcapp
+    $ spack list
+    ==> 3250 packages.
+    abinit                                 py-fiona
+    abyss                                  py-fiscalyear
+    accfft                                 py-flake8
+    ...
 
 Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs: 
 
@@ -259,7 +235,7 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
 
      .. code-block:: console
 
-            mpileaks ^callpath@1.0+debug ^libelf@0.8.11
+        $ spack install mpileaks ^callpath@1.0+debug ^libelf@0.8.11
 
   #. Konkretisierung
 
@@ -301,9 +277,7 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
               hash: teesjv7ehpe5ksspjim5dk43a7qnowlq
               variants: {}
               version: 1.59.0
-            …
-
-
+            ...
 
      #. Wenn unspezifiziert, werden bei der Konkretisierung Werte basierend auf
         den Nutzereinstellungen gewählt.

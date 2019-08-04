@@ -64,7 +64,7 @@ Optionen
 
     Hier noch ein Beispiel:
 
-.. code-block:: console
+    .. code-block:: console
 
         $ PIP_INSTALL_OPTION="-- -DCMAKE_BUILD_TYPE=Release" pipenv install -e .
 
@@ -88,15 +88,15 @@ Optionen
     * mit der Umgebungsvariablen ``PIPENV_PYPI_MIRROR``
     * in der Kommandozeile, z.B. mit:
 
-.. code-block:: console
+      .. code-block:: console
 
-        $ pipenv install --pypi-mirror <mirror_url>
-        $ pipenv update --pypi-mirror <mirror_url>
-        $ …
+        $ pipenv install --pypi-mirror https://pypi.cusy.io/simple
+        $ pipenv update --pypi-mirror https://pypi.cusy.io/simple
+        …
 
     * oder im ``pipfile``:
 
-.. code-block:: ini
+      .. code-block:: ini
 
         [[source]]
         url = "https://pypi.python.org/simple"
@@ -115,15 +115,12 @@ Optionen
         maya = {version="*", index="pypi"}
         records = "*"
 
-        $ pipenv install --pypi-mirror https://pypi.cusy.io/simple
-        $ pipenv update --pypi-mirror https://pypi.cusy.io/simple
-        $ …
+      .. note::
+        Wird ein privater Index verwendet, kommt es aktuell noch zu Problemen
+        mit dem Hashing der Pakete. 
 
-    .. note::
-       Wird ein privater Index verwendet, kommt es aktuell noch zu Problemen mit
-       dem Hashing der Pakete. 
-
-    Weitere Optionen findet ihr unter `pipenv <https://docs.pipenv.org/#pipenv>`_.
+    Weitere Optionen findet ihr unter `pipenv
+    <https://docs.pipenv.org/#pipenv>`_.
 
 ``check``
 ---------

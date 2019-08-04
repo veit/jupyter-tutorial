@@ -46,9 +46,11 @@ Git Best Practices
   zukünftige Wartung und Pflege.
 
   Falls ihr doch einmal mehrere Änderungen an einer Datei durchgeführt habt,
-  könnt ihr diese auch später noch in mehrere Commits aufteilen mit::
+  könnt ihr diese auch später noch in mehrere Commits aufteilen mit:
 
-    git add -p my-changed-file.py
+  .. code-block:: console
+
+    $ git add -p my-changed-file.py
 
 - Ändert nicht die veröffentlichte Historie!
 
@@ -82,9 +84,11 @@ Git Best Practices
   Informationen hierzu findet ihr in der Git-Dokumentation: `git-blame
   <https://git-scm.com/docs/git-blame>`_.
   
-  GitLab interpretiert bestimmte Commit-Nachrichten auch als Links interpetieren, z.B.::
+  GitLab interpretiert bestimmte Commit-Nachrichten auch als Links interpetieren, z.B.:
 
-    git commit -m "Awesome commit message (Fixes #21 and Closes group/otherproject#22)"
+  .. code-block:: console
+
+    $ git commit -m "Awesome commit message (Fixes #21 and Closes group/otherproject#22)"
 
   * zu Issues: ``#123``
 

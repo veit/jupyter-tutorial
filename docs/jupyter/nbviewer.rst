@@ -44,11 +44,11 @@ Installation
 
             $ pipenv install "tornado<6.0"
 
-    Anschließend kann dann auch ``nbviewer`` installiert werden:
+   Nun kann dann auch ``nbviewer`` installiert werden:
 
-    .. code-block:: console
+   .. code-block:: console
 
-        $ pipenv install nbviewer
+    $ pipenv install nbviewer
 
 #. Zum Testen kann der Server gestartet werden mit:
 

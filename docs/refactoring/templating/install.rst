@@ -15,13 +15,17 @@ Voraussetzungen
 
   * Linux und MacOS
 
-    Für Bash könnt ihr den Pfad in eurer ``~/.bash_profile`` angeben::
+    Für Bash könnt ihr den Pfad in eurer ``~/.bash_profile`` angeben:
+
+    .. code-block:: bash
 
       export PATH=$HOME/.local/bin:$PATH
 
-    und anschließend die Datei einlesen mit::
+    und anschließend die Datei einlesen mit:
 
-      source ~/.bash_profile
+    .. code-block:: console
+
+      $ source ~/.bash_profile
 
   * Windows
 
@@ -36,13 +40,13 @@ Voraussetzungen
        `Configuring Python
        <https://docs.python.org/3/using/windows.html#configuring-python>`_
 
-* :term:`pip` und :term:`setuptools`
+* :term:`pipenv`
 
 Installation
 ------------
 
-::
+.. code-block:: console
 
-    $ pip install --user cookiecutter
+    $ pipenv install --user cookiecutter
 
 

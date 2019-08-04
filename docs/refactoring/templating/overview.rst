@@ -1,14 +1,18 @@
 Übersicht
 =========
 
-Ein minimales CookieCutter-Template sieht so aus::
+Ein minimales CookieCutter-Template sieht so aus:
+
+.. code-block:: console
 
     cookiecutter-namespace-template/
     ├── {{ cookiecutter.project_name }}/  <--- Project template
     │   └── …
     └── cookiecutter.json                 <--- Prompts & default values
 
-Die  ``cookiecutter.json``-Datei kann beispielsweise so aussehen::
+Die  ``cookiecutter.json``-Datei kann beispielsweise so aussehen:
+
+.. code-block:: json
 
     {
       "full_name": "Veit Schiele",
@@ -29,7 +33,9 @@ Die  ``cookiecutter.json``-Datei kann beispielsweise so aussehen::
 
 Darüberhinaus können beliebige Verzeichnisse und Dateien angelegt werden.
 
-Als Ergebnis erhaltet ihr dann folgende Dateistruktur::
+Als Ergebnis erhaltet ihr dann folgende Dateistruktur:
+
+.. code-block:: console
 
     my.package/                            <--- Value corresponding to what you enter  
     │                                          at the project_name prompt

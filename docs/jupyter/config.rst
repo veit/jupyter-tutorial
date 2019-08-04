@@ -66,7 +66,7 @@ z.B.:
 
 .. code-block:: console
 
-    jupyter notebook --NotebookApp.port=8754
+    $ pipenv run jupyter notebook --NotebookApp.port=8754
 
 Dabei gibt es für häufig verwendete Optionen Aliase wie z.B. für ``--port``
 oder ``--no-browser``.

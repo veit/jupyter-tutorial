@@ -12,7 +12,9 @@ Weitere Informationen findet ihr unter `Using TestPyPI
 
 Nachdem ihr registriert seid, könnt ihr euer :term:`Distribution Package` mit
 `twine <https://packaging.python.org/key_projects/#twine>`_ hochladen. Hierzu
-müsst ihr jedoch zunächst twine installieren mit::
+müsst ihr jedoch zunächst twine installieren mit:
+
+.. code-block:: console
 
     $ pipenv install twine
     Installing twine…
@@ -20,12 +22,16 @@ müsst ihr jedoch zunächst twine installieren mit::
     …
 
 Nach der Installation von Twine könnt ihr alle ARchive unter ``/dist`` auf den
-Python Package Index hochladen mit::
+Python Package Index hochladen mit:
+
+.. code-block:: console
 
     $ pipenv run twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
 Ihr werdet nach Benutzernamen und Passwort gefragt, mit dem ihr euch bei *Test
-PyPI* registriert habt. Anschließend solltet ihr eine ähnliche Ausgabe sehen::
+PyPI* registriert habt. Anschließend solltet ihr eine ähnliche Ausgabe sehen:
+
+.. code-block:: console
 
     Uploading distributions to https://test.pypi.org/legacy/
     Enter your username: veit
@@ -38,7 +44,7 @@ PyPI* registriert habt. Anschließend solltet ihr eine ähnliche Ausgabe sehen::
 .. note::
    Wenn ihr eine ähnliche Fehlermeldung erhaltet wie
 
-   ::
+   .. code-block:: console
 
     The user 'veit' isn't allowed to upload to project 'example'
 
@@ -53,7 +59,9 @@ Installation
 
 Ihr könnt :term:`pipenv` verwenden um euer Paket zu installieren und zu überprüfen,
 ob es funktioniert. Erstellt eine neue :term:`virtuelle Umgebung` und
-installiert euer Paket von *Test PyPI*::
+installiert euer Paket von *Test PyPI*:
+
+.. code-block:: console
 
     $ mkdir test
     $ cd !$
@@ -64,7 +72,9 @@ installiert euer Paket von *Test PyPI*::
    Befehl durch euren Paketnamen.
 
 :term:`pip` sollte das Paket von *Test PyPI* installieren und die Ausgabe sollte
-in etwa so aussehen::
+in etwa so aussehen:
+
+.. code-block:: console
 
     Collecting example_pkg
       Downloading https://test-files.pythonhosted.org/packages/.../minimal_example-0.0.1-py3-none-any.whl
@@ -73,7 +83,9 @@ in etwa so aussehen::
 
 Ihr könnt testen, ob euer Paket korrekt installiert wurde indem ihr das Modul
 importiert und auf die ``name``-Eigenschaft referenziert, die zuvor in
-``__init__.py`` eingegeben wurde::
+``__init__.py`` eingegeben wurde:
+
+.. code-block:: console
 
     $ pipenv run python
     Python 3.7.0 (default, Aug 22 2018, 15:22:29) 
