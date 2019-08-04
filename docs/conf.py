@@ -22,7 +22,7 @@ copyright = '2019, Veit Schiele'
 author = 'Veit Schiele'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.4'
+release = '0.1.5'
 
 
 # -- General configuration ---------------------------------------------------
