@@ -16,7 +16,7 @@ with open("README.rst", "r") as fh:
 setup_args = dict(
     name='jupyter-tutorial',
     packages=[],
-    version='0.1.5',
+    version='0.1.6',
     description='Jupyter Tutorial',
     long_description=long_description,
     long_description_content_type="text/x-rst",
