@@ -80,8 +80,8 @@ Was wollt ihr machen?
         sphinx [
             label="Sphinx",
             tooltip="Einbinden von Notebooks in den Sphinx Document Generator",
-            target="_blank",
-            href="https://nbsphinx.readthedocs.io/"]
+            target="_top",
+            href="../jupyter/nbsphinx.html"]
         // Edges
         what -> jupyter [label="Einzel-\nnutzer"]
         what -> hub [label="Team-\narbeit"]
@@ -112,6 +112,7 @@ Was wollt ihr machen?
     nbextensions/index
     dashboards/index
     ../jupyter/ipywidgets/embedding
+    nbsphinx
     use-cases
 
 .. toctree::
