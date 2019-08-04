@@ -43,5 +43,4 @@ Sie bieten meist keine Unterstützung für kombinatorische Versionierung.
     usecase1
     usecase2
     future
-    seealso
 
