@@ -25,9 +25,8 @@ Die zugehörige ``Pipfile.lock``-Datei spezifiziert jedoch die Pakete exakt, z.B
 
 .. code-block:: json
 
-    …
+    {
         "default": {
-            …
             "requests": {
                 "hashes": [
                     "sha256:63b52e3c866428a224f97cab011de738c36aec0185aa91cfacd418b5d58911d1",
@@ -44,9 +43,9 @@ Die zugehörige ``Pipfile.lock``-Datei spezifiziert jedoch die Pakete exakt, z.B
                 "markers": "python_version != '3.2.*' and python_version != '3.1.*' and python_version < '4' and python_version != '3.3.*' and python_version >= '2.6' and python_version != '3.0.*'",
                 "version": "==1.23"
             }
-            …
         },
         "develop": {}
+    }
 
 ``Pipfile.lock`` spezifiziert auch alle Abhängigkeiten eures Projekts, wobei die
 Hashwerte der heruntergeladenen Dateien gespeichert werden. Dies soll

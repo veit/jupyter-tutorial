@@ -224,12 +224,18 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
 
 * Abhängigkeiten in Spack können optional sein:
 
-  * Ihr könnt *named variants* definieren:
+  * Ihr könnt *named variants* definieren, wie z.B. in
+    ``~/spack/var/spack/repos/builtin/packages/vim/package.py``:
 
     .. code-block:: python
 
-        variant("python", default=False, “Build with python support”)
-        depends_on("python", when="+python")
+        class Vim(AutotoolsPackage):
+            ...
+            variant('python', default=False, description="build with Python")
+            depends_on('python', when='+python')
+
+            variant('ruby', default=False, description="build with Ruby")
+            depends_on('ruby', when='+ruby')
 
   * …  und zum Installieren verwenden:
 

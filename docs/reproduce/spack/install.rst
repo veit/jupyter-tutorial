@@ -44,7 +44,7 @@ Shell konfigurieren
 #. Zur Konfiguration des Bash-Environment wird folgendes in ``~/.bashrc``
    eingetragen:
 
-   .. code-block:: console
+   .. code-block:: bash
 
     export SPACK_ROOT=~/spack
     . $SPACK_ROOT/share/spack/setup-env.sh

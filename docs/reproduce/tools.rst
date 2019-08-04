@@ -33,12 +33,12 @@ schon die Standardeinstellungen gut gewählt. Ein typischer Aufruf ist:
 
 .. code-block:: console
 
-    $ jq --indent 1  \ 
-        '(.cells [] | select (has ("output")) | .outputs) = [] 
-        | (.cells [] | select (has ("execution_count")) | .execution_count) = null 
-        | .metadata = {"language_info": {"name": "python", "pygments_lexer": "ipython3"}} 
-        | .Cells []. Metadaten = {} 
-        '  example.ipynb
+    jq --indent 1  \ 
+      '(.cells [] | select (has ("output")) | .outputs) = [] 
+      | (.cells [] | select (has ("execution_count")) | .execution_count) = null 
+      | .metadata = {"language_info": {"name": "python", "pygments_lexer": "ipython3"}} 
+      | .Cells []. Metadaten = {} 
+      '  example.ipynb
 
 Jede Zeile innerhalb der einfachen Anführungszeichen definiert einen Filter –
 die erste wählt alle Einträge aus der Liste *cells* aus und löscht die Ausgaben.
@@ -55,12 +55,12 @@ Metainformationen beibehalten wollt, könnt ihr dies hier angeben.
 
    .. code-block:: bash
 
-    $ alias nbstrip_jq="jq --indent 1 \
-          '(.cells[] | select(has(\"outputs\")) | .outputs) = []  \
-          | (.cells[] | select(has(\"execution_count\")) | .execution_count) = null  \
-          | .metadata = {\"language_info\": {\"name\": \"python\", \"pygments_lexer\": \"ipython3\"}} \
-          | .cells[].metadata = {} \
-          '"
+    alias nbstrip_jq="jq --indent 1 \
+        '(.cells[] | select(has(\"outputs\")) | .outputs) = []  \
+        | (.cells[] | select(has(\"execution_count\")) | .execution_count) = null  \
+        | .metadata = {\"language_info\": {\"name\": \"python\", \"pygments_lexer\": \"ipython3\"}} \
+        | .cells[].metadata = {} \
+        '"
 
    Anschließend könnt ihr bequem im Terminal eingeben:
 
