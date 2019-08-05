@@ -1,5 +1,5 @@
-Reproduzierbare Notebooks
-=========================
+Reproduzierbarkeit
+==================
 
 Versionsmanagement
 ------------------
