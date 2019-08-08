@@ -1,3 +1,4 @@
+==========
 Templating
 ==========
 
@@ -6,11 +7,12 @@ Dateistrukturen erstellen, die u.a. das Erstellen von Python-Paketen deutlich
 vereinfachen.
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
-   features
    templates
    overview
    install
    advanced
+
+.. include:: features.rst
 

@@ -6,7 +6,9 @@ Pipenv
 Verwaltung von Abhängigkeiten.
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
+    :maxdepth: 3
+    :caption: Inhalt
 
     install
     use

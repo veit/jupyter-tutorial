@@ -64,8 +64,29 @@ exclude_patterns = [
 # a list of builtin themes.
 html_theme = 'alabaster'
 
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a list of options available for each theme, see the
+# documentation.
+#
+html_theme_options = {
+    'description': 'Aufbau und Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks.',
+    'fixed_sidebar': False,
+    'show_powered_by': False,
+    'github_user': 'veit',
+    'github_repo': 'jupyter-tutorial',
+    'github_banner': False,
+    'github_button': False,
+    'show_related': True,
+    'show_relbar_bottom': False,
+    'sidebar_includehidden': True,
+}
+
+html_sidebars = {
+    '**':    ['about.html', 'searchbox.html', 'navigation.html']
+}
+
 # Change default HTML title
-html_title = 'Jupyter Tutorial v0.1.4'
+html_title = 'Jupyter Tutorial v0.1.7'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

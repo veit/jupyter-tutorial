@@ -11,7 +11,7 @@ Refactoring
    und modularisiert den Code.
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    example
    distribution

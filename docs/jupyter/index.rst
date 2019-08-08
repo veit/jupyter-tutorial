@@ -101,7 +101,7 @@ Was wollt ihr machen?
     }
 
 .. toctree::
-    :maxdepth: 1
+    :hidden:
 
     ../first-steps/install
     jupyterhub/index
@@ -115,9 +115,12 @@ Was wollt ihr machen?
     nbsphinx
     use-cases
 
+Feinabstimmung
+--------------
+
 .. toctree::
+    :titlesonly:
     :maxdepth: 1
-    :caption: Feinabstimmung
 
     ../first-steps/create-notebook
     shortcuts

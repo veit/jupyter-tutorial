@@ -5,7 +5,8 @@ JupyterHub
     ist ein Multi-User Server für Jupyter Notebooks.
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
+    :maxdepth: 3
 
     install
     config

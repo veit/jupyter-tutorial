@@ -1,10 +1,12 @@
+==============
 Erste Schritte
 ==============
 
 .. toctree::
-   :maxdepth: 2
+    :hidden:
 
-   install.rst
-   create-notebook.rst
-   example.ipynb
+    create-notebook
+    example.ipynb
+
+.. include:: install.rst
 

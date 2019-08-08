@@ -35,7 +35,8 @@ Sie bieten meist keine Unterstützung für kombinatorische Versionierung.
       Builds sehr aufwändig.
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
+    :maxdepth: 4
     :caption: Inhalt
 
     combinatorial-builds

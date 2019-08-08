@@ -7,20 +7,9 @@ Versionsmanagement
 Verwendet `Git <https://git-scm.com/>`_ zum Versionieren eurer Notebooks.
 
 Bei einigen Projekten kann es sinnvoll sein, einen Git-Pre-Commit-Hock zu
-verwenden (s. :doc:`git-integration`), wodurch Commits und Diffs besser
-lesbar werden. Allerdings werden hierdurch auch alle Outputs (Plots etc.)
+verwenden (s. :doc:`versioning/git-integration`), wodurch Commits und Diffs
+besser lesbar werden. Allerdings werden hierdurch auch alle Outputs (Plots etc.)
 verworfen.
- 
-
-.. toctree::
-    :maxdepth: 1
-
-    first-steps
-    tools
-    git-integration
-    best-practices
-    git-workflows/index
-    dvc
 
 Paketmanagement
 ---------------
@@ -33,13 +22,8 @@ ihr und andere eure Berechnungen reproduzieren und auch das Deployment in die
 Produktionsumgebung wird vereinfacht.
 
 .. toctree::
-    :maxdepth: 1
-
-    spack/index
-    pipenv/index
-
-.. toctree::
     :hidden:
 
-    glossary
+    versioning/index
+    packaging/index
 

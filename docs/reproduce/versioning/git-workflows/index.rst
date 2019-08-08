@@ -7,7 +7,7 @@ wesentlich einfacher als ältere Versionierungssysteme wie SVN. Dies ermöglicht
 eine Vielzahl von Verzweigungsstrategien und Workflows.
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    git-flow
    feature-branches

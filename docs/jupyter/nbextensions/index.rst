@@ -6,7 +6,8 @@ eine Sammlung von Erweiterungen. Diese sind größtenteils in Javascript
 geschrieben und werden lokal in eurem Browser geladen.
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
+    :maxdepth: 3
     :caption: Inhalt
 
     install

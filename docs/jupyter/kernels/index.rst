@@ -2,7 +2,8 @@ Kernels
 =======
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
+    :maxdepth: 3
 
     overview
     install

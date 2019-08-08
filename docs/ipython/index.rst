@@ -10,19 +10,15 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
 `Jupyter-Projekt <https://jupyter.org/>`_ verbunden. 
 
 .. toctree::
-    :maxdepth: 2
+    :hidden:
 
     start
     magics.ipynb
     shell.ipynb
     display.ipynb
+    mypackage/foo.ipynb
     importing.ipynb
     debugging.ipynb
     testing/index
     profiling.ipynb
-
-.. toctree::
-    :hidden:
-
-    mypackage/foo.ipynb
 

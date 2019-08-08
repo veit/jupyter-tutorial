@@ -7,7 +7,8 @@ selbst Daten eingeben, Daten manipulieren und die veränderten Ergebnisse sehen
 können.
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 3
 
    examples.ipynb
    widget-list.ipynb

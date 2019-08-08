@@ -32,7 +32,8 @@ Tools
 -----
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 3
 
    hypothesis
    tox

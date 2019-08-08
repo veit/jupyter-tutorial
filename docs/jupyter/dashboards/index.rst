@@ -11,7 +11,8 @@ bekommen. Beispiele für Dashboards findet ihr in `Jupyter Dashboards Demos
 <https://github.com/jupyter/dashboards/tree/master/etc/notebooks>`_.
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
+    :maxdepth: 3
 
     install
     use
