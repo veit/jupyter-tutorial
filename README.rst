@@ -13,12 +13,29 @@ Installation
     $ curl -O https://github.com/veit/jupyter-tutorial/archive/master.zip
     $ unzip master.zip
 
-#. Sphinx installieren:
+#. Python-Pakete installieren:
 
    .. code-block:: console
 
     $ cd jupyter-tutorial
     $ pipenv install
+    Creating a virtualenv for this project…
+    …
+    Installing dependencies from Pipfile.lock (fbb457)…
+    …
+    $ pipenv run jupyter nbextension enable highlighter/highlighter
+        Enabling notebook extension highlighter/highlighter...
+              - Validating: OK
+
+#. ``nbextension`` installieren und aktivieren:
+
+   .. code-block:: console
+
+    $ pipenv run jupyter nbextension install --py latex_envs --user
+    …
+    $ pipenv run jupyter nbextension enable latex_envs --user --py
+    Enabling notebook extension latex_envs/latex_envs...
+          - Validating: OK
 
 #. HTML-Dokumentation erstellen:
 
