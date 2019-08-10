@@ -47,11 +47,12 @@ Installation
 
    .. code-block:: console
 
-    $ pipenv shell
-    Launching subshell in virtual environment…
-    $ bash-3.2$  . /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/bin/activate
-    $ (jupyter-tutorial) bash-3.2$ cd docs/
-    $ (jupyter-tutorial) bash-3.2$ make latexpdf
+    $ cd docs/
+    $ pipenv run make latexpdf
+    …
+    The LaTeX files are in _build/latex.
+    Run 'make' in that directory to run these through (pdf)latex
+    …
 
    Das PDF findet ihr anschließend in ``docs/_build/latex/jupytertutorial.pdf``.
 
