@@ -48,9 +48,6 @@ setup_args = dict(
         'Topic :: Software Development',
     ],
     install_requires=[
-
-
-
         'sphinx',
         'jupyter',
         'nbsphinx',
@@ -77,7 +74,6 @@ setup_args = dict(
         'cufflinks',
         'ipysheet',
         'jupyterhub',
-        'jupyter-dashboards'
     ],
 )
 
