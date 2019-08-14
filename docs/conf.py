@@ -32,6 +32,7 @@ release = '0.1.11'
 # ones.
 extensions = [
     'nbsphinx',
+    'jupyter_sphinx.execute',
     'sphinx.ext.intersphinx',
     'sphinx.ext.graphviz',
     'sphinx.ext.todo',
@@ -92,6 +93,11 @@ html_title = 'Jupyter Tutorial v0.1.11'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# -- nbsphinx configuration --------------------------------------------------
+
+nbsphinx_allow_errors = True
+# nbsphinx_execute = 'always'
 
 # -- intersphinx configuration -----------------------------------------------
 

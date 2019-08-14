@@ -59,6 +59,7 @@ setup_args = dict(
         'ipytest',
         'ipython-unittest',
         'jupyter-contrib-nbextensions',
+        'widgetsnbextension',
         'yapf',
         'jupyter-latex-envs',
         'bqplot',
