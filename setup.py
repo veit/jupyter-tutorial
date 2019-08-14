@@ -48,9 +48,13 @@ setup_args = dict(
         'Topic :: Software Development',
     ],
     install_requires=[
+
+
+
         'sphinx',
         'jupyter',
         'nbsphinx',
+        'jupyter-sphinx',
         'pandas',
         'matplotlib',
         'cython',
@@ -72,6 +76,8 @@ setup_args = dict(
         'plotly<4',
         'cufflinks',
         'ipysheet',
+        'jupyterhub',
+        'jupyter-dashboards'
     ],
 )
 
