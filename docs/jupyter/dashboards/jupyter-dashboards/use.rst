@@ -28,7 +28,7 @@ zusätzliche Informationen angezeigt zu bekommen:
    :alt: Dashboard-Info
 
 Mit :menuselection:`Dashboard Preview` bekommt ihr eine Vorschau angezeigt, z.B.
-für :doc:`/jupyter/dashboards/matplotlib-example`:
+für :doc:`matplotlib-example`:
 
 .. image:: dashboard-matplotlib-example.png
    :scale: 53%

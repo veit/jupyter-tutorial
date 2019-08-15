@@ -1,44 +1,53 @@
-Jupyter Dashboards
-==================
+Dashboards
+==========
 
-Die `Jupyter Dashboards Layout Extension
-<https://jupyter-dashboards-layout.readthedocs.io/>`_ ist ein Add-On für
-Jupyter-Notebooks, womit Outputs (Text, Plots, Widgets usw.) in einem
-Gestaltungsraster oder in Berichtform angeordnet werden können. Sie speichert
-die Informationen zum Layout direkt im Notebook, sodass andere Nutzer dieser
-Erweiterung das Notebook ebenfalls im entsprechenden Notebook angezeigt
-bekommen. Beispiele für Dashboards findet ihr in `Jupyter Dashboards Demos
-<https://github.com/jupyter/dashboards/tree/master/etc/notebooks>`_.
-
-Use Case
---------
-
-Die Jupyter Dashboards sollten folgendes Problem lösen:
-
-#. Alice erstellt ein Jupyter Notebook mit Plots und interaktiven Widgets.
-#. Alice ordnet die Notebook-Zellen in einem Raster- oder Report-Format an.
-#. Alice stellt das Dashboard auf einem Dashboard-Server bereit.
-#. Bob ruft das Dashboard auf dem `Jupyter Dashboards Server
-   <https://github.com/jupyter-attic/dashboards_server>`_ auf und interagiert
-   mit Alice Dashboard-Applikation.
-#. Alice aktualisiert ihr Jupyter Notebook und stellt das Dashboard anschließend
-   erneut auf dem Dashboard-Server bereit.
-
-Für die Schritte 3–5 werden jedoch zusätzlich `Jupyter Dashboards Bundler
-<https://github.com/jupyter-attic/dashboards_bundlers>`_ und `Jupyter Dashboards
-Server <https://github.com/jupyter-attic/dashboards_server>`_ benötigt; beide
-sind jedoch mittlerweile als *retired* gekennzeichnet, sollten also nicht weiter
-verwendet werden.
+`Jupyter Dashboards Layout Extension <https://jupyter-dashboards-layout.readthedocs.io/>`_
+    Add-On für Jupyter-Notebooks, womit Outputs (Text, Plots, Widgets usw.) in
+    einem Gestaltungsraster oder in Berichtform angeordnet werden können.
+`Appmode <https://github.com/oschuett/appmode>`_ 
+    Jupyter-Erweiterung, die aus Notebooks Webanwendungen macht.
+:doc:`/jupyter/nbviewer`
+    Er eignet sich hervorragend zum Anzeigen statischer Berichte, kann
+    aber auch zusammen mit :doc:`interaktiven Widgets
+    </jupyter/ipywidgets/embedding>` verwendet werden, deren Status im
+    Notebook-Dokument selbst gespeichert werden.
+`Dash <https://plot.ly/products/dash>`_
+    wurde auf Basis von `Plotly <https://plot.ly/>`_ entwickelt, s.a.
+    `Introducing Dash
+    <https://medium.com/plotly/introducing-dash-5ecf7191b503>`_.
+`Panel <https://panel.pyviz.org/>`_
+    wurde auf Basis von `Bokeh <https://bokeh.pydata.org/en/latest/>`_ und
+    `Param <https://github.com/pyviz/param>`_ entwickelt und bietet ein Toolkit
+    speziell zur Erstellung von Apps und Dashboards, das jedoch nicht nur
+    Bokeh-Plots unterstützt, s.a. `Panel: Ahigh-level app and dashboarding
+    solution for the PyData ecosystem
+    <https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52>`_.
+`Voila <https://github.com/QuantStack/voila>`_
+    wurde von `QuantStack <http://quantstack.net/>`_ entwickelt, s.a. `And
+    voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
+`Bokeh <http://bokeh.org/>`_
+    ist eine Bibliothek für Plots, Widgets und Apps sowie ein Server für
+    Plots und Dashboards.
+`Bowtie <https://github.com/jwkvam/bowtie>`_
+    von Jacques Kvam entwickelt zum Schreiben von Dashboards in Python.
+`Flask <https://palletsprojects.com/p/flask/>`_
+    ist ein in Python geschriebener Webserver, der zum Erstellen beliebiger
+    Websites verwendet werden kann, einschließlich solcher mit Python-Plots,
+    s.a. `Flask-Dashboards
+    <https://pusher.com/tutorials/live-dashboard-python>`_.
 
 .. toctree::
     :titlesonly:
+    :hidden:
     :maxdepth: 3
 
-    install
-    use
-
-.. toctree::
-    :hidden:
-
-    matplotlib-example.ipynb
+    jupyter-dashboards/index
+    ../nbviewer
+    Appmode <https://github.com/oschuett/appmode>
+    Dash <https://plot.ly/products/dash>
+    Panel <https://panel.pyviz.org>
+    Voila <https://github.com/QuantStack/voila>
+    Bokeh <http://bokeh.org/>
+    Bowtie <https://github.com/jwkvam/bowtie>
+    Flask <https://palletsprojects.com/p/flask/>
 
