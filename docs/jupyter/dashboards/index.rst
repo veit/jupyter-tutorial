@@ -4,7 +4,7 @@ Dashboards
 :doc:`Jupyter Dashboards Layout Extension <jupyter-dashboards/index>`
     Add-On für Jupyter-Notebooks, womit Outputs (Text, Plots, Widgets usw.) in
     einem Gestaltungsraster oder in Berichtform angeordnet werden können.
-`Appmode <https://github.com/oschuett/appmode>`_ 
+:doc:`appmode/index`
     Jupyter-Erweiterung, die aus Notebooks Webanwendungen macht.
 :doc:`/jupyter/nbviewer`
     Er eignet sich hervorragend zum Anzeigen statischer Berichte, kann
@@ -43,7 +43,7 @@ Dashboards
 
     jupyter-dashboards/index
     ../nbviewer
-    Appmode <https://github.com/oschuett/appmode>
+    appmode/index
     Dash <https://plot.ly/products/dash>
     Panel <https://panel.pyviz.org>
     Voila <https://github.com/QuantStack/voila>

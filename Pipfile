@@ -33,6 +33,7 @@ cufflinks = "*"
 ipysheet = "*"
 jupyterhub = "*"
 jupyter-dashboards = "*"
+appmode = "*"
 
 [dev-packages]
 

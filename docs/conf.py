@@ -56,7 +56,7 @@ exclude_patterns = [
     'Thumbs.db',
     '.DS_Store',
     '**/.ipynb_checkpoints',
-]
+    '**/.*.ipynb',]
 
 
 # -- Options for HTML output -------------------------------------------------
