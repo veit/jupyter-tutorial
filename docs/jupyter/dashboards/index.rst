@@ -11,10 +11,6 @@ Dashboards
     aber auch zusammen mit :doc:`interaktiven Widgets
     </jupyter/ipywidgets/embedding>` verwendet werden, deren Status im
     Notebook-Dokument selbst gespeichert werden.
-`Dash <https://plot.ly/products/dash>`_
-    wurde auf Basis von `Plotly <https://plot.ly/>`_ entwickelt, s.a.
-    `Introducing Dash
-    <https://medium.com/plotly/introducing-dash-5ecf7191b503>`_.
 `Panel <https://panel.pyviz.org/>`_
     wurde auf Basis von `Bokeh <https://bokeh.pydata.org/en/latest/>`_ und
     `Param <https://github.com/pyviz/param>`_ entwickelt und bietet ein Toolkit
@@ -44,7 +40,6 @@ Dashboards
     jupyter-dashboards/index
     ../nbviewer
     appmode/index
-    Dash <https://plot.ly/products/dash>
     Panel <https://panel.pyviz.org>
     Voila <https://github.com/QuantStack/voila>
     Bokeh <http://bokeh.org/>
