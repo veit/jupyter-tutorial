@@ -1,7 +1,7 @@
 Dashboards
 ==========
 
-`Jupyter Dashboards Layout Extension <https://jupyter-dashboards-layout.readthedocs.io/>`_
+:doc:`Jupyter Dashboards Layout Extension <jupyter-dashboards/index>`
     Add-On für Jupyter-Notebooks, womit Outputs (Text, Plots, Widgets usw.) in
     einem Gestaltungsraster oder in Berichtform angeordnet werden können.
 `Appmode <https://github.com/oschuett/appmode>`_ 
