@@ -11,7 +11,7 @@ Dashboards
     aber auch zusammen mit :doc:`interaktiven Widgets
     </jupyter/ipywidgets/embedding>` verwendet werden, deren Status im
     Notebook-Dokument selbst gespeichert werden.
-`Panel <https://panel.pyviz.org/>`_
+:doc:`panel/index`
     wurde auf Basis von `Bokeh <https://bokeh.pydata.org/en/latest/>`_ und
     `Param <https://github.com/pyviz/param>`_ entwickelt und bietet ein Toolkit
     speziell zur Erstellung von Apps und Dashboards, das jedoch nicht nur
@@ -40,7 +40,7 @@ Dashboards
     jupyter-dashboards/index
     ../nbviewer
     appmode/index
-    Panel <https://panel.pyviz.org>
+    panel/index
     Voila <https://github.com/QuantStack/voila>
     Bokeh <http://bokeh.org/>
     Bowtie <https://github.com/jwkvam/bowtie>

@@ -34,6 +34,9 @@ ipysheet = "*"
 jupyterhub = "*"
 jupyter-dashboards = "*"
 appmode = "*"
+panel = "*"
+holoviews = {extras = ["recommended"], version = "*"}
+hvplot = "*"
 
 [dev-packages]
 

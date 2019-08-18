@@ -11,6 +11,9 @@ ipyvolume = "*"
 ipyleaflet = "*"
 autopep8 = "*"
 geopandas = "*"
+panel = "*"
+holoviews = {extras = ["recommended"], version = "*"}
+hvplot = "*"
 
 [requires]
 python_version = "3.7.4"
