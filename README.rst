@@ -1,7 +1,11 @@
-:HTML: `jupyter-tutorial.readthedocs.io <https://jupyter-tutorial.readthedocs.io/>`_
-:PDF: `jupyter-tutorial.pdf <https://buildmedia.readthedocs.org/media/pdf/jupyter-tutorial/latest/jupyter-tutorial.pdf>`_
-:Quellcode: `github.com/veit/jupyter-tutorial <https://github.com/veit/jupyter-tutorial/>`_
-:Lizenz: `BSD 3-Clause <https://github.com/veit/jupyter-tutorial/blob/master/LICENSE>`_
+|Contributors| |License| |Docs|
+
+.. |Contributors| image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
+   :target: https://github.com/veit/jupyter-tutorial/graphs/contributors
+.. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
+   :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+.. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
+   :target: https://jupyter-tutorial.readthedocs.io/de/latest/
 
 Installation
 ------------
