@@ -10,6 +10,9 @@ _intersphinx
 # spack
 .spack-env
 
+# Node
+node_modules
+
 # Examples
 fortune500.csv
 mprun_demo.py
