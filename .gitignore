@@ -7,6 +7,9 @@
 # Intersphinx objects
 _intersphinx
 
+# spack
+.spack-env
+
 # Examples
 fortune500.csv
 mprun_demo.py
