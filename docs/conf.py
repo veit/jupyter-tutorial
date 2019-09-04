@@ -22,7 +22,7 @@ copyright = '2019, Veit Schiele'
 author = 'Veit Schiele'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.17'
+release = '0.1.18'
 
 
 # -- General configuration ---------------------------------------------------
@@ -87,7 +87,7 @@ html_sidebars = {
 }
 
 # Change default HTML title
-html_title = 'Jupyter Tutorial v0.1.17'
+html_title = 'Jupyter Tutorial v0.1.18'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
