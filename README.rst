@@ -1,5 +1,5 @@
-Erste Schritte
-==============
+Schnelleinstieg
+===============
 
 |Contributors| |License| |Docs|
 
