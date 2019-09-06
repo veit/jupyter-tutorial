@@ -87,7 +87,7 @@ Interactive Computing Protocol
     Protocol*, einem offenen Netzwerkprotokoll basierend auf JSON-Daten über
     `ZMQ <http://zeromq.org/>`_ und `WebSockets
     <https://de.wikipedia.org/wiki/WebSocket>`_. 
-`Kernel <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
+:doc:`jupyter/kernels/index`
     Kernel sind Prozesse, die interaktiven Code in einer bestimmten
     Programmiersprache ausführen und die Ausgabe an den Benutzer zurückgeben.
 
