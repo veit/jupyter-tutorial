@@ -1,3 +1,6 @@
+Erste Schritte
+==============
+
 |Contributors| |License| |Docs|
 
 .. |Contributors| image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
@@ -16,6 +19,10 @@ Installation
 
     $ curl -O https://github.com/veit/jupyter-tutorial/archive/master.zip
     $ unzip master.zip
+
+#. Pipenv installieren
+
+   Siehe :ref:`pipenv-installieren`
 
 #. Python-Pakete installieren:
 

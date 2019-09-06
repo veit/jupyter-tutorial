@@ -5,8 +5,9 @@ Erste Schritte
 .. toctree::
     :hidden:
 
+    install
     create-notebook
     example.ipynb
 
-.. include:: install.rst
+.. include:: ../../README.rst
 
