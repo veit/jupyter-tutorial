@@ -18,7 +18,7 @@ Zielgruppe
 ==========
 
 Die Nutzer von Jupyter-Notebooks sind vielfältig von Daten-Wissenschaftlern über
--Ingenieure und -Analysten bis hin zu Software-Ingenieuren. Meist nehmen sie
+-Ingenieure und -Analysten bis hin zu System-Ingenieuren. Meist nehmen sie
 unterschiedliche Rollen ein, z.B.:
 
 * **Daten-Wissenschaftler** führen beispielsweise Experimente mit verschiedenen
@@ -27,11 +27,11 @@ unterschiedliche Rollen ein, z.B.:
   effizienter und skalierbar.
 * **Daten-Analysten** führen systematische Untersuchungen der Daten durch, wobei
   sie den von Dateningenieuren bereitgestellten Code verwenden.
-* **Software-Ingenieure** erstellen das `Hub <https://jupyter.org/hub>`_, die
+* **System-Ingenieure** erstellen das `Hub <https://jupyter.org/hub>`_, die
   Kernel, Erweiterungen etc. und gewährleisten den möglichst reibungslosen
   Betrieb dieser Infrastruktur.
 
-In diesem Tutorial wenden wir uns zunächst vor allem an Software-Ingenieure, 
+In diesem Tutorial wenden wir uns zunächst vor allem an System-Ingenieure, 
 die eine Plattform auf Basis von Jupyter-Notebooks aufbauen und betreiben
 wollen. In der Folge erläutern wir dann, wie diese Plattform effektiv von
 Datenwissenschaftlern, -Ingenieuren und -Analysten genutzt werden kann.
