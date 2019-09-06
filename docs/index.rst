@@ -23,7 +23,7 @@ unterschiedliche Rollen ein, z.B.:
 
 * **Daten-Wissenschaftler** führen beispielsweise Experimente mit verschiedenen
   Koeffizienten durch und fassen die Ergebnisse zusammen.
-* **Daten-Ingenieure** überprüft die Qualität des Codes und macht ihn robuster,
+* **Daten-Ingenieure** überprüfen die Qualität des Codes und machen ihn robuster,
   effizienter und skalierbar.
 * **Daten-Analysten** führen systematische Untersuchungen der Daten durch, wobei
   sie den von Dateningenieuren bereitgestellten Code verwenden.
