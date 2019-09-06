@@ -17,24 +17,24 @@ und neue Verwendungsmöglichkeiten ermöglichen.
 Zielgruppe
 ==========
 
-Die Nutzer von Jupyter-Notebooks sind vielfältig von Analysten über
-Wissenschaftler bis hin zu Informatikern. Meist nehmen sie unterschiedliche
-Rollen ein:
+Die Nutzer von Jupyter-Notebooks sind vielfältig von Daten-Wissenschaftlern über
+-Ingenieure und -Analysten bis hin zu Software-Ingenieuren. Meist nehmen sie
+unterschiedliche Rollen ein, z.B.:
 
-* *Data Scientists* führen beispielsweise Experimente mit verschiedenen
+* **Daten-Wissenschaftler** führen beispielsweise Experimente mit verschiedenen
   Koeffizienten durch und fassen die Ergebnisse zusammen.
-* *Data Engineers* überprüft die Qualität des Codes und macht ihn robuster,
+* **Daten-Ingenieure** überprüft die Qualität des Codes und macht ihn robuster,
   effizienter und skalierbar.
-* *Data Analysts* führen systematische Untersuchungen der Daten durch, wobei
-  sie den von *Data Engineers* bereitgestellten Code verwenden.
-* *Software Engineers* erstellen das `Hub <https://jupyter.org/hub>`_, die
+* **Daten-Analysten** führen systematische Untersuchungen der Daten durch, wobei
+  sie den von Dateningenieuren bereitgestellten Code verwenden.
+* **Software-Ingenieure** erstellen das `Hub <https://jupyter.org/hub>`_, die
   Kernel, Erweiterungen etc. und gewährleisten den möglichst reibungslosen
   Betrieb dieser Infrastruktur.
 
-In diesem Tutorial wenden wir uns zunächst vor allem an *Software Engineers*,
+In diesem Tutorial wenden wir uns zunächst vor allem an Software-Ingenieure, 
 die eine Plattform auf Basis von Jupyter-Notebooks aufbauen und betreiben
 wollen. In der Folge erläutern wir dann, wie diese Plattform effektiv von
-*Data Scientists*, *Data Engineers* und *Data Analysts* genutzt werden kann.
+Datenwissenschaftlern, -Ingenieuren und -Analysten genutzt werden kann.
 
 Use Cases
 =========
