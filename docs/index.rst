@@ -3,7 +3,7 @@ Jupyter Tutorial
 ================
 
 Motivation
-==========
+----------
 
 `Jupyter-Notebooks <https://jupyter-notebook.readthedocs.io/>`_ erfreuen sich
 bei Datenwissenschaftlern wachsender Beliebtheit und werden zum
@@ -15,7 +15,7 @@ zusätzliche Komponenten, die die ursprünglichen Grenzen ihrer Nutzung erweiter
 und neue Verwendungsmöglichkeiten ermöglichen.
 
 Zielgruppe
-==========
+----------
 
 Die Nutzer von Jupyter-Notebooks sind vielfältig von Daten-Wissenschaftlern über
 -Ingenieure und -Analysten bis hin zu System-Ingenieuren. Meist nehmen sie
@@ -37,7 +37,7 @@ wollen. In der Folge erläutern wir dann, wie diese Plattform effektiv von
 Datenwissenschaftlern, -Ingenieuren und -Analysten genutzt werden kann.
 
 Use Cases
-=========
+---------
 
 Wenn wir uns einen typischen Workflow genauer anschauen, können wir sehen, wie
 die verschiedenen Aufgaben ineinandergreifen:
@@ -55,7 +55,7 @@ die verschiedenen Aufgaben ineinandergreifen:
    Schulungsmodelle bereit.
 
 Warum Jupyter?
-==============
+--------------
 
 Wie können nun diese vielfältigen Aufgaben vereinfacht werden? Es wird sich
 kaum ein Werkzeug finden, das all diese Aufgaben abdeckt und selbst für einzelne
@@ -92,7 +92,7 @@ Interactive Computing Protocol
     Programmiersprache ausführen und die Ausgabe an den Benutzer zurückgeben.
 
 Jupyter-Infrastruktur
-=====================
+---------------------
 
 Eine Plattform für die oben genannten Use Cases erfordert eine umfangreiche
 Infrastruktur, die icht nur die Bereitstellung der Kernel sowie die
