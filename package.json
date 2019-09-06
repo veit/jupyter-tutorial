@@ -1,6 +1,6 @@
 {
   "name": "jupyter-tutorial",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "Aufbau und Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks",
   "main": "",
   "directories": {
