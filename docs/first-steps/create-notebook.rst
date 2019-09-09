@@ -11,8 +11,6 @@ In eurem Standard-Browser solltet ihr das Notebook-Dashboard mit dem Menü *New*
 auf der rechten Seite sehen. In diesem Menü werden alle Notebook-Kernel
 aufgeführt, initial jedoch vermutlich nur *Python 3*.
 
-
-
 Nachdem ihr :menuselection:`New --> Python 3` ausgewählt habt, wird ein neues
 Notebook ``Untitled.ipynb`` erstellt und in einem neuen Reiter angezeigt:
 
