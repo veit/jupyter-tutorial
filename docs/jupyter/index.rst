@@ -19,7 +19,7 @@ Jupyter
             label="Jupyter",
             tooltip="Jupyter lokal installieren",
             target="_top",
-            href="../first-steps/install.html"]
+            href="../jupyter/notebook/index.html"]
         hub [
             label="JupyterHub",
             tooltip="JupyterHub\ninstallieren",
@@ -112,11 +112,4 @@ Jupyter
     dashboards/index
     nbsphinx
     use-cases
-
-Feinabstimmung
-~~~~~~~~~~~~~~
-
-* :doc:`../../first-steps/create-notebook`
-* :doc:`notebook/shortcuts`
-* :doc:`notebook/config`
 
