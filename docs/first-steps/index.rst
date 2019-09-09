@@ -1,8 +1,11 @@
+==============
 Erste Schritte
 ==============
 
 .. toctree::
     :hidden:
+    :titlesonly:
+    :maxdepth: 0
 
     install
     create-notebook

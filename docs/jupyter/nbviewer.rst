@@ -1,5 +1,5 @@
-Jupyter Notebook Viewer: ``nbviewer``
-=====================================
+``nbviewer``
+============
 
 `nbviewer <https://github.com/jupyter/nbviewer>`_
     :doc:`nbconvert` als Web-Service: Rendert Jupyter Notebooks als statische
@@ -67,7 +67,7 @@ Der Notebook-Viewer lässt sich um Provider erweitern, s.
 Zugriffsbeschränkung
 --------------------
 
-Wenn der Viewer als :doc:`jupyterhub/nbviewer-service` ausgeführt wird, können nur Benutzer, die
+Wenn der Viewer als :doc:`hub/nbviewer-service` ausgeführt wird, können nur Benutzer, die
 sich am JupyterHub authentifiziert haben, auf die Notebooks des nbviewer
 zugreifen.
 

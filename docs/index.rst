@@ -1,5 +1,38 @@
-Jupyter Tutorial
 ================
+Jupyter-Tutorial
+================
+
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    first-steps/index
+    ipython/index
+    jupyter/index
+    reproduce/index
+    refactoring/index
+
+.. Indices and tables
+   ==================
+
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
+
+|Contributors| |License| |Docs|
+
+.. |Contributors| image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
+   :target: https://github.com/veit/jupyter-tutorial/graphs/contributors
+.. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
+   :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+.. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
+   :target: https://jupyter-tutorial.readthedocs.io/de/latest/
+
+----
+
+Einführung
+==========
 
 Motivation
 ----------
@@ -30,7 +63,7 @@ unterschiedliche Rollen ein, z.B.:
   Kernel, Erweiterungen etc. und gewährleisten den möglichst reibungslosen
   Betrieb dieser Infrastruktur.
 
-In diesem Tutorial wenden wir uns zunächst vor allem an System-Ingenieure, 
+In diesem Tutorial wenden wir uns zunächst vor allem an System-Ingenieure,
 die eine Plattform auf Basis von Jupyter-Notebooks aufbauen und betreiben
 wollen. In der Folge erläutern wir dann, wie diese Plattform effektiv von
 Datenwissenschaftlern, -Ingenieuren und -Analysten genutzt werden kann.
@@ -48,7 +81,7 @@ die verschiedenen Aufgaben ineinandergreifen:
    Daten umfassen.
 #. **Datenvalidierung** ist eine wiederkehrende Aufgabe, die die Ansicht von
    Beispieldaten, aggregierte Analysen sowie die Visualisierung von Daten
-   umfasst. 
+   umfasst.
 #. **Produktrealisierung** findet erst zu einem späten Zeitpunkt des
    Projekts statt und stellt z.B. Software-Pakete für die Produktion oder
    Schulungsmodelle bereit.
@@ -85,7 +118,7 @@ Interactive Computing Protocol
     Das Notebook kommuniziert mit Rechenkernel über das *Interactive Computing
     Protocol*, einem offenen Netzwerkprotokoll basierend auf JSON-Daten über
     `ZMQ <http://zeromq.org/>`_ und `WebSockets
-    <https://de.wikipedia.org/wiki/WebSocket>`_. 
+    <https://de.wikipedia.org/wiki/WebSocket>`_.
 :doc:`jupyter/kernels/index`
     Kernel sind Prozesse, die interaktiven Code in einer bestimmten
     Programmiersprache ausführen und die Ausgabe an den Benutzer zurückgeben.
@@ -103,22 +136,4 @@ unsere Datenplattform mit *Streaming Pipelines* und *Domain Driven Data Stores*
 eingehen würde. Ich werde mich daher darauf beschränken, wie Nutzer in ihrem
 Home-Verzeichnis Notebooks erstellen und ausführen können. Auf diese Datei kann
 der Nutzer dann sowohl mit Jupyter Notebook wie auch mit dem Terminal zugreifen.
-
-.. toctree::
-    :hidden:
-    :titlesonly:
-    :maxdepth: 0
-
-    first-steps/index
-    ipython/index
-    jupyter/index
-    reproduce/index
-    refactoring/index
-
-.. Indices and tables
-   ==================
-
-   * :ref:`genindex`
-   * :ref:`modindex`
-   * :ref:`search`
 

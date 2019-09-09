@@ -1,9 +1,6 @@
 Jupyter
 =======
 
-Was wollt ihr machen?
----------------------
-
 .. graphviz::
 
     digraph decide_jupyter {
@@ -102,27 +99,24 @@ Was wollt ihr machen?
 
 .. toctree::
     :hidden:
+    :titlesonly:
+    :maxdepth: 0
 
-    ../first-steps/install
-    jupyterhub/index
+    notebook/index
+    hub/index
     nbconvert
     nbviewer
     kernels/index
     ipywidgets/index
     nbextensions/index
     dashboards/index
-    ../jupyter/ipywidgets/embedding
     nbsphinx
     use-cases
 
 Feinabstimmung
---------------
+~~~~~~~~~~~~~~
 
-.. toctree::
-    :titlesonly:
-    :maxdepth: 1
-
-    ../first-steps/create-notebook
-    shortcuts
-    config
+* :doc:`../../first-steps/create-notebook`
+* :doc:`notebook/shortcuts`
+* :doc:`notebook/config`
 

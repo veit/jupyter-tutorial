@@ -1,5 +1,5 @@
-Notebooks in Sphinx einbetten: ``nbsphinx``
-===========================================
+``nbsphinx``
+============
 
 :doc:`nbsphinx <nbsphinx:index>` ist eine :doc:`Sphinx
 <sphinx:contents>`-Erweiterung, die einen Parser für ``*.ipynb``-Dateien

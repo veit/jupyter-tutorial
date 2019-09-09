@@ -11,6 +11,8 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
 
 .. toctree::
     :hidden:
+    :titlesonly:
+    :maxdepth: 0
 
     start
     magics.ipynb

@@ -1,9 +1,17 @@
-=======
 Kernels
 =======
 
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    install
+    python2
+    r
+
 Überblick
-=========
+---------
 
 Das Jupyter-Team verwaltet den `IPython-Kernel
 <https://github.com/ipython/ipykernel>`_. Zusätzlich zu Python können in
@@ -23,13 +31,4 @@ Jupyter-Kernels weit verbreitet:
 
 Eine Liste verfügbarer Kernel findet ihr unter `Jupyter kernels
 <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_.
-
-.. toctree::
-    :hidden:
-    :titlesonly:
-    :maxdepth: 3
-
-    install
-    python2
-    r
 

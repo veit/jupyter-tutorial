@@ -35,11 +35,11 @@ Dashboards
 .. toctree::
     :titlesonly:
     :hidden:
-    :maxdepth: 3
+    :maxdepth: 0
 
     jupyter-dashboards/index
-    ../nbviewer
     appmode/index
+    ../nbviewer
     panel/index
     Voila <https://github.com/QuantStack/voila>
     Bokeh <http://bokeh.org/>
