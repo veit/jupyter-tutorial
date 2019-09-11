@@ -18,7 +18,7 @@ Dashboards
     Bokeh-Plots unterstützt, s.a. `Panel: Ahigh-level app and dashboarding
     solution for the PyData ecosystem
     <https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52>`_.
-`Voila <https://github.com/QuantStack/voila>`_
+:doc:`voila/index`
     wurde von `QuantStack <http://quantstack.net/>`_ entwickelt, s.a. `And
     voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
 `Bokeh <http://bokeh.org/>`_
@@ -41,7 +41,7 @@ Dashboards
     appmode/index
     ../nbviewer
     panel/index
-    Voila <https://github.com/QuantStack/voila>
+    voila/index
     Bokeh <http://bokeh.org/>
     Bowtie <https://github.com/jwkvam/bowtie>
     Flask <https://palletsprojects.com/p/flask/>

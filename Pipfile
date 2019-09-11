@@ -37,6 +37,11 @@ appmode = "*"
 panel = "*"
 holoviews = {extras = ["recommended"], version = "*"}
 hvplot = "*"
+voila = "*"
+voila-gridstack = "*"
+voila-debug = "*"
+ipyvuetify = "*"
+voila-vuetify = "==0.0.1a8"
 
 [dev-packages]
 
