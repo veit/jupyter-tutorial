@@ -13,7 +13,6 @@ Jupyter
             shape=diamond,
             label="Was wollt ihr machen?",
             tooltip="Jupyter bietet euch verschiedene Möglichkeiten, wie ihr die Notebooks nutzen könnt"]
-        //  style=filled, color="green"]
         // Second Level
         jupyter [
             label="Jupyter",
@@ -90,7 +89,7 @@ Jupyter
         what -> examples [label="Beispiele"]
         extensions -> {widgets extend dash}
         embed -> {html sphinx}
-        // Arangement
+        // Arrangement
         {rank = same; what;}
         {rank = same; jupyter; hub; nbconvert; kernels; extensions; embed; examples;}
         {rank = same; widgets; extend; dash;}
