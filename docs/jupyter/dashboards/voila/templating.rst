@@ -1,6 +1,8 @@
 Templating
 ==========
 
+.. _voila-gridstack:
+
 Voila-Gridstack
 ---------------
 

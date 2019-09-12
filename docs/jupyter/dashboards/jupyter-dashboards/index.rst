@@ -24,15 +24,23 @@ Die Jupyter Dashboards sollten folgendes Problem lösen:
 #. Alice aktualisiert ihr Jupyter Notebook und stellt das Dashboard anschließend
    erneut auf dem Dashboard-Server bereit.
 
-Für die Schritte 3–5 werden zusätzlich `Jupyter Dashboards Bundler
-<https://github.com/jupyter-attic/dashboards_bundlers>`_ und `Jupyter Dashboards
-Server <https://github.com/jupyter-attic/dashboards_server>`_ benötigt; beide
-sind jedoch mittlerweile in Status *retired*, sollten also nicht weiter
-verwendet werden.
+.. note::
+    Für die Schritte 3–5 werden zusätzlich `Jupyter Dashboards Bundler
+    <https://github.com/jupyter-attic/dashboards_bundlers>`_ und `Jupyter
+    Dashboards Server <https://github.com/jupyter-attic/dashboards_server>`_
+    benötigt; beide sind jedoch mittlerweile in Status *retired*, sollten also
+    nicht weiter verwendet werden.
+
+    Die Roadmap für das :ref:`Voila-Gridstack-Template <voila-gridstack>` sieht
+    vor, die gesamte Spezifikation für die Jupyter-Dashboards zu unterstützen.
+    Aktuell ist das Voilà-Gridstack-Template jedoch noch in einem frühen
+    Entwicklungsstadium s.a. `And voilà!
+    <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
 
 .. toctree::
+    :hidden:
     :titlesonly:
-    :maxdepth: 3
+    :maxdepth: 0
 
     install
     use
