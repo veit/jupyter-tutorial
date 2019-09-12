@@ -81,7 +81,7 @@ html_theme_options = {
     'github_banner': False,
     'github_button': False,
     'show_related': True,
-    'show_relbar_bottom': False,
+    'show_relbar_bottom': True,
     'sidebar_includehidden': True,
 }
 
