@@ -21,11 +21,6 @@ Dashboards
 :doc:`voila/index`
     wurde von `QuantStack <http://quantstack.net/>`_ entwickelt, s.a. `And
     voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
-`Bokeh <http://bokeh.org/>`_
-    ist eine Bibliothek für Plots, Widgets und Apps sowie ein Server für
-    Plots und Dashboards.
-`Bowtie <https://github.com/jwkvam/bowtie>`_
-    von Jacques Kvam entwickelt zum Schreiben von Dashboards in Python.
 `Flask <https://palletsprojects.com/p/flask/>`_
     ist ein in Python geschriebener Webserver, der zum Erstellen beliebiger
     Websites verwendet werden kann, einschließlich solcher mit Python-Plots,
@@ -42,7 +37,5 @@ Dashboards
     ../nbviewer
     panel/index
     voila/index
-    Bokeh <http://bokeh.org/>
-    Bowtie <https://github.com/jwkvam/bowtie>
     Flask <https://palletsprojects.com/p/flask/>
 
