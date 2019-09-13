@@ -30,7 +30,7 @@ Installation
 
     $  pip3 install --user pipenv
 
-   Dies installiert pipenv in ``USER_BASE``.
+   Dies installiert Pipenv in ``USER_BASE``.
 
 #. ``USER_BASE`` ermitteln und in ``PATH`` eintragen:
 

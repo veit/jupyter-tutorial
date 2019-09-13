@@ -10,7 +10,7 @@ habt, so kann ``pipenv`` diese Abhängigkeiten auflösen. Sofern die
 ``$ pipenv install`` oder falls sie in einem anderen Verzeichnis liegt mit
 ``$ pipenv install -r /path/to/requirements.txt``.
 
-Umgekehrt könnt ihr auch aus einer bestehenden pipenv-Umgebung eine
+Umgekehrt könnt ihr auch aus einer bestehenden Pipenv-Umgebung eine
 ``requirements.txt``-Datei erzeugen mit:
 
 .. code-block:: console

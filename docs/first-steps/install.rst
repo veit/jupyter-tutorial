@@ -25,7 +25,7 @@ versehentlich systemweite Pakete überschrieben werden:
 
 .. note::
     
-   Wenn pipenv nach der Installation nicht in der Shell verfügbar ist, muss
+   Wenn Pipenv nach der Installation nicht in der Shell verfügbar ist, muss
    ggf. das ``USER_BASE/bin``-Verzeichnis in ``PATH`` angegeben werden. 
 
    * Unter Linux und MacOS lässt sich ``USER_BASE`` ermitteln mit:

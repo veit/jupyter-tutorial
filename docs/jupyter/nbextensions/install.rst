@@ -1,7 +1,7 @@
 Installation
 ============
 
-#. Installation mit ``pipenv``:
+#. Installation mit Pipenv:
 
    .. code-block:: console
 
