@@ -58,6 +58,11 @@ System-Service für JupyterHub
 #. Um sicherzustellen, dass der Dienst auch bei einem Systemstart mitgeladen
    wird, wird folgendes aufgerufen:
 
+   .. code-block:: console
+
+    $ systemctl enable jupyterhub.service
+    systemctl enable jupyterhub.service
+
 TLS-Verschlüsselung
 -------------------
 
