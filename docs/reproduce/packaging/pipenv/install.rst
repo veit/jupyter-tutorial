@@ -117,7 +117,7 @@ virtuellen Umgebungen:
     $ mkdir myproject
     $ cd !$
     cd myproject
-    $ $ pipenv install requests
+    $ pipenv install requests
     Creating a virtualenv for this project..
     …
     Virtualenv location: /Users/veit/.local/share/virtualenvs/myproject-9TTuTZjx

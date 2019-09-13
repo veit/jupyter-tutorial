@@ -6,7 +6,7 @@ mit:
 
 .. code-block:: console
 
-    veit$ pipenv install panel
+    $ pipenv install panel
     Installing panel…
     Collecting panel
     …
