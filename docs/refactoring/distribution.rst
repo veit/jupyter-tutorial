@@ -16,7 +16,7 @@ Paket-Index hochgeladen und mit :term:`Pip` installiert werden können.
     Weitere Infos zu ``sdist`` erhaltet ihr in `Creating a Source Distribution
     <https://docs.python.org/2/distutils/sourcedist.html#creating-a-source-distribution>`_.
    ``bdist_wheel``
-    erstellt ein ZIP-Archiv, mit speziell formattiertem Dateinamen und
+    erstellt ein ZIP-Archiv, mit speziell formatiertem Dateinamen und
     ``.whl``-Suffix. Es enthält alle Dateien für eine `PEP 376
     <https://www.python.org/dev/peps/pep-0376/>`_ kompatible Installation.
 

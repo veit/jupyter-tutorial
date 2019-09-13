@@ -60,11 +60,11 @@ Erweiterungsmodule alle drei Anwendungsfälle:
 Nachteile
 ---------
 
-Früher war Der Hauptnachteil bei der Verwendung von Binary Extensions, dass
+Früher war der Hauptnachteil bei der Verwendung von Binary Extensions, dass
 dadurch die Distribution der Software erschwert wurde. Heute ist dieser Nachteil
 durch :term:`wheel` kaum noch vorhanden. Einige Nachteile bleiben dennoch:
 
-* Die Installation aus den Sourcen bleibt weiterhin kompiziert.
+* Die Installation aus den Sourcen bleibt weiterhin kompliziert.
 * Ggf. gibt es kein passendes :term:`wheel` für den verwendeten Build des
   CPython-Interpreters oder alternativen Interpretern wie `PyPy
   <https://pypy.org/>`_, `IronPython <http://ironpython.net/>`_ oder `Jython
@@ -74,7 +74,7 @@ durch :term:`wheel` kaum noch vorhanden. Einige Nachteile bleiben dennoch:
   vertraut sein müssen. Zudem erhöht sich die Komplexität, wenn neben der
   Binary Extension auch eine Python-Fallback-Implementierung bereitgestellt
   wird.
-* Schließlich funktioniern häufig auch Importmechanismen, wie der direkte
+* Schließlich funktionieren häufig auch Importmechanismen, wie der direkte
   Import aus ZIP-Dateien, nicht für Extensions-Module.
 
 Alternativen
@@ -180,8 +180,8 @@ In Fällen, in denen das Erweiterungsmodul das zugrunde liegende Betriebssystem
 oder die Hardware (statt der CPython-Runtime) manipuliert, ist es manchmal
 besser, eine normale C-Bibliothek (oder eine Bibliothek in einer anderen
 Programmiersprache wie C ++ oder Rust) zu schreiben, die eine C-kompatible ABI),
-bereitstewllt und vnschließend eine der oben beschriebenen Wrapping-Techniken zu
-erwenden um das Interface als importierbares Python-Modul verfügbar zu machen.
+bereitstellt und anschließend eine der oben beschriebenen Wrapping-Techniken zu
+verwenden um das Interface als importierbares Python-Modul verfügbar zu machen.
 
 Implementierung
 ---------------

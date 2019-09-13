@@ -239,7 +239,7 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
 
   #. Konkretisierung
 
-     Die detailierte Herkunft wird mit dem installierten Paket in
+     Die detaillierte Herkunft wird mit dem installierten Paket in
      ``spec.yaml`` gespeichert:
 
      .. code-block:: yaml

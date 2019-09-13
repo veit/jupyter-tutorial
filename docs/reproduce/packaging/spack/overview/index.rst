@@ -16,14 +16,14 @@ Sie bieten meist keine Unterstützung für kombinatorische Versionierung.
 * Traditionelle Binärpaketmanager wie RPM, yum, APT, yast, etc.
 
     * sind konzipiert um einen einzelnen Software-Stack zu verwalten
-    * instllieren eine Version eines Pakets
+    * installieren eine Version eines Pakets
     * üblicherweise problemlose Upgrades auf einen stabilen, gut getesteten
       Stack
 
 * Port-Systeme
 
     * BSD Ports, portage, NixOS, Macports, Homebrew, etc.
-    * meist kaum Unterstützng für Builds, die parametrisiert sind durch
+    * meist kaum Unterstützung für Builds, die parametrisiert sind durch
       Compiler oder abhängige Versionen
 
 * Virtuelle Maschinen und Linux-Container

@@ -42,7 +42,7 @@ Arbeit zu verstehen: was ihr getan habt und warum.
 
 Merge-Requests initiieren eine Diskussion über ein Bündel von Commits. Da sie
 eng in das  zugrunde liegenden Git-Repository integriert sind, können alle
-Projektbetieligten genau sehen, welche Änderungen zusammengeführt werden würden,
+Projektbeteiligten genau sehen, welche Änderungen zusammengeführt werden würden,
 wenn die Anfrage akzeptiert wird.
 
 Ihr könnt einen Merge-Request auch jederzeit stellen, wenn ihr nicht

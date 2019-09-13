@@ -3,8 +3,8 @@ Service ``nbviewer`` erstellen
 
 #. Die Konfigurieren des Notebook-Viewer als JupyterHub-Service hat den
    Vorteil, dass nur Benutzer, die sich zuvor beim JupyterHub angemeldet haben,
-   die nbviewer-Instanz aufrufen können. Damit kann der Zugriff auf Notebooks geschützt
-   werden, als JupyterHub-Service in
+   die ``nbviewer``-Instanz aufrufen können. Damit kann der Zugriff auf
+   Notebooks geschützt werden, als JupyterHub-Service in
    ``/srv/jupyter/jupyter-tutorial/jupyterhub_config.py``::
 
     c.JupyterHub.services = [
@@ -19,9 +19,9 @@ Service ``nbviewer`` erstellen
    ``name``
     Der Pfadname unter dem der Notebook-Viewer erreichbar ist: ``/services/<name>``
    ``url``
-    Protokoll, Adresse und Port, die nbviewer verwendet
+    Protokoll, Adresse und Port, die ``nbviewer`` verwendet
    ``cwd``
-    Der Pfad zum nbviewer-Repository
+    Der Pfad zum ``nbviewer``-Repository
    ``command``
-    Kommando um nbviewer zu starten
+    Kommando um ``nbviewer`` zu starten
 

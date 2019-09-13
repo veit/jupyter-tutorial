@@ -32,8 +32,8 @@ Hierfür stellt das *Widgets*-Menü mehrere Optionen zur Verfügung:
     unterstützen, wird der RequireJS-Embedder verwendet.
 
     .. note::
-        Das erste Skripttag lädt RequireJS von einem CDN. RequireJS sollte
-        jedoch auf der Site selbst zur Verfügung gestellt und dieser Skripttag
+        Das erste Skript-Tag lädt RequireJS von einem CDN. RequireJS sollte
+        jedoch auf der Site selbst zur Verfügung gestellt und dieser Skript-Tag
         gelöscht werden.
 
     .. note::
@@ -43,7 +43,7 @@ Hierfür stellt das *Widgets*-Menü mehrere Optionen zur Verfügung:
 
         Wenn ihr nur Standard-Widgets einbettet und RequireJS nicht verwendet,
         könnt ihr die ersten beiden Skript-Tags durch ein Skript-Tag ersetzen,
-        das den Standard-Einbetter lädt.
+        das das Standard-Skript lädt.
 
 *Download Widget State*
     Die Option lädt eine JSON-Datei herunter, die den serialisierten Status

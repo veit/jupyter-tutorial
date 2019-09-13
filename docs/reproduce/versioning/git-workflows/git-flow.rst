@@ -17,7 +17,7 @@ praktisch die folgenden beiden Probleme hat:
   ausgeführt wird. Bei Git Flow entsteht nun zusätzlicher Aufwand da immer
   zunächst in den ``develop``-Branch gewechselt werden muss. 
 * Auch die ``hotfixes``- und ``release``-Branches bringen eine zusätzliche
-  Komplexität, die nur in den seltesten Fällen Vorteile bringen dürfte.
+  Komplexität, die nur in den seltensten Fällen Vorteile bringen dürfte.
 
 Als Reaktion auf die Probleme von Git Flow entwickelten `GitHub
 <https://guides.github.com/introduction/flow/>`_ und `Atlassian

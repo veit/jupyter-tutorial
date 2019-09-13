@@ -41,9 +41,11 @@ Git Best Practices
 
 - Macht oft Commits!
 
-  Dies erleichtert euch, einen Fehler eingrenzen zu können. Gleichzeitig
-  erleicht dies das Verständnis für den Code und erleichtert uns die
-  zukünftige Wartung und Pflege.
+  Dies erleichtert euch:
+
+  - die Eingrenzung von Fehlern
+  - das Verständnis für den Code
+  - die zukünftige Wartung und Pflege.
 
   Falls ihr doch einmal mehrere Änderungen an einer Datei durchgeführt habt,
   könnt ihr diese auch später noch in mehrere Commits aufteilen mit:
@@ -57,7 +59,7 @@ Git Best Practices
   Auch wenn ihr zu einem späteren Zeitpunkt herausfindet, dass ein Commit, der
   mit ``git push`` bereits veröffentlicht wurde, einen oder mehrere Fehler
   enthält, so solltet ihr dennoch niemals versuchen, diesen Commit ungeschehen zu
-  machen. Vielmehr solltest Du durh weitere Commits den oder die aufgetretenen
+  machen. Vielmehr solltest Du durch weitere Commits den oder die aufgetretenen
   Fehler zu beheben.
 
 - Wählt einen Git-Workflow!
@@ -80,11 +82,11 @@ Git Best Practices
   ``git log --oneline``.
 
   Mit ``git blame`` könnt ihr euch auch später noch für jede Zeile angeben
-  lassen, in welcher Revision und von welchem Autor sie kam. Weeitere
+  lassen, in welcher Revision und von welchem Autor sie kam. Weitere
   Informationen hierzu findet ihr in der Git-Dokumentation: `git-blame
   <https://git-scm.com/docs/git-blame>`_.
   
-  GitLab interpretiert bestimmte Commit-Nachrichten auch als Links interpetieren, z.B.:
+  GitLab interpretiert bestimmte Commit-Nachrichten auch als Links interpretieren, z.B.:
 
   .. code-block:: console
 

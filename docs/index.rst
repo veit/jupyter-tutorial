@@ -127,7 +127,7 @@ Jupyter-Infrastruktur
 ---------------------
 
 Eine Plattform für die oben genannten Use Cases erfordert eine umfangreiche
-Infrastruktur, die icht nur die Bereitstellung der Kernel sowie die
+Infrastruktur, die nicht nur die Bereitstellung der Kernel sowie die
 Parametrisierung, Zeitsteuerung und Parallelisierung von Notebooks erlaubt,
 sondern darüberhinaus auch die gleichmäßige Bereitstellung der Ressourcen.
 

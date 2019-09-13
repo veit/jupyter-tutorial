@@ -5,7 +5,7 @@
     konvertiert Notebooks in andere Formate
 
 .. seealso::
-    :doc:`/first-steps/install`: nbconvert ist Teil des Jupyter-Ökosystems.
+    :doc:`/first-steps/install`: ``nbconvert`` ist Teil des Jupyter-Ökosystems.
 
 Installation
 ------------
@@ -15,15 +15,15 @@ Installation
     $ pipenv install nbconvert
 
 .. important::
-    Um alle Funktionen von nbconvert nutzen zu können, sind Pandoc und TeX
+    Um alle Funktionen von ``nbconvert`` nutzen zu können, sind Pandoc und TeX
     (insbesondere XeLaTeX) erforderlich. Diese müssen separat installiert
     werden.
 
 Pandoc installieren
 ~~~~~~~~~~~~~~~~~~~
 
-nbconvert verwendet `Pandoc <http://pandoc.org/>`_ um Markdown in andere Formate
-als HTML zu konvertieren. 
+``nbconvert`` verwendet `Pandoc <http://pandoc.org/>`_ um Markdown in andere
+Formate als HTML zu konvertieren. 
 
 * für Ubuntu und Debian:
 
@@ -40,7 +40,7 @@ als HTML zu konvertieren.
 Tex installieren
 ~~~~~~~~~~~~~~~~
 
-Für die Konvertierung in PDF verwendet nbconvert das Tex-Ökosystem zur
+Für die Konvertierung in PDF verwendet ``nbconvert`` das Tex-Ökosystem zur
 Vorbereitung: Es wird eine ``.tex``-Datei erstellt, die von der XeTeX-Engine
 in ein PDF konvertiert wird.
 
@@ -127,7 +127,7 @@ Verwenden auf der Kommandozeile
 
 .. note::
     Für Vortragsnotizen ist eine lokale Kopie von ``reveal.js``
-    erforderlich. Damit nbconvert diese findet, kann folgende Option
+    erforderlich. Damit ``nbconvert`` diese findet, kann folgende Option
     angegeben werden: ``--reveal-prefix /path/to/reveal.js``.
 
 Weitere Angaben für ``FORMAT`` sind ``asciidoc``, ``custom``, ``html``,

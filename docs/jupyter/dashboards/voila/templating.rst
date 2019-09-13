@@ -38,7 +38,7 @@ Verwendung
 ~~~~~~~~~~
 
 Um ``voila-vuetify`` in einem Notebook zu verwenden, müsst ihr zunächst
-``ipyvuetify`` importeren:
+``ipyvuetify`` importieren:
 
 .. code-block:: python
 

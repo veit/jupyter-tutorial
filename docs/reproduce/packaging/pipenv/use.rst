@@ -6,7 +6,7 @@ Beispiel
 
 Nachdem nun ``requests`` installiert ist, kann es verwendet werden.
 
-#. Examplarisch legen wir hierfür die Datei ``main.py`` mit folgendem Inhalt
+#. Exemplarisch legen wir hierfür die Datei ``main.py`` mit folgendem Inhalt
    an:
 
 .. code-block:: python
@@ -249,7 +249,7 @@ hinzu. ``pipenv install`` kennt die folgenden Optionen:
 
 ``--sequential``
     installiert die Abhängigkeit in einer bestimmten Reihenfolge, nicht
-    gleichzeitg.
+    gleichzeitig.
 
     Dies verlangsamt zwar die Installation, erhöht jedoch die Determinierbarkeit
     der Builds.
@@ -401,7 +401,7 @@ z.B.:
 ---------
 
 ``pipenv shell`` spawnt eine Shell, im virtual environment. Damit erhaltet ihr
-euch inen Python-Interpreter, der alle Python-Pakete enthält und sich somit
+einen Python-Interpreter, der alle Python-Pakete enthält und sich somit
 hervorragend z.B. zum Debugging und Testen eignet:
 
 .. code-block:: console

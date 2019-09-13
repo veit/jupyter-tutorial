@@ -40,7 +40,7 @@ eine große Anzahl von Refs
     lassen und mit ``git gc`` werden lose *Refs* in einer einzigen Datei
     zusammengefasst.
 
-    Jede Operation, die den Commit-Verlauf eines Repositorys durchlaufen und die
+    Jede Operation, die den Commit-Verlauf eines Repositories durchlaufen und die
     einzelnen *Refs* berücksichtigen muss, wie z.B. bei ``git branch --contains
     <commit>``, werden bei einem Repo mit vielen *Refs* langsam.
 

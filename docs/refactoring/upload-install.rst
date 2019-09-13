@@ -21,7 +21,7 @@ müsst ihr jedoch zunächst twine installieren mit:
     Collecting twine
     …
 
-Nach der Installation von Twine könnt ihr alle ARchive unter ``/dist`` auf den
+Nach der Installation von Twine könnt ihr alle Archive unter ``/dist`` auf den
 Python Package Index hochladen mit:
 
 .. code-block:: console

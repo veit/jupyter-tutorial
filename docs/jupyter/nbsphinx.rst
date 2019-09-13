@@ -83,7 +83,7 @@ Timeout
 Benutzerdefinierte Formate
     Bibliotheken wie z.B. `jupytext <https://github.com/mwouts/jupytext>`_
     speichern Notebooks in anderen Formaten ab, z.B. als *R-Markdown* mit dem
-    Suffix ``Rmd``. Damit diese von ``nbsphinx`` ebnefalls ausgeführt werden
+    Suffix ``Rmd``. Damit diese von ``nbsphinx`` ebenfalls ausgeführt werden
     können, können in der Sphinx-Konfigurationsdatei ``conf.py`` mit
     ``nbsphinx_custom_formats`` weitere Formate angegeben werden, z.B.
 
