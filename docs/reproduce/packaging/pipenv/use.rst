@@ -402,7 +402,7 @@ z.B.:
 
 ``pipenv shell`` spawnt eine Shell, im virtual environment. Damit erhaltet ihr
 euch inen Python-Interpreter, der alle Python-Pakete enthält und sich somit
-hervorragend z.B. zum Debuggen und Testen eignet:
+hervorragend z.B. zum Debugging und Testen eignet:
 
 .. code-block:: console
 

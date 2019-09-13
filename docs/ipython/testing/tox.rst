@@ -2,7 +2,7 @@ tox
 ===
 
 `tox <https://tox.readthedocs.io/>`_ ist ein Tool zur Automatisierung des
-Twwt-Environment-Management und zum Testen mit mehreren
+``virtualenv``-Environment-Management und zum Testen mit mehreren
 Interpreter-Konfigurationen.
 
 Mit ``tox`` könnt ihr komplexe Multiparameter-Testmatrizen über eine einfache

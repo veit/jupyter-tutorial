@@ -14,7 +14,7 @@ JupyterHub-Konfiguration
    * :doc:`JupyterHub Configuration Basics <jupyterhub:getting-started/index>`
    * :doc:`JupyterHub Networking basics <jupyterhub:getting-started/networking-basics>`
 
-System service für JupyterHub
+System-Service für JupyterHub
 -----------------------------
 
 #. Ermitteln des *Python Virtual Environment*:

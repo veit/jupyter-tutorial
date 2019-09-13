@@ -24,7 +24,7 @@ Interactive Computing Protocol:
     offenes Netzwerkprotokoll basierend auf JSON-Daten über `ZMQ
     <http://zeromq.org/>`_ und `WebSockets
     <https://de.wikipedia.org/wiki/WebSocket>`_. 
-Motebook Document Format:
+Notebook Document Format:
     offenes, auf JSON basierendes Dokumentenformat mit vollständigen
     Aufzeichnungen der Sitzungen des Benutzers und des enthalten Code.
 Kernel:

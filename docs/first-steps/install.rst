@@ -96,7 +96,7 @@ virtuellen Umgebungen:
         Or copy and paste one of these URLs:
             http://localhost:8888/?token=53abd45a3002329de77f66886e4ca02539d664c2f5e6072e
 
-Daraufhin wird euer Standardwebbrowser mit dieser URL geöffnet.
+Daraufhin wird euer Standard-Webbrowser mit dieser URL geöffnet.
 
 Wenn das Notebook in eurem Browser geöffnet wird, wird das Notebook-Dashboard
 mit einer Liste der Notebooks, Dateien und Unterverzeichnisse in dem Verzeichnis
