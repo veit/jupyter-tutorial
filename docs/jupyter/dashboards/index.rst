@@ -21,11 +21,6 @@ Dashboards
 :doc:`voila/index`
     wurde von `QuantStack <http://quantstack.net/>`_ entwickelt, s.a. `And
     voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
-`Flask <https://palletsprojects.com/p/flask/>`_
-    ist ein in Python geschriebener Webserver, der zum Erstellen beliebiger
-    Websites verwendet werden kann, einschließlich solcher mit Python-Plots,
-    s.a. `Flask-Dashboards
-    <https://pusher.com/tutorials/live-dashboard-python>`_.
 
 .. toctree::
     :titlesonly:
@@ -37,5 +32,4 @@ Dashboards
     ../nbviewer
     panel/index
     voila/index
-    Flask <https://palletsprojects.com/p/flask/>
 
