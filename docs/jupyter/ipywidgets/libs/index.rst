@@ -51,3 +51,11 @@ Beliebte Widget-Bibliotheken sind
 
        ipysheet.ipynb
 
+``ipyvuetify``
+    `Vuetify <https://v15.vuetifyjs.com/en/>`_ widgets in Jupyter Notebooks
+
+    .. toctree::
+       :maxdepth: 1
+
+       ipyvuetify.ipynb
+
