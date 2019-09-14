@@ -17,6 +17,10 @@ hvplot = "*"
 selenium = "*"
 ipyvuetify = "*"
 bqplot = "*"
+py-heat-magic = "*"
+cython = "*"
+line-profiler = {git = "https://github.com/rkern/line_profiler.git"}
+memory-profiler = "*"
 
 [requires]
 python_version = "3.7.4"
