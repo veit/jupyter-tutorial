@@ -74,6 +74,16 @@ setup_args = dict(
         'cufflinks',
         'ipysheet',
         'jupyterhub',
+        'jupyter_dashboards',
+        'appmode',
+        'panel',
+        'holoviews[recommended]',
+        'hvplot',
+        'voila',
+        'voila-gridstack',
+        'voila-debug',
+        'ipyvuetify',
+        'voila-vuetify==0.0.1a8',
     ],
 )
 
