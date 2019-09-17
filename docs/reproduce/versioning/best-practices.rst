@@ -15,25 +15,37 @@ Git Best Practices
 
     $ pipenv run cookiecutter https://github.com/veit/cookiecutter-namespace-template.git
     full_name [Veit Schiele]: 
-    email [veit@example.org]: 
+    email [veit@cusy.io]: 
     github_username [veit]: 
-    project_name [vsc.example]: 
+    project_name [cusy.example]: 
     …
 
   Falls in eurem Projekt noch keine ``.gitignore``-Datei vorhanden ist, solltet
-  ihr diese selbst anlegen. Eine Übersicht über passende ``.gitignore``-Dateien
+  ihr diese anlegen und zumindest ``.ipynb_checkpoints`` ausschließen::
+
+    .ipynb_checkpoints
+    */.ipynb_checkpoints/*
+
+  Falls ihr versehentlich schon entsprechende Dateien in euer Git-Repository
+  eingecheckt habt, könnt ihr diese wieder entfernen mit:
+
+  .. code-block:: console
+
+    $ git rm -r .ipynb_checkpoints/
+
+  Eine Übersicht über weitere ``.gitignore``-Einträge
   erhaltet ihr im Repository `dotfiles <https://github.com/veit/dotfiles>`_.
 
   Anschließend können diese initialen Änderungen eingecheckt werden mit:
 
   .. code-block:: console
 
-    $ cd vsc.example
+    $ cd cusy.example
     $ git init
     $ git add *
     $ git add .gitignore
     $ git commit -m 'Initial commit'
-    $ git remote add origin ssh://git@github.com:veit/vsc.example.git
+    $ git remote add origin ssh://git@github.com:veit/cusy.example.git
     $ git push -u origin master
 
   Auch eine ``README.rst``-Datei sollte in jedem Repository vorhanden sein, in
