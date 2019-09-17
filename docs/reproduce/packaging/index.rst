@@ -26,8 +26,7 @@ Verwaltung von Abhängigkeiten.
 
     pipenv/index
 
-Glossar
--------
+.. Glossar
 
 .. toctree::
     :hidden:
