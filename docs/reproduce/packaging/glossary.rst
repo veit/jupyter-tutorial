@@ -11,18 +11,23 @@ Glossar
        Build-Schritt erfordern.
 
    conda
-       Paketmanagement-Tool für `Anaconda
-       <http://docs.continuum.io/anaconda/index.html>`_-Python-Installationen.
-       Anaconda ist eine Distribution von `Continuum Analytics
-       <http://continuum.io/downloads>`_, die speziell auf die wissenschaftliche
-       Gemeinschaft ausgerichtet ist, insbesondere auf Windows, wo die Installation
-       von binären Erweiterungen oft schwierig ist.
+       Paketmanagement-Tool für die `Anaconda
+       <http://docs.continuum.io/anaconda/index.html>`_-Distribution von
+       `Continuum Analytics <http://continuum.io/downloads>`_. Sie ist speziell
+       auf die wissenschaftliche Gemeinschaft ausgerichtet, insbesondere auf
+       Windows, wo die Installation von binären Erweiterungen oft schwierig ist.
 
        Conda installiert keine Pakete von PyPI und kann nur von den offiziellen
-       Continuum-Repositories oder von anaconda.org oder lokalen (z.B. Intranet-)
-       Paketservern installieren. Beachtet jedoch, dass Pip in conda installiert
-       werden und Seite an Seite arbeiten kann, um Distributionen von PyPI zu
-       verwalten.
+       Continuum-Repositories oder von `anaconda.org <https://anaconda.org/>`_
+       oder lokalen (z.B. Intranet-) Paketservern installieren. Beachtet jedoch,
+       dass Pip in conda installiert werden und Seite an Seite arbeiten kann, um
+       Distributionen von PyPI zu verwalten.
+
+       .. seealso::
+          * `Conda: Myths and Misconceptions
+            <https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/>`_
+          * `Conda build variants
+            <https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html>`_
 
    devpi
        `devpi <https://devpi.net/>`_ ist ein leistungsstarker PyPI-kompatibler
