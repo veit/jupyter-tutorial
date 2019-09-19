@@ -29,5 +29,5 @@ Arbeitsverzeichnis reinigen zu können:
 
     * .ipynb filter = nbstrip_full
 
-   in ``~/.gitattributes_global`` deaktivieren.
+   in ``~/.gitattributes`` deaktivieren.
 

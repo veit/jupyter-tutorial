@@ -8,7 +8,7 @@ mit folgender Änderung in der Datei ``~/.gitconfig`` konfigurieren:
 .. code-block:: ini
 
     [core]
-    attributesfile = ~/.gitattributes_global
+    attributesfile = ~/.gitattributes
 
     [filter "nbstrip_jq"]
     clean = "jq --indent 1 \
@@ -20,7 +20,7 @@ mit folgender Änderung in der Datei ``~/.gitconfig`` konfigurieren:
     smudge = cat
     required = true
 
-… und dann für alle Git-Repositories in ``~/.gitattributes_global`` oder für
+… und dann für alle Git-Repositories in ``~/.gitattributes`` oder für
 einzelne Repositories in der ``.gitattributes``-Datei des jeweiligen
 Repositories:
 
