@@ -1,10 +1,6 @@
 Git Best Practices
 ==================
 
-- Falls ihr noch nie mit Git gearbeitet habt, solltet ihr euch zunächst einen
-  Überblick über Git verschaffen und im `Git Book
-  <https://git-scm.com/book/de/v2>`_ lesen.
-
 - Macht früh Commits!
 
   Macht Euren ersten Commit nachdem ihr die initiale Installation

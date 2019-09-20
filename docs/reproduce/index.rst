@@ -7,9 +7,9 @@ Versionsmanagement
 Verwendet `Git <https://git-scm.com/>`_ zum Versionieren eurer Notebooks.
 
 Bei einigen Projekten kann es sinnvoll sein, einen Git-Pre-Commit-Hock zu
-verwenden (s. :doc:`versioning/git-integration`), wodurch Commits und Diffs
-besser lesbar werden. Allerdings werden hierdurch auch alle Outputs (Plots etc.)
-verworfen.
+verwenden (s. :doc:`Git: Erste Schritte <versioning/first-steps>`), wodurch
+Commits und Diffs besser lesbar werden. Allerdings werden hierdurch auch alle
+Outputs (Plots etc.) verworfen.
 
 Paketmanagement
 ---------------

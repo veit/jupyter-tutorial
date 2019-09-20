@@ -47,6 +47,8 @@ Es gibt zwei wichtige Begriffe um Jupyter Notebooks zu beschreiben: *Zelle* und
            <https://daringfireball.net/projects/markdown/syntax>`_ formatierten
            Text, der interpretiert wird sobald :menuselection:`Run` gedrückt wird.
 
+.. _was-ist-eine-ipynb-datei:
+
 Was ist eine ``ipynb``-Datei?
 ------------------------------
 
