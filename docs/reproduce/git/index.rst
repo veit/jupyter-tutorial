@@ -11,9 +11,9 @@ Dies ist keine allgemeine Einführung in die Versionsverwaltung mit `Git
 * `Git reference <https://git-scm.com/docs>`_
 
 An dieser Stelle wollen wir einerseits zeigen, wie sich einerseits :doc:`Jupyter
-Notebooks <first-steps>` und :doc:`Daten <dvc>` sinnvoll mit Git verwalten
-lassen, und andererseits :doc:`Best Practices <best-practices>` und typische
-:doc:`git-workflows/index` zeigen.
+Notebooks <first-steps>` sinnvoll mit Git verwalten lassen, und andererseits
+:doc:`Best Practices <best-practices>` und typische :doc:`workflows/index`
+zeigen.
 
 .. toctree::
     :hidden:
@@ -21,6 +21,5 @@ lassen, und andererseits :doc:`Best Practices <best-practices>` und typische
     first-steps
     tools
     best-practices
-    git-workflows/index
-    dvc
+    workflows/index
 
