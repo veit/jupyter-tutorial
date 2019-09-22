@@ -1,0 +1,7 @@
+outs:
+- path: fortune500.csv
+  metric: false
+  cache: true
+  persist: false
+  md5: 2e48c4204c3a74bab06bb93c8e86da74
+md5: df4b8a006484f97ac35cc6b5fe8a82cc
