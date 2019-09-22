@@ -42,6 +42,7 @@ voila-gridstack = "*"
 voila-debug = "*"
 ipyvuetify = "*"
 voila-vuetify = "==0.0.1a8"
+dvc = "*"
 
 [dev-packages]
 
