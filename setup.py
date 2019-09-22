@@ -79,7 +79,7 @@ setup_args = dict(
         'panel',
         'holoviews[recommended]',
         'hvplot',
-        'voila',
+        'voila==0.1.11',
         'voila-gridstack',
         'voila-debug',
         'ipyvuetify',
