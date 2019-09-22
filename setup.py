@@ -84,6 +84,7 @@ setup_args = dict(
         'voila-debug',
         'ipyvuetify',
         'voila-vuetify==0.0.1a8',
+        'dvc',
     ],
 )
 
