@@ -1,4 +1,3 @@
-==========
 Templating
 ==========
 
@@ -9,10 +8,9 @@ vereinfachen.
 .. toctree::
    :hidden:
 
+   features
    templates
    overview
    install
    advanced
-
-.. include:: features.rst
 
