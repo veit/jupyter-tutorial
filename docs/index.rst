@@ -51,11 +51,12 @@ Zielgruppe
 ----------
 
 Die Nutzer von Jupyter-Notebooks sind vielfältig von Daten-Wissenschaftlern über
--Ingenieure und -Analysten bis hin zu System-Ingenieuren. Meist nehmen sie
-unterschiedliche Rollen ein, z.B.:
+-Ingenieure und -Analysten bis hin zu System-Ingenieuren. Zwar arbeiten sie
+  meist eng im Team zusammen, nehmen darin jedoch unterschiedliche Rollen und
+Aufgaben war, z.B.:
 
-* **Daten-Wissenschaftler** führen beispielsweise Experimente mit verschiedenen
-  Koeffizienten durch und fassen die Ergebnisse zusammen.
+* **Daten-Wissenschaftler** führen Experimente mit verschiedenen Koeffizienten
+  durch und fassen die Ergebnisse zusammen.
 * **Daten-Ingenieure** überprüfen die Qualität des Codes und machen ihn robuster,
   effizienter und skalierbar.
 * **Daten-Analysten** führen systematische Untersuchungen der Daten durch, wobei
