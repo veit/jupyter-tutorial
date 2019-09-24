@@ -140,7 +140,7 @@ Glossar
        System existieren. Spack wurde für den raschen Aufbau wissenschaftlicher
        Anwendungen auf Clustern und Supercomputern entwickelt.
 
-       `Docs <http://software.llnl.gov/spack/>`_ |
+       `Docs <https://spack.readthedocs.io/>`_ |
        `GitHub <https://github.com/llnl/spack/>`_ |
        `Slides <https://tgamblin.github.io/files/Gamblin-Spack-SC15-Talk.pdf>`_ |
        `The Spack package manager: bringing order to HPC software chaos
