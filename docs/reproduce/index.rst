@@ -51,4 +51,5 @@ wird vereinfacht.
     spack/index
     pipenv/index
     devpi
+    glossary
 

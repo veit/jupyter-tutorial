@@ -12,7 +12,7 @@ Jupyter-Tutorial
     jupyter/index
     reproduce/index
     refactoring/index
-    glossary
+    genindex
 
 .. Indices and tables
    ==================
