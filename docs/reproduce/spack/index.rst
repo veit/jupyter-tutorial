@@ -1,8 +1,8 @@
-Spack-Überblick
-===============
+Spack
+=====
 
-Modellierungs- und Simulationsumgebungen sind sehr heterogen. Spack unterstützt
-daher viele verschiedene Produktionsumgebungen:
+Modellierungs- und Simulationsumgebungen sind sehr heterogen. :doc:`Spack
+<spack:index>` unterstützt daher viele verschiedene Produktionsumgebungen:
 
 * 7 verschiedene Compiler: Intel, GCC, Clang, PGI, …
 * Auflösen von Abhängigkeiten
@@ -37,9 +37,13 @@ Sie bieten meist keine Unterstützung für kombinatorische Versionierung.
 .. toctree::
     :hidden:
 
+    install
     combinatorial-builds
     build-automatisation
     usecase1
     usecase2
     future
+    use
+    envs
+    mirrors
 

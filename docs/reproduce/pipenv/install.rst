@@ -2,7 +2,7 @@ Installation
 ============
 
 Dieser Abschnitt behandelt die Grundlagen zur Installation von
-term:`Python-:Paketen <Distribution Package>`.
+:term:`Python-Paketen <Distribution Package>`.
 
 Voraussetzungen für die Installation von Paketen
 ------------------------------------------------
