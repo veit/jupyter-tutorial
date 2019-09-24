@@ -5,7 +5,7 @@ Python
 ------
 
 `cookiecutter-namespace-template <https://github.com/veit/cookiecutter-namespace-template>`_
-    Namespace template für Python-Pakete
+    Namespace-Template für Python-Pakete
 `cookiecutter-pypackage <https://github.com/audreyr/cookiecutter-pypackage>`_
     Template für Python-Pakete
 `cookiecutter-pytest-plugin <https://github.com/pytest-dev/cookiecutter-pytest-plugin>`_
