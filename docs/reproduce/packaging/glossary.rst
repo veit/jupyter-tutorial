@@ -131,7 +131,7 @@ Glossar
 
    Spack
        Ein flexibler Paketmanager, der mehrere Versionen, Konfigurationen,
-       Plattformen und Compiler unterstützt. Spack ist Ähnlich wie der `Nix
+       Plattformen und Compiler unterstützt. Spack ist ähnlich wie der `Nix
        <https://nixos.org/nix/>`_-Paketmanager, ermöglicht jedoch die Definition
        virtueller Abhängigkeiten und bietet eine Syntax zur Parametrisierung. Die
        Pakete sind in Python geschrieben, um einen einfachen Austausch von
