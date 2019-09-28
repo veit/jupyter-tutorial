@@ -138,7 +138,7 @@ intersphinx_mapping = {
     'jupyter-contrib-nbextensions':  ('https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/', None),
     'sphinx':  ('http://www.sphinx-doc.org/en/master/', None),
     'nbsphinx':  ('https://nbsphinx.readthedocs.io/en/0.4.2/', None),
-    'pipenv': ('https://docs.pipenv.org/en/latest/', None),
+    'pipenv': ('https://pipenv.readthedocs.io/en/latest/', None),
     'spack':  ('https://spack.readthedocs.io/en/latest/', None),
 }
 
