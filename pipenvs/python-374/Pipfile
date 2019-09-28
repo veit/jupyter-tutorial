@@ -22,6 +22,7 @@ py-heat-magic = "*"
 cython = "*"
 line-profiler = {git = "https://github.com/rkern/line_profiler.git"}
 memory-profiler = "*"
+ipympl = "*"
 
 [requires]
 python_version = "3.7.4"
