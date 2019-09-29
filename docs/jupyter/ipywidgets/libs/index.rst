@@ -44,7 +44,7 @@ Beliebte Widget-Bibliotheken sind
        ipyleaflet.ipynb
 
 ``ipysheet``
-    Interaktvie Tabellen in Jupyter
+    Interaktive Tabellen in Jupyter
 
     .. toctree::
        :maxdepth: 1
