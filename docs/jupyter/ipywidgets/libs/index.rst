@@ -43,6 +43,16 @@ Beliebte Widget-Bibliotheken sind
 
        ipyleaflet.ipynb
 
+``ipywebrtc``
+    `WebRTC <https://webrtc.org/>`_- und `MediaStream-API
+    <https://developer.mozilla.org/en-US/docs/Web/API/MediaStream>`_ für
+    Jupyter-Notebooks
+
+    .. toctree::
+       :maxdepth: 1
+
+       ipywebrtc.ipynb
+
 ``ipysheet``
     Interaktive Tabellen um IPython Widgets in Tabellen von Jupyter Notebooks
     zu verwenden.

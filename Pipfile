@@ -45,6 +45,7 @@ voila-vuetify = "==0.0.1a8"
 dvc = "*"
 ipympl = "*"
 qgrid = "*"
+ipywebrtc = "*"
 
 [dev-packages]
 

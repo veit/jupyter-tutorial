@@ -1,0 +1,11 @@
+md5: f5afed0a3388659637766e6de41f4afc
+locked: true
+deps:
+- etag: '"b068c21dac9145f3b986727d14281b93d7952918"'
+  path: https://github.com/maartenbreddels/ipywebrtc/raw/master/docs/source/Big.Buck.Bunny.mp4
+outs:
+- md5: 614617b0c19b4558cbabadcdd2b1dbde
+  path: Big.Buck.Bunny.mp4
+  cache: true
+  metric: false
+  persist: false

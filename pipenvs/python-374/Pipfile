@@ -26,6 +26,7 @@ ipympl = "*"
 qgrid = "*"
 pandas-datareader = "*"
 ipysheet = "*"
+ipywebrtc = "*"
 
 [requires]
 python_version = "3.7.4"
