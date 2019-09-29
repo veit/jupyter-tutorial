@@ -44,6 +44,7 @@ ipyvuetify = "*"
 voila-vuetify = "==0.0.1a8"
 dvc = "*"
 ipympl = "*"
+qgrid = "*"
 
 [dev-packages]
 

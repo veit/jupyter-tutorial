@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b4566e3ba49af7506ad05e9ca5ae7e7410ce80e7a5d47d29d5683c82ff7a1941"
+            "sha256": "a9c76ddbfb34a0f9adc0d633f7601aae0962f36544ced8c2eabca57c5ab04fa5"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -497,7 +497,7 @@
                 "sha256:c4ab005921641e40a68e405e286e7a1fcc464497e14d81b6914b4fd95e5dee9b",
                 "sha256:dd76831f065f17bddd7eaa5c781f5ea32de5ef217592cf019e34043b56895aa1"
             ],
-            "markers": "extra == 'recommended'",
+            "markers": "python_version >= '3.3'",
             "version": "==7.8.0"
         },
         "ipython-genutils": {
@@ -1231,6 +1231,13 @@
                 "sha256:fa4bad0d1d173dee3e8ef3c3eb6b2bb6c723fc7a661eeecc1ecb2fa99860dd45"
             ],
             "version": "==18.1.0"
+        },
+        "qgrid": {
+            "hashes": [
+                "sha256:98cb1184bd53b9cb27ef88d1b8f3f282a328760357281c402d4c53ac277d1c6b"
+            ],
+            "index": "pypi",
+            "version": "==1.1.1"
         },
         "qtconsole": {
             "hashes": [

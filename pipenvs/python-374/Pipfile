@@ -23,6 +23,7 @@ cython = "*"
 line-profiler = {git = "https://github.com/rkern/line_profiler.git"}
 memory-profiler = "*"
 ipympl = "*"
+qgrid = "*"
 
 [requires]
 python_version = "3.7.4"
