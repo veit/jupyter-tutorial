@@ -52,10 +52,21 @@ Beliebte Widget-Bibliotheken sind
        ipysheet.ipynb
 
 ``ipyvuetify``
-    `Vuetify <https://v15.vuetifyjs.com/en/>`_ widgets in Jupyter Notebooks
+    `Vuetify <https://v15.vuetifyjs.com/en/>`_-Widgets in Jupyter Notebooks
 
     .. toctree::
        :maxdepth: 1
 
        ipyvuetify.ipynb
+
+``ipympl``
+    ``ipympl`` oder `jupyter-matplotlib
+    <https://github.com/matplotlib/jupyter-matplotlib>`_ bieten interaktive
+    Widgets für Matplotlib.
+
+    .. toctree::
+       :maxdepth: 1
+
+       ipympl.ipynb
+
 
