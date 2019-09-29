@@ -25,6 +25,7 @@ memory-profiler = "*"
 ipympl = "*"
 qgrid = "*"
 pandas-datareader = "*"
+ipysheet = "*"
 
 [requires]
 python_version = "3.7.4"
