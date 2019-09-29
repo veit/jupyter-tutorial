@@ -7,8 +7,8 @@ Pipenv wurde bereits zur :doc:`Installation von Jupyter Notebooks
 Builds mit Spack erzeugen zu können und andererseits Python-Pakete für die
 Datenerhebung, -Visualisierung etc. einfach nutzen zu können.
 
-Zunächst muss hierfür die Passende Python-Version aus dem Spack-Environment
-aktiviert werden:
+Aktiviert hierfür zunächst die passende Python-Version aus dem
+Spack-Environment:
 
    .. code-block:: console
 
@@ -18,10 +18,19 @@ aktiviert werden:
     $ which python
     /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view/bin/python
 
-Bestehendes Pipenv-Environment installieren:
+Das bestehende Pipenv-Environment könnt ihr anschließend installieren mit:
 
    .. code-block:: console
 
     $ cd ~/jupyter-tutorial/pipenvs/python-374/
+    $ pipenv --python=/Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view/bin/python --site-packages
     $ pipenv install
+
+Dies verwendet das mit Spack installierte Environment und installiert weitere
+Pakete.
+
+.. seealso::
+
+    * `Pipenv and Other Python Distributions
+      <https://pipenv.readthedocs.io/en/latest/advanced/#specifying-basically-anything>`_
 
