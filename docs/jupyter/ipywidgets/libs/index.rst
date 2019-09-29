@@ -44,12 +44,22 @@ Beliebte Widget-Bibliotheken sind
        ipyleaflet.ipynb
 
 ``ipysheet``
-    Interaktive Tabellen in Jupyter
+    Interaktive Tabellen um IPython Widgets in Tabellen von Jupyter Notebooks
+    zu verwenden.
 
     .. toctree::
        :maxdepth: 1
 
        ipysheet.ipynb
+
+``qgrid``
+    Widget auf Basis von `SlickGrid <https://github.com/mleibman/SlickGrid>`_
+    zum rendern von pandas DataFrames in Jupyter-Notebooks
+
+    .. toctree::
+       :maxdepth: 1
+
+       qgrid.ipynb
 
 ``ipyvuetify``
     `Vuetify <https://v15.vuetifyjs.com/en/>`_-Widgets in Jupyter Notebooks
