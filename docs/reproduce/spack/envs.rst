@@ -17,9 +17,6 @@ Environments, ``spack.yaml`` und ``spack.lock``
     $ mkdir -p spackenvs/python-374
     $ cd !$
     cd spackenvs/python-374
-
-    $ mkdir ~/jupyterhub/spackenvs/python-374
-    $ cd!$
     $ spack env create -d .
     ==> Updating view at /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view
     ==> Created environment in /Users/veit/jupyter-tutorial/spackenvs/python-374
