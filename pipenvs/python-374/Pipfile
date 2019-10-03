@@ -27,6 +27,7 @@ qgrid = "*"
 pandas-datareader = "*"
 ipysheet = "*"
 ipywebrtc = "*"
+geojson = "*"
 
 [requires]
 python_version = "3.7.4"
