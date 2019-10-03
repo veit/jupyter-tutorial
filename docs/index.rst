@@ -10,6 +10,7 @@ Jupyter-Tutorial
     first-steps/index
     ipython/index
     jupyter/index
+    parallel/index
     reproduce/index
     refactoring/index
     genindex
