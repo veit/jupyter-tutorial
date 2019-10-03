@@ -1,9 +1,10 @@
 Parallelisierung
 ================
 
-Anhand von drei Beispielen zu :doc:`Threading <threading-example.ipynb>`,
-:doc:`Multiprocessing <multiprocessing.ipynb>` und :doc:`Async
-<async-example.ipynb>` werden die Regeln und Best Practices bei der
+Anhand von drei Beispielen zu :ref:`Threading
+</parallel/threading-example.ipynb>`, :ref:`Multiprocessing
+</parallel/multiprocessing.ipynb>` und :ref:`Async
+</parallel/async-example.ipynb>` werden die Regeln und Best Practices bei der
 Nutzung von Parallelisierung veranschaulicht.
 
 .. toctree::
