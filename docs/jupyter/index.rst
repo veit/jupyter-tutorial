@@ -23,7 +23,7 @@ Jupyter
             label="JupyterHub",
             tooltip="JupyterHub\ninstallieren",
             target="_top",
-            href="../jupyter/jupyterhub/index.html"]
+            href="../jupyter/hub/index.html"]
         nbconvert [
             label="nbconvert",
             tooltip="nbconvert installieren und nutzen",
