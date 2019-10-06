@@ -140,6 +140,7 @@ intersphinx_mapping = {
     'nbsphinx':  ('https://nbsphinx.readthedocs.io/en/0.4.2/', None),
     'pipenv': ('https://pipenv.readthedocs.io/en/latest/', None),
     'spack':  ('https://spack.readthedocs.io/en/latest/', None),
+    'ipyparallel': ('https://ipyparallel.readthedocs.io/en/latest/', None),
 }
 
 def setup(app):

@@ -17,6 +17,7 @@ Nutzung von Parallelisierung veranschaulicht.
     multiprocessing.ipynb
     threading-forking-combined.ipynb
     async-example.ipynb
+    ipyparallel/index.rst
 
 .. seealso::
     * `Faster CPython <https://faster-cpython.readthedocs.io/>`_
