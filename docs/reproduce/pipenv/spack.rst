@@ -25,6 +25,10 @@ Das bestehende Pipenv-Environment könnt ihr anschließend installieren mit:
     $ cd ~/jupyter-tutorial/pipenvs/python-374/
     $ pipenv --python=/Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view/bin/python --site-packages
     $ pipenv install
+    Creating a virtualenv for this project…
+    Pipfile: /Users/veit/jupyter-tutorial/pipenvs/python-374/Pipfile
+    Using /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view/bin/python3.7 (3.7.4) to create virtualenv…
+    …
 
 Dies verwendet das mit Spack installierte Environment und installiert weitere
 Pakete.
