@@ -46,6 +46,7 @@ dvc = "*"
 ipympl = "*"
 qgrid = "*"
 ipywebrtc = "*"
+ipyparallel = "*"
 
 [dev-packages]
 
