@@ -28,6 +28,7 @@ pandas-datareader = "*"
 ipysheet = "*"
 ipywebrtc = "*"
 geojson = "*"
+ipyparallel = "*"
 
 [requires]
 python_version = "3.7.4"

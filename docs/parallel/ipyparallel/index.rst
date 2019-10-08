@@ -22,4 +22,5 @@ Parallelisierung unterstützt, u.a.:
     magics.ipynb
     task.ipynb
     asyncresult
+    mpi.ipynb
 
