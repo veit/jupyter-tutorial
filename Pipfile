@@ -47,6 +47,7 @@ ipympl = "*"
 qgrid = "*"
 ipywebrtc = "*"
 ipyparallel = "*"
+ipycanvas = "*"
 
 [dev-packages]
 

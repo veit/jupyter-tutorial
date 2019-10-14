@@ -29,6 +29,7 @@ ipysheet = "*"
 ipywebrtc = "*"
 geojson = "*"
 ipyparallel = "*"
+ipycanvas = "*"
 
 [requires]
 python_version = "3.7.4"
