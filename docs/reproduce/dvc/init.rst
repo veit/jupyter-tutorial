@@ -20,6 +20,8 @@ DVC lässt sich einfach initialisieren mit:
 Konfigurieren
 -------------
 
+.. _dvc-remote:
+
 Bevor DVC verwendet wird, sollte noch ein entfernter Speicherplatz (*remote
 storage*) eingerichtet werden. Dieser sollte für alle zugänglich sein, die auf
 die Daten oder das Modell zugreifen sollen. Es ähnelt der Verwendung eines

@@ -104,6 +104,8 @@ darstellen mit ``dvc pipeline``
     model.pkl
     auc.metric
 
+.. _dvc-pipeline-show:
+
 * Sofern `Graphviz <http://www.graphviz.org/>`_ und `pydot
   <https://pypi.org/project/pydot/>`_ installiert ist, läst sich der
   der Abhängigkeitsgraph auch visualisieren:
