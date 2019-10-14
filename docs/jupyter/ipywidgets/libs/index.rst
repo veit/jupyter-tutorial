@@ -18,6 +18,14 @@ Beliebte Widget-Bibliotheken sind
 
        bq-mark-interactions.ipynb
 
+``ipycanvas``
+    Interaktive Canvas-Elemente in Jupyter-Notebooks
+
+    .. toctree::
+       :maxdepth: 1
+
+       ipycanvas.ipynb
+
 ``pythreejs``
     Jupyter-`Three.js <https://threejs.org/>`_-Bridge
 
