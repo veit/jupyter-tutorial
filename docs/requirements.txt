@@ -5,6 +5,7 @@ Babel==2.7.0
 backcall==0.1.0
 bleach==3.1.0
 bokeh==0.12.2
+bqplot==0.11.8
 certifi==2019.9.11
 chardet==3.0.4
 decorator==4.4.0
