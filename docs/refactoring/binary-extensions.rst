@@ -80,8 +80,6 @@ durch :term:`wheel` kaum noch vorhanden. Einige Nachteile bleiben dennoch:
 Alternativen
 ------------
 
-
-
 … zu Accelerator-Modulen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -112,7 +110,6 @@ sollten auch eine Reihe anderer Alternativen in Betracht gezogen werden:
   Typisierungsfunktionen können zusätzliche Möglichkeiten für
   Geschwindigkeitssteigerungen bieten. Für Python-Programmierer bietet Cython
   eine niedrigere Eintrittshürde relativ zu anderen Sprachen wie C oder C ++).
-
 
   Die Verwendung von Cython hat jedoch den Nachteil, die Komplexität der
   Verteilung der resultierenden Anwendung zu erhöhen.
