@@ -111,7 +111,7 @@ Diese Datei wird nicht mehr benötigt, zumindest nicht für die Paketierung.
 `PEP 517 <https://www.python.org/dev/peps/pep-0517/>`_ und `PEP 518
 <https://www.python.org/dev/peps/pep-0518/>`_ brachten Plugable Build-Backends,
 isolierte Builds und ``pyproject.toml``. Da wir ``setuptools`` verwenden,
-sollte die Datei so, oder so ähnlich, aussehen:
+sollte die Datei so oder so ähnlich aussehen:
 
 .. code-block:: toml
 
@@ -119,8 +119,8 @@ sollte die Datei so, oder so ähnlich, aussehen:
     requires = ["setuptools>=40.6.0", "wheel"]
     build-backend = "setuptools.build_meta"
 
-LICENSE
-~~~~~~~
+``LICENSE``
+~~~~~~~~~~~
 
 Einen Überblick über freie und Open-Source-Software-Lizenzen erhaltet ihr in
 `Comparison of free and open-source software licenses
@@ -139,8 +139,8 @@ Darüberhinaus kann es auch sinnvoll sein, ein Package unter mehreren Lizenzen
 zu veröffentlichen. Ein Beispiel hierfür ist `cryptography/LICENSE
 <https://github.com/pyca/cryptography/blob/adf234e/LICENSE>`_.
 
-README.rst
-~~~~~~~~~~
+``README.rst``
+~~~~~~~~~~~~~~
 
 Diese Datei teilt potentiellen Nutzern mit, worauf sie bei der Verwendung des
 Pakets achten müssen. Schreibt das Dokument in `ReStructuredText (ReST)
