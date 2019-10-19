@@ -198,6 +198,8 @@ Testen
 
 oder
 
+.. code-block:: console
+
     $  pipenv --rm
     $ pipenv install install dist/attrs-19.3.0-py2.py3-none-any.whl
     …
