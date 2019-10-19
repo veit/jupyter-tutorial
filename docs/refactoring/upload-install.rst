@@ -54,6 +54,12 @@ PyPI* registriert habt. Anschließend solltet ihr eine ähnliche Ausgabe sehen:
    ``name``-Argument in der ``setup.py``-Datei, entfernt das
    ``dist``-Verzeichnis und generiert die Archive neu.
 
+
+.. seealso::
+    Wenn ihr die PyPI-Anmeldung automatisieren wollt, lest bitte `Careful With
+    That PyPI
+    <https://glyph.twistedmatrix.com/2017/10/careful-with-that-pypi.html>`_.
+
 Installation
 ============
 
