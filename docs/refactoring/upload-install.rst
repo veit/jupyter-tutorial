@@ -48,11 +48,11 @@ PyPI* registriert habt. Anschließend solltet ihr eine ähnliche Ausgabe sehen:
 
     The user 'veit' isn't allowed to upload to project 'example'
 
-   müsst ihr einen eindeutigen Namen für  euer Paket auswählen. 
+   müsst ihr einen eindeutigen Namen für euer Paket auswählen. 
 
    Eine gute Wahl ist ``minimal_example``. Aktualisiert das
    ``name``-Argument in der ``setup.py``-Datei, entfernt das
-   ``dist``-Verzeichnis und generiert die Archie neu.
+   ``dist``-Verzeichnis und generiert die Archive neu.
 
 Installation
 ============
