@@ -128,9 +128,10 @@ Einen Überblick über freie und Open-Source-Software-Lizenzen erhaltet ihr in
 
 Wenn ihr z.B. eine möglichst große Verbreitung eures Pakets erreichen wollt,
 sind MIT- oder die BSD-Varianten eine gute Wahl. Die Apache-Lizenz schützt euch
-besser vor Patentverletzungen ist jedoch nicht kompatibel mit der GPL v2.
-
-Zur Analyse von Lizenzen könnt ihr `licensechecker
+besser vor Patentverletzungen ist jedoch nicht kompatibel mit der GPL v2. Daher
+solltet ihr schauen, welche Lizenzen diejenigen Pakete haben, von denen ihr
+abhängt und zu denen ihr kompatibel sein solltet. Zur Analyse von Lizenzen könnt
+ihr `licensechecker
 <http://www.boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_,
 verwenden, ein Kommandozeilenwerkzeug, das Installationsverzeichnisse nach
 Lizenzen durchsucht.
