@@ -21,6 +21,7 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
     mypackage/foo.ipynb
     importing.ipynb
     debugging.ipynb
+    logging.ipynb
     testing/index
     profiling.ipynb
 
