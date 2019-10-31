@@ -199,7 +199,7 @@ Testen
 
 .. code-block:: console
 
-    $  pipenv --rm
+    $ pipenv --rm
     $ pipenv install dist/attrs-19.3.0.tar.gz
     …
     Successfully built attrs
@@ -214,8 +214,8 @@ oder
 
 .. code-block:: console
 
-    $  pipenv --rm
-    $ pipenv install install dist/attrs-19.3.0-py2.py3-none-any.whl
+    $ pipenv --rm
+    $ pipenv install dist/attrs-19.3.0-py2.py3-none-any.whl
     …
     Successfully built attrs
     Installing collected packages: attrs

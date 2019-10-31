@@ -42,6 +42,14 @@ müsst ihr jedoch zunächst twine installieren mit:
    Release-Tools auf dem neuesten Stand sind. Die restlichen Build-Tools werden
    von pep517 automatisch in der isolierten Build-Umgebung installiert.
 
+Nun könnt ihr eure *Distribution Packages* erstellen mit:
+
+.. code-block:: console
+
+    $ rm -rf build dist
+    $ pipenv run python -m pep517.build .
+    …
+
 Nach der Installation von Twine könnt ihr alle Archive unter ``/dist`` auf den
 Python Package Index hochladen mit:
 
