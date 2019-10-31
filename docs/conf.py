@@ -97,6 +97,9 @@ html_title = 'Jupyter Tutorial v0.3.9'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_logo = '_static/images/logo/logo.png'
+html_favicon = '_static/images/logo/favicon.ico'
+
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
