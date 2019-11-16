@@ -87,6 +87,14 @@
   {
    "hash": "7imqlbo53hmis2g27gl3zxt5irtsqqjh",
    "spec": "py-graphviz ^python@3.7.4%gcc@9.1.0"
+  },
+  {
+   "hash": "hypjlwuirfuod7davyrqypy73psg64o6",
+   "spec": "py-networkx ^python@3.7.4%gcc@9.1.0"
+  },
+  {
+   "hash": "ulgvumzkfldqll3wwlt3an4v4eq45z7s",
+   "spec": "py-pydot ^python@3.7.4%gcc@9.1.0"
   }
  ],
  "concrete_specs": {
@@ -9032,6 +9040,471 @@
      }
     },
     "hash": "nfdveecf6ispuy3kjlegm6ikm7e5ko3t"
+   }
+  },
+  "hypjlwuirfuod7davyrqypy73psg64o6": {
+   "py-networkx": {
+    "version": "2.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-decorator": {
+      "hash": "3r5xhzp4wzuyzfnndb4hlx6mismkut25",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "ckrvwoh44qmogzrw27jjyd63psubmpak",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "c747mkg5vv7aoh6e54pzl33a4gcjl2d4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "7gonbeyshofmdzpoepcd7iopdmvikf6f"
+   }
+  },
+  "ulgvumzkfldqll3wwlt3an4v4eq45z7s": {
+   "py-pydot": {
+    "version": "1.4.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "graphviz": {
+      "hash": "7y2r2zuhqvwxc7n3ibazaneeugch4v7e",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-pyparsing": {
+      "hash": "e3w4iozbge4f7323yt3dx7t5uczzvotl",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "ckrvwoh44qmogzrw27jjyd63psubmpak",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "c747mkg5vv7aoh6e54pzl33a4gcjl2d4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "k2jxopuedmc6m5pji5cvuin65m2xfiil"
+   }
+  },
+  "7y2r2zuhqvwxc7n3ibazaneeugch4v7e": {
+   "graphviz": {
+    "version": "2.42.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "expat": false,
+     "ghostscript": false,
+     "gtkplus": false,
+     "gts": false,
+     "java": false,
+     "libgd": false,
+     "pangocairo": false,
+     "qt": false,
+     "quartz": false,
+     "x": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "autoconf": {
+      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "type": [
+       "build"
+      ]
+     },
+     "automake": {
+      "hash": "wjjushicir746gv2tuf6lq7ivg4x3jpe",
+      "type": [
+       "build"
+      ]
+     },
+     "bison": {
+      "hash": "ln4rkii5idwzyuomjdx657auvicqottz",
+      "type": [
+       "build"
+      ]
+     },
+     "flex": {
+      "hash": "bnnfdzxkr3eqt3quxk6cmguxbfvqceka",
+      "type": [
+       "build"
+      ]
+     },
+     "libtool": {
+      "hash": "vcdprs7bjqk32deqmem3zy6jqr2otwwp",
+      "type": [
+       "build"
+      ]
+     },
+     "pkgconf": {
+      "hash": "sbtu3i2bjg44sfy2xt6xjuhtwzvjibsx",
+      "type": [
+       "build"
+      ]
+     },
+     "zlib": {
+      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "pzkag2fahvy6frteyjambis2n3furc7w"
+   }
+  },
+  "ln4rkii5idwzyuomjdx657auvicqottz": {
+   "bison": {
+    "version": "3.4.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "patches": [
+      "89aa362716d898edd0b5c6ae4208dc1b6992887774848a09e8021afd676f7d61"
+     ],
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "patches": [
+     "89aa362716d898edd0b5c6ae4208dc1b6992887774848a09e8021afd676f7d61"
+    ],
+    "dependencies": {
+     "diffutils": {
+      "hash": "vctxemj5inj6ce5pvuey3ht4tidvswnf",
+      "type": [
+       "build"
+      ]
+     },
+     "help2man": {
+      "hash": "wwn4goxdzuysvfp6ggzj7vsnmjydfzoy",
+      "type": [
+       "build"
+      ]
+     },
+     "m4": {
+      "hash": "cm3pj2otfc7nllggcv27cbuvzr5m4ywp",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "perl": {
+      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "seeywrlrw66s65f5l4kzc42zzts7rtbf"
+   }
+  },
+  "wwn4goxdzuysvfp6ggzj7vsnmjydfzoy": {
+   "help2man": {
+    "version": "1.47.11",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "gettext": {
+      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
+      "type": [
+       "build"
+      ]
+     },
+     "perl": {
+      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "dgwrjkwaw45nul7tyhx4qga2lq2qgoov"
+   }
+  },
+  "bnnfdzxkr3eqt3quxk6cmguxbfvqceka": {
+   "flex": {
+    "version": "2.6.4",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "lex": true,
+     "patches": [
+      "09c22e5c6fef327d3e48eb23f0d610dcd3a35ab9207f12e0f875701c677978d3"
+     ],
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "patches": [
+     "09c22e5c6fef327d3e48eb23f0d610dcd3a35ab9207f12e0f875701c677978d3"
+    ],
+    "dependencies": {
+     "autoconf": {
+      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "type": [
+       "build"
+      ]
+     },
+     "automake": {
+      "hash": "wjjushicir746gv2tuf6lq7ivg4x3jpe",
+      "type": [
+       "build"
+      ]
+     },
+     "bison": {
+      "hash": "ln4rkii5idwzyuomjdx657auvicqottz",
+      "type": [
+       "build"
+      ]
+     },
+     "gettext": {
+      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
+      "type": [
+       "build"
+      ]
+     },
+     "help2man": {
+      "hash": "wwn4goxdzuysvfp6ggzj7vsnmjydfzoy",
+      "type": [
+       "build"
+      ]
+     },
+     "libtool": {
+      "hash": "vcdprs7bjqk32deqmem3zy6jqr2otwwp",
+      "type": [
+       "build"
+      ]
+     },
+     "m4": {
+      "hash": "cm3pj2otfc7nllggcv27cbuvzr5m4ywp",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "5nwlxck3q5er3hwlkakincr3eqg5njei"
    }
   }
  }
