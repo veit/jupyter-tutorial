@@ -71,7 +71,7 @@ virtuellen Umgebungen:
     $ mkdir myproject
     $ cd !$
     cd myproject
-    $ $ pipenv install jupyter
+    $ pipenv install jupyter
     Creating a virtualenv for this project..
     ...
     Virtualenv location: /home/veit/.local/share/virtualenvs/myproject-9TTuTZjx
