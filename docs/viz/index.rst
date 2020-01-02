@@ -86,7 +86,7 @@ Datenvisualisierung
             tooltip="Mächtige Visualisierungssoftware\nfür Graphen",
             color="gray",
             target="_top",
-            href="https://www.graphviz.org/"]
+            href="../viz/graphviz.html"]
         cartopy [
             label="Cartopy",
             tooltip="Erstellen von Karten und\nAnalyse von Geodaten",
@@ -261,6 +261,8 @@ Datenvisualisierung
     Pandas <https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html>
     Seaborn <https://seaborn.pydata.org/>
     ggpy <https://github.com/yhat/ggpy>
+    NetworkX <https://networkx.github.io/>
+    graphviz.ipynb
 
 .. toctree::
     :titlesonly:

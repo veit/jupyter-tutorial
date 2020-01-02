@@ -63,11 +63,11 @@ Jupyter
             tooltip="Installieren und Verwenden verschiedener Notebook-Erweiterungen",
             target="_top",
             href="../jupyter/nbextensions/index.html"]
-        graphviz [
-            label="graphviz",
-            tooltip="Visualisieren von Graphen",
+        viz [
+            label="Visualisierung",
+            tooltip="Bibliotheken zur Datenvisualisierung",
             target="_top",
-            href="../jupyter/graphviz.html"]
+            href="../viz/index.html"]
         dash [
             label="Dashboards",
             tooltip="Installieren und Verwenden von Dashboards",
@@ -92,12 +92,12 @@ Jupyter
         what -> extensions [label="Notebook\nerweitern"]
         what -> embed [label="Notebooks\neinbetten"]
         what -> examples [label="Beispiele"]
-        extensions -> {widgets extend graphviz dash}
+        extensions -> {widgets extend viz dash}
         embed -> {html sphinx}
         // Arrangement
         {rank = same; what;}
         {rank = same; jupyter; hub; nbconvert; kernels; extensions; embed; examples;}
-        {rank = same; widgets; extend; graphviz; dash;}
+        {rank = same; widgets; extend; viz; dash;}
         {rank = same; html; sphinx}
     }
 
@@ -113,7 +113,7 @@ Jupyter
     kernels/index
     ipywidgets/index
     nbextensions/index
-    graphviz
+    ../viz/index
     dashboards/index
     nbsphinx
     use-cases
