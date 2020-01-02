@@ -14,24 +14,23 @@ Datenvisualisierung
         opengl [
             label="OpenGL",
             tooltip="Open Graphics Library",
-            color="darkorange",
+            color="mediumpurple",
             target="_top",
             href="https://www.opengl.org/"]
         vispy [
             label="Vispy",
             tooltip="Python-Bibliothek für\ninteraktive wissenschaftliche\nVisualisierungen",
-            color="darkorange",
+            color="mediumpurple",
             target="_top",
             href="http://vispy.org/"]
         glumpy [
             label="Glumpy",
             tooltip="JupyterHub\ninstallieren",
-            color="darkorange",
+            color="mediumpurple",
             target="_top",
             href="https://glumpy.github.io/"]
-        opengl -- vispy [color="darkorange"]
-        opengl -- glumpy [color="darkorange"]
-        {rank = vispy; glumpy;}
+        opengl -- vispy [color="mediumpurple"]
+        opengl -- glumpy [color="mediumpurple"]
 
         // Matplotlib
         mpl [
@@ -125,7 +124,7 @@ Datenvisualisierung
         vaex -- mpl [color="royalblue;0.5:slateblue"]
         vaex -- bqplot [color="royalblue;0.5:deepskyblue"]
         vaex -- bokeh [color="royalblue;0.5:cyan"]
-        vaex -- opengl [color="royalblue;0.5:darkorange"]
+        vaex -- opengl [color="royalblue;0.5:mediumpurple"]
         holoviews -- bokeh [color="royalblue;0.5:cyan"]
         holoviews -- mpl [color="royalblue;0.5:slateblue"]
         datashader -- mpl [color="royalblue;0.5:slateblue"]
