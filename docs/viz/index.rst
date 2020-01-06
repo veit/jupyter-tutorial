@@ -92,7 +92,7 @@ Datenvisualisierung
             tooltip="Erstellen von Karten und\nAnalyse von Geodaten",
             color="slateblue",
             target="_top",
-            href="hthttps://scitools.org.uk/cartopy/"]
+            href="../viz/cartopy.html"]
         mpl -- pandas [color="slateblue"]
         mpl -- seaborn [color="slateblue"]
         mpl -- ggpy [color="slateblue"]
@@ -263,6 +263,7 @@ Datenvisualisierung
     ggpy <https://github.com/yhat/ggpy>
     networkx.ipynb
     graphviz.ipynb
+    cartopy
 
 .. toctree::
     :titlesonly:
