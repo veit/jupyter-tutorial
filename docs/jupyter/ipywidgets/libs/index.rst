@@ -9,14 +9,7 @@ Beliebte Widget-Bibliotheken sind
     .. toctree::
        :maxdepth: 1
 
-       bqplot.ipynb
-       bq-selectors.ipynb
-       bq-special-widgets.ipynb
-
-    .. toctree::
-       :hidden:
-
-       bq-mark-interactions.ipynb
+       ../../../viz/bqplot/index
 
 ``ipycanvas``
     Interaktive Canvas-Elemente in Jupyter-Notebooks
