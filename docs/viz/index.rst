@@ -213,7 +213,7 @@ Datenvisualisierung
             tooltip="Python-Bibliothek zur\nVisualisierung von\nVolumen und -Glyphen",
             color="cyan",
             target="_top",
-            href="https://ipyvolume.readthedocs.io/"]
+            href="../viz/ipyvolume.html"]
         toyplot [
             label="Toyplot",
             tooltip="Leichtgewichtige Bibliothek\nfür ästhetische Plots",
@@ -310,7 +310,7 @@ Datenvisualisierung
 
     plotly <https://github.com/plotly/plotly.py>
     Cufflinks <https://github.com/santosjorge/cufflinks>
-    IPyvolume <https://ipyvolume.readthedocs.io/>
+    ipyvolume.ipynb
     Toyplot <https://toyplot.readthedocs.io/>
     ipyleaflet <https://ipyleaflet.readthedocs.io/>
     Bokeh <https://docs.bokeh.org/>
