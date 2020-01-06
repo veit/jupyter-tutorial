@@ -16,6 +16,5 @@ können.
    widget-events.ipynb
    custom-widget.ipynb
    libs/index
-   networkx.ipynb
    embedding
 
