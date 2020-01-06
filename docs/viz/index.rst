@@ -46,11 +46,17 @@ Datenvisualisierung
             target="_top",
             href="https://mpld3.github.io/"]
         pandas [
-            label="pandas",
+            label="Pandas",
             tooltip="Pandas Datenstrukturen mit\nMatplotlib visualisieren",
             color="slateblue",
             target="_top",
             href="../viz/pandas.html"]
+        geopandas [
+            label="GeoPandas",
+            tooltip="geopandas erweitert Pandas um geometrische Datentypen",
+            color="slateblue",
+            target="_top",
+            href="../viz/geopandas.html"]
         seaborn [
             label="Seaborn",
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
@@ -94,6 +100,7 @@ Datenvisualisierung
             target="_top",
             href="../viz/cartopy.html"]
         mpl -- pandas [color="slateblue"]
+        pandas  -- geopandas [color="slateblue"]
         mpl -- seaborn [color="slateblue"]
         mpl -- ggpy [color="slateblue"]
         mpl -- scikit_plot [color="slateblue"]
@@ -259,6 +266,7 @@ Datenvisualisierung
     matplotlib
     mpld3 <https://mpld3.github.io/>
     pandas
+    geopandas
     seaborn
     ggpy <https://github.com/yhat/ggpy>
     networkx.ipynb
