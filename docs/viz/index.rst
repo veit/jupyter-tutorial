@@ -237,7 +237,7 @@ Datenvisualisierung
             tooltip="Notebook-Extension\nfür WebGL-fähige Webbrowser",
             color="cyan",
             target="_top",
-            href="https://pythreejs.readthedocs.io/"]
+            href="../viz/pythreejs.html"]
         javascript -- ipyvolume [color="cyan"]
         javascript -- plotly [color="cyan"]
         plotly -- cufflinks [color="cyan"]
@@ -314,5 +314,5 @@ Datenvisualisierung
     Toyplot <https://toyplot.readthedocs.io/>
     ipyleaflet <https://ipyleaflet.readthedocs.io/>
     Bokeh <https://docs.bokeh.org/>
-    pythreejs <https://pythreejs.readthedocs.io/>
+    pythreejs.ipynb
 
