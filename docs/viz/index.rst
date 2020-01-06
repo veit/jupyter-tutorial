@@ -56,7 +56,7 @@ Datenvisualisierung
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
             color="slateblue",
             target="_top",
-            href="https://seaborn.pydata.org/"]
+            href="../viz/seaborn.html"]
         ggpy [
             label="ggpy",
             tooltip="ggplot-Port für Python",
@@ -259,7 +259,7 @@ Datenvisualisierung
     matplotlib
     mpld3 <https://mpld3.github.io/>
     pandas
-    Seaborn <https://seaborn.pydata.org/>
+    seaborn
     ggpy <https://github.com/yhat/ggpy>
     networkx.ipynb
     graphviz.ipynb
