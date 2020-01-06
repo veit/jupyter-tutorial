@@ -143,7 +143,7 @@ Datenvisualisierung
             tooltip="Interaktive Plotts\nmit D3.js und ipywidgets",
             color="deepskyblue",
             target="_top",
-            href="https://bqplot.readthedocs.io/"]
+            href="../viz/bqplot/index.html"]
         d3po [
             label="d3po",
             tooltip="Javascript-Bibliothekt zum\nErstellen von D3.js-Charts",
