@@ -6,10 +6,7 @@ Beliebte Widget-Bibliotheken sind
 ``qplot``
     2-D Plotting-Bibliothek für Jupyter-Notebooks
 
-    .. toctree::
-       :maxdepth: 1
-
-       ../../../viz/bqplot/index
+    * :doc:`/viz/bqplot/index`
 
 ``ipycanvas``
     Interaktive Canvas-Elemente in Jupyter-Notebooks
@@ -22,27 +19,18 @@ Beliebte Widget-Bibliotheken sind
 ``pythreejs``
     Jupyter-`Three.js <https://threejs.org/>`_-Bridge
 
-    .. toctree::
-       :maxdepth: 1
-
-       ../../../viz/pythreejs.ipynb
+    * :doc:`/viz/pythreejs`
 
 ``ipyvolume``
     IPyvolume ist eine Python-Bibliothek zur Visualisierung von 3D-Volumen und
     Glyphen (z.B. 3D-Scatter-Plots). 
 
-    .. toctree::
-       :maxdepth: 1
-
-       ../../../viz/ipyvolume.ipynb
+    * :doc:`/viz/ipyvolume`
 
 ``ipyleaflet``
     Jupyter-`Leaflet.js <https://leafletjs.com/>`_-Bridge
 
-    .. toctree::
-       :maxdepth: 1
-
-       ../../../viz/ipyleaflet.ipynb
+    * :doc:`/viz/ipyleaflet`
 
 ``ipywebrtc``
     `WebRTC <https://webrtc.org/>`_- und `MediaStream-API

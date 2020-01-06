@@ -113,7 +113,6 @@ Jupyter
     kernels/index
     ipywidgets/index
     nbextensions/index
-    ../viz/index
     dashboards/index
     nbsphinx
     use-cases
