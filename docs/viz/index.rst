@@ -80,7 +80,7 @@ Datenvisualisierung
             tooltip="Erstellen, Ändern und Analysieren\nkomplexer Netzwerke",
             color="slateblue",
             target="_top",
-            href="https://networkx.github.io/"]
+            href="../viz/networkx.html"]
         graphviz [
             label="Graphviz",
             tooltip="Mächtige Visualisierungssoftware\nfür Graphen",
@@ -261,7 +261,7 @@ Datenvisualisierung
     Pandas <https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html>
     Seaborn <https://seaborn.pydata.org/>
     ggpy <https://github.com/yhat/ggpy>
-    NetworkX <https://networkx.github.io/>
+    NetworkX <networkx.ipynb>
     graphviz.ipynb
 
 .. toctree::
