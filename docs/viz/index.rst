@@ -38,7 +38,7 @@ Datenvisualisierung
             tooltip="Python-Bibliothek\nfür 2D-Plots",
             color="slateblue"
             target="_top",
-            href="https://matplotlib.org/"]
+            href="../viz/matplotlib.html"]
         mpld3 [
             label="mpld3",
             tooltip="Matplotlib für\nden Webbrowser",
@@ -256,7 +256,7 @@ Datenvisualisierung
     :maxdepth: 0
     :caption: Matplotlib
 
-    Matplotlib <https://matplotlib.org/>
+    matplotlib
     mpld3 <https://mpld3.github.io/>
     Pandas <https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html>
     Seaborn <https://seaborn.pydata.org/>
