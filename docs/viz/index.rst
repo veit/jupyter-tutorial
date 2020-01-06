@@ -50,7 +50,7 @@ Datenvisualisierung
             tooltip="Pandas Datenstrukturen mit\nMatplotlib visualisieren",
             color="slateblue",
             target="_top",
-            href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html"]
+            href="../viz/pandas.html"]
         seaborn [
             label="Seaborn",
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
@@ -258,7 +258,7 @@ Datenvisualisierung
 
     matplotlib
     mpld3 <https://mpld3.github.io/>
-    Pandas <https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html>
+    pandas
     Seaborn <https://seaborn.pydata.org/>
     ggpy <https://github.com/yhat/ggpy>
     networkx.ipynb
