@@ -274,7 +274,7 @@ Datenvisualisierung
     Vincent <https://vincent.readthedocs.io/>
     Vega-Light <https://bqplot.readthedocs.io/>
     Altair <https://altair-viz.github.io/>
-    Matplotlibr Altair <https://matplotlib.org/mpl-altair/>
+    Matplotlib Altair <https://matplotlib.org/mpl-altair/>
 
 .. toctree::
     :titlesonly:
