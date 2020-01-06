@@ -25,7 +25,7 @@ Beliebte Widget-Bibliotheken sind
     .. toctree::
        :maxdepth: 1
 
-       pythreejs.ipynb
+       ../../../viz/pythreejs.ipynb
 
 ``ipyvolume``
     IPyvolume ist eine Python-Bibliothek zur Visualisierung von 3D-Volumen und
