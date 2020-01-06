@@ -261,7 +261,7 @@ Datenvisualisierung
     Pandas <https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html>
     Seaborn <https://seaborn.pydata.org/>
     ggpy <https://github.com/yhat/ggpy>
-    NetworkX <networkx.ipynb>
+    networkx.ipynb
     graphviz.ipynb
 
 .. toctree::
