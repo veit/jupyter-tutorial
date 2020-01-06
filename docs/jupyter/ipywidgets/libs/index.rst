@@ -34,7 +34,7 @@ Beliebte Widget-Bibliotheken sind
     .. toctree::
        :maxdepth: 1
 
-       ipyvolume.ipynb
+       ../../../viz/ipyvolume.ipynb
 
 ``ipyleaflet``
     Jupyter-`Leaflet.js <https://leafletjs.com/>`_-Bridge
