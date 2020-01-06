@@ -208,6 +208,12 @@ Datenvisualisierung
             color="cyan",
             target="_top",
             href="https://github.com/santosjorge/cufflinks"]
+        pythreejs [
+            label="pythreejs",
+            tooltip="Notebook-Extension\nfür WebGL-fähige Webbrowser",
+            color="cyan",
+            target="_top",
+            href="../viz/pythreejs.html"]
         ipyvolume [
             label="IPyvolume",
             tooltip="Python-Bibliothek zur\nVisualisierung von\nVolumen und -Glyphen",
@@ -225,19 +231,13 @@ Datenvisualisierung
             tooltip="Interaktive Karten für\nJupyter Notebooks",
             color="cyan",
             target="_top",
-            href="https://ipyleaflet.readthedocs.io/"]
+            href="../viz/ipyleaflet.html"]
         bokeh [
             label="Bokeh",
             tooltip="Interaktive Python-Bibliothek\nzur Datenvisualisierung\nin modernen Webbrowsern",
             color="cyan",
             target="_top",
             href="https://docs.bokeh.org/"]
-        pythreejs [
-            label="pythreejs",
-            tooltip="Notebook-Extension\nfür WebGL-fähige Webbrowser",
-            color="cyan",
-            target="_top",
-            href="../viz/pythreejs.html"]
         javascript -- ipyvolume [color="cyan"]
         javascript -- plotly [color="cyan"]
         plotly -- cufflinks [color="cyan"]
@@ -310,9 +310,9 @@ Datenvisualisierung
 
     plotly <https://github.com/plotly/plotly.py>
     Cufflinks <https://github.com/santosjorge/cufflinks>
+    pythreejs.ipynb
     ipyvolume.ipynb
     Toyplot <https://toyplot.readthedocs.io/>
-    ipyleaflet <https://ipyleaflet.readthedocs.io/>
+    ipyleaflet.ipynb
     Bokeh <https://docs.bokeh.org/>
-    pythreejs.ipynb
 

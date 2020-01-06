@@ -42,7 +42,7 @@ Beliebte Widget-Bibliotheken sind
     .. toctree::
        :maxdepth: 1
 
-       ipyleaflet.ipynb
+       ../../../viz/ipyleaflet.ipynb
 
 ``ipywebrtc``
     `WebRTC <https://webrtc.org/>`_- und `MediaStream-API
