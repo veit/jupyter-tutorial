@@ -300,7 +300,7 @@ Datenvisualisierung
     :caption: D3.js
 
     d3js <https://d3js.org/>
-    bqplot <https://bqplot.readthedocs.io/>
+    bqplot/index
     d3po <https://github.com/adamlabadorf/d3po>
 
 .. toctree::
