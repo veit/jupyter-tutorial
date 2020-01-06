@@ -31,8 +31,8 @@ Anschließend könnt ihr Cartopy installieren mit:
     $ pipenv install cartopy
 
 .. note::
-   Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
-   unter :doc:`../packaging/install`.
+    Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
+    unter :ref:`pipenv-installieren`.
 
 Alternativ könnt ihr Cartopy auch mit `Spack <https://spack.io/>`_ installieren:
 
