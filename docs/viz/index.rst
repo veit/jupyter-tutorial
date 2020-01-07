@@ -147,7 +147,7 @@ Datenvisualisierung
             href="https://d3js.org/"]
         bqplot [
             label="bqplot",
-            tooltip="Interaktive Plotts\nmit D3.js und ipywidgets",
+            tooltip="Interaktive Plots\nmit D3.js und ipywidgets",
             color="deepskyblue",
             target="_top",
             href="../viz/bqplot/index.html"]
