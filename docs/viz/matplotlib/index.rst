@@ -71,3 +71,17 @@ werden und damit wir Titel und Beschriftung hinzufügen können ``subplots``:
    - `Toolkits <https://matplotlib.org/api/toolkits/index.html>`_
    - `Third party packages <https://matplotlib.org/thirdpartypackages/index.html>`_
 
+.. toctree::
+    :titlesonly:
+    :maxdepth: 0
+    :hidden:
+
+    mpld3 <https://mpld3.github.io/>
+    pandas
+    geopandas
+    seaborn
+    ggpy <https://github.com/yhat/ggpy>
+    networkx.ipynb
+    graphviz.ipynb
+    cartopy
+

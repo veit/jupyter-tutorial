@@ -38,7 +38,7 @@ Datenvisualisierung
             tooltip="Python-Bibliothek\nfür 2D-Plots",
             color="slateblue"
             target="_top",
-            href="../viz/matplotlib.html"]
+            href="../viz/matplotlib/index.html"]
         mpld3 [
             label="mpld3",
             tooltip="Matplotlib für\nden Webbrowser",
@@ -50,19 +50,19 @@ Datenvisualisierung
             tooltip="Pandas Datenstrukturen mit\nMatplotlib visualisieren",
             color="slateblue",
             target="_top",
-            href="../viz/pandas.html"]
+            href="../viz/matplotlib/pandas.html"]
         geopandas [
             label="GeoPandas",
             tooltip="geopandas erweitert Pandas um geometrische Datentypen",
             color="slateblue",
             target="_top",
-            href="../viz/geopandas.html"]
+            href="../viz/matplotlib/geopandas.html"]
         seaborn [
             label="Seaborn",
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
             color="slateblue",
             target="_top",
-            href="../viz/seaborn.html"]
+            href="../viz/matplotlib/seaborn.html"]
         ggpy [
             label="ggpy",
             tooltip="ggplot-Port für Python",
@@ -86,19 +86,19 @@ Datenvisualisierung
             tooltip="Erstellen, Ändern und Analysieren\nkomplexer Netzwerke",
             color="slateblue",
             target="_top",
-            href="../viz/networkx.html"]
+            href="../viz/matplotlib/networkx.html"]
         graphviz [
             label="Graphviz",
             tooltip="Mächtige Visualisierungssoftware\nfür Graphen",
             color="gray",
             target="_top",
-            href="../viz/graphviz.html"]
+            href="../viz/matplotlib/graphviz.html"]
         cartopy [
             label="Cartopy",
             tooltip="Erstellen von Karten und\nAnalyse von Geodaten",
             color="slateblue",
             target="_top",
-            href="../viz/cartopy.html"]
+            href="../viz/matplotlib/cartopy.html"]
         mpl -- pandas [color="slateblue"]
         pandas  -- geopandas [color="slateblue"]
         mpl -- seaborn [color="slateblue"]
@@ -261,17 +261,9 @@ Datenvisualisierung
 .. toctree::
     :titlesonly:
     :maxdepth: 0
-    :caption: Matplotlib
+    :hidden:
 
-    matplotlib
-    mpld3 <https://mpld3.github.io/>
-    pandas
-    geopandas
-    seaborn
-    ggpy <https://github.com/yhat/ggpy>
-    networkx.ipynb
-    graphviz.ipynb
-    cartopy
+    matplotlib/index
 
 .. toctree::
     :titlesonly:
