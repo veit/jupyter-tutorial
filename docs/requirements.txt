@@ -25,6 +25,7 @@ entrypoints==0.3
 flufl.lock==3.2
 funcy==1.14
 future==0.18.2
+geojson==2.5.0
 gitdb2==2.0.6
 GitPython==3.0.5
 grandalf==0.6
