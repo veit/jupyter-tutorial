@@ -28,6 +28,7 @@ future==0.18.2
 gitdb2==2.0.6
 GitPython==3.0.5
 grandalf==0.6
+graphviz==0.13.2
 humanize==0.5.1
 idna==2.8
 imagesize==1.1.0
