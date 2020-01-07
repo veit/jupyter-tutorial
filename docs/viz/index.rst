@@ -127,7 +127,7 @@ Datenvisualisierung
             tooltip="Grafik-Pipeline-System für\naussagekräftige Darstellungen\ngroßer Datensätze",
             color="royalblue",
             target="_top",
-            href="https://datashader.org/"]
+            href="../viz/datashader.html"]
         vaex -- mpl [color="royalblue;0.5:slateblue"]
         vaex -- bqplot [color="royalblue;0.5:deepskyblue"]
         vaex -- bokeh [color="royalblue;0.5:cyan"]
@@ -291,7 +291,7 @@ Datenvisualisierung
 
     Vaex <https://github.com/vaexio/vaex>
     HoloViews <http://holoviews.org/>
-    Datashader <https://datashader.org/>
+    datashader.ipynb
     mpld3 <https://mpld3.github.io/>
 
 .. toctree::
