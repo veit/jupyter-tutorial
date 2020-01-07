@@ -142,7 +142,7 @@ intersphinx_mapping = {
     'sphinx':  ('http://www.sphinx-doc.org/en/master/', None),
     'nbsphinx':  ('https://nbsphinx.readthedocs.io/en/0.4.2/', None),
     'pipenv': ('https://pipenv.readthedocs.io/en/latest/', None),
-    'spack':  ('https://spack.readthedocs.io/en/latest/', None),
+    'spack':  ('https://spack-tutorial.readthedocs.io/en/latest/', None),
     'ipyparallel': ('https://ipyparallel.readthedocs.io/en/latest/', None),
     'bokeh': ('https://docs.bokeh.org/en/latest/', None),
 }
