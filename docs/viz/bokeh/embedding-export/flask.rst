@@ -83,7 +83,7 @@ Examplarisch betten wir Bokeh-Plots in das `Flask
         from flask import render_template
           
         from bokeh.embed import server_document
-        …
+        ...
         @app.route('/', methods=['GET'])
         def bkapp_page():
             script = server_document('http://localhost:5006/bkapp')
@@ -120,7 +120,7 @@ Examplarisch betten wir Bokeh-Plots in das `Flask
 
         from flask import Flask
         from tornado.ioloop import IOLoop
-        …
+        ...
         def bk_worker():
             server = Server({'/bkapp': modify_doc}, io_loop=IOLoop(), allow_websocket_origin=["localhost:8000"])
             server.start()
@@ -139,10 +139,10 @@ Examplarisch betten wir Bokeh-Plots in das `Flask
 
    #. Schließlich wird noch die Flask-App definiert:
 
-      .. code-block:: python 
+      .. code-block:: python
 
         app = Flask(__name__)
-        …
+        ...
         if __name__ == '__main__':
             print('Opening single process Flask app with embedded Bokeh application on http://localhost:8000/')
             print()
