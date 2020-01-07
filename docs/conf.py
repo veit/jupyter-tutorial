@@ -144,6 +144,7 @@ intersphinx_mapping = {
     'pipenv': ('https://pipenv.readthedocs.io/en/latest/', None),
     'spack':  ('https://spack.readthedocs.io/en/latest/', None),
     'ipyparallel': ('https://ipyparallel.readthedocs.io/en/latest/', None),
+    'bokeh': ('https://docs.bokeh.org/en/latest/', None),
 }
 
 def setup(app):
