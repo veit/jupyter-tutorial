@@ -4,7 +4,7 @@ Cartopy
 `Cartopy <https://scitools.org.uk/cartopy/docs/latest/>`_ erstellt Karten und
 andere Geodatenanalysen wobei `PROJ.4 <https://proj4.org/>`_, `NumPy
 <https://www.numpy.org/>`_ and `Shapely <https://pypi.org/project/Shapely/>`_
-verwendet werden um basierend auf :ref:`matplotlib` Karten zu erstellen.
+verwendet werden um basierend auf :doc:`/viz/matplotlib` Karten zu erstellen.
 
 Installation
 ------------
@@ -56,7 +56,7 @@ Optionale Anforderungen
 Anforderungen zum Plotten
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* :doc:`matplotlib <matplotlib>`
+* :doc:`/viz/matplotlib`
 * `descartes <https://pypi.python.org/pypi/descartes>`_
 * `mapclassify <https://mapclassify.readthedocs.io/>`_
 
