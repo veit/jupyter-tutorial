@@ -3,8 +3,8 @@ Pandas
 
 `Pandas-Visualization
 <https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html>`_ 
-baut auf :doc:`/viz/matplotlib` auf, bietet jedoch ein einfacher zu bedienendes
-Interface für Pandas-Dataframes und -Zeitreihen.
+baut auf :doc:`/viz/matplotlib/index` auf, bietet jedoch ein einfacher zu
+bedienendes Interface für Pandas-Dataframes und -Zeitreihen.
 
 Installation
 ------------

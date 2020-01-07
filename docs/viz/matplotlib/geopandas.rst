@@ -6,7 +6,7 @@ räumliche Operationen an geometrischen Typen ermöglicht, wobei die geometrisch
 Operationen von `Shapely <https://shapely.readthedocs.io/>`_ ausgeführt werden.
 Für den Datenzugriff verwendet GeoPandas `Fiona
 <https://fiona.readthedocs.io/>`_ und zum Plotten `descartes
-<https://pypi.python.org/pypi/descartes>`_ und :doc:`matplotlib`.
+<https://pypi.python.org/pypi/descartes>`_ und :doc:`index`.
 
 Installation
 ------------

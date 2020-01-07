@@ -1,8 +1,9 @@
 seaborn
 =======
 
-`seaborn <https://seaborn.pydata.org/>`_ basiert auf :doc:`/viz/matplotlib` und
-bietet ein High-Level-Interface für die Visualisierung statistischer Daten.
+`seaborn <https://seaborn.pydata.org/>`_ basiert auf
+:doc:`/viz/matplotlib/index` und bietet ein High-Level-Interface für die
+Visualisierung statistischer Daten.
 
 Installation
 ------------
