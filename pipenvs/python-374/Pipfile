@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-ploy = {version = "*", editable = true}
+ploy = {version = "*",editable = true}
 
 [packages]
 pythreejs = "*"
@@ -13,7 +13,7 @@ ipyleaflet = "*"
 autopep8 = "*"
 geopandas = "*"
 panel = "*"
-holoviews = {extras = ["recommended"], version = "*"}
+holoviews = {extras = ["recommended"],version = "*"}
 hvplot = "*"
 selenium = "*"
 ipyvuetify = "*"
@@ -30,6 +30,7 @@ ipywebrtc = "*"
 geojson = "*"
 ipyparallel = "*"
 ipycanvas = "*"
+datashader = "*"
 
 [requires]
 python_version = "3.7.4"
