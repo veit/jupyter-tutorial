@@ -244,7 +244,7 @@ Datenvisualisierung
             tooltip="Interaktive Python-Bibliothek\nzur Datenvisualisierung\nin modernen Webbrowsern",
             color="cyan",
             target="_top",
-            href="https://docs.bokeh.org/"]
+            href="../viz/bokeh/index.html"]
         javascript -- ipyvolume [color="cyan"]
         javascript -- plotly [color="cyan"]
         plotly -- cufflinks [color="cyan"]
@@ -323,5 +323,5 @@ Datenvisualisierung
     ipyvolume.ipynb
     Toyplot <https://toyplot.readthedocs.io/>
     ipyleaflet.ipynb
-    Bokeh <https://docs.bokeh.org/>
+    bokeh/index
 
