@@ -27,6 +27,7 @@ Kontextbasierte API
 .. toctree::
     :titlesonly:
     :maxdepth: 0
+    :hidden:
 
     bq-examples.ipynb
     bq-mark-interactions.ipynb
