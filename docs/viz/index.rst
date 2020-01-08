@@ -211,7 +211,9 @@ Datenvisualisierung
         javascript [
             label="Javascript",
             tooltip="Skriptsprache, die ursprünglich\nfür dynamisches HTML in Webbrowsern\nentwickelt wurde",
-            color="cyan"]
+            color="cyan",
+            target="_top",
+            href="../viz/js/index.html"]
         plotly [
             label="plotly",
             tooltip="Interaktive Graphikbibliothek\nfür Python",
@@ -229,13 +231,13 @@ Datenvisualisierung
             tooltip="Notebook-Extension\nfür WebGL-fähige Webbrowser",
             color="cyan",
             target="_top",
-            href="../viz/pythreejs.html"]
+            href="../viz/js/pythreejs.html"]
         ipyvolume [
             label="IPyvolume",
             tooltip="Python-Bibliothek zur\nVisualisierung von\nVolumen und -Glyphen",
             color="cyan",
             target="_top",
-            href="../viz/ipyvolume.html"]
+            href="../viz/js/ipyvolume.html"]
         toyplot [
             label="Toyplot",
             tooltip="Leichtgewichtige Bibliothek\nfür ästhetische Plots",
@@ -247,7 +249,7 @@ Datenvisualisierung
             tooltip="Interaktive Karten für\nJupyter Notebooks",
             color="cyan",
             target="_top",
-            href="../viz/ipyleaflet.html"]
+            href="../viz/js/ipyleaflet.html"]
         javascript -- ipyvolume [color="cyan"]
         javascript -- plotly [color="cyan"]
         plotly -- cufflinks [color="cyan"]
@@ -267,16 +269,5 @@ Datenvisualisierung
     bokeh/index
     opengl/index
     d3js/index
-
-.. toctree::
-    :titlesonly:
-    :maxdepth: 0
-    :caption: Javascript
-
-    plotly <https://github.com/plotly/plotly.py>
-    Cufflinks <https://github.com/santosjorge/cufflinks>
-    pythreejs.ipynb
-    ipyvolume.ipynb
-    Toyplot <https://toyplot.readthedocs.io/>
-    ipyleaflet.ipynb
+    js/index
 
