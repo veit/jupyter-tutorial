@@ -105,7 +105,13 @@ Datenvisualisierung
         mpl -- mpld3 [color="slateblue;0.5:deepskyblue"]
         mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
 
-        // Vaex, HoloViews, datashader
+        // Bokeh
+        bokeh [
+            label="Bokeh",
+            tooltip="Interaktive Python-Bibliothek\nzur Datenvisualisierung\nin modernen Webbrowsern",
+            color="royalblue",
+            target="_top",
+            href="../viz/bokeh/index.html"]
         vaex [
             label="Vaex",
             tooltip="Python-Bibliothek zur Datenanalyse\nund -visualisierung",
@@ -123,16 +129,16 @@ Datenvisualisierung
             tooltip="Grafik-Pipeline-System für\naussagekräftige Darstellungen\ngroßer Datensätze",
             color="royalblue",
             target="_top",
-            href="../viz/datashader.html"]
+            href="../viz/bokeh/integration/datashader.html"]
+        vaex -- bokeh [color="royalblue;0.5:royalblue"]
+        holoviews -- bokeh [color="royalblue;0.5:royalblue"]
+        datashader -- bokeh [color="royalblue;0.5:royalblue"]
+        datashader -- holoviews [color="royalblue"]
         vaex -- mpl [color="royalblue;0.5:slateblue"]
         vaex -- bqplot [color="royalblue;0.5:deepskyblue"]
-        vaex -- bokeh [color="royalblue;0.5:cyan"]
         vaex -- opengl [color="royalblue;0.5:mediumpurple"]
-        holoviews -- bokeh [color="royalblue;0.5:cyan"]
         holoviews -- mpl [color="royalblue;0.5:slateblue"]
         datashader -- mpl [color="royalblue;0.5:slateblue"]
-        datashader -- holoviews [color="royalblue"]
-        datashader -- bokeh [color="royalblue;0.5:cyan"]
 
         // D3.js
         d3js [
@@ -242,18 +248,12 @@ Datenvisualisierung
             color="cyan",
             target="_top",
             href="../viz/ipyleaflet.html"]
-        bokeh [
-            label="Bokeh",
-            tooltip="Interaktive Python-Bibliothek\nzur Datenvisualisierung\nin modernen Webbrowsern",
-            color="cyan",
-            target="_top",
-            href="../viz/bokeh/index.html"]
         javascript -- ipyvolume [color="cyan"]
         javascript -- plotly [color="cyan"]
         plotly -- cufflinks [color="cyan"]
         javascript -- ipyleaflet [color="cyan"]
         javascript -- toyplot [color="cyan"]
-        javascript -- bokeh [color="cyan"]
+        javascript -- bokeh [color="cyan;0.5:royalblue"]
         javascript -- pythreejs [color="cyan"]
     }
 
@@ -264,15 +264,7 @@ Datenvisualisierung
 
     matplotlib/index
     vega/index
-
-.. toctree::
-    :titlesonly:
-    :maxdepth: 0
-    :caption: Andere
-
-    Vaex <https://github.com/vaexio/vaex>
-    HoloViews <http://holoviews.org/>
-    datashader.ipynb
+    bokeh/index
 
 .. toctree::
     :titlesonly:
@@ -304,5 +296,4 @@ Datenvisualisierung
     ipyvolume.ipynb
     Toyplot <https://toyplot.readthedocs.io/>
     ipyleaflet.ipynb
-    bokeh/index
 

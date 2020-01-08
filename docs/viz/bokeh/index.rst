@@ -77,4 +77,5 @@ einfach folgendes ein::
     embedding-export/flask
     extend.ipynb
     links
+    integration/index
 
