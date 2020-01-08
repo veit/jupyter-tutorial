@@ -10,9 +10,9 @@ Features
 * Voilà unterstützt :doc:`interaktive Jupyter-Widgets
   </jupyter/ipywidgets/index>`, einschließlich der Roundtrips zum Kernel.
   Auch benutzerdefinierte Widgets wie
-  :doc:`/viz/bqplot/index`,
-  :doc:`/viz/ipyleaflet`, 
-  :doc:`/viz/ipyvolume`, 
+  :doc:`/viz/d3js/bqplot/index`,
+  :doc:`/viz/js/ipyleaflet`, 
+  :doc:`/viz/js/ipyvolume`, 
   `ipympl <https://github.com/matplotlib/jupyter-matplotlib/>`_, 
   :doc:`ipysheet </jupyter/ipywidgets/libs/ipysheet>`, 
   `plotly <https://github.com/plotly/plotly.py>`_, 
