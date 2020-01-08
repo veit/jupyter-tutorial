@@ -1,6 +1,6 @@
 {
   "name": "jupyter-tutorial",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Aufbau und Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks",
   "main": "",
   "directories": {
@@ -32,6 +32,7 @@
     "os-tmpdir": "1.0.2",
     "osenv": "0.1.5",
     "path-is-absolute": "1.0.1",
+    "phantomjs-prebuilt": "^2.1.16",
     "proto-list": "1.2.4",
     "pseudomap": "1.0.2",
     "semver": "5.7.0",
