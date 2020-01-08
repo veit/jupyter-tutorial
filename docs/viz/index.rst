@@ -218,7 +218,7 @@ Datenvisualisierung
         // Javascript
         javascript [
             label="Javascript",
-            tooltip="Skriptsprache, die ursprünglich\nfür dynamisches HTML in Webbrowsern\nentwickelt wurde",
+            tooltip="Skriptsprache, die ursprünglich für\ndynamisches HTML in Webbrowsern\nentwickelt wurde",
             color="cyan",
             target="_top",
             href="../viz/js/index.html"]
