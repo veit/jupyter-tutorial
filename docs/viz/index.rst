@@ -146,13 +146,13 @@ Datenvisualisierung
             tooltip="Javascript-Bibliothek mit mächtigen\nVisualisierungskomponenten",
             color="deepskyblue",
             target="_top",
-            href="https://d3js.org/"]
+            href="../viz/d3js/index.html"]
         bqplot [
             label="bqplot",
             tooltip="Interaktive Plots\nmit D3.js und ipywidgets",
             color="deepskyblue",
             target="_top",
-            href="../viz/bqplot/index.html"]
+            href="../viz/d3js/bqplot/index.html"]
         d3po [
             label="d3po",
             tooltip="Javascript-Bibliothekt zum\nErstellen von D3.js-Charts",
@@ -266,16 +266,7 @@ Datenvisualisierung
     vega/index
     bokeh/index
     opengl/index
-
-.. toctree::
-    :titlesonly:
-    :maxdepth: 0
-    :caption: D3.js
-
-    d3js <https://d3js.org/>
-    bqplot/index
-    d3po <https://github.com/adamlabadorf/d3po>
-    mpld3 <https://mpld3.github.io/>
+    d3js/index
 
 .. toctree::
     :titlesonly:
