@@ -16,7 +16,7 @@ Datenvisualisierung
             tooltip="Open Graphics Library",
             color="mediumpurple",
             target="_top",
-            href="https://www.opengl.org/"]
+            href="../viz/opengl/index.html"]
         vispy [
             label="Vispy",
             tooltip="Python-Bibliothek für\ninteraktive wissenschaftliche\nVisualisierungen",
@@ -265,15 +265,7 @@ Datenvisualisierung
     matplotlib/index
     vega/index
     bokeh/index
-
-.. toctree::
-    :titlesonly:
-    :maxdepth: 0
-    :caption: OpenGL
-
-    OpenGL <https://www.opengl.org/>
-    vispy <http://vispy.org/>
-    glumpy <https://glumpy.github.io/>
+    opengl/index
 
 .. toctree::
     :titlesonly:
