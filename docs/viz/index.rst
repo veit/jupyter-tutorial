@@ -95,7 +95,7 @@ Datenvisualisierung
             href="../viz/matplotlib/cartopy.html"]
         iris [
             label="Iris",
-            tooltip="Visualisierung auf Basis der\nClimate and Forecast (CF) Conventions",
+            tooltip="Visualisierung auf Basis der Climate\nand Forecast (CF) Conventions",
             color="slateblue",
             target="_top",
             href="../viz/matplotlib/iris.html"]
