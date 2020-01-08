@@ -84,4 +84,5 @@ werden und damit wir Titel und Beschriftung hinzufügen können ``subplots``:
     networkx.ipynb
     graphviz.ipynb
     cartopy
+    iris
 
