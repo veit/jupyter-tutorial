@@ -108,6 +108,7 @@ Datenvisualisierung
         networkx -- graphviz [color="slateblue;0.5:gray"]
         mpl -- networkx [color="slateblue"]
         mpl -- cartopy [color="slateblue"]
+        mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
 
         // Vaex, HoloViews, datashader
         vaex [
@@ -168,7 +169,7 @@ Datenvisualisierung
             tooltip="Deklarative Sprache für\ninteraktive Visualisierungen",
             color="darkturquoise",
             target="_top",
-            href="https://vega.github.io/vega/"]
+            href="../viz/vega/index.html"]
         vincent [
             label="Vincent",
             tooltip="Python-Bibliothek für\nVega-Anwendungen",
@@ -190,13 +191,13 @@ Datenvisualisierung
         mpl_altair [
             label="Matplotlib Altair",
             tooltip="Matplotlib-Renderer\nfür Altair",
-            color="cornflowerblue",
+            color="darkturquoise",
             target="_top",
             href="https://matplotlib.org/mpl-altair/"]
         vega -- vincent [color="darkturquoise"]
         vega -- vega_light [color="darkturquoise"]
         vega_light -- altair [color="darkturquoise"]
-        altair -- mpl_altair [color="darkturquoise;0.5:cornflowerblue"]
+        altair -- mpl_altair [color="darkturquoise"]
 
         // Javascript
         javascript [
@@ -252,10 +253,8 @@ Datenvisualisierung
         javascript -- toyplot [color="cyan"]
         javascript -- bokeh [color="cyan"]
         javascript -- pythreejs [color="cyan"]
-
         d3js -- javascript [color="deepskyblue"]
         mpl -- mpld3 [color="slateblue;0.5:cornflowerblue"]
-        mpl -- mpl_altair [color="slateblue;0.5:cornflowerblue"]
     }
 
 .. toctree::
@@ -264,17 +263,7 @@ Datenvisualisierung
     :hidden:
 
     matplotlib/index
-
-.. toctree::
-    :titlesonly:
-    :maxdepth: 0
-    :caption: Vega
-
-    Vega <https://vega.github.io/vega/>
-    Vincent <https://vincent.readthedocs.io/>
-    Vega-Light <https://bqplot.readthedocs.io/>
-    Altair <https://altair-viz.github.io/>
-    Matplotlib Altair <https://matplotlib.org/mpl-altair/>
+    vega/index
 
 .. toctree::
     :titlesonly:
