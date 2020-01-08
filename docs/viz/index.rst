@@ -39,12 +39,6 @@ Datenvisualisierung
             color="slateblue"
             target="_top",
             href="../viz/matplotlib/index.html"]
-        mpld3 [
-            label="mpld3",
-            tooltip="Matplotlib für\nden Webbrowser",
-            color="cornflowerblue",
-            target="_top",
-            href="https://mpld3.github.io/"]
         pandas [
             label="Pandas",
             tooltip="Pandas Datenstrukturen mit\nMatplotlib visualisieren",
@@ -108,6 +102,7 @@ Datenvisualisierung
         networkx -- graphviz [color="slateblue;0.5:gray"]
         mpl -- networkx [color="slateblue"]
         mpl -- cartopy [color="slateblue"]
+        mpl -- mpld3 [color="slateblue;0.5:deepskyblue"]
         mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
 
         // Vaex, HoloViews, datashader
@@ -158,10 +153,17 @@ Datenvisualisierung
             color="deepskyblue",
             target="_top",
             href="https://github.com/adamlabadorf/d3po"]
+        mpld3 [
+            label="mpld3",
+            tooltip="Matplotlib für\nden Webbrowser",
+            color="deepskyblue",
+            target="_top",
+            href="https://mpld3.github.io/"]
         d3js -- bqplot [color="deepskyblue"]
-        d3js -- mpld3 [color="deepskyblue;0.5:cornflowerblue"]
+        d3js -- mpld3 [color="deepskyblue"]
         d3js -- d3po [color="deepskyblue"]
         d3js -- vega [color="deepskyblue;0.5:darkturquoise"]
+        d3js -- javascript [color="deepskyblue;0.5:cyan"]
 
         // Vega
         vega [
@@ -253,8 +255,6 @@ Datenvisualisierung
         javascript -- toyplot [color="cyan"]
         javascript -- bokeh [color="cyan"]
         javascript -- pythreejs [color="cyan"]
-        d3js -- javascript [color="deepskyblue"]
-        mpl -- mpld3 [color="slateblue;0.5:cornflowerblue"]
     }
 
 .. toctree::
@@ -273,7 +273,6 @@ Datenvisualisierung
     Vaex <https://github.com/vaexio/vaex>
     HoloViews <http://holoviews.org/>
     datashader.ipynb
-    mpld3 <https://mpld3.github.io/>
 
 .. toctree::
     :titlesonly:
@@ -292,6 +291,7 @@ Datenvisualisierung
     d3js <https://d3js.org/>
     bqplot/index
     d3po <https://github.com/adamlabadorf/d3po>
+    mpld3 <https://mpld3.github.io/>
 
 .. toctree::
     :titlesonly:
