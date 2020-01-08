@@ -99,6 +99,12 @@ Datenvisualisierung
             color="slateblue",
             target="_top",
             href="../viz/matplotlib/iris.html"]
+        yt [
+            label="yt",
+            tooltip="Python-Bibliothek zur Analyse\nund Visualisierung von Volumendaten",
+            color="slateblue",
+            target="_top",
+            href="../viz/matplotlib/yt.html"]
         mpl -- pandas [color="slateblue"]
         pandas  -- geopandas [color="slateblue"]
         mpl -- seaborn [color="slateblue"]
@@ -110,6 +116,7 @@ Datenvisualisierung
         mpl -- cartopy [color="slateblue"]
         iris -- mpl [color="slateblue"]
         iris -- cartopy [color="slateblue"]
+        yt -- mpl [color="slateblue"]
         mpl -- mpld3 [color="slateblue;0.5:deepskyblue"]
         mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
 
