@@ -93,6 +93,12 @@ Datenvisualisierung
             color="slateblue",
             target="_top",
             href="../viz/matplotlib/cartopy.html"]
+        iris [
+            label="Iris",
+            tooltip="Visualisierung auf Basis der\nClimate and Forecast (CF) Conventions",
+            color="slateblue",
+            target="_top",
+            href="../viz/matplotlib/iris.html"]
         mpl -- pandas [color="slateblue"]
         pandas  -- geopandas [color="slateblue"]
         mpl -- seaborn [color="slateblue"]
@@ -102,6 +108,8 @@ Datenvisualisierung
         networkx -- graphviz [color="slateblue;0.5:gray"]
         mpl -- networkx [color="slateblue"]
         mpl -- cartopy [color="slateblue"]
+        iris -- mpl [color="slateblue"]
+        iris -- cartopy [color="slateblue"]
         mpl -- mpld3 [color="slateblue;0.5:deepskyblue"]
         mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
 
