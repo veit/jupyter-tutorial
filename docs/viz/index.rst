@@ -25,7 +25,7 @@ Datenvisualisierung
             href="http://vispy.org/"]
         glumpy [
             label="Glumpy",
-            tooltip="JupyterHub\ninstallieren",
+            tooltip="Schnittstelle zwischen\nnumpy und OpenGL",
             color="mediumpurple",
             target="_top",
             href="https://glumpy.github.io/"]
