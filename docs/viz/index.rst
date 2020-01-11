@@ -322,6 +322,36 @@ Diagrammtypen
   * `HoloViews <http://holoviews.org/>`_
   * :doc:`js/ipyvolume`
 
+Datengröße
+----------
+
+Die Architektur und die zugrundeliegende Technologie für jede Bibliothek
+bestimmen die unterstützten Datengrößen und somit, ob die Bibliothek für 
+mehrdimensionale Arrays, lange Zeitreihen oder andere große Datasets geeignet
+ist:
+
+* **OpenGL**-Basierte Bibliotheken können i.A. sehr große Datensätze (mehrere
+  Gigabyte) verarbeiten.
+* **Matplotlib**-basierte Bibliotheken können i.d.R.  Hunderttausende von
+  Punkten mit angemessener Leistung verarbeiten oder in bestimmten
+  Sonderfällen (z.B. abhängig vom Backend) mehr.
+* **Javascript**-basierte Bibliotheken sind ohne besondere Behandlung
+  beschränkt auf einige tausend bis hunderttausend Punkte.
+
+  :doc:`../jupyter/ipywidgets/index`, :doc:`bokeh/index` und `Plotly
+  <https://github.com/plotly/plotly.py>`_ nutzen statt JSON jedoch spezielle
+  Transportmechanismen für Binärdaten, sodass sie hunderttausende bis
+  Millionen von Datenpunkten verarbeiten können. 
+
+  Andere Bibliotheken wie :doc:`js/ipyvolume`, `Plotly
+  <https://github.com/plotly/plotly.py>`_ und in einigen Fällen :doc:`bokeh/index`
+  nutzen `WebGL <https://www.khronos.org/webgl/wiki/Main_Page>`_, sodass sie bis
+  zu einer Millionen Datenpunkte verarbeiten können.
+
+* **Server-side Rendering** mit :doc:`bokeh/integration/datashader` oder `Vaex
+  <https://github.com/vaexio/vaex>`_ ermöglichen Milliarden, Billionen oder mehr
+  Datenpunkte.
+
 .. seealso::
     * `Data visualization grid
       <http://www.pythongrids.org/grids/g/data-visualization/>`_
