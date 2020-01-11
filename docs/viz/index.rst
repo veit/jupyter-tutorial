@@ -274,6 +274,10 @@ Datenvisualisierung
         javascript -- pythreejs [color="cyan"]
     }
 
+.. seealso::
+    * `Data visualization grid
+      <http://www.pythongrids.org/grids/g/data-visualization/>`_
+
 .. toctree::
     :titlesonly:
     :maxdepth: 0
