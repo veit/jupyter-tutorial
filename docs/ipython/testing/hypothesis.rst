@@ -53,9 +53,9 @@ jedoch im Report nur ein einfaches Beispiel für jeden Bug (eindeutiger
     Falsifying example: test_mean(ls=[8.988465674311579e+307, 8.98846567431158e+307])
     =========================== 1 failed in 0.11 seconds ===========================
 
-In unserem Beispiel haben wir :doc:`pytest:index` den Test finden und ausführen
-lassen. Wir hätten jedoch auch explizit einen :class:`python:unittest.TestCase`
-definieren können:
+In unserem Beispiel haben wir :doc:`pytest <pytest:index>` den Test finden und
+ausführen lassen. Wir hätten jedoch auch explizit einen
+:class:`python:unittest.TestCase` definieren können:
 
 .. code-block:: python
 
