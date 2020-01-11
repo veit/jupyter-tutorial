@@ -117,6 +117,7 @@ Datenvisualisierung
         iris -- mpl [color="slateblue"]
         iris -- cartopy [color="slateblue"]
         yt -- mpl [color="slateblue"]
+        yt -- opengl [color="slateblue;0.5:mediumpurple", style="dashed"]
         mpl -- mpld3 [color="slateblue;0.5:deepskyblue"]
         mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
 
