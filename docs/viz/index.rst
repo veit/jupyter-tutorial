@@ -274,6 +274,53 @@ Datenvisualisierung
         javascript -- pythreejs [color="cyan"]
     }
 
+Diagrammtypen
+-------------
+
+* Statistische Darstellungen (Streudiagramme, Linien, Flächen, Balken,
+  Histogramme)
+
+  * :doc:`matplotlib/seaborn`
+  * :doc:`d3js/bqplot/index`
+  * `Altair <https://altair-viz.github.io/>`_
+
+* Regelmäßige Gitter mit rechteckigen Maschen
+
+  * :doc:`bokeh/index`
+  * :doc:`bokeh/integration/datashader`
+  * `HoloViews <bokeh/integration/datashader>`_
+  * :doc:`matplotlib/index`
+  * `Plotly <https://github.com/plotly/plotly.py>`_
+
+* Unregelmäßige 2D-Netze (Dreiecksgitter)
+
+  * :doc:`matplotlib/index`
+  * :doc:`bokeh/index`
+  * :doc:`bokeh/integration/datashader`
+  * `HoloViews <bokeh/integration/datashader>`_
+
+* Geografische Daten
+
+  * :doc:`matplotlib/cartopy`
+  * `GeoViews <https://geoviews.org/>`_
+  * :doc:`js/ipyleaflet`
+  * `Plotly <https://github.com/plotly/plotly.py>`_
+
+* Netzwerke/Graphen
+
+  * :doc:`matplotlib/networkx`
+  * `Plotly <https://github.com/plotly/plotly.py>`_
+  * :doc:`bokeh/index`
+  * :doc:`bokeh/integration/datashader`
+  * `HoloViews <http://holoviews.org/>`_
+
+* 3D (Netze, Streudiagramme)
+
+  * `Plotly <https://github.com/plotly/plotly.py>`_
+  * :doc:`matplotlib/index`
+  * `HoloViews <http://holoviews.org/>`_
+  * :doc:`js/ipyvolume`
+
 .. seealso::
     * `Data visualization grid
       <http://www.pythongrids.org/grids/g/data-visualization/>`_
