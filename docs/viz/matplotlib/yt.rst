@@ -39,6 +39,16 @@ Beispiel
     yt : [INFO     ] 2019-06-05 13:10:39,676 Gathering a field list (this may take a moment.)
     9985379895930.627 Mjup
 
+.. note::
+    In Version 3.3 von yt wurde ein experimenteller hardware-beschleunigter
+    interaktiver Volume-Renderer eingeführt. Um die `Interactive Data
+    Visualization (IDV)
+    <https://yt-project.org/doc/visualizing/interactive_data_visualization.html>`_ 
+    verwenden zu können, müssen zusätzlich `PyOpenGL
+    <https://pypi.python.org/pypi/PyOpenGL>`_ und `cyglfw3
+    <https://pypi.python.org/pypi/cyglfw3/>`_ mit ihren jeweiligen
+    Abhängigkeiten installiert werden.
+
 .. seealso::
    - `Quickstart <https://yt-project.org/doc/quickstart/index.html>`_
    - `Cookbook <https://yt-project.org/doc/cookbook/index.html>`_
