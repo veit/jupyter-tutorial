@@ -104,7 +104,8 @@ Notebook-Erweiterungen.
 
         $ jupyter nbconvert mynotebook.ipynb --template toc2
 
-    Eine allgemeine Dokumentation zu Vorlagen findet ihr in :label:`Customizing`.
+    Eine allgemeine Dokumentation zu Vorlagen findet ihr in
+    :label:`nbconvert:external_exporters`.
 
 :doc:`nbextensions/tree-filter/readme`
     filtert im Jupyter-Dashboard nach Dateinamen.
@@ -119,7 +120,7 @@ Notebook-Erweiterungen.
     .. image:: code-folding.png
        :alt: Codefolding
  
-    Üblicherweise wird das Codefolding beim Export mit :label:`nbconvert`
+    Üblicherweise wird das Codefolding beim Export mit :doc:`../nbconvert`
     beibehalten. Dies kann entweder in ``jupyter_nbconvert_config.py`` geändert
     werden mit:
 
