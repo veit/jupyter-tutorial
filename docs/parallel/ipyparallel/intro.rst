@@ -120,8 +120,10 @@ Starten
     [IPClusterStart] Starting 4 Engines with LocalEngineSetLauncher
 
    Batch-Systeme
-    Neben  dem Profil :ipyparallel:label:`Local`, das ``LocalControllerLauncher``
-    und ``LocalEngineSetLauncher`` startet,  gibt es auch noch die Profile
+    Neben  der Möglichkeit, ``ipcontroller`` und ``ipengine`` lokal zu starten,
+   siehe *Starting the controller and engine on your local machine* in
+   :ipyparallel:label:`ssh`, dRieas ``LocalControllerLauncher``
+    und ``LocalEngineSetLauncher`` starten,  gibt es auch noch die Profile
     ``MPI``, ``PBS``, `SGE``, ``LSF``, ``HTCondor``, ``Slurm``,
     ``SSH`` und ``WindowsHPC``.
 
