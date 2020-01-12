@@ -275,6 +275,18 @@ Datenvisualisierung
         javascript -- pythreejs [color="cyan"]
     }
 
+.. toctree::
+    :titlesonly:
+    :maxdepth: 0
+    :hidden:
+
+    matplotlib/index
+    vega/index
+    bokeh/index
+    opengl/index
+    d3js/index
+    js/index
+
 Diagrammtypen
 -------------
 
@@ -355,16 +367,4 @@ ist:
 .. seealso::
     * `Data visualization grid
       <http://www.pythongrids.org/grids/g/data-visualization/>`_
-
-.. toctree::
-    :titlesonly:
-    :maxdepth: 0
-    :hidden:
-
-    matplotlib/index
-    vega/index
-    bokeh/index
-    opengl/index
-    d3js/index
-    js/index
 
