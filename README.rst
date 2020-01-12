@@ -79,7 +79,7 @@ Pull-Requests
 
 Wenn ihr Vorschläge für Verbesserungen und Ergänzungen habt, empfehle ich euch,
 einen `Fork <https://github.com/veit/jupyter-tutorial/fork>`_ meines
-`GitHub-Repositories <https://github.com/veit/jupyter-tutorial/>`_ zu erstellen
+`GitHub-Repository <https://github.com/veit/jupyter-tutorial/>`_ zu erstellen
 und darin eure Änderungen vorzunehmen. Gerne dürft ihr auch einen *Pull Request*
 stellen. Sofern die darin enthaltenen Änderungen klein und atomar sind, schaue ich
 mir eure Vorschläge gerne an.
