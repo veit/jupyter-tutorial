@@ -4,8 +4,8 @@ Hypothesis
 `Hypothesis <https://hypothesis.readthedocs.io/>`_ ist eine Bibliothek, mit der
 ihr Tests schreiben könnt, die anhand einer Quelle von Beispielen
 parametrisiert werden. Anschließend werden einfache und nachvollziehbare
-Beispiele generiert, anhand derer eure Tests fehlschlagen und ihr mit geringen
-Aufwänden Fehler finden könnt.
+Beispiele generiert, anhand derer eure Tests fehlschlagen können und ihr mit
+geringen Aufwänden Fehler finden könnt.
 
 Beispiel
 --------

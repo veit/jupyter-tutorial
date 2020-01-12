@@ -27,15 +27,15 @@ Als nächstes solltet Ihr dieses Notebook umbenennen indem ihr auf den Titel
 Die Notebook-Oberfläche
 -----------------------
 
-Es gibt zwei wichtige Begriffe um Jupyter Notebooks zu beschreiben: *Zelle* und
+Es gibt zwei wichtige Begriffe, um Jupyter Notebooks zu beschreiben: *Zelle* und
 *Kernel*:
 
 .. glossary::
 
-   *Notebook Kernel*
+   *Notebook-Kernel*
        *Rechenmaschine*, die den in einem Notebook enthaltenen Code ausführt.
 
-   *Notebook Zelle*
+   *Notebook-Zelle*
        Container für Text, der in einem Notebook angezeigt werden soll oder für
        Code, der vom Kernel des Notebooks ausgeführt werden soll.
 
@@ -118,7 +118,7 @@ Beim Klick auf :menuselection:`Save and Checkpoint` wird eure ``ipynb``-Datei
 gespeichert. Aber was hat es mit dem *Checkpoint* auf sich?
 
 Jedesmal, wenn ihr ein neues Notebook anlegt, wird auch eine Datei angelegt,
-die üblicherweise all1 120 Sekunden automatisch eure Änderungen speichert.
+die üblicherweise alle 120 Sekunden automatisch eure Änderungen speichert.
 Dieser Checkpoint findet sich üblicherweise in einem versteckten Verzeichnis
 namens ``.ipynb_checkpoints/``. Diese Checkpoint-Datei ermöglicht euch daher,
 eure nicht gespeicherten Daten im Falle eines unerwarteten Problems
@@ -132,14 +132,14 @@ Tipps & Tricks
    Vorwort um den Inhalt und Zweck des Notebooks zu beschreiben.
 #. Erstellt Überschriften und Dokumentationen in Markdown-Zellen um euer
    Notebook zu strukturieren und eure Workflow-Schritte zu erläutern. Dabei ist
-   vollkommen egal ob ihr das für eure Kollegen oder für euer zukünftig selbst
+   vollkommen egal, ob ihr das für eure Kollegen oder für euer zukünftig selbst
    macht.
 #. Verwendet *Table of Contents (2)* aus der
-   :doc:`../../jupyter/nbextensions/list` um ein Inhaltsverzeichnis zu
+   :doc:`../../jupyter/nbextensions/list`, um ein Inhaltsverzeichnis zu
    erstellen.
 #. Verwendet die Notebook-Erweiterung :ref:`setup
    </jupyter/nbextensions/setup.ipynb>`.
-#. Verwendet *Snippets* aus der :doc:`../../jupyter/nbextensions/list` um
+#. Verwendet *Snippets* aus der :doc:`../../jupyter/nbextensions/list`, um
    weitere, häufig benötigte Code-Blöcke, z.B. typische Importanweisungen,
    bequem einfügen zu  können.
 

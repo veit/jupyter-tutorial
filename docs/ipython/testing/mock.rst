@@ -23,7 +23,7 @@ Zum Beispiel könnt ihr einen Monkeypatch für eine Methode ausführen:
     thing.method.assert_called_with(3, 4, 5, key='value')
 
 Um Mock-Klassen oder- Objekte in einem zu testenden Modul zu erzeugen, kann der
-``patch``-Dekorator verwendet werden.  folgenden Beispiel wird ein externes
+``patch``-Dekorator verwendet werden. Im folgenden Beispiel wird ein externes
 Suchsystem durch eine Mock-Klasse ersetzt, die immer das gleiche Ergebnis
 liefert:
 
@@ -47,7 +47,7 @@ liefert:
 Installation
 ------------
 
-Für altere Python-Versionen kann sie installiert werden mit
+Für ältere Python-Versionen kann sie installiert werden mit
 
 .. code-block:: console
 

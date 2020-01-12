@@ -27,6 +27,6 @@ startet ihr zunächst den Notebook-Server:
 Anschließend sollte der Standardbrowser mit der angegebenen URL geöffnet
 werden. Häufig ist dies ``http://localhost:8888``.
 
-Anschließend könnt ihr im Browser einen Python-Prozess starten indem ihr ein
-neues Notebook erstellt.
+Nun könnt ihr im Browser einen Python-Prozess starten, indem ihr ein neues
+Notebook erstellt.
 
