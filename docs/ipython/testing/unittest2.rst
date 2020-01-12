@@ -20,7 +20,7 @@ vereinfachen:
         ...
 
 Auf diese Weise könnt ihr, wenn ihr zu einer neueren Python-Version wechselt und
-das Modul ``unittest2`` nicht mehr benötigt, einfach den Import in Ihrem
+das Modul ``unittest2`` nicht mehr benötigt, einfach den Import in eurem
 Testmodul ändern, ohne dass ihr weiteren Code ändern müsst.
 
 Installation
