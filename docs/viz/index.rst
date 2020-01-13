@@ -3,11 +3,11 @@ Datenvisualisierung
 
 Der :doc:`Überblick über die aktuellen Python-Visualisierungsbibliotheken
 <overview>` ist aktuell sehr unübersichtlich. Im Folgenden versuche ich,
-die Entscheidung für die passende Auswahl zu vereinfachen, indem ich einige
-Aspekte der Bibliotheken genauer beleuchte:
+die Entscheidung für die passende Bibliothek zu vereinfachen, indem ich einige
+Aspekte genauer beleuchte:
 
-* :ref:`Überblick über die Entwicklungsaktivitäten und Lizenzen
-  </viz/overview.rst#tabellarischer-uberblick>`
+* :ref:`/viz/overview.rst#technologien`
+* :ref:`/viz/overview.rst#aktivitaten-und-lizenzen`
 * :ref:`/viz/overview.rst#diagrammtypen` (Statistische Darstellungen,
   regelmäßige und unregelmäßige Gitter etc.)
 * :ref:`/viz/overview.rst#datengrosze`

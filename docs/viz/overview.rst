@@ -1,8 +1,8 @@
 Überblick über die Python-Datenvisualisierungsbibliotheken
 ==========================================================
 
-Graphischer Überblick
----------------------
+Technologien
+------------
 
 .. graphviz::
    :layout: neato
@@ -278,13 +278,14 @@ Graphischer Überblick
         javascript -- pythreejs [color="cyan"]
     }
 
-Tabellarischer Überblick
+Aktivitäten und Lizenzen
 ------------------------
 
 Mit diesem tabellarischen Überblick könnt ihr schnell die Aktivitäten und
 Lizenzen der verschiedenen Bibliotheken vergleichen. So könnt ihr z.B. sofort
 sehen, dass die Bibliotheken ggpy, scikit-plot, d3po, vincent und Matplotlib
-Altair seit einem Jahr nicht mehr weiterentwickelt wurden (Stand: 13.01.2020).
+Altair seit mindestens einem Jahr nicht mehr weiterentwickelt wurden (Stand:
+13.01.2020).
 
 .. csv-table:: GitHub-Insights
     :header: "Name", "Stars", "Mitwirkende", "Commit-Aktivität", "Lizenz"
