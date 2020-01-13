@@ -1,6 +1,9 @@
 Datenvisualisierung
 ===================
 
+Graphischer Überblick
+---------------------
+
 .. graphviz::
    :layout: neato
 
@@ -69,8 +72,8 @@ Datenvisualisierung
             color="slateblue",
             target="_top",
             href="https://scikit-plot.readthedocs.io/"]
-        yellow_brick [
-            label="Yellow brick",
+        yellowbrick [
+            label="Yellowbrick",
             tooltip="Tools für die visuelle Analyse und Diagnose\nvon Scikit-learn-Projekten",
             color="slateblue",
             target="_top",
@@ -110,7 +113,7 @@ Datenvisualisierung
         mpl -- seaborn [color="slateblue"]
         mpl -- ggpy [color="slateblue"]
         mpl -- scikit_plot [color="slateblue"]
-        mpl -- yellow_brick [color="slateblue"]
+        mpl -- yellowbrick [color="slateblue"]
         networkx -- graphviz [color="slateblue;0.5:gray"]
         mpl -- networkx [color="slateblue"]
         mpl -- cartopy [color="slateblue"]
@@ -205,7 +208,7 @@ Datenvisualisierung
             tooltip="High-level-Grammatik für\nkomplexe Vega-Anwendungen",
             color="darkturquoise",
             target="_top",
-            href="https://bqplot.readthedocs.io/"]
+            href="https://github.com/vega/vega-lite"]
         altair [
             label="Altair",
             tooltip="Deklarative Visualisierung\nin Python",
@@ -274,6 +277,50 @@ Datenvisualisierung
         javascript -- bokeh [color="cyan;0.5:royalblue"]
         javascript -- pythreejs [color="cyan"]
     }
+
+Tabellarischer Überblick
+------------------------
+
+Mit diesem tabellarischen Überblick könnt ihr schnell die Aktivitäten und
+Lizenzen der verschiedenen Bibliotheken vergleichen. So könnt ihr z.B. sofort
+sehen, dass die Bibliotheken ggpy, scikit-plot, d3po, vincent und Matplotlib
+Altair seit einem Jahr nicht mehr weiterentwickelt wurden (Stand: 13.01.2020).
+
+.. csv-table:: GitHub-Insights
+    :header: "Name", "Stars", "Mitwirkende", "Commit-Aktivität", "Lizenz"
+
+    "`vispy <https://github.com/vispy/vispy>`_",".. image:: https://img.shields.io/github/stars/vispy/vispy",".. image:: https://img.shields.io/github/contributors/vispy/vispy",".. image:: https://img.shields.io/github/commit-activity/y/vispy/vispy",".. image:: https://img.shields.io/github/license/vispy/vispy"
+    "`glumpy <https://github.com/glumpy/glumpy>`_",".. image:: https://img.shields.io/github/stars/glumpy/glumpy",".. image:: https://img.shields.io/github/contributors/glumpy/glumpy",".. image:: https://img.shields.io/github/commit-activity/y/glumpy/glumpy",".. image:: https://img.shields.io/github/license/glumpy/glumpy"
+    "`Matplotlib <https://github.com/matplotlib/matplotlib>`_",".. image:: https://img.shields.io/github/stars/matplotlib/matplotlib",".. image:: https://img.shields.io/github/contributors/matplotlib/matplotlib",".. image:: https://img.shields.io/github/commit-activity/y/matplotlib/matplotlib",".. image:: https://img.shields.io/github/license/matplotlib/matplotlib"
+    "`pandas <https://github.com/pandas-dev/pandas>`_",".. image:: https://img.shields.io/github/stars/pandas-dev/pandas",".. image:: https://img.shields.io/github/contributors/pandas-dev/pandas",".. image:: https://img.shields.io/github/commit-activity/y/pandas-dev/pandas",".. image:: https://img.shields.io/github/license/pandas-dev/pandas"
+    "`geopandas <https://github.com/geopandas/geopandas>`_",".. image:: https://img.shields.io/github/stars/geopandas/geopandas",".. image:: https://img.shields.io/github/contributors/geopandas/geopandas",".. image:: https://img.shields.io/github/commit-activity/y/geopandas/geopandas",".. image:: https://img.shields.io/github/license/geopandas/geopandas"
+    "`seaborn <https://github.com/mwaskom/seaborn>`_",".. image:: https://img.shields.io/github/stars/mwaskom/seaborn",".. image:: https://img.shields.io/github/contributors/mwaskom/seaborn",".. image:: https://img.shields.io/github/commit-activity/y/mwaskom/seaborn",".. image:: https://img.shields.io/github/license/mwaskom/seaborn"
+    "`ggpy <https://github.com/yhat/ggpy>`_",".. image:: https://img.shields.io/github/stars/yhat/ggpy",".. image:: https://img.shields.io/github/contributors/yhat/ggpy",".. image:: https://img.shields.io/github/commit-activity/y/yhat/ggpy",".. image:: https://img.shields.io/github/license/yhat/ggpy"
+    "`scikit-plot <https://github.com/reiinakano/scikit-plot>`_",".. image:: https://img.shields.io/github/stars/reiinakano/scikit-plot",".. image:: https://img.shields.io/github/contributors/reiinakano/scikit-plot",".. image:: https://img.shields.io/github/commit-activity/y/reiinakano/scikit-plot",".. image:: https://img.shields.io/github/license/reiinakano/scikit-plot"
+    "`Yellowbrick <https://github.com/DistrictDataLabs/yellowbrick/>`_",".. image:: https://img.shields.io/github/stars/DistrictDataLabs/yellowbrick",".. image:: https://img.shields.io/github/contributors/DistrictDataLabs/yellowbrick",".. image:: https://img.shields.io/github/commit-activity/y/DistrictDataLabs/yellowbrick",".. image:: https://img.shields.io/github/license/DistrictDataLabs/yellowbrick"
+    "`networkx <https://github.com/networkx/networkx>`_",".. image:: https://img.shields.io/github/stars/networkx/networkx",".. image:: https://img.shields.io/github/contributors/networkx/networkx",".. image:: https://img.shields.io/github/commit-activity/y/networkx/networkx",".. image:: https://img.shields.io/github/license/networkx/networkx"
+    "`graphviz <https://github.com/xflr6/graphviz>`_",".. image:: https://img.shields.io/github/stars/xflr6/graphviz",".. image:: https://img.shields.io/github/contributors/xflr6/graphviz",".. image:: https://img.shields.io/github/commit-activity/y/xflr6/graphviz",".. image:: https://img.shields.io/github/license/xflr6/graphviz"
+    "`cartopy <https://github.com/SciTools/cartopy>`_",".. image:: https://img.shields.io/github/stars/SciTools/cartopy",".. image:: https://img.shields.io/github/contributors/SciTools/cartopy",".. image:: https://img.shields.io/github/commit-activity/y/SciTools/cartopy",".. image:: https://img.shields.io/github/license/SciTools/cartopy"
+    "`iris <https://github.com/SciTools/iris>`_",".. image:: https://img.shields.io/github/stars/SciTools/iris",".. image:: https://img.shields.io/github/contributors/SciTools/iris",".. image:: https://img.shields.io/github/commit-activity/y/SciTools/iris",".. image:: https://img.shields.io/github/license/SciTools/iris"
+    "`yt <https://github.com/yt-project/yt>`_",".. image:: https://img.shields.io/github/stars/yt-project/yt",".. image:: https://img.shields.io/github/contributors/yt-project/yt",".. image:: https://img.shields.io/github/commit-activity/y/yt-project/yt",".. image:: https://img.shields.io/github/license/yt-project/yt"
+    "`bokeh <https://github.com/bokeh/bokeh>`_",".. image:: https://img.shields.io/github/stars/bokeh/bokeh",".. image:: https://img.shields.io/github/contributors/bokeh/bokeh",".. image:: https://img.shields.io/github/commit-activity/y/bokeh/bokeh",".. image:: https://img.shields.io/github/license/bokeh/bokeh"
+    "`vaex <https://github.com/vaexio/vaex>`_",".. image:: https://img.shields.io/github/stars/vaexio/vaex",".. image:: https://img.shields.io/github/contributors/vaexio/vaex",".. image:: https://img.shields.io/github/commit-activity/y/vaexio/vaex",".. image:: https://img.shields.io/github/license/vaexio/vaex"
+    "`holoviews <https://github.com/holoviz/holoviews>`_",".. image:: https://img.shields.io/github/stars/holoviz/holoviews",".. image:: https://img.shields.io/github/contributors/holoviz/holoviews",".. image:: https://img.shields.io/github/commit-activity/y/holoviz/holoviews",".. image:: https://img.shields.io/github/license/holoviz/holoviews"
+    "`datashader <https://github.com/holoviz/datashader>`_",".. image:: https://img.shields.io/github/stars/holoviz/datashader",".. image:: https://img.shields.io/github/contributors/holoviz/datashader",".. image:: https://img.shields.io/github/commit-activity/y/holoviz/datashader",".. image:: https://img.shields.io/github/license/holoviz/datashader"
+    "`bqplot <https://github.com/bloomberg/bqplot>`_",".. image:: https://img.shields.io/github/stars/bloomberg/bqplot",".. image:: https://img.shields.io/github/contributors/bloomberg/bqplot",".. image:: https://img.shields.io/github/commit-activity/y/bloomberg/bqplot",".. image:: https://img.shields.io/github/license/bloomberg/bqplot"
+    "`d3po <https://github.com/adamlabadorf/d3po>`_",".. image:: https://img.shields.io/github/stars/adamlabadorf/d3po",".. image:: https://img.shields.io/github/contributors/adamlabadorf/d3po",".. image:: https://img.shields.io/github/commit-activity/y/adamlabadorf/d3po",".. image:: https://img.shields.io/github/license/adamlabadorf/d3po"
+    "`mpld3 <https://github.com/mpld3/mpld3>`_",".. image:: https://img.shields.io/github/stars/mpld3/mpld3",".. image:: https://img.shields.io/github/contributors/mpld3/mpld3",".. image:: https://img.shields.io/github/commit-activity/y/mpld3/mpld3",".. image:: https://img.shields.io/github/license/mpld3/mpld3"
+    "`vega <https://github.com/vega/vega>`_",".. image:: https://img.shields.io/github/stars/vega/vega",".. image:: https://img.shields.io/github/contributors/vega/vega",".. image:: https://img.shields.io/github/commit-activity/y/vega/vega",".. image:: https://img.shields.io/github/license/vega/vega"
+    "`vincent <https://github.com/wrobstory/vincent>`_",".. image:: https://img.shields.io/github/stars/wrobstory/vincent",".. image:: https://img.shields.io/github/contributors/wrobstory/vincent",".. image:: https://img.shields.io/github/commit-activity/y/wrobstory/vincent",".. image:: https://img.shields.io/github/license/wrobstory/vincent"
+    "`Vega-Lite <https://github.com/vega/vega-lite>`_",".. image:: https://img.shields.io/github/stars/vega/vega-lite",".. image:: https://img.shields.io/github/contributors/vega/vega-lite",".. image:: https://img.shields.io/github/commit-activity/y/vega/vega-lite",".. image:: https://img.shields.io/github/license/vega/vega-lite"
+    "`altair <https://github.com/altair-viz/altair>`_",".. image:: https://img.shields.io/github/stars/altair-viz/altair",".. image:: https://img.shields.io/github/contributors/altair-viz/altair",".. image:: https://img.shields.io/github/commit-activity/y/altair-viz/altair",".. image:: https://img.shields.io/github/license/altair-viz/altair"
+    "`Matplotlib Altair <https://github.com/matplotlib/mpl-altair>`_",".. image:: https://img.shields.io/github/stars/matplotlib/mpl-altair",".. image:: https://img.shields.io/github/contributors/matplotlib/mpl-altair",".. image:: https://img.shields.io/github/commit-activity/y/matplotlib/mpl-altair",".. image:: https://img.shields.io/github/license/matplotlib/mpl-altair"
+    "`plotly <https://github.com/plotly/plotly.py>`_",".. image:: https://img.shields.io/github/stars/plotly/plotly.py",".. image:: https://img.shields.io/github/contributors/plotly/plotly.py",".. image:: https://img.shields.io/github/commit-activity/y/plotly/plotly.py",".. image:: https://img.shields.io/github/license/plotly/plotly.py"
+    "`cufflinks <https://github.com/santosjorge/cufflinks>`_",".. image:: https://img.shields.io/github/stars/santosjorge/cufflinks",".. image:: https://img.shields.io/github/contributors/santosjorge/cufflinks",".. image:: https://img.shields.io/github/commit-activity/y/santosjorge/cufflinks",".. image:: https://img.shields.io/github/license/santosjorge/cufflinks"
+    "`pythreejs <https://github.com/jupyter-widgets/pythreejs>`_",".. image:: https://img.shields.io/github/stars/jupyter-widgets/pythreejs",".. image:: https://img.shields.io/github/contributors/jupyter-widgets/pythreejs",".. image:: https://img.shields.io/github/commit-activity/y/jupyter-widgets/pythreejs",".. image:: https://img.shields.io/github/license/jupyter-widgets/pythreejs"
+    "`ipyvolume <https://github.com/maartenbreddels/ipyvolume>`_",".. image:: https://img.shields.io/github/stars/maartenbreddels/ipyvolume",".. image:: https://img.shields.io/github/contributors/maartenbreddels/ipyvolume",".. image:: https://img.shields.io/github/commit-activity/y/maartenbreddels/ipyvolume",".. image:: https://img.shields.io/github/license/maartenbreddels/ipyvolume"
+    "`toyplot <https://github.com/sandialabs/toyplot>`_",".. image:: https://img.shields.io/github/stars/sandialabs/toyplot",".. image:: https://img.shields.io/github/contributors/sandialabs/toyplot",".. image:: https://img.shields.io/github/commit-activity/y/sandialabs/toyplot",".. image:: https://img.shields.io/github/license/sandialabs/toyplot"
+    "`ipyleaflet <https://github.com/jupyter-widgets/ipyleaflet>`_",".. image:: https://img.shields.io/github/stars/jupyter-widgets/ipyleaflet",".. image:: https://img.shields.io/github/contributors/jupyter-widgets/ipyleaflet",".. image:: https://img.shields.io/github/commit-activity/y/jupyter-widgets/ipyleaflet",".. image:: https://img.shields.io/github/license/jupyter-widgets/ipyleaflet"
 
 .. toctree::
     :titlesonly:
