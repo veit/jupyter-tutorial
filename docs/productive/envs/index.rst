@@ -1,8 +1,5 @@
-Reproduzierbarkeit
-==================
-
-Paketmanagement
----------------
+Reproduzierbare Umgebungen
+==========================
 
 Führt die Notebooks in einer dezidierten Umgebung aus (z.B. mit
 :doc:`pipenv/index`, :doc:`devpi` und :doc:`Spack <spack/index>`. Speichert
