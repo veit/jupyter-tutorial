@@ -8,25 +8,25 @@ Features
 --------
 
 * Voilà unterstützt :doc:`interaktive Jupyter-Widgets
-  </jupyter/ipywidgets/index>`, einschließlich der Roundtrips zum Kernel.
-  Auch benutzerdefinierte Widgets wie
+  </workspace/jupyter/ipywidgets/index>`, einschließlich der Roundtrips zum
+  Kernel. Auch benutzerdefinierte Widgets wie
   :doc:`/viz/d3js/bqplot/index`,
   :doc:`/viz/js/ipyleaflet`, 
   :doc:`/viz/js/ipyvolume`, 
   `ipympl <https://github.com/matplotlib/jupyter-matplotlib/>`_, 
-  :doc:`ipysheet </jupyter/ipywidgets/libs/ipysheet>`, 
+  :doc:`ipysheet </workspace/jupyter/ipywidgets/libs/ipysheet>`, 
   `plotly <https://github.com/plotly/plotly.py>`_, 
   `ipywebrtc <https://github.com/maartenbreddels/ipywebrtc>`_ usw. werden
   unterstützt.
 * Voilà erlaubt keine willkürliche Ausführung von Code durch Nutzer von
   Dashboards.
 * Voilà basiert auf Jupyter-Standardprotokollen und -Dateiformaten und
-  funktioniert mit jedem :doc:`Jupyter-Kernel </jupyter/kernels/index>`: C++,
-  Python, Julia.
+  funktioniert mit jedem
+  :doc:`Jupyter-Kernel </workspace/jupyter/kernels/index>`: C++, Python, Julia.
   Dies macht es zu einem sprachunabhängigen Dashboard-System.
 * Voilà ist erweiterbar. Es enthält ein flexibles :doc:`Template
-  </jupyter/dashboards/voila/templating>`-System zur Erstellung umfangreicher
-  Layouts.
+  </workspace/jupyter/dashboards/voila/templating>`-System zur Erstellung
+  umfangreicher Layouts.
 
 Ausführungsmodell
 -----------------

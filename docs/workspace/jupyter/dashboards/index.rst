@@ -6,10 +6,10 @@ Dashboards
     einem Gestaltungsraster oder in Berichtform angeordnet werden können.
 :doc:`appmode/index`
     Jupyter-Erweiterung, die aus Notebooks Webanwendungen macht.
-:doc:`/jupyter/nbviewer`
+:doc:`/workspace/jupyter/nbviewer`
     Er eignet sich hervorragend zum Anzeigen statischer Berichte, kann
     aber auch zusammen mit :doc:`interaktiven Widgets
-    </jupyter/ipywidgets/embedding>` verwendet werden, deren Status im
+    </workspace/jupyter/ipywidgets/embedding>` verwendet werden, deren Status im
     Notebook-Dokument selbst gespeichert werden.
 :doc:`panel/index`
     wurde auf Basis von `Bokeh <https://bokeh.pydata.org/en/latest/>`_ und

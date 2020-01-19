@@ -135,11 +135,12 @@ Tipps & Tricks
    vollkommen egal, ob ihr das für eure Kollegen oder für euer zukünftig selbst
    macht.
 #. Verwendet *Table of Contents (2)* aus der
-   :doc:`../../jupyter/nbextensions/list`, um ein Inhaltsverzeichnis zu
-   erstellen.
+   :doc:`/workspace/jupyter/nbextensions/list`, um ein Inhaltsverzeichnis
+   zu erstellen.
 #. Verwendet die Notebook-Erweiterung :ref:`setup
-   </jupyter/nbextensions/setup.ipynb>`.
-#. Verwendet *Snippets* aus der :doc:`../../jupyter/nbextensions/list`, um
-   weitere, häufig benötigte Code-Blöcke, z.B. typische Importanweisungen,
-   bequem einfügen zu  können.
+   </workspace/jupyter/nbextensions/setup.ipynb>`.
+#. Verwendet *Snippets* aus der
+   :doc:`/workspace/jupyter/nbextensions/list`, um weitere, häufig
+   benötigte Code-Blöcke, z.B. typische Importanweisungen, bequem einfügen zu
+   können.
 
