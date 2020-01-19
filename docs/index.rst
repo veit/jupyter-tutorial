@@ -11,6 +11,7 @@ Jupyter-Tutorial
     workspace/index
     viz/index
     improve/index
+    productive/index
     web/index
     genindex
 
@@ -86,7 +87,7 @@ Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
 #. **Erschließen der Daten –** :doc:`viz/index` umfasst expolorative Analysen und
    das Visualisieren von Daten.
 #. **Code-Optimierungen** umfasst das Parametrisieren, Validieren und Verbessern
-   der Performance.
+   der Performance, u.a. durch :doc:`improve/parallel/index`.
 #. **Produktrealisierung** umfasst das Testen, Logging und Dokumentieren der
    Methoden und Funktionen sowie das Erstellen von Paketen.
 
