@@ -29,7 +29,7 @@ Dashboards
 
     jupyter-dashboards/index
     appmode/index
-    ../nbviewer
+    /workspace/jupyter/nbviewer
     panel/index
     voila/index
 

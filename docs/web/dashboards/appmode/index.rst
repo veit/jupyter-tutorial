@@ -70,7 +70,8 @@ Der Server kann mit folgenden drei Optionen konfiguriert werden:
     zeigt andere Schaltflächen im App-Modus an, z.B. :menuselection:`Logout`;
     Voreinstellung: ``True``
 
-Weitere Infos zur Server-Konfiguration erhaltet ihr in :doc:`../../notebook/config`.
+Weitere Infos zur Server-Konfiguration erhaltet ihr in
+:doc:`/workspace/jupyter/notebook/config`.
 
 Clientseitige Konfiguration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

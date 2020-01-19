@@ -72,7 +72,7 @@ Jupyter
             label="Dashboards",
             tooltip="Installieren und Verwenden von Dashboards",
             target="_top",
-            href="../jupyter/dashboards/index.html"]
+            href="../web/dashboards/index.html"]
         html [
             label="HTML",
             tooltip="Einbinden von Notebooks in statisches HTML",
@@ -113,7 +113,6 @@ Jupyter
     kernels/index
     ipywidgets/index
     nbextensions/index
-    dashboards/index
     nbsphinx
     use-cases
 

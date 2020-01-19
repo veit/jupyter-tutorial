@@ -11,8 +11,7 @@ Jupyter-Tutorial
     workspace/index
     viz/index
     improve/index
-    reproduce/index
-    refactoring/index
+    web/index
     genindex
 
 .. Indices and tables
