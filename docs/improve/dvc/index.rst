@@ -1,10 +1,22 @@
-``DVC``
-=======
+Datenmanagement mit ``DVC``
+===========================
 
-`DVC <https://dvc.org/>`_ wurde entwickelt um ML-Modelle und Datensätze
-igemeinsam nutzen zu können und nachvollziehbar zu verwalten. Es arbeitet zwar
-mit verschiedenen Versionsverwaltungen zusammen, benötigt diese jedoch nicht. Im
-Gegensatz z.B. zu `DataLad <https://www.datalad.org/>`_/`git-annex
+Für Datenanalysen und vor allem bei Machine Learning ist es äußerst wertvoll,
+verschiedene Versionen von Analysen, die mit verschiedenen Datensätzen und
+Parametern durchgeführt wurden, reproduzieren zu können. Um jedoch
+reproduzierbare Analysen zu erhalten, müssen sowohl die Daten als auch das
+Modell (einschließlich der Algorithmen, Parameter. etc.) versioniert werden.
+Die Versionierung von Daten für reproduzierbare Analysen ist aufgrund der
+Datengröße ein größeres Problem als die Versionierung von Modellen. Werkzeuge 
+wie `DVC <https://dvc.org/>`_ helfen bei der Verwaltung von Daten indem Nutzer
+diese mit einem gitartigen Workflow an einen entfernten Datenspeicher übertragen
+können. Hierdurch vereinfacht sich der Abruf bestimmter Versionen von Daten um
+eine Analyse zu reproduzieren.
+
+DVC wurde entwickelt um ML-Modelle und Datensätze igemeinsam nutzen zu können
+und nachvollziehbar zu verwalten. Es arbeitet zwar mit verschiedenen
+Versionsverwaltungen zusammen, benötigt diese jedoch nicht. Im Gegensatz z.B. zu
+`DataLad <https://www.datalad.org/>`_/`git-annex
 <https://git-annex.branchable.com/>`_ ist es auch nicht auf Git als
 Versionsverwaltung beschränkt sondern kann z.B auch zusammen mit Mercurial
 verwendet werden, siehe `github.com/crobarcro/dvc/dvc/scm.py
