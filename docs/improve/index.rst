@@ -1,5 +1,5 @@
-Code-Optimierungen
-==================
+Optimierungen
+=============
 
 Dies umfasst das Parametrisieren und :doc:`Versionieren des Codes <git/index>`
 und :doc:`der Trainingsdaten <dvc/index>` sowie die Performance-Optimierung u.a.
