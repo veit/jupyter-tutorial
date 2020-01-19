@@ -6,8 +6,8 @@ Notebook
     :titlesonly:
     :maxdepth: 0
 
-    ../../first-steps/install
-    ../../first-steps/create-notebook
+    ../../../first-steps/install
+    ../../../first-steps/create-notebook
     shortcuts
     config
 

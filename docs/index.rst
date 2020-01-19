@@ -8,8 +8,7 @@ Jupyter-Tutorial
     :maxdepth: 0
 
     first-steps/index
-    ipython/index
-    jupyter/index
+    workspace/index
     viz/index
     parallel/index
     reproduce/index
@@ -72,23 +71,25 @@ die eine Plattform auf Basis von Jupyter-Notebooks aufbauen und betreiben
 wollen. In der Folge erläutern wir dann, wie diese Plattform effektiv von
 Datenwissenschaftlern, -Ingenieuren und -Analysten genutzt werden kann.
 
-Use Cases
----------
+Aufbau des Jupyter-Tutorial
+---------------------------
 
-Wenn wir uns einen typischen Workflow genauer anschauen, können wir sehen, wie
-die verschiedenen Aufgaben ineinandergreifen:
+Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
 
-#. **Datenexploration** kann die tabellarische Ansicht von Beispieldaten,
-   explorative Analysen und das Visualisieren von Daten umfassen.
-#. **Datenaufbereitung** ist eine iterative Aufgabe, die das Bereinigen,
-   Standardisieren, Transformieren, Denormalisieren und Aggregieren von
-   Daten umfassen.
-#. **Datenvalidierung** ist eine wiederkehrende Aufgabe, die die Ansicht von
-   Beispieldaten, aggregierte Analysen sowie die Visualisierung von Daten
-   umfasst.
-#. **Produktrealisierung** findet erst zu einem späten Zeitpunkt des
-   Projekts statt und stellt z.B. Software-Pakete für die Produktion oder
-   Schulungsmodelle bereit.
+#. **Arbeitsbereich einrichten** mit der Installation und Konfiguration von
+   :doc:`workspace/ipython/index`, :doc:`workspace/jupyter/index` mit
+   :doc:`workspace/jupyter/nbextensions/index` undr
+   :doc:`workspace/jupyter/ipywidgets/index`.
+#. **Daten sammeln**, entweder durch eine Rest-API oder direkt von einer
+   Website.
+#. **Daten bereinigen** ist eine wiederkehrende Aufgabe, die u.a. redundante,
+   inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
+#. **Erschließen der Daten – Visualisierung** umfasst expolorative Analysen und
+   das Visualisieren von Daten.
+#. **Code-Optimierungen** umfasst das Parametrisieren, Validieren und Verbessern
+   der Performance.
+#. **Produktrealisierung** umfasst das Testen, Logging und Dokumentieren der
+   Methoden und Funktionen sowie das Erstellen von Paketen.
 
 Warum Jupyter?
 --------------
@@ -123,7 +124,7 @@ Interactive Computing Protocol
     Protocol*, einem offenen Netzwerkprotokoll basierend auf JSON-Daten über
     `ZMQ <http://zeromq.org/>`_ und `WebSockets
     <https://de.wikipedia.org/wiki/WebSocket>`_.
-:doc:`jupyter/kernels/index`
+:doc:`workspace/jupyter/kernels/index`
     Kernel sind Prozesse, die interaktiven Code in einer bestimmten
     Programmiersprache ausführen und die Ausgabe an den Benutzer zurückgeben.
 

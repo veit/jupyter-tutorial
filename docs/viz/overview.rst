@@ -386,7 +386,7 @@ ist:
 * **Javascript**-basierte Bibliotheken sind ohne besondere Behandlung
   beschränkt auf einige tausend bis hunderttausend Punkte.
 
-  :doc:`../jupyter/ipywidgets/index`, :doc:`bokeh/index` und `Plotly
+  :doc:`../workspace/jupyter/ipywidgets/index`, :doc:`bokeh/index` und `Plotly
   <https://github.com/plotly/plotly.py>`_ nutzen statt JSON jedoch spezielle
   Transportmechanismen für Binärdaten, sodass sie hunderttausende bis
   Millionen von Datenpunkten verarbeiten können. 

@@ -14,7 +14,8 @@ Touch-Geräten.
 
 Das Gridstack-Voilà-Template verwendet die Metadaten der Notebook-Zellen, um das
 Layout des Notebooks zu gestalten. Es soll die gesamte Spezifikation für die
-veralteten :doc:`/jupyter/dashboards/jupyter-dashboards/index` unterstützen.
+veralteten :doc:`/workspace/jupyter/dashboards/jupyter-dashboards/index`
+unterstützen.
 
 .. image:: voila-gridstack.png
    :scale: 53%
@@ -69,8 +70,8 @@ Anschließend könnt ihr ein Layout erstellen z.B mit:
         ])
     ])
 
-:ref:`/jupyter/dashboards/voila/bqplot_vuetify_example.ipynb`. könnt ihr nutzen
-mit:
+:ref:`/workspace/jupyter/dashboards/voila/bqplot_vuetify_example.ipynb`. könnt
+ihr nutzen mit:
 
 .. code-block:: console
 
@@ -106,7 +107,8 @@ Installation
 Verwendung
 ~~~~~~~~~~
 
-Ihr könnt das Template :ref:`/jupyter/dashboards/voila/debug.ipynb` nutzen mit:
+Ihr könnt das Template :ref:`/workspace/jupyter/dashboards/voila/debug.ipynb`
+nutzen mit:
 
 .. code-block:: console
 
@@ -165,7 +167,7 @@ Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
         {"base_template": "default"}
 
 ``nbconvert_templates``
-    Benutzerdefinierte Templates für :doc:`/jupyter/nbconvert`.
+    Benutzerdefinierte Templates für :doc:`/workspace/jupyter/nbconvert`.
 ``static``
     Verzeichnis für statische Dateien.
 ``templates``
