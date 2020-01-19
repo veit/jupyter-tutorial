@@ -1,8 +1,8 @@
-Arbeitsbereich einrichten
-=========================
+Arbeitsbereich
+==============
 
-Dies umfasst das Installieren und Konfigurieren von
-:doc:`ipython/index` und :doc:`jupyter/index` mit
+Das Einrichten des Arbeitsbereichs umfasst das Installieren und Konfigurieren
+von :doc:`ipython/index` und :doc:`jupyter/index` mit
 :doc:`jupyter/nbextensions/index` und :doc:`jupyter/ipywidgets/index`.
 
 .. toctree::
