@@ -14,7 +14,7 @@ Touch-Geräten.
 
 Das Gridstack-Voilà-Template verwendet die Metadaten der Notebook-Zellen, um das
 Layout des Notebooks zu gestalten. Es soll die gesamte Spezifikation für die
-veralteten :doc:`/workspace/jupyter/dashboards/jupyter-dashboards/index`
+veralteten :doc:`../jupyter-dashboards/index`
 unterstützen.
 
 .. image:: voila-gridstack.png
@@ -70,8 +70,7 @@ Anschließend könnt ihr ein Layout erstellen z.B mit:
         ])
     ])
 
-:ref:`/workspace/jupyter/dashboards/voila/bqplot_vuetify_example.ipynb`. könnt
-ihr nutzen mit:
+:doc:`bqplot_vuetify_example`. könnt ihr nutzen mit:
 
 .. code-block:: console
 
@@ -107,8 +106,7 @@ Installation
 Verwendung
 ~~~~~~~~~~
 
-Ihr könnt das Template :ref:`/workspace/jupyter/dashboards/voila/debug.ipynb`
-nutzen mit:
+Ihr könnt das Template :doc:debug.ipynb` nutzen mit:
 
 .. code-block:: console
 

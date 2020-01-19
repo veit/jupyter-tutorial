@@ -25,7 +25,7 @@ Features
   :doc:`Jupyter-Kernel </workspace/jupyter/kernels/index>`: C++, Python, Julia.
   Dies macht es zu einem sprachunabhängigen Dashboard-System.
 * Voilà ist erweiterbar. Es enthält ein flexibles :doc:`Template
-  </workspace/jupyter/dashboards/voila/templating>`-System zur Erstellung
+  <templating>`-System zur Erstellung
   umfangreicher Layouts.
 
 Ausführungsmodell
