@@ -1,9 +1,10 @@
-===
 Git
 ===
 
-Dies ist keine allgemeine Einführung in die Versionsverwaltung mit `Git
-<https://git-scm.com/>`_. Hierfür gibt es gute Einführungen, wie z.B.:
+Um eine bessere Kontrolle über euren Quellcode zu erhalten, wird dieser
+üblicherweise mit `Git <https://git-scm.com/>`_ verwaltet. Hier werde ich jedoch
+keine allgemeine Einführung in Git geben, da solche an anderer Stelle schon
+hinreichend vorhanden sind:
 
 * `Pro Git book <https://git-scm.com/book>`_
 * `GitHub Cheat Sheet (PDF)

@@ -10,7 +10,7 @@ Jupyter-Tutorial
     first-steps/index
     workspace/index
     viz/index
-    parallel/index
+    improve/index
     reproduce/index
     refactoring/index
     genindex
