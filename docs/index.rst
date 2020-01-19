@@ -78,7 +78,7 @@ Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
 
 #. **Arbeitsbereich einrichten** mit der Installation und Konfiguration von
    :doc:`workspace/ipython/index`, :doc:`workspace/jupyter/index` mit
-   :doc:`workspace/jupyter/nbextensions/index` undr
+   :doc:`workspace/jupyter/nbextensions/index` und
    :doc:`workspace/jupyter/ipywidgets/index`.
 #. **Daten sammeln**, entweder durch eine Rest-API oder direkt von einer
    Website.
