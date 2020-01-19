@@ -84,7 +84,7 @@ Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
    Website.
 #. **Daten bereinigen** ist eine wiederkehrende Aufgabe, die u.a. redundante,
    inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
-#. **Erschließen der Daten – Visualisierung** umfasst expolorative Analysen und
+#. **Erschließen der Daten –** :doc:`viz/index` umfasst expolorative Analysen und
    das Visualisieren von Daten.
 #. **Code-Optimierungen** umfasst das Parametrisieren, Validieren und Verbessern
    der Performance.
