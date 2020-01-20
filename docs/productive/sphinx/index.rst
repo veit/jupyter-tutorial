@@ -1,4 +1,4 @@
-Dokumentation
+Dokumentieren
 =============
 
 `Sphinx <http://www.sphinx-doc.org/>`_ ist ein Dokumentationswerkzeug, das
