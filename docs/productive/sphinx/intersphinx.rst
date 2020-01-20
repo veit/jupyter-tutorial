@@ -76,7 +76,7 @@ Benutzerdefinierte Links
 ------------------------
 
 Ihr könnt auch eigene ``intersphinx``-Zuordnungen erstellen, z.B. wenn
-``objects.inv`` fehlerhat ist wie bei `Beautyfull Soup
+``objects.inv`` Fehler hat wie bei `Beautyfull Soup
 <https://bugs.launchpad.net/beautifulsoup/+bug/1453370>`_.
 
 Der Fehler kann behoben werden mit:
