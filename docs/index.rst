@@ -92,6 +92,12 @@ Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
    :doc:`productive/logging` und :doc:`productive/sphinx/index` der
    Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
    <productive/packaging/index>`.
+#. **Web-Anwendungen**, die entweoder aus Jupyter-Notebooks
+   :doc:`web/dashboards/index` generieren oder umfassendere Applikationslogik
+   benötigen, wie z.B. in :doc:`/viz/bokeh/embedding-export/flask` demonstriert,
+   oder Daten über eine `RESTful API
+   <https://de.wikipedia.org/wiki/Representational_State_Transfer>`_
+   bereitstellen.
 
 Warum Jupyter?
 --------------
