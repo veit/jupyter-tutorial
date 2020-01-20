@@ -22,7 +22,7 @@ copyright = '2019–2020, Veit Schiele'
 author = 'Veit Schiele'
 
 # The full version, including alpha/beta/rc tags
-release = '0.5.2'
+release = '0.5.3'
 
 
 # -- General configuration ---------------------------------------------------
@@ -91,7 +91,7 @@ html_sidebars = {
 }
 
 # Change default HTML title
-html_title = 'Jupyter Tutorial 0.5.2'
+html_title = 'Jupyter Tutorial 0.5.3'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -146,7 +146,6 @@ intersphinx_mapping = {
     'spack':  ('https://spack-tutorial.readthedocs.io/en/latest/', None),
     'ipyparallel': ('https://ipyparallel.readthedocs.io/en/latest/', None),
     'bokeh': ('https://docs.bokeh.org/en/latest/', None),
-    'requests': ('https://requests.readthedocs.io/en/master/', None),
 }
 
 def setup(app):
