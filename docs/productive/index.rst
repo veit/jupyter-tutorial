@@ -12,6 +12,7 @@ und :doc:`reproduzierbaren Umgebungen <envs/index>`.
 
     testing/index
     logging.ipynb
+    sphinx/index
     packaging/index
     envs/index
 

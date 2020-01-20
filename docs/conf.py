@@ -33,6 +33,7 @@ release = '0.5.1'
 extensions = [
     'nbsphinx',
     'jupyter_sphinx.execute',
+    'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.graphviz',
     'sphinx.ext.todo',
@@ -145,6 +146,7 @@ intersphinx_mapping = {
     'spack':  ('https://spack-tutorial.readthedocs.io/en/latest/', None),
     'ipyparallel': ('https://ipyparallel.readthedocs.io/en/latest/', None),
     'bokeh': ('https://docs.bokeh.org/en/latest/', None),
+    'requests': ('https://requests.readthedocs.io/en/master/', None),
 }
 
 def setup(app):
