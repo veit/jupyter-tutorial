@@ -88,8 +88,10 @@ Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
    das Visualisieren von Daten.
 #. **Optimierungen** umfasst das Parametrisieren, Validieren und Verbessern
    der Performance, u.a. durch :doc:`improve/parallel/index`.
-#. **Produktrealisierung** umfasst das Testen, Logging und Dokumentieren der
-   Methoden und Funktionen sowie das Erstellen von Paketen.
+#. **Produktrealisierung** umfasst das :doc:`productive/testing/index`,
+   :doc:`productive/logging` und :doc:`productive/sphinx/index` der
+   Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
+   <productive/packaging/index>`.
 
 Warum Jupyter?
 --------------
