@@ -32,6 +32,7 @@ ipyparallel = "*"
 ipycanvas = "*"
 datashader = "*"
 bokeh = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7.4"
