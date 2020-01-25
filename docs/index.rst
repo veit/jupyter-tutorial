@@ -10,7 +10,7 @@ Jupyter-Tutorial
     first-steps/index
     workspace/index
     viz/index
-    improve/index
+    refactoring/index
     productive/index
     web/index
     genindex
@@ -30,8 +30,6 @@ Jupyter-Tutorial
    :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
 .. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
    :target: https://jupyter-tutorial.readthedocs.io/de/latest/
-
-----
 
 Einführung
 ==========
@@ -86,8 +84,8 @@ Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
    inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
 #. **Erschließen der Daten –** :doc:`viz/index` umfasst expolorative Analysen und
    das Visualisieren von Daten.
-#. **Optimierungen** umfasst das Parametrisieren, Validieren und Verbessern
-   der Performance, u.a. durch :doc:`improve/parallel/index`.
+#. **Refactoring** umfasst das Parametrisieren, Validieren und
+   Performance-Optimierungen, u.a. durch :doc:`refactoring/parallel/index`.
 #. **Produktrealisierung** umfasst das :doc:`productive/testing/index`,
    :doc:`productive/logging` und :doc:`productive/sphinx/index` der
    Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
