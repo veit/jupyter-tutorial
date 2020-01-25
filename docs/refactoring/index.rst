@@ -11,5 +11,6 @@ um anderen kann jedoch auch die Ausführgeschwindigkeit erhöht werden.
     :titlesonly:
     :maxdepth: 0
 
+    autoqual/index
     parallel/index
 
