@@ -1,9 +1,11 @@
 Produktrealisierung
 ===================
 
-Dies umfasst das :doc:`testing/index`, :doc:`logging` und Dokumentieren der
-Methoden und Funktionen sowie das :doc:`Erstellen von Paketen <packaging/index>`
-und :doc:`reproduzierbaren Umgebungen <envs/index>`.
+Dies umfasst einerseits das :doc:`testing/index`, :doc:`logging` und
+Dokumentieren sowie das :doc:`Erstellen von Paketen
+<packaging/index>`, andererseits die Reproduzierbarkeit des :doc:`Quellcodes
+<git/index>`, der :doc:`Trainingsdaten <dvc/index>` und der
+:doc:`Ausführungsumgebungen <envs/index>`.
 
 .. toctree::
     :hidden:
@@ -14,5 +16,7 @@ und :doc:`reproduzierbaren Umgebungen <envs/index>`.
     logging.ipynb
     sphinx/index
     packaging/index
+    git/index
+    dvc/index
     envs/index
 
