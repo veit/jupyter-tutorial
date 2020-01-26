@@ -74,6 +74,13 @@ Installation
 
    Das PDF findet ihr anschließend in ``docs/_build/latex/jupytertutorial.pdf``.
 
+Folge uns
+---------
+
+* `GitHub <https://github.com/veit/jupyter-tutorial>`_
+* `Twitter <https://twitter.com/JupyterTutorial>`_
+* `Mastodon <https://mastodon.social/web/accounts/1089854>`_
+
 Pull-Requests
 -------------
 
