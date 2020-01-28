@@ -1,5 +1,5 @@
-Visualisierung
-==============
+Daten visualisieren
+===================
 
 Aktuell ist es sehr schwierig, einen :doc:`overview` zu erhalten. Im Folgenden
 versuche ich, die Suche nach der passenden Bibliothek zu vereinfachen, indem
