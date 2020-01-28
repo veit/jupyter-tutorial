@@ -1,5 +1,5 @@
-Paketierung
-===========
+Paket erstellen
+===============
 
 #. Notebooks sind gut geeignet um schnell voranzukommen, doch bei umfangreicher
    werdendem Code empfiehlt sich, stabilen Code in Pakete auszulagern.

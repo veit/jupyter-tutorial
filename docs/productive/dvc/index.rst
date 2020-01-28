@@ -1,4 +1,4 @@
-Datenmanagement mit ``DVC``
+Daten verwalten mit ``DVC``
 ===========================
 
 Für Datenanalysen und vor allem bei Machine Learning ist es äußerst wertvoll,

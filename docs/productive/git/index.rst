@@ -1,5 +1,5 @@
-Git
-===
+Code verwalten mit Git
+======================
 
 Um eine bessere Kontrolle über euren Quellcode zu erhalten, wird dieser
 üblicherweise mit `Git <https://git-scm.com/>`_ verwaltet. Hier werde ich jedoch

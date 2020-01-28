@@ -1,5 +1,5 @@
-Überblick über die Python-Datenvisualisierungsbibliotheken
-==========================================================
+Überblick über die Bibliotheken zur Datenvisualisierung
+=======================================================
 
 Technologien
 ------------

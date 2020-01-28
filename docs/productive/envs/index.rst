@@ -1,5 +1,5 @@
-Reproduzierbare Umgebungen
-==========================
+Umgebungen reproduzieren
+========================
 
 Führt die Notebooks in einer dezidierten Umgebung aus (z.B. mit
 :doc:`pipenv/index`, :doc:`devpi` und :doc:`Spack <spack/index>`. Speichert
