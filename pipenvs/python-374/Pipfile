@@ -33,6 +33,7 @@ ipycanvas = "*"
 datashader = "*"
 bokeh = "*"
 pillow = "*"
+beautifulsoup4 = "*"
 
 [requires]
 python_version = "3.7.4"
