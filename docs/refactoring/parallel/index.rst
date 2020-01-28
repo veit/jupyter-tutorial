@@ -1,5 +1,5 @@
-Parallelisierung
-================
+Ausführung parallelisieren
+==========================
 
 Anhand von drei Beispielen zu :doc:`Threading <threading-example>`,
 :doc:`Multiprocessing <multiprocessing>` und :doc:`Async

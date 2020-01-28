@@ -1,5 +1,5 @@
-Web-Anwendungen
-===============
+Web-Applikationen erstellen
+===========================
 
 Im Folgenden stelle ich euch drei verschiedene Arten von Web-Anwendungen vor:
 
