@@ -9,6 +9,7 @@ Jupyter-Tutorial
 
     first-steps/index
     workspace/index
+    gather/index
     viz/index
     refactoring/index
     productive/index
