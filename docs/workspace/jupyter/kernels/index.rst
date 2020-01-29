@@ -21,14 +21,14 @@ Jupyter-Kernels weit verbreitet:
 
 * R
 
-  * IRKernel: `Docs <https://irkernel.github.io/>`_ | `GitHub <https://github.com/IRkernel/IRkernel>`_
-  * IRdisplay: `GitHub <https://github.com/IRkernel/IRdisplay>`_
-  * Repr: `GitHub <https://github.com/IRkernel/repr>`_
+  * IRKernel: `Docs <https://irkernel.github.io/>`__ | `GitHub <https://github.com/IRkernel/IRkernel>`__
+  * IRdisplay: `GitHub <https://github.com/IRkernel/IRdisplay>`__
+  * Repr: `GitHub <https://github.com/IRkernel/repr>`__
 
 * Julia
 
-  * IJulia: `GitHub <https://github.com/JuliaLang/IJulia.jl>`_
-  * Interact.jl: `GitHub <https://github.com/JuliaGizmos/Interact.jl>`_
+  * IJulia: `GitHub <https://github.com/JuliaLang/IJulia.jl>`__
+  * Interact.jl: `GitHub <https://github.com/JuliaGizmos/Interact.jl>`__
 
 Eine Liste verfügbarer Kernel findet ihr unter `Jupyter kernels
 <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_.
