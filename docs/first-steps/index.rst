@@ -12,4 +12,5 @@ Erste Schritte
     example.ipynb
 
 .. include:: ../../README.rst
+   :start-after: first-steps
 
