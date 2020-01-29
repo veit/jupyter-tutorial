@@ -10,6 +10,8 @@ Schnelleinstieg
 .. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
    :target: https://jupyter-tutorial.readthedocs.io/de/latest/
 
+.. first-steps::
+
 Installation
 ------------
 
