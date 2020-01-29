@@ -42,25 +42,27 @@ Datenwissenschaftlern, -Ingenieuren und -Analysten genutzt werden kann.
 Aufbau des Jupyter-Tutorial
 ---------------------------
 
-Das Jupyter-Tutorial folgt dem prototypischen Verlauf eines Forschungsprojekts:
+Das Jupyter-Tutorial folgt ab Kapitel 3 dem prototypischen Verlauf eines
+Forschungsprojekts:
 
-#. **Arbeitsbereich einrichten** mit der Installation und Konfiguration von
+3. **Arbeitsbereich einrichten** mit der Installation und Konfiguration von
    :doc:`workspace/ipython/index`, :doc:`workspace/jupyter/index` mit
    :doc:`workspace/jupyter/nbextensions/index` und
    :doc:`workspace/jupyter/ipywidgets/index`.
-#. **Daten sammeln**, entweder durch eine Rest-API oder direkt von einer
-   Website.
-#. **Daten bereinigen** ist eine wiederkehrende Aufgabe, die u.a. redundante,
+4. **Daten sammeln**, entweder durch eine :doc:`Rest-API <gather/web-api>` oder
+   direkt von einer :doc:`HTML-Seite <gather/html>`.
+5. **Daten bereinigen** ist eine wiederkehrende Aufgabe, die u.a. redundante,
    inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
-#. **Erschließen der Daten –** :doc:`viz/index` umfasst expolorative Analysen und
+6. **Erschließen der Daten –** :doc:`viz/index` umfasst expolorative Analysen und
    das Visualisieren von Daten.
-#. **Refactoring** umfasst das Parametrisieren, Validieren und
-   Performance-Optimierungen, u.a. durch :doc:`refactoring/parallel/index`.
-#. **Produktrealisierung** umfasst das :doc:`productive/testing/index`,
+7. **Refactoring** umfasst das Parametrisieren, Validieren und
+   Performance-Optimierungen, u.a. durch :doc:`Refactoring
+   <refactoring/parallel/index>`.
+8. **Produkt erstellen** umfasst das :doc:`productive/testing/index`,
    :doc:`productive/logging` und :doc:`productive/sphinx/index` der
    Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
    <productive/packaging/index>`.
-#. **Web-Anwendungen**, die entweoder aus Jupyter-Notebooks
+9. **Web-Anwendungen** können entweder aus Jupyter-Notebooks
    :doc:`web/dashboards/index` generieren oder umfassendere Applikationslogik
    benötigen, wie z.B. in :doc:`/viz/bokeh/embedding-export/flask` demonstriert,
    oder Daten über eine `RESTful API
