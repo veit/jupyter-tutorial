@@ -1,5 +1,5 @@
-Konsistenz der Daten
-====================
+Daten bereinigen
+================
 
 Daten bereinigen ist eine wiederkehrende Aufgabe, die u.a. redundante,
 inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
