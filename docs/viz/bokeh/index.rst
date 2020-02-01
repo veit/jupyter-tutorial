@@ -68,6 +68,7 @@ einfach folgendes ein::
     data-sources-transformations.ipynb
     annotations.ipynb
     interactions.ipynb
+    graph.ipynb
     geographic-plots.ipynb
     bokeh-server.ipynb
     directory-format-apps.ipynb
