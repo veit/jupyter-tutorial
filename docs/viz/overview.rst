@@ -152,6 +152,7 @@ Technologien
         vaex -- bokeh [color="royalblue;0.5:royalblue"]
         holoviews -- bokeh [color="royalblue;0.5:royalblue"]
         datashader -- bokeh [color="royalblue;0.5:royalblue"]
+        networkx -- bokeh [color="slateblue;0.5:royalblue"]
         datashader -- holoviews [color="royalblue"]
         vaex -- mpl [color="royalblue;0.5:slateblue"]
         vaex -- bqplot [color="royalblue;0.5:deepskyblue"]
@@ -359,7 +360,7 @@ Diagrammtypen
 
   * :doc:`matplotlib/networkx`
   * `Plotly <https://github.com/plotly/plotly.py>`_
-  * :doc:`bokeh/index`
+  * :doc:`Bokeh <bokeh/graph>`
   * :doc:`bokeh/integration/datashader`
   * `HoloViews <http://holoviews.org/>`_
 
