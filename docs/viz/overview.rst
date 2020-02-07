@@ -324,6 +324,15 @@ Altair seit mindestens einem Jahr nicht mehr weiterentwickelt wurden (Stand:
     "`toyplot <https://github.com/sandialabs/toyplot>`_",".. image:: https://raster.shields.io/github/stars/sandialabs/toyplot",".. image:: https://raster.shields.io/github/contributors/sandialabs/toyplot",".. image:: https://raster.shields.io/github/commit-activity/y/sandialabs/toyplot",".. image:: https://raster.shields.io/github/license/sandialabs/toyplot"
     "`ipyleaflet <https://github.com/jupyter-widgets/ipyleaflet>`_",".. image:: https://raster.shields.io/github/stars/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/contributors/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/commit-activity/y/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/license/jupyter-widgets/ipyleaflet"
 
+Anmerkungen zu Lizenzen laut Projektangaben:
+
+* Apache 2.0: bqplot, TensorFlow, Yellowbrick
+* BSD 2.0 : altair, Bokeh, d3po, geopandas, ggpy, glumpy, holoviews, mpld3, networkx, NumPy, Pandas, pythreejs, scikit-learn, SciPy, Seaborn, Statsmodels, SymPy, Theano, vega, VisPy 
+* LGPL 3.0 : cartopy, iris 
+* MIT: cufflinks, graphviz, ipyleaflet, ipyvolume, OpenCV, plotly, scikit-plot, vaex, vincent 
+* PSF: Matplotlib, Matplotlib Altair 
+* Andere Lizenz: datashader, toyplot, Vega-lite, yt 
+
 Diagrammtypen
 -------------
 
