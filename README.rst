@@ -19,8 +19,12 @@ Installation
 
    .. code-block:: console
 
-    $ curl -O https://github.com/veit/jupyter-tutorial/archive/master.zip
-    $ unzip master.zip
+    $ curl -O https://codeload.github.com/veit/jupyter-tutorial/zip/master
+    $ unzip master
+    Archive:  master
+    …
+       creating: jupyter-tutorial-master/
+    …
 
 #. Pipenv installieren
 
