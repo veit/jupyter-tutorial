@@ -18,27 +18,27 @@ Jupyter
             label="Jupyter",
             tooltip="Jupyter lokal installieren",
             target="_top",
-            href="../jupyter/notebook/index.html"]
+            href="../workspace/jupyter/notebook/index.html"]
         hub [
             label="JupyterHub",
             tooltip="JupyterHub\ninstallieren",
             target="_top",
-            href="../jupyter/hub/index.html"]
+            href="../workspace/jupyter/hub/index.html"]
         nbconvert [
             label="nbconvert",
             tooltip="nbconvert installieren und nutzen",
             target="_top",
-            href="../jupyter/nbconvert.html"]
+            href="../workspace/jupyter/nbconvert.html"]
         nbviewer [
             label="nbviewer",
             tooltip="nbviewer installieren und nutzen",
             target="_top",
-            href="../jupyter/nbviewer.html"]
+            href="../workspace/jupyter/nbviewer.html"]
         kernels [
             label="Kernels",
             tooltip="Kernels installieren, anzeigen und starten",
             target="_top",
-            href="../jupyter/kernels/install.html"]
+            href="../workspace/jupyter/kernels/install.html"]
         extensions [
             shape=plaintext,
             label=" ",
@@ -51,18 +51,18 @@ Jupyter
             label="Unternehmens-\nanwendungen",
             tooltip="Anwendungsbeispiele bei Netflix, Bloomberg etc.",
             target="_top",
-            href="../jupyter/use-cases.html"]
+            href="../workspace/jupyter/use-cases.html"]
         // 3rd Level
         widgets [
             label="Widgets",
             tooltip="ipywidgets installieren und nutzen",
             target="_top",
-            href="../jupyter/ipywidgets/index.html"]
+            href="../workspace/jupyter/ipywidgets/index.html"]
         extend [
             label="nbextensions",
             tooltip="Installieren und Verwenden verschiedener Notebook-Erweiterungen",
             target="_top",
-            href="../jupyter/nbextensions/index.html"]
+            href="../workspace/jupyter/nbextensions/index.html"]
         viz [
             label="Visualisierung",
             tooltip="Bibliotheken zur Datenvisualisierung",
@@ -77,12 +77,12 @@ Jupyter
             label="HTML",
             tooltip="Einbinden von Notebooks in statisches HTML",
             target="_top",
-            href="../jupyter/ipywidgets/embedding.html"]
+            href="../workspace/jupyter/ipywidgets/embedding.html"]
         sphinx [
             label="Sphinx",
             tooltip="Einbinden von Notebooks in den Sphinx Document Generator",
             target="_top",
-            href="../jupyter/nbsphinx.html"]
+            href="../workspace/jupyter/nbsphinx.html"]
         // Edges
         what -> jupyter [label="Einzel-\nnutzer"]
         what -> hub [label="Team-\narbeit"]
