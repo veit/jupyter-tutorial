@@ -87,6 +87,10 @@
   {
    "hash": "2me6y63yolcdobia7pjxqnvexf3mjr7c",
    "spec": "py-pydot ^python@3.7.4%gcc@9.1.0"
+  },
+  {
+   "hash": "tpqun7ujrvum74434uugjsj35qjcndhk",
+   "spec": "py-pillow"
   }
  ],
  "concrete_specs": {
@@ -9695,6 +9699,85 @@
      }
     },
     "hash": "jr5ppyruvdiy3bgzw3w5voks426amzvc"
+   }
+  },
+  "tpqun7ujrvum74434uugjsj35qjcndhk": {
+   "py-pillow": {
+    "version": "7.0.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "freetype": false,
+     "jpeg2000": false,
+     "lcms": false,
+     "tiff": false,
+     "webp": false,
+     "webpmux": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "libjpeg-turbo": {
+      "hash": "7dav45ae7tz3ar2wqjfzjtoo3q5ajtny",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     },
+     "zlib": {
+      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "v2jmej7ci6zb6xywkj4vwq2a7eut4scw"
    }
   }
  }
