@@ -20,6 +20,7 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
     display.ipynb
     mypackage/foo.ipynb
     importing.ipynb
+    extensions
     debugging.ipynb
     profiling.ipynb
 
