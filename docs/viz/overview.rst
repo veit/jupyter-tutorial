@@ -338,7 +338,7 @@ Diagrammtypen
 
   * :doc:`bokeh/index`
   * :doc:`bokeh/integration/datashader`
-  * `HoloViews <bokeh/integration/datashader>`_
+  * `HoloViews <http://holoviews.org/>`__
   * :doc:`matplotlib/index`
   * `Plotly <https://github.com/plotly/plotly.py>`_
 
