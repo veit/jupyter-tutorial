@@ -57,8 +57,8 @@ Environments, ``spack.yaml`` und ``spack.lock``
     $ spack env status
     ==> In environment python-374
 
-#. Schließlich könnt ihr die aktivierte Umgebung verlassen mit ´´spack env
-   deactivate´´ oder kurz ´´despacktivate´´.
+#. Schließlich könnt ihr die aktivierte Umgebung verlassen mit ``spack env
+   deactivate`` oder kurz ``despacktivate``.
 
    .. code-block:: console
 
