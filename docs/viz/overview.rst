@@ -347,7 +347,7 @@ Diagrammtypen
   * :doc:`matplotlib/index`
   * :doc:`bokeh/index`
   * :doc:`bokeh/integration/datashader`
-  * `HoloViews <bokeh/integration/datashader>`_
+  * `HoloViews <http://holoviews.org/>`__
 
 * Geografische Daten
 
