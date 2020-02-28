@@ -122,6 +122,7 @@ Technologien
         yt -- mpl [color="slateblue"]
         yt -- opengl [color="slateblue;0.5:mediumpurple", style="dashed"]
         mpl -- mpld3 [color="slateblue;0.5:deepskyblue"]
+        mpl -- ipympl [color="slateblue;0.5:cyan"]
         mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
 
         // Bokeh
@@ -270,10 +271,17 @@ Technologien
             color="cyan",
             target="_top",
             href="../viz/js/ipyleaflet.html"]
+        ipympl [
+            label="ipympl",
+            tooltip="Matplotlib\nJupyter Extension",
+            color="cyan",
+            target="_top",
+            href="../workspace/jupyter/ipywidgets/libs/ipympl.html"]
         javascript -- ipyvolume [color="cyan"]
         javascript -- plotly [color="cyan"]
         plotly -- cufflinks [color="cyan"]
         javascript -- ipyleaflet [color="cyan"]
+        javascript -- ipympl [color="cyan"]
         javascript -- toyplot [color="cyan"]
         javascript -- bokeh [color="cyan;0.5:royalblue"]
         javascript -- pythreejs [color="cyan"]
@@ -323,6 +331,7 @@ Altair seit mindestens einem Jahr nicht mehr weiterentwickelt wurden (Stand:
     "`ipyvolume <https://github.com/maartenbreddels/ipyvolume>`_",".. image:: https://raster.shields.io/github/stars/maartenbreddels/ipyvolume",".. image:: https://raster.shields.io/github/contributors/maartenbreddels/ipyvolume",".. image:: https://raster.shields.io/github/commit-activity/y/maartenbreddels/ipyvolume",".. image:: https://raster.shields.io/github/license/maartenbreddels/ipyvolume"
     "`toyplot <https://github.com/sandialabs/toyplot>`_",".. image:: https://raster.shields.io/github/stars/sandialabs/toyplot",".. image:: https://raster.shields.io/github/contributors/sandialabs/toyplot",".. image:: https://raster.shields.io/github/commit-activity/y/sandialabs/toyplot",".. image:: https://raster.shields.io/github/license/sandialabs/toyplot"
     "`ipyleaflet <https://github.com/jupyter-widgets/ipyleaflet>`_",".. image:: https://raster.shields.io/github/stars/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/contributors/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/commit-activity/y/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/license/jupyter-widgets/ipyleaflet"
+    "`ipympl <https://github.com/matplotlib/jupyter-matplotlib>`_",".. image:: https://raster.shields.io/github/stars/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/contributors/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/commit-activity/y/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/license/matplotlib/jupyter-matplotlib"
 
 Diagrammtypen
 -------------
@@ -406,3 +415,4 @@ ist:
       <https://speakerdeck.com/jakevdp/pythons-visualization-landscape-pycon-2017>`_
     * `Data visualization grid
       <http://www.pythongrids.org/grids/g/data-visualization/>`_
+
