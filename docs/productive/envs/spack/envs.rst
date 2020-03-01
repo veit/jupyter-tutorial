@@ -82,31 +82,31 @@ Compiler installieren
 
     $ spack env activate python-374
     $ spack install gcc@9.1.0
+    …
+    [+] /srv/jupyter/spack/opt/spack/linux-ubuntu18.04-sandybridge/gcc-7.4.0/gcc-9.1.0-zaj3xkm5onfgeweaeav5kuubwmjaokmz
 
 #. Konfiguration
 
    Um den neuen gcc-Compiler verwenden zu können, muss er in
-   ``~/.spack/darwin/compilers.yaml`` eingetragen werden mit:
+   ``~/.spack/linux/compilers.yaml`` eingetragen werden mit:
 
    .. code-block:: console
 
-    $ spack compiler find ~/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/gcc-9.1.0-zjbhw3an52zst4lx2i5umeyolzmeshfh/
-    ==> Found no new compilers
+    $ spack compiler find /srv/jupyter/spack/opt/spack/linux-ubuntu18.04-sandybridge/gcc-7.4.0/gcc-9.1.0-zaj3xkm5onfgeweaeav5kuubwmjaokmz
+    ==> Added 1 new compiler to /srv/jupyter/.spack/linux/compilers.yaml
+        gcc@9.1.0
     ==> Compilers are defined in the following files:
-        /Users/veit/.spack/darwin/compilers.yaml
+        /srv/jupyter/.spack/linux/compilers.yaml
 
 #. Überprüfen
 
    .. code-block:: console
 
     $ spack find
-    ==> In environment python-374
-    ==> Root specs
-    gcc@9.1.0
-
-    ==> 6 installed packages
-    -- darwin-mojave-x86_64 / clang@10.0.1-apple --------------------
-    gcc@9.1.0  gmp@6.1.2  isl@0.19  mpc@1.1.0  mpfr@3.1.6  zlib@1.2.11
+    ==> 16 installed packages
+    -- linux-ubuntu18.04-sandybridge / gcc@7.4.0 --------------------
+    autoconf@2.69    gcc@9.1.0    gmp@6.1.2  libsigsegv@2.12  m4@1.4.18  mpfr@3.1.6   perl@5.30.1    readline@8.0
+    automake@1.16.1  gdbm@1.18.1  isl@0.20   libtool@2.4.6    mpc@1.1.0  ncurses@6.1  pkgconf@1.6.3  zlib@1.2.11
 
 Pakete installieren
 -------------------
