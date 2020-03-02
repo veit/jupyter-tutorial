@@ -48,6 +48,7 @@ qgrid = "*"
 ipywebrtc = "*"
 ipyparallel = "*"
 ipycanvas = "*"
+plotnine = {extras = ["all"],version = "*"}
 
 [dev-packages]
 
