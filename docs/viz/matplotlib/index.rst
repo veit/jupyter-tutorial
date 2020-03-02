@@ -81,6 +81,7 @@ werden und damit wir Titel und Beschriftung hinzufügen können ``subplots``:
     geopandas
     seaborn
     ggpy <https://github.com/yhat/ggpy>
+    plotnine
     networkx.ipynb
     graphviz.ipynb
     cartopy

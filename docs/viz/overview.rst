@@ -66,6 +66,12 @@ Technologien
             color="slateblue",
             target="_top",
             href="https://github.com/yhat/ggpy"]
+        plotnine [
+            label="plotnine",
+            tooltip="Python-Implementierung von ggplot2",
+            color="slateblue",
+            target="_top",
+            href="../viz/matplotlib/plotnine.html"]
         scikit_plot [
             label="Scikit-plot",
             tooltip="Plotting-Bibliothek für\nScikit-learn-Objekte",
@@ -112,6 +118,7 @@ Technologien
         pandas  -- geopandas [color="slateblue"]
         mpl -- seaborn [color="slateblue"]
         mpl -- ggpy [color="slateblue"]
+        mpl -- plotnine [color="slateblue"]
         mpl -- scikit_plot [color="slateblue"]
         mpl -- yellowbrick [color="slateblue"]
         networkx -- graphviz [color="slateblue;0.5:gray"]
@@ -306,6 +313,7 @@ Altair seit mindestens einem Jahr nicht mehr weiterentwickelt wurden (Stand:
     "`geopandas <https://github.com/geopandas/geopandas>`_",".. image:: https://raster.shields.io/github/stars/geopandas/geopandas",".. image:: https://raster.shields.io/github/contributors/geopandas/geopandas",".. image:: https://raster.shields.io/github/commit-activity/y/geopandas/geopandas",".. image:: https://raster.shields.io/github/license/geopandas/geopandas"
     "`seaborn <https://github.com/mwaskom/seaborn>`_",".. image:: https://raster.shields.io/github/stars/mwaskom/seaborn",".. image:: https://raster.shields.io/github/contributors/mwaskom/seaborn",".. image:: https://raster.shields.io/github/commit-activity/y/mwaskom/seaborn",".. image:: https://raster.shields.io/github/license/mwaskom/seaborn"
     "`ggpy <https://github.com/yhat/ggpy>`_",".. image:: https://raster.shields.io/github/stars/yhat/ggpy",".. image:: https://raster.shields.io/github/contributors/yhat/ggpy",".. image:: https://raster.shields.io/github/commit-activity/y/yhat/ggpy",".. image:: https://raster.shields.io/github/license/yhat/ggpy"
+    "`plotnine <https://github.com/has2k1/plotnine>`_",".. image:: https://raster.shields.io/github/stars/has2k1/plotnine",".. image:: https://raster.shields.io/github/contributors/has2k1/plotnine",".. image:: https://raster.shields.io/github/commit-activity/y/has2k1/plotnine",".. image:: https://raster.shields.io/github/license/has2k1/plotnine"
     "`scikit-plot <https://github.com/reiinakano/scikit-plot>`_",".. image:: https://raster.shields.io/github/stars/reiinakano/scikit-plot",".. image:: https://raster.shields.io/github/contributors/reiinakano/scikit-plot",".. image:: https://raster.shields.io/github/commit-activity/y/reiinakano/scikit-plot",".. image:: https://raster.shields.io/github/license/reiinakano/scikit-plot"
     "`Yellowbrick <https://github.com/DistrictDataLabs/yellowbrick/>`_",".. image:: https://raster.shields.io/github/stars/DistrictDataLabs/yellowbrick",".. image:: https://raster.shields.io/github/contributors/DistrictDataLabs/yellowbrick",".. image:: https://raster.shields.io/github/commit-activity/y/DistrictDataLabs/yellowbrick",".. image:: https://raster.shields.io/github/license/DistrictDataLabs/yellowbrick"
     "`networkx <https://github.com/networkx/networkx>`_",".. image:: https://raster.shields.io/github/stars/networkx/networkx",".. image:: https://raster.shields.io/github/contributors/networkx/networkx",".. image:: https://raster.shields.io/github/commit-activity/y/networkx/networkx",".. image:: https://raster.shields.io/github/license/networkx/networkx"
