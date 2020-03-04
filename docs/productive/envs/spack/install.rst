@@ -60,31 +60,32 @@ Shell konfigurieren
 
 .. code-block:: console
 
-    $ spack spec netcdf
+    $ spack spec python
     Input spec
     --------------------------------
-    netcdf
+    python
 
     Concretized
     --------------------------------
-    netcdf@4.7.0%clang@10.0.1-apple~dap~hdf4 maxdims=1024 maxvars=8192 +mpi~parallel-netcdf patches=10a1c3f7fa05e2c82457482e272bbe04d66d0047b237ad0a73e87d63d848b16c +pic+shared arch=darwin-mojave-x86_64
-        ^autoconf@2.69%clang@10.0.1-apple arch=darwin-mojave-x86_64
-            ^m4@1.4.18%clang@10.0.1-apple patches=3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00,fc9b61654a3ba1a8d6cd78ce087e7c96366c290bc8d2c299f09828d793b853c8 +sigsegv arch=darwin-mojave-x86_64
-                ^libsigsegv@2.11%clang@10.0.1-apple arch=darwin-mojave-x86_64
-            ^perl@5.26.2%clang@10.0.1-apple+cpanm patches=0eac10ed90aeb0459ad8851f88081d439a4e41978e586ec743069e8b059370ac +shared+threads arch=darwin-mojave-x86_64
-                ^gdbm@1.18.1%clang@10.0.1-apple arch=darwin-mojave-x86_64
-                    ^readline@7.0%clang@10.0.1-apple arch=darwin-mojave-x86_64
-                        ^ncurses@6.1%clang@10.0.1-apple~symlinks~termlib arch=darwin-mojave-x86_64
-                            ^pkgconf@1.6.1%clang@10.0.1-apple arch=darwin-mojave-x86_64
-        ^automake@1.16.1%clang@10.0.1-apple arch=darwin-mojave-x86_64
-        ^hdf5@1.10.5%clang@10.0.1-apple~cxx~debug~fortran+hl+mpi+pic+shared~szip~threadsafe arch=darwin-mojave-x86_64
-            ^openmpi@3.1.4%clang@10.0.1-apple~cuda+cxx_exceptions fabrics=none ~java~legacylaunchers~memchecker~pmi schedulers=none ~sqlite3~thread_multiple+vt arch=darwin-mojave-x86_64
-                ^hwloc@1.11.11%clang@10.0.1-apple~cairo~cuda~gl+libxml2~nvml~pci+shared arch=darwin-mojave-x86_64
-                    ^libxml2@2.9.9%clang@10.0.1-apple~python arch=darwin-mojave-x86_64
-                        ^libiconv@1.15%clang@10.0.1-apple arch=darwin-mojave-x86_64
-                        ^xz@5.2.4%clang@10.0.1-apple arch=darwin-mojave-x86_64
-                        ^zlib@1.2.11%clang@10.0.1-apple+optimize+pic+shared arch=darwin-mojave-x86_64
-        ^libtool@2.4.6%clang@10.0.1-apple arch=darwin-mojave-x86_64
+    python@3.7.6%gcc@7.4.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-ubuntu18.04-sandybridge
+        ^bzip2@1.0.8%gcc@7.4.0+shared arch=linux-ubuntu18.04-sandybridge
+            ^diffutils@3.7%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+                ^libiconv@1.16%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+        ^expat@2.2.9%gcc@7.4.0+libbsd arch=linux-ubuntu18.04-sandybridge
+            ^libbsd@0.10.0%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+        ^gdbm@1.18.1%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+            ^readline@8.0%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+                ^ncurses@6.1%gcc@7.4.0~symlinks+termlib arch=linux-ubuntu18.04-sandybridge
+                    ^pkgconf@1.6.3%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+        ^gettext@0.20.1%gcc@7.4.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu18.04-sandybridge
+            ^libxml2@2.9.9%gcc@7.4.0~python arch=linux-ubuntu18.04-sandybridge
+                ^xz@5.2.4%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+                ^zlib@1.2.11%gcc@7.4.0+optimize+pic+shared arch=linux-ubuntu18.04-sandybridge
+            ^tar@1.32%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+        ^libffi@3.2.1%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
+        ^openssl@1.1.1d%gcc@7.4.0+systemcerts arch=linux-ubuntu18.04-sandybridge
+            ^perl@5.30.1%gcc@7.4.0+cpanm+shared+threads arch=linux-ubuntu18.04-sandybridge
+        ^sqlite@3.30.1%gcc@7.4.0~column_metadata+fts~functions~rtree arch=linux-ubuntu18.04-sandybridge
 
 Compiler-Konfiguration
 ----------------------
