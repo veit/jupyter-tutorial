@@ -78,7 +78,6 @@ Compiler installieren
 
    .. code-block:: console
 
-    $ spack env activate python-374
     $ spack install gcc@9.1.0
     …
     [+] /srv/jupyter/spack/opt/spack/linux-ubuntu18.04-sandybridge/gcc-7.4.0/gcc-9.1.0-zaj3xkm5onfgeweaeav5kuubwmjaokmz
