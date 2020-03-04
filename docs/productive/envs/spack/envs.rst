@@ -14,12 +14,10 @@ Environments, ``spack.yaml`` und ``spack.lock``
 
    .. code-block:: console
 
-    $ mkdir -p spackenvs/python-374
-    $ cd !$
-    cd spackenvs/python-374
-    $ spack env create -d .
-    ==> Updating view at /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view
-    ==> Created environment in /Users/veit/jupyter-tutorial/spackenvs/python-374
+    $ cd spackenvs/
+    $ spack env create -d python-374
+    ==> Updating view at /srv/jupyter/jupyter-tutorial/spackenvs/python-374/.spack-env/view
+    ==> Created environment in /srv/jupyter/jupyter-tutorial/spackenvs/python-374
 
 #. Überprüfen der virtuellen Umgebung:
 
