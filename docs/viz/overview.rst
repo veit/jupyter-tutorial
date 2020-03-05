@@ -71,7 +71,7 @@ Technologien
             tooltip="Python-Implementierung von ggplot2",
             color="slateblue",
             target="_top",
-            href="../viz/matplotlib/plotnine.html"]
+            href="../viz/matplotlib/plotnine/index.html"]
         scikit_plot [
             label="Scikit-plot",
             tooltip="Plotting-Bibliothek für\nScikit-learn-Objekte",
