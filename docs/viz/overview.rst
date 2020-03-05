@@ -53,7 +53,7 @@ Technologien
             tooltip="geopandas erweitert Pandas um geometrische Datentypen",
             color="slateblue",
             target="_top",
-            href="../viz/matplotlib/geopandas.html"]
+            href="../viz/matplotlib/geopandas/index.html"]
         seaborn [
             label="seaborn",
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
