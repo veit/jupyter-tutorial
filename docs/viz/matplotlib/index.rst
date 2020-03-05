@@ -38,7 +38,7 @@ einerseits viele Freiheiten bietet, andererseits jedoch viel Code erfordert.
     geopandas
     seaborn/index
     ggpy <https://github.com/yhat/ggpy>
-    plotnine
+    plotnine/index
     networkx.ipynb
     graphviz.ipynb
     cartopy
