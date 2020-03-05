@@ -47,7 +47,7 @@ Technologien
             tooltip="Pandas Datenstrukturen mit\nMatplotlib visualisieren",
             color="slateblue",
             target="_top",
-            href="../viz/matplotlib/pandas.html"]
+            href="../viz/matplotlib/pandas/index.html"]
         geopandas [
             label="GeoPandas",
             tooltip="geopandas erweitert Pandas um geometrische Datentypen",

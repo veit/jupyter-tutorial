@@ -34,7 +34,7 @@ einerseits viele Freiheiten bietet, andererseits jedoch viel Code erfordert.
     mpl-backends.ipynb
     mpl-install
     mpld3 <https://mpld3.github.io/>
-    pandas
+    pandas/index
     geopandas
     seaborn
     ggpy <https://github.com/yhat/ggpy>
