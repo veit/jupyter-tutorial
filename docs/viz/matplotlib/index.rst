@@ -35,7 +35,7 @@ einerseits viele Freiheiten bietet, andererseits jedoch viel Code erfordert.
     mpl-install
     mpld3 <https://mpld3.github.io/>
     pandas/index
-    geopandas
+    geopandas/index
     seaborn/index
     ggpy <https://github.com/yhat/ggpy>
     plotnine/index
