@@ -35,6 +35,7 @@ bokeh = "*"
 pillow = "*"
 beautifulsoup4 = "*"
 plotnine = {extras = ["all"],version = "*"}
+pandas = "*"
 
 [requires]
 python_version = "3.7.4"
