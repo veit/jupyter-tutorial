@@ -36,7 +36,7 @@ einerseits viele Freiheiten bietet, andererseits jedoch viel Code erfordert.
     mpld3 <https://mpld3.github.io/>
     pandas/index
     geopandas
-    seaborn
+    seaborn/index
     ggpy <https://github.com/yhat/ggpy>
     plotnine
     networkx.ipynb

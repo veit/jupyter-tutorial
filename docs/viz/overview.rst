@@ -55,11 +55,11 @@ Technologien
             target="_top",
             href="../viz/matplotlib/geopandas.html"]
         seaborn [
-            label="Seaborn",
+            label="seaborn",
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
             color="slateblue",
             target="_top",
-            href="../viz/matplotlib/seaborn.html"]
+            href="../viz/matplotlib/seaborn/index.html"]
         ggpy [
             label="ggpy",
             tooltip="ggplot-Port für Python",
