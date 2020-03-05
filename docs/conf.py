@@ -146,6 +146,7 @@ intersphinx_mapping = {
     'spack':  ('https://spack-tutorial.readthedocs.io/en/latest/', None),
     'ipyparallel': ('https://ipyparallel.readthedocs.io/en/latest/', None),
     'bokeh': ('https://docs.bokeh.org/en/latest/', None),
+    'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
 }
 
 def setup(app):
