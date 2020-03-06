@@ -9,289 +9,289 @@ Technologien
 
     graph python_visualisation_landscape {
         graph [fontname = "Calibri", fontsize="16", overlap=false];
-        node [fontname = "Calibri", fontsize="16", style="bold"];
-        edge [fontname = "Calibri", fontsize="16", style="bold"];
+        node [fontname = "Calibri", fontsize="16", style="bold", penwidth="5px"];
+        edge [fontname = "Calibri", fontsize="16", style="bold", penwidth="5px"];
         tooltip="Python Visualisation Landscape";
 
         // OpenGL
         opengl [
             label="OpenGL",
             tooltip="Open Graphics Library",
-            color="mediumpurple",
+            color="#FF66B3",
             target="_top",
             href="../viz/opengl/index.html"]
         vispy [
             label="Vispy",
             tooltip="Python-Bibliothek für\ninteraktive wissenschaftliche\nVisualisierungen",
-            color="mediumpurple",
+            color="#FF66B3",
             target="_top",
             href="http://vispy.org/"]
         glumpy [
             label="Glumpy",
             tooltip="Schnittstelle zwischen\nnumpy und OpenGL",
-            color="mediumpurple",
+            color="#FF66B3",
             target="_top",
             href="https://glumpy.github.io/"]
-        opengl -- vispy [color="mediumpurple"]
-        opengl -- glumpy [color="mediumpurple"]
+        opengl -- vispy [color="#FF66B3"]
+        opengl -- glumpy [color="#FF66B3"]
 
         // Matplotlib
         mpl [
             label="Matplotlib",
             tooltip="Python-Bibliothek\nfür 2D-Plots",
-            color="slateblue"
+            color="#BF80FF"
             target="_top",
             href="../viz/matplotlib/index.html"]
         pandas [
             label="Pandas",
             tooltip="Pandas Datenstrukturen mit\nMatplotlib visualisieren",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/pandas/index.html"]
         geopandas [
             label="GeoPandas",
             tooltip="geopandas erweitert Pandas um geometrische Datentypen",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/geopandas/index.html"]
         seaborn [
             label="seaborn",
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/seaborn/index.html"]
         ggpy [
             label="ggpy",
             tooltip="ggplot-Port für Python",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="https://github.com/yhat/ggpy"]
         plotnine [
             label="plotnine",
             tooltip="Python-Implementierung von ggplot2",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/plotnine/index.html"]
         scikit_plot [
             label="Scikit-plot",
             tooltip="Plotting-Bibliothek für\nScikit-learn-Objekte",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="https://scikit-plot.readthedocs.io/"]
         yellowbrick [
             label="Yellowbrick",
             tooltip="Tools für die visuelle Analyse und Diagnose\nvon Scikit-learn-Projekten",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="https://www.scikit-yb.org/"]
         networkx [
             label="NetworkX",
             tooltip="Erstellen, Ändern und Analysieren\nkomplexer Netzwerke",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/networkx.html"]
         graphviz [
             label="Graphviz",
             tooltip="Mächtige Visualisierungssoftware\nfür Graphen",
-            color="gray",
+            color="#cccccc",
             target="_top",
             href="../viz/matplotlib/graphviz.html"]
         cartopy [
             label="Cartopy",
             tooltip="Erstellen von Karten und\nAnalyse von Geodaten",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/cartopy.html"]
         iris [
             label="Iris",
             tooltip="Visualisierung auf Basis der Climate\nand Forecast (CF) Conventions",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/iris.html"]
         yt [
             label="yt",
             tooltip="Python-Bibliothek zur Analyse\nund Visualisierung von Volumendaten",
-            color="slateblue",
+            color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/yt.html"]
-        mpl -- pandas [color="slateblue"]
-        pandas  -- geopandas [color="slateblue"]
-        mpl -- seaborn [color="slateblue"]
-        mpl -- ggpy [color="slateblue"]
-        mpl -- plotnine [color="slateblue"]
-        mpl -- scikit_plot [color="slateblue"]
-        mpl -- yellowbrick [color="slateblue"]
-        networkx -- graphviz [color="slateblue;0.5:gray"]
-        mpl -- networkx [color="slateblue"]
-        mpl -- cartopy [color="slateblue"]
-        iris -- mpl [color="slateblue"]
-        iris -- cartopy [color="slateblue"]
-        yt -- mpl [color="slateblue"]
-        yt -- opengl [color="slateblue;0.5:mediumpurple", style="dashed"]
-        mpl -- mpld3 [color="slateblue;0.5:deepskyblue"]
-        mpl -- ipympl [color="slateblue;0.5:cyan"]
-        mpl -- mpl_altair [color="slateblue;0.5:darkturquoise"]
+        mpl -- pandas [color="#BF80FF"]
+        pandas  -- geopandas [color="#BF80FF"]
+        mpl -- seaborn [color="#BF80FF"]
+        mpl -- ggpy [color="#BF80FF"]
+        mpl -- plotnine [color="#BF80FF"]
+        mpl -- scikit_plot [color="#BF80FF"]
+        mpl -- yellowbrick [color="#BF80FF"]
+        networkx -- graphviz [color="#BF80FF;0.5:#cccccc"]
+        mpl -- networkx [color="#BF80FF"]
+        mpl -- cartopy [color="#BF80FF"]
+        iris -- mpl [color="#BF80FF"]
+        iris -- cartopy [color="#BF80FF"]
+        yt -- mpl [color="#BF80FF"]
+        yt -- opengl [color="#BF80FF;0.5:#FF66B3", style="dashed"]
+        mpl -- mpld3 [color="#BF80FF;0.5:#4da6ff"]
+        mpl -- ipympl [color="#BF80FF;0.5:#00FFFF"]
+        mpl -- mpl_altair [color="#BF80FF;0.5:#00FF80"]
 
         // Bokeh
         bokeh [
             label="Bokeh",
             tooltip="Interaktive Python-Bibliothek\nzur Datenvisualisierung\nin modernen Webbrowsern",
-            color="royalblue",
+            color="#9999FF",
             target="_top",
             href="../viz/bokeh/index.html"]
         vaex [
             label="Vaex",
             tooltip="Python-Bibliothek zur Datenanalyse\nund -visualisierung",
-            color="royalblue",
+            color="#9999FF",
             target="_top",
             href="https://github.com/vaexio/vaex"]
         holoviews [
             label="HoloViews",
             tooltip="Python-Bibliothek zur Datenanalyse\nund -visualisierung",
-            color="royalblue",
+            color="#9999FF",
             target="_top",
             href="http://holoviews.org/"]
         datashader [
             label="Datashader",
             tooltip="Grafik-Pipeline-System für\naussagekräftige Darstellungen\ngroßer Datensätze",
-            color="royalblue",
+            color="#9999FF",
             target="_top",
             href="../viz/bokeh/integration/datashader.html"]
-        vaex -- bokeh [color="royalblue;0.5:royalblue"]
-        holoviews -- bokeh [color="royalblue;0.5:royalblue"]
-        datashader -- bokeh [color="royalblue;0.5:royalblue"]
-        networkx -- bokeh [color="slateblue;0.5:royalblue"]
-        datashader -- holoviews [color="royalblue"]
-        vaex -- mpl [color="royalblue;0.5:slateblue"]
-        vaex -- bqplot [color="royalblue;0.5:deepskyblue"]
-        vaex -- opengl [color="royalblue;0.5:mediumpurple"]
-        holoviews -- mpl [color="royalblue;0.5:slateblue"]
-        datashader -- mpl [color="royalblue;0.5:slateblue"]
+        vaex -- bokeh [color="#9999FF;0.5:#9999FF"]
+        holoviews -- bokeh [color="#9999FF;0.5:#9999FF"]
+        datashader -- bokeh [color="#9999FF;0.5:#9999FF"]
+        networkx -- bokeh [color="#BF80FF;0.5:#9999FF"]
+        datashader -- holoviews [color="#9999FF"]
+        vaex -- mpl [color="#9999FF;0.5:#BF80FF"]
+        vaex -- bqplot [color="#9999FF;0.5:#4da6ff"]
+        vaex -- opengl [color="#9999FF;0.5:#FF66B3"]
+        holoviews -- mpl [color="#9999FF;0.5:#BF80FF"]
+        datashader -- mpl [color="#9999FF;0.5:#BF80FF"]
 
         // D3.js
         d3js [
             label="D3.js",
             tooltip="Javascript-Bibliothek mit mächtigen\nVisualisierungskomponenten",
-            color="deepskyblue",
+            color="#4da6ff",
             target="_top",
             href="../viz/d3js/index.html"]
         bqplot [
             label="bqplot",
             tooltip="Interaktive Plots\nmit D3.js und ipywidgets",
-            color="deepskyblue",
+            color="#4da6ff",
             target="_top",
             href="../viz/d3js/bqplot/index.html"]
         d3po [
             label="d3po",
             tooltip="Javascript-Bibliothekt zum\nErstellen von D3.js-Charts",
-            color="deepskyblue",
+            color="#4da6ff",
             target="_top",
             href="https://github.com/adamlabadorf/d3po"]
         mpld3 [
             label="mpld3",
             tooltip="Matplotlib für\nden Webbrowser",
-            color="deepskyblue",
+            color="#4da6ff",
             target="_top",
             href="https://mpld3.github.io/"]
-        d3js -- bqplot [color="deepskyblue"]
-        d3js -- mpld3 [color="deepskyblue"]
-        d3js -- d3po [color="deepskyblue"]
-        d3js -- vega [color="deepskyblue;0.5:darkturquoise"]
-        d3js -- javascript [color="deepskyblue;0.5:cyan"]
+        d3js -- bqplot [color="#4da6ff"]
+        d3js -- mpld3 [color="#4da6ff"]
+        d3js -- d3po [color="#4da6ff"]
+        d3js -- vega [color="#4da6ff;0.5:#00FF80"]
+        d3js -- javascript [color="#4da6ff;0.5:#00FFFF"]
 
         // Vega
         vega [
             label="Vega",
             tooltip="Deklarative Sprache für\ninteraktive Visualisierungen",
-            color="darkturquoise",
+            color="#00FF80",
             target="_top",
             href="../viz/vega/index.html"]
         vincent [
             label="Vincent",
             tooltip="Python-Bibliothek für\nVega-Anwendungen",
-            color="darkturquoise",
+            color="#00FF80",
             target="_top",
             href="https://vincent.readthedocs.io/"]
         vega_light [
             label="Vega-Lite",
             tooltip="High-level-Grammatik für\nkomplexe Vega-Anwendungen",
-            color="darkturquoise",
+            color="#00FF80",
             target="_top",
             href="https://github.com/vega/vega-lite"]
         altair [
             label="Altair",
             tooltip="Deklarative Visualisierung\nin Python",
-            color="darkturquoise",
+            color="#00FF80",
             target="_top",
             href="https://altair-viz.github.io/"]
         mpl_altair [
             label="Matplotlib Altair",
             tooltip="Matplotlib-Renderer\nfür Altair",
-            color="darkturquoise",
+            color="#00FF80",
             target="_top",
             href="https://matplotlib.org/mpl-altair/"]
-        vega -- vincent [color="darkturquoise"]
-        vega -- vega_light [color="darkturquoise"]
-        vega_light -- altair [color="darkturquoise"]
-        altair -- mpl_altair [color="darkturquoise"]
+        vega -- vincent [color="#00FF80"]
+        vega -- vega_light [color="#00FF80"]
+        vega_light -- altair [color="#00FF80"]
+        altair -- mpl_altair [color="#00FF80"]
 
         // Javascript
         javascript [
             label="Javascript",
             tooltip="Skriptsprache, die ursprünglich für\ndynamisches HTML in Webbrowsern\nentwickelt wurde",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="../viz/js/index.html"]
         plotly [
             label="plotly",
             tooltip="Interaktive Graphikbibliothek\nfür Python",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="https://github.com/plotly/plotly.py"]
         cufflinks [
             label="Cufflinks",
             tooltip="Interaktive Plotly-Plots\nfür Pandas",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="https://github.com/santosjorge/cufflinks"]
         pythreejs [
             label="pythreejs",
             tooltip="Notebook-Extension\nfür WebGL-fähige Webbrowser",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="../viz/js/pythreejs.html"]
         ipyvolume [
             label="IPyvolume",
             tooltip="Python-Bibliothek zur\nVisualisierung von\nVolumen und -Glyphen",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="../viz/js/ipyvolume.html"]
         toyplot [
             label="Toyplot",
             tooltip="Leichtgewichtige Bibliothek\nfür ästhetische Plots",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="https://toyplot.readthedocs.io/"]
         ipyleaflet [
             label="ipyleaflet",
             tooltip="Interaktive Karten für\nJupyter Notebooks",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="../viz/js/ipyleaflet.html"]
         ipympl [
             label="ipympl",
             tooltip="Matplotlib\nJupyter Extension",
-            color="cyan",
+            color="#00FFFF",
             target="_top",
             href="../workspace/jupyter/ipywidgets/libs/ipympl.html"]
-        javascript -- ipyvolume [color="cyan"]
-        javascript -- plotly [color="cyan"]
-        plotly -- cufflinks [color="cyan"]
-        javascript -- ipyleaflet [color="cyan"]
-        javascript -- ipympl [color="cyan"]
-        javascript -- toyplot [color="cyan"]
-        javascript -- bokeh [color="cyan;0.5:royalblue"]
-        javascript -- pythreejs [color="cyan"]
+        javascript -- ipyvolume [color="#00FFFF"]
+        javascript -- plotly [color="#00FFFF"]
+        plotly -- cufflinks [color="#00FFFF"]
+        javascript -- ipyleaflet [color="#00FFFF"]
+        javascript -- ipympl [color="#00FFFF"]
+        javascript -- toyplot [color="#00FFFF"]
+        javascript -- bokeh [color="#00FFFF;0.5:#9999FF"]
+        javascript -- pythreejs [color="#00FFFF"]
     }
 
 Aktivitäten und Lizenzen
@@ -347,7 +347,7 @@ Diagrammtypen
 * Statistische Darstellungen (Streudiagramme, Linien, Flächen, Balken,
   Histogramme)
 
-  * :doc:`matplotlib/seaborn`
+  * :doc:`matplotlib/seaborn/index`
   * :doc:`d3js/bqplot/index`
   * `Altair <https://altair-viz.github.io/>`__
 
