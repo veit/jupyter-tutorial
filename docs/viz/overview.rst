@@ -101,7 +101,7 @@ Technologien
             tooltip="Erstellen von Karten und\nAnalyse von Geodaten",
             color="#BF80FF",
             target="_top",
-            href="../viz/matplotlib/cartopy.html"]
+            href="../viz/matplotlib/cartopy/index.html"]
         iris [
             label="Iris",
             tooltip="Visualisierung auf Basis der Climate\nand Forecast (CF) Conventions",
