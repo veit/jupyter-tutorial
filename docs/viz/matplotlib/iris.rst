@@ -4,7 +4,7 @@ Iris
 `Iris <https://scitools.org.uk/iris/docs/latest/>`_ implementiert ein
 Datenmodell basierend auf `Climate and Forecast (CF) Conventions
 <http://cfconventions.org/>`_, wobei die Visualisierung auf
-:doc:`index` und :doc:`cartopy` basiert. 
+:doc:`index` und :doc:`cartopy/index` basiert. 
 
 .. seealso::
    - `User guide
