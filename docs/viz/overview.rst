@@ -187,6 +187,18 @@ Technologien
             color="#4da6ff",
             target="_top",
             href="https://github.com/adamlabadorf/d3po"]
+        plotly [
+            label="plotly",
+            tooltip="Interaktive Graphikbibliothek\nfür Python",
+            color="#4da6ff",
+            target="_top",
+            href="https://github.com/plotly/plotly.py"]
+        cufflinks [
+            label="Cufflinks",
+            tooltip="Interaktive Plotly-Plots\nfür Pandas",
+            color="#4da6ff",
+            target="_top",
+            href="https://github.com/santosjorge/cufflinks"]
         mpld3 [
             label="mpld3",
             tooltip="Matplotlib für\nden Webbrowser",
@@ -195,6 +207,8 @@ Technologien
             href="https://mpld3.github.io/"]
         d3js -- bqplot [color="#4da6ff"]
         d3js -- mpld3 [color="#4da6ff"]
+        d3js -- plotly [color="#4da6ff"]
+        plotly -- cufflinks [color="#4da6ff"]
         d3js -- d3po [color="#4da6ff"]
         d3js -- vega [color="#4da6ff;0.5:#00FF80"]
         d3js -- javascript [color="#4da6ff;0.5:#00FFFF"]
@@ -242,18 +256,6 @@ Technologien
             color="#00FFFF",
             target="_top",
             href="../viz/js/index.html"]
-        plotly [
-            label="plotly",
-            tooltip="Interaktive Graphikbibliothek\nfür Python",
-            color="#00FFFF",
-            target="_top",
-            href="https://github.com/plotly/plotly.py"]
-        cufflinks [
-            label="Cufflinks",
-            tooltip="Interaktive Plotly-Plots\nfür Pandas",
-            color="#00FFFF",
-            target="_top",
-            href="https://github.com/santosjorge/cufflinks"]
         pythreejs [
             label="pythreejs",
             tooltip="Notebook-Extension\nfür WebGL-fähige Webbrowser",
@@ -285,8 +287,6 @@ Technologien
             target="_top",
             href="../workspace/jupyter/ipywidgets/libs/ipympl.html"]
         javascript -- ipyvolume [color="#00FFFF"]
-        javascript -- plotly [color="#00FFFF"]
-        plotly -- cufflinks [color="#00FFFF"]
         javascript -- ipyleaflet [color="#00FFFF"]
         javascript -- ipympl [color="#00FFFF"]
         javascript -- toyplot [color="#00FFFF"]
