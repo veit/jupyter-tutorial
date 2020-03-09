@@ -12,7 +12,7 @@ einerseits viele Freiheiten bietet, andererseits jedoch viel Code erfordert.
 +---------------------------------------+---------------------------------------+
 | Pros                                  | Cons                                  |
 +=======================================+=======================================+
-| Ähnliches Design wie Matplotlib; der  | Imperative API und häufig sind sehr   |
+| Ähnliches Design wie Matlab; der      | Imperative API und häufig sind sehr   |
 | Wechsel ist einfach                   | ausführliche Angaben nötig            |
 +---------------------------------------+---------------------------------------+
 | Viele Rendering-Backends, siehe       | Häufig ungenügende Standarddarstellung|
