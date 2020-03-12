@@ -232,6 +232,12 @@ Technologien
             color="#00FF80",
             target="_top",
             href="https://github.com/vega/vega-lite"]
+        pdvega [
+            label="PdVega",
+            tooltip="Interaktive Vega-Light-Plots\naus Pandas Dataframes",
+            color="#00FF80",
+            target="_top",
+            href="https://altair-viz.github.io/pdvega/"]
         altair [
             label="Altair",
             tooltip="Deklarative Visualisierung\nin Python",
@@ -247,6 +253,8 @@ Technologien
         vega -- vincent [color="#00FF80"]
         vega -- vega_light [color="#00FF80"]
         vega_light -- altair [color="#00FF80"]
+        vega_light -- pdvega [color="#00FF80"]
+        pdvega -- pandas [color="#00FF80;0.5:#BF80FF"]
         altair -- mpl_altair [color="#00FF80"]
 
         // Javascript
@@ -331,6 +339,7 @@ Altair seit mindestens einem Jahr nicht mehr weiterentwickelt wurden (Stand:
     "`vega <https://github.com/vega/vega>`_",".. image:: https://raster.shields.io/github/stars/vega/vega",".. image:: https://raster.shields.io/github/contributors/vega/vega",".. image:: https://raster.shields.io/github/commit-activity/y/vega/vega",".. image:: https://raster.shields.io/github/license/vega/vega"
     "`vincent <https://github.com/wrobstory/vincent>`_",".. image:: https://raster.shields.io/github/stars/wrobstory/vincent",".. image:: https://raster.shields.io/github/contributors/wrobstory/vincent",".. image:: https://raster.shields.io/github/commit-activity/y/wrobstory/vincent",".. image:: https://raster.shields.io/github/license/wrobstory/vincent"
     "`Vega-Lite <https://github.com/vega/vega-lite>`_",".. image:: https://raster.shields.io/github/stars/vega/vega-lite",".. image:: https://raster.shields.io/github/contributors/vega/vega-lite",".. image:: https://raster.shields.io/github/commit-activity/y/vega/vega-lite",".. image:: https://raster.shields.io/github/license/vega/vega-lite"
+    "`PdVega <https://github.com/altair-viz/pdvega>`_",".. image:: https://raster.shields.io/github/stars/altair-viz/pdvega",".. image:: https://raster.shields.io/github/contributors/altair-viz/pdvega",".. image:: https://raster.shields.io/github/commit-activity/y/altair-viz/pdvega",".. image:: https://raster.shields.io/github/license/altair-viz/pdvega"
     "`altair <https://github.com/altair-viz/altair>`__",".. image:: https://raster.shields.io/github/stars/altair-viz/altair",".. image:: https://raster.shields.io/github/contributors/altair-viz/altair",".. image:: https://raster.shields.io/github/commit-activity/y/altair-viz/altair",".. image:: https://raster.shields.io/github/license/altair-viz/altair"
     "`Matplotlib Altair <https://github.com/matplotlib/mpl-altair>`_",".. image:: https://raster.shields.io/github/stars/matplotlib/mpl-altair",".. image:: https://raster.shields.io/github/contributors/matplotlib/mpl-altair",".. image:: https://raster.shields.io/github/commit-activity/y/matplotlib/mpl-altair",".. image:: https://raster.shields.io/github/license/matplotlib/mpl-altair"
     "`plotly <https://github.com/plotly/plotly.py>`_",".. image:: https://raster.shields.io/github/stars/plotly/plotly.py",".. image:: https://raster.shields.io/github/contributors/plotly/plotly.py",".. image:: https://raster.shields.io/github/commit-activity/y/plotly/plotly.py",".. image:: https://raster.shields.io/github/license/plotly/plotly.py"
