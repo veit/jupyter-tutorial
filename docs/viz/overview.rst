@@ -151,15 +151,25 @@ Technologien
             color="#9999FF",
             target="_top",
             href="http://holoviews.org/"]
+        hvplot [
+            label="hvPlot",
+            tooltip="High-level-Plot-API\nauf Basis von HoloViews",
+            color="#9999FF",
+            target="_top",
+            href="http://holoviews.org/"]
         datashader [
             label="Datashader",
             tooltip="Grafik-Pipeline-System für\naussagekräftige Darstellungen\ngroßer Datensätze",
             color="#9999FF",
             target="_top",
             href="../viz/bokeh/integration/datashader.html"]
-        vaex -- bokeh [color="#9999FF;0.5:#9999FF"]
-        holoviews -- bokeh [color="#9999FF;0.5:#9999FF"]
-        datashader -- bokeh [color="#9999FF;0.5:#9999FF"]
+        vaex -- bokeh [color="#9999FF"]
+        holoviews -- bokeh [color="#9999FF"]
+        holoviews -- hvplot [color="#9999FF"]
+        hvplot -- pandas [color="#9999FF;0.5:#BF80FF"]
+        hvplot -- geopandas [color="#9999FF;0.5:#BF80FF"]
+        hvplot -- networkx [color="#9999FF;0.5:#BF80FF"]
+        datashader -- bokeh [color="#9999FF"]
         networkx -- bokeh [color="#BF80FF;0.5:#9999FF"]
         datashader -- holoviews [color="#9999FF"]
         vaex -- mpl [color="#9999FF;0.5:#BF80FF"]
