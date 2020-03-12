@@ -219,6 +219,7 @@ Technologien
         d3js -- mpld3 [color="#4da6ff"]
         d3js -- plotly [color="#4da6ff"]
         plotly -- cufflinks [color="#4da6ff"]
+        cufflinks -- pandas [color="#4da6ff;0.5:#BF80FF"]
         d3js -- d3po [color="#4da6ff"]
         d3js -- vega [color="#4da6ff;0.5:#00FF80"]
         d3js -- javascript [color="#4da6ff;0.5:#00FFFF"]
