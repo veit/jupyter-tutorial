@@ -36,6 +36,7 @@ pillow = "*"
 beautifulsoup4 = "*"
 plotnine = {extras = ["all"],version = "*"}
 pandas = "*"
+pdvega = "*"
 
 [requires]
 python_version = "3.7.4"
