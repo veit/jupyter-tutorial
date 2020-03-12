@@ -178,6 +178,50 @@ Technologien
         holoviews -- mpl [color="#9999FF;0.5:#BF80FF"]
         datashader -- mpl [color="#9999FF;0.5:#BF80FF"]
 
+        // Vega
+        vega [
+            label="Vega",
+            tooltip="Deklarative Sprache für\ninteraktive Visualisierungen",
+            color="#00FF80",
+            target="_top",
+            href="../viz/vega/index.html"]
+        vincent [
+            label="Vincent",
+            tooltip="Python-Bibliothek für\nVega-Anwendungen",
+            color="#00FF80",
+            target="_top",
+            href="https://vincent.readthedocs.io/"]
+        vega_light [
+            label="Vega-Lite",
+            tooltip="High-level-Grammatik für\nkomplexe Vega-Anwendungen",
+            color="#00FF80",
+            target="_top",
+            href="https://github.com/vega/vega-lite"]
+        pdvega [
+            label="PdVega",
+            tooltip="Interaktive Vega-Light-Plots\naus Pandas Dataframes",
+            color="#00FF80",
+            target="_top",
+            href="https://altair-viz.github.io/pdvega/"]
+        altair [
+            label="Altair",
+            tooltip="Deklarative Visualisierung\nin Python",
+            color="#00FF80",
+            target="_top",
+            href="https://altair-viz.github.io/"]
+        mpl_altair [
+            label="Matplotlib Altair",
+            tooltip="Matplotlib-Renderer\nfür Altair",
+            color="#00FF80",
+            target="_top",
+            href="https://matplotlib.org/mpl-altair/"]
+        vega -- vincent [color="#00FF80"]
+        vega -- vega_light [color="#00FF80"]
+        vega_light -- altair [color="#00FF80"]
+        vega_light -- pdvega [color="#00FF80"]
+        pdvega -- pandas [color="#00FF80;0.5:#BF80FF"]
+        altair -- mpl_altair [color="#00FF80"]
+
         // D3.js
         d3js [
             label="D3.js",
@@ -223,50 +267,6 @@ Technologien
         d3js -- d3po [color="#4da6ff"]
         d3js -- vega [color="#4da6ff;0.5:#00FF80"]
         d3js -- javascript [color="#4da6ff;0.5:#00FFFF"]
-
-        // Vega
-        vega [
-            label="Vega",
-            tooltip="Deklarative Sprache für\ninteraktive Visualisierungen",
-            color="#00FF80",
-            target="_top",
-            href="../viz/vega/index.html"]
-        vincent [
-            label="Vincent",
-            tooltip="Python-Bibliothek für\nVega-Anwendungen",
-            color="#00FF80",
-            target="_top",
-            href="https://vincent.readthedocs.io/"]
-        vega_light [
-            label="Vega-Lite",
-            tooltip="High-level-Grammatik für\nkomplexe Vega-Anwendungen",
-            color="#00FF80",
-            target="_top",
-            href="https://github.com/vega/vega-lite"]
-        pdvega [
-            label="PdVega",
-            tooltip="Interaktive Vega-Light-Plots\naus Pandas Dataframes",
-            color="#00FF80",
-            target="_top",
-            href="https://altair-viz.github.io/pdvega/"]
-        altair [
-            label="Altair",
-            tooltip="Deklarative Visualisierung\nin Python",
-            color="#00FF80",
-            target="_top",
-            href="https://altair-viz.github.io/"]
-        mpl_altair [
-            label="Matplotlib Altair",
-            tooltip="Matplotlib-Renderer\nfür Altair",
-            color="#00FF80",
-            target="_top",
-            href="https://matplotlib.org/mpl-altair/"]
-        vega -- vincent [color="#00FF80"]
-        vega -- vega_light [color="#00FF80"]
-        vega_light -- altair [color="#00FF80"]
-        vega_light -- pdvega [color="#00FF80"]
-        pdvega -- pandas [color="#00FF80;0.5:#BF80FF"]
-        altair -- mpl_altair [color="#00FF80"]
 
         // Javascript
         javascript [
