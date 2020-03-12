@@ -198,7 +198,7 @@ Technologien
             tooltip="Interaktive Plotly-Plots\nfür Pandas",
             color="#4da6ff",
             target="_top",
-            href="https://github.com/santosjorge/cufflinks"]
+            href="https://plot.ly/python/v3/ipython-notebooks/cufflinks/"]
         mpld3 [
             label="mpld3",
             tooltip="Matplotlib für\nden Webbrowser",
