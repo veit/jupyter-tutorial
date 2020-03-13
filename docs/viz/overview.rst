@@ -202,7 +202,7 @@ Technologien
             tooltip="Interaktive Vega-Light-Plots\naus Pandas Dataframes",
             color="#00FF80",
             target="_top",
-            href="https://altair-viz.github.io/pdvega/"]
+            href="../viz/vega/pdvega/index.html"]
         altair [
             label="Altair",
             tooltip="Deklarative Visualisierung\nin Python",
