@@ -24,4 +24,5 @@ Canvas oder SVG generieren.
     Vega-Light <https://bqplot.readthedocs.io/>
     Altair <https://altair-viz.github.io/>
     Matplotlib Altair <https://matplotlib.org/mpl-altair/>
+    pdvega/index
 
