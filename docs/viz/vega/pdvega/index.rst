@@ -11,7 +11,7 @@ erstellt werden können.
 
     * `Advanced Plotting: Using Vega-Lite Directly
       <https://altair-viz.github.io/pdvega/advanced.html>`_
-    * `API Reference <[200~https://altair-viz.github.io/pdvega/API.html>`_
+    * `API Reference <https://altair-viz.github.io/pdvega/API.html>`_
 
 .. toctree::
     :titlesonly:
