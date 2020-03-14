@@ -12,5 +12,6 @@ oder `Datashader <datashader.ipynb>`_ zusammen.
 
     Vaex <https://github.com/vaexio/vaex>
     HoloViews <http://holoviews.org/>
+    holoviews/hvplot/index
     datashader.ipynb
 

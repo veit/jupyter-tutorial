@@ -156,7 +156,7 @@ Technologien
             tooltip="High-level-Plot-API\nauf Basis von HoloViews",
             color="#9999FF",
             target="_top",
-            href="https://hvplot.holoviz.org/"]
+            href="../viz/bokeh/integration/holoviews/hvplot/index.html"]
         datashader [
             label="Datashader",
             tooltip="Grafik-Pipeline-System für\naussagekräftige Darstellungen\ngroßer Datensätze",
