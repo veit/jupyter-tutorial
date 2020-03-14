@@ -15,6 +15,7 @@ API zum Plotten von allen oben genannten Formaten bietet.
 
     * `User Guide <https://hvplot.holoviz.org/user_guide/index.html>`_
     * `Gallery <https://hvplot.holoviz.org/reference/index.html>`_
+    * `GitHub <https://github.com/holoviz/hvplot>`_
 
 .. toctree::
     :titlesonly:
