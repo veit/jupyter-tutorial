@@ -18,12 +18,15 @@ Debian≥9 (Stretch):
 .. code-block:: console
 
     $ sudo apt install proj-bin
+    $ sudo apt install libproj-dev
+    $ sudo apt install libgeos-dev
 
 Mac OS X:
 
 .. code-block:: console
 
     $ brew install proj
+    $ brew install geos
 
 Kernel
 ------
@@ -33,7 +36,14 @@ Anschließend könnt ihr Cartopy für euren Kernel installieren mit:
 .. code-block:: console
 
     $ export PIP_NO_BINARY=:shapely:
-    $ pipenv install cartopy
+    $ pipenv install cython numpy cartopy
+
+Für die :doc:`examples` benötigt ihr zusätzlich die folgenden beiden
+Python-Pakete:
+
+.. code-block:: console
+
+    $ pipenv install python -m pip install matplotlib scipy
 
 Optionale Anforderungen
 -----------------------
