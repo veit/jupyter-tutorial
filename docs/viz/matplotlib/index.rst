@@ -30,9 +30,9 @@ einerseits viele Freiheiten bietet, andererseits jedoch viel Code erfordert.
     :maxdepth: 0
     :hidden:
 
-    mpl-example.ipynb
-    mpl-backends.ipynb
     mpl-install
+    mpl-backends.ipynb
+    mpl-example.ipynb
     mpld3 <https://mpld3.github.io/>
     pandas/index
     geopandas/index
