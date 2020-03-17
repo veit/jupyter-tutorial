@@ -1,9 +1,13 @@
 Daten erheben
 =============
 
-:doc:`web-api` mit `Requests <https://requests.readthedocs.io/en/master/>`_ oder
-:doc:`html` mit
-`BeautifulSoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_.
+Daten lassen sich einfach erheben mit `Requests
+<https://requests.readthedocs.io/en/master/>`_ :doc:`web-api` oder mit
+`BeautifulSoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_
+:doc:`html`.
+
+Alternativ kann :doc:`intake/index` für das Finden, Untersuchen, Laden und
+Verteilen von Daten verwendet werden.
 
 .. toctree::
     :hidden:
@@ -13,4 +17,5 @@ Daten erheben
     web-api.ipynb
     module.ipynb
     html.ipynb
+    intake/index
 
