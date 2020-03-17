@@ -1,6 +1,15 @@
 Intake installieren
 ===================
 
+Anforderungen
+-------------
+
+Für die Verwendung von `intake.gui` müssen aktuelle Versionen von
+Bokeh≥2.0 und Panel verfügbar sein.
+
+Installation
+------------
+
 Intake lässt sich einfach für euren Jupyter-Kernel installieren mit:
 
 .. code-block:: console
