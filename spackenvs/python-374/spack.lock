@@ -5,108 +5,88 @@
  },
  "roots": [
   {
-   "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+   "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
    "spec": "python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+   "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
    "spec": "py-numpy ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "4e4dngxwtl7sqensfl3eoonp65l74opx",
+   "hash": "eh6cep2solm3logbkemngpedlsfmno4w",
    "spec": "py-matplotlib ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "lbf42o2hytlul3plq2gmizdl2tjp56ki",
+   "hash": "scldipp5bfbv7u4vvfasp3bpk7thai7v",
    "spec": "py-scipy ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "wiu27yy7dq2bpk74un2tx5wbkklqjs4z",
+   "hash": "dmqiff7h2mpvj5nzf2l4y7e7gplvsuve",
    "spec": "py-sphinx ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "d3rgg7byv42plijsoira6qt443igfele",
+   "hash": "detkpbt7i3e64pus7nv4jjplacrqhhag",
    "spec": "py-sphinx-bootstrap-theme ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "3texgat6u26wcw2kitpryzirxufo6vkk",
+   "hash": "a6od3brr2vunobqxog4bv2zzlw2l7pm2",
    "spec": "py-sphinxcontrib-bibtex ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "avrhx4j36bhkf7ht2aygamepxtiioxqs",
+   "hash": "3xtvaeyayr4kfw4yipuropj63j4azkha",
    "spec": "py-sphinxcontrib-programoutput ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "cvjn5ovamzi2ezskve572bnkvoer2j7b",
+   "hash": "clpax3fecny533vdflfywysodd2clvzs",
    "spec": "py-netcdf4 ^hdf5+hl ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "jbdncslrxrmnj4z3tdlac2mebhdpt3b5",
+   "hash": "5p37dp7jz7miywmdttxnihrlrju6agxx",
    "spec": "py-scikit-learn ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "mmbln3beqyienm6tkzjpqr32ttf5i3n2",
+   "hash": "fpdr6nncy5gpjyg4rgvw2zsfuh4eqj2r",
    "spec": "py-ipywidgets ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "uexnf6xxucn5ilblo2p6ky7hxactdxxv",
+   "hash": "jbwd7qjiaeepmmasnp5kxefbfegrzubn",
    "spec": "py-bokeh ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "jy62w23jixfo372ifbwt3uvhqx42lbqs",
+   "hash": "mujcjjvtz2s4txnspncnmka74d5gwzpf",
    "spec": "py-pandas ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "6t26ijj4nbl7agk7otnnenhryjhhpyil",
+   "hash": "qtivk3cye45gk2kvgmscl2cwor56og7k",
    "spec": "py-geopandas ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "pwfk5llenq2ewc2icinr2jqw24i6dvcv",
+   "hash": "aoaa7wrbgzwkws6jcfnfq2c2bksp63kg",
    "spec": "py-xarray ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "ocyxh5dxokolias67pcexcqy3zztlsed",
-   "spec": "py-pip ^python@3.7.4%gcc@9.1.0"
-  },
-  {
-   "hash": "s2qmeb636ncflpf32snvcxte2my4lues",
+   "hash": "24eks3m4qwehnciasmvebcv4r5jr67nb",
    "spec": "py-seaborn ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "oeyopsgcimojjkxse4kzrjkjljoo7oiw",
+   "hash": "jp57ifavvstdygsnbsa4rysqvlwc3him",
    "spec": "py-mpi4py ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "5jvd7bjfwj5bxmiekle5rmokzppwot4c",
+   "hash": "e4lj4bnwg3bbdohi3tjtvicu724knu2y",
    "spec": "py-graphviz ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "d3x5yl5gsdb3yqyngpk7bv5pyjmp5o3t",
+   "hash": "bekhl2gyl4yiaz4myjdoei45bji2boyt",
    "spec": "py-networkx ^python@3.7.4%gcc@9.1.0"
   },
   {
-   "hash": "2me6y63yolcdobia7pjxqnvexf3mjr7c",
+   "hash": "ltm3d7k6vzbuekhwc47jht22xdfzjub2",
    "spec": "py-pydot ^python@3.7.4%gcc@9.1.0"
-  },
-  {
-   "hash": "tpqun7ujrvum74434uugjsj35qjcndhk",
-   "spec": "py-pillow"
-  },
-  {
-   "hash": "ejeunclp4xzwas7zp5zne2uzsxixyqzt",
-   "spec": "py-pip ^python@3.7.4%gcc@9.1.0"
-  },
-  {
-   "hash": "q5npa6mw2efdkmshf2wszjz4e5fr2pl6",
-   "spec": "py-pillow ^python@3.7.4%gcc@9.1.0"
-  },
-  {
-   "hash": "z3hxrazc53ms2wsmbz2vwu6p6bgfm2af",
-   "spec": "py-seaborn ^python@3.7.4%gcc@9.1.0"
   }
  ],
  "concrete_specs": {
-  "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4": {
+  "rok4bp4j2jzsj2x4dko3cqhkbv644lz4": {
    "python": {
     "version": "3.7.4",
     "arch": {
@@ -142,6 +122,8 @@
      "bz2": true,
      "ctypes": true,
      "dbm": true,
+     "debug": false,
+     "libxml2": true,
      "lzma": true,
      "nis": false,
      "optimizations": false,
@@ -180,14 +162,14 @@
       ]
      },
      "gdbm": {
-      "hash": "krne7lom4z6z2hkxjl7c7sdxrm37j5il",
+      "hash": "ywnrqfn3cpr3nnfoksugn6gyegev2aed",
       "type": [
        "build",
        "link"
       ]
      },
      "gettext": {
-      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
+      "hash": "3slsyjwpv3mt75h4vz2qi6yzwrhxo25s",
       "type": [
        "build",
        "link"
@@ -201,14 +183,14 @@
       ]
      },
      "ncurses": {
-      "hash": "kzyje5ef5glttsmgsij2bb2jife6ywge",
+      "hash": "3zyp2e6rz7bwrvylampqzcm5qntmwfpq",
       "type": [
        "build",
        "link"
       ]
      },
      "openssl": {
-      "hash": "4ol6wnkninainxgphgf4kdn2cbpwrw3k",
+      "hash": "vxvmhccpz3ievntnzcio55qotftnsjy6",
       "type": [
        "build",
        "link"
@@ -221,14 +203,14 @@
       ]
      },
      "readline": {
-      "hash": "mbodyv2vc73vl2mr5qrba3vurdxpbj5l",
+      "hash": "y4a76ze4sr4utzxuect6447ewtupowoq",
       "type": [
        "build",
        "link"
       ]
      },
      "sqlite": {
-      "hash": "h2v3mnfwtua3ex3u6tbo6hyg2jhrwfgd",
+      "hash": "mhhhijldia5uxdick52i7r4m2spcfvvh",
       "type": [
        "build",
        "link"
@@ -249,7 +231,7 @@
       ]
      }
     },
-    "hash": "fqefawfae6tszykhtxqykral5uemeith"
+    "hash": "7gmnr3wavanpiirgw7z2rlkznufygqkp"
    }
   },
   "gilrvdyg2bnpefgoht4eavsx5kdrz6l6": {
@@ -495,7 +477,7 @@
     "hash": "c34csqgsrq4lfgaosa5er4fohtuwgzgz"
    }
   },
-  "krne7lom4z6z2hkxjl7c7sdxrm37j5il": {
+  "ywnrqfn3cpr3nnfoksugn6gyegev2aed": {
    "gdbm": {
     "version": "1.18.1",
     "arch": {
@@ -537,17 +519,17 @@
     },
     "dependencies": {
      "readline": {
-      "hash": "mbodyv2vc73vl2mr5qrba3vurdxpbj5l",
+      "hash": "y4a76ze4sr4utzxuect6447ewtupowoq",
       "type": [
        "build",
        "link"
       ]
      }
     },
-    "hash": "qtejhye55fpbmoug4sfncrzffppj4fnt"
+    "hash": "ky5uy6ju2qmxl4livnidzn6pgczgnajw"
    }
   },
-  "mbodyv2vc73vl2mr5qrba3vurdxpbj5l": {
+  "y4a76ze4sr4utzxuect6447ewtupowoq": {
    "readline": {
     "version": "8.0",
     "arch": {
@@ -589,19 +571,19 @@
     },
     "dependencies": {
      "ncurses": {
-      "hash": "kzyje5ef5glttsmgsij2bb2jife6ywge",
+      "hash": "3zyp2e6rz7bwrvylampqzcm5qntmwfpq",
       "type": [
        "build",
        "link"
       ]
      }
     },
-    "hash": "wjaulyfe4voclmzumr7c5zqf4c3akm6q"
+    "hash": "p6llh7vmklaosybk3qun3r7sdsjgcd27"
    }
   },
-  "kzyje5ef5glttsmgsij2bb2jife6ywge": {
+  "3zyp2e6rz7bwrvylampqzcm5qntmwfpq": {
    "ncurses": {
-    "version": "6.1",
+    "version": "6.2",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -633,7 +615,7 @@
     "namespace": "builtin",
     "parameters": {
      "symlinks": false,
-     "termlib": false,
+     "termlib": true,
      "cflags": [],
      "cppflags": [],
      "cxxflags": [],
@@ -649,7 +631,7 @@
       ]
      }
     },
-    "hash": "t6hgfgob323y5clhdrxdtl4in4523bbx"
+    "hash": "urbeif2vf3xzyto52xa2xszr3xsbu5rd"
    }
   },
   "sbtu3i2bjg44sfy2xt6xjuhtwzvjibsx": {
@@ -695,7 +677,7 @@
     "hash": "sbtu3i2bjg44sfy2xt6xjuhtwzvjibsx"
    }
   },
-  "22kfkrxrwxl56sqqtpw6wuq64jwzepwb": {
+  "3slsyjwpv3mt75h4vz2qi6yzwrhxo25s": {
    "gettext": {
     "version": "0.20.1",
     "arch": {
@@ -758,7 +740,7 @@
       ]
      },
      "ncurses": {
-      "hash": "kzyje5ef5glttsmgsij2bb2jife6ywge",
+      "hash": "3zyp2e6rz7bwrvylampqzcm5qntmwfpq",
       "type": [
        "build",
        "link"
@@ -780,7 +762,7 @@
       ]
      }
     },
-    "hash": "auag7gbz4czaokdmcovpp4uigw5zfprb"
+    "hash": "amwrejnvuctp7knpgvy5m4ixbo7kmz3k"
    }
   },
   "gy5k3u7rw2wdhnnfgbjfvgjjsbyart4j": {
@@ -1040,9 +1022,9 @@
     "hash": "mtf3luxbqttr3pmmjdm3ywhxvww7424y"
    }
   },
-  "4ol6wnkninainxgphgf4kdn2cbpwrw3k": {
+  "vxvmhccpz3ievntnzcio55qotftnsjy6": {
    "openssl": {
-    "version": "1.1.1d",
+    "version": "1.1.1e",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -1083,7 +1065,7 @@
     },
     "dependencies": {
      "perl": {
-      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "hash": "ge5tx6zmezr2nsga3iyaqtzfejobjg5j",
       "type": [
        "build",
        "test"
@@ -1097,12 +1079,12 @@
       ]
      }
     },
-    "hash": "56yanbd5fynxowlm74hnaiysf2ns2puw"
+    "hash": "okml6s2nz3oxixlxb5v4izfilm7neozo"
    }
   },
-  "36khieblsvufmgkyn634ra2hnfeofpib": {
+  "ge5tx6zmezr2nsga3iyaqtzfejobjg5j": {
    "perl": {
-    "version": "5.30.0",
+    "version": "5.30.1",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -1145,17 +1127,17 @@
     },
     "dependencies": {
      "gdbm": {
-      "hash": "krne7lom4z6z2hkxjl7c7sdxrm37j5il",
+      "hash": "ywnrqfn3cpr3nnfoksugn6gyegev2aed",
       "type": [
        "build",
        "link"
       ]
      }
     },
-    "hash": "rueut3riaupbbvxnsemf6d67i3n53mfh"
+    "hash": "xpncb5scw67hwbs7y2i672wbiffdf2lm"
    }
   },
-  "h2v3mnfwtua3ex3u6tbo6hyg2jhrwfgd": {
+  "mhhhijldia5uxdick52i7r4m2spcfvvh": {
    "sqlite": {
     "version": "3.30.1",
     "arch": {
@@ -1188,7 +1170,7 @@
     },
     "namespace": "builtin",
     "parameters": {
-     "column_metadata": false,
+     "column_metadata": true,
      "fts": true,
      "functions": false,
      "rtree": false,
@@ -1201,7 +1183,7 @@
     },
     "dependencies": {
      "readline": {
-      "hash": "mbodyv2vc73vl2mr5qrba3vurdxpbj5l",
+      "hash": "y4a76ze4sr4utzxuect6447ewtupowoq",
       "type": [
        "build",
        "link"
@@ -1215,12 +1197,12 @@
       ]
      }
     },
-    "hash": "ys25j6tco4rvhtljv4xec7ua2n4nbkos"
+    "hash": "3hvgf6zuvukdva7jabnn6rrmihjgegyx"
    }
   },
-  "4d6aheaoauah6qcuigeuvi2qh5htazqq": {
+  "aunmj6btoby2nsnw5slxt3tu2ltoc2ja": {
    "py-numpy": {
-    "version": "1.18.0",
+    "version": "1.18.2",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -1262,26 +1244,26 @@
     },
     "dependencies": {
      "openblas": {
-      "hash": "cyoqdw6znrvuasec57ykhcjeown4n33q",
+      "hash": "crvu4zyfqjcs63q5a4qlcpn7npexkt7k",
       "type": [
        "build",
        "link"
       ]
      },
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1289,12 +1271,12 @@
       ]
      }
     },
-    "hash": "rksm5en3jkexumawjekn65v2qo6vagdf"
+    "hash": "bahwmtz6ohprtfk74gzhjoyd6brra3hx"
    }
   },
-  "cyoqdw6znrvuasec57ykhcjeown4n33q": {
+  "crvu4zyfqjcs63q5a4qlcpn7npexkt7k": {
    "openblas": {
-    "version": "0.3.7",
+    "version": "0.3.9",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -1325,14 +1307,11 @@
     },
     "namespace": "builtin",
     "parameters": {
-     "avx2": true,
-     "avx512": false,
-     "cpu_target": "auto",
+     "consistent_fpcsr": false,
      "ilp64": false,
      "pic": true,
      "shared": true,
      "threads": "none",
-     "virtual_machine": false,
      "cflags": [],
      "cppflags": [],
      "cxxflags": [],
@@ -1340,12 +1319,12 @@
      "ldflags": [],
      "ldlibs": []
     },
-    "hash": "cyoqdw6znrvuasec57ykhcjeown4n33q"
+    "hash": "crvu4zyfqjcs63q5a4qlcpn7npexkt7k"
    }
   },
-  "zy6m7dvfjzwictucm3cwlq5fvhii7wcw": {
+  "4f5yeu5gzimrfdhxft7qkcus6kinhh7e": {
    "py-cython": {
-    "version": "0.29.13",
+    "version": "0.29.14",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -1385,13 +1364,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1399,10 +1378,10 @@
       ]
      }
     },
-    "hash": "aybtmqt4wma66a6hhdilig4cz76qs5cf"
+    "hash": "mng457xdd64bz5t6xrxitbqdslza4cpa"
    }
   },
-  "ele6nheyml5ihgsd6phqdtqha7vwwx3x": {
+  "e2md4cqc4zdehbynjndyp5ixkzy3qyz3": {
    "py-setuptools": {
     "version": "41.4.0",
     "arch": {
@@ -1444,7 +1423,7 @@
     },
     "dependencies": {
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1452,12 +1431,12 @@
       ]
      }
     },
-    "hash": "2xyk4vkxudnl3fzarcprcj2ytp3pxxji"
+    "hash": "cfdqkep6hqwqegmdj4ka7e5citu5pec6"
    }
   },
-  "4e4dngxwtl7sqensfl3eoonp65l74opx": {
+  "eh6cep2solm3logbkemngpedlsfmno4w": {
    "py-matplotlib": {
-    "version": "3.1.2",
+    "version": "3.2.1",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -1522,56 +1501,56 @@
       ]
      },
      "py-cycler": {
-      "hash": "5tirbfy7cd3mkwgjdyykk74l5dd75ddb",
+      "hash": "yqkad23ot5usuc3c4jasyqeqhjqipiv3",
       "type": [
        "build",
        "run"
       ]
      },
      "py-kiwisolver": {
-      "hash": "oxifogb6jn6rwf7uy5q64zkcsuezyyaz",
+      "hash": "52bzx3w2ihk44nf4cez5ictv6iwm4sst",
       "type": [
        "build",
        "run"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pillow": {
-      "hash": "2wn5svax3u2bckb75ykr2mirx2bomjju",
+      "hash": "ntd7s7fralpa3kotjw56wf5ei3nit3jh",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pyparsing": {
-      "hash": "lxg4ivgtsmipujwqtld3y5ntt75l5fgv",
+      "hash": "u7yr3rjvwvcxc2k2uh7ouvrah4nwgere",
       "type": [
        "build",
        "run"
       ]
      },
      "py-python-dateutil": {
-      "hash": "ksv7t67drdqplrfhujvk6s7z33bpzhvx",
+      "hash": "z3g3jd5rxvsnb5gf3me3x63d3u7ij4bd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1579,7 +1558,7 @@
       ]
      }
     },
-    "hash": "jxheckf65xlqcauwhdu4rfijmonnrjfa"
+    "hash": "dij73ot3h6i4xhvozb5wkkvunwntrg7l"
    }
   },
   "cakujabb67ecazbstlwblp5bfe5ht6ry": {
@@ -1699,7 +1678,7 @@
     "hash": "7nvpatuegxgdaxs7ektleu374pjx642d"
    }
   },
-  "5tirbfy7cd3mkwgjdyykk74l5dd75ddb": {
+  "yqkad23ot5usuc3c4jasyqeqhjqipiv3": {
    "py-cycler": {
     "version": "0.10.0",
     "arch": {
@@ -1741,20 +1720,20 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1762,10 +1741,10 @@
       ]
      }
     },
-    "hash": "zr6r5jsbwcybvxr47fac24ej3jlbdh3o"
+    "hash": "7blvoixmq6vabves5hu7ap3a3k2lagd5"
    }
   },
-  "l4rffm537flparexqrm3j5tm2ht47em7": {
+  "zwpxyfs6ruo5okmipm3duley7t7tfi3i": {
    "py-six": {
     "version": "1.12.0",
     "arch": {
@@ -1807,7 +1786,7 @@
     },
     "dependencies": {
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1815,10 +1794,10 @@
       ]
      }
     },
-    "hash": "ii22fxybk2jtwbilvmuzdsjqp3bitnwo"
+    "hash": "qc3o5wht3q2wwwuvnwn3apmzsvtyrfh5"
    }
   },
-  "oxifogb6jn6rwf7uy5q64zkcsuezyyaz": {
+  "52bzx3w2ihk44nf4cez5ictv6iwm4sst": {
    "py-kiwisolver": {
     "version": "1.1.0",
     "arch": {
@@ -1860,13 +1839,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1874,12 +1853,12 @@
       ]
      }
     },
-    "hash": "ehvsgiynfpp3huulyquoezssadwppqrp"
+    "hash": "uahzo5ii3i22wrrsdnqeie5e23tho4ry"
    }
   },
-  "2wn5svax3u2bckb75ykr2mirx2bomjju": {
+  "ntd7s7fralpa3kotjw56wf5ei3nit3jh": {
    "py-pillow": {
-    "version": "6.2.0",
+    "version": "7.0.0",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -1914,6 +1893,8 @@
      "jpeg2000": false,
      "lcms": false,
      "tiff": false,
+     "webp": false,
+     "webpmux": false,
      "cflags": [],
      "cppflags": [],
      "cxxflags": [],
@@ -1922,27 +1903,21 @@
      "ldlibs": []
     },
     "dependencies": {
-     "binutils": {
-      "hash": "jfh7qsecl5bzhqo5qrjeyif4juqwbosy",
-      "type": [
-       "build"
-      ]
-     },
      "libjpeg-turbo": {
-      "hash": "7dav45ae7tz3ar2wqjfzjtoo3q5ajtny",
+      "hash": "prrzlmgeivmdsbymn4mxazctygbkozod",
       "type": [
        "build",
        "link"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -1957,74 +1932,10 @@
       ]
      }
     },
-    "hash": "cfmy67w6o4a7bjp2pfz3ymyepjc77ou5"
+    "hash": "ieombokn7mffkuchbjjri3awmg7sjl3m"
    }
   },
-  "jfh7qsecl5bzhqo5qrjeyif4juqwbosy": {
-   "binutils": {
-    "version": "2.32",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "gold": true,
-     "headers": false,
-     "libiberty": false,
-     "nls": true,
-     "plugins": false,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "gettext": {
-      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "2kzdey5d5kdr5nvpks3m4sex46jbz3dy"
-   }
-  },
-  "7dav45ae7tz3ar2wqjfzjtoo3q5ajtny": {
+  "prrzlmgeivmdsbymn4mxazctygbkozod": {
    "libjpeg-turbo": {
     "version": "2.0.3",
     "arch": {
@@ -2066,7 +1977,7 @@
     },
     "dependencies": {
      "cmake": {
-      "hash": "q6kc5rhextgjmccdxbiegrh5thkwrdrs",
+      "hash": "243lbtvz3fhhggrmvg6lajkrvj3tot7f",
       "type": [
        "build"
       ]
@@ -2081,9 +1992,9 @@
     "hash": "issxxtcqxybhqverlf2rmxartxczwpwa"
    }
   },
-  "q6kc5rhextgjmccdxbiegrh5thkwrdrs": {
+  "243lbtvz3fhhggrmvg6lajkrvj3tot7f": {
    "cmake": {
-    "version": "3.16.2",
+    "version": "3.16.5",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -2128,21 +2039,21 @@
     },
     "dependencies": {
      "ncurses": {
-      "hash": "kzyje5ef5glttsmgsij2bb2jife6ywge",
+      "hash": "3zyp2e6rz7bwrvylampqzcm5qntmwfpq",
       "type": [
        "build",
        "link"
       ]
      },
      "openssl": {
-      "hash": "4ol6wnkninainxgphgf4kdn2cbpwrw3k",
+      "hash": "vxvmhccpz3ievntnzcio55qotftnsjy6",
       "type": [
        "build",
        "link"
       ]
      }
     },
-    "hash": "54ooedhempmshxb7qrrovekhs3nlowqi"
+    "hash": "ttzh5zmurv7esbvbnqo47v64x5smnu7e"
    }
   },
   "zxx5igiworfma6jhnzfhpfxiij3fvtv5": {
@@ -2188,7 +2099,7 @@
     "hash": "zxx5igiworfma6jhnzfhpfxiij3fvtv5"
    }
   },
-  "lxg4ivgtsmipujwqtld3y5ntt75l5fgv": {
+  "u7yr3rjvwvcxc2k2uh7ouvrah4nwgere": {
    "py-pyparsing": {
     "version": "2.4.2",
     "arch": {
@@ -2230,13 +2141,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2244,10 +2155,10 @@
       ]
      }
     },
-    "hash": "hqa5am3sgclni2ewmowxkytb2mztkbb5"
+    "hash": "svzawzzabzdmw44oy77el6k6iz6gbeqc"
    }
   },
-  "ksv7t67drdqplrfhujvk6s7z33bpzhvx": {
+  "z3g3jd5rxvsnb5gf3me3x63d3u7ij4bd": {
    "py-python-dateutil": {
     "version": "2.8.0",
     "arch": {
@@ -2289,26 +2200,26 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-setuptools-scm": {
-      "hash": "gzdgp4e22oajqzzpeapqkul3qqo5e3pd",
+      "hash": "ekbx5wdys7msp3tkwstsukex6rqiwc6b",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2316,10 +2227,10 @@
       ]
      }
     },
-    "hash": "imcof25udnqvf5fw6wupkmg3g5yokocq"
+    "hash": "pb2sntslwvp7vjxvkfqtmqnbzimlyssp"
    }
   },
-  "gzdgp4e22oajqzzpeapqkul3qqo5e3pd": {
+  "ekbx5wdys7msp3tkwstsukex6rqiwc6b": {
    "py-setuptools-scm": {
     "version": "3.3.3",
     "arch": {
@@ -2361,13 +2272,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2375,10 +2286,10 @@
       ]
      }
     },
-    "hash": "mug2aomfurqbfzbky4mz5qyccrhmluyw"
+    "hash": "f6wzx5oy7je5f5uqn5upzdtophwjh6jo"
    }
   },
-  "lbf42o2hytlul3plq2gmizdl2tjp56ki": {
+  "scldipp5bfbv7u4vvfasp3bpk7thai7v": {
    "py-scipy": {
     "version": "1.4.1",
     "arch": {
@@ -2420,33 +2331,33 @@
     },
     "dependencies": {
      "openblas": {
-      "hash": "cyoqdw6znrvuasec57ykhcjeown4n33q",
+      "hash": "crvu4zyfqjcs63q5a4qlcpn7npexkt7k",
       "type": [
        "build",
        "link"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pybind11": {
-      "hash": "y7s3evtlpbvdqtthssnhbkryb7eaianc",
+      "hash": "ezslcvrncmofzy2bffjw274bzlovdxkt",
       "type": [
        "build"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2454,10 +2365,10 @@
       ]
      }
     },
-    "hash": "awkrqp6hcnkocrxumrlf6ruzowrmad4s"
+    "hash": "iwmm4rj7fxxlvp5sdjshwb7jju634con"
    }
   },
-  "y7s3evtlpbvdqtthssnhbkryb7eaianc": {
+  "ezslcvrncmofzy2bffjw274bzlovdxkt": {
    "py-pybind11": {
     "version": "2.4.3",
     "arch": {
@@ -2500,29 +2411,29 @@
     },
     "dependencies": {
      "cmake": {
-      "hash": "q6kc5rhextgjmccdxbiegrh5thkwrdrs",
+      "hash": "243lbtvz3fhhggrmvg6lajkrvj3tot7f",
       "type": [
        "build"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link"
       ]
      }
     },
-    "hash": "rj4wi4q2fdyhrlcfqr5xgkowykmv2iom"
+    "hash": "zbwlyskwx7d447cggoaefh3g5hrxdrxe"
    }
   },
-  "wiu27yy7dq2bpk74un2tx5wbkklqjs4z": {
+  "dmqiff7h2mpvj5nzf2l4y7e7gplvsuve": {
    "py-sphinx": {
     "version": "2.2.0",
     "arch": {
@@ -2564,119 +2475,119 @@
     },
     "dependencies": {
      "py-alabaster": {
-      "hash": "yxxehla2iilltlbvrob6sbcernj2kuvd",
+      "hash": "jln6gufvrk6fd75xa67jglmjtzvtrlng",
       "type": [
        "build",
        "run"
       ]
      },
      "py-babel": {
-      "hash": "neij7jxab4dd3fuw3z7l2hcceoeiwtvn",
+      "hash": "x2wkbamepqz7kysaglmt27e7d4pycggd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-docutils": {
-      "hash": "huoravhknywel2u3qs6fedxsli4jmidj",
+      "hash": "pzrlrps6gsvpaxuloiaeqlzyoj53vzyg",
       "type": [
        "build",
        "run"
       ]
      },
      "py-imagesize": {
-      "hash": "nqfvy6yao5hyz37cfvct57bdcgynbwft",
+      "hash": "jnp33fnsf35fw6qjpf3u4bt6btfrca3y",
       "type": [
        "build",
        "run"
       ]
      },
      "py-jinja2": {
-      "hash": "opb5rn5h7zvi6bm2xnygcrlus7cxtpzr",
+      "hash": "24ovek7vnfw2cghgktadsdaystvpwube",
       "type": [
        "build",
        "run"
       ]
      },
      "py-packaging": {
-      "hash": "45dm2c4eps24rpue7eiy736jdsnbe2zg",
+      "hash": "uinrgosg6watllu3eexhqsxphukjzgvx",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pygments": {
-      "hash": "7zgv7f7y4dvvb3uj76hpsoulxsbnamnk",
+      "hash": "cjlnxibmcblr3adm4ydpsk6hc42zex7t",
       "type": [
        "build",
        "run"
       ]
      },
      "py-requests": {
-      "hash": "vapagrpakqhuhnt7m6ugcchvbjwcpxlt",
+      "hash": "abif27qwhmnhpshalrhjdwegaalqm6pe",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build",
        "run"
       ]
      },
      "py-snowballstemmer": {
-      "hash": "s3lzo5nwx4usupr2byw6hhmfimeckfzw",
+      "hash": "2twqnphbdrodjofcqidgmrfo7pyze2uq",
       "type": [
        "build",
        "run"
       ]
      },
      "py-sphinxcontrib-applehelp": {
-      "hash": "oi4g6uftm4c5pqyw4uvoeyppbmgmaxb7",
+      "hash": "7ycpd3pcwfq7kl3rsskmbncjuwflwu4j",
       "type": [
        "build",
        "run"
       ]
      },
      "py-sphinxcontrib-devhelp": {
-      "hash": "zshzlxixfwsz2ybxzb7nco2xeksxtmne",
+      "hash": "dr2uijepb47uit6677nv7rb6x64n3prf",
       "type": [
        "build",
        "run"
       ]
      },
      "py-sphinxcontrib-htmlhelp": {
-      "hash": "rpmex6pykg7f6g7mehzgem5gaoxekwzg",
+      "hash": "vssgefjjw3pcrgiqiyszcyn5rr5jmhnx",
       "type": [
        "build",
        "run"
       ]
      },
      "py-sphinxcontrib-jsmath": {
-      "hash": "wphzata37vklpywbws74d5ctpnhe3gyv",
+      "hash": "e3q4ceygtalx4ebec25qi54fft7bjake",
       "type": [
        "build",
        "run"
       ]
      },
      "py-sphinxcontrib-qthelp": {
-      "hash": "twx53ggsw3omrvmdm2rbporiaukbt5i3",
+      "hash": "edh75ehyronirhpp24al2y3li6dpa3jk",
       "type": [
        "build",
        "run"
       ]
      },
      "py-sphinxcontrib-serializinghtml": {
-      "hash": "mp6vp75u7owcst4t5fdo7qjsgxmzvhc4",
+      "hash": "ysex3qp5efncegcbv4xefglidk4g27b4",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2684,10 +2595,10 @@
       ]
      }
     },
-    "hash": "apcra2mg6r5pidgmahdc47wv6lwnxbpn"
+    "hash": "i3p4bw5x2z4qavmq5ilfsx77dox5m2bd"
    }
   },
-  "yxxehla2iilltlbvrob6sbcernj2kuvd": {
+  "jln6gufvrk6fd75xa67jglmjtzvtrlng": {
    "py-alabaster": {
     "version": "0.7.12",
     "arch": {
@@ -2729,13 +2640,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2743,10 +2654,10 @@
       ]
      }
     },
-    "hash": "bmpd5riqoz6fjn27nhc6yuji4kozd2or"
+    "hash": "ulfcz3zn33w65umf4ziowjgyjodizlq3"
    }
   },
-  "neij7jxab4dd3fuw3z7l2hcceoeiwtvn": {
+  "x2wkbamepqz7kysaglmt27e7d4pycggd": {
    "py-babel": {
     "version": "2.7.0",
     "arch": {
@@ -2788,20 +2699,20 @@
     },
     "dependencies": {
      "py-pytz": {
-      "hash": "f7jt6ghfipxog3gyo32342fgdxk54xse",
+      "hash": "jfhtlentw7tzoep75sh5aycsr34as3ix",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2809,10 +2720,10 @@
       ]
      }
     },
-    "hash": "jrhvmo2lt6wmnkv5ltzaz3qq6liz2qhz"
+    "hash": "zfhftujgxwrixcj45mik3qjniyyz2f3e"
    }
   },
-  "f7jt6ghfipxog3gyo32342fgdxk54xse": {
+  "jfhtlentw7tzoep75sh5aycsr34as3ix": {
    "py-pytz": {
     "version": "2019.3",
     "arch": {
@@ -2854,13 +2765,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2868,10 +2779,10 @@
       ]
      }
     },
-    "hash": "3y33nnw37agj2dhc2lk4tbtk7mls2n7f"
+    "hash": "wi4iimocdwcggedgnq2yj4na3munxr4n"
    }
   },
-  "huoravhknywel2u3qs6fedxsli4jmidj": {
+  "pzrlrps6gsvpaxuloiaeqlzyoj53vzyg": {
    "py-docutils": {
     "version": "0.15.2",
     "arch": {
@@ -2913,13 +2824,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2927,10 +2838,10 @@
       ]
      }
     },
-    "hash": "kt7hwsvxabzgt6i4isdgh6frzat2va6e"
+    "hash": "zdvhxf72txjzbogsbxgpiy6sqg63jrnn"
    }
   },
-  "nqfvy6yao5hyz37cfvct57bdcgynbwft": {
+  "jnp33fnsf35fw6qjpf3u4bt6btfrca3y": {
    "py-imagesize": {
     "version": "1.1.0",
     "arch": {
@@ -2972,13 +2883,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -2986,10 +2897,10 @@
       ]
      }
     },
-    "hash": "yxtfg6kn4ylqfdklmfbyakqycgtvnygu"
+    "hash": "z5zh2dczw2qyzjgz5ait2fqhcnupfyx5"
    }
   },
-  "opb5rn5h7zvi6bm2xnygcrlus7cxtpzr": {
+  "24ovek7vnfw2cghgktadsdaystvpwube": {
    "py-jinja2": {
     "version": "2.10.3",
     "arch": {
@@ -3031,27 +2942,27 @@
     },
     "dependencies": {
      "py-babel": {
-      "hash": "neij7jxab4dd3fuw3z7l2hcceoeiwtvn",
+      "hash": "x2wkbamepqz7kysaglmt27e7d4pycggd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-markupsafe": {
-      "hash": "qxovnggu6jgayvlwe3vqxolydi4qz564",
+      "hash": "u5w7gpia4jjce4rll7dewhtkrcvdophj",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3059,10 +2970,10 @@
       ]
      }
     },
-    "hash": "g6z4nuuf6ajoxgk6mhmmwl334aodwm23"
+    "hash": "g5rdllfyuhekz5rbpgpuins5cgiub4kj"
    }
   },
-  "qxovnggu6jgayvlwe3vqxolydi4qz564": {
+  "u5w7gpia4jjce4rll7dewhtkrcvdophj": {
    "py-markupsafe": {
     "version": "1.1.1",
     "arch": {
@@ -3104,13 +3015,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3118,10 +3029,10 @@
       ]
      }
     },
-    "hash": "zvjmjlno7tjatmyup2zcatg3vinj2hci"
+    "hash": "a2bcq52ysb26eigoqt2jyoojp6rgwlua"
    }
   },
-  "45dm2c4eps24rpue7eiy736jdsnbe2zg": {
+  "uinrgosg6watllu3eexhqsxphukjzgvx": {
    "py-packaging": {
     "version": "19.2",
     "arch": {
@@ -3163,21 +3074,21 @@
     },
     "dependencies": {
      "py-pyparsing": {
-      "hash": "lxg4ivgtsmipujwqtld3y5ntt75l5fgv",
+      "hash": "u7yr3rjvwvcxc2k2uh7ouvrah4nwgere",
       "type": [
        "build",
        "run"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3185,10 +3096,10 @@
       ]
      }
     },
-    "hash": "tdsfawduob35it7d2yqr6qthg7lcyuqj"
+    "hash": "uulc5wjcdzney2eyoynxnscmdhmnax4p"
    }
   },
-  "7zgv7f7y4dvvb3uj76hpsoulxsbnamnk": {
+  "cjlnxibmcblr3adm4ydpsk6hc42zex7t": {
    "py-pygments": {
     "version": "2.4.2",
     "arch": {
@@ -3230,13 +3141,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3244,10 +3155,10 @@
       ]
      }
     },
-    "hash": "wjigtp4qcgpbmpzn6tcfe2ektqaqqfgp"
+    "hash": "mfzvwj4gewcjefhhdvnt3ft7huz7e4dh"
    }
   },
-  "vapagrpakqhuhnt7m6ugcchvbjwcpxlt": {
+  "abif27qwhmnhpshalrhjdwegaalqm6pe": {
    "py-requests": {
     "version": "2.22.0",
     "arch": {
@@ -3289,41 +3200,41 @@
     },
     "dependencies": {
      "py-certifi": {
-      "hash": "4fmicjwgmd6qws2q4igo3tdrjcjqro6i",
+      "hash": "6aoulderibeqmgjc4louvvqun2rj4k4w",
       "type": [
        "build",
        "run"
       ]
      },
      "py-chardet": {
-      "hash": "7s7wjvom523mawnoktbrwax6lmt5zpsu",
+      "hash": "dddyjfnyfl22nmzqh62xfxd4f5vjtdu6",
       "type": [
        "build",
        "run"
       ]
      },
      "py-idna": {
-      "hash": "xx72osapwjeorraqsak7pcqm6ch3mhwy",
+      "hash": "s2ifonl3hyfnv5rebgwsboskkkd4mqgh",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-urllib3": {
-      "hash": "gziahn6a6irt5sr32bzkckh55njanbpf",
+      "hash": "qq6khlp34bli5strgejjfmj7q7pa5mxo",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3331,10 +3242,10 @@
       ]
      }
     },
-    "hash": "muxyb6pm6rndc4r5tx5h6q5fxj7ntld6"
+    "hash": "m2zigv2vracueixmy7oxxqaumjvm7tae"
    }
   },
-  "4fmicjwgmd6qws2q4igo3tdrjcjqro6i": {
+  "6aoulderibeqmgjc4louvvqun2rj4k4w": {
    "py-certifi": {
     "version": "2019.9.11",
     "arch": {
@@ -3376,13 +3287,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3390,10 +3301,10 @@
       ]
      }
     },
-    "hash": "7eere3fap53t3cgcvhflmdusjptg3vya"
+    "hash": "hnoqic7fm6fczfyhe7oqseid7c4v5ei7"
    }
   },
-  "7s7wjvom523mawnoktbrwax6lmt5zpsu": {
+  "dddyjfnyfl22nmzqh62xfxd4f5vjtdu6": {
    "py-chardet": {
     "version": "3.0.4",
     "arch": {
@@ -3435,19 +3346,19 @@
     },
     "dependencies": {
      "py-pytest-runner": {
-      "hash": "ss7sbgaoty54iqo2n4ubtsvzn3anh6u6",
+      "hash": "zzn6zdtmjaq4ihq6brkgnp5lp2iin7kq",
       "type": [
        "build"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3455,10 +3366,10 @@
       ]
      }
     },
-    "hash": "sban27e3z7aguzhmzt4ddgwf6w7y7mco"
+    "hash": "ssavvp7wjfm42odz236wnbqemlrldo22"
    }
   },
-  "ss7sbgaoty54iqo2n4ubtsvzn3anh6u6": {
+  "zzn6zdtmjaq4ihq6brkgnp5lp2iin7kq": {
    "py-pytest-runner": {
     "version": "5.1",
     "arch": {
@@ -3500,19 +3411,19 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-setuptools-scm": {
-      "hash": "gzdgp4e22oajqzzpeapqkul3qqo5e3pd",
+      "hash": "ekbx5wdys7msp3tkwstsukex6rqiwc6b",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3520,10 +3431,10 @@
       ]
      }
     },
-    "hash": "m55ulnu5c3562adnktkpkzbwneq3yejj"
+    "hash": "g4phtj2m7f3smywoilyngwiskwtumxiy"
    }
   },
-  "xx72osapwjeorraqsak7pcqm6ch3mhwy": {
+  "s2ifonl3hyfnv5rebgwsboskkkd4mqgh": {
    "py-idna": {
     "version": "2.8",
     "arch": {
@@ -3565,14 +3476,14 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build",
        "link"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3580,10 +3491,10 @@
       ]
      }
     },
-    "hash": "wn4uuihsb7pmizvngxnf3perpwkjsvgq"
+    "hash": "aze63isnpknbacmny5imakqvylkoo5o4"
    }
   },
-  "gziahn6a6irt5sr32bzkckh55njanbpf": {
+  "qq6khlp34bli5strgejjfmj7q7pa5mxo": {
    "py-urllib3": {
     "version": "1.25.6",
     "arch": {
@@ -3616,6 +3527,8 @@
     },
     "namespace": "builtin",
     "parameters": {
+     "secure": false,
+     "socks": false,
      "cflags": [],
      "cppflags": [],
      "cxxflags": [],
@@ -3625,13 +3538,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3639,10 +3552,10 @@
       ]
      }
     },
-    "hash": "uhvit5qadoj4ydwjpfldxcn5my2zmt3t"
+    "hash": "bf4kvq4qktiz22meruuhwe2oxn6cxjfa"
    }
   },
-  "s3lzo5nwx4usupr2byw6hhmfimeckfzw": {
+  "2twqnphbdrodjofcqidgmrfo7pyze2uq": {
    "py-snowballstemmer": {
     "version": "2.0.0",
     "arch": {
@@ -3684,13 +3597,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3698,10 +3611,10 @@
       ]
      }
     },
-    "hash": "vsa5cxon4erxg7y4dlugvcialnfowldq"
+    "hash": "3yc26zi64gdeuxzjiu6jw5hviiwtokd2"
    }
   },
-  "oi4g6uftm4c5pqyw4uvoeyppbmgmaxb7": {
+  "7ycpd3pcwfq7kl3rsskmbncjuwflwu4j": {
    "py-sphinxcontrib-applehelp": {
     "version": "1.0.1",
     "arch": {
@@ -3743,13 +3656,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3757,10 +3670,10 @@
       ]
      }
     },
-    "hash": "tf2ooupnssa64vnuoal2y3lkcp65rfdr"
+    "hash": "333s3dn6utqnbo6okgvha6dnuyc6ro6d"
    }
   },
-  "zshzlxixfwsz2ybxzb7nco2xeksxtmne": {
+  "dr2uijepb47uit6677nv7rb6x64n3prf": {
    "py-sphinxcontrib-devhelp": {
     "version": "1.0.1",
     "arch": {
@@ -3802,13 +3715,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3816,10 +3729,10 @@
       ]
      }
     },
-    "hash": "uyn3w64nqas7hfjje5lya7tyzoiez7gi"
+    "hash": "q2ya3hllxcm7ubhkpceauaxk57nb336s"
    }
   },
-  "rpmex6pykg7f6g7mehzgem5gaoxekwzg": {
+  "vssgefjjw3pcrgiqiyszcyn5rr5jmhnx": {
    "py-sphinxcontrib-htmlhelp": {
     "version": "1.0.2",
     "arch": {
@@ -3861,13 +3774,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3875,10 +3788,10 @@
       ]
      }
     },
-    "hash": "hcvinwaqbfenq432qjttlsm74leoqzfl"
+    "hash": "r6k6y4pbxax2iei6lia4rblburtfv3tn"
    }
   },
-  "wphzata37vklpywbws74d5ctpnhe3gyv": {
+  "e3q4ceygtalx4ebec25qi54fft7bjake": {
    "py-sphinxcontrib-jsmath": {
     "version": "1.0.1",
     "arch": {
@@ -3920,13 +3833,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3934,10 +3847,10 @@
       ]
      }
     },
-    "hash": "zeapyheasqhilv3pmawlpjytoukbqhws"
+    "hash": "4zgnbpuayctqqjhbet6vc4sj6yrik5vi"
    }
   },
-  "twx53ggsw3omrvmdm2rbporiaukbt5i3": {
+  "edh75ehyronirhpp24al2y3li6dpa3jk": {
    "py-sphinxcontrib-qthelp": {
     "version": "1.0.2",
     "arch": {
@@ -3979,13 +3892,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -3993,10 +3906,10 @@
       ]
      }
     },
-    "hash": "repepdtdh2rxeahonjjpsqfe2jossfon"
+    "hash": "jixlnntlgn6vt2kwfaxzcsae3xmey6vx"
    }
   },
-  "mp6vp75u7owcst4t5fdo7qjsgxmzvhc4": {
+  "ysex3qp5efncegcbv4xefglidk4g27b4": {
    "py-sphinxcontrib-serializinghtml": {
     "version": "1.1.3",
     "arch": {
@@ -4038,13 +3951,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4052,10 +3965,10 @@
       ]
      }
     },
-    "hash": "zrha3ckqodqemat6eecifz7yk5xszn6v"
+    "hash": "vy3dctwbk73wrh7tif6edkwusveb5tpk"
    }
   },
-  "d3rgg7byv42plijsoira6qt443igfele": {
+  "detkpbt7i3e64pus7nv4jjplacrqhhag": {
    "py-sphinx-bootstrap-theme": {
     "version": "0.4.13",
     "arch": {
@@ -4097,13 +4010,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4111,10 +4024,10 @@
       ]
      }
     },
-    "hash": "6fyl7vzuupr3gjcwtuzvnb7yzlnbeqwg"
+    "hash": "6kz2iv7yp45ehvtff344afpnxn4glxua"
    }
   },
-  "3texgat6u26wcw2kitpryzirxufo6vkk": {
+  "a6od3brr2vunobqxog4bv2zzlw2l7pm2": {
    "py-sphinxcontrib-bibtex": {
     "version": "0.3.5",
     "arch": {
@@ -4156,55 +4069,55 @@
     },
     "dependencies": {
      "py-latexcodec": {
-      "hash": "wmzopdd3hyh7xbbqiw5k3rsmgampshq4",
+      "hash": "krkwaiqg4xn4meqmilfj6cuwmjow6thx",
       "type": [
        "build",
        "run"
       ]
      },
      "py-oset": {
-      "hash": "z5wepztxtoxd323rtswrkulehr6mov2n",
+      "hash": "icmefqsl7d6w2yhf3vkqppu2u3andr33",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pybtex": {
-      "hash": "5m55isj6rxj2drilftmvwgmvyi7cjrqh",
+      "hash": "erpz3abklsl2qj64hemrphsfme6owio3",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pybtex-docutils": {
-      "hash": "mkvj6f25hertxfiyv4aowkk4toq55445",
+      "hash": "bqprxjjy6s7ublugg4q6wyrjua4adgxl",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "py-sphinx": {
-      "hash": "wiu27yy7dq2bpk74un2tx5wbkklqjs4z",
+      "hash": "dmqiff7h2mpvj5nzf2l4y7e7gplvsuve",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4212,10 +4125,10 @@
       ]
      }
     },
-    "hash": "7m4jy7kixmu4xeqlfm6njdrb4wrifrvg"
+    "hash": "okh4o5xzpml5qmoqc2jmm7yn7dn5wqbm"
    }
   },
-  "wmzopdd3hyh7xbbqiw5k3rsmgampshq4": {
+  "krkwaiqg4xn4meqmilfj6cuwmjow6thx": {
    "py-latexcodec": {
     "version": "1.0.4",
     "arch": {
@@ -4257,20 +4170,20 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4278,10 +4191,10 @@
       ]
      }
     },
-    "hash": "s4mi46xmuyx5asdx7leb2d3eufvnnoky"
+    "hash": "fquo3z6locfkk7gritcagbelpfskna52"
    }
   },
-  "z5wepztxtoxd323rtswrkulehr6mov2n": {
+  "icmefqsl7d6w2yhf3vkqppu2u3andr33": {
    "py-oset": {
     "version": "0.1.3",
     "arch": {
@@ -4323,13 +4236,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4337,10 +4250,10 @@
       ]
      }
     },
-    "hash": "zuqggdwtlrkas4rlou2zenck4ltiu7io"
+    "hash": "r7fiiqh6mnc2dwimtzq3jyuizpgmyboj"
    }
   },
-  "5m55isj6rxj2drilftmvwgmvyi7cjrqh": {
+  "erpz3abklsl2qj64hemrphsfme6owio3": {
    "py-pybtex": {
     "version": "0.21",
     "arch": {
@@ -4382,27 +4295,27 @@
     },
     "dependencies": {
      "py-latexcodec": {
-      "hash": "wmzopdd3hyh7xbbqiw5k3rsmgampshq4",
+      "hash": "krkwaiqg4xn4meqmilfj6cuwmjow6thx",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pyyaml": {
-      "hash": "2aucbvdos7yo4jj5tfvbytdyamv6zumi",
+      "hash": "dy2uwv2xv7257csar3cg35pqmm4gmyy2",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4410,10 +4323,10 @@
       ]
      }
     },
-    "hash": "o3qbmigxfir244am4ykawsshnc2npjoe"
+    "hash": "5xoto5a74coye24zfdrsqg2refyjuher"
    }
   },
-  "2aucbvdos7yo4jj5tfvbytdyamv6zumi": {
+  "dy2uwv2xv7257csar3cg35pqmm4gmyy2": {
    "py-pyyaml": {
     "version": "5.1.2",
     "arch": {
@@ -4462,7 +4375,7 @@
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4470,7 +4383,7 @@
       ]
      }
     },
-    "hash": "pjcebenxtfhmowewr4mlhdeabdq7zo6l"
+    "hash": "wumvnttnsjlsgksmlfirqjsqb4g7u32o"
    }
   },
   "kkem54fwc4blnosiucvbpr3dm4ng4t5r": {
@@ -4516,7 +4429,7 @@
     "hash": "kkem54fwc4blnosiucvbpr3dm4ng4t5r"
    }
   },
-  "mkvj6f25hertxfiyv4aowkk4toq55445": {
+  "bqprxjjy6s7ublugg4q6wyrjua4adgxl": {
    "py-pybtex-docutils": {
     "version": "0.2.1",
     "arch": {
@@ -4558,34 +4471,34 @@
     },
     "dependencies": {
      "py-docutils": {
-      "hash": "huoravhknywel2u3qs6fedxsli4jmidj",
+      "hash": "pzrlrps6gsvpaxuloiaeqlzyoj53vzyg",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pybtex": {
-      "hash": "5m55isj6rxj2drilftmvwgmvyi7cjrqh",
+      "hash": "erpz3abklsl2qj64hemrphsfme6owio3",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4593,10 +4506,10 @@
       ]
      }
     },
-    "hash": "y67o3wdnadrvjzbkmbd74wc7gemw4hj4"
+    "hash": "t5xtjt35gmr3gwhoy75vq75p3l5ssk5d"
    }
   },
-  "avrhx4j36bhkf7ht2aygamepxtiioxqs": {
+  "3xtvaeyayr4kfw4yipuropj63j4azkha": {
    "py-sphinxcontrib-programoutput": {
     "version": "0.15",
     "arch": {
@@ -4638,20 +4551,20 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-sphinx": {
-      "hash": "wiu27yy7dq2bpk74un2tx5wbkklqjs4z",
+      "hash": "dmqiff7h2mpvj5nzf2l4y7e7gplvsuve",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4659,10 +4572,10 @@
       ]
      }
     },
-    "hash": "ytpnlp774iggwld7juricxbeaaux73sc"
+    "hash": "6zrkdnjmj4hecffzwehi3jxhyxmzyy57"
    }
   },
-  "cvjn5ovamzi2ezskve572bnkvoer2j7b": {
+  "clpax3fecny533vdflfywysodd2clvzs": {
    "py-netcdf4": {
     "version": "1.4.2",
     "arch": {
@@ -4704,47 +4617,47 @@
     },
     "dependencies": {
      "hdf5": {
-      "hash": "n7dyuavtb3jbxu5txojuclwwpf4ngh4j",
+      "hash": "ehhlppthbxggp7qphpsoql2e6qm3ltf7",
       "type": [
        "build",
        "link"
       ]
      },
      "netcdf-c": {
-      "hash": "ktqnxn2zde7btlv7dijo5cplccgkamy4",
+      "hash": "66fod4p572tifnbxsyyz3stk4my5424r",
       "type": [
        "build",
        "link"
       ]
      },
      "py-cftime": {
-      "hash": "vw4tsvqjgmnnzmq7nbz7s3auj7rik76a",
+      "hash": "j7emmeo4oxlfh6a2tsib3aww5yncrdek",
       "type": [
        "build",
        "run"
       ]
      },
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -4752,12 +4665,12 @@
       ]
      }
     },
-    "hash": "7cpte5xkilogprgsp33eael6i6wanglx"
+    "hash": "jmjchodxhtaqcbre6kv4xew3nsgnqpnd"
    }
   },
-  "n7dyuavtb3jbxu5txojuclwwpf4ngh4j": {
+  "ehhlppthbxggp7qphpsoql2e6qm3ltf7": {
    "hdf5": {
-    "version": "1.10.5",
+    "version": "1.12.0",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -4793,9 +4706,6 @@
      "fortran": false,
      "hl": true,
      "mpi": true,
-     "patches": [
-      "b61e2f058964ad85be6ee5ecea10080bf79e73f83ff88d1fa4b602d00209da9c"
-     ],
      "pic": true,
      "shared": true,
      "szip": false,
@@ -4807,12 +4717,9 @@
      "ldflags": [],
      "ldlibs": []
     },
-    "patches": [
-     "b61e2f058964ad85be6ee5ecea10080bf79e73f83ff88d1fa4b602d00209da9c"
-    ],
     "dependencies": {
      "openmpi": {
-      "hash": "2b2pygclmwlfs2wiynal6fsodkrxpibs",
+      "hash": "duvvnmhjm7tpl2c7w66gt3i4cv2do5zp",
       "type": [
        "build",
        "link"
@@ -4826,10 +4733,10 @@
       ]
      }
     },
-    "hash": "q4s7b35ynpa27kujkccilticsglq2czw"
+    "hash": "sog4jcmj4zko6itzzs6j34c25vxs6yef"
    }
   },
-  "2b2pygclmwlfs2wiynal6fsodkrxpibs": {
+  "duvvnmhjm7tpl2c7w66gt3i4cv2do5zp": {
    "openmpi": {
     "version": "3.1.5",
     "arch": {
@@ -4886,14 +4793,14 @@
     },
     "dependencies": {
      "hwloc": {
-      "hash": "jnqazayatymyieshztujrcfuxuqspxj3",
+      "hash": "jrdjxpctcbmwpl36c6qktgu6jppvyf2z",
       "type": [
        "build",
        "link"
       ]
      },
      "numactl": {
-      "hash": "hpkxl5n6d732gpfky7nlnqrvxetzleew",
+      "hash": "24vipwbxpl6iotvap3fsfzjubvopsmco",
       "type": [
        "build",
        "link"
@@ -4910,7 +4817,7 @@
     "hash": "ohn4ya6e6bx3p2kmrtjwlnlhqov3sulg"
    }
   },
-  "jnqazayatymyieshztujrcfuxuqspxj3": {
+  "jrdjxpctcbmwpl36c6qktgu6jppvyf2z": {
    "hwloc": {
     "version": "1.11.11",
     "arch": {
@@ -4973,7 +4880,7 @@
       ]
      },
      "numactl": {
-      "hash": "hpkxl5n6d732gpfky7nlnqrvxetzleew",
+      "hash": "24vipwbxpl6iotvap3fsfzjubvopsmco",
       "type": [
        "build",
        "link"
@@ -5250,7 +5157,7 @@
     "hash": "zmpgcuuoyr3aqifzjz5ycb4bmp5tfjel"
    }
   },
-  "hpkxl5n6d732gpfky7nlnqrvxetzleew": {
+  "24vipwbxpl6iotvap3fsfzjubvopsmco": {
    "numactl": {
     "version": "2.0.12",
     "arch": {
@@ -5292,13 +5199,13 @@
     },
     "dependencies": {
      "autoconf": {
-      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "hash": "syc6w5fbxvjn3uoriouatcpxoq6crqjs",
       "type": [
        "build"
       ]
      },
      "automake": {
-      "hash": "wjjushicir746gv2tuf6lq7ivg4x3jpe",
+      "hash": "kxel4rgduegh4wq7ohacuu6q5wamhp2g",
       "type": [
        "build"
       ]
@@ -5319,7 +5226,7 @@
     "hash": "oi4kmimngdnnb4dtk6qxyq2aliermjn4"
    }
   },
-  "5px277itsiq4wti6hiuqpmezsnfdmyxe": {
+  "syc6w5fbxvjn3uoriouatcpxoq6crqjs": {
    "autoconf": {
     "version": "2.69",
     "arch": {
@@ -5368,17 +5275,17 @@
       ]
      },
      "perl": {
-      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "hash": "ge5tx6zmezr2nsga3iyaqtzfejobjg5j",
       "type": [
        "build",
        "run"
       ]
      }
     },
-    "hash": "kk7ci33iorg4aluefpg3r6q2n77jln5z"
+    "hash": "wx7eaq6sz6d5a6pkt5ejimcfg4mj3442"
    }
   },
-  "wjjushicir746gv2tuf6lq7ivg4x3jpe": {
+  "kxel4rgduegh4wq7ohacuu6q5wamhp2g": {
    "automake": {
     "version": "1.16.1",
     "arch": {
@@ -5420,23 +5327,23 @@
     },
     "dependencies": {
      "autoconf": {
-      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "hash": "syc6w5fbxvjn3uoriouatcpxoq6crqjs",
       "type": [
        "build"
       ]
      },
      "perl": {
-      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "hash": "ge5tx6zmezr2nsga3iyaqtzfejobjg5j",
       "type": [
        "build",
        "run"
       ]
      }
     },
-    "hash": "lcrvthbxtklyuornycyqdxb62gducekk"
+    "hash": "bxbaw4jrniizrqu4fwhhc4bwzw5liwad"
    }
   },
-  "ktqnxn2zde7btlv7dijo5cplccgkamy4": {
+  "66fod4p572tifnbxsyyz3stk4my5424r": {
    "netcdf-c": {
     "version": "4.7.3",
     "arch": {
@@ -5486,7 +5393,7 @@
     },
     "dependencies": {
      "hdf5": {
-      "hash": "n7dyuavtb3jbxu5txojuclwwpf4ngh4j",
+      "hash": "ehhlppthbxggp7qphpsoql2e6qm3ltf7",
       "type": [
        "build",
        "link"
@@ -5499,7 +5406,7 @@
       ]
      },
      "openmpi": {
-      "hash": "2b2pygclmwlfs2wiynal6fsodkrxpibs",
+      "hash": "duvvnmhjm7tpl2c7w66gt3i4cv2do5zp",
       "type": [
        "build",
        "link"
@@ -5513,10 +5420,10 @@
       ]
      }
     },
-    "hash": "7hht6oilb7wmjsazgqimvy6xojl4lo7i"
+    "hash": "jsahnoap2k6tlo64fmckof3ewaypr7cy"
    }
   },
-  "vw4tsvqjgmnnzmq7nbz7s3auj7rik76a": {
+  "j7emmeo4oxlfh6a2tsib3aww5yncrdek": {
    "py-cftime": {
     "version": "1.0.3.4",
     "arch": {
@@ -5558,26 +5465,26 @@
     },
     "dependencies": {
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -5585,12 +5492,12 @@
       ]
      }
     },
-    "hash": "52nmvat3xlx53biwrny2lldy5yyh2ju6"
+    "hash": "tiq4235kwqtqvv66dn4xwwgm3xcfxdya"
    }
   },
-  "jbdncslrxrmnj4z3tdlac2mebhdpt3b5": {
+  "5p37dp7jz7miywmdttxnihrlrju6agxx": {
    "py-scikit-learn": {
-    "version": "0.22",
+    "version": "0.22.1",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -5631,40 +5538,40 @@
     },
     "dependencies": {
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build"
       ]
      },
      "py-joblib": {
-      "hash": "e6czevkr5266sjtyypqzfwnsdl4vqqbn",
+      "hash": "2qaf56nls6tdczwaqz6hxcjltbucfatl",
       "type": [
        "build",
        "run"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-scipy": {
-      "hash": "lbf42o2hytlul3plq2gmizdl2tjp56ki",
+      "hash": "scldipp5bfbv7u4vvfasp3bpk7thai7v",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -5672,10 +5579,10 @@
       ]
      }
     },
-    "hash": "2pf4vefpd4yefnkcuwvl46ifua67wtmj"
+    "hash": "hzt4yyaqbgb5e5zv7dhjyv3vlqbydq4v"
    }
   },
-  "e6czevkr5266sjtyypqzfwnsdl4vqqbn": {
+  "2qaf56nls6tdczwaqz6hxcjltbucfatl": {
    "py-joblib": {
     "version": "0.14.0",
     "arch": {
@@ -5717,13 +5624,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -5731,12 +5638,12 @@
       ]
      }
     },
-    "hash": "ilszpayjldspgzml35lscaswa2qqtgcn"
+    "hash": "ep2jk2rgk74x5xicqch6i3f5cwqbz3b5"
    }
   },
-  "mmbln3beqyienm6tkzjpqr32ttf5i3n2": {
+  "fpdr6nncy5gpjyg4rgvw2zsfuh4eqj2r": {
    "py-ipywidgets": {
-    "version": "5.2.2",
+    "version": "7.5.1",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -5776,28 +5683,42 @@
     },
     "dependencies": {
      "py-ipykernel": {
-      "hash": "ba4pn4hawd6b3db3vg3dtdhetoaalsmr",
+      "hash": "5ct6bq5qea5tfk5m6tpsgnbaxsnuupt4",
       "type": [
        "build",
        "run"
       ]
      },
      "py-ipython": {
-      "hash": "zzcgkeiegn2qqqolmeb6ulqetyfl5isr",
+      "hash": "xufhct2xecmzq7vfcionjbwbpoa3ta5v",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-nbformat": {
+      "hash": "n7cj2zfsljasxboxqnz24xgm6cv3p66g",
       "type": [
        "build",
        "run"
       ]
      },
      "py-traitlets": {
-      "hash": "v4ervzgy5ihl2bqolqbzdg6ih5wyxibw",
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-widgetsnbextension": {
+      "hash": "o2afryq7bvlj2ymati5iqjnsylmxqqzb",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -5805,10 +5726,10 @@
       ]
      }
     },
-    "hash": "4enliao5jzl2z7iiove53hpeuabigpp3"
+    "hash": "eu37awv64umw3jrht42bl3vz5kfypoqa"
    }
   },
-  "ba4pn4hawd6b3db3vg3dtdhetoaalsmr": {
+  "5ct6bq5qea5tfk5m6tpsgnbaxsnuupt4": {
    "py-ipykernel": {
     "version": "5.1.0",
     "arch": {
@@ -5850,48 +5771,48 @@
     },
     "dependencies": {
      "py-ipython": {
-      "hash": "zzcgkeiegn2qqqolmeb6ulqetyfl5isr",
+      "hash": "xufhct2xecmzq7vfcionjbwbpoa3ta5v",
       "type": [
        "build",
        "run"
       ]
      },
      "py-jupyter-client": {
-      "hash": "sak6ppq3rehy2s3cv7qxvu7c56mnab5i",
+      "hash": "67cq7l5qyr2zsxbnxm5xs6nngwfadaga",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pexpect": {
-      "hash": "ztm5yufsumyw7z2fdr26u3dqnbrusuep",
+      "hash": "awexo4eslogqisjw2ks77vlvqihyhfct",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-tornado": {
-      "hash": "o4f2fbg23zoet2sno6zseiyjgyxeihf3",
+      "hash": "2j647vybx3kwqr4knzws2pdghgbggc2k",
       "type": [
        "build",
        "run"
       ]
      },
      "py-traitlets": {
-      "hash": "v4ervzgy5ihl2bqolqbzdg6ih5wyxibw",
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -5899,10 +5820,10 @@
       ]
      }
     },
-    "hash": "xgn75xazjxzw42nxr7s4k6d64vgbts2z"
+    "hash": "pwuurwichichmuwktyt3o6y3zcgoj626"
    }
   },
-  "zzcgkeiegn2qqqolmeb6ulqetyfl5isr": {
+  "xufhct2xecmzq7vfcionjbwbpoa3ta5v": {
    "py-ipython": {
     "version": "7.3.0",
     "arch": {
@@ -5944,63 +5865,63 @@
     },
     "dependencies": {
      "py-backcall": {
-      "hash": "zntw3pcilluep3c2yaolp4zcmpqjwleu",
+      "hash": "njlc4f5sncofz7zf657gsdtlzm4yhota",
       "type": [
        "build",
        "run"
       ]
      },
      "py-decorator": {
-      "hash": "evwazqugbbtwjy4o4x433wfrjetskw5g",
+      "hash": "tac6ehnu2o4nvn336wg4vcp6nok3qdhd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pexpect": {
-      "hash": "ztm5yufsumyw7z2fdr26u3dqnbrusuep",
+      "hash": "awexo4eslogqisjw2ks77vlvqihyhfct",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pickleshare": {
-      "hash": "kc2aibq6ucdeg7f4fdyijyjytiph3abu",
+      "hash": "y4qcbxqvuxrhjgvf2j2ph2q7vpccl2e5",
       "type": [
        "build",
        "run"
       ]
      },
      "py-prompt-toolkit": {
-      "hash": "54pomoa4nphgpucmj3rzdn2csvmrsjuk",
+      "hash": "ji4r6encgydn4lqubha43fjzaxuplq2j",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pygments": {
-      "hash": "7zgv7f7y4dvvb3uj76hpsoulxsbnamnk",
+      "hash": "cjlnxibmcblr3adm4ydpsk6hc42zex7t",
       "type": [
        "build",
        "run"
       ]
      },
      "py-simplegeneric": {
-      "hash": "pjtxieipfevic2bn467x7yzog54mupt5",
+      "hash": "jsz77nlblohjacslr73ofmva6ylwgtgs",
       "type": [
        "build",
        "run"
       ]
      },
      "py-traitlets": {
-      "hash": "v4ervzgy5ihl2bqolqbzdg6ih5wyxibw",
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6008,10 +5929,10 @@
       ]
      }
     },
-    "hash": "qmax6rggzeljq6l4ssasqv65owkxhpgv"
+    "hash": "juc466r2sas7rcamrvzs3l7claa43f2v"
    }
   },
-  "zntw3pcilluep3c2yaolp4zcmpqjwleu": {
+  "njlc4f5sncofz7zf657gsdtlzm4yhota": {
    "py-backcall": {
     "version": "0.1.0",
     "arch": {
@@ -6053,7 +5974,7 @@
     },
     "dependencies": {
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6061,12 +5982,12 @@
       ]
      }
     },
-    "hash": "7uzofl4tk2owwgz4qknij6hpbb53kl7q"
+    "hash": "wldmui4a3rzaz4pxtfgpzwhbzd3lzs5f"
    }
   },
-  "evwazqugbbtwjy4o4x433wfrjetskw5g": {
+  "tac6ehnu2o4nvn336wg4vcp6nok3qdhd": {
    "py-decorator": {
-    "version": "4.4.0",
+    "version": "4.4.2",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -6106,13 +6027,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6120,12 +6041,12 @@
       ]
      }
     },
-    "hash": "mypkzwsarsidjhkwsg6kxcovl3mf4gtm"
+    "hash": "co5glpoa24tclq2vqlvfqh2amcydbito"
    }
   },
-  "ztm5yufsumyw7z2fdr26u3dqnbrusuep": {
+  "awexo4eslogqisjw2ks77vlvqihyhfct": {
    "py-pexpect": {
-    "version": "4.6.0",
+    "version": "4.7.0",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -6165,14 +6086,14 @@
     },
     "dependencies": {
      "py-ptyprocess": {
-      "hash": "ymvdtm6jm4bqjlzmcbb63kbntr75y4ry",
+      "hash": "jqmjkhkmqzfi6s5gacjnnipetq6bkobx",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6180,12 +6101,12 @@
       ]
      }
     },
-    "hash": "tu4fqi4f22ffqpixu5572vbtquykdgcu"
+    "hash": "km43shk3auvoqxuutwnmeydetnpoh2tv"
    }
   },
-  "ymvdtm6jm4bqjlzmcbb63kbntr75y4ry": {
+  "jqmjkhkmqzfi6s5gacjnnipetq6bkobx": {
    "py-ptyprocess": {
-    "version": "0.5.1",
+    "version": "0.6.0",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -6225,7 +6146,7 @@
     },
     "dependencies": {
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6233,12 +6154,12 @@
       ]
      }
     },
-    "hash": "clxr76mhjgdj7gjxddiyyysnmvzsjef2"
+    "hash": "qz46w7rv6rxier5jrpyfrcm2kmmymr3g"
    }
   },
-  "kc2aibq6ucdeg7f4fdyijyjytiph3abu": {
+  "y4qcbxqvuxrhjgvf2j2ph2q7vpccl2e5": {
    "py-pickleshare": {
-    "version": "0.7.4",
+    "version": "0.7.5",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -6278,13 +6199,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6292,10 +6213,10 @@
       ]
      }
     },
-    "hash": "kloj27qc5hpb5erypharaee2dybbsf3w"
+    "hash": "gzzvtz7sq46gmvuqlz4nwukx3z7km5tc"
    }
   },
-  "54pomoa4nphgpucmj3rzdn2csvmrsjuk": {
+  "ji4r6encgydn4lqubha43fjzaxuplq2j": {
    "py-prompt-toolkit": {
     "version": "2.0.9",
     "arch": {
@@ -6337,27 +6258,27 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "py-wcwidth": {
-      "hash": "duh4jxq7gvl2352iea3ivwn2pask6ruw",
+      "hash": "dyl3lxdktrmahwtrfmlyszbe466vbnu2",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6365,10 +6286,10 @@
       ]
      }
     },
-    "hash": "ui3e4bvuhzpd4yg7rwy3bveoo6smdzfj"
+    "hash": "4wiv5ofemazjmhccy252ijr3hoemvynw"
    }
   },
-  "duh4jxq7gvl2352iea3ivwn2pask6ruw": {
+  "dyl3lxdktrmahwtrfmlyszbe466vbnu2": {
    "py-wcwidth": {
     "version": "0.1.7",
     "arch": {
@@ -6410,13 +6331,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6424,10 +6345,10 @@
       ]
      }
     },
-    "hash": "7kjfudbxlczc36nbqntnchcyikz34r2j"
+    "hash": "wngkvx3znpq6lup55p745glftix5wvpo"
    }
   },
-  "pjtxieipfevic2bn467x7yzog54mupt5": {
+  "jsz77nlblohjacslr73ofmva6ylwgtgs": {
    "py-simplegeneric": {
     "version": "0.8.1",
     "arch": {
@@ -6469,13 +6390,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6483,10 +6404,10 @@
       ]
      }
     },
-    "hash": "tr2dceqo73oxazzeenryaqnootg62old"
+    "hash": "hkwigishloi6526rjqcvjffpgdgr6mrd"
    }
   },
-  "v4ervzgy5ihl2bqolqbzdg6ih5wyxibw": {
+  "fp6u2nmmk7lekeeooksypemw2gqe4ooi": {
    "py-traitlets": {
     "version": "4.3.3",
     "arch": {
@@ -6528,28 +6449,28 @@
     },
     "dependencies": {
      "py-decorator": {
-      "hash": "evwazqugbbtwjy4o4x433wfrjetskw5g",
+      "hash": "tac6ehnu2o4nvn336wg4vcp6nok3qdhd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-ipython-genutils": {
-      "hash": "ceycqhmc7zseqvzjq6iwlrgob2so6ebk",
+      "hash": "hwlmmgbuluj3zlxhgyzuj5ouvh7lkisn",
       "type": [
        "build",
        "run"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6557,10 +6478,10 @@
       ]
      }
     },
-    "hash": "twiepffw4bnzk2cpfexcjft7leyrgylz"
+    "hash": "qcceojcagokikosjwseatwrzminucxbk"
    }
   },
-  "ceycqhmc7zseqvzjq6iwlrgob2so6ebk": {
+  "hwlmmgbuluj3zlxhgyzuj5ouvh7lkisn": {
    "py-ipython-genutils": {
     "version": "0.2.0",
     "arch": {
@@ -6602,7 +6523,7 @@
     },
     "dependencies": {
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6610,10 +6531,10 @@
       ]
      }
     },
-    "hash": "wvyhus6ufesntmdqbgxmw2lck2zuhvax"
+    "hash": "ojybqlm7wjot4p2fs2r5weo635vvmv2t"
    }
   },
-  "sak6ppq3rehy2s3cv7qxvu7c56mnab5i": {
+  "67cq7l5qyr2zsxbnxm5xs6nngwfadaga": {
    "py-jupyter-client": {
     "version": "5.3.4",
     "arch": {
@@ -6655,48 +6576,48 @@
     },
     "dependencies": {
      "py-jupyter-core": {
-      "hash": "olzq7cobbznawwqa3jy2kfwo4wordufc",
+      "hash": "k4obpk2wplwlhtxk2tl66rrfrhdcvzyf",
       "type": [
        "build",
        "run"
       ]
      },
      "py-python-dateutil": {
-      "hash": "ksv7t67drdqplrfhujvk6s7z33bpzhvx",
+      "hash": "z3g3jd5rxvsnb5gf3me3x63d3u7ij4bd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pyzmq": {
-      "hash": "yqc67dsntapiigj7fvy24d53ducrelei",
+      "hash": "qpctzcvroo2usu2vs5fgftomudxshoga",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-tornado": {
-      "hash": "o4f2fbg23zoet2sno6zseiyjgyxeihf3",
+      "hash": "2j647vybx3kwqr4knzws2pdghgbggc2k",
       "type": [
        "build",
        "run"
       ]
      },
      "py-traitlets": {
-      "hash": "v4ervzgy5ihl2bqolqbzdg6ih5wyxibw",
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6704,10 +6625,10 @@
       ]
      }
     },
-    "hash": "oarutumbucm2wcs5lri3nag5ex4tjgkb"
+    "hash": "mbv4xgsueg3uy25hbgsjahgg5ydg35nz"
    }
   },
-  "olzq7cobbznawwqa3jy2kfwo4wordufc": {
+  "k4obpk2wplwlhtxk2tl66rrfrhdcvzyf": {
    "py-jupyter-core": {
     "version": "4.6.0",
     "arch": {
@@ -6749,20 +6670,20 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-traitlets": {
-      "hash": "v4ervzgy5ihl2bqolqbzdg6ih5wyxibw",
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6770,10 +6691,10 @@
       ]
      }
     },
-    "hash": "ttykpkhs7c3msp3roz4hctcyf5fnsatd"
+    "hash": "f3arlfj4x3txncyi5zlkjwoypx5gs2hl"
    }
   },
-  "yqc67dsntapiigj7fvy24d53ducrelei": {
+  "qpctzcvroo2usu2vs5fgftomudxshoga": {
    "py-pyzmq": {
     "version": "18.1.0",
     "arch": {
@@ -6815,35 +6736,35 @@
     },
     "dependencies": {
      "libzmq": {
-      "hash": "b7eaoqks654ixl2lln2enogffj5eohoc",
+      "hash": "27pj5fwpdbyshzak3rp2oy3dy2uqdwks",
       "type": [
        "build",
        "link"
       ]
      },
      "py-cffi": {
-      "hash": "zdahvqbxwmunsihq4auslkmpll3rwzzy",
+      "hash": "evpsj2vmphhah5gsmeguhmlbge6vjp52",
       "type": [
        "build",
        "run"
       ]
      },
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build",
        "run"
       ]
      },
      "py-py": {
-      "hash": "pzv5fmn75dqso6iwd3srqxfcfmemn56a",
+      "hash": "ltyuwxlalio5gnbsoy2amie4opf5usc3",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -6851,10 +6772,10 @@
       ]
      }
     },
-    "hash": "3deds4vhweb3xdglcczzgn6o665yxmr6"
+    "hash": "u4f5qbqxd5yvytt4jqh5iafi5i3jdq5w"
    }
   },
-  "b7eaoqks654ixl2lln2enogffj5eohoc": {
+  "27pj5fwpdbyshzak3rp2oy3dy2uqdwks": {
    "libzmq": {
     "version": "4.3.2",
     "arch": {
@@ -6897,7 +6818,7 @@
     },
     "dependencies": {
      "libsodium": {
-      "hash": "3x2etthv4347fdm2ntmuvtysdrcsk2nn",
+      "hash": "xohrnlot2zwxypmanti3e7luizejrpjh",
       "type": [
        "build",
        "link"
@@ -6910,12 +6831,12 @@
       ]
      }
     },
-    "hash": "ajx7lw6w25mktuohjmmof3kidtcqgz42"
+    "hash": "uwg4wlv2qoew3qzwmt3ndeci7fq2uknu"
    }
   },
-  "3x2etthv4347fdm2ntmuvtysdrcsk2nn": {
+  "xohrnlot2zwxypmanti3e7luizejrpjh": {
    "libsodium": {
-    "version": "1.0.17",
+    "version": "1.0.18",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -6953,10 +6874,10 @@
      "ldflags": [],
      "ldlibs": []
     },
-    "hash": "3x2etthv4347fdm2ntmuvtysdrcsk2nn"
+    "hash": "xohrnlot2zwxypmanti3e7luizejrpjh"
    }
   },
-  "zdahvqbxwmunsihq4auslkmpll3rwzzy": {
+  "evpsj2vmphhah5gsmeguhmlbge6vjp52": {
    "py-cffi": {
     "version": "1.13.0",
     "arch": {
@@ -7011,20 +6932,20 @@
       ]
      },
      "py-pycparser": {
-      "hash": "pfqxe3tqcclrgbyvoarlbefmey4dyngt",
+      "hash": "ig2eb54iwzkwhm4erqitoucaxsnmwru7",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7032,10 +6953,10 @@
       ]
      }
     },
-    "hash": "tlrx5mmaswvhxc7rpdetb26cggz55fly"
+    "hash": "xace6qlutyxopmttwkpqk3mgdfue33b4"
    }
   },
-  "pfqxe3tqcclrgbyvoarlbefmey4dyngt": {
+  "ig2eb54iwzkwhm4erqitoucaxsnmwru7": {
    "py-pycparser": {
     "version": "2.19",
     "arch": {
@@ -7077,13 +6998,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7091,10 +7012,10 @@
       ]
      }
     },
-    "hash": "6cfa4u6cv4ahwvetgdkrnlpgek4zayux"
+    "hash": "qpzdu6kayu5kd5mhhp5ne3lsmou6yven"
    }
   },
-  "pzv5fmn75dqso6iwd3srqxfcfmemn56a": {
+  "ltyuwxlalio5gnbsoy2amie4opf5usc3": {
    "py-py": {
     "version": "1.8.0",
     "arch": {
@@ -7136,19 +7057,19 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-setuptools-scm": {
-      "hash": "gzdgp4e22oajqzzpeapqkul3qqo5e3pd",
+      "hash": "ekbx5wdys7msp3tkwstsukex6rqiwc6b",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7156,10 +7077,10 @@
       ]
      }
     },
-    "hash": "2mkvo4vmwsp3brkshxzf7d57rux7zfjh"
+    "hash": "vcdkudv4jwnrcoq3jn4oa7h4xehqsts3"
    }
   },
-  "o4f2fbg23zoet2sno6zseiyjgyxeihf3": {
+  "2j647vybx3kwqr4knzws2pdghgbggc2k": {
    "py-tornado": {
     "version": "6.0.3",
     "arch": {
@@ -7201,13 +7122,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7215,10 +7136,1267 @@
       ]
      }
     },
-    "hash": "kjqciey2lcuimxxt545iexjghpwnj4gs"
+    "hash": "5i62c7nckhs4dwcjlut7v5hrq4xhy5vz"
    }
   },
-  "uexnf6xxucn5ilblo2p6ky7hxactdxxv": {
+  "n7cj2zfsljasxboxqnz24xgm6cv3p66g": {
+   "py-nbformat": {
+    "version": "4.4.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-ipython-genutils": {
+      "hash": "hwlmmgbuluj3zlxhgyzuj5ouvh7lkisn",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jsonschema": {
+      "hash": "blahcymhx5u6wijy6ui5od4b7viwndxb",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jupyter-core": {
+      "hash": "k4obpk2wplwlhtxk2tl66rrfrhdcvzyf",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-traitlets": {
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "2gsuhrg2cz7zj5nn7vifyoiyl4xpy42y"
+   }
+  },
+  "blahcymhx5u6wijy6ui5od4b7viwndxb": {
+   "py-jsonschema": {
+    "version": "3.0.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-attrs": {
+      "hash": "jgdpby3sy3vlkk6s4fy43cv4rcigtvbo",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-pyrsistent": {
+      "hash": "7mpccon2r26ij5gvvmpcyl4qlztv6u27",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools-scm": {
+      "hash": "ekbx5wdys7msp3tkwstsukex6rqiwc6b",
+      "type": [
+       "build"
+      ]
+     },
+     "py-six": {
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "fkukqareucaglccls43fw2rj6x2uhgt2"
+   }
+  },
+  "jgdpby3sy3vlkk6s4fy43cv4rcigtvbo": {
+   "py-attrs": {
+    "version": "19.2.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "zblc36kaal7lao3wbrscuv4jqcxss3fh"
+   }
+  },
+  "7mpccon2r26ij5gvvmpcyl4qlztv6u27": {
+   "py-pyrsistent": {
+    "version": "0.15.7",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "py-six": {
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "xnmapv5wj6ky3da6ymzo6zt4lhwqaq6q"
+   }
+  },
+  "o2afryq7bvlj2ymati5iqjnsylmxqqzb": {
+   "py-widgetsnbextension": {
+    "version": "3.5.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-notebook": {
+      "hash": "2jaedlkld5mivhmfprbk3nhwgij5fjyd",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "rzxlfaftb67p3khm4l47vu5iflegvzsd"
+   }
+  },
+  "2jaedlkld5mivhmfprbk3nhwgij5fjyd": {
+   "py-notebook": {
+    "version": "6.0.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-ipykernel": {
+      "hash": "5ct6bq5qea5tfk5m6tpsgnbaxsnuupt4",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-ipython-genutils": {
+      "hash": "hwlmmgbuluj3zlxhgyzuj5ouvh7lkisn",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jinja2": {
+      "hash": "24ovek7vnfw2cghgktadsdaystvpwube",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jupyter-client": {
+      "hash": "67cq7l5qyr2zsxbnxm5xs6nngwfadaga",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jupyter-core": {
+      "hash": "k4obpk2wplwlhtxk2tl66rrfrhdcvzyf",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-nbconvert": {
+      "hash": "hbzrh2t4kpdipy6o2cvjdyyobhbvkhsa",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-nbformat": {
+      "hash": "n7cj2zfsljasxboxqnz24xgm6cv3p66g",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-prometheus-client": {
+      "hash": "5oy4y6mfmfqs4cjbvfdd5hu4l7e2zewz",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-pyzmq": {
+      "hash": "qpctzcvroo2usu2vs5fgftomudxshoga",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-send2trash": {
+      "hash": "ixfssxt5nwvhjhm2xzmelivkuklnokti",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-terminado": {
+      "hash": "4yp4bz2w2abhazhhhwb47xd7lkthzryi",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-tornado": {
+      "hash": "2j647vybx3kwqr4knzws2pdghgbggc2k",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-traitlets": {
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "lzrdbwt767a23kvrqokq4h2x4ztx3mz4"
+   }
+  },
+  "hbzrh2t4kpdipy6o2cvjdyyobhbvkhsa": {
+   "py-nbconvert": {
+    "version": "5.6.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "execute": true,
+     "serve": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-bleach": {
+      "hash": "rau7cqf3ikxcoddlx3ad36g2u53fbmj7",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-defusedxml": {
+      "hash": "ka66twgbhyoqjnb4jcme4wox4j7hr4up",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-entrypoints": {
+      "hash": "2hp6uniev2unqursqfcobzxhqol7pk3c",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jinja2": {
+      "hash": "24ovek7vnfw2cghgktadsdaystvpwube",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jupyter-client": {
+      "hash": "67cq7l5qyr2zsxbnxm5xs6nngwfadaga",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-jupyter-core": {
+      "hash": "k4obpk2wplwlhtxk2tl66rrfrhdcvzyf",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-mistune": {
+      "hash": "oex2evzho47lxj2g6s5dmqkp5lxqp63x",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-nbformat": {
+      "hash": "n7cj2zfsljasxboxqnz24xgm6cv3p66g",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-pandocfilters": {
+      "hash": "ewytq4ogbxiconqgtvtke2h7d7zo7e2k",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-pygments": {
+      "hash": "cjlnxibmcblr3adm4ydpsk6hc42zex7t",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "py-testpath": {
+      "hash": "nldusx7sfeczgixa36ss5ubimzk434zi",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-tornado": {
+      "hash": "2j647vybx3kwqr4knzws2pdghgbggc2k",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-traitlets": {
+      "hash": "fp6u2nmmk7lekeeooksypemw2gqe4ooi",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "umstvx7y2pat453al3krf6oo47tor6o2"
+   }
+  },
+  "rau7cqf3ikxcoddlx3ad36g2u53fbmj7": {
+   "py-bleach": {
+    "version": "3.1.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "py-six": {
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-webencodings": {
+      "hash": "avorpenxly6x3agxofhvl3yaxkxd7ygr",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "qd3kk2wkererhrimkuymgmtsvc7wnzd6"
+   }
+  },
+  "avorpenxly6x3agxofhvl3yaxkxd7ygr": {
+   "py-webencodings": {
+    "version": "0.5.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "jdgl3oqqwugrdphltb6pqvamita7s6bw"
+   }
+  },
+  "ka66twgbhyoqjnb4jcme4wox4j7hr4up": {
+   "py-defusedxml": {
+    "version": "0.6.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "gw335noh2v3zvlxgpgnojxopbe3iowfq"
+   }
+  },
+  "2hp6uniev2unqursqfcobzxhqol7pk3c": {
+   "py-entrypoints": {
+    "version": "0.3",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "svihh2rebhzescrkr7larswzvpijjhyh"
+   }
+  },
+  "oex2evzho47lxj2g6s5dmqkp5lxqp63x": {
+   "py-mistune": {
+    "version": "0.8.4",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "nqjadusx3h4ha3fyagi3jr26sdi5npon"
+   }
+  },
+  "ewytq4ogbxiconqgtvtke2h7d7zo7e2k": {
+   "py-pandocfilters": {
+    "version": "1.4.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "o36ikvmtegzmnkn3l7ish7b7ywenra5m"
+   }
+  },
+  "nldusx7sfeczgixa36ss5ubimzk434zi": {
+   "py-testpath": {
+    "version": "0.4.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "2jqi6jrg3r2ms7kcetahb6oeojt6e4cb"
+   }
+  },
+  "5oy4y6mfmfqs4cjbvfdd5hu4l7e2zewz": {
+   "py-prometheus-client": {
+    "version": "0.7.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "twisted": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "ky4ttiya6qkafqohyqisjmafegyai7li"
+   }
+  },
+  "ixfssxt5nwvhjhm2xzmelivkuklnokti": {
+   "py-send2trash": {
+    "version": "1.5.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "on77pgzvpvatjxzrf34szhjoqqzq57hf"
+   }
+  },
+  "4yp4bz2w2abhazhhhwb47xd7lkthzryi": {
+   "py-terminado": {
+    "version": "0.8.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-ptyprocess": {
+      "hash": "jqmjkhkmqzfi6s5gacjnnipetq6bkobx",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-tornado": {
+      "hash": "2j647vybx3kwqr4knzws2pdghgbggc2k",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "nuzpxuto2fafismtzr2yukwrxefh45wa"
+   }
+  },
+  "jbwd7qjiaeepmmasnp5kxefbfegrzubn": {
    "py-bokeh": {
     "version": "1.3.4",
     "arch": {
@@ -7260,63 +8438,63 @@
     },
     "dependencies": {
      "py-jinja2": {
-      "hash": "opb5rn5h7zvi6bm2xnygcrlus7cxtpzr",
+      "hash": "24ovek7vnfw2cghgktadsdaystvpwube",
       "type": [
        "build",
        "run"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-packaging": {
-      "hash": "45dm2c4eps24rpue7eiy736jdsnbe2zg",
+      "hash": "uinrgosg6watllu3eexhqsxphukjzgvx",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pillow": {
-      "hash": "2wn5svax3u2bckb75ykr2mirx2bomjju",
+      "hash": "ntd7s7fralpa3kotjw56wf5ei3nit3jh",
       "type": [
        "build",
        "run"
       ]
      },
      "py-python-dateutil": {
-      "hash": "ksv7t67drdqplrfhujvk6s7z33bpzhvx",
+      "hash": "z3g3jd5rxvsnb5gf3me3x63d3u7ij4bd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pyyaml": {
-      "hash": "2aucbvdos7yo4jj5tfvbytdyamv6zumi",
+      "hash": "dy2uwv2xv7257csar3cg35pqmm4gmyy2",
       "type": [
        "build",
        "run"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "py-tornado": {
-      "hash": "o4f2fbg23zoet2sno6zseiyjgyxeihf3",
+      "hash": "2j647vybx3kwqr4knzws2pdghgbggc2k",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7324,10 +8502,10 @@
       ]
      }
     },
-    "hash": "q6iwvrd3bdhltdn4jjqrqevaj4fkdiwo"
+    "hash": "ibpwmehibyvrqvq3arxzgqhgspyglypi"
    }
   },
-  "jy62w23jixfo372ifbwt3uvhqx42lbqs": {
+  "mujcjjvtz2s4txnspncnmka74d5gwzpf": {
    "py-pandas": {
     "version": "0.25.1",
     "arch": {
@@ -7369,48 +8547,48 @@
     },
     "dependencies": {
      "py-bottleneck": {
-      "hash": "zv3jo4jvqkak4vazzelcyqsdczo7taky",
+      "hash": "2ztuh2fwah6tfjtm4ukcy6w5ve5p3eae",
       "type": [
        "build",
        "run"
       ]
      },
      "py-numexpr": {
-      "hash": "x7zz4zxvkfrctc6q6o6qd7xkriknekkf",
+      "hash": "i356hnd7cyvhdoadrwu66qzyjotzxawu",
       "type": [
        "build",
        "run"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-python-dateutil": {
-      "hash": "ksv7t67drdqplrfhujvk6s7z33bpzhvx",
+      "hash": "z3g3jd5rxvsnb5gf3me3x63d3u7ij4bd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pytz": {
-      "hash": "f7jt6ghfipxog3gyo32342fgdxk54xse",
+      "hash": "jfhtlentw7tzoep75sh5aycsr34as3ix",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7418,10 +8596,10 @@
       ]
      }
     },
-    "hash": "xdrfxaqfw4qvbn5njnyahcwisiv6zmdq"
+    "hash": "tgw325gwme5jdc32hsjqhm5qn24takjw"
    }
   },
-  "zv3jo4jvqkak4vazzelcyqsdczo7taky": {
+  "2ztuh2fwah6tfjtm4ukcy6w5ve5p3eae": {
    "py-bottleneck": {
     "version": "1.2.1",
     "arch": {
@@ -7463,20 +8641,20 @@
     },
     "dependencies": {
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7484,10 +8662,10 @@
       ]
      }
     },
-    "hash": "h4hmxwj4m4w5vxqqoyhmjtu3odso4aai"
+    "hash": "2oig2n34i34axs2ujp4fz6rdm26x2ka2"
    }
   },
-  "x7zz4zxvkfrctc6q6o6qd7xkriknekkf": {
+  "i356hnd7cyvhdoadrwu66qzyjotzxawu": {
    "py-numexpr": {
     "version": "2.7.0",
     "arch": {
@@ -7529,20 +8707,20 @@
     },
     "dependencies": {
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7550,10 +8728,10 @@
       ]
      }
     },
-    "hash": "iudzocv3phqbnlnq6tzwqc6qyohfowo6"
+    "hash": "lyc5clsdvojg3vdjh53ha2x5cxigi6fp"
    }
   },
-  "6t26ijj4nbl7agk7otnnenhryjhhpyil": {
+  "qtivk3cye45gk2kvgmscl2cwor56og7k": {
    "py-geopandas": {
     "version": "0.5.0",
     "arch": {
@@ -7596,41 +8774,41 @@
     },
     "dependencies": {
      "py-fiona": {
-      "hash": "4qhapfftf7wo5ernktojgjggn3abg22x",
+      "hash": "el37kz6fqqn6jjsx4cecvmgpwlqepjnb",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pandas": {
-      "hash": "jy62w23jixfo372ifbwt3uvhqx42lbqs",
+      "hash": "mujcjjvtz2s4txnspncnmka74d5gwzpf",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pyproj": {
-      "hash": "hyxe2c5aispy5aw63qbnqtyfrmwbibf7",
+      "hash": "lcyrzmmbj2tsqavu2a4gycz2lozlxpp6",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-shapely": {
-      "hash": "5aykzostbojk74v7tlubmcrdsxtrtgje",
+      "hash": "xwmza5u2z4zdpgvvwgpa7dn3hqaftba4",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7638,10 +8816,10 @@
       ]
      }
     },
-    "hash": "heobxkk4ef2auh74ar5hynpgh7ryntqa"
+    "hash": "qloii7r5bkbvpvl2pljuohrnbv6eluih"
    }
   },
-  "4qhapfftf7wo5ernktojgjggn3abg22x": {
+  "el37kz6fqqn6jjsx4cecvmgpwlqepjnb": {
    "py-fiona": {
     "version": "1.8.6",
     "arch": {
@@ -7683,68 +8861,68 @@
     },
     "dependencies": {
      "gdal": {
-      "hash": "3qyugsmpxjfj2vjyrisbijj2c22yakok",
+      "hash": "55ip6xospwqbsqnel4qlp5yh6bvowgep",
       "type": [
        "build",
        "run"
       ]
      },
      "py-attrs": {
-      "hash": "b4hmfbpulffz6jtugf5mgguhdhdfjnmi",
+      "hash": "jgdpby3sy3vlkk6s4fy43cv4rcigtvbo",
       "type": [
        "build",
        "run"
       ]
      },
      "py-click": {
-      "hash": "a7zmsvud6kxye7j5v4mrdf3vf4wsp4nw",
+      "hash": "iav65ee6yhg4ni5gfyqqpnbq6dcrq2cw",
       "type": [
        "build",
        "run"
       ]
      },
      "py-click-plugins": {
-      "hash": "pywehr4f2gz55ivl4vgn4dhvgkrdw3o4",
+      "hash": "uqmszbbmhr5gvaq54szosinirxqt7ljv",
       "type": [
        "build",
        "run"
       ]
      },
      "py-cligj": {
-      "hash": "wtla3xpupqkypqa4bdgwrdqau6z3rahu",
+      "hash": "unqfnxboclonkxihpy3qjinxvzstss6v",
       "type": [
        "build",
        "run"
       ]
      },
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build"
       ]
      },
      "py-munch": {
-      "hash": "s42fmv3v6vtd5ck7ckdpjkwvvjnax6c2",
+      "hash": "tm47tmn7kjrgnpdgllyg2zr6hkl7l2hk",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -7752,12 +8930,12 @@
       ]
      }
     },
-    "hash": "6wnl4m4cejabtwm55wocg7hpam7ommqh"
+    "hash": "tx5hqodkpnn2vrjg4jkf74ne52uschnw"
    }
   },
-  "3qyugsmpxjfj2vjyrisbijj2c22yakok": {
+  "55ip6xospwqbsqnel4qlp5yh6bvowgep": {
    "gdal": {
-    "version": "3.0.2",
+    "version": "3.0.4",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -7835,34 +9013,34 @@
     },
     "dependencies": {
      "gmake": {
-      "hash": "iza5uqr45nwhnkbnrvgxtyc4o4ui2sxu",
+      "hash": "7loc772o4qbhivhjw2txqlycjg276xrf",
       "type": [
        "build"
       ]
      },
      "json-c": {
-      "hash": "eeu4a766yc3qgpx2ys7qqghd6qr3d63w",
+      "hash": "mjoggcvtlhdldekcdyyssssmcqznjyzq",
       "type": [
        "build",
        "link"
       ]
      },
      "libgeotiff": {
-      "hash": "gc5tvlrnrie7rxqkk4wkbkigu7ws72il",
+      "hash": "ausju3ns5ohvuscdd7qa3hs2svfo6tj3",
       "type": [
        "build",
        "link"
       ]
      },
      "libjpeg-turbo": {
-      "hash": "7dav45ae7tz3ar2wqjfzjtoo3q5ajtny",
+      "hash": "prrzlmgeivmdsbymn4mxazctygbkozod",
       "type": [
        "build",
        "link"
       ]
      },
      "libtiff": {
-      "hash": "lkg66evrehx4pjm7njul6pzf5xtj5z3m",
+      "hash": "lggvc4qeygqgkeg5rc3j2gt53uvimtlx",
       "type": [
        "build",
        "link"
@@ -7881,7 +9059,7 @@
       ]
      },
      "proj": {
-      "hash": "tm4jp5ndboyilkbh3mrfhw5dco2yxspj",
+      "hash": "3bzmihucavwklntgrbwg5hkregns6kk4",
       "type": [
        "build",
        "link"
@@ -7902,10 +9080,10 @@
       ]
      }
     },
-    "hash": "yo3jyxqxw6qktc33urchm4ruateo7a5a"
+    "hash": "umfio64d5us2ktrx6ezjohooy3ioscyu"
    }
   },
-  "iza5uqr45nwhnkbnrvgxtyc4o4ui2sxu": {
+  "7loc772o4qbhivhjw2txqlycjg276xrf": {
    "gmake": {
     "version": "4.2.1",
     "arch": {
@@ -7957,23 +9135,23 @@
     ],
     "dependencies": {
      "gettext": {
-      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
+      "hash": "3slsyjwpv3mt75h4vz2qi6yzwrhxo25s",
       "type": [
        "build",
        "link"
       ]
      },
      "texinfo": {
-      "hash": "x6byguhcmrvapt4usxcx3ai2zl3wg4nq",
+      "hash": "ilvigf6xxi2gvn25kpyojgvpay2hwg7r",
       "type": [
        "build"
       ]
      }
     },
-    "hash": "ubidu32buapdpyrf4w73u55gu3hkltmi"
+    "hash": "gr2ntvyhvb366ipwx5uzls5przdc5mdj"
    }
   },
-  "x6byguhcmrvapt4usxcx3ai2zl3wg4nq": {
+  "ilvigf6xxi2gvn25kpyojgvpay2hwg7r": {
    "texinfo": {
     "version": "6.5",
     "arch": {
@@ -8023,17 +9201,17 @@
     ],
     "dependencies": {
      "perl": {
-      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "hash": "ge5tx6zmezr2nsga3iyaqtzfejobjg5j",
       "type": [
        "build",
        "link"
       ]
      }
     },
-    "hash": "w2zhnerw2tr3yrtumna4ypyhbr4wcg5f"
+    "hash": "i3k7p4i4db5wzpfvw6bodzktxvjuu3wo"
    }
   },
-  "eeu4a766yc3qgpx2ys7qqghd6qr3d63w": {
+  "mjoggcvtlhdldekcdyyssssmcqznjyzq": {
    "json-c": {
     "version": "0.13.1",
     "arch": {
@@ -8075,7 +9253,7 @@
     },
     "dependencies": {
      "autoconf": {
-      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "hash": "syc6w5fbxvjn3uoriouatcpxoq6crqjs",
       "type": [
        "build"
       ]
@@ -8084,7 +9262,7 @@
     "hash": "73r6bwprtkc2xajbar7c3gjrp4zne5x7"
    }
   },
-  "gc5tvlrnrie7rxqkk4wkbkigu7ws72il": {
+  "ausju3ns5ohvuscdd7qa3hs2svfo6tj3": {
    "libgeotiff": {
     "version": "1.5.1",
     "arch": {
@@ -8139,21 +9317,21 @@
     ],
     "dependencies": {
      "libjpeg-turbo": {
-      "hash": "7dav45ae7tz3ar2wqjfzjtoo3q5ajtny",
+      "hash": "prrzlmgeivmdsbymn4mxazctygbkozod",
       "type": [
        "build",
        "link"
       ]
      },
      "libtiff": {
-      "hash": "lkg66evrehx4pjm7njul6pzf5xtj5z3m",
+      "hash": "lggvc4qeygqgkeg5rc3j2gt53uvimtlx",
       "type": [
        "build",
        "link"
       ]
      },
      "proj": {
-      "hash": "tm4jp5ndboyilkbh3mrfhw5dco2yxspj",
+      "hash": "3bzmihucavwklntgrbwg5hkregns6kk4",
       "type": [
        "build",
        "link"
@@ -8167,10 +9345,10 @@
       ]
      }
     },
-    "hash": "6dkur4xk6nfstrhpxxdyaz6hnb4skf2j"
+    "hash": "cy2b7na7ulogtu6mxytffrmytedst56l"
    }
   },
-  "lkg66evrehx4pjm7njul6pzf5xtj5z3m": {
+  "lggvc4qeygqgkeg5rc3j2gt53uvimtlx": {
    "libtiff": {
     "version": "4.0.10",
     "arch": {
@@ -8212,7 +9390,7 @@
     },
     "dependencies": {
      "libjpeg-turbo": {
-      "hash": "7dav45ae7tz3ar2wqjfzjtoo3q5ajtny",
+      "hash": "prrzlmgeivmdsbymn4mxazctygbkozod",
       "type": [
        "build",
        "link"
@@ -8236,7 +9414,7 @@
     "hash": "xfsv5brx4jjel57exuhmdgq5fjkkwa67"
    }
   },
-  "tm4jp5ndboyilkbh3mrfhw5dco2yxspj": {
+  "3bzmihucavwklntgrbwg5hkregns6kk4": {
    "proj": {
     "version": "6.2.0",
     "arch": {
@@ -8284,76 +9462,17 @@
       ]
      },
      "sqlite": {
-      "hash": "h2v3mnfwtua3ex3u6tbo6hyg2jhrwfgd",
+      "hash": "mhhhijldia5uxdick52i7r4m2spcfvvh",
       "type": [
        "build",
        "link"
       ]
      }
     },
-    "hash": "wkdwetbi2txtqe4br75yfe73wobqanwd"
+    "hash": "4sj4grmmaczjpnhepfil2i4ltfv4vomx"
    }
   },
-  "b4hmfbpulffz6jtugf5mgguhdhdfjnmi": {
-   "py-attrs": {
-    "version": "19.2.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "oxllijvzghrbdoe6tnfjpgyoekbavnru"
-   }
-  },
-  "a7zmsvud6kxye7j5v4mrdf3vf4wsp4nw": {
+  "iav65ee6yhg4ni5gfyqqpnbq6dcrq2cw": {
    "py-click": {
     "version": "7.0",
     "arch": {
@@ -8395,13 +9514,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -8409,10 +9528,10 @@
       ]
      }
     },
-    "hash": "iuontcnsimhghlegltnl3d375ztkchya"
+    "hash": "odjok4j3eqnce4llh3ri45qgd2i63lfd"
    }
   },
-  "pywehr4f2gz55ivl4vgn4dhvgkrdw3o4": {
+  "uqmszbbmhr5gvaq54szosinirxqt7ljv": {
    "py-click-plugins": {
     "version": "1.0.4",
     "arch": {
@@ -8454,20 +9573,20 @@
     },
     "dependencies": {
      "py-click": {
-      "hash": "a7zmsvud6kxye7j5v4mrdf3vf4wsp4nw",
+      "hash": "iav65ee6yhg4ni5gfyqqpnbq6dcrq2cw",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -8475,10 +9594,10 @@
       ]
      }
     },
-    "hash": "5wjk5lb4znjlzbutzaoxacvhaqj7vned"
+    "hash": "juhqaynphhj5sqtdramx55shy23fjvat"
    }
   },
-  "wtla3xpupqkypqa4bdgwrdqau6z3rahu": {
+  "unqfnxboclonkxihpy3qjinxvzstss6v": {
    "py-cligj": {
     "version": "0.5.0",
     "arch": {
@@ -8520,20 +9639,20 @@
     },
     "dependencies": {
      "py-click": {
-      "hash": "a7zmsvud6kxye7j5v4mrdf3vf4wsp4nw",
+      "hash": "iav65ee6yhg4ni5gfyqqpnbq6dcrq2cw",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -8541,10 +9660,10 @@
       ]
      }
     },
-    "hash": "kjmbmmiabdrp7wsabc6krplnfox7dgmh"
+    "hash": "zndwtl6ikxwx53tho7oysscc5sqoxqea"
    }
   },
-  "s42fmv3v6vtd5ck7ckdpjkwvvjnax6c2": {
+  "tm47tmn7kjrgnpdgllyg2zr6hkl7l2hk": {
    "py-munch": {
     "version": "2.2.0",
     "arch": {
@@ -8586,20 +9705,20 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "py-six": {
-      "hash": "l4rffm537flparexqrm3j5tm2ht47em7",
+      "hash": "zwpxyfs6ruo5okmipm3duley7t7tfi3i",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -8607,10 +9726,10 @@
       ]
      }
     },
-    "hash": "xvgvou7v46cuq2sov3euz5etqfutmkv2"
+    "hash": "vtcwhky33l6hegkprox6czjjyy4q7wmc"
    }
   },
-  "hyxe2c5aispy5aw63qbnqtyfrmwbibf7": {
+  "lcyrzmmbj2tsqavu2a4gycz2lozlxpp6": {
    "py-pyproj": {
     "version": "2.2.0",
     "arch": {
@@ -8652,26 +9771,26 @@
     },
     "dependencies": {
      "proj": {
-      "hash": "tm4jp5ndboyilkbh3mrfhw5dco2yxspj",
+      "hash": "3bzmihucavwklntgrbwg5hkregns6kk4",
       "type": [
        "build",
        "link"
       ]
      },
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -8679,10 +9798,10 @@
       ]
      }
     },
-    "hash": "lhtyisoza6pgtqkzbjm725x3s625uix6"
+    "hash": "2cqmsczah5xbrvaxgj3vvd5shnea5fvj"
    }
   },
-  "5aykzostbojk74v7tlubmcrdsxtrtgje": {
+  "xwmza5u2z4zdpgvvwgpa7dn3hqaftba4": {
    "py-shapely": {
     "version": "1.6.4.post2",
     "arch": {
@@ -8731,26 +9850,26 @@
       ]
      },
      "py-cython": {
-      "hash": "zy6m7dvfjzwictucm3cwlq5fvhii7wcw",
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
       "type": [
        "build"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -8758,7 +9877,7 @@
       ]
      }
     },
-    "hash": "cyzeukrkfzz4uvn2vvpk4zfsmzrpwgu3"
+    "hash": "45ubr3dbmruffhp2zpk3lgvyp5mhoy2h"
    }
   },
   "ujnpbtouhbdvo3f44hrulm35z3dsu42m": {
@@ -8806,7 +9925,7 @@
     "hash": "ujnpbtouhbdvo3f44hrulm35z3dsu42m"
    }
   },
-  "pwfk5llenq2ewc2icinr2jqw24i6dvcv": {
+  "aoaa7wrbgzwkws6jcfnfq2c2bksp63kg": {
    "py-xarray": {
     "version": "0.14.0",
     "arch": {
@@ -8848,27 +9967,27 @@
     },
     "dependencies": {
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pandas": {
-      "hash": "jy62w23jixfo372ifbwt3uvhqx42lbqs",
+      "hash": "mujcjjvtz2s4txnspncnmka74d5gwzpf",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -8876,70 +9995,10 @@
       ]
      }
     },
-    "hash": "rnrjbw73gs2id5kcetfrhehxjmv7lpjn"
+    "hash": "2gfkqb5o5lvkiu2cmdmctow5p27yjrgz"
    }
   },
-  "ocyxh5dxokolias67pcexcqy3zztlsed": {
-   "py-pip": {
-    "version": "19.3",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "zu2gcijlxhatc4uau7tyupxubmytit5u"
-   }
-  },
-  "s2qmeb636ncflpf32snvcxte2my4lues": {
+  "24eks3m4qwehnciasmvebcv4r5jr67nb": {
    "py-seaborn": {
     "version": "0.9.0",
     "arch": {
@@ -8981,41 +10040,41 @@
     },
     "dependencies": {
      "py-matplotlib": {
-      "hash": "4e4dngxwtl7sqensfl3eoonp65l74opx",
+      "hash": "eh6cep2solm3logbkemngpedlsfmno4w",
       "type": [
        "build",
        "run"
       ]
      },
      "py-numpy": {
-      "hash": "4d6aheaoauah6qcuigeuvi2qh5htazqq",
+      "hash": "aunmj6btoby2nsnw5slxt3tu2ltoc2ja",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pandas": {
-      "hash": "jy62w23jixfo372ifbwt3uvhqx42lbqs",
+      "hash": "mujcjjvtz2s4txnspncnmka74d5gwzpf",
       "type": [
        "build",
        "run"
       ]
      },
      "py-scipy": {
-      "hash": "lbf42o2hytlul3plq2gmizdl2tjp56ki",
+      "hash": "scldipp5bfbv7u4vvfasp3bpk7thai7v",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -9023,10 +10082,10 @@
       ]
      }
     },
-    "hash": "ump3bbcacqtho24qpqeem5242fukaar2"
+    "hash": "nkzfvpdhba3pyrgklqz6fdrmcy7innbt"
    }
   },
-  "oeyopsgcimojjkxse4kzrjkjljoo7oiw": {
+  "jp57ifavvstdygsnbsa4rysqvlwc3him": {
    "py-mpi4py": {
     "version": "3.0.3",
     "arch": {
@@ -9068,20 +10127,20 @@
     },
     "dependencies": {
      "openmpi": {
-      "hash": "2b2pygclmwlfs2wiynal6fsodkrxpibs",
+      "hash": "duvvnmhjm7tpl2c7w66gt3i4cv2do5zp",
       "type": [
        "build",
        "link"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -9089,12 +10148,12 @@
       ]
      }
     },
-    "hash": "nfeaff23klmscx5beqsrdxffflhvgm6f"
+    "hash": "c422nlsfzjtymivrat64tphptaxqc253"
    }
   },
-  "5jvd7bjfwj5bxmiekle5rmokzppwot4c": {
+  "e4lj4bnwg3bbdohi3tjtvicu724knu2y": {
    "py-graphviz": {
-    "version": "0.10.1",
+    "version": "0.11.1",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -9136,13 +10195,13 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -9150,12 +10209,12 @@
       ]
      }
     },
-    "hash": "l4ycilmmfix6el5xe43jppjn3us3je3c"
+    "hash": "k3lthztielql2tqvhaysj6zr4bkpareh"
    }
   },
-  "d3x5yl5gsdb3yqyngpk7bv5pyjmp5o3t": {
+  "bekhl2gyl4yiaz4myjdoei45bji2boyt": {
    "py-networkx": {
-    "version": "2.2",
+    "version": "2.4",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu18.04",
@@ -9195,20 +10254,20 @@
     },
     "dependencies": {
      "py-decorator": {
-      "hash": "evwazqugbbtwjy4o4x433wfrjetskw5g",
+      "hash": "tac6ehnu2o4nvn336wg4vcp6nok3qdhd",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -9216,10 +10275,10 @@
       ]
      }
     },
-    "hash": "34t63hkawlcbmszylulxfkhtbcno2k7p"
+    "hash": "66ub4k7ud3ielytgj6mm72ysiupfpm73"
    }
   },
-  "2me6y63yolcdobia7pjxqnvexf3mjr7c": {
+  "ltm3d7k6vzbuekhwc47jht22xdfzjub2": {
    "py-pydot": {
     "version": "1.4.1",
     "arch": {
@@ -9261,27 +10320,27 @@
     },
     "dependencies": {
      "graphviz": {
-      "hash": "m5u2hnvdznmssnxq4hgp6ntyasvnfy26",
+      "hash": "c677r5knhmc4qq7gpg2er73kljbhb73q",
       "type": [
        "build",
        "run"
       ]
      },
      "py-pyparsing": {
-      "hash": "lxg4ivgtsmipujwqtld3y5ntt75l5fgv",
+      "hash": "u7yr3rjvwvcxc2k2uh7ouvrah4nwgere",
       "type": [
        "build",
        "run"
       ]
      },
      "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
       "type": [
        "build"
       ]
      },
      "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
       "type": [
        "build",
        "link",
@@ -9289,10 +10348,10 @@
       ]
      }
     },
-    "hash": "bhkaocqm6bnidhki4xnusqhoxzahwmqq"
+    "hash": "rshgeahxnumfensw2t3vraq7begewr5c"
    }
   },
-  "m5u2hnvdznmssnxq4hgp6ntyasvnfy26": {
+  "c677r5knhmc4qq7gpg2er73kljbhb73q": {
    "graphviz": {
     "version": "2.42.2",
     "arch": {
@@ -9344,25 +10403,25 @@
     },
     "dependencies": {
      "autoconf": {
-      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "hash": "syc6w5fbxvjn3uoriouatcpxoq6crqjs",
       "type": [
        "build"
       ]
      },
      "automake": {
-      "hash": "wjjushicir746gv2tuf6lq7ivg4x3jpe",
+      "hash": "kxel4rgduegh4wq7ohacuu6q5wamhp2g",
       "type": [
        "build"
       ]
      },
      "bison": {
-      "hash": "ln4rkii5idwzyuomjdx657auvicqottz",
+      "hash": "pyvw2o4nbfbd43hqnyyovp6vhoybljly",
       "type": [
        "build"
       ]
      },
      "flex": {
-      "hash": "xua5lpdwbf2l5ew35ji4kepadtpwtl6m",
+      "hash": "bqboxy6ayzvz52wmdccfliatb6ar3o75",
       "type": [
        "build"
       ]
@@ -9390,7 +10449,7 @@
     "hash": "pzkag2fahvy6frteyjambis2n3furc7w"
    }
   },
-  "ln4rkii5idwzyuomjdx657auvicqottz": {
+  "pyvw2o4nbfbd43hqnyyovp6vhoybljly": {
    "bison": {
     "version": "3.4.2",
     "arch": {
@@ -9444,7 +10503,7 @@
       ]
      },
      "help2man": {
-      "hash": "wwn4goxdzuysvfp6ggzj7vsnmjydfzoy",
+      "hash": "waqfcfuehnarij2ixvs3vtuqrcy24jbe",
       "type": [
        "build"
       ]
@@ -9457,7 +10516,7 @@
       ]
      },
      "perl": {
-      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "hash": "ge5tx6zmezr2nsga3iyaqtzfejobjg5j",
       "type": [
        "build"
       ]
@@ -9466,7 +10525,7 @@
     "hash": "seeywrlrw66s65f5l4kzc42zzts7rtbf"
    }
   },
-  "wwn4goxdzuysvfp6ggzj7vsnmjydfzoy": {
+  "waqfcfuehnarij2ixvs3vtuqrcy24jbe": {
    "help2man": {
     "version": "1.47.11",
     "arch": {
@@ -9508,23 +10567,23 @@
     },
     "dependencies": {
      "gettext": {
-      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
+      "hash": "3slsyjwpv3mt75h4vz2qi6yzwrhxo25s",
       "type": [
        "build"
       ]
      },
      "perl": {
-      "hash": "36khieblsvufmgkyn634ra2hnfeofpib",
+      "hash": "ge5tx6zmezr2nsga3iyaqtzfejobjg5j",
       "type": [
        "build",
        "run"
       ]
      }
     },
-    "hash": "dgwrjkwaw45nul7tyhx4qga2lq2qgoov"
+    "hash": "qo4kwoclqlfuerz2gf4xzzztvsmbxrdn"
    }
   },
-  "xua5lpdwbf2l5ew35ji4kepadtpwtl6m": {
+  "bqboxy6ayzvz52wmdccfliatb6ar3o75": {
    "flex": {
     "version": "2.6.4",
     "arch": {
@@ -9573,19 +10632,19 @@
     ],
     "dependencies": {
      "autoconf": {
-      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "hash": "syc6w5fbxvjn3uoriouatcpxoq6crqjs",
       "type": [
        "build"
       ]
      },
      "automake": {
-      "hash": "wjjushicir746gv2tuf6lq7ivg4x3jpe",
+      "hash": "kxel4rgduegh4wq7ohacuu6q5wamhp2g",
       "type": [
        "build"
       ]
      },
      "bison": {
-      "hash": "ln4rkii5idwzyuomjdx657auvicqottz",
+      "hash": "pyvw2o4nbfbd43hqnyyovp6vhoybljly",
       "type": [
        "build"
       ]
@@ -9597,19 +10656,19 @@
       ]
      },
      "findutils": {
-      "hash": "sn5zfzhvcbifb3tjgpwjfmtoznmbiiw4",
+      "hash": "7pofxnerchpfjwjtb7kby6m2x7wkgnij",
       "type": [
        "build"
       ]
      },
      "gettext": {
-      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
+      "hash": "3slsyjwpv3mt75h4vz2qi6yzwrhxo25s",
       "type": [
        "build"
       ]
      },
      "help2man": {
-      "hash": "wwn4goxdzuysvfp6ggzj7vsnmjydfzoy",
+      "hash": "waqfcfuehnarij2ixvs3vtuqrcy24jbe",
       "type": [
        "build"
       ]
@@ -9630,7 +10689,7 @@
     "hash": "5nwlxck3q5er3hwlkakincr3eqg5njei"
    }
   },
-  "sn5zfzhvcbifb3tjgpwjfmtoznmbiiw4": {
+  "7pofxnerchpfjwjtb7kby6m2x7wkgnij": {
    "findutils": {
     "version": "4.6.0",
     "arch": {
@@ -9680,13 +10739,13 @@
     ],
     "dependencies": {
      "autoconf": {
-      "hash": "5px277itsiq4wti6hiuqpmezsnfdmyxe",
+      "hash": "syc6w5fbxvjn3uoriouatcpxoq6crqjs",
       "type": [
        "build"
       ]
      },
      "automake": {
-      "hash": "wjjushicir746gv2tuf6lq7ivg4x3jpe",
+      "hash": "kxel4rgduegh4wq7ohacuu6q5wamhp2g",
       "type": [
        "build"
       ]
@@ -9704,2484 +10763,13 @@
       ]
      },
      "texinfo": {
-      "hash": "x6byguhcmrvapt4usxcx3ai2zl3wg4nq",
+      "hash": "ilvigf6xxi2gvn25kpyojgvpay2hwg7r",
       "type": [
        "build"
       ]
      }
     },
     "hash": "jr5ppyruvdiy3bgzw3w5voks426amzvc"
-   }
-  },
-  "tpqun7ujrvum74434uugjsj35qjcndhk": {
-   "py-pillow": {
-    "version": "7.0.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "freetype": false,
-     "jpeg2000": false,
-     "lcms": false,
-     "tiff": false,
-     "webp": false,
-     "webpmux": false,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "libjpeg-turbo": {
-      "hash": "7dav45ae7tz3ar2wqjfzjtoo3q5ajtny",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "ele6nheyml5ihgsd6phqdtqha7vwwx3x",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "r3z6csuhlbf2yto4yn4b3gzttj2uuwe4",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "v2jmej7ci6zb6xywkj4vwq2a7eut4scw"
-   }
-  },
-  "ejeunclp4xzwas7zp5zne2uzsxixyqzt": {
-   "py-pip": {
-    "version": "19.3",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "25upvh5mqenpi27tblfq3y2vf5wzdboe",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "python": {
-      "hash": "n4zp5h4hxwvfjfzqf43zquzpzfv2wnf2",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "fn5u4vjaqj4jj6j5hocag3bq6z5djfbm"
-   }
-  },
-  "25upvh5mqenpi27tblfq3y2vf5wzdboe": {
-   "py-setuptools": {
-    "version": "41.4.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "python": {
-      "hash": "n4zp5h4hxwvfjfzqf43zquzpzfv2wnf2",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "7j5ijm2cuylbkre3tzp4gwlvek2ynck6"
-   }
-  },
-  "n4zp5h4hxwvfjfzqf43zquzpzfv2wnf2": {
-   "python": {
-    "version": "3.7.4",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "bz2": true,
-     "ctypes": true,
-     "dbm": true,
-     "debug": false,
-     "libxml2": true,
-     "lzma": true,
-     "nis": false,
-     "optimizations": false,
-     "pic": true,
-     "pyexpat": true,
-     "pythoncmd": true,
-     "readline": true,
-     "shared": true,
-     "sqlite3": true,
-     "ssl": true,
-     "tix": false,
-     "tkinter": false,
-     "ucs4": false,
-     "uuid": false,
-     "zlib": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "bzip2": {
-      "hash": "gilrvdyg2bnpefgoht4eavsx5kdrz6l6",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "expat": {
-      "hash": "a6oeelzucv5vv4jfy2jkm5ahwt6vgui3",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "gdbm": {
-      "hash": "krne7lom4z6z2hkxjl7c7sdxrm37j5il",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "gettext": {
-      "hash": "22kfkrxrwxl56sqqtpw6wuq64jwzepwb",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "libffi": {
-      "hash": "mtf3luxbqttr3pmmjdm3ywhxvww7424y",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "ncurses": {
-      "hash": "kzyje5ef5glttsmgsij2bb2jife6ywge",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "openssl": {
-      "hash": "obfix56p5zsgxafqjohwjnjhfgbagwd2",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "pkgconf": {
-      "hash": "sbtu3i2bjg44sfy2xt6xjuhtwzvjibsx",
-      "type": [
-       "build"
-      ]
-     },
-     "readline": {
-      "hash": "mbodyv2vc73vl2mr5qrba3vurdxpbj5l",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "sqlite": {
-      "hash": "h2v3mnfwtua3ex3u6tbo6hyg2jhrwfgd",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "xz": {
-      "hash": "w3ypmrssq5gq25bnctem6nfbtaol4eiw",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "3w4niqa7lwkwjittn2bed37eg2fn6zki"
-   }
-  },
-  "obfix56p5zsgxafqjohwjnjhfgbagwd2": {
-   "openssl": {
-    "version": "1.1.1d",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "systemcerts": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "perl": {
-      "hash": "rympl7qr6nno2yslycqrtyf6ves4zu4w",
-      "type": [
-       "build",
-       "test"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "56yanbd5fynxowlm74hnaiysf2ns2puw"
-   }
-  },
-  "rympl7qr6nno2yslycqrtyf6ves4zu4w": {
-   "perl": {
-    "version": "5.30.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cpanm": true,
-     "shared": true,
-     "threads": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "gdbm": {
-      "hash": "krne7lom4z6z2hkxjl7c7sdxrm37j5il",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "ahfojurex5ytnhtlvyhfia5isq56x6l5"
-   }
-  },
-  "q5npa6mw2efdkmshf2wszjz4e5fr2pl6": {
-   "py-pillow": {
-    "version": "7.0.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "freetype": false,
-     "jpeg2000": false,
-     "lcms": false,
-     "tiff": false,
-     "webp": false,
-     "webpmux": false,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "libjpeg-turbo": {
-      "hash": "ovdr6ifxf34hmtpq5szhlmjffdlomp7z",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "35szhxqs642kzzcr3xmk3xbygiipj6bd"
-   }
-  },
-  "ovdr6ifxf34hmtpq5szhlmjffdlomp7z": {
-   "libjpeg-turbo": {
-    "version": "2.0.3",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "cmake": {
-      "hash": "h5bvqesdj2n6zjjb2viqoeiaeokalt5s",
-      "type": [
-       "build"
-      ]
-     },
-     "nasm": {
-      "hash": "zxx5igiworfma6jhnzfhpfxiij3fvtv5",
-      "type": [
-       "build"
-      ]
-     }
-    },
-    "hash": "issxxtcqxybhqverlf2rmxartxczwpwa"
-   }
-  },
-  "h5bvqesdj2n6zjjb2viqoeiaeokalt5s": {
-   "cmake": {
-    "version": "3.16.2",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "doc": false,
-     "ncurses": true,
-     "openssl": true,
-     "ownlibs": true,
-     "qt": false,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "ncurses": {
-      "hash": "ldlw37in4vy6tmxmclspsmzvf3u2s5ni",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "openssl": {
-      "hash": "xto6ulutxuol3c3dljhizffvi24x7ykn",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "5hy26qudpqzjeq34aaxnaiskjspnilro"
-   }
-  },
-  "ldlw37in4vy6tmxmclspsmzvf3u2s5ni": {
-   "ncurses": {
-    "version": "6.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "symlinks": false,
-     "termlib": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "pkgconf": {
-      "hash": "sbtu3i2bjg44sfy2xt6xjuhtwzvjibsx",
-      "type": [
-       "build"
-      ]
-     }
-    },
-    "hash": "ebxc4ibxcnmvk4hgfrrk4mp4kpizerot"
-   }
-  },
-  "xto6ulutxuol3c3dljhizffvi24x7ykn": {
-   "openssl": {
-    "version": "1.1.1d",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "systemcerts": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "perl": {
-      "hash": "rcidzgnek46ovr4dqpgixoh5i37dnscu",
-      "type": [
-       "build",
-       "test"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "56yanbd5fynxowlm74hnaiysf2ns2puw"
-   }
-  },
-  "rcidzgnek46ovr4dqpgixoh5i37dnscu": {
-   "perl": {
-    "version": "5.30.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cpanm": true,
-     "shared": true,
-     "threads": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "gdbm": {
-      "hash": "cs4qym2rpchmxwcxnywqjvo3wvydqg7m",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "o6oq773jhblfncfxb5t53b3kwdv4un65"
-   }
-  },
-  "cs4qym2rpchmxwcxnywqjvo3wvydqg7m": {
-   "gdbm": {
-    "version": "1.18.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "readline": {
-      "hash": "57vfu64al7d73zsntrchp6mphj2c63xl",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "lehabrulxr3qvelvdhu5vqo3taugf4hr"
-   }
-  },
-  "57vfu64al7d73zsntrchp6mphj2c63xl": {
-   "readline": {
-    "version": "8.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "ncurses": {
-      "hash": "ldlw37in4vy6tmxmclspsmzvf3u2s5ni",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "nhiounfowupvmugazm4rrp3h7gwt4n52"
-   }
-  },
-  "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka": {
-   "py-setuptools": {
-    "version": "41.4.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "wd3vdasw4ktf6pyassxbcolsmwjmkjvu"
-   }
-  },
-  "etlqmano7kce3fds6nhoh2dqzy75bmco": {
-   "python": {
-    "version": "3.7.4",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "bz2": true,
-     "ctypes": true,
-     "dbm": true,
-     "debug": false,
-     "libxml2": true,
-     "lzma": true,
-     "nis": false,
-     "optimizations": false,
-     "pic": true,
-     "pyexpat": true,
-     "pythoncmd": true,
-     "readline": true,
-     "shared": true,
-     "sqlite3": true,
-     "ssl": true,
-     "tix": false,
-     "tkinter": false,
-     "ucs4": false,
-     "uuid": false,
-     "zlib": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "bzip2": {
-      "hash": "gilrvdyg2bnpefgoht4eavsx5kdrz6l6",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "expat": {
-      "hash": "a6oeelzucv5vv4jfy2jkm5ahwt6vgui3",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "gdbm": {
-      "hash": "cs4qym2rpchmxwcxnywqjvo3wvydqg7m",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "gettext": {
-      "hash": "arnj7xi5a7ss6mridnmp4ec2cbhv5nbe",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "libffi": {
-      "hash": "mtf3luxbqttr3pmmjdm3ywhxvww7424y",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "ncurses": {
-      "hash": "ldlw37in4vy6tmxmclspsmzvf3u2s5ni",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "openssl": {
-      "hash": "xto6ulutxuol3c3dljhizffvi24x7ykn",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "pkgconf": {
-      "hash": "sbtu3i2bjg44sfy2xt6xjuhtwzvjibsx",
-      "type": [
-       "build"
-      ]
-     },
-     "readline": {
-      "hash": "57vfu64al7d73zsntrchp6mphj2c63xl",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "sqlite": {
-      "hash": "filfpdee33xrfx7wjfr2qrjfdv3r3qk2",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "xz": {
-      "hash": "w3ypmrssq5gq25bnctem6nfbtaol4eiw",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "24d5l4jl5mhjyzvok4qfxakfnwkhv32m"
-   }
-  },
-  "arnj7xi5a7ss6mridnmp4ec2cbhv5nbe": {
-   "gettext": {
-    "version": "0.20.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "bzip2": true,
-     "curses": true,
-     "git": true,
-     "libunistring": false,
-     "libxml2": true,
-     "tar": true,
-     "xz": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "bzip2": {
-      "hash": "gilrvdyg2bnpefgoht4eavsx5kdrz6l6",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "libxml2": {
-      "hash": "gy5k3u7rw2wdhnnfgbjfvgjjsbyart4j",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "ncurses": {
-      "hash": "ldlw37in4vy6tmxmclspsmzvf3u2s5ni",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "tar": {
-      "hash": "yhc3hbs3u7rce6vko2v22snaejynl57s",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "xz": {
-      "hash": "w3ypmrssq5gq25bnctem6nfbtaol4eiw",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "acnci6ht5eay7z63oizqssqikln3zsl3"
-   }
-  },
-  "filfpdee33xrfx7wjfr2qrjfdv3r3qk2": {
-   "sqlite": {
-    "version": "3.30.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "column_metadata": false,
-     "fts": true,
-     "functions": false,
-     "rtree": false,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "readline": {
-      "hash": "57vfu64al7d73zsntrchp6mphj2c63xl",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "zlib": {
-      "hash": "sq36btnujmsj5oe5jy4ailwkzwc3v7el",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "l2vgvuzlwejxf535emjihhthlm5i6se7"
-   }
-  },
-  "z3hxrazc53ms2wsmbz2vwu6p6bgfm2af": {
-   "py-seaborn": {
-    "version": "0.9.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-matplotlib": {
-      "hash": "4jwuirf4nmvpdrblyzxpfa7572g5vlud",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-numpy": {
-      "hash": "kss5kr2m6krney6iaxuiqzn7mhe5nk3f",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-pandas": {
-      "hash": "ljnf6j7iuu4auwu3gitgq5fjtgtwmf2k",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-scipy": {
-      "hash": "t6z7k3qdkdy2bhlfu3fpawknd2x3kbda",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "dt5kkozlnw6b3ntklgtvrltozhro6wz4"
-   }
-  },
-  "4jwuirf4nmvpdrblyzxpfa7572g5vlud": {
-   "py-matplotlib": {
-    "version": "3.1.3",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "animation": false,
-     "backend": "agg",
-     "image": true,
-     "latex": false,
-     "movies": false,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "freetype": {
-      "hash": "cakujabb67ecazbstlwblp5bfe5ht6ry",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "libpng": {
-      "hash": "7nvpatuegxgdaxs7ektleu374pjx642d",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "pkgconf": {
-      "hash": "sbtu3i2bjg44sfy2xt6xjuhtwzvjibsx",
-      "type": [
-       "build"
-      ]
-     },
-     "py-cycler": {
-      "hash": "dvz3csp3v5k4za5qaa42yjrrt6342r4q",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-kiwisolver": {
-      "hash": "kidpldooqfacjwb3ykhogdcg4rnpi27e",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-numpy": {
-      "hash": "kss5kr2m6krney6iaxuiqzn7mhe5nk3f",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-pillow": {
-      "hash": "q5npa6mw2efdkmshf2wszjz4e5fr2pl6",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-pyparsing": {
-      "hash": "ucxttswscf7taex5o7vagavbycv734le",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-python-dateutil": {
-      "hash": "bxyjn64u5iyzwenq5cmnfnloeyg3se6u",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "3utt7hv6zwxs4qu3ao6kjjccuzb2kpxz"
-   }
-  },
-  "dvz3csp3v5k4za5qaa42yjrrt6342r4q": {
-   "py-cycler": {
-    "version": "0.10.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "py-six": {
-      "hash": "cwhkaortprydly4nps3ugk5iprsmvtz6",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "k523wmreu6esguqlnxns4agak45ailth"
-   }
-  },
-  "cwhkaortprydly4nps3ugk5iprsmvtz6": {
-   "py-six": {
-    "version": "1.12.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "sarthtytzk34e663x7ns7veueqiyrmay"
-   }
-  },
-  "kidpldooqfacjwb3ykhogdcg4rnpi27e": {
-   "py-kiwisolver": {
-    "version": "1.1.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "7l3js45bz3vpul7cuqrnwlrnaplgyh32"
-   }
-  },
-  "kss5kr2m6krney6iaxuiqzn7mhe5nk3f": {
-   "py-numpy": {
-    "version": "1.18.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "blas": true,
-     "lapack": true,
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "openblas": {
-      "hash": "3k5vvie6shao3dtfian4mc3fj4gqkfaw",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "py-cython": {
-      "hash": "x2humlkii5azqf3xvwryuzr7xx2npcxd",
-      "type": [
-       "build"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "4hiurqojywxjx2hbnb3mrylon7tztbza"
-   }
-  },
-  "3k5vvie6shao3dtfian4mc3fj4gqkfaw": {
-   "openblas": {
-    "version": "0.3.9",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "consistentFPCSR": false,
-     "ilp64": false,
-     "pic": true,
-     "shared": true,
-     "threads": "none",
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "hash": "3k5vvie6shao3dtfian4mc3fj4gqkfaw"
-   }
-  },
-  "x2humlkii5azqf3xvwryuzr7xx2npcxd": {
-   "py-cython": {
-    "version": "0.29.14",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "fmmalxtounz4c2cb4byc2uwgnn7np4iy"
-   }
-  },
-  "ucxttswscf7taex5o7vagavbycv734le": {
-   "py-pyparsing": {
-    "version": "2.4.2",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "43bjqdifsrngtlrlfzpxuzqabspxzjib"
-   }
-  },
-  "bxyjn64u5iyzwenq5cmnfnloeyg3se6u": {
-   "py-python-dateutil": {
-    "version": "2.8.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "py-setuptools-scm": {
-      "hash": "cde2ngqhds2vky2dp725mqhvsxhffvf6",
-      "type": [
-       "build"
-      ]
-     },
-     "py-six": {
-      "hash": "cwhkaortprydly4nps3ugk5iprsmvtz6",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "mpt72c3nqkqe74ybpll2nqkgpkiqxdtu"
-   }
-  },
-  "cde2ngqhds2vky2dp725mqhvsxhffvf6": {
-   "py-setuptools-scm": {
-    "version": "3.3.3",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "w6pxg3zvvutzothlybbgrpqackcqxwhl"
-   }
-  },
-  "ljnf6j7iuu4auwu3gitgq5fjtgtwmf2k": {
-   "py-pandas": {
-    "version": "0.25.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-bottleneck": {
-      "hash": "5ajq7yclagk6hqnmdqmpbrg3o52arm4i",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-numexpr": {
-      "hash": "uo443okrlgumru5hi56wsxxcyf4muqd5",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-numpy": {
-      "hash": "kss5kr2m6krney6iaxuiqzn7mhe5nk3f",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-python-dateutil": {
-      "hash": "bxyjn64u5iyzwenq5cmnfnloeyg3se6u",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-pytz": {
-      "hash": "gswbiyjahi2myg5ibf5ns6v6dfi2x2ko",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "laxkejraf5rftuzksni4nh7faiz2ojwt"
-   }
-  },
-  "5ajq7yclagk6hqnmdqmpbrg3o52arm4i": {
-   "py-bottleneck": {
-    "version": "1.2.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-numpy": {
-      "hash": "kss5kr2m6krney6iaxuiqzn7mhe5nk3f",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "dzvuua7rtzc5j754zwbbqslwbiexlpyl"
-   }
-  },
-  "uo443okrlgumru5hi56wsxxcyf4muqd5": {
-   "py-numexpr": {
-    "version": "2.7.0",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-numpy": {
-      "hash": "kss5kr2m6krney6iaxuiqzn7mhe5nk3f",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "suuqnxi5djot2hjb5rim5gcodpulr4qa"
-   }
-  },
-  "gswbiyjahi2myg5ibf5ns6v6dfi2x2ko": {
-   "py-pytz": {
-    "version": "2019.3",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "ucufdps2gi76shth24n3rccvb7tlohua"
-   }
-  },
-  "t6z7k3qdkdy2bhlfu3fpawknd2x3kbda": {
-   "py-scipy": {
-    "version": "1.4.1",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "openblas": {
-      "hash": "3k5vvie6shao3dtfian4mc3fj4gqkfaw",
-      "type": [
-       "build",
-       "link"
-      ]
-     },
-     "py-numpy": {
-      "hash": "kss5kr2m6krney6iaxuiqzn7mhe5nk3f",
-      "type": [
-       "build",
-       "run"
-      ]
-     },
-     "py-pybind11": {
-      "hash": "2kzja6dleq5itd5twakz47x2a742o4vr",
-      "type": [
-       "build"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link",
-       "run"
-      ]
-     }
-    },
-    "hash": "bc35phnqu5zjmwrd72rdrnzsgrbbcd6g"
-   }
-  },
-  "2kzja6dleq5itd5twakz47x2a742o4vr": {
-   "py-pybind11": {
-    "version": "2.4.3",
-    "arch": {
-     "platform": "linux",
-     "platform_os": "ubuntu18.04",
-     "target": {
-      "name": "sandybridge",
-      "vendor": "GenuineIntel",
-      "features": [
-       "aes",
-       "avx",
-       "mmx",
-       "pclmulqdq",
-       "popcnt",
-       "sse",
-       "sse2",
-       "sse4_1",
-       "sse4_2",
-       "ssse3"
-      ],
-      "generation": 0,
-      "parents": [
-       "westmere"
-      ]
-     }
-    },
-    "compiler": {
-     "name": "gcc",
-     "version": "9.1.0"
-    },
-    "namespace": "builtin",
-    "parameters": {
-     "build_type": "RelWithDebInfo",
-     "cflags": [],
-     "cppflags": [],
-     "cxxflags": [],
-     "fflags": [],
-     "ldflags": [],
-     "ldlibs": []
-    },
-    "dependencies": {
-     "cmake": {
-      "hash": "h5bvqesdj2n6zjjb2viqoeiaeokalt5s",
-      "type": [
-       "build"
-      ]
-     },
-     "py-setuptools": {
-      "hash": "oer3o4ubgp2zcbq7c7cbcmuhaleu4nka",
-      "type": [
-       "build"
-      ]
-     },
-     "python": {
-      "hash": "etlqmano7kce3fds6nhoh2dqzy75bmco",
-      "type": [
-       "build",
-       "link"
-      ]
-     }
-    },
-    "hash": "ivrglhpiwz4rahxoohbqjubshu2bfkyu"
    }
   }
  }
