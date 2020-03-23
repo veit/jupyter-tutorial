@@ -95,6 +95,10 @@
   {
    "hash": "r2xorezvepkc352dxyjkgtsez3tg65jw",
    "spec": "py-memory-profiler ^python@3.7.4%gcc@9.1.0"
+  },
+  {
+   "hash": "rvdyq3ys2m6jbxhsxpqaewvsbmkgle6a",
+   "spec": "py-beautifulsoup4 ^python@3.7.4%gcc@9.1.0"
   }
  ],
  "concrete_specs": {
@@ -11045,6 +11049,131 @@
      }
     },
     "hash": "meihx6zwephvgxfyuun3ttg6ixiankth"
+   }
+  },
+  "rvdyq3ys2m6jbxhsxpqaewvsbmkgle6a": {
+   "py-beautifulsoup4": {
+    "version": "4.8.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "py-soupsieve": {
+      "hash": "fuz2jse3ve7n6l7bcufxvzczxg6yzze5",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "bxcgy5ypajln2vqjvnlenbwl3y245hre"
+   }
+  },
+  "fuz2jse3ve7n6l7bcufxvzczxg6yzze5": {
+   "py-soupsieve": {
+    "version": "1.9.3",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "trpfm25fcodwx7oacxf7qs77f6dfgrqc"
    }
   }
  }

@@ -13,7 +13,8 @@ spack:
       ^python@3.7.4%gcc@9.1.0, py-xarray ^python@3.7.4%gcc@9.1.0, py-seaborn ^python@3.7.4%gcc@9.1.0,
     py-mpi4py ^python@3.7.4%gcc@9.1.0, py-graphviz ^python@3.7.4%gcc@9.1.0, py-networkx
       ^python@3.7.4%gcc@9.1.0, py-pydot ^python@3.7.4%gcc@9.1.0, py-selenium ^python@3.7.4%gcc@9.1.0,
-    py-line-profiler ^python@3.7.4%gcc@9.1.0, py-memory-profiler ^python@3.7.4%gcc@9.1.0]
+    py-line-profiler ^python@3.7.4%gcc@9.1.0, py-memory-profiler ^python@3.7.4%gcc@9.1.0,
+    py-beautifulsoup4 ^python@3.7.4%gcc@9.1.0]
   view: true
   mirrors: {}
   repos: []
