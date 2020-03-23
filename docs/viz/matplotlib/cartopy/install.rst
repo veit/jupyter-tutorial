@@ -1,19 +1,33 @@
 Cartopy-Installation
 ====================
 
-Anforderungen
--------------
+Mit :doc:`/productive/envs/spack/index` könnt ihr Cartopy in eurem Kernel
+bereitstellen, z.B. mit:
 
-* `NumPy <http://www.numpy.org/>`_ ≥ 1.6.0
-* `shapely <https://shapely.readthedocs.io/>`_ ≥ 1.5.6 für `GEOS <https://trac.osgeo.org/geos/>`_
-* `fiona <https://fiona.readthedocs.io/>`_ für `GDAL <https://www.gdal.org/>`_
-* `pyproj <https://github.com/jswhit/pyproj>`_ für `PROJ.4 <https://proj.org/>`_ 4.9.0
+.. code-block:: console
+
+    $ spack env activate python-374
+    $ spack install py-cartopy ^python@3.7.4%gcc@9.1.0
+
+Dies installiert Cartopy mit Unterstützung von:
+
+* `epsg <_epsg.io>`_
+* `Open Geospatial Consortium (OGC) <Geospatial Consortium (OGC>`_
+* `Plot-Funktionalität
+
+Zusätzlich werden folgende Pakete mitinstalliert:
+
+* `gdal <https://gdal.org/>`_
+* :doc:`/viz/matplotlib/index`
+* `OWSLib <https://geopython.github.io/OWSLib/>`_
+* `Pillow <https://pillow.readthedocs.io/>`_
+* `pyepsg <https://pyepsg.readthedocs.io/>`_
+* `PyShp <https://github.com/GeospatialPython/pyshp>`_
+* `shapely <https://shapely.readthedocs.io/>`_
 * `six <https://pythonhosted.org/six>`_
 
-OS
---
-
-Debian≥9 (Stretch):
+Alternativ könnt ihr Cartopy auch mit anderen Paketmanagern installieren, z.B.
+für  Debian≥9 (Stretch) mit:
 
 .. code-block:: console
 
@@ -21,29 +35,26 @@ Debian≥9 (Stretch):
     $ sudo apt install libproj-dev
     $ sudo apt install libgeos-dev
 
-Mac OS X:
+Oder für Mac OS X mit:
 
 .. code-block:: console
 
     $ brew install proj
     $ brew install geos
 
-Kernel
-------
-
-Anschließend könnt ihr Cartopy für euren Kernel installieren mit:
+Anschließend kann Cartopy für euren Kernel installiert werden, z.B. mit:
 
 .. code-block:: console
 
     $ export PIP_NO_BINARY=:shapely:
     $ pipenv install cython numpy cartopy
 
-Für die :doc:`examples` benötigt ihr zusätzlich die folgenden beiden
+Für die :doc:`examples` benötigt ihr dann zusätzlich die folgenden beiden
 Python-Pakete:
 
 .. code-block:: console
 
-    $ pipenv install python -m pip install matplotlib scipy
+    $ pipenv install matplotlib scipy
 
 Optionale Anforderungen
 -----------------------
