@@ -28,7 +28,7 @@ Installation
 
    .. code-block:: console
 
-    $  pip3 install --user pipenv
+    $  python3 -m pip install --user pipenv
 
    Dies installiert Pipenv in ``USER_BASE``.
 

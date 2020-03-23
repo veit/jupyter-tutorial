@@ -65,7 +65,7 @@ versehentlich systemweite Pakete überschrieben werden:
 
 .. code-block:: console
 
-    $ pip3 install --user pipenv
+    $ python3 -m pip install --user pipenv
       Downloading pipenv-2018.7.1-py3-none-any.whl (5.0MB): 5.0MB downloaded
     Requirement already satisfied (use --upgrade to upgrade): virtualenv in /usr/lib/python3/dist-packages (from pipenv)
     Installing collected packages: pipenv, certifi, pip, setuptools, virtualenv-clone
