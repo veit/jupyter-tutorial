@@ -87,6 +87,10 @@
   {
    "hash": "ntl6ve6vm2q7pgfawi3fdwcqx55nzn66",
    "spec": "py-selenium ^python@3.7.4%gcc@9.1.0"
+  },
+  {
+   "hash": "m2kfslpnus67k4qwpkdvbueice62jhxe",
+   "spec": "py-line-profiler ^python@3.7.4%gcc@9.1.0"
   }
  ],
  "concrete_specs": {
@@ -10840,6 +10844,78 @@
      }
     },
     "hash": "awqlr7fxcjmrxmrafn77fum3jmyhewrc"
+   }
+  },
+  "m2kfslpnus67k4qwpkdvbueice62jhxe": {
+   "py-line-profiler": {
+    "version": "2.1.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-cython": {
+      "hash": "4f5yeu5gzimrfdhxft7qkcus6kinhh7e",
+      "type": [
+       "build"
+      ]
+     },
+     "py-ipython": {
+      "hash": "xufhct2xecmzq7vfcionjbwbpoa3ta5v",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "e2md4cqc4zdehbynjndyp5ixkzy3qyz3",
+      "type": [
+       "build"
+      ]
+     },
+     "python": {
+      "hash": "rok4bp4j2jzsj2x4dko3cqhkbv644lz4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "47qq4wgobxethxasfixwqyww2gh4yk4r"
    }
   }
  }
