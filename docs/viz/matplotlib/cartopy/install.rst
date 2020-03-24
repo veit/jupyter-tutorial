@@ -13,7 +13,7 @@ Dies installiert Cartopy mit Unterstützung von:
 
 * `epsg <_epsg.io>`_
 * `Open Geospatial Consortium (OGC) <Geospatial Consortium (OGC>`_
-* `Plot-Funktionalität
+* Plot-Funktionalität
 
 Zusätzlich werden folgende Pakete mitinstalliert:
 
