@@ -15,7 +15,7 @@ spack:
       ^python@3.7.4%gcc@9.1.0, py-selenium ^python@3.7.4%gcc@9.1.0, py-line-profiler
       ^python@3.7.4%gcc@9.1.0, py-memory-profiler ^python@3.7.4%gcc@9.1.0, py-beautifulsoup4
       ^python@3.7.4%gcc@9.1.0, py-geopandas ^gdal+python ^python@3.7.4%gcc@9.1.0,
-    py-cartopy ^python@3.7.4%gcc@9.1.0]
+    py-cartopy ^python@3.7.4%gcc@9.1.0, py-autopep8 ^python@3.7.4%gcc@9.1.0]
   view: true
   mirrors: {}
   repos: []
