@@ -10,18 +10,12 @@ ploy = {version = "*",editable = true}
 pythreejs = "*"
 ipyvolume = "*"
 ipyleaflet = "*"
-autopep8 = "*"
-geopandas = "*"
 panel = "*"
 holoviews = {extras = ["recommended"],version = "*"}
 hvplot = "*"
-selenium = "*"
 ipyvuetify = "*"
 bqplot = "*"
 py-heat-magic = "*"
-cython = "*"
-line-profiler = {git = "https://github.com/rkern/line_profiler.git"}
-memory-profiler = "*"
 ipympl = "*"
 qgrid = "*"
 pandas-datareader = "*"
@@ -31,11 +25,7 @@ geojson = "*"
 ipyparallel = "*"
 ipycanvas = "*"
 datashader = "*"
-bokeh = "*"
-pillow = "*"
-beautifulsoup4 = "*"
 plotnine = {extras = ["all"],version = "*"}
-pandas = "*"
 pdvega = "*"
 
 [requires]
