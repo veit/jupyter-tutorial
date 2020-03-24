@@ -1,7 +1,17 @@
 GeoPandas-Installation
 ======================
 
-Ihr könnt  GeoPandas installieren mit:
+Mit :doc:`/productive/envs/spack/index` könnt ihr GeoPandas in eurem Kernel
+bereitstellen, z.B. mit:
+
+.. code-block:: console
+
+    $ spack env activate python-374
+    $ spack install py-geopandas ^python@3.7.4%gcc@9.1.0
+
+
+Alternativ könnt ihr GeoPandas auch mit anderen Paketmanagern installieren, z.B.
+mit :doc:`/productive/envs/pipenv/index`:
 
 .. code-block:: console
 

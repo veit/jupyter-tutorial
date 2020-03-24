@@ -21,7 +21,17 @@ Interfaces zur Verfügung:
 Installation
 ------------
 
-Bokeh lässt sich einfach installieren mit::
+Mit :doc:`/productive/envs/spack/index` könnt ihr Bokeh in eurem Kernel
+bereitstellen, z.B. mit:
+
+.. code-block:: console
+
+    $ spack env activate python-374
+    $ spack install py-bokeh ^python@3.7.4%gcc@9.1.0
+
+Alternativ könnt ihr Bokeh auch mit anderen Paketmanagern installieren, z.B.
+
+.. code-block:: console
 
     $ pipenv install bokeh
 
