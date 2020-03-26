@@ -27,6 +27,11 @@ ipycanvas = "*"
 datashader = "*"
 plotnine = {extras = ["all"],version = "*"}
 pdvega = "*"
+intake = "*"
+intake-parquet = "*"
+s3fs = "*"
+python-snappy = "*"
+pyviz-comms = "*"
 
 [requires]
 python_version = "3.7.4"
