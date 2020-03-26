@@ -111,6 +111,10 @@
   {
    "hash": "rigewn3ig5w4bbhzgobagpi32mjxy7g4",
    "spec": "py-autopep8 ^python@3.7.4%gcc@9.1.0"
+  },
+  {
+   "hash": "gpgoqjwwh5uujdhb3bt76kshwbjdcy53",
+   "spec": "snappy"
   }
  ],
  "concrete_specs": {
@@ -11697,6 +11701,66 @@
      }
     },
     "hash": "poij2aw2rafb43wbvowiz2mxnnorkiom"
+   }
+  },
+  "gpgoqjwwh5uujdhb3bt76kshwbjdcy53": {
+   "snappy": {
+    "version": "1.1.7",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu18.04",
+     "target": {
+      "name": "sandybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "westmere"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "9.1.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "build_type": "RelWithDebInfo",
+     "patches": [
+      "c9cfecb1f7a623418590cf4e00ae7d308d1c3faeb15046c2e5090e38221da7cd"
+     ],
+     "pic": true,
+     "shared": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "patches": [
+     "c9cfecb1f7a623418590cf4e00ae7d308d1c3faeb15046c2e5090e38221da7cd"
+    ],
+    "dependencies": {
+     "cmake": {
+      "hash": "243lbtvz3fhhggrmvg6lajkrvj3tot7f",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "v2uozqqxm5ekjmhqknriwk6hcr4kk32q"
    }
   }
  }
