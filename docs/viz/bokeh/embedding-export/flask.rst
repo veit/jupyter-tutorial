@@ -1,6 +1,5 @@
-==================
-Embedding in Flask
-==================
+Bokeh-Plots in Flask einbinden
+==============================
 
 Examplarisch betten wir Bokeh-Plots in das `Flask
 <http://flask.pocoo.org/>`_-Framework ein. 
