@@ -1,8 +1,16 @@
 Matplotlib-Installation
 =======================
 
-Ihr könnt entweder die Python-Kernel des JupyterHub verwenden oder Matplotlib
-lokal installieren mit:
+Mit :doc:`/productive/envs/spack/index` könnt ihr Matplotlib in eurem Kernel
+bereitstellen, z.B. mit:
+
+.. code-block:: console
+
+    $ spack env activate python-374
+    $ spack install py-matplotlib ^python@3.7.4%gcc@9.1.0
+
+Alternativ könnt ihr Matplotlib auch mit anderen Paketmanagern installieren, z.B.
+mit :doc:`/productive/envs/pipenv/index`:
 
 .. code-block:: console
 
