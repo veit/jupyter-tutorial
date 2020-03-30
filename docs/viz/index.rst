@@ -19,7 +19,7 @@ Anschließend gebe ich eine praktische Einführung in die meisten Bibliotheken.
     :hidden:
 
     overview
-    rw-geospatial-data
+    geospatial-data
     matplotlib/index
     vega/index
     bokeh/index
