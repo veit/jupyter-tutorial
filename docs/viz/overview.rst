@@ -362,6 +362,12 @@ Altair seit mindestens einem Jahr nicht mehr weiterentwickelt wurden (Stand:
     "`ipyleaflet <https://github.com/jupyter-widgets/ipyleaflet>`_",".. image:: https://raster.shields.io/github/stars/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/contributors/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/commit-activity/y/jupyter-widgets/ipyleaflet",".. image:: https://raster.shields.io/github/license/jupyter-widgets/ipyleaflet"
     "`ipympl <https://github.com/matplotlib/jupyter-matplotlib>`_",".. image:: https://raster.shields.io/github/stars/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/contributors/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/commit-activity/y/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/license/matplotlib/jupyter-matplotlib"
 
+Weitere Informationen über Lizenzen erhaltet ihr in:
+
+* `The Whys and Hows of Licensing Scientific Code
+  <https://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/>`_
+* `Choose an open source license <https://choosealicense.com/>`_
+
 Diagrammtypen
 -------------
 
