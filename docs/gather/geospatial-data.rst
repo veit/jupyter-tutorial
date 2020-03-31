@@ -28,26 +28,10 @@ Lesen und Schreiben
 Berechnen
 ---------
 
-Neben :doc:`matplotlib/geopandas/index`, das Pandas um Operationen für
+Neben :doc:`../viz/matplotlib/geopandas/index`, das Pandas um Operationen für
 geometrische Typen wie Polygone und Punkte erweitert, gibt es auch
 `whitebox-python <https://github.com/giswqs/whitebox-python>`_, das auf den
 `WhiteboxTools <https://jblindsay.github.io/ghrg/WhiteboxTools/index.html>`_
 basiert und Algorithmen für Entfernungsberechnungen, Rasterklassifizierung,
 Bildoptimierungen und hydrologische Analysen enthält.
-
-Visualisieren
--------------
-
-:doc:`matplotlib/index`
-    Plotten und Visualisieren
-:doc:`matplotlib/cartopy/index`
-     Erstellung von Geodatenkarten mit Vektor- und Rasterdaten in zahlreichen
-     Projektionen.
-:doc:`bokeh/integration/datashader`
-     Grafik-Pipeline-System zur Visualisierung von mehreren Terrabyte-großen
-     Daten
-`Geoplot <https://residentmario.github.io/geoplot/index.html>`_
-     Raster/Vektor-Kartografie-Plotbibliothek
-`descartes <https://pypi.org/project/descartes/>`_
-     Plotten Shapely- oder GeoJSON-ähnlicher geometrische Objekte mit matplotlib.
 
