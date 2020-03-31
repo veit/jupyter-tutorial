@@ -6,7 +6,7 @@ atpublic==1.0
 attrs==19.1.0
 Babel==2.8.0
 backcall==0.1.0
-bleach==3.1.2
+bleach==3.1.4
 bokeh==1.4.0
 Bottleneck==1.2.1
 bqplot==0.11.8
