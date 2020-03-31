@@ -8,7 +8,8 @@ Technologien
    :layout: neato
 
     graph python_visualisation_landscape {
-        graph [fontname = "Calibri", fontsize="16", overlap=false];
+        
+    graph [fontname = "Calibri", fontsize="16", overlap=false];
         node [fontname = "Calibri", fontsize="16", style="bold", penwidth="5px"];
         edge [fontname = "Calibri", fontsize="16", style="bold", penwidth="5px"];
         tooltip="Python Visualisation Landscape";
@@ -54,6 +55,18 @@ Technologien
             color="#BF80FF",
             target="_top",
             href="../viz/matplotlib/geopandas/index.html"]
+        geoplot [
+            label="Geoplot",
+            tooltip="High-level-Bibliothek zum Plotten von Geodaten",
+            color="#BF80FF",
+            target="_top",
+            href="https://residentmario.github.io/geoplot/index.html"]
+        descartes [
+            label="descartes",
+            tooltip="Shapely- und GeoJSON-ähnliche Objekte als Matplotlib-Pfade",
+            color="#BF80FF",
+            target="_top",
+            href="https://pypi.org/project/descartes"]
         seaborn [
             label="seaborn",
             tooltip="High-level-Datenvisualisierung\nbasierend auf Matplotlib",
@@ -116,6 +129,8 @@ Technologien
             href="../viz/matplotlib/yt.html"]
         mpl -- pandas [color="#BF80FF"]
         pandas  -- geopandas [color="#BF80FF"]
+        mpl -- geoplot [color="#BF80FF"]
+        mpl -- descartes [color="#BF80FF"]
         mpl -- seaborn [color="#BF80FF"]
         mpl -- ggpy [color="#BF80FF"]
         mpl -- plotnine [color="#BF80FF"]
@@ -330,6 +345,7 @@ Altair seit mindestens einem Jahr nicht mehr weiterentwickelt wurden (Stand:
     "`Matplotlib <https://github.com/matplotlib/matplotlib>`_",".. image:: https://raster.shields.io/github/stars/matplotlib/matplotlib",".. image:: https://raster.shields.io/github/contributors/matplotlib/matplotlib",".. image:: https://raster.shields.io/github/commit-activity/y/matplotlib/matplotlib",".. image:: https://raster.shields.io/github/license/matplotlib/matplotlib"
     "`pandas <https://github.com/pandas-dev/pandas>`_",".. image:: https://raster.shields.io/github/stars/pandas-dev/pandas",".. image:: https://raster.shields.io/github/contributors/pandas-dev/pandas",".. image:: https://raster.shields.io/github/commit-activity/y/pandas-dev/pandas",".. image:: https://raster.shields.io/github/license/pandas-dev/pandas"
     "`geopandas <https://github.com/geopandas/geopandas>`_",".. image:: https://raster.shields.io/github/stars/geopandas/geopandas",".. image:: https://raster.shields.io/github/contributors/geopandas/geopandas",".. image:: https://raster.shields.io/github/commit-activity/y/geopandas/geopandas",".. image:: https://raster.shields.io/github/license/geopandas/geopandas"
+    "`geoplot <https://github.com/ResidentMario/geoplot/>`_",".. image:: https://raster.shields.io/github/stars/ResidentMario/geoplot",".. image:: https://raster.shields.io/github/contributors/ResidentMario/geoplot",".. image:: https://raster.shields.io/github/commit-activity/y/ResidentMario/geoplot",".. image:: https://raster.shields.io/github/license/ResidentMario/geoplot"
     "`seaborn <https://github.com/mwaskom/seaborn>`_",".. image:: https://raster.shields.io/github/stars/mwaskom/seaborn",".. image:: https://raster.shields.io/github/contributors/mwaskom/seaborn",".. image:: https://raster.shields.io/github/commit-activity/y/mwaskom/seaborn",".. image:: https://raster.shields.io/github/license/mwaskom/seaborn"
     "`ggpy <https://github.com/yhat/ggpy>`_",".. image:: https://raster.shields.io/github/stars/yhat/ggpy",".. image:: https://raster.shields.io/github/contributors/yhat/ggpy",".. image:: https://raster.shields.io/github/commit-activity/y/yhat/ggpy",".. image:: https://raster.shields.io/github/license/yhat/ggpy"
     "`plotnine <https://github.com/has2k1/plotnine>`_",".. image:: https://raster.shields.io/github/stars/has2k1/plotnine",".. image:: https://raster.shields.io/github/contributors/has2k1/plotnine",".. image:: https://raster.shields.io/github/commit-activity/y/has2k1/plotnine",".. image:: https://raster.shields.io/github/license/has2k1/plotnine"
@@ -396,9 +412,13 @@ Diagrammtypen
 * Geografische Daten
 
   * :doc:`matplotlib/cartopy/index`
+  * `Geoplot <https://residentmario.github.io/geoplot/index.html>`_
+  * `descartes <https://pypi.org/project/descartes/>`_
   * `GeoViews <https://geoviews.org/>`_
   * :doc:`js/ipyleaflet`
   * `Plotly <https://github.com/plotly/plotly.py>`_
+  * :doc:`bokeh/integration/datashader`
+
 
 * Netzwerke/Graphen
 

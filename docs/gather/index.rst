@@ -18,4 +18,5 @@ Verteilen von Daten verwendet werden.
     module.ipynb
     html.ipynb
     intake/index
+    geospatial-data
 
