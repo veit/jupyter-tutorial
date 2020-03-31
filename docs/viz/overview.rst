@@ -395,7 +395,7 @@ Diagrammtypen
 
 * Geografische Daten
 
-  * :doc:`matplotlib/cartopy`
+  * :doc:`matplotlib/cartopy/index`
   * `GeoViews <https://geoviews.org/>`_
   * :doc:`js/ipyleaflet`
   * `Plotly <https://github.com/plotly/plotly.py>`_
