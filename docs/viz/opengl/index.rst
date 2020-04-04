@@ -9,7 +9,7 @@ Python-Bibliotheken zur Verfügung, die OpenGL nutzen.
 
 .. seealso::
 
-    * Nicolas P. Rougier: `Python & OpenGL for Scientific Visualization
+    * `Nicolas P. Rougier: Python & OpenGL for Scientific Visualization
       <https://www.labri.fr/perso/nrougier/python-opengl/>`_
 
 .. toctree::
