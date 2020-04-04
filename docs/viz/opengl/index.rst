@@ -7,6 +7,11 @@ API-Spezifikation für 2D- und 3D-Grafikanwendungen. Neben `Vaex
 <http://vispy.org/>`_ und `glumpy <https://glumpy.github.io/>`_ gleich drei
 Python-Bibliotheken zur Verfügung, die OpenGL nutzen.
 
+.. seealso::
+
+    * `Python & OpenGL for Scientific Visualization
+      <https://www.labri.fr/perso/nrougier/python-opengl/>`_
+
 .. toctree::
     :titlesonly:
     :maxdepth: 0
