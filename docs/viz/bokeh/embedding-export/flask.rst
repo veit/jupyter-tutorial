@@ -128,14 +128,6 @@ Examplarisch betten wir Bokeh-Plots in das `Flask
         from threading import Thread
         Thread(target=bk_worker).start()
 
-      .. note::
-        In dieser Konfiguration kann nur ein Prozess gestartet werden.
-
-        Sollen mehrere Prozesse gestartet werden, dann schaut Euch bitte
-        `flask_gunicorn_embed.py
-        <https://gitlab.cc-asp.fraunhofer.de/vschiele/jupyterhub-userdoc/blob/master/examples/bokeh/embed/flask_gunicorn_embed.py>`_
-        an.
-
    #. Schließlich wird noch die Flask-App definiert:
 
       .. code-block:: python
@@ -174,6 +166,4 @@ Examplarisch betten wir Bokeh-Plots in das `Flask
 
    * `User Guide/Embedding Plots and Apps/App Sessions
      <https://bokeh.pydata.org/en/latest/docs/user_guide/embed.html#app-sessions>`_ 
-   * `Source Code
-     <https://gitlab.cc-asp.fraunhofer.de/vschiele/jupyterhub-userdoc/blob/master/examples/bokeh/embed/>`_
 
