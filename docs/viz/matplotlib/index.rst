@@ -20,14 +20,15 @@ einerseits viele Freiheiten bietet, andererseits jedoch viel Code erfordert.
 +---------------------------------------+---------------------------------------+
 
 .. seealso::
-   - `Nicolas P. Rougier: Scientific Visualization – Python & Matplotlib
-     <https://github.com/rougier/scientific-visualization-book>`_
-   - `Nicolas P. Rougier: Matplotlib cheat sheet
-     <https://github.com/rougier/matplotlib-cheatsheet>`_
    - `Pyplot function overview <https://matplotlib.org/api/pyplot_summary.html>`_
    - `User’s Guide <https://matplotlib.org/users/index.html>`_
    - `Toolkits <https://matplotlib.org/api/toolkits/index.html>`_
    - `Third party packages <https://matplotlib.org/thirdpartypackages/index.html>`_
+   - `Nicolas P. Rougier: Scientific Visualization – Python & Matplotlib
+     <https://github.com/rougier/scientific-visualization-book>`_
+   - `Nicolas P. Rougier: Matplotlib cheat sheet
+     <https://github.com/rougier/matplotlib-cheatsheet>`_
+   - `Learning matplotlib <https://riptutorial.com/ebook/matplotlib>`_
 
 .. toctree::
     :titlesonly:
