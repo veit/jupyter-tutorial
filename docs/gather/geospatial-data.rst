@@ -35,3 +35,25 @@ geometrische Typen wie Polygone und Punkte erweitert, gibt es auch
 basiert und Algorithmen für Entfernungsberechnungen, Rasterklassifizierung,
 Bildoptimierungen und hydrologische Analysen enthält.
 
+Projekte
+--------
+
+Es gibt viele geowissenschaftliche Projekte, die auf Jupyter aufbauen, u.a.:
+
+`JEODPP <https://jeodpp.jrc.ec.europa.eu/home/>`_ (JRC Earth Observation Data
+and Processing Platform)
+    EU-Projekt, das Petabyte an Daten verarbeitet zur Analyse von
+    Erdbeobachtungsdaten. Das Frontend der Plattform basiert auf Jupyter und die
+    Mapping-Fähigkeit auf :doc:`../viz/js/ipyleaflet`. Endbenutzer können
+    benutzerdefinierte Visualisierungen anfordern, die in Form von *tile layers*
+    zurückgegeben werden.
+`Pangeo <https://pangeo.io/>`_
+    Community-Plattform, für offene, reproduzierbare und skalierbarer
+    Wissenschaft. Das Pangeo-Software-Ökosystem umfasst Open Source-Tools wie
+    `xarray <http://xarray.pydata.org/>`_, :doc:`../viz/matplotlib/iris`_, `Dask
+    <https://dask.org/>`_, Jupyter und viele andere Pakete.
+`EarthCube <https://www.earthcube.org/>`_ Jupyter meets the Earth
+    Das Projekt, das von der NSF gefördert wird, umfasst die Entwicklung
+    interaktiver Dashboards auf Basis von :doc:`../web/dashboards/voila/index`
+    und `Jupyter Widgets <https://jupyter.org/widgets>`_.
+
