@@ -8,9 +8,9 @@ Dokumentieren sowie das :doc:`Erstellen von Paketen
 :doc:`Ausführungsumgebungen <envs/index>`.
 
     »Nicht reproduzierbare Einzelereignisse sind für die Wissenschaft ohne
-    Bedeutung.«
+    Bedeutung.«[#]_
 
-Karl Popper in *Logik der Forschung* 1935
+.. [#] Karl Popper in *Logik der Forschung*, 1935
 
 .. toctree::
     :hidden:
