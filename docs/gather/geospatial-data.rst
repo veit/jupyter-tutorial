@@ -50,7 +50,7 @@ and Processing Platform)
 `Pangeo <https://pangeo.io/>`_
     Community-Plattform, für offene, reproduzierbare und skalierbarer
     Wissenschaft. Das Pangeo-Software-Ökosystem umfasst Open Source-Tools wie
-    `xarray <http://xarray.pydata.org/>`_, :doc:`../viz/matplotlib/iris`_, `Dask
+    `xarray <http://xarray.pydata.org/>`_, :doc:`../viz/matplotlib/iris`, `Dask
     <https://dask.org/>`_, Jupyter und viele andere Pakete.
 `EarthCube <https://www.earthcube.org/>`_ Jupyter meets the Earth
     Das Projekt, das von der NSF gefördert wird, umfasst die Entwicklung
