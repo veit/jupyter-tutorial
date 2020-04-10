@@ -7,6 +7,11 @@ Dokumentieren sowie das :doc:`Erstellen von Paketen
 <git/index>`, der :doc:`Trainingsdaten <dvc/index>` und der
 :doc:`Ausführungsumgebungen <envs/index>`.
 
+    »Nicht reproduzierbare Einzelereignisse sind für die Wissenschaft ohne
+    Bedeutung.«
+
+Karl Popper in *Logik der Forschung* 1935
+
 .. toctree::
     :hidden:
     :titlesonly:
