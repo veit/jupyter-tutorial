@@ -337,8 +337,6 @@ Lizenzen der verschiedenen Bibliotheken vergleichen.
 .. csv-table:: GitHub-Insights
     :header: "Name", "Stars", "Mitwirkende", "Commit-Aktivität", "Lizenz"
 
-    "`vispy <https://github.com/vispy/vispy>`_",".. image:: https://raster.shields.io/github/stars/vispy/vispy",".. image:: https://raster.shields.io/github/contributors/vispy/vispy",".. image:: https://raster.shields.io/github/commit-activity/y/vispy/vispy",".. image:: https://raster.shields.io/github/license/vispy/vispy"
-    "`glumpy <https://github.com/glumpy/glumpy>`_",".. image:: https://raster.shields.io/github/stars/glumpy/glumpy",".. image:: https://raster.shields.io/github/contributors/glumpy/glumpy",".. image:: https://raster.shields.io/github/commit-activity/y/glumpy/glumpy",".. image:: https://raster.shields.io/github/license/glumpy/glumpy"
     "`Matplotlib <https://github.com/matplotlib/matplotlib>`_",".. image:: https://raster.shields.io/github/stars/matplotlib/matplotlib",".. image:: https://raster.shields.io/github/contributors/matplotlib/matplotlib",".. image:: https://raster.shields.io/github/commit-activity/y/matplotlib/matplotlib",".. image:: https://raster.shields.io/github/license/matplotlib/matplotlib"
     "`pandas <https://github.com/pandas-dev/pandas>`_",".. image:: https://raster.shields.io/github/stars/pandas-dev/pandas",".. image:: https://raster.shields.io/github/contributors/pandas-dev/pandas",".. image:: https://raster.shields.io/github/commit-activity/y/pandas-dev/pandas",".. image:: https://raster.shields.io/github/license/pandas-dev/pandas"
     "`seaborn <https://github.com/mwaskom/seaborn>`_",".. image:: https://raster.shields.io/github/stars/mwaskom/seaborn",".. image:: https://raster.shields.io/github/contributors/mwaskom/seaborn",".. image:: https://raster.shields.io/github/commit-activity/y/mwaskom/seaborn",".. image:: https://raster.shields.io/github/license/mwaskom/seaborn"
@@ -363,6 +361,12 @@ Lizenzen der verschiedenen Bibliotheken vergleichen.
     "`ipyvolume <https://github.com/maartenbreddels/ipyvolume>`_",".. image:: https://raster.shields.io/github/stars/maartenbreddels/ipyvolume",".. image:: https://raster.shields.io/github/contributors/maartenbreddels/ipyvolume",".. image:: https://raster.shields.io/github/commit-activity/y/maartenbreddels/ipyvolume",".. image:: https://raster.shields.io/github/license/maartenbreddels/ipyvolume"
     "`toyplot <https://github.com/sandialabs/toyplot>`_",".. image:: https://raster.shields.io/github/stars/sandialabs/toyplot",".. image:: https://raster.shields.io/github/contributors/sandialabs/toyplot",".. image:: https://raster.shields.io/github/commit-activity/y/sandialabs/toyplot",".. image:: https://raster.shields.io/github/license/sandialabs/toyplot"
     "`ipympl <https://github.com/matplotlib/jupyter-matplotlib>`_",".. image:: https://raster.shields.io/github/stars/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/contributors/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/commit-activity/y/matplotlib/jupyter-matplotlib",".. image:: https://raster.shields.io/github/license/matplotlib/jupyter-matplotlib"
+
+.. csv-table:: GitHub-Insights: OpenGL
+    :header: "Name", "Stars", "Mitwirkende", "Commit-Aktivität", "Lizenz"
+
+    "`vispy <https://github.com/vispy/vispy>`_",".. image:: https://raster.shields.io/github/stars/vispy/vispy",".. image:: https://raster.shields.io/github/contributors/vispy/vispy",".. image:: https://raster.shields.io/github/commit-activity/y/vispy/vispy",".. image:: https://raster.shields.io/github/license/vispy/vispy"
+    "`glumpy <https://github.com/glumpy/glumpy>`_",".. image:: https://raster.shields.io/github/stars/glumpy/glumpy",".. image:: https://raster.shields.io/github/contributors/glumpy/glumpy",".. image:: https://raster.shields.io/github/commit-activity/y/glumpy/glumpy",".. image:: https://raster.shields.io/github/license/glumpy/glumpy"
 
 .. csv-table:: GitHub-Insights: Geographie
     :header: "Name", "Stars", "Mitwirkende", "Commit-Aktivität", "Lizenz"
