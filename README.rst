@@ -69,6 +69,29 @@ Installation
 
 #. PDF erstellen:
 
+   Für die Erstellung von PDFs benötigt ihr weitere Pakete.
+
+   Für Debian/Ubuntu erhaltet ihr diese mit:
+
+   .. code-block:: console
+
+    $ apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
+
+   oder für Mac OS X mit:
+
+   .. code-block:: console
+
+    $ brew cask install mactex
+    …
+    🍺  mactex was successfully installed!
+    $ curl --remote-name https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts
+    $ sudo texlua install-getnonfreefonts
+    …
+    mktexlsr: Updating /usr/local/texlive/2020/texmf-dist/ls-R...
+    mktexlsr: Done.
+
+   Anschließend könnt ihr ein PDF generieren mit:
+
    .. code-block:: console
 
     $ cd docs/
