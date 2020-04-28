@@ -63,9 +63,10 @@ Forschungsprojekts:
    Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
    <productive/packaging/index>`.
 9. **Web-Anwendungen** können entweder aus Jupyter-Notebooks
-   :doc:`web/dashboards/index` generieren oder umfassendere Applikationslogik
-   benötigen, wie z.B. in :doc:`/viz/bokeh/embedding-export/flask` demonstriert,
-   oder Daten über eine `RESTful API
+   :doc:`web/dashboards/index` generieren oder umfassendere
+   Applikationslogik benötigen, wie z.B. in
+   :doc:`pyviz:bokeh/embedding-export/flask` demonstriert, oder Daten über eine
+   `RESTful API
    <https://de.wikipedia.org/wiki/Representational_State_Transfer>`_
    bereitstellen.
 

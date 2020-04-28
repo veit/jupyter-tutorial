@@ -28,7 +28,7 @@ Lesen und Schreiben
 Berechnen
 ---------
 
-Neben :doc:`../viz/matplotlib/geopandas/index`, das Pandas um Operationen für
+Neben :doc:`pyviz:matplotlib/geopandas/index`, das Pandas um Operationen für
 geometrische Typen wie Polygone und Punkte erweitert, gibt es auch
 `whitebox-python <https://github.com/giswqs/whitebox-python>`_, das auf den
 `WhiteboxTools <https://jblindsay.github.io/ghrg/WhiteboxTools/index.html>`_
@@ -40,17 +40,16 @@ Projekte
 
 Es gibt viele geowissenschaftliche Projekte, die auf Jupyter aufbauen, u.a.:
 
-`JEODPP <https://jeodpp.jrc.ec.europa.eu/home/>`_ (JRC Earth Observation Data
-and Processing Platform)
+`JEODPP <https://jeodpp.jrc.ec.europa.eu/home/>`_ (JRC Earth Observation Data and Processing Platform)
     EU-Projekt, das Petabyte an Daten verarbeitet zur Analyse von
     Erdbeobachtungsdaten. Das Frontend der Plattform basiert auf Jupyter und die
-    Mapping-Fähigkeit auf :doc:`../viz/js/ipyleaflet`. Endbenutzer können
+    Mapping-Fähigkeit auf :doc:`pyviz:js/ipyleaflet`. Endbenutzer können
     benutzerdefinierte Visualisierungen anfordern, die in Form von *tile layers*
     zurückgegeben werden.
 `Pangeo <https://pangeo.io/>`_
     Community-Plattform, für offene, reproduzierbare und skalierbarer
     Wissenschaft. Das Pangeo-Software-Ökosystem umfasst Open Source-Tools wie
-    `xarray <http://xarray.pydata.org/>`_, :doc:`../viz/matplotlib/iris`, `Dask
+    `xarray <http://xarray.pydata.org/>`_, :doc:`pyviz:matplotlib/iris`, `Dask
     <https://dask.org/>`_, Jupyter und viele andere Pakete.
 `EarthCube <https://www.earthcube.org/>`_ Jupyter meets the Earth
     Das Projekt, das von der NSF gefördert wird, umfasst die Entwicklung
