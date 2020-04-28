@@ -65,7 +65,10 @@ Installation
 
    .. code-block:: console
 
-    $ pipenv run sphinx-build -b html docs/ docs/_build/
+    $ python3 -m venv .
+    $ bin/python -m pip install --upgrade pip
+    $ bin/python -m pip install -r docs/constraints.txt
+    $ bin/sphinx-build -ab html docs/ docs/_build/
 
 #. PDF erstellen:
 
