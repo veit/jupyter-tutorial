@@ -42,6 +42,15 @@ Die ``.gitgnore``-Datei
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 In der ``.gitgnore``-Datei könnt Ihr Dateien von der Versionsverwaltung
-ausschließen. Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
-<https://github.com/veit/dotfiles/tree/master/gitignores>`-Repository.
+ausschließen. Eine typische ``.gitgnore``-Datei kann z.B. so aussehen:
+
+.. code-block:: ini
+
+    /logs/*
+    !logs/.gitkeep
+    /tmp
+    *.swp
+
+Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
+<https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository.
 
