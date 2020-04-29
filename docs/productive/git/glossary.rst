@@ -6,7 +6,7 @@ Git-Glossar
     ``git``
         verteiltes Versionskontrollsystem
 
-    ``GitLab``
+    GitLab
         Plattform für die gemeinsame Arbeit an Git-Repositories
 
     ``commit``
