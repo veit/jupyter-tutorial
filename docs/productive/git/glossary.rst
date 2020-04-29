@@ -29,7 +29,9 @@ Git-Glossar
 
     Merge request
         Ort zum Vergleichen und Diskuttieren der in einem Branch eingeführten
-        Änderungen mit Bewertungen, Kommentaren, Tests etc.
+        Änderungen mit Bewertungen, Kommentaren, Tests etc.; siehe auch
+        `Merge requests
+        <https://docs.gitlab.com/ee/user/project/merge_requests/>`_.
 
     ``HEAD``
         Der ``HEAD``-Zeiger repräsentiert Euer aktuelles Arbeitsverzeichnis und
