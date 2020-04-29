@@ -1,7 +1,7 @@
 Code verwalten mit Git
 ======================
 
-Um eine bessere Kontrolle über euren Quellcode zu erhalten, wird dieser
+Um eine bessere Kontrolle über Euren Quellcode zu erhalten, wird dieser
 üblicherweise mit `Git <https://git-scm.com/>`_ verwaltet. Hier werde ich jedoch
 keine allgemeine Einführung in Git geben, da solche an anderer Stelle schon
 hinreichend vorhanden sind:
@@ -11,10 +11,9 @@ hinreichend vorhanden sind:
   <https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf>`_
 * `Git reference <https://git-scm.com/docs>`_
 
-An dieser Stelle wollen wir einerseits zeigen, wie sich einerseits :doc:`Jupyter
-Notebooks <first-steps>` sinnvoll mit Git verwalten lassen, und andererseits
-:doc:`Best Practices <best-practices>` und typische :doc:`workflows/index`
-zeigen.
+An dieser Stelle zeige ich einerseits, wie sich :doc:`Jupyter Notebooks
+<first-steps>` sinnvoll mit Git verwalten lassen, und andererseits
+:doc:`Best Practices <best-practices>` und typische :doc:`workflows/index`.
 
 .. toctree::
     :hidden:
