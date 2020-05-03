@@ -49,6 +49,7 @@ ipywebrtc = "*"
 ipyparallel = "*"
 ipycanvas = "*"
 plotnine = {extras = ["all"],version = "*"}
+ipylayout = "*"
 
 [dev-packages]
 
