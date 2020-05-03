@@ -19,4 +19,4 @@ geschrieben und werden lokal in eurem Browser geladen.
     list
     create-plugin
     setup.ipynb
-
+    ipylayout.ipynb

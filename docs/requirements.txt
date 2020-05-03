@@ -3,3 +3,4 @@ jupyter-client==5.3.3
 notebook==6.0.1
 jupyter
 nbsphinx==0.4.2
+ipylayout

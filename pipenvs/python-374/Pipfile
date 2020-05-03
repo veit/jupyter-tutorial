@@ -32,6 +32,7 @@ intake-parquet = "*"
 s3fs = "*"
 python-snappy = "*"
 pyviz-comms = "*"
+ipylayout = "*"
 
 [requires]
 python_version = "3.7.4"
