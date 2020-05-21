@@ -34,6 +34,8 @@ andererseits für das :doc:`testing/index`, :doc:`logging`, :doc:`Dokumentieren
      * `GitHub Repository
        <https://github.com/TIBHannover/2018-07-09-FAIR-Data-and-Software>`_
      * `Slides <http://doi.org/10.5281/zenodo.3707745>`_
+   * `Dryad: Best practices for creating reusable data publications
+     <https://datadryad.org/stash/best_practices>`_
 
 .. toctree::
     :hidden:
