@@ -59,7 +59,7 @@ Forschungsprojekts:
    Performance-Optimierungen, u.a. durch :doc:`Refactoring
    <refactoring/parallel/index>`.
 8. **Produkt erstellen** umfasst das :doc:`productive/testing/index`,
-   :doc:`productive/logging` und :doc:`productive/sphinx/index` der
+   :doc:`productive/logging` und :doc:`productive/documenting/index` der
    Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
    <productive/packaging/index>`.
 9. **Web-Anwendungen** können entweder aus Jupyter-Notebooks
