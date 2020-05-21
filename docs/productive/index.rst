@@ -15,6 +15,7 @@ Paketen <packaging/index>`.
 .. seealso::
 
    * TIB workshop «FAIR Data and Software»
+
      * `GitHub Page
        <https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/>`_
      * `GitHub Repository
