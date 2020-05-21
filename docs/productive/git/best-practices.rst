@@ -122,3 +122,7 @@ Git Best Practices
   - Bereinigt die Remote Tracking Branches mit ``git remote update --prune``.
   - Überprüft vergessene Arbeiten mit: ``git stash list``.
 
+- `Mit Git Filter-Branch <https://git-scm.com/docs/git-filter-branch>`_ und `BFG
+  Repo-Cleaner <https://rtyley.github.io/bfg-repo-cleaner/>`_ könnt Ihr
+  unerwünschte Dateien aus Eurer Git-Historie entfernen.
+
