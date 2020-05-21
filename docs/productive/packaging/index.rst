@@ -1,15 +1,24 @@
-Paket erstellen
-===============
+Pakete erstellen
+================
 
 #. Notebooks sind gut geeignet um schnell voranzukommen, doch bei umfangreicher
    werdendem Code empfiehlt sich, stabilen Code in Pakete auszulagern.
-#. Nutzt :ref:`/productive/testing/ipytest.ipynb` zum Testen innerhalb eurer
-   Notebooks.
-#. Haltet euch an Coding-Standards:
-   :doc:`nbextensions/code_prettify/README_autopep8`
-   und an `Clean Code <https://de.wikipedia.org/wiki/Clean_Code>`_-Prinzipien.
-   Verwendet aussagekräftige Variablen- und Funktionsnamen, kommentiert sinnvoll
+#. Ihr könnt :ref:`pytest </productive/testing/ipytest.ipynb>` nicht nur
+   innerhalb Eurer Notebooks zum Testen verwenden, sondern auch innerhalb Eurer
+   Pakete.
+#. Verwendet `Clean Code <https://de.wikipedia.org/wiki/Clean_Code>`_-Prinzipien
+   mit aussagekräftigen Variablen- und Funktionsnamen, kommentiert sinnvoll
    und modularisiert den Code.
+
+   Es gibt auch Werkzeuge, die automatisch Coding-Styles anwenden wie z.B.
+   `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_ für Python. Mit
+   :doc:`nbextensions/code_prettify/README_autopep8` könnt Ihr dies nicht nur
+   auf Eure Notebooks anwenden, sondern z.B. mit `black
+   <https://black.readthedocs.io/en/stable/>`_ auch auf Eure Python-Pakete.
+
+   Für andere Sprachen findet Ihr Übersichten in `Awesome-Linters
+   <https://awesome-linters.hugomartins.io/>`_ und `awesome-code-formatters
+   <https://github.com/rishirdua/awesome-code-formatters>`_.
 
 .. seealso::
    * `Python Application Layouts
