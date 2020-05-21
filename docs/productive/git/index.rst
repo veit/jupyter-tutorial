@@ -10,6 +10,8 @@ vorhanden.
 
 .. seealso::
 
+    * `Software Carpentry Version Control with Git
+      <https://swcarpentry.github.io/git-novice/>`_
     * `Pro Git book <https://git-scm.com/book>`_
     * `GitHub Cheat Sheet (PDF)
       <https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf>`_
