@@ -1,16 +1,29 @@
 Produkt erstellen
 =================
 
-Dies umfasst einerseits die Versionierung des :doc:`Quellcodes <git/index>`, der
-:doc:`Trainingsdaten <dvc/index>` und die Reproduzierbarkeit der
-:doc:`Ausführungsumgebungen <envs/index>`, andererseits das :doc:`testing/index`,
-:doc:`logging`, :doc:`Dokumentieren <sphinx/index>`, und :doc:`Erstellen von
-Paketen <packaging/index>`.
-
     »Nicht reproduzierbare Einzelereignisse sind für die Wissenschaft ohne
     Bedeutung.«[#]_
 
 .. [#] Karl Popper in *Logik der Forschung*, 1935
+
+Damit auch andere Euren Code nutzen können, sollte er einige Bedingungen
+erfüllen:
+
+* Ihr solltet Euch nicht stillschweigend auf bestimmte Ressourcen und Umgebungen
+  verlassen
+* Erforderliche Software-Pakete und Hardware sollten in den Anforderungen
+  angegeben werden
+* Pfadangaben werden in einem anderen Kontext nur innerhalb Eures Pakets oder in
+  vorher generierten Verzeichnissen und Dateien funktionieren
+* Teilt keine Geheimnisse wie Zugangsdaten oder interne IP-Nummern in Eurem
+  veröffentlichten Produkt
+
+Es gibt diverse Werkzeuge, die Euch beim Erstellen von gemeinsam nutzbaren
+Produkten unterstützen. Dies können Werkzeuge einerseits für die Versionierung
+des :doc:`Quellcodes <git/index>` und der :doc:`Trainingsdaten <dvc/index>`
+sowie für die Reproduzierbarkeit der :doc:`Ausführungsumgebungen <envs/index>`,
+andererseits für das :doc:`testing/index`, :doc:`logging`, :doc:`Dokumentieren
+<sphinx/index>` und :doc:`Erstellen von Paketen <packaging/index>` sein.
 
 .. seealso::
 
