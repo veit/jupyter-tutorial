@@ -1,6 +1,10 @@
 Testen
 ======
 
+.. seealso::
+   * `Python Testing and Continuous Integration
+     <https://katyhuff.github.io/python-testing/>`_
+
 Konzepte
 --------
 
