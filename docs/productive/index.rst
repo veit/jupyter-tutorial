@@ -47,8 +47,9 @@ andererseits für das :doc:`testing/index`, :doc:`logging`, :doc:`Dokumentieren
     git/index
     dvc/index
     packaging/index
+    documenting/index
+    licensing.rst
     envs/index
     testing/index
     logging.ipynb
-    documenting/index
 
