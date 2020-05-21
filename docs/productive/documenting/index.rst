@@ -1,9 +1,51 @@
 Dokumentieren
 =============
 
-`Sphinx <http://www.sphinx-doc.org/>`_ ist ein Dokumentationswerkzeug, das
+Damit Euer Produkt sinnvoll genutzt werden kann, sind Dokumentationen sowohl für
+die Zielgruppen Daten-Wissenschaftler und Daten-Ingenieure als auch für
+System-Ingenieure erforderlich:
+
+* Daten-Wissenschaftler wollen dokumentiert sehen
+
+  * welche Probleme Euer Produkt löst und was die Hauptfunktionen und
+    Limitationen der Software sind (``README``)
+  * wie das Produkt beispielhaft verwendet werden kann
+  * welche Veränderungen in aktuelleren Software-Versionen gekommen sind
+    (``CHANGELOG``)
+
+* Daten-Ingenieure wollen wissen, wie sie mit Fehlerbehebungen zur Verbesserung
+  des Produkts beitragen können (``CONTRIBUTING``) und wie sie mit anderen
+  kommunizieren (``CODE_OF_CONDUCT``) können
+* System-Ingenieure benötigen eine Installationsanleitung für Euer Produkt
+  und der erforderlichen Abhängigkeiten
+
+Alle gemeinsam benötigen Informationen, wie das Produkt lizenziert ist
+(``LICENSE``-Datei oder ``LICENSES``-Ordner) und wie sie bei Bedarf Hilfe
+erhalten können.
+
+Um schnell einen Überblick übr ein Produkt zu erhalten, sind sog. Badges
+hilfreich. Für das `cookiecutter-namespace-template
+<https://github.com/veit/cookiecutter-namespace-template>`_ sind dies z.B.:
+
+|Downloads| |Updates| |Versions| |Contributors| |License| |Docs|
+
+.. |Downloads| image:: https://pepy.tech/badge/cookiecutter-namespace-template
+   :target: https://pepy.tech/project/cookiecutter-namespace-template
+.. |Updates| image:: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/shield.svg
+   :target: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/
+.. |Versions| image:: https://img.shields.io/pypi/pyversions/cookiecutter-namespace-template.svg
+   :target: https://pypi.org/project/cookiecutter-namespace-template/
+.. |Contributors| image:: https://img.shields.io/github/contributors/veit/cookiecutter-namespace-template.svg
+   :target: https://github.com/veit/cookiecutter-namespace-template/graphs/contributors
+.. |License| image:: https://img.shields.io/github/license/veit/cookiecutter-namespace-template.svg
+   :target: https://github.com/veit/cookiecutter-namespace-template/blob/master/LICENSE
+.. |Docs| image:: https://readthedocs.org/projects/cookiecutter-namespace-template/badge/?version=latest
+   :target: https://cookiecutter-namespace-template.readthedocs.io/en/latest/
+
+Für umfangreiche Dokuemtationen könnt Ihr z.B. `Sphinx
+<http://www.sphinx-doc.org/>`_ verwenden, ein Dokumentationswerkzeug, das
 :doc:`rest`, eine einfache Auszeichnungssprache, in HTML oder auch PDF,
-EPub und man pages umwandelt.
+EPub und Manpages umwandelt.
 Den Quellcode dieser Seite könnt ihr euch anschauen unter `Sources
 <../../_sources/productive/sphinx/index.rst.txt>`_. Ursprünglich wurde Sphinx
 für die Dokumentation von Python entwickelt und wird heute auch in fast allen
@@ -28,8 +70,10 @@ vereinfacht das Erstellen und Veröffentlichen von Dokumentation nach jedem
 *Commit*. 
 
 .. seealso::
-   `Eric Holscher: Testing your Documentation
-   <http://www.writethedocs.org/guide/tools/testing/>`_
+   * `Eric Holscher: Testing your Documentation
+     <http://www.writethedocs.org/guide/tools/testing/>`_
+   * `Google Technical Writing Courses for Engineers
+     <https://developers.google.com/tech-writing/overview>`_
 
 .. toctree::
     :hidden:
