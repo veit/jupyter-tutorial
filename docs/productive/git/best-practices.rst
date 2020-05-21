@@ -17,10 +17,8 @@ Git Best Practices
     …
 
   Falls in eurem Projekt noch keine ``.gitignore``-Datei vorhanden ist, solltet
-  ihr diese anlegen und zumindest ``.ipynb_checkpoints`` ausschließen::
-
-    .ipynb_checkpoints
-    */.ipynb_checkpoints/*
+  ihr diese anlegen und zumindest ``.ipynb_checkpoints`` und
+  ``*/.ipynb_checkpoints/*`` ausschließen::
 
   Falls ihr versehentlich schon entsprechende Dateien in euer Git-Repository
   eingecheckt habt, könnt ihr diese wieder entfernen mit:
@@ -30,7 +28,9 @@ Git Best Practices
     $ git rm -r .ipynb_checkpoints/
 
   Eine Übersicht über weitere ``.gitignore``-Einträge
-  erhaltet ihr im Repository `dotfiles <https://github.com/veit/dotfiles>`_.
+  erhaltet ihr entweder im Repository `dotfiles
+  <https://github.com/veit/dotfiles>`_ oder auf der Website `gitignore.io
+  <https://gitignore.io/>`_.
 
   Anschließend können diese initialen Änderungen eingecheckt werden mit:
 

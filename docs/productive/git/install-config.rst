@@ -52,5 +52,6 @@ ausschließen. Eine typische ``.gitgnore``-Datei kann z.B. so aussehen:
     *.swp
 
 Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
-<https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository.
+<https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository oder auf
+der Website `gitignore.io <https://gitignore.io/>`_.
 
