@@ -55,3 +55,11 @@ Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
 <https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository oder auf
 der Website `gitignore.io <https://gitignore.io/>`_.
 
+Git pre-commit Hocks
+~~~~~~~~~~~~~~~~~~~~
+
+Definiert Git pre-commit Hocks z.B. um in Euren Repositories `Clean Code
+<https://de.wikipedia.org/wiki/Clean_Code>`_ zu gewährleisten. Eine Übersicht
+über verfügbare Git pre-commit Hocks erhaltet Ihr auf `pre-commit.com
+<https://pre-commit.com/hooks.html>`_.
+
