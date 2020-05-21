@@ -27,6 +27,8 @@ andererseits für das :doc:`testing/index`, :doc:`logging`, :doc:`Dokumentieren
 
 .. seealso::
 
+   * `Dustin Boswell, Trevor Foucher: The Art of Readable Code
+     <http://shop.oreilly.com/product/9780596802301.do>`_
    * TIB workshop «FAIR Data and Software»
 
      * `GitHub Page
