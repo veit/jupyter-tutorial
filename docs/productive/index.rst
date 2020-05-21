@@ -28,9 +28,9 @@ Paketen <packaging/index>`.
 
     git/index
     dvc/index
+    packaging/index
     envs/index
     testing/index
     logging.ipynb
     sphinx/index
-    packaging/index
 
