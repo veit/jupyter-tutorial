@@ -48,6 +48,12 @@ beschreibt, wo das Root-Verzeichnis ist.
 Für ``version`` gibt es verschiedene Möglichkeiten, die in `PEP 0440
 <https://www.python.org/dev/peps/pep-0440/>`_ beschrieben sind.
 
+.. seealso::
+    * `Semantic Versioning <https://semver.org>`_
+    * `Calendar Versioning <https://calver.org>`_
+    * `bump2version <https://pypi.org/project/bump2version/>`_
+    * `Git Tags <https://git-scm.com/book/en/v2/Git-Basics-Tagging>`_
+
 ``classifiers``
 ---------------
 
@@ -149,6 +155,13 @@ Pakets achten müssen. Schreibt das Dokument in `ReStructuredText (ReST)
 sodass ihr es später problemlos mit ``.. include:: ../../README.rst`` in die
 Sphinx-Dokumentation übernehmen könnt.
 
+``CHANGELOG.rst``
+~~~~~~~~~~~~~~~~~
+
+.. seealso::
+   * `Keep a Changelog <https://keepachangelog.com>`_
+   * `towncrier <https://pypi.org/project/towncrier/>`_
+
 Build
 -----
 
@@ -224,4 +237,8 @@ oder
     …
     >>> import attr; attr.__version__
     '19.3.0'
+
+.. seealso::
+   * `PyPI Release Checklist
+     <https://cookiecutter-namespace-template.readthedocs.io/en/latest/pypi-release-checklist.html>`_
 
