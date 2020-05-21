@@ -20,6 +20,14 @@ Pakete erstellen
    <https://awesome-linters.hugomartins.io/>`_ und `awesome-code-formatters
    <https://github.com/rishirdua/awesome-code-formatters>`_.
 
+   Ihr könnt diese Werkzeuge mit einem Pre-Commit-Hock automatisch vor jedem
+   ``git commit`` ausfähren, z.B. `mirrors-autopep8
+   <https://github.com/pre-commit/mirrors-autopep8>`_, `pygrep-hooks
+   <https://github.com/pre-commit/pygrep-hooks>`_ oder `blacken-docs
+   <https://github.com/asottile/blacken-docs>`_. Eine gute Übersicht über
+   verfügbare Git Pre-Commit-Hocks erhaltet Ihr auf `pre-commit.com
+   <https://pre-commit.com/hooks.html>`_.
+
 .. seealso::
    * `Python Application Layouts
      <https://realpython.com/python-application-layouts/>`_
