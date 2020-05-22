@@ -70,10 +70,13 @@ vereinfacht das Erstellen und Veröffentlichen von Dokumentation nach jedem
 *Commit*. 
 
 .. seealso::
-   * `Eric Holscher: Testing your Documentation
-     <http://www.writethedocs.org/guide/tools/testing/>`_
+   * `Christina Czeschik und Matthias Lindhorst: Weniger schlecht über IT
+     schreiben
+     <https://www.oreilly.de/buecher/13079/9783960090632-weniger-schlecht-%C3%BCber-it-schreiben.html>`_
    * `Google Technical Writing Courses for Engineers
      <https://developers.google.com/tech-writing/overview>`_
+   * `Eric Holscher: Testing your Documentation
+     <http://www.writethedocs.org/guide/tools/testing/>`_
 
 .. toctree::
     :hidden:
