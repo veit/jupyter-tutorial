@@ -48,7 +48,8 @@ andererseits für das :doc:`testing/index`, :doc:`logging`, :doc:`Dokumentieren
     dvc/index
     packaging/index
     documenting/index
-    licensing.rst
+    licensing
+    quote/index
     envs/index
     testing/index
     logging.ipynb
