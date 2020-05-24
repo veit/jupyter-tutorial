@@ -31,7 +31,6 @@ Biologie
 --------
 
 * `American Journal of Human Genetics <http://www.cell.com/AJHG/>`_
-* `Artificial Intelligence in Medicine <http://www.aiimjournal.com/>`_
 * `Artificial Life <http://www.mitpressjournals.org/loi/artl>`_
 * Psychonomic Society: `Behaviour Research Methods <http://www.psychonomic.org/page/springerBRM>`_
 * Oxford Academic: `Bioinformatics <http://bioinformatics.oxfordjournals.org/>`_
@@ -123,9 +122,9 @@ Informatik, Mathematik und Statistik
 * `Journal of Software for Algebra and Geometry
   <http://j-sag.org/>`_
 * `Journal of Statistical Softwarer
-  <ihttp://www.jstatsoft.org/>`_
+  <https://www.jstatsoft.org/>`_
 * `Knowledge-Based Systemsr
-  <ihttp://www.journals.elsevier.com/knowledge-based-systems/>`_
+  <https://www.journals.elsevier.com/knowledge-based-systems//>`_
 * `LMS Journal of Computation and Mathematics
   <http://www.lms.ac.uk/publications/jcm>`_
 * `The Mathematica Journal
