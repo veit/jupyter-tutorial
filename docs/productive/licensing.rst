@@ -70,9 +70,23 @@ Lizenz unterstützt Euch die Website `Choose an open source license
 GitHub
 ------
 
-`GitHub <http://github.com/>`_ verwendet `licensee
-<https://github.com/licensee/licensee>`_ um die ``/LICENSE``-Datei in einem
-Repository mit einer kurzen `Liste von Open-Source-Lizenzen
+Auf `GitHub <http://github.com/>`_ könnt Ihr Euch eine Open Source-Lizenz in
+Eurem Repository erstellen lassen.
+
+#. Geht zur Hauptseite Eures Repository.
+#. Klickt auf *Create new file* und gebt anschließend als Dateiname ``LICENSE``
+   oder ``LICENSE.md`` ein.
+#. Anschließend könnt Ihr rechts neben dem Feld für den Dateinamen auf *Choose a
+   license template* klicken.
+#. Nun könnt Ihr die für Euer Repository passende Open Source-Lizenz auswählen.
+#. Ihr werdet nun zu zusätzlichen Angaben aufgefordert, sofern die gewählte
+   Lizenz dies erfordert.
+#. Nachdem Ihr eine Commit-Message angegeben habt, z.B. ``Add license``, könnt
+   Ihr auf *Commit new file* klicken.
+
+Falls Ihr in Eurem Repository bereits eine ``/LICENSE``-Datei hinzugefügt habt,
+verwendet GitHub `licensee <https://github.com/licensee/licensee>`_ um die Datei
+mit einer kurzen `Liste von Open-Source-Lizenzen
 <https://choosealicense.com/appendix/>`_ abzugleichen. Falls GitHub die Lizenz
 Eures Repository nicht erkennen kann, enthält es möglicherweise mehrere
 Lizenzen oder ist zu komplex. Überlegt Euch dann, ob Ihr die Lizenz vereinfachen
