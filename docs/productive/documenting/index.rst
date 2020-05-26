@@ -45,24 +45,30 @@ hilfreich. Für das `cookiecutter-namespace-template
 Für umfangreiche Dokuemtationen könnt Ihr z.B. `Sphinx
 <http://www.sphinx-doc.org/>`_ verwenden, ein Dokumentationswerkzeug, das
 :doc:`rest`, eine einfache Auszeichnungssprache, in HTML oder auch PDF,
-EPub und Manpages umwandelt.
-Den Quellcode dieser Seite könnt ihr euch anschauen unter `Sources
-<../../_sources/productive/sphinx/index.rst.txt>`_. Ursprünglich wurde Sphinx
-für die Dokumentation von Python entwickelt und wird heute auch in fast allen
-Python-Projekten verwendet, u.a. für `NumPy und SciPy
+EPub und Manpages umwandelt. Auch das Jupyter-Tutorial ist mit Sphinx erstellt
+worden. Um einen ersten Eindruck von Sphinx zu erhalten, könnt Ihr Euch den
+Quellcode dieser Seite anschauen indem Ihr am Fuss dieser Seite dem Link
+`Sources <../../_sources/productive/sphinx/index.rst.txt>`_ folgt.
+
+Ursprünglich wurde Sphinx für die Dokumentation von Python entwickelt und wird
+heute auch in fast allen Python-Projekten verwendet, u.a. für `NumPy und SciPy
 <https://docs.scipy.org/doc/>`_, `Matplotlib
 <https://matplotlib.org/users/index.html>`_, `Pandas
 <https://pandas.pydata.org/pandas-docs/>`_ und `SQLAlchemy
 <https://docs.sqlalchemy.org/>`_. 
 
-Zur Verbreitung von Sphinx unter den Python-Entwicklern dürfte auch beigetragen
-haben, dass Sphinx `autodoc
+Zur Verbreitung von Sphinx unter den Python-Entwicklern dürfte auch das Sphinx
+`autodoc
 <http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_-Feature
-auch aus Python :doc:`docstrings` Dokumentationen erzeugen kann.
+beigetragen haben, mit dem Dokumentationen aus Python :doc:`docstrings`
+erzeugt werden können. Insgesamt erlaubt Sphinx Entwicklern, *in place* eine
+vollständige Dokumentation erstellen zu können. Häufig wird die Dokumentation
+auch im selben :doc:`Git <../git/index>`-Repository gespeichert, sodass das
+Erstellen der jeweils aktuellen Software-Dokumentation einfach bleibt.
 
-Auch in Projekten außerhalb der Python-Community wird Sphinx
-verwendet, z.B. für die Dokumentation des Linux Kernels: `Kernel documentation
-update <https://lwn.net/Articles/705224/>`_. 
+Sphinx wird auch in Projekten außerhalb der Python-Community verwendet, z.B. für
+die Dokumentation des Linux Kernels: `Kernel documentation update
+<https://lwn.net/Articles/705224/>`_. 
 
 Um die Erstellung von Dokumentationen weiter zu vereinfachen, wurde
 `Read the Docs <https://readthedocs.org/>`_ entwickelt. Read the Docs
