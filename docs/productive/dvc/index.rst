@@ -9,9 +9,9 @@ Modell (einschließlich der Algorithmen, Parameter. etc.) versioniert werden.
 Die Versionierung von Daten für reproduzierbare Analysen ist aufgrund der
 Datengröße ein größeres Problem als die Versionierung von Modellen. Werkzeuge 
 wie `DVC <https://dvc.org/>`_ helfen bei der Verwaltung von Daten indem Nutzer
-diese mit einem gitartigen Workflow an einen entfernten Datenspeicher übertragen
-können. Hierdurch vereinfacht sich der Abruf bestimmter Versionen von Daten um
-eine Analyse zu reproduzieren.
+diese mit einem :doc:`Git <../git/index>`-artigen Workflow an einen entfernten
+Datenspeicher übertragen können. Hierdurch vereinfacht sich der Abruf bestimmter
+Versionen von Daten um eine Analyse zu reproduzieren.
 
 DVC wurde entwickelt um ML-Modelle und Datensätze igemeinsam nutzen zu können
 und nachvollziehbar zu verwalten. Es arbeitet zwar mit verschiedenen
