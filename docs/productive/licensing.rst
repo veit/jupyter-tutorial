@@ -67,6 +67,38 @@ Auswahl einer geeigneten Lizenz
 Lizenz unterstützt Euch die Website `Choose an open source license
 <https://choosealicense.com/>`_.
 
+GitHub
+------
+
+`GitHub <http://github.com/>`_ verwendet `licensee
+<https://github.com/licensee/licensee>`_ um die ``/LICENSE``-Datei in einem
+Repository mit einer kurzen `Liste von Open-Source-Lizenzen
+<https://choosealicense.com/appendix/>`_ abzugleichen. Falls GitHub die Lizenz
+Eures Repository nicht erkennen kann, enthält es möglicherweise mehrere
+Lizenzen oder ist zu komplex. Überlegt Euch dann, ob Ihr die Lizenz vereinfachen
+könnt, z.B. indem Ihr Komplexität in die ``/README``-Datei auslagert. 
+
+Umgekehrt könnt Ihr auf GitHub auch nach Repositories mit bestimmten Lizenzen
+oder Lizenzfamilien suchen. Eine Übersicht über die Lizenz-Schlüsswlwörter
+erhaltet Ihr in `Searching GitHub by license type
+<https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository#searching-github-by-license-type>`_.
+
+Schließlich könnt Ihr Euch von `Shields.io <https://shields.io/>`_ ein
+License-Badge generieren lassen, das Ihr z.B. auf Eurer ``README``-Datei
+einbinden könnt, z.B.
+
+.. code-block:: rst
+
+    |License|
+
+    .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
+       :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+
+|License|
+
+.. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
+   :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+
 Standardformat für die Lizenzierung
 -----------------------------------
 
