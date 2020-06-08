@@ -10,8 +10,9 @@ Daten lassen sich einfach erheben mit `Requests
 `BeautifulSoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_
 :doc:`html`.
 
-Alternativ kann :doc:`intake/index` für das Finden, Untersuchen, Laden und
-Verteilen von Daten verwendet werden.
+Alternativ können auch :doc:`intake/index` oder :doc:`DVC
+<../productive/dvc/index>` verwendet werden, je nachdem, welcher Workflow besser
+zu Eurem Projekt passt.
 
 .. toctree::
     :hidden:
