@@ -5,14 +5,15 @@ DVC lässt sich einfach initialisieren mit:
 
 .. code-block:: console
 
-    $ mkdir -p myproject/data
-    $ cd myproject
+    $ mkdir -p dvc-example/data
+    $ cd dvc-example
     $ git init
     $ dvc init
+    $ git add .dvc
     $ git commit -m "Initialize DVC"
 
 ``dvc init``
-    erstellt ein Verzeichnis ``.dvs/`` mit ``config``, ``.gitignore`` und
+    erstellt ein Verzeichnis ``.dvc/`` mit ``config``, ``.gitignore`` und
     ``cache``-Verzeichnis.
 ``git commit``
     stellt ``.dvc/config`` und ``.dvc/.gitignore`` unter Git-Versionskontrolle.
@@ -30,15 +31,18 @@ eingebunden werden kann:
 
 .. code-block:: console
 
-    $ dvc remote add -d nfs /var/myproject-dvc
-    Setting 'nfs' as a default remote.
-    $ git commit .dvc/config -m "Configure default nfsremote"
-
+    $ sudo mkdir -p /var/dvc-storage
+    $ dvc remote add -d local /var/dvc-storage
+    Setting 'local' as a default remote.
+    $ git commit .dvc/config -m "Configure local remote"
+    [master efaeb84] Configure local remote
+     1 file changed, 4 insertions(+)
+ 
 ``-d``, ``--default``
     Standardwert für den entfernten Speicherplatz
-``nfsremote``
+``local``
     Name des entfernten Speicherplatz
-``/var/myproject-dvc``
+``/var/dvc-storage``
     URL des entfernten Speicherplatzes
 
     Daneben werden noch weitere Protokolle unterstützt, die dem Pfad
@@ -55,10 +59,10 @@ Die zugehörige Konfigurationsdatei ``.dvc/config`` sieht dann so aus:
 
 .. code-block:: ini
 
-    ['remote "nfs"']
-    url = /var/myproject-dvc
+    ['remote "local"']
+    url = /var/dvc-storage
     [core]
-    remote = nfs
+    remote = local
     ['remote "webserver"']
     url = https://dvc.example.org/myproject
 
@@ -71,10 +75,12 @@ werden muss:
 
 .. code-block:: console
 
-    $ dvc add data/fortune500.csv 
+    $ dvc get https://github.com/iterative/dataset-registry get-started/data.xml \
+        -o data/data.xml
+    $ dvc add data/data.xml
 
-Dies fügt die Datei ``data/fortune500.csv`` in ``data/.gitignore`` hinzu und
-schreibt die Metanangaben in ``data/fortune500.csv.dvc``. Weitere Informationen
+Dies fügt die Datei ``data/data.xml`` in ``data/.gitignore`` hinzu und
+schreibt die Metanangaben in ``data/data.xml.dvc``. Weitere Informationen
 zum Dateiformat der ``*.dvc``-Datei erhaltet ihr unter `DVC-File Format
 <https://dvc.org/doc/user-guide/dvc-file-format>`_.
 

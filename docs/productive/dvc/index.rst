@@ -68,12 +68,21 @@ Für Mac OS X lässt sich DVC installieren mit:
 
     $ brew install iterative/homebrew-dvc/dvc
 
+.. note::
+    Bitte beachtet, dass das folgende Beispiel mit einer aktuellen DVC-Version
+    erstellt wurde (1.0.0a9), die z.T. eine andere Syntax als frühere Versionen
+    verwendet. Dies könnt Ihr aktuell (8. Juni 2020) nur mit pip installieren::
+
+        $ pipenv install dvc[all]==1.0.0a9
+
 .. toctree::
     :hidden:
 
     init
-    integration
     pipeline
-    reproduce
+    params
     metrics
+    dag
+    reproduce
+    integration
 

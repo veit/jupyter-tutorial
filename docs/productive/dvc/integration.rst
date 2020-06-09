@@ -10,11 +10,6 @@ Um DVC-Dateien in Vim als YAML zu erkennen, solltet ihr Folgendes in
     " DVC
     autocmd! BufNewFile,BufRead Dvcfile,*.dvc setfiletype yaml
 
-.. seealso::
-   * `Git Repository <https://github.com/iterative/dvc>`_
-   * `Documentation <https://dvc.org/doc>`_
-   * `Tutorial <https://dvc.org/doc/tutorial>`_
-
 IntelliJ IDEs
 -------------
 
