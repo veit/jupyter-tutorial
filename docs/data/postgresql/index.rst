@@ -116,5 +116,6 @@ Cross Platform
     orm
     sqlalchemy
     alembic
+    postgis/index
     sec
 
