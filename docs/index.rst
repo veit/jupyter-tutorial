@@ -18,7 +18,7 @@ und neue Verwendungsmöglichkeiten ermöglichen.
     intro
     first-steps/index
     workspace/index
-    gather/index
+    data/index
     consistency/index
     viz/index
     refactoring/index
