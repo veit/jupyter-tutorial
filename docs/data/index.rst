@@ -23,4 +23,5 @@ Speichermedien </data/overview.rst#entfernte-speichermedien>` und
     requests/index
     beautifulsoup
     intake/index
+    postgresql/index
 
