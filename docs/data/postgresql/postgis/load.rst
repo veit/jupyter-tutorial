@@ -32,7 +32,7 @@ Beste ist, dass diese Daten gemeinfrei sind:
       inflating: ne_110m_admin_0_countries.shp
       inflating: ne_110m_admin_0_countries.shx
 
-#. Laden in unsere ``postgis``-Datenbank
+#. Laden in unsere ``postgis_db``-Datenbank
 
    Die Dateien ``.dbf``, ``.prj``, ``.shp`` und ``.shp`` bilden ein sog.
    ShapeFile, ein beliebtes Geodaten-Datenformat, das von der GIS-Software
@@ -59,12 +59,13 @@ Beste ist, dass diese Daten gemeinfrei sind:
 
       .. code-block:: console
 
-        $ ogr2ogr -f PostgreSQL PG:dbname=postgis -progress -nlt PROMOTE_TO_MULTI \
+        $ ogr2ogr -f PostgreSQL PG:dbname=postgis_db -progress \
+            -nlt PROMOTE_TO_MULTI \
             /home/veit/nedata/ne_110m_admin_0_countries.shp
 
       ``-f PostgreSQL``
         gibt an, dass das Ziel eine PostgreSQL-Datenbank ist
-      ``PG:dbname=postgis``
+      ``PG:dbname=postgis_db``
         gibt den PostgreSQL-Datenbanknamen an.
         Neben dem Namen können so auch weitere Optionen angegeben werden, allgemein:
 
@@ -87,9 +88,9 @@ Beste ist, dass diese Daten gemeinfrei sind:
 
       .. code-block:: console
 
-        $ ogrinfo -so PG:dbname=postgis ne_110m_admin_0_countries
+        $ ogrinfo -so PG:dbname=postgis_db ne_110m_admin_0_countries
         Output
-        INFO: Open of `PG:dbname=postgis'
+        INFO: Open of `PG:dbname=postgis_db'
               using driver `PostgreSQL' successful.
 
         Layer name: ne_110m_admin_0_countries
@@ -101,8 +102,8 @@ Beste ist, dass diese Daten gemeinfrei sind:
 
       .. code-block:: console
 
-        $ psql -d postgis
-        postgis=# \dt
+        $ psql -d postgis_db
+        postgis_db=# \dt
                            List of relations
          Schema |           Name            | Type  |  Owner
         --------+---------------------------+-------+----------
