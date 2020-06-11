@@ -19,7 +19,6 @@ und neue Verwendungsmöglichkeiten ermöglichen.
     first-steps/index
     workspace/index
     data/index
-    consistency/index
     viz/index
     refactoring/index
     productive/index
