@@ -116,4 +116,5 @@ Cross Platform
     orm
     sqlalchemy
     alembic
+    sec
 
