@@ -26,7 +26,7 @@ konfiguriert werden, dass sich nicht jeder ``(PUBLIC)`` damit verbinden kann:
     CREATE DATABASE myapp;
     REVOKE ALL ON myapp FROM PUBLIC;
 
-Damit kann sich nur noch der Superuser mit der Datenbank cwa verbinden.
+Damit kann sich nur noch der Superuser mit der Datenbank ``myapp`` verbinden.
 
 Passwörter speichern
 --------------------
@@ -59,9 +59,9 @@ Schreibrechte:
 
 .. code-block:: postgresql
 
-    GRANT CONNECT ON DATABASE to cwa_users;
-    GRANT SELECT ON diagnosis_key TO cwa_reader;
-    GRANT INSERT ON diagnosis_key TO cwa_inserter;
+    GRANT CONNECT ON DATABASE to myapp_users;
+    GRANT SELECT ON diagnosis_key TO myapp_reader;
+    GRANT INSERT ON diagnosis_key TO myapp_writer;
 
 Der User ``myapp_reader`` kann damit jedoch alle Daten auf einmal lesen. Auch
 dies ist ein Angriffspunkt, der besser durch eine Funktion beschnitten wird:
@@ -79,9 +79,9 @@ Funktion ``myapp_reader`` erlaubt:
 
 .. code-block:: postgresql
 
-    ALTER FUNCTION get_key_data(UUID) OWNER TO cwa_owner;
+    ALTER FUNCTION get_key_data(UUID) OWNER TO myapp_owner;
     REVOKE ALL ON FUNCTION get_key_dataUUID) FROM PUBLIC;
-    GRANT EXECUTE ON FUNCTION get_key_data(UUID) TO cwa_reader;
+    GRANT EXECUTE ON FUNCTION get_key_data(UUID) TO myapp_reader;
 
 Damit kann ``myapp_reader`` also nur noch einen einzelnen Datensatz lesen.
 
