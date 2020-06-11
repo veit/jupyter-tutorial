@@ -49,8 +49,8 @@ Forschungsprojekts:
    :doc:`workspace/ipython/index`, :doc:`workspace/jupyter/index` mit
    :doc:`workspace/jupyter/nbextensions/index` und
    :doc:`workspace/jupyter/ipywidgets/index`.
-4. **Daten sammeln**, entweder durch eine :doc:`Rest-API <gather/web-api>` oder
-   direkt von einer :doc:`HTML-Seite <gather/html>`.
+4. **Daten sammeln**, entweder durch eine :doc:`Rest-API <data/web-api>` oder
+   direkt von einer :doc:`HTML-Seite <data/html>`.
 5. **Daten bereinigen** ist eine wiederkehrende Aufgabe, die u.a. redundante,
    inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
 6. **Erschließen der Daten –** :doc:`viz/index` umfasst expolorative Analysen und
