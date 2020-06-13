@@ -68,7 +68,7 @@ Create Session
 
     contact = Contact(
         firstname='Veit', lastname='Schiele',
-        email='veit.schiele@ise.fraunhofer.de',
+        email='veit@cusy.io',
         address=address
     )
 
@@ -81,7 +81,7 @@ Read
 ::
 
     contact =
-    session.query(Contact).filter_by(email='veit.schiele@ise.fraunhofer.de').first()
+    session.query(Contact).filter_by(email='veit@cusy.io').first()
     print(contact.firstname)
 
     contacts = session.query(Contact).all()
@@ -89,7 +89,7 @@ Read
         print(contact.firstname)
 
     contacts =
-    session.query(Contact).filter_by(email='veit.schiele@ise.fraunhofer.de').all()
+    session.query(Contact).filter_by(email='veit@cusy.io').all()
     for contact in contacts:
         print(contact.firstname)
 
@@ -99,7 +99,7 @@ Update
 ::
 
     contact = session.query(Contact) \
-        .filter_by(email='veit.schiele@ise.fraunhofer.de').first()
+        .filter_by(email='veit@cusy.io').first()
     contact.email = ‘info@veit-schiele.de'
     session.add(contact)
     session.commit()
