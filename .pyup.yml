@@ -1,0 +1,35 @@
+# See https://pyup.io/docs/bot/config/
+
+# Update all packages
+# allowed: all, insecure, False
+update: all
+
+# Search for requirement files
+search: True
+
+# Dependency pinning
+pin: True
+
+# Default Branch
+default: master
+
+# Update schedule
+schedule: "every week"
+
+# Add a label to pull requests
+label_prs: update
+
+# Assign users to pull requests
+assignees:
+ - veit
+ - cusyio
+
+# Branch pre-fix
+branch_prefix: pyup-
+
+# Allow to close stale PRs
+close_prs: True
+
+# Label PRs
+label_prs: update
+
