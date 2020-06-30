@@ -1,6 +1,6 @@
 Sphinx==3.1.1
 jupyter-client==6.1.5
 notebook==6.0.3
-jupyter
+jupyter==1.0.0
 nbsphinx==0.4.2
 ipylayout
