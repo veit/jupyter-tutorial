@@ -20,4 +20,5 @@ sondern nur eine kurze Einführung geben.
     string-matching.ipynb
     nulls.ipynb
     scikit-learn-reprocessing.ipynb
+    dask-pipeline.ipynb
 
