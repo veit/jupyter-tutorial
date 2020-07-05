@@ -18,7 +18,8 @@ und neue Verwendungsmöglichkeiten ermöglichen.
     intro
     first-steps/index
     workspace/index
-    data/index
+    data-rw/index
+    clean-prep/index
     viz/index
     refactoring/index
     productive/index

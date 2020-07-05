@@ -27,5 +27,4 @@ und hilfreiche Python-Pakete in :doc:`clean-prep/index` vor.
     beautifulsoup
     intake/index
     postgresql/index
-    clean-prep/index
 
