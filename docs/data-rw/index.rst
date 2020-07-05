@@ -1,5 +1,5 @@
-Daten lesen, schreiben und vorbereiten
-======================================
+Daten lesen und schreiben
+=========================
 
 Einen Überblick über öffentliche Repositories mit Forschungsdaten erhaltet ihr
 z.B. in der `Registry of research data repositories (re3data)
