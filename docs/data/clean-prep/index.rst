@@ -17,4 +17,5 @@ sondern nur eine kurze Einführung geben.
     :maxdepth: 0
 
     deduplicating
+    string-matching
 
