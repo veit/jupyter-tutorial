@@ -16,6 +16,6 @@ sondern nur eine kurze Einführung geben.
     :titlesonly:
     :maxdepth: 0
 
-    deduplicating.ipynb
+    deduplicate.ipynb
     string-matching.ipynb
 
