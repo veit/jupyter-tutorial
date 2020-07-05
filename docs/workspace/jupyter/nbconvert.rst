@@ -136,10 +136,10 @@ Weitere Angaben für ``FORMAT`` sind ``asciidoc``, ``custom``, ``html``,
 nb2xls
 ------
 
-` https://github.com/ideonate/nb2xls<https://github.com/ideonate/nb2xls>`_
-konvertiert Jupyter-Notebooks in Excel-Dateien (``.xlsx``) unter
-Berücksichtigung von pandas DataFrames und Matplotlib-Ausgaben. Die
-Eingabezellen werden jedoch nicht konvertiert und Markdown nur zum Teil.
+`nb2xls <https://github.com/ideonate/nb2xls>`_ konvertiert Jupyter-Notebooks
+in Excel-Dateien (``.xlsx``) unter Berücksichtigung von pandas DataFrames und
+Matplotlib-Ausgaben. Die Eingabezellen werden jedoch nicht konvertiert und
+Markdown nur zum Teil.
 
 Eigene Exporter
 ---------------
