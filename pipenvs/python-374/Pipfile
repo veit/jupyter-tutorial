@@ -33,6 +33,7 @@ s3fs = "*"
 python-snappy = "*"
 pyviz-comms = "*"
 ipylayout = "*"
+dedupe = "*"
 
 [requires]
 python_version = "3.7.4"

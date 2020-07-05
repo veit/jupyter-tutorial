@@ -1,5 +1,5 @@
-Daten lesen und schreiben
-=========================
+Daten lesen, schreiben und vorbereiten
+======================================
 
 Einen Überblick über öffentliche Repositories mit Forschungsdaten erhaltet ihr
 z.B. in der `Registry of research data repositories (re3data)
@@ -14,6 +14,9 @@ Speichermedien </data/overview.rst#entfernte-speichermedien>` und
 * :doc:`intake/index`
 * :doc:`DVC <../productive/dvc/index>`
 
+Zum Bereinigen und Vorbereiten der Daten stellen wir Euch einige Best Practices
+und hilfreiche Python-Pakete in :doc:`clean-prep/index` vor.
+
 .. toctree::
     :hidden:
     :titlesonly:
@@ -24,4 +27,5 @@ Speichermedien </data/overview.rst#entfernte-speichermedien>` und
     beautifulsoup
     intake/index
     postgresql/index
+    clean-prep/index
 
