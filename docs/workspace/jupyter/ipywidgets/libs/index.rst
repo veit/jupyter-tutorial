@@ -53,7 +53,7 @@ Beliebte Widget-Bibliotheken sind
 
 ``qgrid``
     Widget auf Basis von `SlickGrid <https://github.com/mleibman/SlickGrid>`_
-    zum rendern von pandas DataFrames in Jupyter-Notebooks
+    zum Rendern von pandas DataFrames in Jupyter-Notebooks
 
     .. toctree::
        :maxdepth: 1
