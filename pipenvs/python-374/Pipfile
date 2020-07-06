@@ -38,6 +38,7 @@ fuzzywuzzy = "*"
 python-levenshtein = "*"
 voluptuous = "*"
 engarde = "*"
+tdda = "*"
 
 [requires]
 python_version = "3.7.4"
