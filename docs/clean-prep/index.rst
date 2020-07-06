@@ -24,4 +24,5 @@ sondern nur eine kurze Einführung geben.
     voluptuous.ipynb
     engarde.ipynb
     tdda.ipynb
+    hypothesis.ipynb
 

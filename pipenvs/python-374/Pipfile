@@ -39,6 +39,7 @@ python-levenshtein = "*"
 voluptuous = "*"
 engarde = "*"
 tdda = "*"
+hypothesis = {extras = ["numpy", "pandas"],version = "*"}
 
 [requires]
 python_version = "3.7.4"
