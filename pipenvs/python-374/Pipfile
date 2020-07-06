@@ -36,6 +36,7 @@ ipylayout = "*"
 dedupe = "*"
 fuzzywuzzy = "*"
 python-levenshtein = "*"
+voluptuous = "*"
 
 [requires]
 python_version = "3.7.4"
