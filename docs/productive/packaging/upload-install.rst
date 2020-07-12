@@ -183,3 +183,7 @@ Schließlich könnt ihr nun euer Paket auf PyPI veröffentlichen:
     Versionsnummer erneut hochladen! Seit also vor dem Löschen und Hochladen
     vorsichtig: Releases können nicht einfach  ersetzt werden.
 
+.. seealso::
+    * `PyPI Release Checklist
+      <https://cookiecutter-namespace-template.readthedocs.io/en/latest/pypi-release-checklist.html>`_
+
