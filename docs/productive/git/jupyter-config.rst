@@ -1,5 +1,5 @@
-Erste Schritte
-==============
+Git für Jupyter Notebooks konfigurieren
+=======================================
 
 Im Notebook-Dateiformat :ref:`nbformat <was-ist-eine-ipynb-datei>` können auch
 die Ergebnisse der Berechnungen gespeichert werden. Dies können auch
