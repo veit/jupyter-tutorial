@@ -32,8 +32,8 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     log
     tagging
     reverting
-    glossary
     tools
     best-practices
     workflows/index
+    glossary
 

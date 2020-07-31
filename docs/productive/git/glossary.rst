@@ -3,13 +3,15 @@ Git-Glossar
 
 .. glossary::
 
-    ``git``
-        verteiltes Versionskontrollsystem
+    Git
+        Git ist eine verteilte Versionsverwaltung
 
     GitLab
-        Plattform für die gemeinsame Arbeit an Git-Repositories
+        Web-Anwendung zur Versionsverwaltung auf Basis von :term:`git`. Später
+        kamen Gitlab CI, ein System zur kontinuierlichen Integration, GitLab
+        Runner, Container-Registry und vieles andere hinzu.
 
-    ``commit``
+    ``git commit``
         ein Snapshot des gesamten Git-Repository, komprimiert in einem `SHA
         <https://de.wikipedia.org/wiki/Secure_Hash_Algorithm>`_
 
