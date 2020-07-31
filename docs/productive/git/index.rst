@@ -28,6 +28,7 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     working-areas
     work
     branching
+    log
     glossary
     first-steps
     tools
