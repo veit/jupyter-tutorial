@@ -30,6 +30,7 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     branching
     log
     tagging
+    reverting
     glossary
     first-steps
     tools
