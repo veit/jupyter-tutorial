@@ -25,6 +25,7 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     :hidden:
 
     install-config
+    working-areas
     glossary
     first-steps
     tools
