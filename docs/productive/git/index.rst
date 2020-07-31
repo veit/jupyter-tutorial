@@ -26,13 +26,13 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
 
     install-config
     jupyter-config
+    tools
     working-areas
     work
     branching
     log
     tagging
     reverting
-    tools
     best-practices
     workflows/index
     glossary
