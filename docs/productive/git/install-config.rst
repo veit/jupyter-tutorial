@@ -38,11 +38,57 @@ Konfiguration
 ``$ git config --global color.ui auto``
     aktiviert die Kolorierung der Befehlszeilenausgabe.
 
+Die ``~/.gitconfig``-Datei
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Mit den oben angegebenen Befehle kann z.B. folgende Datei erstellt werden:
+
+.. code-block:: ini
+
+    [user]
+        name = veit
+        email = veit@cusy.io
+
+    [color]
+        diff = auto
+        status = auto
+        branch = auto
+
+In der ``~/.gitconfig``-Datei können jedoch auch Aliase festgelegt werden:
+
+.. code-block:: ini
+
+    [alias]
+        st = status
+        ci = commit
+        br = branch
+        co = checkout
+        df = diff
+        dfs = diff --staged
+
+Auch der Editor lässt sich angeben und die Hervorhebung von Leerzeichenfehlern
+in ``git diff``:
+
+.. code-block:: ini
+
+    [core]
+
+        editor = vim
+
+        # Highlight whitespace errors in git diff:
+        whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
+
+.. note::
+    Ein umfangreiches Beispiel einer `~/.gitconfig`-Datei findet Ihr in meinem
+    `dotfiles <https://github.com/veit/dotfiles/>`_-Repository: `.gitconfig
+    <https://github.com/veit/dotfiles/blob/master/.gitconfig>`_.
+
 Die ``.gitgnore``-Datei
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In der ``.gitgnore``-Datei könnt Ihr Dateien von der Versionsverwaltung
-ausschließen. Eine typische ``.gitgnore``-Datei kann z.B. so aussehen:
+In der ``.gitgnore``-Datei eines Repository könnt Ihr Dateien von der
+Versionsverwaltung ausschließen. Eine typische ``.gitgnore``-Datei kann z.B. so
+aussehen:
 
 .. code-block:: ini
 
@@ -51,9 +97,21 @@ ausschließen. Eine typische ``.gitgnore``-Datei kann z.B. so aussehen:
     /tmp
     *.swp
 
-Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
-<https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository oder auf
-der Website `gitignore.io <https://gitignore.io/>`_.
+Ih könnt jedoch auch zentral für alle Git-Repositories Dateien ausschließen.
+Hierfür wird üblicherweise in der ``~/.gitconfig``-Datei folgendes angegeben:
+
+.. code-block:: ini
+
+    [core]
+
+        # Use custom `.gitignore`
+        excludesfile = ~/.gitignore
+        …
+
+.. note::
+    Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
+    <https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository oder
+    auf der Website `gitignore.io <https://gitignore.io/>`_.
 
 Git pre-commit Hocks
 ~~~~~~~~~~~~~~~~~~~~
