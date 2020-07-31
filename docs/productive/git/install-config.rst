@@ -78,6 +78,60 @@ in ``git diff``:
         # Highlight whitespace errors in git diff:
         whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
 
+Anmeldedaten verwalten
+::::::::::::::::::::::
+
+Seit der Git-Version 1.7.9 lassen sich die Zugangsdaten zu git-Repositories mit
+`gitcredentials <https://git-scm.com/docs/gitcredentials>`_ verwalten. Um diese
+zu nutzen, könnt Ihr z.B. folgendes angeben:
+
+.. code-block:: console
+
+    $ git config --global credential.helper Cache
+
+Hiermit wird Ihr Passwort für 15 Minuten im Cache-Speicher gehalten. Der Timeout
+kann ggf. erhöht werden, z.B. mit:
+
+.. code-block:: console
+
+    $ git config credential.helper 'cache --timeout=3600'
+
+Mac OS X
+::::::::
+
+Unter Mac OS X lässt sich mit `osxkeychain` die Schlüsselbundverwaltung
+(*Keychain*) nutzen um die Zugangsdaten zu speichern. `osxkeychain` setzt Git in
+der Version 1.7.10 oder neuer voraus und kann im selben Verzeichnis wie Git
+installiert werden mit:
+
+.. code-block:: console
+
+    $ git credential-osxkeychain
+    git: 'credential-osxkeychain' is not a git command. See 'git --help'.
+    $ curl -s -O http://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain
+    $ chmod u+x git-credential-osxkeychain
+    $ sudo mv git-credential-osxkeychain /usr/bin/
+    Password:
+    git config --global credential.helper osxkeychain
+
+Dies trägt folgendes in die ~/.gitconfig ein:
+
+.. code-block:: ini
+
+    [credential]
+        helper = osxkeychain
+
+Windows
+:::::::
+
+Für Windows steht `Git Credential Manager for Windows
+<https://github.com/Microsoft/Git-Credential-Manager-for-Windows>`_ zur
+Verfügung. Für das Programm muss der `Installer
+<https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest>`_
+heruntergeladen werden. Nach dem Doppelklick führt er Euch durch die weitere
+Installation. Als Terminal-Emulator für Git Bash solltet Ihr das
+Standardkonsolenfenster von Windows auswählen.
+
 .. note::
     Ein umfangreiches Beispiel einer `~/.gitconfig`-Datei findet Ihr in meinem
     `dotfiles <https://github.com/veit/dotfiles/>`_-Repository: `.gitconfig
