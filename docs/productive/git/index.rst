@@ -27,6 +27,7 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     install-config
     working-areas
     work
+    branching
     glossary
     first-steps
     tools
