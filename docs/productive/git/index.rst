@@ -25,6 +25,7 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     :hidden:
 
     install-config
+    jupyter-config
     working-areas
     work
     branching
@@ -32,7 +33,6 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     tagging
     reverting
     glossary
-    first-steps
     tools
     best-practices
     workflows/index
