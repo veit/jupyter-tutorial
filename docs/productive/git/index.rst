@@ -29,6 +29,7 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     work
     branching
     log
+    tagging
     glossary
     first-steps
     tools
