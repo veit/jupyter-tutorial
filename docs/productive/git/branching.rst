@@ -2,24 +2,24 @@ Git-Verzweigungen
 =================
 
 ``$ git branch [-a]``
-    zeigt alle lokalen Verzweigungen in einem Repository an
+    zeigt alle lokalen Verzweigungen in einem Repository an.
 
     ``-a``
-        zeigt auch alle entfernten Verzweigungen an
+        zeigt auch alle entfernten Verzweigungen an.
 
 ``$ git branch [branch_name]``
-    erstellt auf Basis des aktuellen ``HEAD`` einen neuen Zweig
+    erstellt auf Basis des aktuellen ``HEAD`` einen neuen Zweig.
 ``$ git checkout [-b] [branch_name]``
-    ändert das Arbeitsverzeichnis in den angegebenen Zweig
+    ändert das Arbeitsverzeichnis in den angegebenen Zweig.
 
     ``-b``
-        erstellt den angegebenen Zweig wenn er nicht schon besteht
+        erstellt den angegebenen Zweig, wenn dieser nicht schon besteht.
 ``$ git merge [from name]``
-    verbindet den angegebenen mit dem aktuellen Zweig, in dem Sie sich gerade
-    befinden
+    verbindet den angegebenen mit dem aktuellen Zweig, in dem Ihr euch gerade
+    befindet.
 ``$ git branch -d [name]``
     löscht den ausgewählten Zweig, wenn er bereits in einen anderen überführt
-    wurde
+    wurde.
 
-    ``-D`` statt ``-d`` erzwingt die Löschung
+    ``-D`` statt ``-d`` erzwingt die Löschung.
 
