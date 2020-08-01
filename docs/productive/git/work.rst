@@ -50,7 +50,7 @@ An einem Projekt arbeiten
     unwiderruflich Änderungen im Arbeitsbereich verwerfen.
 ``$ git commit -m 'Commit message'``
     einen neuen Commit mit den hinzugefügten Änderungen machen.
-`` git commit --dry-run --short``
+``git commit --dry-run --short``
     ``--dry-run`` zeigt, was committet werden würde.
     ``--short`` zeigt den Status im Kurzformat an.
 ``$ git reset [file]``
