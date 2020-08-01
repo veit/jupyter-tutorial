@@ -151,6 +151,33 @@ aussehen:
     /tmp
     *.swp
 
+Git-commit leerer Ordner
+::::::::::::::::::::::::
+
+In obigem Beispiel seht Ihr, dass mit ``/logs/*`` keine Inhalte des
+``logs``-Verzeichnis mit Git versioniert werden soll, in der Folgezeile jedoch
+eine Ausnahme definiert wird: ``!logs/.gitkeep`` erlaubt, dass die Datei
+``.gitkeep`` mit Git verwaltet werden darf. Damit wird dann auch das
+``logs``-Verzeichnis in das Git-Repository übernommen. Diese Hilfskonstruktion
+ist erforderlich, da leere Ordner nicht mit Git verwaltet werden können.
+
+Eine andere Möglichkeit besteht darin, in einem leeren Ordner eine
+``.gitignore``-Datei mit folgendem Inahlt zu erstellen:
+
+.. code-block:: ini
+
+    # ignore everything except .gitignore
+    *
+    !.gitignore
+
+
+.. seealso:
+    * `Can I add empty directories?
+      <https://git.wiki.kernel.org/index.php/GitFaq#Can_I_add_empty_directories.3F>`_
+
+``excludesfile``
+::::::::::::::::
+
 Ih könnt jedoch auch zentral für alle Git-Repositories Dateien ausschließen.
 Hierfür wird üblicherweise in der ``~/.gitconfig``-Datei folgendes angegeben:
 
