@@ -23,3 +23,7 @@ Git-Verzweigungen
 
     ``-D`` statt ``-d`` erzwingt die Löschung.
 
+.. seealso::
+    * `Git Branching - Branches auf einen Blick
+      <https://git-scm.com/book/de/v2/Git-Branching-Branches-auf-einen-Blick>`_
+
