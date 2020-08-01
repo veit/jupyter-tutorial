@@ -132,3 +132,74 @@ Git Best Practices
   unerwünschte Dateien, seien es Zugangsdaten oder große Binärdateien aus Eurer
   Git-Historie entfernen.
 
+  Alternativ könnt Ihr auch auf der Kommandozeile die Daten löschen.
+
+  – Löschen des letzten Commits
+
+    .. code-block:: console
+
+        $ git reset HEAD^ --hard
+        $ git push origin -f
+
+  – Löschen anderer Commits
+
+    .. code-block:: console
+
+        $ git rebase -i sha origin
+
+      interaktiver Modus, in dem Euer Standardeditor geöffnet wird und eine
+      Liste aller Commits nach dem zu entfernenden Commit mit dem Hash-Wert
+      ``sha`` angezeigt wird, z.B.:
+
+      .. code-block:: console
+
+        pick d82199e Update readme
+        pick 410266e Change import for the interface
+        …
+
+      Wenn ihr nun eine Zeile entfernt, so wird dieser Commit nach dem
+      Speichern und Schließen des Editors gelöscht. Anschließend kann das
+      entfernte Repository aktualisiert werden mit:
+
+      .. code-block:: console
+
+        $ git push origin HEAD:master -f
+
+  – Ändern einer Commit-Nachricht
+
+    Dies lässt sich ebenfalls einfach mit ``rebase`` realisieren wobei Ihr in
+    Ihrem Editor nicht die Zeile löschen sondern in der Zeile ``pick`` durch
+    ``r`` (*reword*) ersetzen müsst.
+
+  – Entfernen einer Datei aus der Historie
+
+    Eine Datei kann vollständig aus Git-Historie des aktuellen Branches entfernt
+    werden mit:
+
+    .. code-block:: console
+
+        $ git filter-branch -f --force --index-filter 'git rm -rf --cached \
+            --ignore-unmatch path/somefile' --prune-empty --tag-name-filter cat \
+            -- --all
+        $ rm -rf .git/refs/original/
+        $ git reflog expire --expire=now --all
+        $ git gc --prune=now
+        $ git gc --aggressive --prune=now
+        $ git push origin <branch> --force
+
+  – Entfernen einer Zeichenkette aus der Historie
+
+    .. code-block:: console
+
+        $ git filter-branch --force --tree-filter "[ -f <path>/<file> ] && \
+            sed -i 's/<secret password>//g' <path>/<file> || /bin/true" -- --all
+        …
+
+    .. note::
+        Bei Mac OS X muss /usr/bin/true statt des /bin/true bei Linux verwendet
+        werden.
+
+  .. seealso::
+    * `git-reflog <https://git-scm.com/docs/git-reflog>`_
+    * `git-gc <https://git-scm.com/docs/git-gc>`_
+
