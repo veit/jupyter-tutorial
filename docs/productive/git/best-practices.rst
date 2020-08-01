@@ -119,6 +119,12 @@ Git Best Practices
 
   - Validiert das Repo mit ``git fsck``.
   - Komprimiert das Repo mit ``git gc`` bzw. ``git gc --aggressive``.
+
+    .. seealso::
+        * `git gc <https://git-scm.com/docs/git-gc>`_
+        * `Git Interna - Wartung und Datenwiederherstellung
+          <https://git-scm.com/book/de/v2/Git-Interna-Wartung-und-Datenwiederherstellung>`_
+
   - Bereinigt die Remote Tracking Branches mit ``git remote update --prune``.
   - Überprüft vergessene Arbeiten mit: ``git stash list``.
 
