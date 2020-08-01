@@ -35,7 +35,7 @@ Git-Tagging
         Counting objects: 1, done.
         Writing objects: 100% (1/1), 161 bytes, done.
         Total 1 (delta 0), reused 0 (delta 0)
-        To https://github.com/veit/diazo_bootstrap.git
+        To https://github.com/veit/jupyter-tutorial.git
          * [new tag]         0.6.1 -> 0.6.1
 
 ``git tag [-d name]``
