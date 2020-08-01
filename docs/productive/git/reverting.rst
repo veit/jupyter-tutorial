@@ -22,6 +22,6 @@
 
     Mit ``--tags`` können gleichzeitig Tags übertragen werden.
 ``$ git push -u [remote] [branch]``
-    Übertragen des lokalen Zweigs in das Remote-Repository wobei die Kopie als
+    überträgt den lokalen Zweig in das Remote-Repository wobei die Kopie als
     Upstream festgelegt wird.
 
