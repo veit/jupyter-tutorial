@@ -40,6 +40,8 @@ An einem Projekt arbeiten
     fügt eine Datei dem Bühnenbereich hinzu.
 ``$ git add -p [file]``
     fügt Teile einer Datei dem Bühnenbereich hinzu.
+``$ git add -e [file]``
+    die zu übernehmenden Änderungen können im Standardeditor bearbeitet werden.
 ``$ git diff [file]``
     zeigt Unterschiede zwischen Arbeits- und Bühnenbereich.
 ``$ git diff --staged [file]``
