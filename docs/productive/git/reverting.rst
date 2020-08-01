@@ -3,7 +3,11 @@
 
 ``$ git reset [--hard] [target reference]``
    wechselt vom aktuellen Zweig zur Zielreferenz und hinterlässt den Unterschied
-   als nicht festgeschriebene Änderung.
+   als nicht festgeschriebene Änderung, z.B.:
+
+   .. code-block:: console
+
+        $ git reset HEAD setup.py
 
    ``--hard`` verwirft alle Änderungen.
 
