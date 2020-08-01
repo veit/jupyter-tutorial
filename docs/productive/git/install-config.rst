@@ -12,6 +12,13 @@ Für iX-Distributionen sollte Git im Standard-Repository vorhanden sein.
 
     $ sudo apt install git-all
 
+  Mit der Bash-Autovervollständigung lässt sich Git auf der Kommandozeile
+  einfacher bedienen:
+
+  .. code-block:: console
+
+    $ sudo apt install bash-completion
+
 * Für Mac OS X:
 
   Es gibt verschiedene Möglichkeiten, Git auf einem Mac zu installieren. Am
@@ -21,6 +28,14 @@ Für iX-Distributionen sollte Git im Standard-Repository vorhanden sein.
   .. code-block:: console
 
     $ git --version
+
+  ``git-completion`` könnt Ihr mit `Homebrew <https://brew.sh/>`_ installieren:
+
+  Anschließend müsst Ihr folgende Zeile in ``~/.bash_profile`` hinzufügen:
+
+  .. code-block:: bash
+
+    [[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
 * Für Windows:
 
