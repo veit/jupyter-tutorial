@@ -15,4 +15,3 @@ wird vereinfacht.
     pipenv/index
     devpi
     glossary
-

@@ -15,7 +15,7 @@ praktisch die folgenden beiden Probleme hat:
 * Die meisten Entwickler und Werkzeuge gehen von der Annahme aus, dass der
   ``master``-Branch der Hauptzweig ist von dem aus ``branch`` und ``merge``
   ausgeführt wird. Bei Git Flow entsteht nun zusätzlicher Aufwand da immer
-  zunächst in den ``develop``-Branch gewechselt werden muss. 
+  zunächst in den ``develop``-Branch gewechselt werden muss.
 * Auch die ``hotfixes``- und ``release``-Branches bringen eine zusätzliche
   Komplexität, die nur in den seltensten Fällen Vorteile bringen dürfte.
 
@@ -27,4 +27,3 @@ Alternativen, die sich meist auf sog. :doc:`feature-branches` beschränken.
 .. seealso::
    `Vincent Driessen: A successful Git branching model
    <https://nvie.com/posts/a-successful-git-branching-model/>`_
-

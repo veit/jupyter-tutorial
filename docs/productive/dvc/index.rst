@@ -7,7 +7,7 @@ Parametern durchgeführt wurden, reproduzieren zu können. Um jedoch
 reproduzierbare Analysen zu erhalten, müssen sowohl die Daten als auch das
 Modell (einschließlich der Algorithmen, Parameter. etc.) versioniert werden.
 Die Versionierung von Daten für reproduzierbare Analysen ist aufgrund der
-Datengröße ein größeres Problem als die Versionierung von Modellen. Werkzeuge 
+Datengröße ein größeres Problem als die Versionierung von Modellen. Werkzeuge
 wie `DVC <https://dvc.org/>`_ helfen bei der Verwaltung von Daten indem Nutzer
 diese mit einem :doc:`Git <../git/index>`-artigen Workflow an einen entfernten
 Datenspeicher übertragen können. Hierdurch vereinfacht sich der Abruf bestimmter
@@ -85,4 +85,3 @@ Für Mac OS X lässt sich DVC installieren mit:
     dag
     reproduce
     integration
-

@@ -19,14 +19,14 @@ Beispiele in absteigender Reputation auf:
 #. erwähnen des Software-Namens
 
 Die Situation bleibt dennoch unbefriedigend für die Autor*innen von Software,
-zumal wenn sie sich von den Autor*innen der Software-Beschreibung unterscheiden. 
+zumal wenn sie sich von den Autor*innen der Software-Beschreibung unterscheiden.
 Umgekehrt ist Forschungssoftware leider auch nicht immer gut geeignet um zitiert
 zu werden. So werden Kollegen Eure Software kaum direkt zitieren können, wenn Ihr
 ihnen die Software als Anhang von E-Mails schickt. Auch ein Download-Link ist
 hier noch nicht wirklich zielführend. Aber wie können Autor*innen ihre Software
 zitierfähig bereitstellen?
 
-Die `FORCE11 <https://www.force11.org/group/software-citation-working-group>`_ 
+Die `FORCE11 <https://www.force11.org/group/software-citation-working-group>`_
 -Arbeitsgruppe hat ein Paper veröffentlicht, in denen Prinzipien des
 wissenschaftlichen Software-zitierens dargelegt werden: Arfon Smith, Daniel
 Katz, Kyle Niemeyer: `FORCE11 Software Citation Working Group
@@ -74,7 +74,7 @@ aktuell zwei Projekte für strukturierte Metadaten heraus:
 
     Der Inhalt der Datei kann z.B. so aussehen:
 
-    .. code-block:: 
+    .. code-block::
 
         # YAML 1.2
         ---
@@ -138,4 +138,3 @@ abrufen.
 
     authorship
     journals
-

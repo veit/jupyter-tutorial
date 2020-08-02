@@ -37,7 +37,7 @@ eingebunden werden kann:
     $ git commit .dvc/config -m "Configure local remote"
     [master efaeb84] Configure local remote
      1 file changed, 4 insertions(+)
- 
+
 ``-d``, ``--default``
     Standardwert für den entfernten Speicherplatz
 ``local``
@@ -132,4 +132,3 @@ Pipeline reproduzieren, die von diesen Datenquellen abhängt, z.B.:
     $ dvc update data.xml.dvc
     Stage 'data.xml.dvc' didn't change.
     Saving information to 'data.xml.dvc'.
-

@@ -55,4 +55,3 @@ Beispiele
     2019-08-18 10:55:44,056 Starting Bokeh server version 1.3.4 (running on Tornado 6.0.3)
     2019-08-18 10:55:44,067 Bokeh app running at: http://localhost:5006/Introduction
     2019-08-18 10:55:44,067 Starting Bokeh server with process id: 86677
-

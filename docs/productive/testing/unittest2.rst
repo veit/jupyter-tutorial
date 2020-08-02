@@ -3,8 +3,8 @@
 
 `unittest2 <http://pypi.org/project/unittest2>`_ ist ein Backport von
 :mod:`unittest`, mit verbesserter API und besseren *Assertions* als in früheren
-Python-Versionen. 
- 
+Python-Versionen.
+
 Beispiel
 --------
 
@@ -33,4 +33,3 @@ Installation
 .. note::
    Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
    unter :doc:`/first-steps/install`.
-

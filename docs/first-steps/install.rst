@@ -24,9 +24,9 @@ versehentlich systemweite Pakete überschrieben werden:
     Cleaning up...
 
 .. note::
-    
+
    Wenn Pipenv nach der Installation nicht in der Shell verfügbar ist, muss
-   ggf. das ``USER_BASE/bin``-Verzeichnis in ``PATH`` angegeben werden. 
+   ggf. das ``USER_BASE/bin``-Verzeichnis in ``PATH`` angegeben werden.
 
    * Unter Linux und MacOS lässt sich ``USER_BASE`` ermitteln mit:
 
@@ -89,8 +89,8 @@ virtuellen Umgebungen:
     [I 12:46:53.852 NotebookApp] The Jupyter Notebook is running at:
     [I 12:46:53.852 NotebookApp] http://localhost:8888/?token=53abd45a3002329de77f66886e4ca02539d664c2f5e6072e
     [I 12:46:53.852 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-    [C 12:46:53.858 NotebookApp] 
-        
+    [C 12:46:53.858 NotebookApp]
+
         To access the notebook, open this file in a browser:
             file:///Users/veit/Library/Jupyter/runtime/nbserver-7372-open.html
         Or copy and paste one of these URLs:
@@ -104,4 +104,3 @@ angezeigt, in dem der Notebook-Server gestartet wurde. In den meisten Fällen m�
 ihr einen Notebook-Server in eurem Projektverzeichnis starten.
 
 .. image:: initial-jupyter-dashboard.png
-

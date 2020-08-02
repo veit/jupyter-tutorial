@@ -46,4 +46,3 @@ In unserem Fall hatte die Änderung der Parameter also keinen Einfluss auf das
 Ergebnis. Beachtet dabei jedoch, dass DVC Änderungen an Abhängigkeiten und
 Ausgaben über md5-Hashwerte erkennt, die in der ``dvc.lock``-Datei gespeichert
 sind.
-

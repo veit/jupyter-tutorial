@@ -161,4 +161,3 @@ Physik und Geowissenschaften
   <https://www.journals.elsevier.com/environmental-modelling-and-software>`_
 * `Geoscientific Model Development
   <http://www.geoscientific-model-development.net/index.html>`_
-

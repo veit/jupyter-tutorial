@@ -28,4 +28,3 @@
 ``$ git push -u [remote] [branch]``
     überträgt den lokalen Zweig in das Remote-Repository wobei die Kopie als
     Upstream festgelegt wird.
-

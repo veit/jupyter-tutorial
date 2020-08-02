@@ -48,5 +48,3 @@ Installation
 .. code-block:: console
 
     $ pipenv install --user cookiecutter
-
-

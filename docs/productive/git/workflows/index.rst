@@ -14,4 +14,3 @@ eine Vielzahl von Verzweigungsstrategien und Workflows.
    deploy-branches
    branches-merge-requests
    monorepos
-

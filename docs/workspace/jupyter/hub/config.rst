@@ -24,7 +24,7 @@ System-Service für JupyterHub
     $ cd ~/jupyterhub
     $ pipenv --venv
     /srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W
- 
+
 #. Konfigurieren von ``/etc/systemd/system/jupyterhub.service`` und
    ``/lib/systemd/system/jupyterhub.service``:
 
@@ -194,4 +194,3 @@ Unterprozess des Hubs ist.
    .. code-block:: python
 
     c.JupyterHub.proxy_auth_token = '18a0335b7c2e7edeaf7466894a32bea8d1c3cff4b07860298dbe353ecb179fc6'
-

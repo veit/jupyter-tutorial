@@ -53,4 +53,3 @@ eine große Anzahl an versionierten Dateien
 große Dateien
     Große Dateien in einem Teilbaum oder einem Projekt verringern die Leistung
     des gesamten Repository.
-

@@ -55,7 +55,7 @@ heute auch in fast allen Python-Projekten verwendet, u.a. für `NumPy und SciPy
 <https://docs.scipy.org/doc/>`_, `Matplotlib
 <https://matplotlib.org/users/index.html>`_, `Pandas
 <https://pandas.pydata.org/pandas-docs/>`_ und `SQLAlchemy
-<https://docs.sqlalchemy.org/>`_. 
+<https://docs.sqlalchemy.org/>`_.
 
 Zur Verbreitung von Sphinx unter den Python-Entwicklern dürfte auch das Sphinx
 `autodoc
@@ -68,12 +68,12 @@ Erstellen der jeweils aktuellen Software-Dokumentation einfach bleibt.
 
 Sphinx wird auch in Projekten außerhalb der Python-Community verwendet, z.B. für
 die Dokumentation des Linux Kernels: `Kernel documentation update
-<https://lwn.net/Articles/705224/>`_. 
+<https://lwn.net/Articles/705224/>`_.
 
 Um die Erstellung von Dokumentationen weiter zu vereinfachen, wurde
 `Read the Docs <https://readthedocs.org/>`_ entwickelt. Read the Docs
 vereinfacht das Erstellen und Veröffentlichen von Dokumentation nach jedem
-*Commit*. 
+*Commit*.
 
 .. seealso::
    * `Christina Czeschik und Matthias Lindhorst: Weniger schlecht über IT
@@ -96,4 +96,3 @@ vereinfacht das Erstellen und Veröffentlichen von Dokumentation nach jedem
     docstrings
     intersphinx
     extensions
-

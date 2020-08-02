@@ -36,7 +36,7 @@ sehr stark, das der Mozilla Public License hingegen als sehr schwach angesehen.
 
 Da die Lizenzgeber nicht selbst an ih eigenes Copyleft gebunden sind, können sie
 neue Versionen auch unter proprietärer Lizenz veröffentlichen oder Dritten dies
-erlauben (Mehrfachlizenzierung). 
+erlauben (Mehrfachlizenzierung).
 
 Durch Copyleft-Lizenzen können jedoch schnell Inkompatibilitäten auch zu freien
 Lizenzen ohne Copyleft entstehen. So ist beispielsweise die 3-Clause-BSD-Lizenz
@@ -90,7 +90,7 @@ mit einer kurzen `Liste von Open-Source-Lizenzen
 <https://choosealicense.com/appendix/>`_ abzugleichen. Falls GitHub die Lizenz
 Eures Repository nicht erkennen kann, enthält es möglicherweise mehrere
 Lizenzen oder ist zu komplex. Überlegt Euch dann, ob Ihr die Lizenz vereinfachen
-könnt, z.B. indem Ihr Komplexität in die ``/README``-Datei auslagert. 
+könnt, z.B. indem Ihr Komplexität in die ``/README``-Datei auslagert.
 
 Umgekehrt könnt Ihr auf GitHub auch nach Repositories mit bestimmten Lizenzen
 oder Lizenzfamilien suchen. Eine Übersicht über die Lizenz-Schlüsswlwörter
@@ -168,4 +168,3 @@ Alternativen
 .. seealso::
    * `A Quick Guide to Software Licensing for the Scientist-Programmer
      <https://doi.org/10.1371/journal.pcbi.1002598>`_
-

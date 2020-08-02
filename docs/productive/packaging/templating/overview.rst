@@ -37,11 +37,9 @@ Als Ergebnis erhaltet ihr dann folgende Dateistruktur:
 
 .. code-block:: console
 
-    my.package/                            <--- Value corresponding to what you enter  
+    my.package/                            <--- Value corresponding to what you enter
     │                                          at the project_name prompt
     │
     └── …                                 <--- Files corresponding to those in your
-                                               cookiecutter’s 
+                                               cookiecutter’s
                                                {{ cookiecutter.project_name }}/ directory
-
-

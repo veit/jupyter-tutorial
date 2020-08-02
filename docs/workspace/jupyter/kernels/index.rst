@@ -32,4 +32,3 @@ Jupyter-Kernels weit verbreitet:
 
 Eine Liste verfügbarer Kernel findet ihr unter `Jupyter kernels
 <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_.
-

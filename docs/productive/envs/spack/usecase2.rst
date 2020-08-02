@@ -39,5 +39,3 @@ Use Case 2: Python und andere interpretierte Sprachen
     ==> Deactivated extension py-numpy-1.9.2-gcc@4.9.2-45hjazt
     ==> Deactivated extension py-nose-1.3.6-gcc-4.9.2-vudjpwc
     ==> Deactivated extension py-setuptools-18.1-gcc-4.9.2-ru7w3lx
-
-

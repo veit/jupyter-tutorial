@@ -32,4 +32,3 @@ Dann könnt ihr es überprüfen, z.B. mit:
 
 .. seealso::
     * `Mypy docs <https://mypy.readthedocs.io/>`_
-

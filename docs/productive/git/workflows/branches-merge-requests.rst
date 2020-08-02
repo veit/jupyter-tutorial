@@ -19,7 +19,7 @@ der ihr zusammenarbeitet.
 
 .. note::
    Achtet darauf, dass der ``master``-Branch immer nur Code enthält, der auch
-   für ein Deployment geeignet ist. 
+   für ein Deployment geeignet ist.
 
 2. Hinzufügen von Commits
 =========================
@@ -30,13 +30,13 @@ ihr diese Änderungen in eurem Branch festhalten. Der Fortschritt wird dann in
 euren Commits sichtbar.
 
 Die Commits erlauben darüberhinaus auch allen anderen Projektbeteiligten, eure
-Arbeit zu verstehen: was ihr getan habt und warum. 
+Arbeit zu verstehen: was ihr getan habt und warum.
 
 .. note::
    Commit-Messages erleichtern nicht nur das aktuelle Verständnis für eure
    Änderungen, sondern erlauben auch später, z.B. mit ``git blame``,
    Nachvollziehen zu können, warum ihr diese Änderungen gemacht habt.
-   
+
 3. Merge request stellen
 ========================
 
@@ -56,7 +56,7 @@ Nachdem ihr einen Merge Request gestellt habt, wird eine Person oder das
 Projektteam Fragen oder Kommentare zu euren Änderungen abgeben: Eventuell
 entspricht der Coding Style nicht den Projektrichtlinien, oder des Fehlen
 Unit-Tests oder es sieht alles gut aus. Merge Requests sind dazu da, solche
-Diskussionen zu fördern und zu dokumentieren. 
+Diskussionen zu fördern und zu dokumentieren.
 
 Ihr könnt auch nach einem Merge Request auf diesem Branch ``git push``
 ausführen, z.B. um Fixes, die aus diesen Diskussionen entstanden, ebenfalls
@@ -91,5 +91,3 @@ Wenn  auch das Deployment eurer Änderungen erfolgreich war, können eure
     Item mit der Nummer 42 geschlossen werden. Weitere Infos hierzu erhaltet ihr unter
     `GitLab quick actions
     <https://docs.gitlab.com/ee/user/project/quick_actions.html>`_.
-
-

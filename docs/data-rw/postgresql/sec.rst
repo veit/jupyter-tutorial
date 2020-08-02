@@ -12,7 +12,7 @@ Unix-Domain-Sockets und über ``localhost`` erlaubt sein. Der Zugang mit
 <https://www.postgresql.org/docs/current/auth-pg-hba-conf.html>`_-Datei kann
 hingegen gewährt werden:
 
-.. code-block:: 
+.. code-block::
 
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
     local   all             postgres                                peer
@@ -140,4 +140,3 @@ PostgreSQL-Erweiterung `pg_partman <https://t.co/3Q1FsU8uVg?amp=1>`_ eine eigene
 .. seealso::
    * `PostgreSQL Secure Monitoring (Posemo)
      <https://github.com/alvar-freude/Posemo>`_
-

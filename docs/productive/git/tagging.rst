@@ -45,5 +45,3 @@ Git-Tagging
 
         $ git tag -d 0.6.1
         $ git push origin :0.6.1
-
-

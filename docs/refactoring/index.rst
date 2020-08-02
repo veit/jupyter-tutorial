@@ -13,4 +13,3 @@ um anderen kann jedoch auch die Ausführgeschwindigkeit erhöht werden.
 
     autoqual/index
     parallel/index
-

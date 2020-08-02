@@ -129,9 +129,9 @@ Starten
 
     Dies kann konfiguriert werden in ``ipcluster_config.py`` z.B. mit
     ``c.IPClusterEngines.engine_launcher_class = 'SSH'`` oder mit
-    
+
     .. code-block:: console
-    
+
         $ pipenv run ipcluster start --engines=MPI
 
     .. seealso:: :ipyparallel:doc:`process`
@@ -150,4 +150,3 @@ Starten
 #. Im Browser kann anschließend unter der Adresse
    ``http://localhost:8888/tree/docs/parallel/ipyparallel#ipyclusters`` der
    Cluster mit dem ``default``-Profil gestartet werden.
-

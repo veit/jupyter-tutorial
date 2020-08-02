@@ -23,4 +23,3 @@ Parallelisierung unterstützt, u.a.:
     task.ipynb
     asyncresult
     mpi.ipynb
-

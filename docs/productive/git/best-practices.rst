@@ -10,10 +10,10 @@ Git Best Practices
   .. code-block:: console
 
     $ pipenv run cookiecutter https://github.com/veit/cookiecutter-namespace-template.git
-    full_name [Veit Schiele]: 
-    email [veit@cusy.io]: 
-    github_username [veit]: 
-    project_name [cusy.example]: 
+    full_name [Veit Schiele]:
+    email [veit@cusy.io]:
+    github_username [veit]:
+    project_name [cusy.example]:
     …
 
   Falls in eurem Projekt noch keine ``.gitignore``-Datei vorhanden ist, solltet
@@ -93,7 +93,7 @@ Git Best Practices
   lassen, in welcher Revision und von welchem Autor sie kam. Weitere
   Informationen hierzu findet ihr in der Git-Dokumentation: `git-blame
   <https://git-scm.com/docs/git-blame>`_.
-  
+
   GitLab interpretiert bestimmte Commit-Nachrichten auch als Links interpretieren, z.B.:
 
   .. code-block:: console
@@ -208,4 +208,3 @@ Git Best Practices
   .. seealso::
     * `git-reflog <https://git-scm.com/docs/git-reflog>`_
     * `git-gc <https://git-scm.com/docs/git-gc>`_
-

@@ -62,4 +62,3 @@ Installation
 
    * `Beispiele <https://tox.readthedocs.io/en/latest/examples.html>`_
    * `Plugins <https://tox.readthedocs.io/en/latest/plugins.html>`_
-

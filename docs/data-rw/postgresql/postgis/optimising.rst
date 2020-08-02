@@ -10,19 +10,19 @@ wir die Datei ``/etc/postgresql/9.3/main/postgresql.conf`` folgendermaßen:
 #. ``shared_buffer`` sollte auf ca. 75% des gesamten Arbeitsspeichers geändert
    werden, jedoch 128 kB nie unterschreiten:
 
-   .. code-block:: 
+   .. code-block::
 
     shared_buffers = 768MB
 
 #. ``work_mem`` sollte auf mindestens 16MB erhöht werden:
 
-   .. code-block:: 
+   .. code-block::
 
     work_mem = 16MB
 
 #. ``maintenance_work_mem`` sollte auf 128MB erhöht werden:
 
-   .. code-block:: 
+   .. code-block::
 
     maintenance_work_mem = 128MB
 
@@ -43,4 +43,3 @@ Damit die Änderungen übernommen werden, sollte PostgreSQL neu gestartet werden
 .. code-block:: console
 
     $ sudo service postgresql restart
-

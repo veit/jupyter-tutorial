@@ -20,4 +20,3 @@ Vorteile der Build-Automatisierung
 
   * Viele Anwendungsentwickler kennen Python bereits.
   * Die ``yaml``-Syntax der Specs sind ausdrucksstark.
-

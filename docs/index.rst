@@ -32,4 +32,3 @@ und neue Verwendungsmöglichkeiten ermöglichen.
    * :ref:`genindex`
    * :ref:`modindex`
    * :ref:`search`
-

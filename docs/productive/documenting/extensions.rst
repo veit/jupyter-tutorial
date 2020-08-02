@@ -80,4 +80,3 @@ im Verzeichnis ``exts`` in der Datei ``foo.py`` liegt, dann wird in der
     'foo',
     ...
     ]
-

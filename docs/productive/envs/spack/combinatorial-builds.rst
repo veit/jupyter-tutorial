@@ -98,39 +98,39 @@ Installationslayout
     accfft                                 py-flake8
     ...
 
-Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs: 
+Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
 
-* ohne Einschränkungen 
+* ohne Einschränkungen
 
   .. code-block:: console
 
     $ spack install mpileaks
 
-* ``@``: Benutzerdefinierte Version 
+* ``@``: Benutzerdefinierte Version
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3
 
-* ``%``: Benutzerdefinierter Compiler 
+* ``%``: Benutzerdefinierter Compiler
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3 %gcc@4.7.3
 
-* ``+``/``-``: Build-Option 
+* ``+``/``-``: Build-Option
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3 %gcc@4.7.3 +threads
 
-* ``=``: Cross-compile 
+* ``=``: Cross-compile
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3 =bgq
 
-* ``^``: Version von Abhängigkeiten 
+* ``^``: Version von Abhängigkeiten
 
   .. code-block:: console
 
@@ -147,7 +147,7 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
   angegeben werden
 * Spack kann auch ABI-inkompatible, versionierte Schnittstellen wie z.B. das
   Message Passing Interface (MPI) bereitstellen
-* So kann z.B. ``mpi`` auf unterschiedliche Weise erstellt werden: 
+* So kann z.B. ``mpi`` auf unterschiedliche Weise erstellt werden:
 
   .. code-block:: console
 
@@ -221,7 +221,7 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
         $ spack install vim –python
 
   * Abhängig von anderen Bedingungen können Abhängigkeiten optional gelten,
-    z.B. gcc-Abhängigkeit von mpc ab Version 4.5: 
+    z.B. gcc-Abhängigkeit von mpc ab Version 4.5:
 
     .. code-block:: python
 
@@ -286,4 +286,3 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
      #. Beim aktuellen Algorithmus kann nicht zurückverfolgt werden, warum eine
         Entscheidung getroffen wurde.
      #. Zukünftig soll es einen *Full constraint solver* geben.
-

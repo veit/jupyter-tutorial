@@ -3,7 +3,7 @@
 
 `check-manifest <https://pypi.org/p/check-manifest>`_ ist ein Werkzeug, mit dem
 ihr schnell überprüfen könnt, ob die Datei ``Manifest.in`` für Pyton-Pakete
-vollständig ist. 
+vollständig ist.
 
 Installation
 ------------
@@ -69,21 +69,21 @@ ignoriert werden, indem ihr einen Abschnitt ``[tool.check-manifest]`` in eurer
     Versionskontrollsystem behalten möchtet, die nicht in eurem
     Quelldistributionen enthalten sein sollen. Die Standardliste ist:
 
-    .. code-block:: 
+    .. code-block::
 
-        PKG-INFO 
-        * .egg-info 
-        * .egg-info / * 
-        setup.cfg 
-        .hgtags 
-        .hgsigs 
-        .hgignore 
-        .gitignore 
-        .bzrignore 
-        .gitattributes 
-        .github / * 
-        .travis.yml 
-        Jenkinsfile 
+        PKG-INFO
+        * .egg-info
+        * .egg-info / *
+        setup.cfg
+        .hgtags
+        .hgsigs
+        .hgignore
+        .gitignore
+        .bzrignore
+        .gitattributes
+        .github / *
+        .travis.yml
+        Jenkinsfile
         * .mo
 
 ``ignore-default-rules``
@@ -108,4 +108,3 @@ hierfür eurer `.pre-commit-config.yaml`-Datei folgendes hinzu:
         rev: "0.39"
         hooks:
         -   id: check-manifest
-

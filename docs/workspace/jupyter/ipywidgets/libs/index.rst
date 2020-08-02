@@ -23,7 +23,7 @@ Beliebte Widget-Bibliotheken sind
 
 ``ipyvolume``
     IPyvolume ist eine Python-Bibliothek zur Visualisierung von 3D-Volumen und
-    Glyphen (z.B. 3D-Scatter-Plots). 
+    Glyphen (z.B. 3D-Scatter-Plots).
 
     * :doc:`pyviz:js/ipyvolume`
 
@@ -77,4 +77,3 @@ Beliebte Widget-Bibliotheken sind
        :maxdepth: 1
 
        ipympl.ipynb
-

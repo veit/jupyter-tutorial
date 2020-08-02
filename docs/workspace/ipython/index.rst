@@ -7,7 +7,7 @@ ist, das Tools für den gesamten Lebenszyklus der Forschungsdatenverarbeitung
 bereitstellen soll. So ist IPython heute nicht nur eine interaktive
 Schnittstelle zu Python, sondern bietet auch eine Reihe nützlicher syntaktischer
 Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
-`Jupyter-Projekt <https://jupyter.org/>`_ verbunden. 
+`Jupyter-Projekt <https://jupyter.org/>`_ verbunden.
 
 .. toctree::
     :hidden:
@@ -23,4 +23,3 @@ Ergänzungen für die Sprache. Darüberhinaus ist IPython eng mit dem
     extensions
     debugging.ipynb
     profiling.ipynb
-

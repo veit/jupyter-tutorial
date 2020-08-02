@@ -13,4 +13,3 @@ Installation der Jupyter Dashboards
     $ pipenv run jupyter nbextension enable jupyter_dashboards --py --sys-prefix
     Enabling notebook extension jupyter_dashboards/notebook/main...
           - Validating: OK
-

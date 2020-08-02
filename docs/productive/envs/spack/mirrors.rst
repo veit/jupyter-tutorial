@@ -60,7 +60,7 @@ Wenn ihr die Reihenfolge ändern möchtet, in der Mirrors nach Paketen durchsuch
 bearbeiten und die Abschnitte neu anordnen: Spack durchsucht diese von oben nach unten bis ein passender Eintrag
 gefunden wird.
 
-Lokaler Standardcache 
+Lokaler Standardcache
 ---------------------
 
 Spack erstellt einen Zwischenspeicher für Ressourcen, die im Rahmen von
@@ -68,4 +68,3 @@ Installationen heruntergeladen werden. Dieser Cache ist ein gültiger
 Spack-Mirror: er verwendet dieselbe Verzeichnisstruktur und dasselbe
 Namensschema wie andere Spack-Mirror. Der Mirror wird lokal im
 Spack-Installationsverzeichnis verwaltet unter ``~/spack/var/spack/cache/``.
-

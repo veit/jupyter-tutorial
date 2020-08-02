@@ -11,7 +11,7 @@ Konfigurationsoptionen angezeigt.
    :alt: Konfiguration der Notebook-Erweiterungen
 
 Im Folgenden gebe ich einen kurzen Überblick über einige der
-Notebook-Erweiterungen. 
+Notebook-Erweiterungen.
 
 (some) LaTeX environments for Jupyter notebook
     ermöglicht die Verwendung von Markdown-Zellen für LaTeX-Befehle und
@@ -24,7 +24,7 @@ Notebook-Erweiterungen.
        :alt: LaTeX-Umgebung
 
     Das Notebook kann anschließend als HTML oder LaTeX-Dokument exportiert
-    werden. 
+    werden.
 
     Die Konfiguration der LaTeX-Umgebungen erfolgt in ``user_envs.json`` und für
     die Stile in ``latex_env.css``. Weitere Umgebungen können in
@@ -119,7 +119,7 @@ Notebook-Erweiterungen.
 
     .. image:: code-folding.png
        :alt: Codefolding
- 
+
     Üblicherweise wird das Codefolding beim Export mit :doc:`../nbconvert`
     beibehalten. Dies kann entweder in ``jupyter_nbconvert_config.py`` geändert
     werden mit:
@@ -151,4 +151,3 @@ Notebook-Erweiterungen.
 :doc:`nbextensions/load_tex_macros/readme`
     lädt automatisch eine Reihe von Latex-Befehlen aus der Datei
     ``latexdefs.tex`` wenn ein Notizbuch geöffnet wird.
-

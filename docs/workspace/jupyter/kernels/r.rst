@@ -42,4 +42,3 @@ R-Kernel
 
 .. seealso::
     * `IRkernel Installation <https://irkernel.github.io/installation/>`_
-

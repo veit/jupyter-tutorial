@@ -60,7 +60,7 @@ Environments, ``spack.yaml`` und ``spack.lock``
 
    .. code-block:: console
 
-    $ despacktivate     
+    $ despacktivate
     $ spack env status
     ==> No active environment
     $ spack find
@@ -134,7 +134,7 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
 ``spack.yaml``
     ist die Konfigurationsdatei für die virtuelle Umgebung. Sie wird in
     ``~/spack/var/spack/environments/`` beim Aufruf von ``spack env create``
-    erstellt. 
+    erstellt.
 
     Alternativ zu ``spack install`` können in ``spack.yaml`` auch der
     ``specs``-Liste Python-3.7.4, Numpy etc. hinzugefügt werden:
@@ -348,4 +348,3 @@ geladen.
 .. seealso::
 
    * :doc:`spack:tutorial_environments`
-

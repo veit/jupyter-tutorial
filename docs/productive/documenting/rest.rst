@@ -96,7 +96,7 @@ Meta-Informationen
 Code-Block
 
     .. code-block:: rest
-    
+
         .. code-block:: python
            :emphasize-lines: 3,5
 
@@ -154,4 +154,3 @@ Glossar
        source directory
           The directory which, including its subdirectories, contains all
           source files for one Sphinx project.
-

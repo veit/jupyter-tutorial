@@ -37,7 +37,7 @@ Upgrade-Workflow
 ----------------------------
 
 Dabei ist zu unterscheiden, ob ihr eine Anwendung oder eine Bibliothek
-entwickelt. 
+entwickelt.
 
 Bibliotheken
     Sie bieten wiederverwendbare Funktionen für andere Bibliotheken und
@@ -55,4 +55,3 @@ Anwendungen
     erst dann sollten die genauen Versionen aller ihrer Abhängigkeiten und
     Subabhängigkeiten konkretisiert werden. Diesen Prozess zu erleichtern,
     ist das Hauptziel von Pipenv.
-

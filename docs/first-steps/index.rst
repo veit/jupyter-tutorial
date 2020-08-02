@@ -13,4 +13,3 @@ Erste Schritte
 
 .. include:: ../../README.rst
    :start-after: first-steps
-

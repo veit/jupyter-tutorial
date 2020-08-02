@@ -74,7 +74,7 @@ Anschließend könnt ihr ein Layout erstellen z.B mit:
 
 .. code-block:: console
 
-    $ pipenv run voila --template vuetify-default bqplot_vuetify_example.ipynb 
+    $ pipenv run voila --template vuetify-default bqplot_vuetify_example.ipynb
 
 Anschließend öffnet sich euer Standardbrowser mit der URL
 ``http://localhost:8866/`` und zeigt euch die Plots im Responsive Material
@@ -156,7 +156,7 @@ Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
         ├── error.html
         ├── page.html
         └── tree.html
- 
+
 ``conf.json``
     Konfigurationsdatei, die z.B. auf das Basis-Template verweist:
 
@@ -170,4 +170,3 @@ Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
     Verzeichnis für statische Dateien.
 ``templates``
     Benutzerdefinierte Tornado-Templates
-

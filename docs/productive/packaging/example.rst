@@ -36,4 +36,3 @@ Beispiel
 
     %load_ext autoreload
     %autoreload
-

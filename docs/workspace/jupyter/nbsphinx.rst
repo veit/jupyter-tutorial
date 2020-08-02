@@ -148,7 +148,7 @@ Build
 
 #. Nun könnt ihr im Inhaltsverzeichnis eurer ``index.rst``-Datei eure
    ``*.ipynb``-Datei hinzufügen, siehe z.B. `jupyter-tutorial/ipython/index.rst
-   <https://jupyter-tutorial.readthedocs.io/de/latest/_sources/ipython/index.rst.txt>`_. 
+   <https://jupyter-tutorial.readthedocs.io/de/latest/_sources/ipython/index.rst.txt>`_.
 
 #. Schließlich könnt ihr die Seiten generieren, z.B. HTML mit
 
@@ -269,4 +269,3 @@ Javascript
         var text = document.createTextNode("Hello, I was generated with JavaScript!");
         // Content appended to "element" will be visible in the output area:
         element.appendChild(text);
-

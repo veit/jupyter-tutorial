@@ -53,7 +53,7 @@ Shell konfigurieren
 
    .. code-block:: console
 
-    $ source ~/.bashrc 
+    $ source ~/.bashrc
 
 Überprüfen der Installation
 ---------------------------
@@ -126,7 +126,7 @@ zu können mit
 
 .. code-block:: console
 
-    $ spack gpg export <location> [<key>…] 
+    $ spack gpg export <location> [<key>…]
 
 Schlüssel auflisten
 ~~~~~~~~~~~~~~~~~~~
@@ -147,4 +147,3 @@ Schlüssel können entfernt werden mit
     $ spack gpg untrust <keyid>
 
 Schlüssel-IDs können E-Mail-Adressen, Namen oder Fingerprints sein.
-

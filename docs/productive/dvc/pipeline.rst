@@ -88,4 +88,3 @@ werden:
 Werden nun mehrere Phasen mit ``dvc run`` erstellt, wobei die Ausgabe eines
 Kommandos als Abhängigkeit eines anderen angegeben wird, entsteht eine `DVC
 Pipeline <https://dvc.org/doc/commands-reference/pipeline>`_.
-

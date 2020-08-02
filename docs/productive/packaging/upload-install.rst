@@ -129,7 +129,7 @@ importiert und auf die ``name``-Eigenschaft referenziert, die zuvor in
 .. code-block:: console
 
     $ pipenv run python
-    Python 3.7.0 (default, Aug 22 2018, 15:22:29) 
+    Python 3.7.0 (default, Aug 22 2018, 15:22:29)
     …
     >>> import minimal_example
     >>> minimal_example.name
@@ -186,4 +186,3 @@ Schließlich könnt ihr nun euer Paket auf PyPI veröffentlichen:
 .. seealso::
     * `PyPI Release Checklist
       <https://cookiecutter-namespace-template.readthedocs.io/en/latest/pypi-release-checklist.html>`_
-

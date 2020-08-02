@@ -16,7 +16,7 @@ Versionsverwaltung zu erhalten, können wir `jq
 <https://stedolan.github.io/jq/>`_ verwenden, einen leichtgewichtigen
 JSON-Prozessor. Zwar benötigt man einige Zeit um ``jq`` einzurichten da es
 eine eigene eine eigene Abfrage-/Filtersprache mitbringt, aber meist sind
-schon die Standardeinstellungen gut gewählt. 
+schon die Standardeinstellungen gut gewählt.
 
 Installation
 ------------
@@ -40,11 +40,11 @@ Ein typischer Aufruf ist:
 
 .. code-block:: console
 
-    jq --indent 1  \ 
-      '(.cells [] | select (has ("output")) | .outputs) = [] 
-      | (.cells [] | select (has ("execution_count")) | .execution_count) = null 
-      | .metadata = {"language_info": {"name": "python", "pygments_lexer": "ipython3"}} 
-      | .Cells []. Metadaten = {} 
+    jq --indent 1  \
+      '(.cells [] | select (has ("output")) | .outputs) = []
+      | (.cells [] | select (has ("execution_count")) | .execution_count) = null
+      | .metadata = {"language_info": {"name": "python", "pygments_lexer": "ipython3"}}
+      | .Cells []. Metadaten = {}
       '  example.ipynb
 
 Jede Zeile innerhalb der einfachen Anführungszeichen definiert einen Filter –
@@ -54,7 +54,7 @@ Metadaten des Notebooks und ersetzt sie durch ein Minimum an erforderlichen
 Informationen, damit das Notebook noch ohne Beanstandungen ausgeführt werden
 kann, folgendes eingeben:wenn es mit nbsphinx formatiert sind. Die vierte Filterzeile,
 ``.cells []. metadata = {}``, löscht alle Metainformationen. Falls ihr bestimmte
-Metainformationen beibehalten wollt, könnt ihr dies hier angeben. 
+Metainformationen beibehalten wollt, könnt ihr dies hier angeben.
 
 Einrichten
 ----------
@@ -128,4 +128,3 @@ Einrichten
         done
         unset nbfile
     }
-

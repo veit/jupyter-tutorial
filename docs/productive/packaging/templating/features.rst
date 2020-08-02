@@ -11,7 +11,7 @@ CookieCutter-Features
   .. code-block:: console
 
     $ cookiecutter https://github.com/veit/cookiecutter-namespace-template
-    full_name [Veit Schiele]: 
+    full_name [Veit Schiele]:
     …
 
 * Ihr könnt auch lokale Templates verwenden:
@@ -27,7 +27,7 @@ CookieCutter-Features
     $ bin/python
     >>> from cookiecutter.main import cookiecutter
     >>> cookiecutter('.https://github.com/veit/cookiecutter-namespace-template.git')
-    full_name [Veit Schiele]: 
+    full_name [Veit Schiele]:
     …
 
 * Verzeichnis- und Dateinamen können Vorlagen zugewiesen werden, z.B.:
@@ -78,4 +78,3 @@ CookieCutter-Features
   .. code-block:: console
 
     $ cookiecutter cookiecutter-namespace-package
-

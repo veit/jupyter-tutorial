@@ -24,4 +24,3 @@ Service ``nbviewer`` erstellen
     Der Pfad zum ``nbviewer``-Repository
    ``command``
     Kommando um ``nbviewer`` zu starten
-

@@ -10,7 +10,7 @@ Im Folgenden nur eine kleine Auswahl der bekanntesten FDW:
 
 .. note::
    Beachtet bitte, dass die meisten dieser Wrapper nicht offiziell von der
-   PostgreSQL Global Development Group (PGDG) unterstützt werden. 
+   PostgreSQL Global Development Group (PGDG) unterstützt werden.
 
 Generische SQL-Wrapper
 ----------------------
@@ -43,8 +43,8 @@ postgres_fdw
     aus anderen PostgreSQL-Servern zugegriffen werden.
 
     * `Git
-      <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/postgres_fdw;hb=HEAD>`_ 
-    * `PGXN <https://pgxn.org/dist/postgres_fdw/>`_ 
+      <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/postgres_fdw;hb=HEAD>`_
+    * `PGXN <https://pgxn.org/dist/postgres_fdw/>`_
     * `Docs <https://www.postgresql.org/docs/current/postgres-fdw.html>`_
 
 Oracle
@@ -159,4 +159,3 @@ RSS
    * `PostgreSQL Wiki
      <https://wiki.postgresql.org/wiki/Foreign_data_wrappers>`_
    * `PGXN-Website <https://pgxn.org/>`_
-

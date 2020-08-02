@@ -37,4 +37,3 @@ Codeblöcke werden mit einem Doppelpunkt eingeführt und eingerückt::
     print help(docutils)
 
 >>> print 'Aber doctests beginnen mit ">>>" und brauchen keine Einrückung.'
-

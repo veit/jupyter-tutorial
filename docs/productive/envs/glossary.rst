@@ -44,7 +44,7 @@ Glossar
        eingeführt wurde und nun durch :term:`Wheel` ersetzt wird. Weitere
        Informationen findet ihr unter `The Internal Structure of Python Eggs
        <https://setuptools.readthedocs.io/en/latest/formats.html>`_ und `Python
-       Eggs <http://peak.telecommunity.com/DevCenter/PythonEggs>`_. 
+       Eggs <http://peak.telecommunity.com/DevCenter/PythonEggs>`_.
 
    Import Package
        Ein Python-Modul, das andere Module oder rekursiv andere Pakete enthalten
@@ -173,4 +173,3 @@ Glossar
        `PEP <https://www.python.org/dev/peps/pep-0427/>`_ |
        `GitHub <https://github.com/pypa/wheel>`_ |
        `PyPI <https://pypi.org/project/wheel/>`_ |
-

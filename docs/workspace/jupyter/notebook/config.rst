@@ -77,4 +77,3 @@ festgelegten Optionen.
 .. seealso::
    `traitlets.config
    <https://traitlets.readthedocs.io/en/latest/config.html#module-traitlets.config>`_
-

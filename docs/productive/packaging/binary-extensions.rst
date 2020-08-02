@@ -48,7 +48,7 @@ Systemzugriffe auf niedriger Ebene
 
 Nicht alle Erweiterungsmodule passen genau in die oben genannten Kategorien. So
 umfassen z.B. die in `NumPy <http://www.numpy.org/>`_ enthaltenen
-Erweiterungsmodule alle drei Anwendungsfälle: 
+Erweiterungsmodule alle drei Anwendungsfälle:
 
 * Sie verschieben innere Schleifen aus Geschwindigkeitsgründen auf C,
 * umschließen externe Bibliotheken in C, FORTRAN und anderen Sprachen und
@@ -280,7 +280,7 @@ oder einem anderen Index beschrieben werden.
 
 .. todo::
    `enscons <https://pypi.python.org/pypi/enscons/>`_ als Alternative zu
-   ``distutils`` oder ``setuptools`` evaluieren. 
+   ``distutils`` oder ``setuptools`` evaluieren.
 
    Ein Vorteil scheint zu sein, dass ihr mit `Scons <http://scons.org/>`_ ein
    vollwertiges Build-System erhaltet, das euch Arbeit abnimmt beim Ermitteln
@@ -291,4 +291,3 @@ oder einem anderen Index beschrieben werden.
      <https://packaging.python.org/discussions/deploying-python-applications/>`_
    * `Supporting Windows using Appveyor
      <https://packaging.python.org/guides/supporting-windows-using-appveyor/>`_
-

@@ -83,4 +83,3 @@ Spack-Syntax zum Anzeigen der Abhängigkeiten
     cj5p5fk        ^libelf@0.8.13              ynpai3j ^libelf@0.8.13
     cj5p5fk        ^libelf@0.8.13              ynpai3j ^libelf@0.8.13
     ft7znm6        ^mpich@3.1.4                aa4ar6i ^mpich@3.1.4
-

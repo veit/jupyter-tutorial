@@ -2,7 +2,7 @@ Prozedurale Programmiersprachen
 ===============================
 
 Mit PostgreSQL können benutzerdefinierte Funktionen außer in SQL und C auch in
-anderen Sprachen geschrieben werden. 
+anderen Sprachen geschrieben werden.
 
 In der Standarddistribution von PostgreSQL stehen derzeit vier prozedurale
 Sprachen zur Verfügung:
@@ -27,4 +27,3 @@ in der Kerndistribution enthalten sind:
 
 Zusätzlich können andere Sprachen definiert werden, s. `Writing A Procedural
 Language Handler <https://www.postgresql.org/docs/current/plhandler.html>`_.
-

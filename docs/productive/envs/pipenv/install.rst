@@ -8,7 +8,7 @@ Voraussetzungen für die Installation von Paketen
 ------------------------------------------------
 
 Vor der Installation von Python-Paketen müssen einige Voraussetzungen erfüllt
-sein. 
+sein.
 
 #. Stellt sicher, dass ihr die gewünschte Python-Version verwendet:
 
@@ -74,9 +74,9 @@ versehentlich systemweite Pakete überschrieben werden:
     Cleaning up...
 
 .. note::
-    
+
    Wenn pipenv nach der Installation nicht in der Shell verfügbar ist, muss
-   ggf. das ``USER_BASE/bin``-Verzeichnis in ``PATH`` angegeben werden. 
+   ggf. das ``USER_BASE/bin``-Verzeichnis in ``PATH`` angegeben werden.
 
    * Unter Linux und MacOS lässt sich ``USER_BASE`` ermitteln mit::
 
@@ -124,4 +124,3 @@ virtuellen Umgebungen:
     Creating a Pipfile for this project...
     Installing requests...
     …
-

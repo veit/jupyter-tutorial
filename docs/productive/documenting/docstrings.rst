@@ -138,7 +138,7 @@ Types in Docstrings
    <https://www.python.org/dev/peps/pep-0484/#suggested-syntax-for-python-2-7-and-straddling-code>`_
    werden aktuell nicht von Sphinx unterstützt und erscheinen nicht in der
    generierten Dokumentation.
- 
+
 ``sphinx.ext.napoleon``
 -----------------------
 
@@ -179,7 +179,7 @@ Google
 
             """
             return True
-         
+
 NumPy
     ::
 
@@ -205,4 +205,3 @@ NumPy
 
 Die detailierten Konfigurationsoptionen findet ihr in `sphinxcontrib.napoleon.Config
 <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/sphinxcontrib.napoleon.html#sphinxcontrib.napoleon.Config>`_.
-

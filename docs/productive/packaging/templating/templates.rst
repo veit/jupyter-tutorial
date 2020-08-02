@@ -56,7 +56,7 @@ Scala
 `cookiecutter-scala <https://github.com/Plippe/cookiecutter-scala>`_
     Vorlage für ein *Hello world*-Beispiel mit ein paar wenigen Bibliotheken
 `cookiecutter-scala-spark <https://github.com/jpzk/cookiecutter-scala-spark>`_
-   Template für eine `Apache-Spark <https://spark.apache.org/>`_-Anwendung 
+   Template für eine `Apache-Spark <https://spark.apache.org/>`_-Anwendung
 
 LaTeX/XeTeX
 -----------
@@ -64,4 +64,3 @@ LaTeX/XeTeX
 `pandoc-talk <https://github.com/larsyencken/pandoc-talk>`_
     Template für Präsentation mit `pandoc <https://pandoc.org/>`_ und `XeTeX
     <https://de.wikipedia.org/wiki/XeTeX>`_
-

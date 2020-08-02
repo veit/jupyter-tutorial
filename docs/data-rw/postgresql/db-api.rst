@@ -11,7 +11,7 @@ Connection
 
     ``connect(parameters…)``
         öffnet die Verbindung zur Datenbank
-    ``.close()`` 
+    ``.close()``
         schließt die Verbindung zur Datenbank
     ``.commit()``
         überträgt die ausstehende Transaktion zur Datenbank
@@ -80,4 +80,3 @@ Cursor
 .. seealso::
    `PEP 249 – Python Database API Specification v2.0
    <https://www.python.org/dev/peps/pep-0249/>`_
-

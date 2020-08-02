@@ -26,4 +26,3 @@ Verfahren:
     Dabei werden die Attribute der abstrakten Basisklasse in die Tabellen für
     die konkreten Unterklassen mit aufgenommen. Hierbei ist es jedoch nicht
     möglich, mit einer Abfrage Instanzen verschiedener Klassen zu ermitteln.
-

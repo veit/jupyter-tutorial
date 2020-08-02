@@ -50,4 +50,3 @@ Die zugehörige ``Pipfile.lock``-Datei spezifiziert jedoch die Pakete exakt, z.B
 ``Pipfile.lock`` spezifiziert auch alle Abhängigkeiten eures Projekts, wobei die
 Hashwerte der heruntergeladenen Dateien gespeichert werden. Dies soll
 wiederholbare und deterministische Builds gewährleisten.
-

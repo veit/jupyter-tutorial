@@ -18,4 +18,3 @@ Arbeitsbereiche
         anschließend in ``git pull`` o.ä. nicht mehr explizit festgelegt werden
         müssen. In unserem Beispiel wird ``master`` im entfernten Repository
         referenziert.
-

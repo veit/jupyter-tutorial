@@ -30,14 +30,14 @@ jedoch im Report nur ein einfaches Beispiel für jeden Bug (eindeutiger
     ============================= test session starts ==============================
     platform linux -- Python 3.6.8, pytest-4.6.2, py-1.8.0, pluggy-0.12.0
     …
-    collected 1 item                                                               
+    collected 1 item
     test_mean.py F                                                     [100%]
     =================================== FAILURES ===================================
     __________________________________ test_mean ___________________________________
         @given(lists(floats(allow_nan=False, allow_infinity=False), min_size=1))
     >   def test_mean(ls):
-    test_mean.py:5: 
-    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    test_mean.py:5:
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
     ls = [8.988465674311579e+307, 8.98846567431158e+307]
 
@@ -94,4 +94,3 @@ z.B.:
 .. seealso::
    `Hypothesis for the Scientific Stack
    <https://hypothesis.readthedocs.io/en/latest/numpy.html>`_
-

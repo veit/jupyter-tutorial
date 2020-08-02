@@ -1,7 +1,7 @@
 ``nbconvert``
 =============
 
-`nbconvert <https://nbconvert.readthedocs.io/>`_ 
+`nbconvert <https://nbconvert.readthedocs.io/>`_
     konvertiert Notebooks in andere Formate
 
 .. seealso::
@@ -23,7 +23,7 @@ Pandoc installieren
 ~~~~~~~~~~~~~~~~~~~
 
 ``nbconvert`` verwendet `Pandoc <http://pandoc.org/>`_ um Markdown in andere
-Formate als HTML zu konvertieren. 
+Formate als HTML zu konvertieren.
 
 * für Ubuntu und Debian:
 
@@ -148,4 +148,3 @@ Eigene Exporter
     `Customizing exporters
     <https://nbconvert.readthedocs.io/en/latest/external_exporters.html>`_
     erlaubt euch, eigene Exporter zu schreiben.
-

@@ -67,4 +67,3 @@ An einem Projekt arbeiten
     des Verstecks.
 ``$ git stash drop``
     leeren eines spezifischen Verstecks.
-

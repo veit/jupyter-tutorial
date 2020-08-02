@@ -120,4 +120,3 @@ folgenden Optionen:
 
 .. seealso::
    `Options <https://github.com/jupyter-widgets/jupyter-sphinx#options>`_
-

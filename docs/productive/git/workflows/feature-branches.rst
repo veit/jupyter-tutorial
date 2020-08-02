@@ -24,4 +24,3 @@ beschrieben.
      <https://de.wikipedia.org/wiki/Feature_Driven_Development>`_
    * `Feature Branches
      <https://martinfowler.com/bliki/FeatureBranch.html>`_
-

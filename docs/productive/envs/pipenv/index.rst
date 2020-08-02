@@ -17,4 +17,3 @@ Verwaltung und Pflege von Abhängigkeiten.
     workflows
     env
     spack
-

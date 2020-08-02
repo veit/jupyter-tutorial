@@ -58,4 +58,3 @@ verwenet mit:
 .. code-block:: console
 
     $ PIPENV_DONT_LOAD_ENV=1 pipenv shell
-

@@ -12,7 +12,7 @@ Nachdem nun ``requests`` installiert ist, kann es verwendet werden.
 .. code-block:: python
 
     import requests
-      
+
     response = requests.get('https://cusy.io')
 
     print(response.status_code)
@@ -26,7 +26,7 @@ Nachdem nun ``requests`` installiert ist, kann es verwendet werden.
 #. Als Ergebnis des Aufrufs solltet ihr den HTTP-Status-Code ``200`` erhalten.
 
 Die Verwendung von ``pipenv run`` stellt sicher, dass eure installierten Pakete
-für Ihr Skript verfügbar sind. 
+für Ihr Skript verfügbar sind.
 
 Alternativ könnt ihr euch auch eine neue Shell mit ``pipenv shell`` erstellen,
 mit der auf alle installierten Pakete zugegriffen werden kann:
@@ -117,7 +117,7 @@ Optionen
 
       .. note::
         Wird ein privater Index verwendet, kommt es aktuell noch zu Problemen
-        mit dem Hashing der Pakete. 
+        mit dem Hashing der Pakete.
 
     Weitere Optionen findet ihr unter `pipenv
     <https://docs.pipenv.org/#pipenv>`_.
@@ -227,7 +227,7 @@ Abhängigkeitsgrapheninformationen an.
 
 ``pipenv install`` installiert bereitgestellte Pakete und fügt sie dem Pipfile
 hinzu. ``pipenv install`` kennt die folgenden Optionen:
-    
+
 ``-d``, ``--dev``
     installiert die Pakete in ``[dev-packages]``, z.B.:
 
@@ -409,9 +409,9 @@ hervorragend z.B. zum Debugging und Testen eignet:
     $ pipenv shell --fancy
     Launching subshell in virtual environment…
     bash-4.3.30$ python
-    Python 3.6.4 (default, Jan  6 2018, 11:51:59) 
+    Python 3.6.4 (default, Jan  6 2018, 11:51:59)
     >>> import requests
-    >>> 
+    >>>
 
 .. note::
    Shells sind meist nicht so konfiguriert, dass eine Subshell verwendet werden
@@ -449,4 +449,3 @@ aus dem ``Pipfile``. ``uninstall`` unterstützt alle Parameter von `install
     löscht den *Dependency Cache*
 ``--outdated``
     listet veraltete Abhängigkeiten auf
-

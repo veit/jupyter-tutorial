@@ -19,7 +19,7 @@ Erweiterungen verwenden
 -----------------------
 
 Die ``%load_ext``-Magie kann verwendet werden um Erweiterungen zu laden während
-IPython ausgeführt wird. 
+IPython ausgeführt wird.
 
 .. code-block:: ipython
 
@@ -65,4 +65,3 @@ Funktionen zum Laden und Entladen verfügt:
 
 .. seealso::
     * :label:`defining_magics`
-

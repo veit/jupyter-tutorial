@@ -33,4 +33,3 @@ Rendern von Karten mit `Mapnik <https://mapnik.org/>`_ verwendet.
     install
     optimising
     load
-

@@ -41,10 +41,9 @@ Branches und Tags hinweg vergleichen:
 
 Um nun unsere erste Version der DVC-Pipeline abzuschließen, fügen wir die
 Dateien und ein Tag dem Git-Repository hinzu:
- 
+
 .. code-block:: console
 
-    $ git add dvc.yaml dvc.lock auc.json 
+    $ git add dvc.yaml dvc.lock auc.json
     $ git commit -m 'Add stage ‹evaluate›'
     $ git tag -a 0.1.0 -m "Initial pipeline version 0.1.0"
-

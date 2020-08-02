@@ -51,4 +51,3 @@ Git Log
 ``$ git reflog``
     Vorgänge (z.B. ``checkout``, ``commit``) auflisten, die im lokalen
     Repository ausgeführt wurden
-

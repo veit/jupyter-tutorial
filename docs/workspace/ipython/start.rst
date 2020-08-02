@@ -6,7 +6,7 @@ Ihr könnt IPython einfach in einer Konsole starten:
 .. code-block:: console
 
     $ pipenv run ipython
-    Python 3.7.0 (default, Aug 22 2018, 15:22:29) 
+    Python 3.7.0 (default, Aug 22 2018, 15:22:29)
     Type 'copyright', 'credits' or 'license' for more information
     IPython 7.6.0 -- An enhanced Interactive Python. Type '?' for help.
 
@@ -29,4 +29,3 @@ werden. Häufig ist dies ``http://localhost:8888``.
 
 Nun könnt ihr im Browser einen Python-Prozess starten, indem ihr ein neues
 Notebook erstellt.
-

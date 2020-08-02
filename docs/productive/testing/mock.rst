@@ -2,7 +2,7 @@ Mock
 ====
 
 :mod:`unittest.mock` ist eine Python-Testbibliothek. Ab Python 3.3 ist sie in
-der Python-Standardbibliothek verfügbar. 
+der Python-Standardbibliothek verfügbar.
 
 Beispiel
 --------
@@ -56,4 +56,3 @@ Für ältere Python-Versionen kann sie installiert werden mit
 .. note::
    Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
    unter :doc:`/first-steps/install`.
-

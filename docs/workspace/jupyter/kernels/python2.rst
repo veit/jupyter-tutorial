@@ -18,4 +18,3 @@ Python2
         ...
         $ pipenv run python2 -m ipykernel install --user --name python2 --display-name "Python 2"
         Installed kernelspec python2 in /Users/veit/Library/Jupyter/kernels/python2
-

@@ -18,7 +18,7 @@ hinzugefügt werden. Das Verzeichnis, in dem
     License: BSD
     Location: /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/lib/python3.7/site-packages
     Requires: lxml, jupyter-contrib-core, nbconvert, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-nbextensions-configurator, notebook, traitlets, jupyter-highlight-selected-word, tornado, ipython-genutils
-    Required-by: 
+    Required-by:
 
 In diesem Verzeichnis liegen die einzelnen Notebook-Erweiterungen, z.B. mit
 folgender Struktur:
@@ -34,7 +34,7 @@ folgender Struktur:
 ``main.js``
     enthält die eigentliche Logik der Erweiterung, z.B.:
 
-    
+
     .. code-block:: javascript
 
         define([
@@ -75,7 +75,7 @@ folgender Struktur:
 
 ``main.yaml``
     `yaml <https://de.wikipedia.org/wiki/YAML>`_-Datei, die die Erweiterung
-    für den Jupyter Extensions Configurator beschreibt. 
+    für den Jupyter Extensions Configurator beschreibt.
 
     .. code-block:: yaml
 
@@ -129,7 +129,7 @@ Installation
         License: BSD
         Location: /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/lib/python3.7/site-packages
         Requires: lxml, jupyter-contrib-core, nbconvert, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-nbextensions-configurator, notebook, traitlets, jupyter-highlight-selected-word, tornado, ipython-genutils
-        Required-by: 
+        Required-by:
 
 #. Ladet das `Setup
    <https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup>`_-Verzeichnis
@@ -158,4 +158,3 @@ aufweist: `setup.ipynb <setup.ipynb>`_.
    * `Set Your Jupyter Notebook up Right with this Extension
      <https://towardsdatascience.com/set-your-jupyter-notebook-up-right-with-this-extension-24921838a332>`_
    * `GitHub <https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup>`_
-

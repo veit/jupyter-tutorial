@@ -31,4 +31,3 @@ Git pre-commit-Hooks
    :maxdepth: 1
 
    pre-commit
-

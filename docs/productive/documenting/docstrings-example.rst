@@ -18,4 +18,3 @@ Request Sessions
 
 .. autoclass:: Session
    :inherited-members:
-

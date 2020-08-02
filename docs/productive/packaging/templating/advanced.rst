@@ -107,4 +107,3 @@ und in ``cookiecutter-namespace-template/hooks/post_gen_project.py``:
 
     if 'Not open source' == '{{ cookiecutter.license }}':
         remove_file('LICENSE')
-

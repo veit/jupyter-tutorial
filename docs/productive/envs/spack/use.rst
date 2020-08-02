@@ -56,7 +56,7 @@ Auflisten der installierten Pakete
     Preferred version:
         1.16.4    https://pypi.io/packages/source/n/numpy/numpy-1.16.4.zip
 
-    Safe versions:  
+    Safe versions:
         1.16.4    https://pypi.io/packages/source/n/numpy/numpy-1.16.4.zip
         1.16.3    https://pypi.io/packages/source/n/numpy/numpy-1.16.3.zip
         1.16.2    https://pypi.io/packages/source/n/numpy/numpy-1.16.2.zip
@@ -107,7 +107,7 @@ Auflisten der installierten Pakete
     Run Dependencies:
         python
 
-    Virtual Packages: 
+    Virtual Packages:
         None
 
 ``spack version``
@@ -142,7 +142,7 @@ oder um ``py-numpy`` für Python 3.7.4 zu installieren:
 .. code-block:: console
 
     $ spack install py-numpy ^python@3.7.4
- 
+
 Anschließend kann die Installation überprüft werden mit
 
 .. code-block:: console
@@ -222,11 +222,11 @@ so können *Extensions* gefunden werden mit
     $ spack load python
     $ spack load py-numpy
     $ python
-    Python 3.7.4 (default, Jul 28 2019, 20:00:06) 
+    Python 3.7.4 (default, Jul 28 2019, 20:00:06)
     [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import numpy
-    >>> 
+    >>>
 
 Oft sollen jedoch bestimmte Pakete dauerhaft einer Python-Installation zur
 Verfügung stehen. Spack bietet hierfür ``activate`` an:
@@ -235,4 +235,3 @@ Verfügung stehen. Spack bietet hierfür ``activate`` an:
 
     $ spack activate py-numpy
     ==> Activating extension py-numpy@1.16.4%clang@10.0.1-apple+blas+lapack arch=darwin-mojave-x86_64/45sqnuf for python@3.7.4%clang@10.0.1-apple+bz2+ctypes+dbm+lzma~nis~optimizations patches=210df3f28cde02a8135b58cc4168e70ab91dbf9097359d05938f1e2843875e57 +pic+pyexpat+pythoncmd+readline~shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=darwin-mojave-x86_64/jqlxzxp
-

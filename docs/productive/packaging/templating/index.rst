@@ -13,4 +13,3 @@ vereinfachen.
    overview
    install
    advanced
-

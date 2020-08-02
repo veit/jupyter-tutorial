@@ -53,7 +53,7 @@ z.B. folgendes eingeben:
 Link erstellen
 --------------
 
-Um nun z.B. auf https://docs.python.org/3/c-api/arg.html#c.PyArg_Parse zu 
+Um nun z.B. auf https://docs.python.org/3/c-api/arg.html#c.PyArg_Parse zu
 verlinken, kann eine der folgenden Varianten angegeben werden:
 
 :c:func:`PyArg_Parse`
@@ -152,7 +152,7 @@ Rollen hinzufügen
 -----------------
 
 Wenn ihr eine Fehlermeldung erhaltet, dass eine bestimmte Textrolle unbekannt
-sei, z.B. 
+sei, z.B.
 
 .. code-block:: console
 
@@ -171,4 +171,3 @@ so könnt ihr diese in der ``conf.py`` hinzufügen:
             objname="configuration value",
             indextemplate="pair: %s; configuration value",
         )
-

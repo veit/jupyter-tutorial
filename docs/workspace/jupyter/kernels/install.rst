@@ -70,7 +70,7 @@ aktuelle Python-Umgebung erstellt, z.B.:
           "signature_scheme": "hmac-sha256",
           "kernel_name": ""
         }
- 
+
 ``interrupt_mode``
     Kann entweder ``signal`` oder ``message`` sein und gibt an, wie ein Client
     die Ausführung einer Zelle auf diesem Kernel unterbrechen soll.
@@ -92,7 +92,7 @@ aktuelle Python-Umgebung erstellt, z.B.:
     Metadaten haben.
 
 Ihr könnt diese ``kernelspec``-Datei zu einem späteren Zeitpunkt editieren, z.B.
-um 
+um
 
 Verfügbare Kernel anzeigen
 --------------------------
@@ -112,10 +112,9 @@ Kernel starten
 
     $ pipenv run jupyter console --kernel mykernel
     Jupyter console 6.0.0
-    Python 2.7.15 (default, Oct 22 2018, 19:33:46) 
+    Python 2.7.15 (default, Oct 22 2018, 19:33:46)
     ...
 
     In [1]:
 
 Mit ``ctrl`` + ``d`` könnt ihr den Kernel wieder beenden.
-

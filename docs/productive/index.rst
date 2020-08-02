@@ -53,4 +53,3 @@ andererseits für das :doc:`testing/index`, :doc:`logging`, :doc:`Dokumentieren
     envs/index
     testing/index
     logging.ipynb
-

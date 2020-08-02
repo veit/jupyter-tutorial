@@ -28,18 +28,18 @@ Installation
     Known nbextensions:
       config dir: /Users/veit/.jupyter/nbconfig
         notebook section
-          nbextensions_configurator/config_menu/main  enabled 
+          nbextensions_configurator/config_menu/main  enabled
           - Validating: problems found:
             - require?  X nbextensions_configurator/config_menu/main
-          contrib_nbextensions_help_item/main  enabled 
+          contrib_nbextensions_help_item/main  enabled
           - Validating: OK
         tree section
-          nbextensions_configurator/tree_tab/main  enabled 
+          nbextensions_configurator/tree_tab/main  enabled
           - Validating: problems found:
             - require?  X nbextensions_configurator/tree_tab/main
       config dir: /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/bin/../etc/jupyter/nbconfig
         notebook section
-          jupyter-js-widgets/extension  enabled 
+          jupyter-js-widgets/extension  enabled
           - Validating: OK
 
 #. Latex environments
@@ -110,4 +110,3 @@ Installation
         Installing /srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/lib/python3.5/site-packages/latex_envs/static -> latex_envs
         …
         $ pipenv run jupyter nbextension enable --py latex_envs
-

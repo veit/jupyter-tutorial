@@ -26,4 +26,3 @@ Werkzeuge eingehen sondern nur eine kurze Einführung geben.
     engarde.ipynb
     tdda.ipynb
     hypothesis.ipynb
-

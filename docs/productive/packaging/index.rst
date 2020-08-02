@@ -46,4 +46,3 @@ Pakete erstellen
    binary-extensions
    templating/index
    next-steps
-

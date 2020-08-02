@@ -10,11 +10,11 @@ Entfernte Speichermedien
 <https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-blob>`_
     Azure
 `pydrive2 <https://github.com/gsuitedevs/PyDrive>`_
-   Google Drive 
+   Google Drive
 `paramiko <http://www.paramiko.org/>`_
     SSH
 `PyArrow <https://arrow.apache.org/docs/python/>`_
-    HDFS 
+    HDFS
 
 Geodaten
 --------
@@ -39,4 +39,3 @@ Geodaten
 `pyModis  <http://www.pymodis.org/>`_
     Sammlung von Python-Skripten zum Herunterladen und Mosaizieren von
     MODIS-Daten.
-
