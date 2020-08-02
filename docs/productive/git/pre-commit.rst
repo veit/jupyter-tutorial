@@ -42,21 +42,12 @@ sein.
     $ pipenv run pre-commit -V
     pre-commit 2.6.0
 
-Ihr könnt die Hooks auch automatisch aktualisieren mit:
-
-.. code-block:: console
-
-    $ pipenv run pre-commit autoupdate
-
-Weitere Optionen findet Ihr unter `pre-commit autoupdate [options]
-<https://pre-commit.com/#pre-commit-autoupdate>`_.
-
 Konfiguration
 -------------
 
 Nachdem Pre-Commit installiert ist, können mit der ``.pre-commit-
 config.yaml``-Datei im Root-Verzeichnis Eures Projekts Plugins für dieses
-Projekt konfiguriert werden. 
+Projekt konfiguriert werden.
 
 .. code-block:: yaml
 
@@ -109,10 +100,30 @@ Kopie von ``node`` erstellt werden muss.
 
 Eine vollständige Liste der Konfigurationsoptionen erhaltet Ihr in `Adding pre-commit
 plugins to your project
-<https://pre-commit.com/#adding-pre-commit-plugins-to-your-project>`_. 
+<https://pre-commit.com/#adding-pre-commit-plugins-to-your-project>`_.
 
 Ihr könnt auch eigene Hooks schreiben, siehe `Creating new hooks
 <https://pre-commit.com/#creating-new-hooks>`_.
+
+Ihr könnt die Hooks auch automatisch aktualisieren mit:
+
+.. code-block:: console
+
+    $ pipenv run pre-commit autoupdate
+
+Weitere Optionen findet Ihr unter `pre-commit autoupdate [options]
+<https://pre-commit.com/#pre-commit-autoupdate>`_.
+
+Installieren der Git-Hook-Skripte
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Damit Pre-Commit auch vor jedem Commit zuverlässig ausgeführt wird, werden die
+Skripte in unserem Projekt installiert:
+
+.. code-block:: console
+
+    $ pre-commit install
+    pre-commit installed at .git/hooks/pre-commit
 
 Verwenden in CI
 ---------------
