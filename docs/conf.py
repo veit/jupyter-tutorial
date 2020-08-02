@@ -117,7 +117,13 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, "jupyter-tutorial.tex", "Jupyter Tutorial", "Veit Schiele", "manual"),
+    (
+        master_doc,
+        "jupyter-tutorial.tex",
+        "Jupyter Tutorial",
+        "Veit Schiele",
+        "manual",
+    ),
 ]
 
 # -- nbsphinx configuration --------------------------------------------------
@@ -131,7 +137,10 @@ intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "ipython": ("https://ipython.readthedocs.io/en/latest/", None),
     "pytest": ("https://docs.pytest.org/en/latest/", None),
-    "jupyter-notebook": ("https://jupyter-notebook.readthedocs.io/en/stable/", None),
+    "jupyter-notebook": (
+        "https://jupyter-notebook.readthedocs.io/en/stable/",
+        None,
+    ),
     "jupyterhub": ("https://jupyterhub.readthedocs.io/en/stable/", None),
     "nbconvert": ("https://nbconvert.readthedocs.io/en/latest/", None),
     "jupyter-contrib-nbextensions": (
@@ -153,7 +162,10 @@ def setup(app):
     # from sphinx.ext.autodoc import cut_lines
     # app.connect('autodoc-process-docstring', cut_lines(4, what=['module']))
     app.add_object_type(
-        "label", "label", objname="label value", indextemplate="pair: %s; label value",
+        "label",
+        "label",
+        objname="label value",
+        indextemplate="pair: %s; label value",
     )
 
 
