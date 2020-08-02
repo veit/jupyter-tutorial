@@ -3,10 +3,11 @@ from time import sleep
 
 import requests
 
+
 @lru_cache(maxsize=1000)
 def nominatim_search(address, format="json", limit=1, **kwargs):
     """Thin wrapper around the Nominatim search API.
-    For the list of parameters see 
+    For the list of parameters see
     https://nominatim.org/release-docs/develop/api/Search/#parameters
     """
     search_url = "https://nominatim.openstreetmap.org/search?"
