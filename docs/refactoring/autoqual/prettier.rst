@@ -43,4 +43,3 @@ konfiguriert werden:
 
 .. seealso::
     * `Prettier docs <https://prettier.io/docs/en/index.html>`_
-

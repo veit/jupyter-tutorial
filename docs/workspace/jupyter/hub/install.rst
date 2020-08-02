@@ -50,7 +50,7 @@ Installation
 
    .. code-block:: console
 
-    $  source ~/.profile 
+    $  source ~/.profile
 
 #. Virtuelle Umgebung erstellen und JupyterHub installieren:
 
@@ -99,4 +99,3 @@ Installation
     [I 2019-07-31 22:47:26.617 JupyterHub app:1912] JupyterHub is now running at http://:8000
 
    Mit ctrl-c könnt ihr den Prozess wieder beenden.
-

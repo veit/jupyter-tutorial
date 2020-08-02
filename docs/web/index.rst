@@ -16,4 +16,3 @@ Im Folgenden stelle ich euch drei verschiedene Arten von Web-Anwendungen vor:
     :maxdepth: 0
 
     dashboards/index
-

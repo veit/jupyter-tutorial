@@ -12,4 +12,3 @@ von :doc:`ipython/index` und :doc:`jupyter/index` mit
 
     ipython/index
     jupyter/index
-

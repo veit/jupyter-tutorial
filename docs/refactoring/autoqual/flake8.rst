@@ -43,4 +43,3 @@ Konfiguration
 .. seealso::
     `Configuring Flake8
     <http://flake8.pycqa.org/en/latest/user/configuration.html>`_
-

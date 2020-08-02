@@ -34,4 +34,3 @@ Konfiguration
 Um Pakete von Drittanbietern gegenüber Ihren Projektimporten zu erkennen, könnt
 ihr entweder euer Projekt zusammen mit ``isort`` installieren oder
 `seed-isort-config <https://github.com/asottile/seed-isort-config>`_ verwenden.
-

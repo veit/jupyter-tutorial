@@ -21,4 +21,3 @@ Parallelisierung veranschaulicht.
 .. seealso::
     * `Faster CPython <https://faster-cpython.readthedocs.io/>`_
     * `Python Speed Center <https://speed.python.org/>`_
-

@@ -113,4 +113,3 @@ Delete
        .filter_by(email='info@veit-schiele.de').first()
     session.delete(contact)
     session.commit()
-

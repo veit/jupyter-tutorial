@@ -8,7 +8,7 @@ Installation
     $ pipenv install ipython[all]
 
 #. Notebook-Server-Extension aktivieren:
-   
+
    .. code-block:: console
 
     $ pipenv run jupyter serverextension enable --py ipyparallel
@@ -26,7 +26,7 @@ Installation
     - Validating: OK
 
         To initialize this nbextension in the browser every time the notebook (or other app) loads:
-        
+
               jupyter nbextension enable ipyparallel --py
 
 #. Notebook-Extension aktivieren:

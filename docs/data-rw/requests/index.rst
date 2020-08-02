@@ -12,4 +12,3 @@ gegenüber der Python-Standardbibliothek
 
     requests.ipynb
     module.ipynb
-

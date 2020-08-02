@@ -143,4 +143,3 @@ Tipps & Tricks
    :doc:`/workspace/jupyter/nbextensions/list`, um weitere, häufig
    benötigte Code-Blöcke, z.B. typische Importanweisungen, bequem einfügen zu
    können.
-

@@ -70,4 +70,3 @@ Zugriffsbeschränkung
 Wenn der Viewer als :doc:`hub/nbviewer-service` ausgeführt wird, können nur Benutzer, die
 sich am JupyterHub authentifiziert haben, auf die Notebooks des ``nbviewer``
 zugreifen.
-

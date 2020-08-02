@@ -124,4 +124,3 @@ einen `Fork <https://github.com/veit/jupyter-tutorial/fork>`_ meines
 und darin eure Änderungen vorzunehmen. Gerne dürft ihr auch einen *Pull Request*
 stellen. Sofern die darin enthaltenen Änderungen klein und atomar sind, schaue ich
 mir eure Vorschläge gerne an.
-

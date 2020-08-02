@@ -1,4 +1,4 @@
-Dashboard-Layouts erstellen 
+Dashboard-Layouts erstellen
 ===========================
 
 Ihr könnt ein normales Notebook verwenden mit Markdown- und Code-Zellen. Wenn
@@ -18,7 +18,7 @@ Beim :menuselection:`Grid Layout` könnt ihr die Größe der Zellen im Raster
    :scale: 53%
    :alt: Cell-Menü mit Dashboard-Optionen
 
-Im :menuselection:`Report Layout` könnt ihr Zellen anzeigen oder ausblenden. 
+Im :menuselection:`Report Layout` könnt ihr Zellen anzeigen oder ausblenden.
 
 In beiden Layouts könnt ihr auf :menuselection:`MORE INFO` klicken um
 zusätzliche Informationen angezeigt zu bekommen:
@@ -35,4 +35,3 @@ für :doc:`matplotlib-example`:
    :alt: Dashboard mit Matplotlib-Beispiel
 
 :menuselection:`View --> Notebook` bringt euch zurück zum Notebook-Editor.
-

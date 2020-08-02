@@ -34,7 +34,7 @@ Anschließend könnt Ihr PostGIS aktivieren.
 
    .. code-block:: console
 
-    ppostgis_db = # CREATE EXTENSION postgis; 
+    ppostgis_db = # CREATE EXTENSION postgis;
     CREATE EXTENSION
 
 #. Überprüfen, ob PostGIS funktioniert:
@@ -42,7 +42,7 @@ Anschließend könnt Ihr PostGIS aktivieren.
    .. code-block:: console
 
     postgis_db=# SELECT PostGIS_version();
-                postgis_version            
+                postgis_version
     ---------------------------------------
      2.5 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
     (1 row)
@@ -50,4 +50,3 @@ Anschließend könnt Ihr PostGIS aktivieren.
 .. seealso::
    * `PostGIS Installation
      <https://postgis.net/docs/postgis_installation.html>`_
-

@@ -47,4 +47,3 @@ Lizenzen der verschiedenen Bibliotheken vergleichen.
     /workspace/jupyter/nbviewer
     panel/index
     voila/index
-

@@ -16,4 +16,3 @@ C-Bibliothek für PostgreSQL `libpq
   <http://initd.org/psycopg/docs/advanced.html#support-for-coroutine-libraries>`_
 * `Adaptation der Python Typen in SQL
   <http://initd.org/psycopg/docs/usage.html#adaptation-of-python-values-to-sql-types>`_
-

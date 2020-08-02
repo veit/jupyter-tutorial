@@ -119,4 +119,3 @@ Beste ist, dass diese Daten gemeinfrei sind:
 
 .. seealso::
    * `PostGIS Reference <http://postgis.net/docs/reference.html>`_
-

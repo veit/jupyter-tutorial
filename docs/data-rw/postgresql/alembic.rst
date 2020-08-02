@@ -289,4 +289,3 @@ Historie
 
 .. seealso::
    `Auto Generating Migrations <https://alembic.sqlalchemy.org/en/latest/autogenerate.html>`_
-

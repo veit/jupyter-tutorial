@@ -28,4 +28,3 @@ sondern auch für Datenanbieter.
     data-scientists.ipynb
     gui.ipynb
     data-engineers.ipynb
-

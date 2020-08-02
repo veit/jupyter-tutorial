@@ -11,4 +11,3 @@ vorgenommen habt, kann mit DVC :doc:`Code und Daten verbunden
     :hidden:
     :titlesonly:
     :maxdepth: 0
-

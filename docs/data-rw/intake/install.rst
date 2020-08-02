@@ -33,4 +33,3 @@ erstellen mit:
     To load the catalog:
         >>> import intake
         >>> cat = intake.open_catalog('us_states.yml')
-

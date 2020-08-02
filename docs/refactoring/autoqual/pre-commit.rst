@@ -55,4 +55,3 @@ Pre-commit wird konfiguriert in ``pre-commit-config.yaml``, z.B.:
           - id: trailing-whitespace
           - id: end-of-file-fixer
           - id: debug-statements
-

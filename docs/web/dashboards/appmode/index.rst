@@ -94,4 +94,3 @@ angepasst werden, z.B. mit:
 .. note::
     Das Ausblenden der :menuselection:`Edit App`-Taste hindert Benutzer nicht am
     Verlassen des App-Modus, indem die URL manuell geändert wird.
-

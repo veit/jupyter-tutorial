@@ -14,4 +14,3 @@ als Proxy fungiert.
     install
     config
     nbviewer-service
-

@@ -120,4 +120,3 @@ unsere Datenplattform mit *Streaming Pipelines* und *Domain Driven Data Stores*
 eingehen würde. Ich werde mich daher darauf beschränken, wie Nutzer in ihrem
 Home-Verzeichnis Notebooks erstellen und ausführen können. Auf diese Datei kann
 der Nutzer dann sowohl mit Jupyter Notebook wie auch mit dem Terminal zugreifen.
-

@@ -26,4 +26,3 @@ größer werdenden Datenmengen zu erschließen. Hierzu gehören:
 
   * `Jupyter & Python in the corporate LAN
     <https://medium.com/@olivier.borderies/jupyter-python-in-the-corporate-lan-109e2ffde897>`_
-

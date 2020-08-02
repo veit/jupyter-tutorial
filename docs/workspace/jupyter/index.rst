@@ -115,4 +115,3 @@ Jupyter
     nbextensions/index
     nbsphinx
     use-cases
-

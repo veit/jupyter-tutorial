@@ -25,7 +25,7 @@ Ihr könnt die Installation überprüfen,z.B. mit:
 
 .. code-block:: console
 
-    $ pipenv run voila docs/jupyter/ipywidgets/examples.ipynb 
+    $ pipenv run voila docs/jupyter/ipywidgets/examples.ipynb
     …
     [Voila] Voila is running at:
     http://localhost:8866/
@@ -51,7 +51,7 @@ Es ist auch möglich, sich den Quellcode anzeigen zu lassen mit:
 
 .. code-block:: console
 
-    $ pipenv run voila --strip_sources=False jupyter/ipywidgets/examples.ipynb 
+    $ pipenv run voila --strip_sources=False jupyter/ipywidgets/examples.ipynb
     …
 
 .. note::
@@ -66,7 +66,7 @@ Es ist auch möglich, sich den Quellcode anzeigen zu lassen mit:
 
 .. code-block:: console
 
-    $ pipenv run voila --theme=dark jupyter/ipywidgets/examples.ipynb 
+    $ pipenv run voila --theme=dark jupyter/ipywidgets/examples.ipynb
     …
 
 … als Erweiterung des Jupyter-Server
@@ -81,4 +81,3 @@ Alternativ könnt ihr voilà auch als Erweiterung des Jupyter-Server starten:
 
 Anschließend könnt ihr voilà aufrufen, z.B. unter der URL
 ``http://localhost:8888/voila``.
-

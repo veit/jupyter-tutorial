@@ -142,4 +142,3 @@ Eigene Tastaturkürzel
 Gegebenenfalls könnt ihr auch eigene Tastaturkürzel definieren (s.
 `Keyboard Shortcut Customization
 <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Custom%20Keyboard%20Shortcuts.html>`_).
-

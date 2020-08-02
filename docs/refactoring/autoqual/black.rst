@@ -53,5 +53,3 @@ Hierfür könnt ihr in ``pyproject.toml`` folgendes eintragen:
     Weitere Informationen zur Konfiguration von Black in der Toml-Datei erhaltet
     ihr in `pyproject.toml
     <https://black.readthedocs.io/en/stable/pyproject_toml.html>`_.
-
-

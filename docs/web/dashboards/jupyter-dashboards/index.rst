@@ -45,4 +45,3 @@ Die Jupyter Dashboards sollten folgendes Problem lösen:
     install
     use
     matplotlib-example.ipynb
-
