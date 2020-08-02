@@ -50,6 +50,7 @@ ipyparallel = "*"
 ipycanvas = "*"
 plotnine = {extras = ["all"],version = "*"}
 ipylayout = "*"
+pre-commit = "*"
 
 [dev-packages]
 
