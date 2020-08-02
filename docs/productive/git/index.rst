@@ -25,6 +25,7 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     :hidden:
 
     install-config
+    pre-commit
     jupyter-config
     tools
     working-areas
@@ -36,4 +37,3 @@ Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Noteb
     best-practices
     workflows/index
     glossary
-

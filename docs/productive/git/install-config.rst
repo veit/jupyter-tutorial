@@ -49,7 +49,7 @@ Konfiguration
 ``$ git config --global user.name "[name]"``
     legt den Namen fest, den mit Euren Commit-Transaktionen verknüpft wird.
 ``$ git config --global user.email "[email address]"``
-    legt die E-Mail fest, die mit Euren Commit-Transaktionen verknüpft wird. 
+    legt die E-Mail fest, die mit Euren Commit-Transaktionen verknüpft wird.
 ``$ git config --global color.ui auto``
     aktiviert die Kolorierung der Befehlszeilenausgabe.
 
@@ -208,12 +208,3 @@ Hierfür wird üblicherweise in der ``~/.gitconfig``-Datei folgendes angegeben:
     Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
     <https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository oder
     auf der Website `gitignore.io <https://gitignore.io/>`_.
-
-Git pre-commit Hocks
-~~~~~~~~~~~~~~~~~~~~
-
-Definiert Git pre-commit Hocks z.B. um in Euren Repositories `Clean Code
-<https://de.wikipedia.org/wiki/Clean_Code>`_ zu gewährleisten. Eine Übersicht
-über verfügbare Git pre-commit Hocks erhaltet Ihr auf `pre-commit.com
-<https://pre-commit.com/hooks.html>`_.
-
