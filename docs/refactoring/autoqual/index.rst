@@ -28,6 +28,7 @@ Git pre-commit-Hooks
 --------------------
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
 
-   pre-commit
+   /productive/git/pre-commit

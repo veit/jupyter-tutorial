@@ -98,8 +98,9 @@ ignoriert werden, indem ihr einen Abschnitt ``[tool.check-manifest]`` in eurer
 Integration in die Versionskontrolle
 ------------------------------------
 
-Mit :doc:`pre-commit` kann `check-manifest` Teil eures Git-Workflows sein. Fügt
-hierfür eurer `.pre-commit-config.yaml`-Datei folgendes hinzu:
+Mit :doc:`/productive/git/pre-commit` kann `check-manifest` Teil eures
+Git-Workflows sein. Fügt hierfür eurer `.pre-commit-config.yaml`-Datei folgendes
+hinzu:
 
 .. code-block:: yaml
 
