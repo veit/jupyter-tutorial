@@ -29,7 +29,3 @@ branch_prefix: pyup-
 
 # Allow to close stale PRs
 close_prs: True
-
-# Label PRs
-label_prs: update
-
