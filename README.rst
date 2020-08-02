@@ -82,7 +82,7 @@ Installation
 
     $ apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
 
-   oder für Mac OS X mit:
+   oder für macOS mit:
 
    .. code-block:: console
 
