@@ -27,7 +27,7 @@ Installation
 
     $ sudo apt install jq
 
-oder für Mac OS X mit:
+oder für macOS mit:
 
 .. code-block:: console
 

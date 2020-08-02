@@ -19,7 +19,7 @@ Für iX-Distributionen sollte Git im Standard-Repository vorhanden sein.
 
     $ sudo apt install bash-completion
 
-* Für Mac OS X:
+* Für macOS:
 
   Es gibt verschiedene Möglichkeiten, Git auf einem Mac zu installieren. Am
   einfachsten ist es vermutlich, die Xcode Command Line Tools zu installieren.
@@ -111,10 +111,10 @@ kann ggf. erhöht werden, z.B. mit:
 
     $ git config credential.helper 'cache --timeout=3600'
 
-Mac OS X
-::::::::
+macOS
+:::::
 
-Unter Mac OS X lässt sich mit `osxkeychain` die Schlüsselbundverwaltung
+Unter macOS lässt sich mit `osxkeychain` die Schlüsselbundverwaltung
 (*Keychain*) nutzen um die Zugangsdaten zu speichern. `osxkeychain` setzt Git in
 der Version 1.7.10 oder neuer voraus und kann im selben Verzeichnis wie Git
 installiert werden mit:

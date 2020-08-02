@@ -202,7 +202,7 @@ Git Best Practices
         …
 
     .. note::
-        Bei Mac OS X muss /usr/bin/true statt des /bin/true bei Linux verwendet
+        Bei macOS muss /usr/bin/true statt des /bin/true bei Linux verwendet
         werden.
 
   .. seealso::

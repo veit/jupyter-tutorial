@@ -14,7 +14,7 @@ Anforderungen
 
     $ apt install curl git environment-modules
 
-  … oder für Mac OS X:
+  … oder für macOS:
 
   .. code-block:: console
 

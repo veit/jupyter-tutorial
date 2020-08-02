@@ -62,7 +62,7 @@ werden mit:
     $ sudo apt update
     $ sudo apt install dvc
 
-Für Mac OS X lässt sich DVC installieren mit:
+Für macOS lässt sich DVC installieren mit:
 
 .. code-block:: console
 
