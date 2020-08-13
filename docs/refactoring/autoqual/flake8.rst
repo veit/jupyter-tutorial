@@ -41,5 +41,9 @@ Konfiguration
         flake8 src tests setup.py conftest.py docs/conf.py
 
 .. seealso::
-    `Configuring Flake8
-    <http://flake8.pycqa.org/en/latest/user/configuration.html>`_
+    * `Configuring flake8
+      <http://flake8.pycqa.org/en/latest/user/configuration.html>`_
+    * `flake8 error/violation codes
+      <https://flake8.pycqa.org/en/latest/user/error-codes.html>`_
+    * `pycodestyle error codes
+      <https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes>`_
