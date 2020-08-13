@@ -56,3 +56,7 @@ Für ältere Python-Versionen kann sie installiert werden mit
 .. note::
    Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
    unter :doc:`/first-steps/install`.
+
+.. seealso::
+   Mit `responses <https://github.com/getsentry/responses>`_ könnt Ihr
+   Mock-Objekte für die :doc:`/data-rw/requests/index`-Bibliothek erstellen.
