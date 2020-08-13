@@ -104,6 +104,14 @@ Cross Platform
     Betriebssysteme werden unterstützt: ``Linux``, ``Windows``, ``FreeBSD``,
     ``OpenBSD``, ``NetBSD``, ``Mac OS``, ``AIX``, ``HP/UX`` und ``Solaris``.
 
+.. seealso::
+
+    `explain.depesz.com <https://explain.depesz.com/>`_
+        Web-App, die PostgreSQLs `EXPLAIN
+        <https://www.postgresql.org/docs/current/sql-explain.html>`_- und
+        `ANALYZE <https://www.postgresql.org/docs/current/sql-analyze.html>`_
+        -Anweisungen visualisiert.
+
 .. toctree::
     :hidden:
     :titlesonly:
