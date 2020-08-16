@@ -22,6 +22,10 @@ Speichermedien </data-rw/overview.rst#entfernte-speichermedien>` und
         Python-Modul zum Data Mining, Verarbeitung natürlicher Sprache, ML und
         Netzwerkanalyse
 
+Zum Speichern von relationalen Daten, Python-Objekten und Geodaten stellen wir
+Euch :doc:`postgresql/index`, :doc:`postgresql/sqlalchemy` und
+:doc:`postgresql/postgis/index` vor.
+
 Zum Bereinigen und Vorbereiten der Daten stellen wir Euch einige Best Practices
 und hilfreiche Python-Pakete in :doc:`../clean-prep/index` vor.
 
