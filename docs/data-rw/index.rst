@@ -18,7 +18,7 @@ Speichermedien </data-rw/overview.rst#entfernte-speichermedien>` und
     `Scrapy <https://scrapy.org/>`_
         Framework zum Extrahieren von Daten aus Websites als JSON-, CSV- oder
         XML-Dateien.
-    ` Pattern <https://github.com/clips/pattern>`_
+    `Pattern <https://github.com/clips/pattern>`_
         Python-Modul zum Data Mining, Verarbeitung natürlicher Sprache, ML und
         Netzwerkanalyse
 
