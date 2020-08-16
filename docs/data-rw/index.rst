@@ -9,7 +9,7 @@ Neben spezifischen Python-Bibliotheken zum Zugriff auf :ref:`entfernte
 Speichermedien </data-rw/overview.rst#entfernte-speichermedien>` und
 :ref:`/data-rw/overview.rst#geodaten` stellen wir Euch vier Werkzeuge genauer vor:
 
-* :doc:`requests/requests`
+* :doc:`requests/index`
 * :doc:`beautifulsoup`
 * :doc:`intake/index`
 * :doc:`DVC <../productive/dvc/index>`
