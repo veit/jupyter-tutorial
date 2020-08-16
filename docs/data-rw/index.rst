@@ -15,7 +15,7 @@ Speichermedien </data-rw/overview.rst#entfernte-speichermedien>` und
 * :doc:`DVC <../productive/dvc/index>`
 
 Zum Bereinigen und Vorbereiten der Daten stellen wir Euch einige Best Practices
-und hilfreiche Python-Pakete in :doc:`clean-prep/index` vor.
+und hilfreiche Python-Pakete in :doc:`../clean-prep/index` vor.
 
 .. toctree::
     :hidden:
