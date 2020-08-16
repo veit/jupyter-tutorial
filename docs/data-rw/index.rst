@@ -7,7 +7,7 @@ z.B. in der `Registry of research data repositories (re3data)
 
 Neben spezifischen Python-Bibliotheken zum Zugriff auf :ref:`entfernte
 Speichermedien </data/overview.rst#entfernte-speichermedien>` und
-:ref:`/data/overview.rst#geodaten` stellen wir Euch vier Werkzeuge genauer vor:
+:ref:`/data-rw/overview.rst#geodaten` stellen wir Euch vier Werkzeuge genauer vor:
 
 * :doc:`requests/requests`
 * :doc:`beautifulsoup`
