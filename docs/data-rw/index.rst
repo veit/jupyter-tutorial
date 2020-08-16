@@ -30,7 +30,6 @@ und hilfreiche Python-Pakete in :doc:`../clean-prep/index` vor.
     :titlesonly:
     :maxdepth: 0
 
-    libs
     requests/index
     beautifulsoup
     intake/index
