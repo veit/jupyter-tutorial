@@ -1,6 +1,9 @@
 Arbeitsbereiche
 ===============
 
+.. figure:: git-workspaces.png
+   :alt: Git Arbeitsbereiche
+
 ``git add``
     fügt Dateien aus dem Arbeitsverzeichnis dem Bühnenbereich (engl.: *staging
     area*) hinzu.
