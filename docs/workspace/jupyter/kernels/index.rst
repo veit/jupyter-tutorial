@@ -9,6 +9,7 @@ Kernels
     install
     python2
     python38.ipynb
+    python39.ipynb
     r
 
 Überblick
