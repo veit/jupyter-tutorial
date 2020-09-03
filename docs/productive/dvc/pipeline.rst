@@ -12,6 +12,8 @@ Ergebnisse zu erzielen, müssen Code und Daten miteinander verbunden werden.
 .. figure:: combine-git-dvc.png
    :alt: Git und DVC verbinden
 
+   Design: André Henze, Berlin
+
 Mit ``dvc run`` könnt Ihr einzelne Verbeitungsstufen erstellen, wobei jede
 Stufe durch eine, mit Git verwaltete, Quellcode-Datei sowie weiteren
 Abhängigkeiten und Ausgabedaten beschrieben wird. Alle Stufen zusammen bilden
