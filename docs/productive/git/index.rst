@@ -13,8 +13,7 @@ vorhanden.
     * `Software Carpentry Version Control with Git
       <https://swcarpentry.github.io/git-novice/>`_
     * `Pro Git book <https://git-scm.com/book>`_
-    * `GitHub Cheat Sheet (PDF)
-      <https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf>`_
+    * :download:`Git Cheat Sheet (PDF) <git-cheatsheet-web.pdf>`
     * `Git reference <https://git-scm.com/docs>`_
 
 Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Notebooks
