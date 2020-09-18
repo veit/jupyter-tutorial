@@ -115,8 +115,10 @@ Infrastruktur, die nicht nur die Bereitstellung der Kernel sowie die
 Parametrisierung, Zeitsteuerung und Parallelisierung von Notebooks erlaubt,
 sondern darüberhinaus auch die gleichmäßige Bereitstellung der Ressourcen.
 
-Es würde jedoch den Rahmen dieses Tutorials sprengen, wenn ich umfassend auf
-unsere Datenplattform mit *Streaming Pipelines* und *Domain Driven Data Stores*
-eingehen würde. Ich werde mich daher darauf beschränken, wie Nutzer in ihrem
-Home-Verzeichnis Notebooks erstellen und ausführen können. Auf diese Datei kann
-der Nutzer dann sowohl mit Jupyter Notebook wie auch mit dem Terminal zugreifen.
+Mit diesem Tutorial wird eine Plattform bereitgestellt, die über Jupyter
+Notebooks hinaus schnelle, flexible und umfassende Datenanalysen ermöglicht.
+Aktuell gehen wir jedoch noch nicht darauf ein, wie sie sich um *Streaming
+Pipelines* und *Domain Driven Data Stores* erweitern lässt.
+
+Die Beispiele des Jupyter-Tutorials könnt Ihr jedoch auch lokal erstellen und
+ausführen.
