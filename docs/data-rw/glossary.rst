@@ -135,7 +135,7 @@ Glossar
         entwickelt.
 
     eXist
-        eXist ist eine :term`XML-Datenbank`, die innerhalb einer Java Virtual
+        eXist ist eine :term:`XML-Datenbank`, die innerhalb einer Java Virtual
         Machine läuft.
 
     Graph traversal
@@ -329,7 +329,7 @@ Glossar
 
     Schlüssel-Werte-Datenbank
         Schlüssel-Werte-Datenbanken oder auch Key Value Stores speichern
-        :term`Schlüssel/Wert-Paare <Schlüssel/Wert-Paar>`.
+        :term`Schlüssel/Wert-Paare<Schlüssel/Wert-Paar>`.
         Schlüssel/Wert-Datenbanken sind z.B. :term:`Riak`, :term:`Cassandra`,
         :term:`Redis` und :term:`MongoDB`.
 
