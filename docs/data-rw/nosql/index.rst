@@ -17,7 +17,7 @@ NoSQL-Datenbanken lassen sich untergliedern in
 * :term:`Spaltenorientierte Datenbanksysteme <Spaltenorientierte Datenbank>`
 * :term:`Dokumentenorientierte Datenbanksysteme
   <Dokumentenorientierte Datenbank>`
-* :term:`Graphendatenbanksysteme <Graphendatenbank>`
+* :doc:`Graphendatenbanksysteme <graph-db>`
 * :term:`Objektdatenbanksysteme <Objektdatenbank>`
 * :term:`XML-Datenbanksysteme <XML-Datenbank>`
 
