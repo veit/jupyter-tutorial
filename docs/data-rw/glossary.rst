@@ -312,6 +312,10 @@ Glossar
         OrientDB ist eine :term:`Dokumentenorientierte Datenbank` und eine
         :term:`Graphendatenbank`.
 
+    Paxos
+        Paxos ist eine Familie von Protokollen zur Herstellung von Konsens in
+        einem Netzwerk unzuverlässiger oder fehlbarer Prozessoren.
+
     Property-Graph-Modell (PGM)
         Knoten und Kanten bestehen aus Objekten mit darin eingebetteten
         Eigenschaften (Properties). Es wird nicht nur ein Wert (Label) in einer
