@@ -170,10 +170,10 @@ Glossar
           großen Graphen wesentlich schneller ein Suchergebnis präsentieren, dieses
           ist jedoch nicht immer das beste.
 
-    Graphendatenbank
-        Graphendatenbanken sind spezialisiert auf vernetzte Informationen und
+    Graphdatenbank
+        Graphdatenbanken sind spezialisiert auf vernetzte Informationen und
         möglichst einfache und effiziente :term:`Graph traversal`.
-        Graphendatenbanken sind z.B. :term:`Neo4j`, :term:`InfiniteGraph` oder
+        Graphdatenbanken sind z.B. :term:`Neo4j`, :term:`InfiniteGraph` oder
         :term:`OrientDB`.
 
     Graphenmodell
@@ -283,7 +283,7 @@ Glossar
         Zugriffe auch ohne das :term:`Locking` von Datensätzen zu koordinieren.
 
     Neo4j
-        Neo4j ist eine :term:`Graphendatenbank`, deren Datenmodell dem
+        Neo4j ist eine :term:`Graphdatenbank`, deren Datenmodell dem
         :term:`Property-Graph-Modell (PGM)` entspricht.
 
     NoSQL
@@ -303,7 +303,7 @@ Glossar
         * :term:`Spaltenorientierte Datenbanksysteme <Spaltenorientierte Datenbank>`
         * :term:`Dokumentenorientierte Datenbanksysteme
           <Dokumentenorientierte Datenbank>`
-        * :term:`Graphendatenbanksysteme <Graphendatenbank>`
+        * :term:`Graphdatenbanksysteme <Graphdatenbank>`
         * :term:`Objektdatenbanksysteme <Objektdatenbank>`
         * :term:`XML-Datenbanksysteme <XML-Datenbank>`
 
@@ -330,7 +330,7 @@ Glossar
 
     OrientDB
         OrientDB ist eine :term:`Dokumentenorientierte Datenbank` und eine
-        :term:`Graphendatenbank`.
+        :term:`Graphdatenbank`.
 
     Paxos
         Paxos ist eine Familie von Protokollen zur Herstellung von Konsens in
