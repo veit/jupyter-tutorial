@@ -214,6 +214,11 @@ Glossar
 
         Das Datenmodell entsprich einem :term:`Property-Graph-Modell (PGM)`.
 
+    Konsistente Hashfunktion
+        Konsistente Hashfunktionen minimieren die Anzahl der Neuzuordnungen, da
+        bei einer Änderung nicht alle Schlüssel neu zugeordnet werden müssen
+        sondern nur die Größe einer Hash-Tabelle geändert wird.
+
     Konsistenz
         Der Zustand einer Datenbank wird als konsistent bezeichnet, wenn die
         gespeicherten Daten alle Anforderungen for :term:`Semantische
