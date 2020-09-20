@@ -353,6 +353,12 @@ Glossar
         Spaltenorientierte Datenbanksysteme sind :term:`Cassandra`,
         :term:`Hypertable` und :term:`HBase`.
 
+    Vektoruhr
+        Eine Vektoruhr ist eine Softwarekomponente zum Zuweisen von eindeutigen
+        Zeitstempeln an Nachrichten. Sie erlaubt, den Ereignissen in verteilten
+        Systemem aufgrund eines Zeitstempels eine Kausalordnung zuzuweisen und
+        insbesondere die Nebenläufigkeit von Ereignissen zu ermitteln.
+
     XML-Datenbank
         XML-Datenbanken sind in der Lage, XML-Dokumente gegen ein XML-Schema
         oder eine DTD zu validieren. Darüberhinaus unterstützen sie mindestens
