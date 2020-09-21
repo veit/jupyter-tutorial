@@ -1,7 +1,8 @@
 Graphdatenbanken
 ================
 
-Graphdatenbanken sind spezialisiert auf vernetzte Informationen.
+Graphdatenbanken sind spezialisiert auf vernetzte Informationen und
+möglichst einfache und effiziente :term:`Graph traversal`.
 
 Graphenmodell
 -------------
@@ -48,8 +49,7 @@ lassen in
 Datenbanksysteme
 ----------------
 
-Typische Graphdatenbanken sind :term:`Neo4j`, :term:`OrientDB` und
-:term:`InfiniteGraph`.
+Typische Graphdatenbanken sind Neo4j, OrientDB und InfiniteGraph.
 
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Home**               | `Neo4j`_                       | `OrientDB`_                    | `InfiniteGraph`_               |
@@ -84,6 +84,18 @@ Typische Graphdatenbanken sind :term:`Neo4j`, :term:`OrientDB` und
 | **Replikation,         | Master-Slave mit Master        | Multi-Master-Replikation       | Objectivity/DB,                |
 | Skalierung**           | Failover                       |                                | keine                          |
 |                        |                                |                                | :term:`Graphpartitionierung`   |
++------------------------+--------------------------------+--------------------------------+--------------------------------+
+| **Anmerkungen**        |                                |                                | InfiniteGraph ist eine, auf    |
+|                        |                                |                                | der :term:`Objektdatenbank`    |
+|                        |                                |                                | Objectivity/DB aufsetzende     |
+|                        |                                |                                | Graphdatenbank, wobei die      |
+|                        |                                |                                | Objekte durch Kanten verbunden |
+|                        |                                |                                | werden. Hierbei sind auch      |
+|                        |                                |                                | mehrfache und bidirektionale   |
+|                        |                                |                                | Kanten erlaubt.                |
+|                        |                                |                                |                                |
+|                        |                                |                                | Iteratoren entsprechen dem     |
+|                        |                                |                                | :term:`Graph traversal`.       |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 
 .. _`Neo4j`: https://neo4j.com
