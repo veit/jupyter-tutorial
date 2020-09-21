@@ -30,7 +30,7 @@ Dokumentenorientierte Datenbanksysteme sind z.B. :term:`MongoDB`,
 | **Datenmodell**        | Flexibles Schema mit           | Flexibles Schema               | Im Wesentlichen                | Multi-Model                    |
 |                        | denormalisiertem Modell        |                                | :term:`Schlüssel/Wert-Paar`    |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Query-Langauge**     | jQuery, :term:`MapReduce       | REST, :term:`MapReduce         | Keyfilter, :term:`MapReduce`,  | `Extended SQL`_, `Gremlin`_    |
+| **Query-Langauge**     | jQuery, :term:`MapReduce`      | REST, :term:`MapReduce`        | Keyfilter, :term:`MapReduce`,  | `Extended SQL`_, `Gremlin`_    |
 |                        |                                |                                | Link-Walking, keine Ad-hoc     |                                |
 |                        |                                |                                | Queries möglich                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
