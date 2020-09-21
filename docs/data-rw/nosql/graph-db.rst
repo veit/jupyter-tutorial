@@ -72,7 +72,7 @@ Typische Graphdatenbanken sind Neo4j, OrientDB und InfiniteGraph.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Query-Langauge**     | REST, `Cypher`_, `Gremlin`_    | `Extended SQL`_, `Gremlin`_    | Traverser API, PQL             |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Transaktionen,       | * :term:`Two-phase locking     | :term:`ACID`                   |                                |
+| **Transaktionen,       | * :term:`Two-phase locking     | :term:`ACID`                   | :term:`ACID`                   |
 | Nebenläufigkeit**      |   (2PL)`,                      |                                |                                |
 |                        | * einzelner Server:            |                                |                                |
 |                        |   :term:`ACID`,                |                                |                                |
