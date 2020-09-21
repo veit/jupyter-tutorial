@@ -61,6 +61,3 @@ Dokumentenorientierte Datenbanksysteme sind z.B. :term:`MongoDB`,
 .. _`www.orientdb.com/docs`: http://www.orientdb.com/docs
 .. _`Extended SQL`: https://orientdb.org/docs/2.2.x/SQL.html
 .. _`Gremlin`: https://github.com/tinkerpop/gremlin/wiki
-.. _``:
-.. _``:
-.. _``:
