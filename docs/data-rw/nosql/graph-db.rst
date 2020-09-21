@@ -65,7 +65,7 @@ Typische Graphdatenbanken sind Neo4j, OrientDB und InfiniteGraph.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Entwicklungssprache**| Java                           | Java                           | Java                           |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Lizenzen**           | AGPL u. kommerziell            | Apache2                        | kommerziell                    |
+| **Lizenzen**           | AGPL u. kommerziell            | Apache License 2.0             | kommerziell                    |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Datenmodell**        | :term:`Property-Graph-Modell   | Multi-Model                    | :term:`Property-Graph-Modell   |
 |                        | (PGM)`                         |                                | (PGM)`                         |
