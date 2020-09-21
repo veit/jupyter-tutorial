@@ -18,8 +18,8 @@ OrientDB.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Docs**               | `docs.mongodb.com`_            | `docs.couchdb.org`_            | `docs.riak.com`_               | `www.orientdb.com/docs`_       |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anwendungsgebiete**  | IoT, Mobile apps, CMS, …       | Mobile, CRM, CMS, …            | Session storage, Log data,     | Stammdatenverwaltung, soziale  |
-|                        |                                |                                | Sensor data, CMS               | Netzwerke, `Time Series`_,     |
+| **Anwendungsgebiete**  | IoT, Mobile apps, CMS,         | Mobile, CRM, CMS, …            | Session storage, Log data,     | Stammdatenverwaltung, soziale  |
+|                        | `einfache Geodaten`_, …        |                                | Sensor data, CMS               | Netzwerke, `Time Series`_,     |
 |                        |                                |                                |                                | `Key Value`_, `Chat`_,         |
 |                        |                                |                                |                                | Verkehrsmanagement             |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -45,7 +45,7 @@ OrientDB.
 | Skalierung**           |                                |                                |                                | keine                          |
 |                        |                                |                                |                                | :term:`Graphpartitionierung`   |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anmerkungen**        |                                |                                |                                |                                |
+| **Anmerkungen**        | `BSON`_-Format                 |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 
 .. _`MongoDB`: https://www.mongodb.com/
@@ -65,3 +65,5 @@ OrientDB.
 .. _`Chat`: https://orientdb.org/docs/2.2.x/Chat-use-case.html
 .. _`Extended SQL`: https://orientdb.org/docs/2.2.x/SQL.html
 .. _`Gremlin`: https://github.com/tinkerpop/gremlin/wiki
+.. _`einfache Geodaten`: https://docs.mongodb.com/manual/core/geospatial-indexes/
+.. _`BSON`: http://www.bsonspec.org/
