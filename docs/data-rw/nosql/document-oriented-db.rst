@@ -8,8 +8,8 @@ bestimmter Daten. Die Daten eines Dokuments werden als
 Datenbanksysteme
 ----------------
 
-Dokumentenorientierte Datenbanksysteme sind z.B. :term:`MongoDB`,
-:term:`CouchDB`, :term:`Riak` und :term:`OrientDB`.
+Dokumentenorientierte Datenbanksysteme sind z.B. MongoDB, CouchDB, Riak und
+OrientDB.
 
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Home**               | `MongoDB`_                     | `CouchDB`_                     | `Riak`_                        | `OrientDB`_                    |

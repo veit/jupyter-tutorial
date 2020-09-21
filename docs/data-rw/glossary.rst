@@ -119,14 +119,7 @@ Glossar
     CouchDB
         CouchDB ein Akronym für **C**\luster **o**\f **u**\nreliable
         **c**\ommodity **h**\ardware **D**\ata **B**\ase. Dabei handelt es sich
-        um eine :term:`Dokumentenorientierte Datenbank`.
-
-    Dokumentenorientierte Datenbank
-        Ein Dokument in diesem Zusammenhang ist eine strukturierte
-        Zusammenstellung bestimmter Daten. Die Daten eines Dokuments werden als
-        :term:`Schlüssel/Wert-Paar` gespeichert, wobei der Wert auch eine Liste
-        oder ein  Array sein kann. Dokumentenorientierte Datenbanken sind z.B.
-        :term:`MongoDB`, :term:`CouchDB`, :term:`Riak` und :term:`OrientDB`.
+        um eine :doc:`nosql/document-oriented-db`.
 
     Eventual Consistency
         *»Konsistenz als Zustandsübergang, der irgendwann erreicht wird.«*
@@ -252,12 +245,8 @@ Glossar
         inspiriert auch wenn die Semantik von diesen etwas abweicht.
 
     MongoDB
-        MongoDB ist eine schemafreie :term:`Dokumentenorientierte Datenbank`,
+        MongoDB ist eine schemafreie :doc:`nosql/document-oriented-db`,
         die Dokumente im `BSON <http://www.bsonspec.org/>`_-Format verwaltet.
-
-        Durch den `Geospatial-Index
-        <https://docs.mongodb.com/manual/core/geospatial-indexes/>`_ kann auch
-        ein Index für einfache Abfragen von Geodaten realisiert werden.
 
     MVCC – Multiversion Concurrency Control
         MVCC werden kontrolliert konkurrierende Zugriffe auf Datensätze (Lesen,
@@ -283,8 +272,8 @@ Glossar
 
         * :term:`Schlüssel-Werte-Datenbanksysteme <Schlüssel-Werte-Datenbank>`
         * :term:`Spaltenorientierte Datenbanksysteme <Spaltenorientierte Datenbank>`
-        * :term:`Dokumentenorientierte Datenbanksysteme
-          <Dokumentenorientierte Datenbank>`
+        * :doc:`Dokumentenorientierte Datenbanksysteme
+          <nosql/document-oriented-db>`
         * :doc:`Graphdatenbanksysteme <nosql/graph-db>`
         * :term:`Objektdatenbanksysteme <Objektdatenbank>`
         * :term:`XML-Datenbanksysteme <XML-Datenbank>`
@@ -309,10 +298,6 @@ Glossar
         nahe und daher erscheint die Speicherung dieser Objekte natürlich. Dies
         vereinfacht die Modellierung erheblich. Ein Beispiel für ein
         Objektdatenbanksystem ist :term:`Objectivity/DB`.
-
-    OrientDB
-        OrientDB ist eine :term:`Dokumentenorientierte Datenbank` und eine
-        :doc:`Graphdatenbank <nosql/graph-db>`.
 
     Paxos
         Paxos ist eine Familie von Protokollen zur Herstellung von Konsens in
