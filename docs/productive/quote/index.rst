@@ -130,6 +130,8 @@ abrufen.
      <https://www.softwareheritage.org/save-and-reference-research-software/>`_
    * `Mining software metadata for 80 M projects and even more
      <https://www.softwareheritage.org/2019/05/28/mining-software-metadata-for-80-m-projects-and-even-more/>`_
+   * `Extensions to schema.org to support structured, semantic, and executable
+     documents <https://github.com/stencila/schema>`_
 
 .. toctree::
     :hidden:
