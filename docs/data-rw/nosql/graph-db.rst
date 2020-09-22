@@ -1,5 +1,5 @@
-Graphdatenbanken
-================
+Graphdatenbanksysteme
+=====================
 
 Graphdatenbanken sind spezialisiert auf vernetzte Informationen und
 möglichst einfache und effiziente :term:`Graph traversal`.
