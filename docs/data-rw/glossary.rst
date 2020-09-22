@@ -66,10 +66,10 @@ Glossar
         CA-, CP-, AP-Applikation realisiert werden soll.
 
     Cassandra
-        Cassandra ist eine :term:`Spaltenorientierte Datenbank`, und wurde
+        Cassandra ist ein :doc:`nosql/column-oriented-db`, und wurde
         ursprünglich von Facebook entwickelt um Suchen im E-Mail-Engang zu
-        optimieren. Heute wird es unter dem Dach der `Apache Software
-        Foundation <http://www.apache.org/>`_ weiterentwickelt.
+        optimieren. Heute wird es unter dem Dach der `Apache Software Foundation
+        <http://www.apache.org/>`_ weiterentwickelt.
 
         Das Datenmodell von Cassandra hat weder eine logische Struktur noch ein
         Schema. Für die Modellierung wird empfohlen *«First write your queries,
@@ -181,12 +181,12 @@ Glossar
         existieren.
 
     HBase
-        HBase ist eine verteilte, :term:`Spaltenorientierte Datenbank`, welche
-        auf Hadoop aufbaut und für real-time-Zugriffe auf großen
+        HBase ist ein :doc:`nosql/column-oriented-db`, welches auf verteilten
+        Dateisystemen aufbaut und für real-time-Zugriffe auf großen
         Datenbeständen konzipiert ist.
 
     Hypertable
-        Hypertable ist eine :term:`Spaltenorientierte Datenbank` und auf
+        Hypertable ist ein :doc:`nosql/column-oriented-db` und auf
         verteilten Dateisystemen basiert. Das Datenmodell ist das einer
         mehrdimensionalen Tabelle, die mit Schlüsseln durchsucht werden
         kann. Die erste Dimension ist der sog. *row-key*, die zweite die
@@ -271,7 +271,7 @@ Glossar
         NoSQL-Datenbanken lassen sich untergliedern in
 
         * :doc:`Schlüssel-Werte-Datenbanksysteme <nosql/key-value-store>`
-        * :term:`Spaltenorientierte Datenbanksysteme <Spaltenorientierte Datenbank>`
+        * :doc:`nosql/column-oriented-db`
         * :doc:`Dokumentenorientierte Datenbanksysteme
           <nosql/document-oriented-db>`
         * :doc:`Graphdatenbanksysteme <nosql/graph-db>`
@@ -329,14 +329,6 @@ Glossar
         gesprochen. Ist dies nicht der Fall, sind die Daten inkonsistent. In SQL
         kann die semantische Integrität mit ``TRIGGER`` und ``CONSTRAINT``
         überprüft werden.
-
-    Spaltenorientierte Datenbank
-        Spaltenorientierte Datenbanken, auch Wide Column Stores genannt,
-        speichern Daten mehrerer Einträge zusammen mit einem Zeitstempel in
-        Spalten. Spalten mit ähnlichen oder verwandten Inhalten können in
-        einer :term:`Column Family` zusammengefasst werden. Beispiele für
-        Spaltenorientierte Datenbanksysteme sind :term:`Cassandra`,
-        :term:`Hypertable` und :term:`HBase`.
 
     Vektoruhr
         Eine Vektoruhr ist eine Softwarekomponente zum Zuweisen von eindeutigen
