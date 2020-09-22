@@ -270,7 +270,7 @@ Glossar
 
         NoSQL-Datenbanken lassen sich untergliedern in
 
-        * :term:`Schlüssel-Werte-Datenbanksysteme <Schlüssel-Werte-Datenbank>`
+        * :doc:`Schlüssel-Werte-Datenbanksysteme <nosql/key-value-store>`
         * :term:`Spaltenorientierte Datenbanksysteme <Spaltenorientierte Datenbank>`
         * :doc:`Dokumentenorientierte Datenbanksysteme
           <nosql/document-oriented-db>`
@@ -314,7 +314,7 @@ Glossar
         einer flexiblen :term:`MapReduce`-Engine.
 
     Redis
-        Redis ist eine :term:`Schlüssel-Werte-Datenbank`, die üblicherweise alle
+        Redis ist eine :doc:`nosql/key-value-store`, die üblicherweise alle
         Daten im RAM speichert.
 
     Schlüssel/Wert-Paar
@@ -322,12 +322,6 @@ Glossar
         strukturierten oder willkürlichen Zeichenkette bestehen kann. Diese
         Schlüssel können in Namensräume und Datenbanken aufgeteilt werden. Die
         Werte können neben Strings auch Listen, Sets oder Hashes enthalten.
-
-    Schlüssel-Werte-Datenbank
-        Schlüssel-Werte-Datenbanken oder auch Key Value Stores speichern
-        :term:`Schlüssel/Wert-Paare <Schlüssel/Wert-Paar>`.
-        Schlüssel/Wert-Datenbanken sind z.B. :term:`Riak`, :term:`Cassandra`,
-        :term:`Redis` und :term:`MongoDB`.
 
     Semantische Integrität
         Semantische Integrität ist immer dann gegeben, wenn die Eingaben richtig
