@@ -13,7 +13,7 @@ NoSQL-Datenbanksysteme haben jedoch folgendes gemeinsam:
 
 NoSQL-Datenbanken lassen sich untergliedern in
 
-* :term:`Schlüssel-Werte-Datenbanksysteme <Schlüssel-Werte-Datenbank>`
+* :doc:`Schlüssel-Werte-Datenbanksysteme <key-value-store>`
 * :term:`Spaltenorientierte Datenbanksysteme <Spaltenorientierte Datenbank>`
 * :doc:`document-oriented-db`
 * :doc:`graph-db`
@@ -35,5 +35,6 @@ Bedeutende Konzepte und Technologien von NoSQL-Datenbanken sind
     :titlesonly:
     :maxdepth: 0
 
+    key-value-store
     document-oriented-db
     graph-db
