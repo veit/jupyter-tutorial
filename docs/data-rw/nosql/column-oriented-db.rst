@@ -23,7 +23,7 @@ Beispiele für spaltenorientierte Datenbanksysteme sind
 |                        | Schreibgeschwindigkeit,        | Hypertable löst horizontale    | recommendation engines         |
 |                        | demokratische Peer-to-peer     | Skalierungsprobleme durch ein  |                                |
 |                        | (P2P)-Architektur, Daten mit   | verteiltes Speichersystem für  |                                |
-|                        | definierter Lebenszeit         | Rstrukturierte Daten.          |                                |
+|                        | definierter Lebenszeit         | strukturierte Daten.           |                                |
 |                        |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Entwicklungssprache**| Java                           | C++                            | Java                           |
