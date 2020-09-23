@@ -2,8 +2,9 @@ Dokumentenorientierte Datenbanksysteme
 ======================================
 
 Ein Dokument in diesem Zusammenhang ist eine strukturierte Zusammenstellung
-bestimmter Daten. Die Daten eines Dokuments werden als
-:term:`Schlüssel/Wert-Paar` gespeichert, wobei der Wert auch eine Liste oder einArray sein kann.
+bestimmter Daten. Die Daten eines Dokumente werden als
+:term:`Schlüssel/Wert-Paar` gespeichert, wobei der Wert auch eine Liste oder ein
+Array sein kann.
 
 Datenbanksysteme
 ----------------
