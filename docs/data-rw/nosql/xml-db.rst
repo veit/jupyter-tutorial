@@ -25,7 +25,7 @@ Beispiele für XML-Datenbanksysteme sind eXist und MonetDB.
 +------------------------+------------------------------------------------+------------------------------------------------+
 | **Datenmodell**        | XML                                            | XML, Spaltenorientierte Datenstruktur          |
 +------------------------+------------------------------------------------+------------------------------------------------+
-| **Query-Langauge**     | :term:`XQuery`, :term:`XPATH`                  | Objectivity/DB predicate query languag         |
+| **Query-Langauge**     | :term:`XQuery`, :term:`XPATH`                  | SQL                                            |
 +------------------------+------------------------------------------------+------------------------------------------------+
 | **Transaktionen,       |                                                | :term:`Optimistic Concurrency <Locking>`       |
 | Nebenläufigkeit**      |                                                |                                                |
