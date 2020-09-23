@@ -45,7 +45,9 @@ Schlüssel/Wert-Datenbanksysteme sind z.B. Riak, Cassandra, Redis und MongoDB.
 |                        |                                | OldNetworkTopologyStrategy     | :term:`consistent hashing      |                                |
 |                        |                                |                                | <Konsistente Hashfunktion>`    |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anmerkungen**        |                                |                                |                                | `BSON`_-Format                 |
+| **Anmerkungen**        |                                | Siehe auch `Scylla`_, eine     |                                | `BSON`_-Format                 |
+|                        |                                | Cassandra-kompatible           |                                |                                |
+|                        |                                | Reimplementierung in C.        |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 
 .. _`Riak`: https://riak.com/
@@ -62,4 +64,5 @@ Schlüssel/Wert-Datenbanksysteme sind z.B. Riak, Cassandra, Redis und MongoDB.
 .. _`docs.mongodb.com`: https://docs.mongodb.com/
 .. _`einfache Geodaten`: https://docs.mongodb.com/manual/core/geospatial-indexes/
 .. _`Cassandra Query Language (CQL)`: https://cassandra.apache.org/doc/latest/cql/
+.. _`Scylla`: https://www.scylladb.com/
 .. _`BSON`: http://www.bsonspec.org/
