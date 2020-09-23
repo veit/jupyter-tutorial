@@ -42,9 +42,8 @@ OrientDB.
 |                        |                                | * verteilte Systeme:           |                                |                                |
 |                        |                                |   :term:`BASE`                 |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | Master-Slave-Replikation       | Master-Master-Replikation      | Multi-Master-Replikation       | Objectivity/DB,                |
-| Skalierung**           |                                |                                |                                | keine                          |
-|                        |                                |                                |                                | :term:`Graphpartitionierung`   |
+| **Replikation,         | Master-Slave-Replikation       | Master-Master-Replikation      | Multi-Master-Replikation       | Multi-Master-Replikation       |
+| Skalierung**           |                                |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Anmerkungen**        | `BSON`_-Format                 |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
