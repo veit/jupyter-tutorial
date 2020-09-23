@@ -275,7 +275,7 @@ Glossar
         * :doc:`Dokumentenorientierte Datenbanksysteme
           <nosql/document-oriented-db>`
         * :doc:`Graphdatenbanksysteme <nosql/graph-db>`
-        * :term:`Objektdatenbanksysteme <Objektdatenbank>`
+        * :doc:`nosql/object-db`
         * :term:`XML-Datenbanksysteme <XML-Datenbank>`
 
         Bedeutende Konzepte und Technologien von NoSQL-Datenbanken sind
@@ -287,17 +287,6 @@ Glossar
         * :term:`MVCC – Multiversion Concurrency Control`
         * :term:`Vektoruhr`
         * :term:`Paxos`
-
-    Objectivity/DB
-        Objectivity/DB ist eine kommerzielle Objektdatenbank. Sie ermöglicht
-        Anwendungen C++-, C#-, Java- oder Python-Objekte dauerhaft zu speichern
-        ohne die Datenobjekte in Zeilen und Spalten konvertieren zu müssen.
-
-    Objektdatenbank
-        Viele Programmiersprachen legen eine objektorientierte Programmierung
-        nahe und daher erscheint die Speicherung dieser Objekte natürlich. Dies
-        vereinfacht die Modellierung erheblich. Ein Beispiel für ein
-        Objektdatenbanksystem ist :term:`Objectivity/DB`.
 
     Paxos
         Paxos ist eine Familie von Protokollen zur Herstellung von Konsens in
