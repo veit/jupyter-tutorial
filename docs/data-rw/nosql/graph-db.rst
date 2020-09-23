@@ -79,8 +79,8 @@ Typische Graphdatenbanken sind Neo4j, OrientDB InfiniteGraph und ArangoDB.
 |                        | * verteilte Systeme:           |                                |                                |                                |
 |                        |   :term:`BASE`                 |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | Master-Slave mit Master        | Multi-Master-Replikation       | Objectivity/DB,                | Master-Slave-Replikation,      |
-| Skalierung**           | Failover                       |                                | keine                          | Sharding                       |
+| **Replikation,         | Master-Slave mit Master        | Multi-Master-Replikation,      | Objectivity/DB,                | Master-Slave-Replikation,      |
+| Skalierung**           | Failover                       | Sharding                       | keine                          | Sharding                       |
 |                        |                                |                                | :term:`Graphpartitionierung`   |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Anmerkungen**        |                                |                                | InfiniteGraph ist eine, auf    |                                |
