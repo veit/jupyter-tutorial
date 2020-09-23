@@ -67,8 +67,8 @@ Typische Graphdatenbanken sind Neo4j, OrientDB InfiniteGraph und ArangoDB.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Lizenzen**           | AGPL u. kommerziell            | Apache License 2.0             | kommerziell                    | Apache License 2.0             |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Datenmodell**        | :term:`Property-Graph-Modell   | Multi-Model                    | :term:`Property-Graph-Modell   | Multi-Model                    |
-|                        | (PGM)`                         |                                | (PGM)`                         |                                |
+| **Datenmodell**        | :term:`Property-Graph-Modell   | Multi-Model                    | :term:`Property-Graph-Modell   | Multi-Model: Dokumente, Graphen|
+|                        | (PGM)`                         |                                | (PGM)`                         | und :term:`Schlüssel/Wert-Paar`|
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Query-Langauge**     | REST, `Cypher`_, `Gremlin`_    | `Extended SQL`_, `Gremlin`_    | Traverser API, PQL             |`ArangoDB Query Language (AQL)`_|
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -79,8 +79,8 @@ Typische Graphdatenbanken sind Neo4j, OrientDB InfiniteGraph und ArangoDB.
 |                        | * verteilte Systeme:           |                                |                                |                                |
 |                        |   :term:`BASE`                 |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | Master-Slave mit Master        | Multi-Master-Replikation       | Objectivity/DB,                | Master-Slave-Replikation       |
-| Skalierung**           | Failover                       |                                | keine                          |                                |
+| **Replikation,         | Master-Slave mit Master        | Multi-Master-Replikation       | Objectivity/DB,                | Master-Slave-Replikation,      |
+| Skalierung**           | Failover                       |                                | keine                          | Sharding                       |
 |                        |                                |                                | :term:`Graphpartitionierung`   |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Anmerkungen**        |                                |                                | InfiniteGraph ist eine, auf    |                                |

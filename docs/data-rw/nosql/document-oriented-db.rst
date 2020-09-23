@@ -28,8 +28,8 @@ OrientDB und ArangoDB.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Lizenzen**           | Server Side Public License     | Apache License 2.0             | Apache License 2.0             | Apache License 2.0             | Apache License 2.0             |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Datenmodell**        | Flexibles Schema mit           | Flexibles Schema               | Im Wesentlichen                | Multi-Model                    | Multi-Model                    |
-|                        | denormalisiertem Modell        |                                | :term:`Schlüssel/Wert-Paar`    |                                |                                |
+| **Datenmodell**        | Flexibles Schema mit           | Flexibles Schema               | Im Wesentlichen                | Multi-Model                    | Multi-Model: Dokumente, Graphen|
+|                        | denormalisiertem Modell        |                                | :term:`Schlüssel/Wert-Paar`    |                                | und :term:`Schlüssel/Wert-Paar`|
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Query-Langauge**     | jQuery, :term:`MapReduce`      | REST, :term:`MapReduce`        | Keyfilter, :term:`MapReduce`,  | `Extended SQL`_, `Gremlin`_    |`ArangoDB Query Language (AQL)`_|
 |                        |                                |                                | Link-Walking, keine Ad-hoc     |                                |                                |
@@ -42,8 +42,8 @@ OrientDB und ArangoDB.
 |                        |                                | * verteilte Systeme:           |                                |                                |                                |
 |                        |                                |   :term:`BASE`                 |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | Master-Slave-Replikation,      | Master-Master-Replikation      | Multi-Master-Replikation       | Multi-Master-Replikation       | Master-Slave-Replikation       |
-| Skalierung**           | Auto-Sharding                  |                                |                                |                                |                                |
+| **Replikation,         | Master-Slave-Replikation,      | Master-Master-Replikation      | Multi-Master-Replikation       | Multi-Master-Replikation       | Master-Slave-Replikation,      |
+| Skalierung**           | Auto-Sharding                  |                                |                                |                                | Sharding                       |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Anmerkungen**        | `BSON` mit einre maximalen     |                                |                                |                                |                                |
 |                        | Dokumentengröße von 16 MB.     |                                |                                |                                |                                |
