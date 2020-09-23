@@ -45,7 +45,8 @@ OrientDB und ArangoDB.
 | **Replikation,         | Master-Slave-Replikation       | Master-Master-Replikation      | Multi-Master-Replikation       | Multi-Master-Replikation       | Master-Slave-Replikation       |
 | Skalierung**           |                                |                                |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anmerkungen**        | `BSON`_-Format                 |                                |                                |                                |                                |
+| **Anmerkungen**        | `BSON` mit einre maximalen     |                                |                                |                                |                                |
+|                        | Dokumentengröße von 16 MB.     |                                |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 
 .. _`MongoDB`: https://www.mongodb.com/
