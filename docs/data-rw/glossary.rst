@@ -119,17 +119,13 @@ Glossar
     CouchDB
         CouchDB ein Akronym für **C**\luster **o**\f **u**\nreliable
         **c**\ommodity **h**\ardware **D**\ata **B**\ase. Dabei handelt es sich
-        um eine :doc:`nosql/document-oriented-db`.
+        um ein :doc:`nosql/document-oriented-db`.
 
     Eventual Consistency
         *»Konsistenz als Zustandsübergang, der irgendwann erreicht wird.«*
 
         Der Begriff wurde für :term:`BASE` als Alternative zu :term:`ACID`
         entwickelt.
-
-    eXist
-        eXist ist eine :term:`XML-Datenbank`, die innerhalb einer Java Virtual
-        Machine läuft.
 
     Graph traversal
         Graph traversal wird meist zur Suche von Knoten verwendet. Es gibt
@@ -245,7 +241,7 @@ Glossar
         inspiriert auch wenn die Semantik von diesen etwas abweicht.
 
     MongoDB
-        MongoDB ist eine schemafreie :doc:`nosql/document-oriented-db`,
+        MongoDB ist eine schemafrei :doc:`nosql/document-oriented-db`,
         die Dokumente im `BSON <http://www.bsonspec.org/>`_-Format verwaltet.
 
     MVCC – Multiversion Concurrency Control
@@ -270,13 +266,12 @@ Glossar
 
         NoSQL-Datenbanken lassen sich untergliedern in
 
-        * :doc:`Schlüssel-Werte-Datenbanksysteme <nosql/key-value-store>`
+        * :doc:`nosql/key-value-store`
         * :doc:`nosql/column-oriented-db`
-        * :doc:`Dokumentenorientierte Datenbanksysteme
-          <nosql/document-oriented-db>`
-        * :doc:`Graphdatenbanksysteme <nosql/graph-db>`
+        * :doc:`nosql/document-oriented-db`
+        * :doc:`nosql/graph-db`
         * :doc:`nosql/object-db`
-        * :term:`XML-Datenbanksysteme <XML-Datenbank>`
+        * :doc:`nosql/xml-db`
 
         Bedeutende Konzepte und Technologien von NoSQL-Datenbanken sind
 
@@ -303,7 +298,7 @@ Glossar
         einer flexiblen :term:`MapReduce`-Engine.
 
     Redis
-        Redis ist eine :doc:`nosql/key-value-store`, die üblicherweise alle
+        Redis ist ein :doc:`nosql/key-value-store`, die üblicherweise alle
         Daten im RAM speichert.
 
     Schlüssel/Wert-Paar
@@ -324,13 +319,6 @@ Glossar
         Zeitstempeln an Nachrichten. Sie erlaubt, den Ereignissen in verteilten
         Systemem aufgrund eines Zeitstempels eine Kausalordnung zuzuweisen und
         insbesondere die Nebenläufigkeit von Ereignissen zu ermitteln.
-
-    XML-Datenbank
-        XML-Datenbanken sind in der Lage, XML-Dokumente gegen ein XML-Schema
-        oder eine DTD zu validieren. Darüberhinaus unterstützen sie mindestens
-        :term:`XPATH`, :term:`XQuery` und :term:`XSLT`. Beispiele für
-        XML-Datenbanksysteme sind :term:`eXist` und `MonetDB
-        <http://monetdb.cwi.nl/XQuery/>`_.
 
     XPATH
         XPATH verarbeitet die Baumstruktur eines XML-Dokuments und erzeugt dabei
