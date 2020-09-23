@@ -40,8 +40,8 @@ Schlüssel/Wert-Datenbanksysteme sind z.B. Riak, Cassandra, Redis und MongoDB.
 | **Transaktionen,       | :term:`ACID`                   | :term:`Eventual Consistency`   | in-memory, asynchron on disc   | :term:`Two-phase locking (2PL)`|
 | Nebenläufigkeit**      |                                |                                | mit *Append Only File Mode*    |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | Multi-Master-Replikation       | SimpleStrategy,                | Master-N-Slaves-Replikation,   | Master-Slave-Replikation       |
-| Skalierung**           |                                | NetworkTopologyStrategy und    | Sharding mittels               |                                |
+| **Replikation,         | Multi-Master-Replikation       | SimpleStrategy,                | Master-N-Slaves-Replikation,   | Master-Slave-Replikation,      |
+| Skalierung**           |                                | NetworkTopologyStrategy und    | Sharding mittels               | Auto-Sharding                  |
 |                        |                                | OldNetworkTopologyStrategy     | :term:`consistent hashing      |                                |
 |                        |                                |                                | <Konsistente Hashfunktion>`    |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
