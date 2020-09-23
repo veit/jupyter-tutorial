@@ -13,12 +13,16 @@ NoSQL-Datenbanksysteme haben jedoch folgendes gemeinsam:
 
 NoSQL-Datenbanken lassen sich untergliedern in
 
-* :doc:`Schlüssel-Werte-Datenbanksysteme <key-value-store>`
-* :doc:`column-oriented-db`
-* :doc:`document-oriented-db`
-* :doc:`graph-db`
-* :doc:`object-db`
-* :term:`XML-Datenbanksysteme <XML-Datenbank>`
+.. toctree::
+    :titlesonly:
+    :maxdepth: 0
+
+    key-value-store
+    column-oriented-db
+    document-oriented-db
+    graph-db
+    object-db
+    xml-db
 
 Bedeutende Konzepte und Technologien von NoSQL-Datenbanken sind
 
@@ -29,14 +33,3 @@ Bedeutende Konzepte und Technologien von NoSQL-Datenbanken sind
 * :term:`MVCC – Multiversion Concurrency Control`
 * :term:`Vektoruhr`
 * :term:`Paxos`
-
-.. toctree::
-    :hidden:
-    :titlesonly:
-    :maxdepth: 0
-
-    key-value-store
-    column-oriented-db
-    document-oriented-db
-    graph-db
-    object-db
