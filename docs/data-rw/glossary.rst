@@ -22,7 +22,7 @@ Glossar
         Durability
             Daten müssen nach erfolgreicher Transaktion dauerhaft in der
             Datenbankgespeichert bleiben und kann z.B. durch das Schreiben
-            eines transaktionslogs sichergestellt werden.
+            eines Transaktionslogs sichergestellt werden.
 
     BASE
         BASE ist ein Akronym für **B**\asically **A**\vailable, **S**\oft State,
@@ -92,7 +92,7 @@ Glossar
             gewährleistet, dass die Daten in einen Quorum von Replicas
             gespeichert sind.
         ALL
-            gewährleister, dass die Daten auf alle Replicas gespeichert sind.
+            gewährleistet, dass die Daten auf alle Replicas gespeichert sind.
 
         Cassandra stellt zwei verschiedene APIs zur Verfügung: `Thrift
         <https://thrift.apache.org/>`_ und `CQL (Cassandra Query Language)
@@ -255,7 +255,7 @@ Glossar
 
     NoSQL
         Bisher gibt es keine einheitliche Definition von NoSQL, die meisten
-        NoSQL-Datenbanksysteme haben jedoch folgendes gemeinsam:
+        NoSQL-Datenbanksysteme haben jedoch meist folgendes gemeinsam:
 
         * kein relationales Datenmodell
         * verteilte und horizontale Skalierbarkeit
@@ -317,7 +317,7 @@ Glossar
     Vektoruhr
         Eine Vektoruhr ist eine Softwarekomponente zum Zuweisen von eindeutigen
         Zeitstempeln an Nachrichten. Sie erlaubt, den Ereignissen in verteilten
-        Systemem aufgrund eines Zeitstempels eine Kausalordnung zuzuweisen und
+        Systemen aufgrund eines Zeitstempels eine Kausalordnung zuzuweisen und
         insbesondere die Nebenläufigkeit von Ereignissen zu ermitteln.
 
     XPATH
