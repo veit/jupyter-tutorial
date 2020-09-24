@@ -2,7 +2,7 @@ NoSQL-Datenbanken
 =================
 
 Bisher gibt es keine einheitliche Definition von NoSQL, die meisten
-NoSQL-Datenbanksysteme haben jedoch folgendes gemeinsam:
+NoSQL-Datenbanksysteme haben jedoch meist folgendes gemeinsam:
 
 * kein relationales Datenmodell
 * verteilte und horizontale Skalierbarkeit
