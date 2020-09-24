@@ -108,11 +108,11 @@ Glossar
                 cusy: {
                     name:       "Cusy GmbH",
                     email:      "info@cusy.io",
-                    website:	"cusy.io"
+                    website:    "cusy.io"
                 },
                 veit: {
                     name:       "Veit Schiele",
-                    email:		"veit.schiele@cusy.io",
+                    email:      "veit.schiele@cusy.io",
                 }
             }
 
