@@ -249,39 +249,9 @@ Glossar
         Einfügen, Ändern, Löschen) durch verschiedene, unveränderliche Versionen
         dieser Datensätze. Die verschiedenen Versionen werden in eine zeitliche
         Reihenfolge gebracht, indem jede Version auf ihre Vorgängerversion
-        verweist. MVCC hat sich gerade bei :term:`NoSQL`-Datenbanken zu einer
-        zentralen Basistechnologie entwickelt, die es ermöglicht, konkurrierende
-        Zugriffe auch ohne das :term:`Locking` von Datensätzen zu koordinieren.
-
-    NoSQL
-        Bisher gibt es keine einheitliche Definition von NoSQL, die meisten
-        NoSQL-Datenbanksysteme haben jedoch meist folgendes gemeinsam:
-
-        * kein relationales Datenmodell
-        * verteilte und horizontale Skalierbarkeit
-        * keine oder schwache Schemarestriktionen
-        * einfache API
-        * kein :term:`ACID`, sondern :term:`Eventual Consistency` oder
-          :term:`BASE` als Konsistenzmodell
-
-        NoSQL-Datenbanken lassen sich untergliedern in
-
-        * :doc:`nosql/key-value-store`
-        * :doc:`nosql/column-oriented-db`
-        * :doc:`nosql/document-oriented-db`
-        * :doc:`nosql/graph-db`
-        * :doc:`nosql/object-db`
-        * :doc:`nosql/xml-db`
-
-        Bedeutende Konzepte und Technologien von NoSQL-Datenbanken sind
-
-        * :term:`MapReduce`
-        * :term:`CAP-Theorem`
-        * :term:`Eventual Consistency` und :term:`BASE`
-        * :term:`Konsistente Hashfunktion`
-        * :term:`MVCC – Multiversion Concurrency Control`
-        * :term:`Vektoruhr`
-        * :term:`Paxos`
+        verweist. MVCC hat sich gerade bei :doc:`nosql/index` zu einer zentralen
+        Basistechnologie entwickelt, die es ermöglicht, konkurrierende Zugriffe
+        auch ohne das :term:`Locking` von Datensätzen zu koordinieren.
 
     Paxos
         Paxos ist eine Familie von Protokollen zur Herstellung von Konsens in
