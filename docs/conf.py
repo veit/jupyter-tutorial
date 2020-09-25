@@ -87,7 +87,9 @@ html_theme_options = {
     "sidebar_includehidden": True,
 }
 
-html_sidebars = {"**": ["about.html", "searchbox.html", "navigation.html"]}
+html_sidebars = {
+    "**": ["about.html", "training.html", "searchbox.html", "navigation.html"]
+}
 
 # Change default HTML title
 html_title = "Jupyter Tutorial 0.7.0"
@@ -99,6 +101,9 @@ html_static_path = ["_static"]
 
 html_logo = "_static/images/logo/logo.png"
 html_favicon = "_static/images/logo/favicon.ico"
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ["_templates"]
 
 # -- Options for LaTeX output ---------------------------------------------
 
