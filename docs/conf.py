@@ -75,7 +75,7 @@ html_theme = "alabaster"
 # documentation.
 #
 html_theme_options = {
-    "description": "Aufbau und Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks.",
+    "description": "Materialen für die <a href='https://cusy.io/de/seminare'>Cusy-Schulungen zum Aufbau und zur Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks</a>.",
     "fixed_sidebar": False,
     "show_powered_by": False,
     "github_user": "veit",
@@ -87,9 +87,7 @@ html_theme_options = {
     "sidebar_includehidden": True,
 }
 
-html_sidebars = {
-    "**": ["about.html", "training.html", "searchbox.html", "navigation.html"]
-}
+html_sidebars = {"**": ["about.html", "searchbox.html", "navigation.html"]}
 
 # Change default HTML title
 html_title = "Jupyter Tutorial 0.7.0"
