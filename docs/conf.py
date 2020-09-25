@@ -75,7 +75,7 @@ html_theme = "alabaster"
 # documentation.
 #
 html_theme_options = {
-    "description": "Materialen für die <a href='https://cusy.io/de/seminare'>Cusy-Schulungen zum Aufbau und zur Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks</a>.",
+    "description": "Materialen für die <a href='https://cusy.io/de/seminare'>Cusy-Schulungen</a> zum Aufbau und zur Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks.",
     "fixed_sidebar": False,
     "show_powered_by": False,
     "github_user": "veit",
