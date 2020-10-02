@@ -1,8 +1,8 @@
 ``isort``
 =========
 
-`isort <https://github.com/timothycrosley/isort>`_ format eure
-``imput``-Anweisungen in getrennte und sortierte Blöcke.
+`isort <https://github.com/timothycrosley/isort>`_ formatiert eure
+``import``-Anweisungen in getrennte und sortierte Blöcke.
 
 Installation
 ------------
@@ -31,6 +31,6 @@ Konfiguration
     known_first_party="jupyter-tutorial"
     known_third_party=["mpi4py", "numpy", "requests"]
 
-Um Pakete von Drittanbietern gegenüber Ihren Projektimporten zu erkennen, könnt
-ihr entweder euer Projekt zusammen mit ``isort`` installieren oder
+Um Pakete von Drittanbietern gegenüber Euren Projektimporten zu erkennen, könnt
+ihr entweder Euer Projekt zusammen mit ``isort`` installieren oder
 `seed-isort-config <https://github.com/asottile/seed-isort-config>`_ verwenden.
