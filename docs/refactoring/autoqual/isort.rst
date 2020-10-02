@@ -34,3 +34,11 @@ Konfiguration
 Um Pakete von Drittanbietern gegenüber Euren Projektimporten zu erkennen, könnt
 ihr entweder Euer Projekt zusammen mit ``isort`` installieren oder
 `seed-isort-config <https://github.com/asottile/seed-isort-config>`_ verwenden.
+
+.. note::
+    Mit isort 5 könnt Ihr Profile verwenden. Dies erleichtert die Konfiguration
+    von isort, um auch zukünftig mit :doc:`black` zusammenzuspielen:
+    
+    .. code-block:: ini
+
+        isort --profile black .
