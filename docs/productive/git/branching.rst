@@ -31,15 +31,15 @@ Git-Verzweigungen
         besagt, dass der neue Commit direkt auf den ursprünglichen Commit folgte
         und somit der Zeiger (*branch pointer*) nur weitergeführt werden musste.
 
-    In anderen Fällen kann die Ausgabe z.B. so aussehen:
+        In anderen Fällen kann die Ausgabe z.B. so aussehen:
 
-    .. code-block:: console
+        .. code-block:: console
 
-        $ git checkout master
-        $ git merge #42
-        Merge made by recursive.
-         setup.py |    1 +
-         1 files changed, 1 insertions(+), 0 deletions(-)
+            $ git checkout master
+            $ git merge #42
+            Merge made by recursive.
+             setup.py |    1 +
+             1 files changed, 1 insertions(+), 0 deletions(-)
 
     ``recursive``
         ist eine Merge-Strategie, die verwendet wird, sofern die Zusammenführung
