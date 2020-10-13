@@ -30,7 +30,7 @@ Git Log
     filtert Commits nach regulären Ausdrücken im Quellcode.
 
 ``$ git log - path/to/foo.py``
-    filtert die Commit-Hisotie nach bestimmten Dateien.
+    filtert die Commit-Historie nach bestimmten Dateien.
 
 ``$ git log master..feature``
     filtert nach unterschiedlichen Commits in verschiedenen Zweigen (Branches),
@@ -46,7 +46,7 @@ Git Log
 
 ``$ git log ..ref``
     Commits auflisten, die in ``ref`` vorhanden sind und nicht mit dem aktuellen
-    Zweig zusammengeführt werden
+    Zweig zusammengeführt werden.
 ``$ git reflog``
     Vorgänge (z.B. ``checkout``, ``commit``) auflisten, die im lokalen
-    Repository ausgeführt wurden
+    Repository ausgeführt wurden.
