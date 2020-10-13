@@ -41,9 +41,8 @@ Git Log
 
 ``$ git log ref..``
     Commits auflisten, die im aktuellen Zweig vorhanden sind und nicht in
-    ``ref`` zusammengeführt werden
-
-    ``ref`` kann dabei der Name eines Zweigs oder eines Tag sein.
+    ``ref`` zusammengeführt werden. ``ref`` kann dabei der Name eines Zweigs
+    oder eines Tag sein.
 
 ``$ git log ..ref``
     Commits auflisten, die in ``ref`` vorhanden sind und nicht mit dem aktuellen
