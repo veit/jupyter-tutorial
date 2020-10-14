@@ -104,7 +104,7 @@ Git Best Practices
 
     * auch in anderen Projekten: ``othergroup/otherproject#123``
 
-  * zu Merge Reuquests: ``!123``
+  * zu Merge Requests: ``!123``
   * zu Snippets: ``$123``
 
   Dabei sollte es zu jedem Commit mindestens ein Ticket geben, das
