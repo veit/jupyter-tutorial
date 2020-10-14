@@ -73,6 +73,8 @@ Für macOS lässt sich DVC installieren mit:
     erstellt wurde (1.0.0a9), die z.T. eine andere Syntax als frühere Versionen
     verwendet. Dies könnt Ihr aktuell (8. Juni 2020) nur mit pip installieren::
 
+    .. code-block:: console
+
         $ pipenv install dvc[all]==1.0.0a9
 
 .. toctree::
