@@ -126,7 +126,7 @@ Git Best Practices
           <https://git-scm.com/book/de/v2/Git-Interna-Wartung-und-Datenwiederherstellung>`_
 
   - Bereinigt die Remote Tracking Branches mit ``git remote update --prune``.
-  - Überprüft vergessene Arbeiten mit: ``git stash list``.
+  - Überprüft vergessene Arbeiten mit ``git stash list``.
 
 - Überprüft Eure Repositories regelmäßig auf unerwänschte Dateien!
 
