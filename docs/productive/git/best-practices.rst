@@ -154,23 +154,24 @@ Git Best Practices
 
         $ git rebase -i sha origin
 
-    interaktiver Modus, in dem Euer Standardeditor geöffnet wird und eine
-    Liste aller Commits nach dem zu entfernenden Commit mit dem Hash-Wert
-    ``sha`` angezeigt wird, z.B.:
+    ``-i``
+        interaktiver Modus, in dem Euer Standardeditor geöffnet wird und eine
+        Liste aller Commits nach dem zu entfernenden Commit mit dem Hash-Wert
+        ``sha`` angezeigt wird, z.B.:
 
-    .. code-block:: console
+        .. code-block:: console
 
-        pick d82199e Update readme
-        pick 410266e Change import for the interface
-        …
+            pick d82199e Update readme
+            pick 410266e Change import for the interface
+            …
 
-    Wenn ihr nun eine Zeile entfernt, so wird dieser Commit nach dem
-    Speichern und Schließen des Editors gelöscht. Anschließend kann das
-    entfernte Repository aktualisiert werden mit:
+        Wenn ihr nun eine Zeile entfernt, so wird dieser Commit nach dem
+        Speichern und Schließen des Editors gelöscht. Anschließend kann das
+        entfernte Repository aktualisiert werden mit:
 
-    .. code-block:: console
+        .. code-block:: console
 
-        $ git push origin HEAD:master -f
+            $ git push origin HEAD:master -f
 
   – Ändern einer Commit-Nachricht
 
