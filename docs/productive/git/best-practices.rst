@@ -204,8 +204,8 @@ Git Best Practices
         …
 
     .. note::
-        Bei macOS muss /usr/bin/true statt des /bin/true bei Linux verwendet
-        werden.
+        Bei macOS muss ``/usr/bin/true`` statt des ``/bin/true`` bei Linux
+        verwendet werden.
 
   .. seealso::
     * `git-reflog <https://git-scm.com/docs/git-reflog>`_
