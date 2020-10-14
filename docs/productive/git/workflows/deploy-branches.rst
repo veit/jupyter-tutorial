@@ -38,5 +38,5 @@ und `Red Hat
 <https://www.redhat.com/en/blog/a-community-for-using-openstack-with-red-hat-rdo>`_
 verwendet. Jedes Mal, wenn ein Bugfix in einen Release-Branch übernommen wurde,
 wird das Release mit einem `Tag
-<https://git-scm.com/book/de/v1/Git-Grundlagen-Tags>`_ um eine Patch-Version
+<https://git-scm.com/book/de/v2/Git-Grundlagen-Taggen>`_ um eine Patch-Version
 angehoben, s.a. `Semantic Versioning <https://semver.org/>`_.
