@@ -23,7 +23,7 @@ Git-Glossar
         Branches
 
     ``remote``
-        gemeinsames Repository, z.B. auf GitLab,  zum Austausch der Änderungen
+        gemeinsames Repository, z.B. auf GitLab, zum Austausch der Änderungen
         in einem Team
 
     ``fork``
