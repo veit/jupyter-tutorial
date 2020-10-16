@@ -250,7 +250,7 @@ Bibliothek liefern:
 * …
 
 Das `PYPA/Manylinux <https://github.com/pypa/manylinux>`_-Projekt erleichtert
-die Distribution von Binarxy Extensions als :term:`Wheels <wheel>` für die
+die Distribution von Binary Extensions als :term:`Wheels <wheel>` für die
 meisten Linux-Plattformen. Hieraus ging auch `PEP 513
 <https://www.python.org/dev/peps/pep-0513/>`_ hervor, das die
 ``manylinux1_x86_64``- und ``manylinux1_i686``-Plattform-Tags definiert.
