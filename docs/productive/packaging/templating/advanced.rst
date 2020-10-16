@@ -48,7 +48,7 @@ Wenn ihr Cookiecutter häufig verwendet, empfiehlt sich eine eigene User-Config:
 Replay
 ------
 
-Beim Aufruf von ``ookiecutter`` wird eine ``json``-Datei angelegt in
+Beim Aufruf von ``cookiecutter`` wird eine ``json``-Datei angelegt in
 ``/.cookiecutter_replay/``, z.B.
 ``~/.cookiecutter_replay/cookiecutter-namespace-template.json``:
 
