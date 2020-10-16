@@ -12,7 +12,7 @@ Python
     Minimales Cookiecutter-Template zum Erstellen von `Pytest
     <https://docs.pytest.org/>`_-Plugins
 `cookiecutter-pylibrary <https://github.com/ionelmc/cookiecutter-pylibrary>`_
-   Umfangreiche Vorlage für Python-Pakete mit Unterstützung für Tests und
+    Umfangreiche Vorlage für Python-Pakete mit Unterstützung für Tests und
     Deployments (C-Extension-Support u.a. für `cffi
     <https://cffi.readthedocs.io/>`_ und `Cython <http://cython.org/>`_,
     Test-Unterstützung für `Tox <https://tox.readthedocs.io/>`_,
