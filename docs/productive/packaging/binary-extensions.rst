@@ -275,7 +275,7 @@ oder einem anderen Index beschrieben werden.
 .. note::
    Bei Deployments auf Linux-Distributionen sollte beachtet werden, dass diese
    Anforderungen an das spezifische Build-System stellen. Daher sollten neben
-   :term:`Wheels <wheel>` immar auch :term:`Source Distributions (sdist)
+   :term:`Wheels <wheel>` immer auch :term:`Source Distributions (sdist)
    <Source Distribution (sdist)>` bereitgestellt werden.
 
 .. todo::
