@@ -278,10 +278,6 @@ oder einem anderen Index beschrieben werden.
    :term:`Wheels <wheel>` immer auch :term:`Source Distributions (sdist)
    <Source Distribution (sdist)>` bereitgestellt werden.
 
-.. todo::
-   `enscons <https://pypi.python.org/pypi/enscons/>`_ als Alternative zu
-   ``distutils`` oder ``setuptools`` evaluieren.
-
    Ein Vorteil scheint zu sein, dass ihr mit `Scons <http://scons.org/>`_ ein
    vollwertiges Build-System erhaltet, das euch Arbeit abnimmt beim Ermitteln
    der möglichen Build-Varianten.
