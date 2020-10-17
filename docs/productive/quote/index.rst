@@ -67,7 +67,7 @@ aktuell zwei Projekte für strukturierte Metadaten heraus:
 
 `Citation File Format <https://citation-file-format.github.io/>`_
     Schema für Software-Citation-Metadaten in maschinenlesbarem `YAML
-    <https://yaml.org/>`-Format
+    <https://yaml.org/>`_-Format
 
     Dabei sollte eine Datei ``CITATION.cff`` im Stammverzeichnis des
     Software-Repository abegelgt werden.
