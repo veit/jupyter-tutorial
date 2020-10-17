@@ -10,8 +10,8 @@ folgenden drei Direktiven angeben:
                     autoclass
                     autoexception
 
-   Diese dokumentieren ein Modul, eine Klasse oder eine Exception anhand des
-   Docstrings des jeweiligen Objekts.
+Diese dokumentieren ein Modul, eine Klasse oder eine Exception anhand des
+Docstrings des jeweiligen Objekts.
 
 Installation
 ------------
