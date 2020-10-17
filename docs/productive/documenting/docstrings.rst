@@ -17,7 +17,9 @@ Installation
 ------------
 
 Üblicherweise ist ``sphinx.ext.autodoc`` bereits in der
-Sphinx-Konfigurationsdatei ``docs/conf.py`` angegeben::
+Sphinx-Konfigurationsdatei ``docs/conf.py`` angegeben:
+
+.. code-block:: python
 
     extensions = [
         'sphinx.ext.autodoc',
@@ -27,17 +29,23 @@ Sphinx-Konfigurationsdatei ``docs/conf.py`` angegeben::
 Wenn euer Paket und die zugehörige Dokumentation Teil des gleichen Repository
 sind, haben sie immer die gleiche relative Position im Dateisystem. In diesem
 Fall könnt ihr die Sphinx-Konfiguration einfach so bearbeiten, dass ``sys.path``
-den relativen Pfad zum Paket angibt, also::
+den relativen Pfad zum Paket angibt, also:
+
+.. code-block:: python
 
     sys.path.insert(0, os.path.abspath('..'))
     import requests
 
 Wen ihr eure Sphinx-Dokumentation in einer virtuellen Umgebung installiert
-habt, könnt ihr dort auch euer Paket installieren mit::
+habt, könnt ihr dort auch euer Paket installieren mit:
+
+.. code-block:: python
 
     $ pipenv install my.package
 
-bzw., wenn ihr auch das Paket weiterentwickeln wollt mit::
+bzw., wenn ihr auch das Paket weiterentwickeln wollt mit:
+
+.. code-block:: console
 
     $ pipenv install -e https://github.com/veit/my.package.git
 
