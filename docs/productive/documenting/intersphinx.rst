@@ -71,7 +71,6 @@ verlinken, kann eine der folgenden Varianten angegeben werden:
 
         :c:func:`Parsing arguments <PyArg_Parse>`
 
-
 Benutzerdefinierte Links
 ------------------------
 
