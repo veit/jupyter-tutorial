@@ -74,7 +74,7 @@ aktuell zwei Projekte für strukturierte Metadaten heraus:
 
     Der Inhalt der Datei kann z.B. so aussehen:
 
-    .. code-block::
+    .. code-block:: yaml
 
         # YAML 1.2
         ---
