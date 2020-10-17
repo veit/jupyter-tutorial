@@ -105,8 +105,8 @@ sich auch Typen in Docstrings anders ausdrücken. Dabei bietet die Variante mit
 Typen gemäß PEP 484 den Vorteil, dass Typenprüfer und IDEs zur statischen
 Codeanalyse genutzt werden können.
 
-Python 3 type annotations
-    ::
+Python 3 type annotations:
+    .. code-block:: python
 
         def func(arg1: int, arg2: str) -> bool:
             """Summary line.
@@ -123,8 +123,8 @@ Python 3 type annotations
             """
             return True
 
-Types in Docstrings
-    ::
+Types in Docstrings:
+    .. code-block:: python
 
         def func(arg1, arg2):
             """Summary line.
@@ -170,8 +170,8 @@ Dabei unterscheidet ``sphinx.ext.napoleon`` zwei Stilen von Docstrings:
 Die wesentlichen Unterschiede sind, dass Google Einrückungen verwendet und NumPy
 Unterstriche:
 
-Google
-    ::
+Google:
+    .. code-block:: python
 
         def func(arg1, arg2):
             """Summary line.
@@ -188,8 +188,8 @@ Google
             """
             return True
 
-NumPy
-    ::
+NumPy:
+    .. code-block:: python
 
         def func(arg1, arg2):
             """Summary line.
