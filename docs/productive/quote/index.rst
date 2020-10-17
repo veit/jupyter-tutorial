@@ -41,7 +41,7 @@ aktuell zwei Projekte für strukturierte Metadaten heraus:
     Dabei wird eine ``codemeta.json``-Datei im Stammverzeichnis des
     Software-Repository erwartet. Die Datei kann z.B. so aussehen:
 
-    .. code-block:: json
+    .. code-block:: javascript
 
         {
             "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
