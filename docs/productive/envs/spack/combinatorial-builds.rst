@@ -139,7 +139,7 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
 * Spack stellt eine Konfiguration jeder Bibliothek pro DAG sicher
 
   * gewährleistet die Konsistenz des Application Binary Interface (ABI)
-  * Der Benutzer muss die DAG-Struktur nicht kennen. nur die Namen der
+  * Der Benutzer muss die DAG-Struktur nicht kennen, sondern nur die Namen der
     abhängigen Bibliotheken
 
 * Spack kann sicherstellen, dass Builds den gleichen Compiler verwenden
