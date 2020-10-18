@@ -30,22 +30,23 @@ Hier ist ein Beispiel für die Verzeichnisstruktur eines Mirror:
 ``spack mirror create``
 -----------------------
 
-Ihr könnt mit dem Befehl ``spack mirror create`` einen Mirror erstellen, vorausgesetzt, ihr befindet euch auf
-einer Maschine, die auf das Internet zugreifen kann. Der Befehl durchläuft alle Pakete von Spack und lädt die
+Ihr könnt mit dem Befehl ``spack mirror create`` einen Mirror erstellen,
+vorausgesetzt, ihr befindet euch auf einer Maschine, die auf das Internet
+zugreifen kann. Der Befehl durchläuft alle Pakete von Spack und lädt die
 gewünschten herunter.
 
 ``spack mirror add``
 --------------------
 
-Sobald ihr einen Spiegel erstellt habt, müsst ihr Spack darüber informieren. Das ist relativ einfach. Ermittelt
-zunächst die URL eures Mirrors. Wenn es sich um ein Verzeichnis handelt, könnt ihr eine Datei-URL wie die
-folgende verwenden:
+Sobald ihr einen Spiegel erstellt habt, müsst ihr Spack darüber informieren. Das
+ist relativ einfach. Ermittelt zunächst die URL eures Mirrors. Wenn es sich um
+ein Verzeichnis handelt, könnt ihr eine Datei-URL wie die folgende verwenden:
 
 .. code-block:: console
 
     $ spack mirror add local_filesystem file://$HOME/spack-mirror
 
-Reiehnfolge der Mirrors
+Reihenfolge der Mirrors
 -----------------------
 
 ``spack mirror ad`` fügt eine Zeile hinzu in ``~/.spack/mirrors.yaml``:
@@ -56,9 +57,9 @@ Reiehnfolge der Mirrors
       local_filesystem: file:///home/veit/spack-mirror
       remote_server: https://spack-mirror.cusy.io
 
-Wenn ihr die Reihenfolge ändern möchtet, in der Mirrors nach Paketen durchsucht werden, könnt ihr diese Datei
-bearbeiten und die Abschnitte neu anordnen: Spack durchsucht diese von oben nach unten bis ein passender Eintrag
-gefunden wird.
+Wenn ihr die Reihenfolge ändern möchtet, in der Mirrors nach Paketen durchsucht
+werden, könnt ihr diese Datei bearbeiten und die Abschnitte neu anordnen: Spack
+durchsucht diese von oben nach unten bis ein passender Eintrag gefunden wird.
 
 Lokaler Standardcache
 ---------------------
