@@ -186,7 +186,7 @@ Python werden typischerweise im ``$prefix/lib/python-3.7/site-packages/``
 installiert, also z.B.
 ``/Users/veit/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/py-numpy-1.16.4-45sqnufha2yprpx6rxyelsokky65ucdy/lib/python3.7/site-packages/numpy``.
 Es können jedoch auch Pakete verwendet werden, die in einem anderen Präfix
-installiert wurden.In Spack wird ein solches Paket als *Extension* bezeichnet
+installiert wurden. In Spack wird ein solches Paket als *Extension* bezeichnet
 
 Angenommen, Python wurde installiert mit
 
