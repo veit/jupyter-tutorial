@@ -384,7 +384,7 @@ für reproduzierbare Builds zu verwenden.
 
 ``pipenv open MODULE`` zeigt ein bestimmtes Modul in eurem Editor an.
 
-Falls ihr ´PyCharm <https://www.jetbrains.com/pycharm/>`_ verwendet, müsst ihr
+Falls ihr `PyCharm <https://www.jetbrains.com/pycharm/>`_ verwendet, müsst ihr
 ``pipenv`` für euer Python-Projekt konfigurieren. Wie dies geht, ist in
 `Configuring Pipenv Environment
 <https://www.jetbrains.com/help/pycharm/pipenv.html>`_ beschrieben.
