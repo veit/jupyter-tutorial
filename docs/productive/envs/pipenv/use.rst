@@ -47,7 +47,7 @@ Optionen
     dort die zugehörige Python-Umgebung anzulegen.
 
 ``--py``
-    gibt den Pfad zum Python-Interpreter an
+    gibt den Pfad zum Python-Interpreter an.
 
 ``--envs``
     gibt Optionen der Environment-Variablen aus.
@@ -74,10 +74,10 @@ Optionen
 
 ``--three``, ``--two``, ``--python``
     verwendet Python 2 oder Python 3 oder ein spezifisches Python, zu dem der
-    Pfad angegeben wird
+    Pfad angegeben wird.
 
 ``--site-packages``
-    aktiviert site packages für das virtual environment
+    aktiviert site packages für das virtual environment.
 
 ``--pypi-mirror``
     gibt einen PyPI-Mirror an. Der Standard ist der
@@ -446,6 +446,6 @@ aus dem ``Pipfile``. ``uninstall`` unterstützt alle Parameter von `install
 ``pipenv update`` hat u.a. folgende Optionen:
 
 ``--clear``
-    löscht den *Dependency Cache*
+    löscht den *Dependency Cache*.
 ``--outdated``
-    listet veraltete Abhängigkeiten auf
+    listet veraltete Abhängigkeiten auf.
