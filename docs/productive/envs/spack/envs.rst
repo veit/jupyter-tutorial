@@ -165,7 +165,7 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
     Im Gegensatz zu ``spack.yaml`` ist ``spack.lock`` im ``json``-Format geschrieben und enthält die
     notwendigen Informationen um reproduzierbare Builds der Umgebung erstellen zu können:
 
-    .. code-block:: json
+    .. code-block:: javascript
 
         {
          "concrete_specs": {
