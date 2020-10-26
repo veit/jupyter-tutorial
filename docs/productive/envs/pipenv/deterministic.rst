@@ -1,10 +1,10 @@
-Deterministische Builds
+Deterministic builds
 =======================
 
-Ihr müsst nur spezifizieren, was ihr wollt:
+All you have to do is specify what you want:
 
-Mit ``pipenv install requests`` wird z.B. ein ``Pipfile`` erzeugt wie das
-folgende:
+For example, ``pipenv install requests`` creates a ``Pipfile`` like the
+following:
 
 .. code-block:: ini
 
@@ -21,7 +21,8 @@ folgende:
     [requires]
     python_version = "3.6"
 
-Die zugehörige ``Pipfile.lock``-Datei spezifiziert jedoch die Pakete exakt, z.B.:
+However, the associated ``Pipfile.lock`` file specifies the packages exactly,
+for example:
 
 .. code-block:: json
 
@@ -47,6 +48,6 @@ Die zugehörige ``Pipfile.lock``-Datei spezifiziert jedoch die Pakete exakt, z.B
         "develop": {}
     }
 
-``Pipfile.lock`` spezifiziert auch alle Abhängigkeiten eures Projekts, wobei die
-Hashwerte der heruntergeladenen Dateien gespeichert werden. Dies soll
-wiederholbare und deterministische Builds gewährleisten.
+``Pipfile.lock`` also specifies all the dependencies of your project, whereby
+the hash values of the downloaded files are saved. This is to ensure repeatable
+and deterministic builds.

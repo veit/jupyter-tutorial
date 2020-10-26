@@ -1,12 +1,12 @@
 ``prettier``
 ============
 
-`prettier <https://prettier.io/>`_ bietet automatische Formatierer für andere
-Dateitypen, u.a. für `TypeScript <https://www.typescriptlang.org/>`_, `JSON
+`prettier <https://prettier.io/>`_ offers automatic formatters for other file
+types, including `TypeScript <https://www.typescriptlang.org/>`_, `JSON
 <https://json.org/>`_, `Vue <https://vuejs.org/>`_, `YAML <https://yaml.org/>`_,
 `TOML
 <https://github.com/bd82/toml-tools/tree/master/packages/prettier-plugin-toml>`_
-und `XML <https://github.com/prettier/plugin-xml>`_ an.
+and `XML <https://github.com/prettier/plugin-xml>`_.
 
 Installation
 ------------
@@ -15,14 +15,14 @@ Installation
 
     $ npm install prettier --save-dev --save-exact
 
-Konfiguration
---------------
+Configuration
+-------------
 
 .. code-block:: console
 
     $ npx prettier --write path/to/my/file.js
 
-Pre-commit-Hook für ``prettier``
+Pre-commit hook for ``prettier``
 --------------------------------
 
 Installation
@@ -31,11 +31,10 @@ Installation
 
     $ npm install pretty-quick husky --save-dev
 
-Konfiguration
+Configuration
 ~~~~~~~~~~~~~
 
-In der ``package.json``-Datei kann der Pre-commit-Hook folgendermaßen
-konfiguriert werden:
+In the ``package.json`` file you can configure the pre-commit hook as follows:
 
 .. code-block:: json
 

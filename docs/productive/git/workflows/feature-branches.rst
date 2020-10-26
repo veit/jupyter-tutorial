@@ -1,23 +1,21 @@
 ================
-Feature-Branches
+Feature branches
 ================
 
-`GitHub Flow <https://guides.github.com/introduction/flow/index.html>`_ war als
-stark vereinfachte Alternative zu :doc:`git-flow` gedacht, wobei es neben dem
-``master``-Branch nur verschiedene Feature-Branches geben sollte. Auch Atlassian
-empfiehlt eine `ähnliche Strategie
-<http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/>`_, wobei sie
-jedoch ein ``rebase`` der Feature-Branches vornehmen. Diese Strategien bieten
-dabei zwei Vorteile:
+`GitHub Flow <https://guides.github.com/introduction/flow/index.html>`_ was
+intended as a greatly simplified alternative to :doc:`git-flow`, whereby there
+should only be different feature branches in addition to the  ``master`` branch.
+Atlassian also recommends a `similar strategy
+<http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/>`_, but using
+``rebase`` for the feature branches. These strategies offer two advantages:
 
-* Das Code-Inventory bleibt relativ klein da die Feature-Branches üblicherweise
-  schnell in den ``master`` übernommen werden.
-* Die Workflows entsprechen den üblichen Methoden von *Continuous Delivery*.
+* The code inventory remains relatively small as the feature branches are
+  usually quickly adopted in the ``master`` branch.
+* The workflows correspond to the usual methods of *Continuous Delivery*.
 
-Diese Workflows können jedoch nicht beantworten, wie Deployments in
-unterschiedliche Umgebungen oder die Aufteilung in verschiedene Releases
-erfolgen können. Möglichkeiten hierfür werden in :doc:`deploy-branches`
-beschrieben.
+However, these workflows cannot answer how deployments in different environments
+or the division into different releases can take place. Options for this are
+described in :doc:`deploy-branches`.
 
 .. seealso::
    * `Feature Driven Development

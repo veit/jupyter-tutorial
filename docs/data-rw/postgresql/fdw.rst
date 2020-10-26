@@ -1,46 +1,45 @@
 Foreign Data Wrappers (FDW)
 ===========================
 
-2003 wurde SQL erweitert um  SQL/MED (*SQL Management of External Data*).
-PostgreSQL 9.1 unterstützte dies *read-only*, 9.3 dann auch schreibend.
-Seitdem sind eine Reihe von Foreign Data Wrappers (FDW) für PostgreSQL
-entwickelt worden.
+In 2003, SQL was expanded to include SQL/MED (SQL Management of External
+Data). PostgreSQL 9.1 supports this read-only, 9.3 then also write. Since then,
+a number of Foreign Data Wrappers (FDW) have been developed for PostgreSQL.
 
-Im Folgenden nur eine kleine Auswahl der bekanntesten FDW:
+The following is just a small selection of the best-known FDWs:
 
 .. note::
-   Beachtet bitte, dass die meisten dieser Wrapper nicht offiziell von der
-   PostgreSQL Global Development Group (PGDG) unterstützt werden.
+   Please note that most of these wrappers are not officially supported by the
+   PostgreSQL Global Development Group (PGDG).
 
-Generische SQL-Wrapper
-----------------------
+Generic SQL wrappers
+--------------------
 
 ODBC
-    Nativer ODBC FDW für PostgreSQL ≥9.5
+    Native ODBC FDW for PostgreSQL ≥9.5
 
     * `GitHub <https://github.com/CartoDB/odbc_fdw>`_
 
 Multicorn
-    `Multicorn <https://multicorn.org/>`_ erleichtert die Entwicklung von FDWs.
-    So verwendet z.B. `SQLAlchemy <http://www.sqlalchemy.org/>`_ `Multicorn
-    <https://multicorn.org/>`_ um seine Daten in PostgreSQL zu speichern.
+    `Multicorn <https://multicorn.org/>`_ makes it easy to develop FDWs. For
+    example, `SQLAlchemy <http://www.sqlalchemy.org/>`_ uses Multicorn to save
+    your data in PostgreSQL.
 
     * `GitHub <sqlalchem://github.com/Kozea/Multicorn>`_
     * `PGXN <https://pgxn.org/dist/multicorn/>`_
     * `Docs <http://multicorn.org/foreign-data-wrappers/#sqlalchemy-foreign-data-wrapper>`_
 
 VirtDB
-    Nativer Zugang zu VirtDB (SAP ERP, Oracle RDBMS)
+    Native access to VirtDB (SAP ERP, Oracle RDBMS)
 
     * `GitHub <https://github.com/virtdb/virtdb-fdw>`_
 
-Spezifische SQL-Wrapper
------------------------
+Specific SQL wrappers
+---------------------
 
 postgres_fdw
-    Mit `postgres_fdw
-    <https://www.postgresql.org/docs/current/postgres-fdw.html>`_ kann auf Daten
-    aus anderen PostgreSQL-Servern zugegriffen werden.
+    With `postgres_fdw
+    <https://www.postgresql.org/docs/current/postgres-fdw.html>`_ data from
+    other PostgreSQL servers can be accessed.
 
     * `Git
       <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/postgres_fdw;hb=HEAD>`_
@@ -48,114 +47,114 @@ postgres_fdw
     * `Docs <https://www.postgresql.org/docs/current/postgres-fdw.html>`_
 
 Oracle
-    FDW für Oracle-Datenbanken
+    FDW for Oracle databases
 
     * `GitHub <https://github.com/laurenz/oracle_fdw>`_
     * `PGXN <https://pgxn.org/dist/oracle_fdw/>`_
     * `Docs <http://laurenz.github.io/oracle_fdw/>`_
 
 MySQL
-    FDW für MySQL ab PostgrSQL≥9.3
+    FDW for MySQL from PostgreSQL≥9.3
 
     * `GitHub <https://github.com/EnterpriseDB/mysql_fdw>`_
     * `PGXN <https://pgxn.org/dist/mysql_fdw/>`_
 
 SQLite
-    FDW für SQLite3
+    FDW for SQLite3
 
     * `GitHub <https://github.com/pgspider/sqlite_fdw>`_
     * `PGXN <https://pgxn.org/dist/sqlite_fdw>`_
     * `Docs <https://github.com/pgspider/sqlite_fdw/blob/master/README.md>`_
 
 
-NoSQL-Database-Wrappers
+NoSQL database wrappers
 -----------------------
 
 Cassandra
-    FDW für `Cassandra <http://cassandra.apache.org/>`_
+    FDW for `Cassandra <http://cassandra.apache.org/>`_
 
     * `GitHub <https://github.com/rankactive/cassandra-fdw>`_
     * `rankactive <https://rankactive.com/resources/postgresql-cassandra-fdw>`_
 
 Neo4j
-    FWD für `Neo4j <https://neo4j.com/>`_, die auch eine Cypher-Funktion für
-    PostgreSQL bereitstellt
+    FWD for `Neo4j <https://neo4j.com/>`_, which also provides a cypher
+    function for PostgreSQL
 
     * `GitHub <https://github.com/sim51/neo4j-fdw>`_
     * `Docs <https://github.com/sim51/neo4j-fdw/blob/master/README.adoc>`_
 
 Redis
-    FDW für `Redis <https://redis.io/>`_
+    FDW for `Redis <https://redis.io/>`_
 
     * `GitHub <https://github.com/pg-redis-fdw/redis_fdw>`_
 
 Riak
-    FDW für `Riak <https://github.com/basho/riak>`_
+    FDW for `Riak <https://github.com/basho/riak>`_
 
     * `GitHub <https://github.com/kiskovacs/riak-multicorn-pg-fdw>`_
 
-File-Wrappers
+File wrappers
 -------------
 
 CSV
-    Offizielle Erweiterung für PostgreSQL 9.1
+    Official extension for PostgreSQL 9.1
 
     * `Git <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/file_fdw;hb=HEAD>`_
     * `Docs <https://www.postgresql.org/docs/current/static/file-fdw.html>`_
 
 JSON
-    FDW für JSON-Dateien
+    FDW for JSON files
 
     * `GitHub <https://github.com/nkhorman/json_fdw>`_
-    * `Beispiel <https://www.citusdata.com/blog/2013/05/30/run-sql-on-json-files-without-any-data-loads/>`_
+    * `Example <https://www.citusdata.com/blog/2013/05/30/run-sql-on-json-files-without-any-data-loads/>`_
 
 XML
-    FDW für XML-Dateien
+    FDW for XML files
 
     * `GitHub <https://github.com/Kozea/Multicorn>`_
     * `PGXN <https://pgxn.org/dist/multicorn/>`_
 
-Geo Wrappers
+Geo wrappers
 ------------
 
 GDAL/OGR
-    FDW für den `GDAL/OGR <http://www.gdal.org/>`_-Treiber einschließlich
-    Datenbanken wie Oracle und SQLite sowie Dateiformate wie MapInfo, CSV,
-    Excel, OpenOffice, OpenStreetMap PBF und XML.
+    FDW for the  `GDAL/OGR <http://www.gdal.org/>`_ driver including databases
+    like Oracle and SQLite as well as file formats like MapInfo, CSV, Excel,
+    OpenOffice, OpenStreetMap PBF and XML.
 
     * `GitHub <https://github.com/pramsey/pgsql-ogr-fdw>`_
 
 Geocode/GeoJSON
-    Eine Sammlung von FDWs für PostGIS
+    A collection of FDWs for PostGIS
 
     * `GitHub <https://github.com/bosth/geofdw>`_
 
 Open Street Map PBF
-    FDW für `Open Street Map PBF
+    FDW for `Open Street Map PBF
     <https://wiki.openstreetmap.org/wiki/PBF_Format>`_
 
     * `GitHub <https://github.com/vpikulik/postgres_osm_pbf_fdw>`_
 
-Generische Web-Wrappers
------------------------
+Generic web wrappers
+--------------------
 
 ICAL
-    FDW für ICAL
+    FDW for ICAL
 
     * `GitHub <https://github.com/daamien/Multicorn/blob/master/python/multicorn/icalfdw.py>`_
     * `Docs <https://wiki.postgresql.org/images/7/7e/Conferences-write_a_foreign_data_wrapper_in_15_minutes-presentation.pdf>`_
 
 IMAP
-    FDW für das *Internet Message Access Protocol (IMAP)*
+    FDW for the Internet Message Access Protocol (IMAP)
 
     * `Docs <http://multicorn.org/foreign-data-wrappers/#idimap-foreign-data-wrapper>`_
 
 RSS
-    FDQ für RSS-Feeds
+    FDQ for RSS feeds
 
     * `Docs <http://multicorn.org/foreign-data-wrappers/#idrss-foreign-data-wrapper>`_
 
 .. seealso::
-   * `PostgreSQL Wiki
+   * `PostgreSQL wiki
      <https://wiki.postgresql.org/wiki/Foreign_data_wrappers>`_
-   * `PGXN-Website <https://pgxn.org/>`_
+   * `PGXN website <https://pgxn.org/>`_

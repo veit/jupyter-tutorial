@@ -1,16 +1,15 @@
 Upload
 ======
 
-Schließlich solltet ihr das Paket auf dem :term:`Python Package Index (PyPI)`
-oder einem anderen Index bereitstellen.
+Finally, you should provide the package on the :term:`Python Package Index
+(PyPI)` or another index.
 
-Hierfür solltet ihr euch bei *Test PyPI* registrieren. *Test-PyPI* ist eine
-separate Instanz, die zum Testen und Experimentieren vorgesehen ist. Um dort
-ein Konto einzurichten, geht ihr auf https://test.pypi.org/account/register/.
-Weitere Informationen findet ihr unter `Using TestPyPI
-<https://packaging.python.org/guides/using-testpypi/>`_.
+For this you should register on *Test PyPI*. *Test-PyPI* is a separate instance
+that is intended for testing and experimentation. To set up an account there, go
+to  https://test.pypi.org/account/register/. For more information, see `Using
+TestPyPI <https://packaging.python.org/guides/using-testpypi/>`_.
 
-Nun könnt ihr eine ``~/.pypirc``-Datei erstellen:
+Now you can create the ``~/.pypirc`` file:
 
 .. code-block:: ini
 
@@ -23,13 +22,13 @@ Nun könnt ihr eine ``~/.pypirc``-Datei erstellen:
     username = veit
 
 .. seealso::
-    Wenn ihr die PyPI-Anmeldung automatisieren wollt, lest bitte `Careful With
-    That PyPI
+    If you’d like to automate PyPI registration, please read `Careful With That
+    PyPI
     <https://glyph.twistedmatrix.com/2017/10/careful-with-that-pypi.html>`_.
 
-Nachdem ihr registriert seid, könnt ihr euer :term:`Distribution Package` mit
-`twine <https://packaging.python.org/key_projects/#twine>`_ hochladen. Hierzu
-müsst ihr jedoch zunächst twine installieren mit:
+After you are registered, you can upload your :term:`Distribution Package` with
+`twine <https://packaging.python.org/key_projects/#twine>`_ To do this, however,
+you must first install twine with:
 
 .. code-block:: console
 
@@ -38,11 +37,11 @@ müsst ihr jedoch zunächst twine installieren mit:
     All dependencies are now up-to-date!
 
 .. note::
-   Führt diesen Befehl vor jedem Release aus um sicherzustellen, dass alle
-   Release-Tools auf dem neuesten Stand sind. Die restlichen Build-Tools werden
-   von pep517 automatisch in der isolierten Build-Umgebung installiert.
+   Run this command before each release to ensure that all release tools are up
+   to date. The remaining build tools are automatically installed in the
+   isolated build environment by pep517.
 
-Nun könnt ihr eure *Distribution Packages* erstellen mit:
+Now you can create your *Distribution Packages* with:
 
 .. code-block:: console
 
@@ -50,24 +49,23 @@ Nun könnt ihr eure *Distribution Packages* erstellen mit:
     $ pipenv run python -m pep517.build .
     …
 
-Nach der Installation von Twine könnt ihr alle Archive unter ``/dist`` auf den
-Python Package Index hochladen mit:
+After installing Twine you can upload all archives in ``/dist`` to the Python
+Package Index with:
 
 .. code-block:: console
 
     $ pipenv run twine upload -r test -s dist/*
 
 ``-r``, ``--repository``
-    Das Repository zum Hochladen des Pakets.
+    The repository to upload the package.
 
-    In unserem Fall wird ``test``-Abschnitt aus der ``~/.pypirc``-Datei
-    verwendet.
+    In our case, the ``test`` section from the ``~/.pypirc`` file is used.
 
 ``-s``, ``--sign``
-    signiert die hochzuladenden Dateien mit GPG.
+    signs the files to be uploaded with GPG.
 
-Ihr werdet nach eurem Passwort gefragt, mit dem ihr euch bei *Test PyPI*
-registriert habt. Anschließend solltet ihr eine ähnliche Ausgabe sehen:
+You will be asked for the password you used to register on *Test PyPI*. You
+should then see a similar output:
 
 .. code-block:: console
 
@@ -80,27 +78,26 @@ registriert habt. Anschließend solltet ihr eine ähnliche Ausgabe sehen:
     100%|█████████████████████| 4.25k/4.25k [00:01<00:00, 3.05kB/s]
 
 .. note::
-   Wenn ihr eine ähnliche Fehlermeldung erhaltet wie
+   If you get an error message similar to
 
    .. code-block:: console
 
     The user 'veit' isn't allowed to upload to project 'example'
 
-   müsst ihr einen eindeutigen Namen für euer Paket auswählen:
+   you have to choose a unique name for your package:
 
-   #. ändert das ``name``-Argument in der ``setup.py``-Datei
-   #. entfernt das ``dist``-Verzeichnis
-   #. generiert die Archive neu
+   #. change the ``name`` argument in the ``setup.py`` file
+   #. remove the ``dist`` directory
+   #. regenerate the archives
 
-Überprüfen
-----------
+Check
+-----
 
 Installation
 ~~~~~~~~~~~~
 
-Ihr könnt :term:`pipenv` verwenden um euer Paket zu installieren und zu überprüfen,
-ob es funktioniert. Erstellt eine neue :term:`virtuelle Umgebung` und
-installiert euer Paket von *Test PyPI*:
+You can use :term:`pipenv` to install your package and check if it works. Create
+a new :term:`virtual environment` and install your package on *Test PyPI*:
 
 .. code-block:: console
 
@@ -109,11 +106,11 @@ installiert euer Paket von *Test PyPI*:
     $ pipenv install --extra-index-url https://test.pypi.org/simple/ minimal_example
 
 .. note::
-   Wenn ihr einen anderen Paketnamen verwendet habt, ersetzt ihn im obigen
-   Befehl durch euren Paketnamen.
+   If you have used a different package name, replace it with your package name
+   in the command above.
 
-:term:`pip` sollte das Paket von *Test PyPI* installieren und die Ausgabe sollte
-in etwa so aussehen:
+:term:`pip` should install the package from *Test PyPI* and the output should
+look something like this:
 
 .. code-block:: console
 
@@ -122,9 +119,9 @@ in etwa so aussehen:
     Installing collected packages: minimal_example
     Successfully installed minimal_example-0.0.1
 
-Ihr könnt testen, ob euer Paket korrekt installiert wurde indem ihr das Modul
-importiert und auf die ``name``-Eigenschaft referenziert, die zuvor in
-``__init__.py`` eingegeben wurde:
+You can test whether your package has been installed correctly by importing the
+module and referencing the ``name`` property that was previously ntered in
+``__init__.py``:
 
 .. code-block:: console
 
@@ -138,16 +135,16 @@ importiert und auf die ``name``-Eigenschaft referenziert, die zuvor in
 README
 ~~~~~~
 
-Überprüft bitte auch, ob die ``README.rst``-Datei auf der Test-PyPI-Seite
-korrekt angezeigt wird.
+Please also check whether the ``README.rst`` is displayed correctly on the test
+PyPI page.
 
 PyPI
 ----
 
-Registriert euch nun beim :term:`Python Package Index (PyPI)` und stellt sicher,
-dass die `Zwei-Faktor-Authentifizierung
+Now register on the :term:`Python Package Index (PyPI)` and make sure that
+`two-factor authentication
 <https://blog.python.org/2019/05/use-two-factor-auth-to-improve-your.html>`_
-aktiviert ist indem ihr die ``~/.pypirc``-Datei ergänzt:
+is activated by adding the following to the ``~/.pypirc`` file:
 
 .. code-block:: ini
 
@@ -163,8 +160,8 @@ aktiviert ist indem ihr die ``~/.pypirc``-Datei ergänzt:
     [pypi]
     username = __token__
 
-Mit dieser Konfiguration wird nicht mehr die Name/Passwort-Kombination beim
-Hochladen verwendet sondern ein Upload-Token.
+With this configuration, the name/password combination is no longer used for
+uploading but an upload token.
 
 .. seealso::
     * `PyPI now supports uploading via API token
@@ -172,16 +169,16 @@ Hochladen verwendet sondern ein Upload-Token.
     * `What is two factor authentication and how does it work on PyPI?
       <https://pypi.org/help/#twofa>`_
 
-Schließlich könnt ihr nun euer Paket auf PyPI veröffentlichen:
+Finally, you can publish your package on PyPI:
 
 .. code-block:: console
 
     $ pipenv run twine upload -r pypi -s dist/*
 
 .. note::
-    Ihr könnt Releases von PyPI löschen, aber nicht unter derselben
-    Versionsnummer erneut hochladen! Seit also vor dem Löschen und Hochladen
-    vorsichtig: Releases können nicht einfach  ersetzt werden.
+    You can delete PyPI releases, but you cannot upload them again under the
+    same version number! So be careful before deleting and uploading: Releases
+    cannot simply be replaced.
 
 .. seealso::
     * `PyPI Release Checklist

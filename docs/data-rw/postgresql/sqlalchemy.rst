@@ -1,19 +1,19 @@
 SQLAlchemy
 ==========
 
-`SQLAlchemy <https://www.sqlalchemy.org/>`_ ist ein Python-SQL-Toolit und
-objektrelationaler Mapper.
+`SQLAlchemy <https://www.sqlalchemy.org/>`_ is a Python-SQL-Toolkit and
+object-relational mapper.
 
-SQLAlchemy ist bekannt für sein ORM, wobei es verschiedene Muster für das
-objektrelationale Mapping bereitstellt, wobei Klassen auf verschiedene Weise auf
-die Datenbank abgebildet werden können. Das Objektmodell und das Datenbankschema
-sind von Anfang an sauber entkoppelt.
+SQLAlchemy is known for its ORM, whereby it provides different patterns for
+object-relational mapping, whereby classes can be mapped to the database in
+different ways. The object model and the database schema are cleanly decoupled
+from the start.
 
-SQLAlchemy unterscheidet sich grundlegend von anderen ORMs, da SQL und Details
-der Objekt-Relation nicht wegabstrahiert werden: alle Prozesse werden als eine
-Zusammenstellung einzelner Tools dargestellt.
+SQLAlchemy differs fundamentally from other ORMs, as SQL and details of the
+object relation are not abstracted away: all processes are represented as a
+collection of individual tools.
 
-Datenbankverbindung
+Database connection
 -------------------
 
 ::
@@ -21,8 +21,8 @@ Datenbankverbindung
     from sqlalchemy import create_engine
     engine = create_engine('postgresql:///example', echo=True)
 
-Datenmodell
------------
+Data model
+----------
 
 ::
 
@@ -51,8 +51,8 @@ Datenmodell
      address_id = Column(Integer, ForeignKey(Address.id), nullable=False)
      address = relationship('Address')
 
-Tabellen erstellen
-------------------
+Create tables
+-------------
 
 ::
 

@@ -1,22 +1,21 @@
-Git-Verzweigungen
-=================
+Git branches
+============
 
 ``$ git branch [-a]``
-    zeigt alle lokalen Verzweigungen in einem Repository an.
+    shows all local branches in a repository.
 
     ``-a``
-        zeigt auch alle entfernten Verzweigungen an.
+        also shows all removed branches.
 
 ``$ git branch [branch_name]``
-    erstellt auf Basis des aktuellen ``HEAD`` einen neuen Zweig.
+    creates a new branch based on the current ``HEAD``.
 ``$ git checkout [-b] [branch_name]``
-    ändert das Arbeitsverzeichnis in den angegebenen Zweig.
+    changes the working directory to the specified branch.
 
     ``-b``
-        erstellt den angegebenen Zweig, wenn dieser nicht schon besteht.
+        creates the specified branch if it does not already exist.
 ``$ git merge [from name]``
-    verbindet den angegebenen mit dem aktuellen Zweig, in dem Ihr euch gerade
-    befindet, z.B.:
+    connects the given branch with the current branch you are currently in, e.g.
 
     .. code-block:: console
 
@@ -28,10 +27,10 @@ Git-Verzweigungen
          1 files changed, 0 insertions(+), 1 deletions(-)
 
     ``Fast forward``
-        besagt, dass der neue Commit direkt auf den ursprünglichen Commit folgte
-        und somit der Zeiger (*branch pointer*) nur weitergeführt werden musste.
+        means that the new commit immediately followed the original commit and
+        so the branch pointer only had to be continued.
 
-        In anderen Fällen kann die Ausgabe z.B. so aussehen:
+        In other cases the output can look like this:
 
         .. code-block:: console
 
@@ -42,13 +41,13 @@ Git-Verzweigungen
              1 files changed, 1 insertions(+), 0 deletions(-)
 
     ``recursive``
-        ist eine Merge-Strategie, die verwendet wird, sofern die Zusammenführung
-        nur zu ``HEAD`` erfolgt.
+        is a merge strategy that is used when the merge is only to be done to
+        ``HEAD``.
 
-Merge-Konflikte
----------------
+Merge conflict
+--------------
 
-Gelegentlich stößt Git beim Zusammenführen jedoch auf Probleme, z.B.:
+Occasionally, however, Git runs into issues with merging, such as:
 
     .. code-block:: console
 
@@ -64,15 +63,14 @@ Gelegentlich stößt Git beim Zusammenführen jedoch auf Probleme, z.B.:
         * `Git Tools - Fortgeschrittenes Merging
           <https://git-scm.com/book/de/v2/Git-Tools-Fortgeschrittenes-Merging>`_
 
-Verzweigungen (Branches)
-------------------------
+Branches
+--------
 
 ``$ git branch -d [name]``
-    löscht den ausgewählten Zweig, wenn er bereits in einen anderen überführt
-    wurde.
+    deletes the selected branch if it has already been transferred to another.
 
-    ``-D`` statt ``-d`` erzwingt die Löschung.
+    ``-D`` instead of ``-d`` forcing the deletion.
 
 .. seealso::
-    * `Git Branching - Branches auf einen Blick
-      <https://git-scm.com/book/de/v2/Git-Branching-Branches-auf-einen-Blick>`_
+    * `Git Branching - Branches in a Nutshell
+      <https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell>`_

@@ -1,7 +1,7 @@
 Installation
 ============
 
-#. Installation mit Pipenv:
+#. Installation with Pipenv:
 
    .. code-block:: console
 
@@ -9,7 +9,7 @@ Installation
     Installing jupyter_contrib_nbextensions…
     …
 
-#. Installation der zugehörigen Javascript- und CSS-Dateien:
+#. Installation of the associated Javascript and CSS files:
 
    .. code-block:: console
 
@@ -20,7 +20,7 @@ Installation
     [I 20:57:20 InstallContribNbextensionsApp] - Writing config: /Users/veit/.jupyter/jupyter_nbconvert_config.json
     [I 20:57:20 InstallContribNbextensionsApp] --  Writing updated config file /Users/veit/.jupyter/jupyter_nbconvert_config.json
 
-#. Überprüfen der Installation:
+#. Check the installation:
 
    .. code-block:: console
 
@@ -59,7 +59,7 @@ Installation
 
 #. `yapf <https://pypi.org/project/yapf/>`_ Code Prettyfier
 
-    Für Python:
+    … for Python:
 
     .. code-block:: console
 
@@ -70,7 +70,7 @@ Installation
         Installing collected packages: yapf
         Successfully installed yapf-0.28.0
 
-    Für Javascript:
+    … for Javascript:
 
     .. code-block:: console
 
@@ -80,7 +80,7 @@ Installation
         added 29 packages from 21 contributors and audited 32 packages in 2.632s
         found 0 vulnerabilities
 
-    Für R:
+    … for R:
 
     .. code-block:: console
 

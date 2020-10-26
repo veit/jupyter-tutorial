@@ -1,11 +1,9 @@
-Daten bereinigen und validieren
-===============================
+Clean up and validate data
+==========================
 
-Im Folgenden wollen wir Euch einen praktischen Überblick über Bibliotheken und
-Methoden zur `Datenbereinigung
-<https://de.wikipedia.org/wiki/Datenbereinigung>`_ und -validierung mit Python
-geben. Dabei können wir aktuell nicht intensiv auf einzelne Bibliotheken und
-Werkzeuge eingehen sondern nur eine kurze Einführung geben.
+In this chapter we want to give you a practical overview of libraries and
+methods for `data cleansing <https://en.wikipedia.org/wiki/Data_cleansing>`_ and
+validation with Python.
 
 .. seealso::
 

@@ -1,5 +1,5 @@
 devpi
 =====
 
-`devpi <https://devpi.net/>`_ ist ein PyPI-Server, der die Paketierung, das
-Testen und Veröffentlichen von Python-Paketen vereinfacht.
+`devpi <https://devpi.net/>`_ is a PyPI server that simplifies the packaging,
+testing and publishing of Python packages.

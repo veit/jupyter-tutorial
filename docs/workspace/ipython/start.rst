@@ -1,7 +1,7 @@
-Starten der IPython-Shell
-=========================
+Start the IPython shell
+=======================
 
-Ihr könnt IPython einfach in einer Konsole starten:
+You can easily start IPython in a console:
 
 .. code-block:: console
 
@@ -12,8 +12,8 @@ Ihr könnt IPython einfach in einer Konsole starten:
 
     In [1]:
 
-Alternativ könnt ihr IPython auch in einem Jupyter-Notebook verwenden. Hierfür
-startet ihr zunächst den Notebook-Server:
+Alternatively, you can use IPython in a Jupyter notebook. To do this, start the
+notebook server first:
 
 .. code-block:: console
 
@@ -24,8 +24,7 @@ startet ihr zunächst den Notebook-Server:
     [I 17:35:02.428 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
     [C 17:35:02.497 NotebookApp]
 
-Anschließend sollte der Standardbrowser mit der angegebenen URL geöffnet
-werden. Häufig ist dies ``http://localhost:8888``.
+The standard browser should then be opened with the specified URL. Often this is
+``http://localhost:8888``.
 
-Nun könnt ihr im Browser einen Python-Prozess starten, indem ihr ein neues
-Notebook erstellt.
+Now you can start a Python process in the browser by creating a new notebook.

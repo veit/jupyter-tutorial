@@ -1,12 +1,11 @@
-Umgebungen reproduzieren
-========================
+Reproduce environments
+======================
 
-Führt die Notebooks in einer dezidierten Umgebung aus (z.B. mit
-:doc:`pipenv/index`, :doc:`devpi` und :doc:`Spack <spack/index>`. Speichert
-die Dateien mit den Spezifikationen, also z.B. ``Pipfile``, ``Pipfile.lock``,
-``package-lock.json`` etc. Auf diese Weise könnt ihr und andere eure
-Berechnungen reproduzieren und auch das Deployment in die Produktionsumgebung
-wird vereinfacht.
+Run the notebook in a dedicated environment (e.g. with :doc:`pipenv/index`,
+:doc:`devpi` and :doc:`Spack <spack/index>`. Save the file with the
+specifications, e.g. ``Pipfile``, ``Pipfile.lock``, ``package-lock.json`` etc.
+In this way, you and others can reproduce your calculations and deployment into
+the production environment is simplified.
 
 .. toctree::
     :hidden:

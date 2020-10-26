@@ -1,38 +1,37 @@
 Spack
 =====
 
-Modellierungs- und Simulationsumgebungen sind sehr heterogen. :doc:`Spack
-<spack:index>` unterstützt daher viele verschiedene Produktionsumgebungen:
+Modeling and simulation environments are very heterogeneous. :doc:`Spack
+<spack:index>` therefore supports many different production environments:
 
-* 7 verschiedene Compiler: Intel, GCC, Clang, PGI, …
-* Auflösen von Abhängigkeiten
-* Auflösen verschiedener Versionen von Abhängigkeiten
+* 7 different compilers: Intel, GCC, Clang, PGI, …
+* Resolving dependencies
+* Resolving different versions of dependencies
 
-Bisherige Systeme
------------------
+Previous systems
+----------------
 
-Sie bieten meist keine Unterstützung für kombinatorische Versionierung.
+They usually do not offer any support for combinatorial versioning.
 
-* Traditionelle Binärpaketmanager wie RPM, yum, APT, yast, etc.
+* Traditional binary package managers like RPM, yum, APT, yast, etc.
 
-    * sind konzipiert um einen einzelnen Software-Stack zu verwalten
-    * installieren eine Version eines Pakets
-    * üblicherweise problemlose Upgrades auf einen stabilen, gut getesteten
-      Stack
+    * are designed to manage a single software stack
+    * install one version of a package
+    * usually problem-free upgrades to a stable, well-tested stack
 
-* Port-Systeme
+* Port systems
 
     * BSD Ports, portage, NixOS, Macports, Homebrew, etc.
-    * meist kaum Unterstützung für Builds, die parametrisiert sind durch
-      Compiler oder abhängige Versionen
+    * mostly little support for builds that are parameterised by compilers or
+      dependent versions
 
-* Virtuelle Maschinen und Linux-Container
+* Virtual machines and Linux containers
 
-    * Container erlauben die Erstellung unterschiedlicher Umgebungen für
-      unterschiedliche Anwendungen
-    * Sie lösen jedoch nicht das Build-Problem für das Image
-    * Performance, Security und Upgrades werden bei vielen unterschiedlichen
-      Builds sehr aufwändig.
+    * Containers allow the creation of different environments for different
+      applications
+    * However, they do not solve the build problem for the image
+    * Performance, security and upgrades become very complex with many different
+      builds.
 
 .. toctree::
     :hidden:

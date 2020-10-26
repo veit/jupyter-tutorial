@@ -1,9 +1,9 @@
 ``check-manifest``
 ==================
 
-`check-manifest <https://pypi.org/p/check-manifest>`_ ist ein Werkzeug, mit dem
-ihr schnell überprüfen könnt, ob die Datei ``Manifest.in`` für Pyton-Pakete
-vollständig ist.
+`check-manifest <https://pypi.org/p/check-manifest>`_ is a tool with which you
+can quickly check whether the file ``Manifest.in`` for Pyton packages is
+complete.
 
 Installation
 ------------
@@ -12,15 +12,15 @@ Installation
 
     $ pipenv install check-manifest
 
-Überprüfen
-----------
+Check
+-----
 
 .. code-block:: console
 
     $ cd /path/to/MANIFEST.in
     $ pipenv run check-manifest
 
-oder für eine automatische Aktualisierung
+… or for an automatic update
 
 .. code-block:: console
 
@@ -43,13 +43,13 @@ oder für eine automatische Aktualisierung
     include *.py
     include tox.ini
 
-Konfiguration
+Configuration
 -------------
 
-Ihr könnt ``check-manifest`` so konfigurieren, dass bestimmte Dateimuster
-ignoriert werden, indem ihr einen Abschnitt ``[tool.check-manifest]`` in eurer
-``pyproject.toml``-Datei oder einen Abschnitt ``[check-manifest]`` in eurer
-``setup.cfg`` oder ``tox.ini``-Datei anlegt, z.B.:
+You can configure ``check-manifest`` so that certain file patterns are ignored
+by creating a section  ``[tool.check-manifest]`` in your  ``pyproject.toml``
+file or a section ``[check-manifest]`` in your  ``setup.cfg`` or ``tox.ini``
+file, for example:
 
 .. code-block:: yaml
 
@@ -61,13 +61,12 @@ ignoriert werden, indem ihr einen Abschnitt ``[tool.check-manifest]`` in eurer
     ignore =
         .travis.yml
 
-``check-manifest`` kennt die folgenden Optionen:
+``check-manifest`` knows the following options:
 
 ``ignore``
-    Eine Liste von Dateinamenmustern, die von ``check-manifest`` ignoriert
-    werden. Verwendet diese Option, wenn ihr Dateien in eurem
-    Versionskontrollsystem behalten möchtet, die nicht in eurem
-    Quelldistributionen enthalten sein sollen. Die Standardliste ist:
+    A list of filename patterns that are ignored by ``check-manifest``. Use this
+    option if you want to keep files in your version control system that
+    shouldn’t be in your source distributions. The standard list is:
 
     .. code-block::
 
@@ -87,20 +86,18 @@ ignoriert werden, indem ihr einen Abschnitt ``[tool.check-manifest]`` in eurer
         * .mo
 
 ``ignore-default-rules``
-    wenn ``true``, dann ersetzen deine ``ignore``-Angaben die Standardliste,
-    anstatt sie zu ergänzen.
+    If ``true``, your ``ignore`` entries replace the standard list instead of
+    completing it.
 ``ignore-bad-ideas``
-    Eine Liste von Dateinamenmustern, de von der Prüfung der generierten Dateien
-    ignoriert werden. Damit könnt ihr generierte Dateien in eurem
-    Versionskontrollsystem behalten, auch wenn dies üblicherweise eine schlechte
-    Idee ist.
+    A list of filename patterns that will be ignored by checking the generated
+    files. This allows you to keep generated files in your version control
+    system, even if this is usually a bad idea.
 
-Integration in die Versionskontrolle
-------------------------------------
+Integration with version control
+--------------------------------
 
-Mit :doc:`/productive/git/pre-commit` kann `check-manifest` Teil eures
-Git-Workflows sein. Fügt hierfür eurer `.pre-commit-config.yaml`-Datei folgendes
-hinzu:
+With :doc:`/productive/git/pre-commit`, `check-manifest` can be part of your Git
+workflow. To do this, add the following to your  `.pre-commit-config.yaml` file:
 
 .. code-block:: yaml
 

@@ -1,5 +1,5 @@
-Use Case 2: Python und andere interpretierte Sprachen
-=====================================================
+Use case 2: Python and other interpreted languages
+==================================================
 
 .. code-block:: console
 

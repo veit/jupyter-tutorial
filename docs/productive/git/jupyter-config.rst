@@ -1,42 +1,39 @@
-Git für Jupyter Notebooks konfigurieren
-=======================================
+Configuring Git for Jupyter Notebooks
+=====================================
 
-Im Notebook-Dateiformat :ref:`nbformat <was-ist-eine-ipynb-datei>` können auch
-die Ergebnisse der Berechnungen gespeichert werden. Dies können auch
-Base-64-codierte Blobs für Bilder und andere Binärdaten sein, die üblicherweise
-nicht in eine Versionsverwaltung übernommen werden sollen. Diese können zwar
-manuell entfernt werden mit :menuselection:`Cell --> All Output --> Clear`, ihr
-müsst diese Schritte jedoch vor jedem ``git add`` ausführen, und es löst auch
-eine zweite Ursache für das Rauschen in ``git diff`` nicht, nämlich dasjeinige
-in den `Metadaten
+The results of the calculations can also be saved in the notebook file format
+:ref:`nbformat <what-is-a-ipynb-file>`. These can also be Base-64-coded blobs
+for images and other binary data that should not normally be included in a
+version management. These can be removed manually with :menuselection:`Cell -->
+All Output --> Clear`, but you have to carry out these steps before every ``git
+add``, and it also does not solve a second cause of the noise in ``git diff``,
+namely some in the `metadata
 <https://nbformat.readthedocs.io/en/latest/format_description.html#metadata>`_.
 
-Um nun systematisch vergleichbare Versionen von Notebooks in der
-Versionsverwaltung zu erhalten, können wir `jq
-<https://stedolan.github.io/jq/>`_ verwenden, einen leichtgewichtigen
-JSON-Prozessor. Zwar benötigt man einige Zeit um ``jq`` einzurichten da es
-eine eigene eine eigene Abfrage-/Filtersprache mitbringt, aber meist sind
-schon die Standardeinstellungen gut gewählt.
+In order to get systematically comparable versions of notebooks in the version
+management, we can use `jq <https://stedolan.github.io/jq/>`_, a lightweight
+JSON processor. It takes some time to set up ``jq`` because it has its own
+query/filter language, but the default settings are usually well chosen.
 
 Installation
 ------------
 
-``jq`` für Debian/Ubuntu kann installiert werden mit:
+``jq`` for Debian/Ubuntu can be installed with:
 
 .. code-block:: console
 
     $ sudo apt install jq
 
-oder für macOS mit:
+or for macOS with:
 
 .. code-block:: console
 
     $ brew install jq
 
-Beispiel
---------
+Example
+-------
 
-Ein typischer Aufruf ist:
+A typical call is:
 
 .. code-block:: console
 
@@ -44,23 +41,21 @@ Ein typischer Aufruf ist:
       '(.cells [] | select (has ("output")) | .outputs) = []
       | (.cells [] | select (has ("execution_count")) | .execution_count) = null
       | .metadata = {"language_info": {"name": "python", "pygments_lexer": "ipython3"}}
-      | .Cells []. Metadaten = {}
+      | .Cells []. metadata = {}
       '  example.ipynb
 
-Jede Zeile innerhalb der einfachen Anführungszeichen definiert einen Filter –
-die erste wählt alle Einträge aus der Liste *cells* aus und löscht die Ausgaben.
-Der nächste Eintrag setzt alle Ausgaben zurück. Der dritte Schritt löscht die
-Metadaten des Notebooks und ersetzt sie durch ein Minimum an erforderlichen
-Informationen, damit das Notebook noch ohne Beanstandungen ausgeführt werden
-kann, folgendes eingeben:wenn es mit nbsphinx formatiert sind. Die vierte Filterzeile,
-``.cells []. metadata = {}``, löscht alle Metainformationen. Falls ihr bestimmte
-Metainformationen beibehalten wollt, könnt ihr dies hier angeben.
+Each line within the single quotation marks defines a filter – the first selects
+all entries from the cells list and deletes the output. The next entry resets all
+outputs. The third step deletes the notebook’s metadata and replaces it with a
+minimum of necessary information so that the notebook can still be run without
+complaints. The fourth filter line ``.cells []. metadata = {}``, deletes all meta
+information. If you want to keep certain meta information, you can indicate this
+here.
 
-Einrichten
-----------
+Set up
+------
 
-#. Um euch die Arbeit zu erleichtern, könnt ihr einen Alias in der
-   ``~/.bashrc``-Datei anlegen:
+#. To make your work easier, you can create an alias in the ``~/.bashrc`` file:
 
    .. code-block:: bash
 
@@ -71,23 +66,22 @@ Einrichten
         | .cells[].metadata = {} \
         '"
 
-#. Anschließend könnt ihr bequem im Terminal folgendes eingeben:
+#. Then you can conveniently enter the following in the terminal:
 
    .. code-block:: console
 
     $ nbstrip_jq example.ipynb > stripped.ipynb
 
-#. Wenn ihr von einem bereits vorhandenen Notebook ausgeht, solltet ihr zunächst
-   einen ``filter``-Commit hinzufügen, indem ihr einfach die neu gefilterte
-   Version eures Notebooks ohne die unerwünschten Metadaten einlest. Nachdem ihr
-   mit ``git add`` das Notebook hinzugefügt habt, könnt ihr mit
-   ``git diff --cached`` schauen, ob der Filter auch wirklich gewirkt hat bevor
-   ihr dann ``git commit -m 'filter'`` angebt.
+#. If you start with an already existing notebook, you should first add a
+   ``filter`` commit by simply reading in the newly filtered version of your
+   notebook without the unwanted metadata. After you have added the notebook
+   with  ``git add``, you can see whether the filter has really worked with
+    ``git diff --cached``  before you do ``git commit -m 'filter'``.
 
-#. Wenn ihr diesen Filter für alle Git-Repositories verwenden wollt, könnt ihr
-   euer Git auch global konfigurieren:
+#. If you want to use this filter for all Git repositories, you can also
+   configure your Git globally:
 
-   #. Zunächst fügt ihr in  ``~/.gitconfig`` folgendes hinzu:
+   #. First you add the following to your ``~/.gitconfig`` file:
 
       .. code-block:: ini
 
@@ -104,21 +98,21 @@ Einrichten
         smudge = cat
         required = true
 
-   #. Anschließend müsst ihr in ``~/.gitattribute`` nur noch folgendes angeben:
+   #. Then you have to specify the following in the ``~/.gitattribute`` file:
 
       .. code-block:: ini
 
         *.ipynb filter=nbstrip_jq
 
       .. warning::
-         Wenn ihr ``git rebase`` durchführen wollt, solltet ihr vorher die Zeile
-         deaktivieren.
+         If you want to do ``git rebase``, you should deactivate the line
+         beforehand.
 
-#. Dennoch bleibt das Problem, dass ``git status`` Änderungen an Dateien
-   anzeigt wenn die Zellen eines Notebook ausgeführt wurden, und dies obwohl
-   ``git diff`` weiterhin keine Änderungen anzeigt. Daher sollte in der
-   ``~/.bashrc``-Datei folgendes eingetragen um schnell das jeweilige
-   Arbeitsverzeichnis reinigen zu können:
+#. However, the problem remains that ``git status`` show changes to files when
+   the cells of a notebook have been executed, even though  ``git diff``  still
+   shows no changes. Therefore the following should be entered in the
+   ``~/.bashrc`` file in order to quickly clean the respective working
+   directory:
 
    .. code-block:: bash
 

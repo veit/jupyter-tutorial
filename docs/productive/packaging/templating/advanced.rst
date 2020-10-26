@@ -1,18 +1,18 @@
-Fortgeschrittene Nutzung
-========================
+Advanced usage
+==============
 
 Hooks
 -----
 
-Ihr könnt Pre- oder Post-Generate-Hooks schreiben. Dabei werden die
-Jinja-Template-Variablen in die Skripte integriert werden, z.B.:
+You can write pre- or post-generate hooks. The Jinja template variables will be
+integrated into the scripts, for example:
 
 .. code-block:: python
 
     if 'Not open source' == '{{ cookiecutter.license }}':
         remove_file('LICENSE')
 
-In einem Pre-Generate-Hook können z.B. Variablen validiert werden:
+Variables, for example, can be validated in a pre-generate hook:
 
 .. code-block:: python
 
@@ -30,11 +30,11 @@ In einem Pre-Generate-Hook können z.B. Variablen validiert werden:
         # exits with status 1 to indicate failure
         sys.exit(1)
 
-User Config
+User config
 -----------
 
-Wenn ihr Cookiecutter häufig verwendet, empfiehlt sich eine eigene User-Config:
-``~/cookiecutterrc``, z.B.:
+If you use CookieCutter frequently, we recommend your own user config
+``~/cookiecutterrc``, e.g.:
 
 .. code-block:: bash
 
@@ -48,38 +48,37 @@ Wenn ihr Cookiecutter häufig verwendet, empfiehlt sich eine eigene User-Config:
 Replay
 ------
 
-Beim Aufruf von ``cookiecutter`` wird eine ``json``-Datei angelegt in
-``/.cookiecutter_replay/``, z.B.
+When calling ``cookiecutter`` a ``json`` file is created in
+``/.cookiecutter_replay/``, for example
 ``~/.cookiecutter_replay/cookiecutter-namespace-template.json``:
 
 .. code-block:: json
 
     {"cookiecutter": {"full_name": "Veit Schiele", "email": "veit@cusy.io", "github_username": "veit", "project_name": "vsc.example", "project_slug": "vsc.example", "namespace": "vsc", "package_name": "example", "project_short_description": "Python Namespace Package contains all you need to create a Python namespace package.", "pypi_username": "veit", "use_pytest": "y", "command_line_interface": "Click", "version": "0.1.0", "create_author_file": "y", "license": "MIT license", "_template": "https://github.com/veit/cookiecutter-namespace-template"}}
 
-Sollen diese Informationen verwendet werden ohne diese erneut in der
-Kommandozeile bestätigen zu müssen, könnt ihr einfach z.B. folgendes eingeben:
+If you want to use this information without having to confirm them again in the
+command line, you can simply enter the following:
 
 .. code-block:: console
 
     $ cookiecutter --replay gh:veit/cookiecutter-namespace-template
 
-Alternativ kann auch die Python-API verwendet werden:
+Alternatively, the Python API can also be used:
 
 .. code-block:: python
 
     from cookiecutter.main import cookiecutter
     cookiecutter('gh:'veit/cookiecutter-namespace-template, replay=True)
 
-Diese Funktion ist hilfreich, wenn ihr z.B. ein Projekt aus einer aktualisierten
-Vorlage erstellen wollt.
+This function is helpful if you want to create a project from an updated
+template, for example.
 
-Auswahlvariablen
-----------------
+Selection variables
+-------------------
 
-Auswahlvariablen bieten verschiedene Möglichkeiten beim Erstellen eines
-Projekts. Abhängig von der Wahl des Benutzers rendert die Vorlage diese
-anders, z.B. wenn in der ``cookiecutter.json``-Datei folgende Auswahl angeboten
-wird:
+Selection variables offer various options when creating a project. Depending on
+the user’s choice, the template renders it differently, e.g. if in the
+``cookiecutter.json`` file the following selection is offered:
 
 .. code-block:: json
 
@@ -87,7 +86,7 @@ wird:
       "license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Other/Proprietary License"]
     }
 
-Dies wird dann ausgewertet in
+This is interpreted in
 ``cookiecutter-namespace-template/{{cookiecutter.project_name}}/README.rst``
 
 .. code-block:: jinja
@@ -101,7 +100,7 @@ Dies wird dann ausgewertet in
         …
     {% endif %}
 
-und in ``cookiecutter-namespace-template/hooks/post_gen_project.py``:
+and in ``cookiecutter-namespace-template/hooks/post_gen_project.py``:
 
 .. code-block:: python
 

@@ -1,7 +1,7 @@
-Projekt erstellen
-=================
+Create a project
+================
 
-DVC lässt sich einfach initialisieren mit:
+DVC can be easily initialised with:
 
 .. code-block:: console
 
@@ -10,24 +10,23 @@ DVC lässt sich einfach initialisieren mit:
     $ git init
     $ dvc init
     $ git add .dvc
-    $ git commit -m "Initialize DVC"
+    $ git commit -m "Initialise DVC"
 
 ``dvc init``
-    erstellt ein Verzeichnis ``.dvc/`` mit ``config``, ``.gitignore`` und
-    ``cache``-Verzeichnis.
+    creates a directory ``.dvc/`` with ``config``, ``.gitignore`` and
+    ``cache`` directory.
 ``git commit``
-    stellt ``.dvc/config`` und ``.dvc/.gitignore`` unter Git-Versionskontrolle.
+    puts ``.dvc/config`` and ``.dvc/.gitignore`` under version control.
 
-Konfigurieren
--------------
+Configure
+---------
 
 .. _dvc-remote:
 
-Bevor DVC verwendet wird, sollte noch ein entfernter Speicherplatz (*remote
-storage*) eingerichtet werden. Dieser sollte für alle zugänglich sein, die auf
-die Daten oder das Modell zugreifen sollen. Es ähnelt der Verwendung eines
-Git-Server. Häufig ist das jedoch auch ein NFS-Mount, der z.B. folgendermaßen
-eingebunden werden kann:
+Before DVC is used, even a remote storage is established. This should be
+accessible to everyone who should access the data or the model. It’s similar to
+using a Git server. Often, however, this is also an NFS mount, which can be
+integrated as follows, for example:
 
 .. code-block:: console
 
@@ -39,23 +38,22 @@ eingebunden werden kann:
      1 file changed, 4 insertions(+)
 
 ``-d``, ``--default``
-    Standardwert für den entfernten Speicherplatz
+    Default value for the space removed
 ``local``
-    Name des entfernten Speicherplatz
+    Name of the remote location
 ``/var/dvc-storage``
-    URL des entfernten Speicherplatzes
+    URL of the remote location
 
-    Daneben werden noch weitere Protokolle unterstützt, die dem Pfad
-    vorangestellt werden, u.a. ``ssh:``, ``hdfs:``, ``https:``.
+    In addition, other protocols are supported, which are preceded by the path,
+    including ``ssh:``, ``hdfs:`` and ``https:``.
 
-Es kann also einfach noch ein weterer entfernter Datenspeicher hinzugefügt
-werden, z.B. mit:
+Another remote data storage can simply be added, e.g. with:
 
 .. code-block:: console
 
     $ dvc remote add webserver https://dvc.example.org/myproject
 
-Die zugehörige Konfigurationsdatei ``.dvc/config`` sieht dann so aus:
+The associated configuration file ``.dvc/config`` looks like this:
 
 .. code-block:: ini
 
@@ -66,12 +64,11 @@ Die zugehörige Konfigurationsdatei ``.dvc/config`` sieht dann so aus:
     ['remote "webserver"']
     url = https://dvc.example.org/myproject
 
-Daten und Verzeichnisse hinzufügen
-----------------------------------
+Add data and directories
+------------------------
 
-Mit DVC könnt ihr Dateien, ML-Modelle, Verzeichnisse und Zwischenergebnisse mit
-Git speichern und versionieren, ohne dass der Dateiinhalt in Git eingecheckt
-werden muss:
+With DVC you can save and version files, ML models, directories and intermediate
+results with Git without having to check the file content into Git:
 
 .. code-block:: console
 
@@ -79,53 +76,52 @@ werden muss:
         -o data/data.xml
     $ dvc add data/data.xml
 
-Dies fügt die Datei ``data/data.xml`` in ``data/.gitignore`` hinzu und
-schreibt die Metanangaben in ``data/data.xml.dvc``. Weitere Informationen
-zum Dateiformat der ``*.dvc``-Datei erhaltet ihr unter `DVC-File Format
+This will add the file ``data/data.xml`` in ``data/.gitignore`` and write the
+meta information in ``data/data.xml.dvc``. Further information on the file
+format of the ``*.dvc`` can be found under `DVC-File Format
 <https://dvc.org/doc/user-guide/dvc-file-format>`_.
 
-Um nun verschiedene Versionen eurer Projektdaten mit Git verwalten zu können,
-müsst ihr jedoch nur die CVS-Datei hinzufügen:
+In order to be able to manage different versions of your project data with Git,
+you only have to add the CVS file:
 
 .. code-block:: console
 
     $ git add data/.gitignore data/fortune500.csv.dvc
     $ git commit -m "Add raw data to project"
 
-Daten speichern und abrufen
----------------------------
+Store and retrieve data
+-----------------------
 
-Die Daten können vom Arbeitsverzeichnis eures Git-Repository auf den entfernten
-Speicherplatz kopiert werden mit
+The data can be copied from the working directory of your Git repository to the
+remote storage space with
 
 .. code-block:: console
 
     $ dvc push
 
-Falls ihr aktuellere Daten abrufen wollt, könnt ihr dies mit
+If you want to call up more current data, you can do so with
 
 .. code-block:: console
 
     $ dvc pull
 
-Importieren und Aktualisieren
------------------------------
+Import and update
+-----------------
 
-Ihr könnt auch Daten und Modelle eines anderen Projekts importieren mit dem
-``dvc import``-Befehl, z.B.:
+You can also import data and models from another project with the command ``dvc
+import``, e.g.:
 
 .. code-block:: console
 
     $ dvc import https://github.com/iterative/dataset-registry  get-started/data.xml
     Importing 'get-started/data.xml (https://github.com/iterative/dataset-registry)' -> 'data.xml'
 
-Dies lädt die Datei aus der `dataset-registry
-<https://github.com/iterative/dataset-registry>`_ in das aktuelle
-Arbeitsverzeichnis, fügt sie ``.gitignore`` hinzu und erstellt
-``data.xml.dvc``.
+This loads the file from the `dataset-registry
+<https://github.com/iterative/dataset-registry>`_ into the current working
+directory, adds ``.gitignore`` and creates ``data.xml.dvc``.
 
-Mit ``dvc update`` können wir diese Datenquellen aktualisieren bevor wir eine
-Pipeline reproduzieren, die von diesen Datenquellen abhängt, z.B.:
+With ``dvc update`` we can update these data sources before we reproduce a
+pipeline that depends on these data sources,  e.g.
 
 .. code-block:: console
 

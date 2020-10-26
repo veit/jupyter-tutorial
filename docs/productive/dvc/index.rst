@@ -1,40 +1,36 @@
-Daten verwalten mit ``DVC``
-===========================
+Manage data with ``DVC``
+========================
 
-Für Datenanalysen und vor allem bei Machine Learning ist es äußerst wertvoll,
-verschiedene Versionen von Analysen, die mit verschiedenen Datensätzen und
-Parametern durchgeführt wurden, reproduzieren zu können. Um jedoch
-reproduzierbare Analysen zu erhalten, müssen sowohl die Daten als auch das
-Modell (einschließlich der Algorithmen, Parameter. etc.) versioniert werden.
-Die Versionierung von Daten für reproduzierbare Analysen ist aufgrund der
-Datengröße ein größeres Problem als die Versionierung von Modellen. Werkzeuge
-wie `DVC <https://dvc.org/>`_ helfen bei der Verwaltung von Daten indem Nutzer
-diese mit einem :doc:`Git <../git/index>`-artigen Workflow an einen entfernten
-Datenspeicher übertragen können. Hierdurch vereinfacht sich der Abruf bestimmter
-Versionen von Daten um eine Analyse zu reproduzieren.
+For data analysis, and especially machine learning, it is extremely valuable to
+be able to reproduce different versions of analyses that have been carried out
+with different data sets and parameters. However, in order to obtain
+reproducible analyses, both the data and the model (including the algorithms,
+parameters, etc.) must be versioned. Versioning data for reproducible analysis
+is a bigger problem than versioning models because of the size of the data.
+Tools like `DVC <https://dvc.org/>`_ help manage data by allowing users to
+transfer it to a remote data store using a :doc:`Git <../git/index>` like
+workflow. This simplifies the retrieval of certain versions of data in order to
+reproduce an analysis.
 
-DVC wurde entwickelt um ML-Modelle und Datensätze igemeinsam nutzen zu können
-und nachvollziehbar zu verwalten. Es arbeitet zwar mit verschiedenen
-Versionsverwaltungen zusammen, benötigt diese jedoch nicht. Im Gegensatz z.B. zu
-`DataLad <https://www.datalad.org/>`_/`git-annex
-<https://git-annex.branchable.com/>`_ ist es auch nicht auf Git als
-Versionsverwaltung beschränkt sondern kann z.B auch zusammen mit Mercurial
-verwendet werden, siehe `github.com/crobarcro/dvc/dvc/scm.py
-<https://github.com/crobarcro/dvc/blob/master/dvc/scm.py>`_. Zudem nutzt es
-ein eigenes System zum Speichern der Dateien mit Unterstützung u.a. für SSH und
-HDFS.
+DVC was developed to be able to use ML models and data sets together and to
+manage them in a comprehensible manner. It works with different version
+managements, but does not need them. In contrast to `DataLad
+<https://www.datalad.org/>`_/`git-annex <https://git-annex.branchable.com/>`_,
+for example, it is not limited to Git as version management, but can also be
+used together with Mercurial, see `github.com/crobarcro/dvc/dvc/scm.py
+<https://github.com/crobarcro/dvc/blob/master/dvc/scm.py>`_. It also uses its
+own system for storing files with support for SSH and HDFS, among others.
 
-DataLad konzentriert sich hingegen mehr auf die Entdeckung und Verwendung von
-Datasets, die dann einfach mit Git verwaltet werden. DVC hingegen speichert
-jeden Schritt der Pipeline in einer separaten ``.dvc``-Datei, die dann durch
-Git verwaltet werden kann.
+DataLad, on the other hand, focuses more on discovering and consuming datasets,
+which are then easily managed with Git. DVC, on the other hand, stores each step
+in the pipeline in a separate ``.dvc`` file that can then be managed by Git.
 
-Diese ``.dvc``-Dateien erlauben jedoch praktische Tools zur Manipilation und
-Visualisierung von DAGs, siehe z.B. die :ref:`Visualisierung der DAGs
+These ``.dvc`` files, however, allow practical tools for manipulating and
+visualizing DAGs, see, for example, :ref:`visualisation of DAGs
 <dvc-pipeline-show>`.
 
-Schließlich lassen sich mit :ref:`dvc remote <dvc-remote>` auch
-externe Abhängigkeiten angeben.
+Finally, external dependencies can also be specified with :ref:`dvc remote
+<dvc-remote>`.
 
 .. seealso::
    * `Tutorial <https://dvc.org/doc/tutorial>`_
@@ -44,17 +40,17 @@ externe Abhängigkeiten angeben.
 Installation
 ------------
 
-DVC lässt sich mit Pipenv installieren. Beachtet dabei jedoch bitte, dass ihr
-hierbei die Extras explizit angeben müsst. Dies können ``[ssh]``, ``[s3]``,
-``[gs]``, ``[azure]``, und ``[oss]`` oder ``[all]`` sein. Für ``ssh`` sieht das
-Kommando dann so aus:
+Finally, external dependencies can also be specified with Pipenv. Please note,
+however, that you have to explicitly state the extras. This can be ``[ssh]``,
+``[s3]``, ``[gs]``, ``[azure]``, and ``[oss]`` or ``[all]``. For ``ssh`` the
+command looks like this:
 
 .. code-block:: console
 
     $ pipenv install dvc[ssh]
 
-Alternativ kann DVC auch über das Paketmanagement von Ubuntu/Debian installiert
-werden mit:
+Alternatively, DVC can also be installed via the package management of
+Ubuntu/Debian with:
 
 .. code-block:: console
 
@@ -62,18 +58,18 @@ werden mit:
     $ sudo apt update
     $ sudo apt install dvc
 
-Für macOS lässt sich DVC installieren mit:
+For macOS DVC can be installed with:
 
 .. code-block:: console
 
     $ brew install iterative/homebrew-dvc/dvc
 
 .. note::
-    Bitte beachtet, dass das folgende Beispiel mit einer aktuellen DVC-Version
-    erstellt wurde (1.0.0a9), die z.T. eine andere Syntax als frühere Versionen
-    verwendet. Dies könnt Ihr aktuell (8. Juni 2020) nur mit pip installieren::
+    Please note that the following example was created with a current DVC
+    version (1.0.0a9), which partly uses a different syntax than earlier
+    versions. You can currently (8th June 2020) only install this with pip:
 
-    .. code-block:: console
+     .. code-block:: console
 
         $ pipenv install dvc[all]==1.0.0a9
 

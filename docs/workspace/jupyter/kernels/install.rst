@@ -1,17 +1,17 @@
-Kernel installieren, anzeigen und starten
-=========================================
+Install, view and start the kernel
+==================================
 
-Kernel Installieren
--------------------
+Install a kernel
+----------------
 
-``pipenv run python -m ipykernel install`` kann u.a. mit folgenden Optionen
-aufgerufen werden:
+``pipenv run python -m ipykernel install`` can be called with the following
+options:
 
 ``--user``
-    installiert den Kernel für den aktuellen Nutzer und nicht systemweit
+    installs the kernel for the current user and not system-wide
 ``name <NAME>``
-    gibt einen Namen für die ``kernelspec`` an. Dieser wird benötigt, um
-    mehrere IPython-Kernel gleichzeitig verwenden zu können, z.B.:
+    gives a name for the ``kernelspec``. This is required in order to be able to
+    use several IPython kernels at the same time, e.g.:
 
     .. code-block:: console
 
@@ -19,8 +19,8 @@ aufgerufen werden:
         $ pipenv run python -m ipykernel install --user --name mykernel --display-name "My Kernel"
         Installed kernelspec mykernel in /Users/veit/Library/Jupyter/kernels/mykernel
 
-Mit ``ipykernel install`` wird eine ``kernelspec``-Datei im JSON-Format für die
-aktuelle Python-Umgebung erstellt, z.B.:
+``ipykernel install`` creates a ``kernelspec`` file in JSON format for the
+current Python environment, e.g.:
 
 .. code-block:: json
 
@@ -37,26 +37,21 @@ aktuelle Python-Umgebung erstellt, z.B.:
     }
 
 ``display_name``
-    Der Name des Kernels, wie er im Browser angezeigt werden soll. Im Gegensatz
-    zum in der API verwendeten Kernelnamen kann dieser beliebige Unicode-Zeichen
-    enthalten.
+    The name of the kernel as it should be displayed in the browser. In contrast
+    to the kernel name used in the API, it can contain any Unicode characters.
 ``language``
-    Der Name der Sprache des Kernels. Wenn beim Laden von Notebooks kein
-    passender ``kernelspec``-Schlüssel gefunden wird, wird ein Kernel mit einer
-    passenden Sprache verwendet. Auf diese Weise kann ein für ein Python- oder
-    Julia-Kernel geschriebenes Notebook mit dem Python- oder Julia-Kernel des
-    Benutzers verknüpft werden, auch wenn dieser nicht demselben Namen wie der
-    des Autors hat.
+    The name of the language of the kernel. If no suitable ``kernelspec`` key is
+    found when loading notebooks, a kernel with a suitable language is used. In
+    this way, a notebook written for a Python or Julia kernel can be linked to
+    the user's Python or Julia kernel, even if it does not have the same name as
+    the author’s.
 ``argv``
-    Eine Liste von Befehlszeilenargumenten, die zum Starten des Kernels
-    verwendet werden.
+    A list of command line arguments used to start the kernel.
+    ``{connection_file}`` refers to a file that contains the IP address, ports,
+    and authentication key required for the connection. Usually this JSON file
+    is saved in a safe place of the current profile:
 
-    ``{connection_file}`` verweist auf eine Datei, die die die IP-Adresse, die
-    Ports und den Authentifizierungsschlüssel enthält, die für die Verbindung
-    benötigt werden. Üblicherweise wird diese JSON-Datei an einem sicheren Ort
-    des aktuellen Profile gespeichert:
-
-    .. code-block:: json
+    .. code-block:: javascript
 
         {
           "shell_port": 61656,
@@ -72,30 +67,27 @@ aktuelle Python-Umgebung erstellt, z.B.:
         }
 
 ``interrupt_mode``
-    Kann entweder ``signal`` oder ``message`` sein und gibt an, wie ein Client
-    die Ausführung einer Zelle auf diesem Kernel unterbrechen soll.
+    can be either ``signal`` or ``message`` and specifies how a client should
+    interrupt the execution of a cell on this kernel.
 
     ``signal``
-        sendet ein Interrupt, z.B. ``SIGINT`` auf *POSIX*-Systemen
+        sends an interrupt, e.g. ``SIGINT`` on *POSIX* systems
     ``message``
-        sendet einen ``interrupt_request``, s.a. `Kernel Interrupt
+        sends an ``interrupt_request``, see also `Kernel Interrupt
         <https://jupyter-client.readthedocs.io/en/latest/messaging.html#kernel-interrupt>`_.
 
 ``env``
-    ``dict`` mit Umgebungsvariablen, die für den Kernel festgelegt werden
-    sollen. Diese werden zu den aktuellen Umgebungsvariablen hinzugefügt, bevor
-    der Kernel gestartet wird.
+    ``dict`` with environment variables to be set for the kernel. These are
+    added to the current environment variables before the kernel starts.
 ``metadata``
-    ``dict`` mit zusätzlichen Attributen zu diesem Kernel. Wird von Clients zur
-    Unterstützung der Kernelauswahl verwendet. Hier hinzugefügte Metadaten
-    sollten einen Namensraum für das Tool zum Lesen und Schreiben dieser
-    Metadaten haben.
+    ``dict`` with additional attributes for this kernel. Used by clients to
+    support the kernel selection. Metadata added here should have a namespace
+    for the tool to read and write that metadata.
 
-Ihr könnt diese ``kernelspec``-Datei zu einem späteren Zeitpunkt editieren, z.B.
-um
+You can edit this ``kernelspec` file at a later time.
 
-Verfügbare Kernel anzeigen
---------------------------
+Show available kernels
+----------------------
 
 .. code-block:: console
 
@@ -105,8 +97,8 @@ Verfügbare Kernel anzeigen
       python2    /Users/veit/Library/Jupyter/kernels/python2
       python3    /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/bin/../share/jupyter/kernels/python3
 
-Kernel starten
---------------
+Start kernel
+------------
 
 .. code-block:: console
 
@@ -117,4 +109,4 @@ Kernel starten
 
     In [1]:
 
-Mit ``ctrl`` + ``d`` könnt ihr den Kernel wieder beenden.
+With ``ctrl`` + ``d`` you can exit the kernel again.

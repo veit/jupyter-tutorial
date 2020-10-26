@@ -1,10 +1,9 @@
-Plugin erstellen
-================
+Create plugin
+=============
 
-Neben den bestehenden Notebook Extensions können auch weitere Plugins
-hinzugefügt werden. Das Verzeichnis, in dem
-``jupyter_contrib_nbextensions/nbextensions`` liegt, bekommt ihr mit
-``pip show`` heraus:
+In addition to the existing notebook extensions, other plugins can also be
+added. The directory in which ``jupyter_contrib_nbextensions/nbextensions`` is
+located can be found with ``pip show``:
 
 .. code-block:: console
 
@@ -20,8 +19,8 @@ hinzugefügt werden. Das Verzeichnis, in dem
     Requires: lxml, jupyter-contrib-core, nbconvert, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-nbextensions-configurator, notebook, traitlets, jupyter-highlight-selected-word, tornado, ipython-genutils
     Required-by:
 
-In diesem Verzeichnis liegen die einzelnen Notebook-Erweiterungen, z.B. mit
-folgender Struktur:
+This directory contains the individual notebook extensions, e.g. with the
+following structure:
 
 .. code-block:: console
 
@@ -32,8 +31,7 @@ folgender Struktur:
     └── readme.md
 
 ``main.js``
-    enthält die eigentliche Logik der Erweiterung, z.B.:
-
+    contains the actual logic of the extension, e.g .:
 
     .. code-block:: javascript
 
@@ -74,8 +72,8 @@ folgender Struktur:
         });
 
 ``main.yaml``
-    `yaml <https://de.wikipedia.org/wiki/YAML>`_-Datei, die die Erweiterung
-    für den Jupyter Extensions Configurator beschreibt.
+    `yaml <https://en.wikipedia.org/wiki/YAML>`_ file that describes the
+    extension for the Jupyter Extensions Configurator.
 
     .. code-block:: yaml
 
@@ -89,14 +87,13 @@ folgender Struktur:
         Parameters:
         - none
 
-    Weitere Informationen zu den vom *Configurator* unterstützten Optionen
-    findet ihr auf GitHub: `jupyter_nbextensions_configurator
+    More information about the options supported by the configurator can be
+    found on GitHub: `jupyter_nbextensions_configurator
     <https://github.com/jupyter-contrib/jupyter_nbextensions_configurator>`_.
 
 ``readme.md``
-    Markdown-Datei, die die Erweiterung beschreibt und angibt, wie sie
-    verwendet werden kann. Dies wird auch im Reiter
-    :menuselection:`Nbextensions` angezeigt.
+    Markdown file that describes the extension and how it can be used. This is
+    also displayed in the :menuselection:`Nbextensions` tab.
 
 .. seealso::
    * :doc:`internals`
@@ -104,18 +101,18 @@ folgender Struktur:
 Setup Jupyter Notebook Extension
 --------------------------------
 
-Dies ist eine Erweiterung, die einige Probleme beim Arbeiten mit Notebooks
-behebt, die Joel Grus auf der JupyterCon 2018 vorgetragen hat: `I Don’t Like
-Notebooks <https://www.youtube.com/watch?v=7jiPeIFXb6U>`_:
+This is an extension that fixes some problems when working with notebooks that
+Joel Grus presented at JupyterCon 2018: `I Don’t Like Notebooks
+<https://www.youtube.com/watch?v=7jiPeIFXb6U>`_:
 
-* sie fordert euch auf, das Notebook zu benennen
-* sie erstellt eine Vorlage, um die Dokumentation zu verbessern
-* sie importiert und konfiguriert häufig verwendete Bibliotheken
+* it asks you to name the notebook
+* it creates a template to improve the documentation
+* it imports and configures frequently used libraries
 
 Installation
 ~~~~~~~~~~~~
 
-#. Findet heraus, wo die Notebook-Extensions installiert sind:
+#. Find out where the notebook extensions are installed:
 
    .. code-block:: console
 
@@ -131,11 +128,11 @@ Installation
         Requires: lxml, jupyter-contrib-core, nbconvert, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-nbextensions-configurator, notebook, traitlets, jupyter-highlight-selected-word, tornado, ipython-genutils
         Required-by:
 
-#. Ladet das `Setup
-   <https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup>`_-Verzeichnis
-   in ``jupyter_contrib_nbextensions/nbextensions/`` herunter.
+#. Download the `Setup
+   <https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup>`_ directory in
+   ``jupyter_contrib_nbextensions/nbextensions/``.
 
-#. Installiert die Erweiterung mit
+#. Install the extension with
 
    .. code-block:: console
 
@@ -149,10 +146,10 @@ Installation
         [I 10:54:46 InstallContribNbextensionsApp] - Validating: OK
         …
 
-#. Aktiviert die *Setup*-Extension in :menuselection:`Nbextensions`.
+#. Activate the *Setup* extension in  :menuselection:`Nbextensions`.
 
-Schließlich könnt ihr ein neues Notebook erstellen, das dann folgende Struktur
-aufweist: `setup.ipynb <setup.ipynb>`_.
+Finally you can create a new notebook, which then has the following structure:
+`setup.ipynb <setup.ipynb>`_.
 
 .. seealso::
    * `Set Your Jupyter Notebook up Right with this Extension

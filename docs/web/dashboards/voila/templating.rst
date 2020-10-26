@@ -3,29 +3,27 @@ Templating
 
 .. _voila-gridstack:
 
-Voila-Gridstack
+Voilà gridstack
 ---------------
 
-`gridstack.js <http://gridstackjs.com/>`_ ist ein jQuery-Plugin für
-Widget-Layouts. Dies ermöglicht mehrspaltige Drag & Drop-Raster und anpassbare,
-für `Bootstrap v3 <https://getbootstrap.com/docs/3.4/>`_ geeignete Layouts.
-Zudem funktioniert es  mit `knockout.js <https://knockoutjs.com/>`_ und
-Touch-Geräten.
+`gridstack.js <http://gridstackjs.com/>`_ is a jQuery plugin for widget layouts.
+This enables multi-column drag and drop grids and customizable layouts suitable
+for `Bootstrap v3 <https://getbootstrap.com/docs/3.4/>`_. It also works with
+`knockout.js <https://knockoutjs.com/>`_ and touch devices.
 
-Das Gridstack-Voilà-Template verwendet die Metadaten der Notebook-Zellen, um das
-Layout des Notebooks zu gestalten. Es soll die gesamte Spezifikation für die
-veralteten :doc:`../jupyter-dashboards/index`
-unterstützen.
+The Gridstack Voilà template uses the metadata of the notebook cells to design
+the notebook’s layout. It is supposed to support the entire specification for
+the outdated :doc:`../jupyter-dashboards/index`.
 
 .. image:: voila-gridstack.png
    :scale: 53%
-   :alt: Beispiel für Voilà-Gridstack
+   :alt: Example for Voilà gridstack
 
 voila-vuetify
 -------------
 
-`voila-vuetify <https://github.com/QuantStack/voila-vuetify>`_ ist ein Template
-zur Verwendung von Voilà mit dem `Material Design Component Framework
+`voila-vuetify <https://github.com/QuantStack/voila-vuetify>`_ is a template for
+using Voilà with the `Material Design Component Framework
 <https://material.io/>`_ `Vuetify.js <https://vuetifyjs.com/>`_.
 
 Installation
@@ -35,17 +33,16 @@ Installation
 
     $ pipenv install bqplot ipyvuetify voila-vuetify==voila-vuetify 0.0.1a8
 
-Verwendung
-~~~~~~~~~~
+Usage
+~~~~~
 
-Um ``voila-vuetify`` in einem Notebook zu verwenden, müsst ihr zunächst
-``ipyvuetify`` importieren:
+To use ``voila-vuetify`` in a notebook, you first have to import ``ipyvuetify``:
 
 .. code-block:: python
 
     import ipyvuetify as v
 
-Anschließend könnt ihr ein Layout erstellen z.B mit:
+Then you can create a layout, e.g. with:
 
 .. code-block:: python
 
@@ -70,22 +67,21 @@ Anschließend könnt ihr ein Layout erstellen z.B mit:
         ])
     ])
 
-:doc:`bqplot_vuetify_example`. könnt ihr nutzen mit:
+You can use :doc:`bqplot_vuetify_example` with:
 
 .. code-block:: console
 
     $ pipenv run voila --template vuetify-default bqplot_vuetify_example.ipynb
 
-Anschließend öffnet sich euer Standardbrowser mit der URL
-``http://localhost:8866/`` und zeigt euch die Plots im Responsive Material
-Design.
+Then your standard browser will open the URL ``http://localhost:8866/`` and show
+you the plots in Responsive Material Design.
 
-Beispiel für Voilà-vuetify mit der Monitorauflösung eines Laptop MDPI-Screen:
+Example for Voilà-vuetify with the monitor resolution of a laptop MDPI screen:
 
 .. image:: voila-vuetify-laptop.png
    :scale: 53%
 
-Beispiel für Voilà-vuetify mit der Monitorauflösung eine iPhone X:
+Example for Voilà-vuetify with the monitor resolution of an iPhone X:
 
 .. image:: voila-vuetify-iphone.png
    :scale: 53%
@@ -93,8 +89,8 @@ Beispiel für Voilà-vuetify mit der Monitorauflösung eine iPhone X:
 voila-debug
 -----------
 
-`voila-debug <https://github.com/QuantStack/voila-debug>`_ ist ein Template zum
-Anzeigen von Debug-Informationen bei der Arbeit an Voilà-Anwendungen.
+`voila-debug <https://github.com/QuantStack/voila-debug>`_ is a template for
+displaying debug information when working on Voilà applications.
 
 Installation
 ~~~~~~~~~~~~
@@ -103,26 +99,26 @@ Installation
 
     $ pipenv install voila-debug
 
-Verwendung
-~~~~~~~~~~
+Usage
+~~~~~
 
-Ihr könnt das Template :doc:`debug.ipynb` nutzen mit:
+You can use the template :doc:`debug.ipynb` with:
 
 .. code-block:: console
 
     $ pipenv run voila --template=debug --VoilaExporter.template_file=debug.tpl
 
-Dies öffnet euren Standardbrowser mit der URL ``localhost:8866``.
+This will open your default browser with the URL ``localhost:8866``.
 
-In
-``http://localhost:8866/voila/render/docs/jupyter/dashboards/voila/debug.ipynb``
-könnt ihr euch dann die Funktionsweise genauer anschauen.
+Then you can take a closer look at how it works at
+``http://localhost:8866/voila/render/docs/jupyter/dashboards/voila/debug.ipynb``.
 
 .. image:: voila-debug.png
    :scale: 53%
-   :alt: Beispiel für Voilà-Debug
+   :alt: Example of voila-debug
 
-Es enthält neben einem Beispiel-Widget eine Code-Zelle zum Beenden des Kernels:
+In addition to an example widget, it contains a code cell for exiting the
+kernel:
 
 .. code-block:: python
 
@@ -135,11 +131,11 @@ Es enthält neben einem Beispiel-Widget eine Code-Zelle zum Beenden des Kernels:
     button.on_click(kill_kernel)
     button
 
-Eigene Templates erstellen
---------------------------
+Create your own templates
+-------------------------
 
-Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
-``share/jupyter/voila/templates`` befindet und z.B. Folgendes enthält:
+A Voilà template is a folder that is located in the virtual environment at
+``share/jupyter/voila/templates`` and for example, contains the following:
 
 .. code-block:: console
 
@@ -158,15 +154,15 @@ Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
         └── tree.html
 
 ``conf.json``
-    Konfigurationsdatei, die z.B. auf das Basis-Template verweist:
+    Configuration file that e.g. refers to the basic template:
 
     .. code-block:: json
 
         {"base_template": "default"}
 
 ``nbconvert_templates``
-    Benutzerdefinierte Templates für :doc:`/workspace/jupyter/nbconvert`.
+    Custom templates for nbconvert :doc:`/workspace/jupyter/nbconvert`.
 ``static``
-    Verzeichnis für statische Dateien.
+    Directory for static files.
 ``templates``
-    Benutzerdefinierte Tornado-Templates.
+    Custom tornado templates.

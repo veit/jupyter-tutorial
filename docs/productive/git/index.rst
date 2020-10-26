@@ -1,12 +1,11 @@
-Code verwalten mit Git
-======================
+Manage code with Git
+====================
 
-Um eine bessere Kontrolle über Euren Quellcode zu erhalten, wird dieser
-üblicherweise mit `Git <https://git-scm.com/>`_ verwaltet. Hier werde ich jedoch
-nur kurz die :doc:`wichtigsten Begriffe <glossary>` erläutern und eine kurze
-:doc:`Installations- und Konfigurationsanleitung <install-config>` geben.
-Allgemeine Einführungen in Git sind an anderer Stelle schon hinreichend
-vorhanden.
+In order to have better control over your source code, it is usually managed
+with  `Git <https://git-scm.com/>`. However, I will only briefly explain the
+most important terms and provide brief :doc:`installation and configuration
+instructions <install-config>`. General introductions to Git are sufficiently
+available elsewhere.
 
 .. seealso::
 
@@ -16,9 +15,9 @@ vorhanden.
     * :download:`Git Cheat Sheet (PDF) <git-cheatsheet-web.pdf>`
     * `Git reference <https://git-scm.com/docs>`_
 
-Im Wesentlichen zeige ich in diesem Tutorial einerseits, wie :doc:`Jupyter Notebooks
-<first-steps>` sinnvoll mit Git verwaltet lassen, und andererseits
-:doc:`Best Practices <best-practices>` und typische :doc:`workflows/index`.
+Essentially, in this tutorial, I show on the one hand how :doc:`Jupyter
+Notebooks <first-steps>` can be  managed with Git, and on the other hand
+:doc:`best practices <best-practices>` and typical :doc:`workflows/index`.
 
 .. toctree::
     :hidden:

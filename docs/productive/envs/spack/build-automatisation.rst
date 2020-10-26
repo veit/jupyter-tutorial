@@ -1,22 +1,21 @@
-Vorteile der Build-Automatisierung
-==================================
+Benefits of the build automation
+================================
 
-* Spack erleichtert Teams, ihren Code zu teilen
+* Spack makes it easy for teams to share their code
 
-  * Rezepte für gebräuchliche Bibliotheken
-  * reduzieren den Aufwand für reproduzierbare Builds
-  * und erleichtert damit das Teilen von Builds.
+  * Recipes for common libraries
+  * reduce the effort for reproducible builds
+  * making it easier to share builds.
 
-* Patches erlauben eine schnelle Bereitstellung von Bugfixes
+* Patches allow bug fixes to be provided quickly
 
-  * Anwendungsentwickler, die eine Bibliothek nutzen, haben häufig keine
-    Schreibrechte auf deren Repositories.
-  * Entwickler von Bibliotheken können Probleme evtl. nicht so schnell beheben
-    wie gewünscht.
-  * Mit Spack können Anwendungsentwickler schnell Korrekturen vornehmen und
-    Änderungen rückgängig machen.
+  * Application developers who use a library often do not have write access to
+    their repositories.
+  * Library developers may not be able to fix problems as quickly as desired.
+  * With Spack, application developers can quickly make corrections and undo
+    changes.
 
-* Python erlaubt die schnelle Übernahme durch Entwicklungsteams.
+* Python allows rapid adoption by development teams.
 
-  * Viele Anwendungsentwickler kennen Python bereits.
-  * Die ``yaml``-Syntax der Specs sind ausdrucksstark.
+  * Many application developers are already familiar with Python.
+  * The ``yaml`` syntax of the specs are expressive.

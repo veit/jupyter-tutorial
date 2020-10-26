@@ -1,6 +1,6 @@
-==============
-Erste Schritte
-==============
+===========
+First steps
+===========
 
 .. toctree::
     :hidden:

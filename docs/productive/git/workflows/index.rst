@@ -1,10 +1,10 @@
 =============
-Git-Workflows
+Git workflows
 =============
 
-Die Versionsverwaltung mit git macht das Verzweigen und Zusammenführen
-wesentlich einfacher als ältere Versionierungssysteme wie SVN. Dies ermöglicht
-eine Vielzahl von Verzweigungsstrategien und Workflows.
+Version management with git makes branching and merging much easier than older
+versioning systems like SVN. This enables a variety of branching strategies and
+workflows.
 
 .. toctree::
    :hidden:

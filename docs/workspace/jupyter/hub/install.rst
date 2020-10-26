@@ -1,7 +1,7 @@
 Installation
 ============
 
-#. Python≥3.5 und pip installieren:
+#. Install Python≥3.5 and pip:
 
    .. code-block:: console
 
@@ -11,55 +11,55 @@ Installation
     Python 3.7.3
     # apt install python3-pip
 
-#. Service-User ``jupyter`` erstellen:
+#. Create service user ``jupyter``:
 
    .. code-block:: console
 
     # useradd -s /bin/bash -rmd /srv/jupyter jupyter
 
-#. Als Service-User ``jupyter`` das Repository klonen:
+#. Clone the repository as service user ``jupyter``:
 
    .. code-block:: console
 
     # su - jupyter
     $ git clone https://github.com/veit/jupyter-tutorial.git
 
-#. `Pipenv <https://pipenv.readthedocs.io/>`_ installieren:
+#. Install `Pipenv <https://pipenv.readthedocs.io/>`_:
 
    .. code-block:: console
 
     $  python3 -m pip install --user pipenv
 
-   Dies installiert Pipenv in ``USER_BASE``.
+   This installs Pipenv in ``USER_BASE``.
 
-#. ``USER_BASE`` ermitteln und in ``PATH`` eintragen:
+#. Determine ``USER_BASE`` and enter it in ``PATH``:
 
    .. code-block:: console
 
     $  python3 -m site --user-base
     /srv/jupyter/.local
 
-   Anschließend muss noch das ``bin``-Verzeichnis angehängt und zu ``PATH``
-   in ``~/.profile`` hinzugefügt werden, also:
+   Then the  ``bin`` directory has to be appended and added to
+   ``PATH``, so:
 
    .. code-block:: console
 
     export PATH=/srv/jupyter/.local/bin:$PATH
 
-   Schließlich wird das geänderte Profil eingelesen mit:
+   Finally the changed profile is read in with:
 
    .. code-block:: console
 
     $  source ~/.profile
 
-#. Virtuelle Umgebung erstellen und JupyterHub installieren:
+#. Create a virtual environment and install JupyterHub:
 
    .. code-block:: console
 
     $  cd jupyter-tutorial/
     $  pipenv install
 
-#. ``nodejs`` und ``npm`` installieren:
+#. Install ``nodejs`` and ``npm``:
 
    .. code-block:: console
 
@@ -73,15 +73,15 @@ Installation
     # npm -v
     6.10.2
 
-   ``10.x`` gibt dabei die Major-Version von ``nodejs`` an.
+   ``10.x`` indicates the major version of ``nodejs``.
 
-#. Installieren der ``npm``-Pakete:
+#. Installi the ``npm`` packages:
 
    .. code-block:: console
 
     $ npm install
 
-#. Installieren des HTTP-Proxy:
+#. Install the HTTP-Proxy:
 
    .. code-block:: console
 
@@ -90,7 +90,7 @@ Installation
     + configurable-http-proxy@4.1.0
     added 47 packages from 62 contributors in 6.208s
 
-#. Testen der Installation:
+#. Testing the installation:
 
    .. code-block:: console
 
@@ -98,4 +98,4 @@ Installation
     …
     [I 2019-07-31 22:47:26.617 JupyterHub app:1912] JupyterHub is now running at http://:8000
 
-   Mit ctrl-c könnt ihr den Prozess wieder beenden.
+   With ``ctrl-c`` you can end the process again.

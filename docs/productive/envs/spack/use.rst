@@ -1,8 +1,8 @@
-Spack verwenden
-===============
+Use spack
+=========
 
-Auflisten der verfügbaren Pakete
---------------------------------
+List the available packages
+---------------------------
 
 .. code-block:: console
 
@@ -12,7 +12,7 @@ Auflisten der verfügbaren Pakete
     abyss                                  py-fiscalyear
     …
 
-oder zum filtern nach bestimmten Paketen, z.B.
+or to filter for certain packages, e.g.
 
 .. code-block:: console
 
@@ -20,8 +20,8 @@ oder zum filtern nach bestimmten Paketen, z.B.
     ==> 2 packages.
     py-numpy  py-numpydoc
 
-Auflisten der installierten Pakete
-----------------------------------
+List the installed packages
+---------------------------
 
 .. code-block:: console
 
@@ -113,7 +113,7 @@ Auflisten der installierten Pakete
 ``spack version``
 -----------------
 
-``spack version`` zeigt die verfügbaren Versionen an, z.B.
+``spack version`` shows the available versions, e.g.
 
 .. code-block:: console
 
@@ -128,22 +128,22 @@ Auflisten der installierten Pakete
       3.8.0b1   3.6.8rc1  3.5.6rc1  3.5.0a1    3.3.7rc1  3.1.1      2.6.9  2.4.2
       …
 
-Installation bestimmter Pakete
-------------------------------
+Installation of certain packages
+--------------------------------
 
-z.B.:
+e.g.:
 
 .. code-block:: console
 
     $ spack install python@3.7.4
 
-oder um ``py-numpy`` für Python 3.7.4 zu installieren:
+or to install ``py-numpy`` for Python 3.7.4:
 
 .. code-block:: console
 
     $ spack install py-numpy ^python@3.7.4
 
-Anschließend kann die Installation überprüft werden mit
+Then the installation can be checked with
 
 .. code-block:: console
 
@@ -164,31 +164,30 @@ Anschließend kann die Installation überprüft werden mit
                 ^sqlite@3.28.0
                 ^xz@5.2.4
 
-Deinstallieren
-~~~~~~~~~~~~~~
+Uninstall
+~~~~~~~~~
 
 .. code-block:: console
 
     $ spack uninstall py-numpy
 
-oder
+or
 
 .. code-block:: console
 
     $ spack uninstall --dependents py-numpy
 
-Extensions und Python-Support
+Extensions and Python support
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Das Installationsmodell von Spack geht davon aus, dass jedes Paket in einem
-eigenen Installations-Präfix lebt. Module in interpretierten Sprachen wie
-Python werden typischerweise im ``$prefix/lib/python-3.7/site-packages/``
-installiert, also z.B.
+The Spack installation model assumes that each package lives in its own
+installation prefix. Modules in interpreted languages such as Python are
+typically installed in ``$prefix/lib/python-3.7/site-packages/``, e.g.
 ``/Users/veit/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/py-numpy-1.16.4-45sqnufha2yprpx6rxyelsokky65ucdy/lib/python3.7/site-packages/numpy``.
-Es können jedoch auch Pakete verwendet werden, die in einem anderen Präfix
-installiert wurden. In Spack wird ein solches Paket als *Extension* bezeichnet.
+However, packages installed in a different prefix can also be used. Such a
+package is called an *extension* in Spack.
 
-Angenommen, Python wurde installiert mit
+Suppose Python was installed with
 
 .. code-block:: console
 
@@ -197,7 +196,7 @@ Angenommen, Python wurde installiert mit
     -- darwin-mojave-x86_64 / clang@10.0.1-apple --------------------
     python@3.7.4
 
-so können *Extensions* gefunden werden mit
+so *Extensions* can be found with
 
 .. code-block:: console
 
@@ -214,8 +213,7 @@ so können *Extensions* gefunden werden mit
 
     ==> None activated.
 
-``numpy`` kann dem ``PYTHONPATH`` der aktuellen Shell hinzugefügt werden mit
-``load``:
+``numpy`` can be added to the ``PYTHONPATH`` of the current shell with ``load``:
 
 .. code-block:: console
 
@@ -228,8 +226,8 @@ so können *Extensions* gefunden werden mit
     >>> import numpy
     >>>
 
-Oft sollen jedoch bestimmte Pakete dauerhaft einer Python-Installation zur
-Verfügung stehen. Spack bietet hierfür ``activate`` an:
+Often, however, certain packages should be permanently available to a Python
+installation. Spack offers ``activate`` for this:
 
 .. code-block:: console
 

@@ -1,41 +1,37 @@
-Git-Glossar
-===========
+Git glossary
+============
 
 .. glossary::
 
     Git
-        Git ist eine verteilte Versionsverwaltung
+        Git is a distributed version control system.
 
     GitLab
-        Web-Anwendung zur Versionsverwaltung auf Basis von :term:`git`. Später
-        kamen Gitlab CI, ein System zur kontinuierlichen Integration, GitLab
-        Runner, Container-Registry und vieles andere hinzu.
+        Web application for version management based on :term:`git`. RGitlab CI,
+        a system for continuous integration, GitLab Runner, container registry
+        and much more were added later.
 
     ``git commit``
-        ein Snapshot des gesamten Git-Repository, komprimiert in einem `SHA
+        a snapshot of the entire Git repository, compressed in a `SHA
         <https://de.wikipedia.org/wiki/Secure_Hash_Algorithm>`_
 
     ``branch``
-        ein leichtgewichtiger beweglicher Zeiger auf einen Commit
+        a lightweight moving pointer to a commit
 
     ``clone``
-        lokale Version eines Repository einschließlich aller Commits und
-        Branches
+        local version of a repository including all commits and branches
 
     ``remote``
-        gemeinsames Repository, z.B. auf GitLab, zum Austausch der Änderungen
-        in einem Team
+        shared repository, e.g. on GitLab, for exchanging changes in a team
 
     ``fork``
-        Kopie eines Repository auf GitLab, die einem anderen Nutzer gehört
+        Copy of a repository on GitLab that belongs to another user
 
     Merge request
-        Ort zum Vergleichen und Diskuttieren der in einem Branch eingeführten
-        Änderungen mit Bewertungen, Kommentaren, Tests etc.; siehe auch
-        `Merge requests
+        Place to compare and discuss the changes introduced in a branch with
+        ratings, comments, tests etc.; see also `Merge requests
         <https://docs.gitlab.com/ee/user/project/merge_requests/>`_.
 
     ``HEAD``
-        Der ``HEAD``-Zeiger repräsentiert Euer aktuelles Arbeitsverzeichnis und
-        kann mit ``git checkout`` in verschiedene Zweige, Tags oder Commits
-        verschoben werden
+        The ``HEAD`` pointer represents your current working directory and can
+        be moved to different branches, tags or commits with ``git checkout``.

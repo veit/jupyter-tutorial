@@ -1,13 +1,12 @@
-Nutzung
-=======
+Usage
+=====
 
-Beispiel
---------
+Example
+-------
 
-Nachdem nun ``requests`` installiert ist, kann es verwendet werden.
+Now that ``requests`` is installed, it can be used.
 
-#. Exemplarisch legen wir hierfür die Datei ``main.py`` mit folgendem Inhalt
-   an:
+#. As an example, we create the file ``main.py`` with the following content:
 
 .. code-block:: python
 
@@ -17,19 +16,19 @@ Nachdem nun ``requests`` installiert ist, kann es verwendet werden.
 
     print(response.status_code)
 
-#. Anschließen kann das Skript ausgeführt werden mit:
+#. Then the script can be executed with:
 
 .. code-block:: console
 
     $ pipenv run python main.py
 
-#. Als Ergebnis des Aufrufs solltet ihr den HTTP-Status-Code ``200`` erhalten.
+#. As a result of the call you should receive the HTTP status code ``200``.
 
-Die Verwendung von ``pipenv run`` stellt sicher, dass eure installierten Pakete
-für Ihr Skript verfügbar sind.
+Using ``pipenv run`` ensures that your installed packages are available for your
+script.
 
-Alternativ könnt ihr euch auch eine neue Shell mit ``pipenv shell`` erstellen,
-mit der auf alle installierten Pakete zugegriffen werden kann:
+Alternatively, you can also create a new shell ``pipenv shell`` with which all
+installed packages can be accessed:
 
 .. code-block:: console
 
@@ -37,56 +36,55 @@ mit der auf alle installierten Pakete zugegriffen werden kann:
     Launching subshell in virtual environment…
     bash-4.3.30$  . /Users/veit/.local/share/virtualenvs/myproject-9TTuTZjx/bin/activate
 
-Optionen
---------
+Options
+-------
 
 ``-venv``
-    gibt den Pfad zum Virtualenv an, üblicherweise in
-    ``~/.local/share/virtualenvs/``. Falls ihr jedoch ein Verzeichnis
-    ``myproject/.venv`` angelegt habt, verwendet ``pipenv`` diesen Ordner um
-    dort die zugehörige Python-Umgebung anzulegen.
+    specifies the path to the Virtualenv, usually in
+    ``~/.local/share/virtualenvs/``. However, if you have created a directory
+    ``myproject/.venv``, ``pipenv`` use this folder to create the associated
+    Python environment there.
 
 ``--py``
-    gibt den Pfad zum Python-Interpreter an.
+    specifies the path to the Python interpreter.
 
 ``--envs``
-    gibt Optionen der Environment-Variablen aus.
+    outputs options of the environment variables.
 
-    Für ``PIPENV_DONT_LOAD_ENV``, ``PIPENV_DONT_USE_PYENV`` und
-    ``PIPENV_DOTENV_LOCATION`` siehe :doc:`env`.
+    For ``PIPENV_DONT_LOAD_ENV``, ``PIPENV_DONT_USE_PYENV`` and
+    ``PIPENV_DOTENV_LOCATION`` see :doc:`env`.
 
-    Wenn ihr diese Umgebungsvariablen pro Projekt festlegen möchtet, könnt ihr
-    `direnv <https://direnv.net/>`_ verwenden.
+    If you want to set these environment variables per project, you can use
+    `direnv <https://direnv.net/>`_.
 
-    Beachtet auch, dass pip selbst Umgebungsvariablen unterstützt, falls ihr
-    zusätzliche Anpassungen benötigt: `Pip Environment Variables
+    Also note that pip itself supports environment variables in case you need
+    additional adjustments: `Pip Environment Variables
     <https://pip.pypa.io/en/stable/user_guide/#environment-variables>`_.
 
-    Hier noch ein Beispiel:
+    Here is another example:
 
     .. code-block:: console
 
         $ PIP_INSTALL_OPTION="-- -DCMAKE_BUILD_TYPE=Release" pipenv install -e .
 
-    Weitere Informationen hierzu findet ihr unter
-    `Configuration With Environment Variables
+    Further information can be found at `Configuration With Environment
+    Variables
     <https://docs.pipenv.org/advanced/#configuration-with-environment-variables>`_
 
 ``--three``, ``--two``, ``--python``
-    verwendet Python 2 oder Python 3 oder ein spezifisches Python, zu dem der
-    Pfad angegeben wird.
+    uses Python 2 or Python 3 or a specific Python to which the path is given.
 
 ``--site-packages``
-    aktiviert site packages für das virtual environment.
+    enables site packages for the virtual environment.
 
 ``--pypi-mirror``
-    gibt einen PyPI-Mirror an. Der Standard ist der
-    :term:`Python Package Index (PyPI)`.
+    indicates a PyPI mirror. The standard is the :term:`Python Package Index
+    PyPI)`.
 
-    Ihr könnt jedoch auch eure eigenen Mirror angeben:
+    However, you can also specify your own mirrors:
 
-    * mit der Umgebungsvariablen ``PIPENV_PYPI_MIRROR``
-    * in der Kommandozeile, z.B. mit:
+    * with the environment variable ``PIPENV_PYPI_MIRROR``
+    * in the command line, e.g. with:
 
       .. code-block:: console
 
@@ -94,7 +92,7 @@ Optionen
         $ pipenv update --pypi-mirror https://pypi.cusy.io/simple
         …
 
-    * oder im ``pipfile``:
+    * or in ``pipfile``:
 
       .. code-block:: ini
 
@@ -116,20 +114,19 @@ Optionen
         records = "*"
 
       .. note::
-        Wird ein privater Index verwendet, kommt es aktuell noch zu Problemen
-        mit dem Hashing der Pakete.
+        If a private index is used, there are currently still problems with
+        hashing the packages.
 
-    Weitere Optionen findet ihr unter `pipenv
-    <https://docs.pipenv.org/#pipenv>`_.
+    You can find more options at `pipenv <https://docs.pipenv.org/#pipenv>`_.
 
 ``check``
 ---------
 
-``pipenv check`` prüft auf Sicherheitslücken und auf `PEP 508
-<https://www.python.org/dev/peps/pep-0508/>`_-Marker im Pipfile. Hierzu
-verwendet es `safety <https://github.com/pyupio/safety>`_.
+``pipenv check`` checks for security holes and for `PEP 508
+<https://www.python.org/dev/peps/pep-0508/>` markers in the pipfile. For this it
+uses `safety <https://github.com/pyupio/safety>`_.
 
-Beispiel:
+Example:
 
 .. code-block:: console
 
@@ -172,19 +169,16 @@ Beispiel:
     hardened for production use and should be used only as a development aid.
 
 .. note::
-   ``pipenv`` bettet hierfür einen API-Clientschlüssel von ``pyup.io`` ein,
-    anstatt eine vollständige Kopie der CC-BY-NC-SA lizenzierten Datenbank
-    aufzunehmen.
+   ``pipenv`` embeds an API client key from ``pyup.io``, instead of including a
+   full copy of the CC-BY-NC-SA licensed database.
 
-Um nun die vollständige Datenbank zu installieren könnt ihr
-diese auschecken mit:
+In order to install the complete database you can check it out with:
 
 .. code-block:: console
 
     $ pipenv install -e git+https://github.com/pyupio/safety-db.git#egg=safety-db
 
-Um die lokale Datenbank zu verwenden, müsst ihr den Pfad zu dieser Datenbank
-angeben, in meinem Fall also:
+To use the local database, you have to enter the path to this database, in my case:
 
 .. code-block:: console
 
@@ -213,23 +207,22 @@ angeben, in meinem Fall also:
 ``clean``
 ---------
 
-``pipenv clean`` deinstalliert alle Pakete, die nicht in ``Pipfile.lock``
-angegeben sind.
+``pipenv clean`` uninstalls all packages not specified in ``Pipfile.lock``.
 
 ``graph``
 ---------
 
-``pipenv graph`` zeigt für die aktuell installierten Pakete die
-Abhängigkeitsgrapheninformationen an.
+``pipenv graph`` displays the dependency graph information for the currently
+installed packages.
 
 ``install``
 -----------
 
-``pipenv install`` installiert bereitgestellte Pakete und fügt sie dem Pipfile
-hinzu. ``pipenv install`` kennt die folgenden Optionen:
+``pipenv install`` installs the provided packages and adds them to the pipfile.
+``pipenv install`` knows the following options:
 
 ``-d``, ``--dev``
-    installiert die Pakete in ``[dev-packages]``, z.B.:
+    installs the packages in ``[dev-packages]``, for example:
 
 .. code-block:: console
 
@@ -241,81 +234,79 @@ hinzu. ``pipenv install`` kennt die folgenden Optionen:
         pytest = "*"
 
 ``--deploy``
-    bricht ab, wenn ``Pipfile.lock`` nicht aktuell ist oder eine falsche
-    Python-Version verwendet wird.
+    aborts if ``Pipfile.lock`` is out of date or an incorrect Python version is
+    used.
 
 ``-r``, ``--requirements`` ``<requirements.txt>``
-    importiert eine ``requirements.txt``-Datei
+    imports a ``requirements.txt`` file.
 
 ``--sequential``
-    installiert die Abhängigkeit in einer bestimmten Reihenfolge, nicht
-    gleichzeitig.
+    installs the dependency in a specific order, not at the same time.
 
-    Dies verlangsamt zwar die Installation, erhöht jedoch die Determinierbarkeit
-    der Builds.
+    While this slows down the installation, it increases the determinability of
+    the builds.
 
 ``sdist`` vs. ``wheel``
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Pip kann sowohl Pakete als :term:`Source Distribution (sdist)` oder
-:term:`Wheel` installieren. Wenn beide auf PyPI vorhanden sind, wird pip ein
-kompatibles :term:`Wheel` bevorzugen.
+Pip can install packages as :term:`Source Distribution (sdist)` or :term:`Wheel`
+If both are present on PyPI, pip will prefer a compatible :term:`Wheel`.
 
 .. note::
-   Abhängigkeiten von Wheels werden jedoch nicht erfasst von ``$ pipenv lock``.
+   However, dependencies on wheels are not covered by ``$ pipenv lock``.
 
 Requirement specifier
 ~~~~~~~~~~~~~~~~~~~~~
 
-Dabei konkretisieren `Requirement specifier <https://www.python.org/dev/peps/pep-0508/>`_
-das jeweilige Paket.
+`Requirement specifier <https://www.python.org/dev/peps/pep-0508/>`_ specify the
+respective package.
 
-* Die aktuelleste Version kann installiert werden, z.B.:
+* The latest version can be installed, for example:
 
   .. code-block:: console
 
     $ pipenv install requests
 
-* Eine spezifische Version kann installiert werden, z.B.:
+* A specific version can be installed, for example:
 
   .. code-block:: console
 
     $ pipenv install requests==2.18.4
 
-* Soll die Version in einem bestimmten Versionsbereich liegen, kann dies
-  ebenfalls angegeben werden:
+* If the version has to be in a specific version range, this can also be
+  specified:
 
   .. code-block:: console
 
     $ pipenv install requests>=2,<3
 
-* Auch eine kompatible Version lässt sich installieren:
+* A compatible version can also be installed:
 
   .. code-block:: console
 
     $ pipenv install requests~=2.18
 
-  Dies ist kompatibel mit ``==2.18.*``.
+ This is compatible with ``==2.18.*``.
 
-* Für einige Pakete können auch Installationsoptionen mit `Extras
+* For some packages, installation options  `Extras
   <https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-extras-optional-features-with-their-own-dependencies>`_
-  mit eckigen Klammern angegeben werden:
+  can also be specified with square brackets:
 
   .. code-block:: console
 
     $ pipenv install requests[security]
 
-* Es kann auch angegeben werden, dass bestimmte Pakete nur auf bestimmten
-  Systemen installiert werden, so wird bei folgendem ``Pipfile`` das Modul
-  ``pywinusb`` nur auf Windows-Systemen installiert:
+* It can also be specified that certain packages are only installed on certain
+  systems, so for the following ``Pipfile`` the module ``pywinusb`` is only
+  installed on Windows systems.
 
   .. code-block:: ini
 
     [packages]
     pywinusb = {version = "*", sys_platform = "== 'win32'"}
 
-  Ein komplexeres Beispiel unterscheidet, welche Modul-Versionen mit welchen
-  Python-Versionen installiert werden soll:
+  A more complex example differentiates which module versions should be
+  installed with which Python versions:
 
   .. code-block:: ini
 
@@ -325,20 +316,19 @@ das jeweilige Paket.
 VCS
 ~~~
 
-Ihr könnt auch Python-Pakete aus Versionsverwaltungen installieren, z.B.:
+You can also install Python packages from version control, for example:
 
 .. code-block:: console
 
     $ pipenv install -e git+https://github.com/requests/requests.git#egg=requests
 
 .. note::
-   Wenn ``editable=false``, werden Unterabhängigkeiten nicht aufgelöst.
+   If ``editable=false``, sub-dependencies are not resolved.
 
-Weitere Informationen zu pipenv und VCS erhaltet ihr in `Pipfile spec
+Further information on pipenv and VCS can be found in `Pipfile spec
 <https://github.com/pypa/pipfile>`_.
 
-Auch die Credentials der Versionsverwaltung lassen sich im Pipfile angeben,
-z.B.:
+The version management credentials can also be specified in the pipfile, e.g.
 
 .. code-block:: ini
 
@@ -348,61 +338,58 @@ z.B.:
     name = "cusy-pypi"
 
 .. note::
-   ``pipenv`` hasht das ``Pipfile``, bevor die Umgebungsvariablen ermittelt
-   werden, und auch in ``Pipfile.lock`` werden die Umgebungsvariablen
-   geschrieben, sodass keine Credentials in der Versionsverwaltung gespeichert
-   werden müssen.
+   ``pipenv`` hashes ``Pipfile`` before the environment variables are determine,
+   and the environment variables are also written to ``Pipfile.lock``, so that
+   no credentials need to be stored in the version control.
 
 ``lock``
 --------
 
-``pipenv lock`` generiert die Datei ``Pipfile.lock``, die alle Abhängigkeiten
-und Unterabhängigkeiten eures Projekts aufführt inklusive der neuesten
-verfügbaren Versionen und der aktuellen Hashwerte für die heruntergeladenen
-Dateien. Dies stellt wiederholbare und vor allem deterministische Builds sicher.
+``pipenv lock`` generates the file ``Pipfile.lock`` that lists all the
+dependencies and sub-dependencies of your project including the latest available
+versions and the current hash values for the downloaded files. This ensures
+repeatable and, above all, deterministic builds.
 
 .. note::
-   Um den Determinismus zu erhöhen, kann neben den Hashwerten auch die
-   Installationsreihenfolge gewährleistet werden. Hierfür gibt es das
-   ``--sequential``-Flag.
+   In order to increase the determinism, the installation sequence can also be
+   guaranteed in addition to the hash values. The  ``--sequential`` flag is used
+   for this.
 
-Security Features
+Security features
 ~~~~~~~~~~~~~~~~~
 
-``pipfile.lock`` nutzt einige Sicherheitsverbesserungen von ``pip``. So werden
-standardmäßig sha256-Hashes jedes heruntergeladenen Pakets generiert.
+``pipfile.lock`` uses some security enhancements from ``pip``: by default,
+sha256 hashes are generated for each downloaded package.
 
-Wir empfehlen dringend, ``lock`` zum Deployment von Entwicklungsumgebungen in
-die Produktion zu verwenden. Hierbei verwendet ihr ``pipenv lock`` zum
-Kompilieren eurer Abhängigkeiten in der Entwicklungsumgebung und anschließend
-könnt ihr die kompilierte ``Pipfile.lock``-Datei in der Produktionsumgebung
-für reproduzierbare Builds zu verwenden.
-
+We strongly recommend ``lock`` using to deploy development environments to
+production. In the development environment you use ``pipenv lock`` to compile
+your dependencies and then you can use the compiled file ``Pipfile.lock`` in the
+production environment for reproducible builds.
 
 ``open``
 --------
 
-``pipenv open MODULE`` zeigt ein bestimmtes Modul in eurem Editor an.
+``pipenv open MODULE`` shows a specific module in your editor.
 
-Falls ihr `PyCharm <https://www.jetbrains.com/pycharm/>`_ verwendet, müsst ihr
-``pipenv`` für euer Python-Projekt konfigurieren. Wie dies geht, ist in
+If you use ´PyCharm <https://www.jetbrains.com/pycharm/>`_, you have to
+configure ``pipenv`` for your Python project. How to do this is described in
 `Configuring Pipenv Environment
-<https://www.jetbrains.com/help/pycharm/pipenv.html>`_ beschrieben.
+<https://www.jetbrains.com/help/pycharm/pipenv.html>`_.
 
 ``run``
 -------
 
-``pipenv run`` spawnt einen Befehl, der im virtual environment installiert ist,
-z.B.:
+``pipenv run`` spawns a command that is installed in the virtual environment,
+for example:
 
     $ pipenv run python main.py
 
 ``shell``
 ---------
 
-``pipenv shell`` spawnt eine Shell, im virtual environment. Damit erhaltet ihr
-einen Python-Interpreter, der alle Python-Pakete enthält und sich somit
-hervorragend z.B. zum Debugging und Testen eignet:
+``pipenv shell`` spawns a shell in the virtual environment. This gives you a
+Python interpreter that contains all Python packages and is therefore ideal for
+debugging and testing, for example:
 
 .. code-block:: console
 
@@ -414,38 +401,37 @@ hervorragend z.B. zum Debugging und Testen eignet:
     >>>
 
 .. note::
-   Shells sind meist nicht so konfiguriert, dass eine Subshell verwendet werden
-   kann. Dies kann dazu führen, dass ``pipenv shell --fancy`` zu unerwarteten
-   Ergebnissen führt. In diesen Fällen sollte ``pipenv shell`` verwendet
-   werden, da diese einen Kompatibilitätsmodus verwendet.
+   Shells are usually not configured so that a subshell can be used. This can
+   lead to unexpected results. In these cases ``pipenv shell`` should be used
+   instead of ``pipenv shell --fancy`` as this uses a compatibility mode.
 
 ``sync``
 --------
 
-``pipenv sync`` installiert alle in ``Pipfile.lock`` angegebenen Pakete.
+``pipenv sync`` installs all packages specified in ``Pipfile.lock``.
 
 ``uninstall``
 -------------
 
-``pipenv uninstall`` deinstalliert alle bereitgestellten Pakete und entfernt sie
-aus dem ``Pipfile``. ``uninstall`` unterstützt alle Parameter von `install
-<#install>`_ und darüberhinaus die folgenden beiden Optionen:
+``pipenv uninstall`` uninstalls all provided packages and removes them from the
+``Pipfile``. ``uninstall`` supports all parameters of `install <#install>`_ plus
+the following two options:
 
 ``--all``
-    löscht alle Dateien aus der virtuellen Umgebung, lässt aber ``Pipfile``
-    unberührt.
+    deletes all files from the virtual environment, but leaves the ``Pipfile``
+    untouched.
 ``--all-dev``
-    entfernt alle Entwicklungspakete aus der virtuellen Umgebung und entfernt
-    sie aus ``Pipfile``.
+    removes all development packages from the virtual environment and removes
+    them from the ``Pipfile``.
 
 ``update``
 ----------
 
-``pipenv update`` führt zunächst ``pipenv lock`` aus, dann ``pipenv sync``.
+``pipenv update`` runs first ``pipenv lock``, then ``pipenv sync``.
 
-``pipenv update`` hat u.a. folgende Optionen:
+``pipenv update`` has the following options:
 
 ``--clear``
-    löscht den *Dependency Cache*.
+    clears the *dependency cache*.
 ``--outdated``
-    listet veraltete Abhängigkeiten auf.
+    lists obsolete dependencies.

@@ -1,12 +1,12 @@
-Konfiguration
+Configuration
 =============
 
-Für die Konfiguration wird beim Starten des IPython-Hub für Client und Engine jeweils eine
-Konfigurationsdatei angelegt, üblicherweise in
+For the configuration, a configuration file is created for the client and engine
+when the IPython hub is started, usually in
 ``~/.ipython/profile_default/security/``.
 
-#. Falls wir nicht das ``default``-Profil verwenden wollen, sollten wir zunächst ein neues
-   IPython-Profil erstellen mit:
+#. If we don’t want to use the ``default`` profile, we should first create a new
+   IPython profile with:
 
 .. code-block:: console
 
@@ -18,15 +18,16 @@ Konfigurationsdatei angelegt, üblicherweise in
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcluster_config.py
 
 ``--parallel``
-    schließt die Konfigurationsdateien für *Parallel Computing* (``ipengine``, ``ipcontroller`` etc.) ein.
+    includes the configuration files for *Parallel Computing* (``ipengine``, ``ipcontroller`` etc.).
 
-#. Beim Starten des IPython-Controller und der -Engines werden die Dateien ``ipcontroller-engine.json`` und
-   ``ipcontroller-client.json`` dann in ``~/.ipython/profile_default/security/`` erzeugt.
+#. When the IPython controller and the engines are started, the files
+   ``ipcontroller-engine.json`` and ``ipcontroller-client.json`` are generated
+   in ``~/.ipython/profile_default/security/``.
 
-``ipcluster`` in ``mpiexec``/``mpirun``-Modus
----------------------------------------------
+``ipcluster`` in ``mpiexec``/``mpirun`` mode
+--------------------------------------------
 
-#. Erstellen des Profils:
+#. Creating the profile::
 
    .. code-block:: console
 
@@ -37,15 +38,15 @@ Konfigurationsdatei angelegt, üblicherweise in
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipengine_config.py'
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipcluster_config.py'
 
-#. Editieren von ``ipcluster_config.py``:
+#. Editing of ``ipcluster_config.py``:
 
-   #. Damit die MPI-Launcher verwendet werden:
+   #. so that the MPI launcher can be used:
 
    .. code-block:: python
 
         c.IPClusterEngines.engine_launcher_class = 'MPIEngineSetLauncher'
 
-#. Anschließend kann der Cluster gestartet werden mit:
+#. The cluster can then be started with:
 
    .. code-block:: console
 

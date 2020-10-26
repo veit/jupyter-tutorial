@@ -1,63 +1,61 @@
-Notebook erstellen
-==================
+Create notebook
+===============
 
-Nachdem der Notebook-Server gestartet wurde, können wir unser erstes Notebook
-erstellen.
+After the notebook server has started, we can create our first notebook.
 
-Erstellen eines Notebooks
--------------------------
+Create a notebook
+-----------------
 
-In eurem Standard-Browser solltet ihr das Notebook-Dashboard mit dem Menü *New*
-auf der rechten Seite sehen. In diesem Menü werden alle Notebook-Kernel
-aufgeführt, initial jedoch vermutlich nur *Python 3*.
+In your standard browser you should see the notebook dashboard with the *New*
+menu on the right. All notebook kernels are listed in this menu, but initially
+probably only *Python 3*.
 
-Nachdem ihr :menuselection:`New --> Python 3` ausgewählt habt, wird ein neues
-Notebook ``Untitled.ipynb`` erstellt und in einem neuen Reiter angezeigt:
+After you have selected :menuselection:`New --> Python 3`, a new notebook
+ ``Untitled.ipynb`` will be created and displayed in a new tab:
 
 .. image:: initial-notebook.png
 
-Umbenennen des Notebooks
-------------------------
+Renaming the notebook
+---------------------
 
-Als nächstes solltet Ihr dieses Notebook umbenennen indem ihr auf den Titel
-*Untitled* klickt:
+Next you should rename this notebook by clicking on the title *Untitled*:
 
 .. image:: rename-notebook.png
 
-Die Notebook-Oberfläche
------------------------
+The notebook user interface
+---------------------------
 
-Es gibt zwei wichtige Begriffe, um Jupyter Notebooks zu beschreiben: *Zelle* und
-*Kernel*:
+There are two important terms used to describe Jupyter Notebooks: *cell* and
+*kernel*:
 
 .. glossary::
 
-   *Notebook-Kernel*
-       *Rechenmaschine*, die den in einem Notebook enthaltenen Code ausführt.
+   *Notebook kernel*
+       *Computational engine*  that executes the code contained in a notebook.
 
-   *Notebook-Zelle*
-       Container für Text, der in einem Notebook angezeigt werden soll oder für
-       Code, der vom Kernel des Notebooks ausgeführt werden soll.
+   *Notebook cell*
+       Container for text to be displayed in a notebook or for code to be
+       executed by the notebook’s kernel.
 
        *Code*
-           enthält Code, der im Kernel ausgeführt werden soll und dessen Ausgabe
-           unterhalb angezeigt wird.
+           contains code to be executed in the kernel, and the output which is
+           shown below.
        *Markdown*
-           enthält mit `Markdown
-           <https://daringfireball.net/projects/markdown/syntax>`_ formatierten
-           Text, der interpretiert wird sobald :menuselection:`Run` gedrückt wird.
+           contains text formatted with `Markdown
+           <https://daringfireball.net/projects/markdown/syntax>`_, which is
+           interpreted as soon as :menuselection:`Run` is pressed.
 
-.. _was-ist-eine-ipynb-datei:
+.. _whats-an-ipynb-file:
 
-Was ist eine ``ipynb``-Datei?
-------------------------------
+What’s an ``ipynb`` file?
+-------------------------
 
-Diese Datei beschreibt ein Notebook im `JSON
-<https://de.wikipedia.org/wiki/JavaScript_Object_Notation>`_-Format. Jede Zelle
-und ihr Inhalt einschließlich Bildern werden dort zusammen mit einigen Metadaten
-aufgelistet. Ihr könnt euch diese anschauen wenn ihr im Dashboard das Notebook
-auswählt und dann auf :menuselection:`edit` klickt. So sieht z.B. die JSON-Datei
-für `my-first-notebook.ipynb <my-first-notebook.ipynb>`_ folgendermaßen aus:
+This file describes a notebook in `JSON <https://en.wikipedia.org/wiki/JSON>`_
+format. Each cell and its contents including pictures are listed there along
+with some metadata. You can have a look at them if you select the notebook in
+the dashboard and then click on :menuselection:`edit`. E.g. the JSON file for
+`my-first-notebook.ipynb <my-first-notebook.ipynb <my-first-notebook.ipynb>`_
+looks like this:
 
 .. code-block:: json
 
@@ -111,35 +109,30 @@ für `my-first-notebook.ipynb <my-first-notebook.ipynb>`_ folgendermaßen aus:
      "nbformat_minor": 2
     }
 
-Speichern und Checkpoints
--------------------------
+Save and checkpoints
+--------------------
 
-Beim Klick auf :menuselection:`Save and Checkpoint` wird eure ``ipynb``-Datei
-gespeichert. Aber was hat es mit dem *Checkpoint* auf sich?
+When you click on :menuselection:`Save and Checkpoint`, your ``ipynb`` file will
+be saved. But what is the checkpoint all about?
 
-Jedesmal, wenn ihr ein neues Notebook anlegt, wird auch eine Datei angelegt,
-die üblicherweise alle 120 Sekunden automatisch eure Änderungen speichert.
-Dieser Checkpoint findet sich üblicherweise in einem versteckten Verzeichnis
-namens ``.ipynb_checkpoints/``. Diese Checkpoint-Datei ermöglicht euch daher,
-eure nicht gespeicherten Daten im Falle eines unerwarteten Problems
-wiederherzustellen. Ihr könnt in :menuselection:`File --> Revert to Checkpoint`
-zu einer der letzten Checkpoints zurückgehen.
+Every time you create a new notebook, a file is also created, which usually
+automatically saves your changes every 120 seconds. This checkpoint is usually
+located in a hidden directory called ``.ipynb_checkpoints/``. This checkpoint
+file therefore enables you to restore your unsaved data in the event of an
+unexpected problem. You can go back to one of the last checkpoints in
+:menuselection:`File --> Revert to Checkpoint`.
 
-Tipps & Tricks
---------------
+Tips and tricks
+---------------
 
-#. Gebt dem Notebook einen Titel (``# My title``) und ein aussagekräftiges
-   Vorwort um den Inhalt und Zweck des Notebooks zu beschreiben.
-#. Erstellt Überschriften und Dokumentationen in Markdown-Zellen um euer
-   Notebook zu strukturieren und eure Workflow-Schritte zu erläutern. Dabei ist
-   vollkommen egal, ob ihr das für eure Kollegen oder für euer zukünftig selbst
-   macht.
-#. Verwendet *Table of Contents (2)* aus der
-   :doc:`/workspace/jupyter/nbextensions/list`, um ein Inhaltsverzeichnis
-   zu erstellen.
-#. Verwendet die Notebook-Erweiterung :ref:`setup
+#. Give the notebook a title (``# My title``) and a meaningful foreword to
+   describe the content and purpose of the notebook.
+#. Create headings and documentation in Markdown cells to structure your
+   notebook and explain your workflow steps. It doesn’t matter whether you do
+   this for your colleagues or for yourself in the future.
+#. Use *Table of Contents (2)* from the
+   :doc:`/workspace/jupyter/nbextensions/list` to create a table of contents.
+#. Use the notebook extension :ref:`setup
    </workspace/jupyter/nbextensions/setup.ipynb>`.
-#. Verwendet *Snippets* aus der
-   :doc:`/workspace/jupyter/nbextensions/list`, um weitere, häufig
-   benötigte Code-Blöcke, z.B. typische Importanweisungen, bequem einfügen zu
-   können.
+#. Use snippets from the list of extensions to add more frequently used code
+   blocks, e.g. typical import instructions, easy to insert.

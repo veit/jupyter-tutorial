@@ -1,12 +1,12 @@
-CookieCutter-Features
+CookieCutter features
 =====================
 
-* Cross-platform: Windows, Mac und Linux werden unterstützt
-* Funktioniert mit Python 3.6, 3.7, 3.8 und PyPy3
-* Die Projektvorlagen können für jede Programmiersprache und jedes
-  Markup-Format erstellt werden: Python, JavaScript, Ruby, ReST, CSS, HTML.
-  Es können auch mehrere Sprachen im selben Template verwendet werden.
-* Templates lassen sich einfach im Terminal anpassen:
+* Cross-platform: Windows, Mac and Linux are supported
+* works with Python 3.6, 3.7, 3.8 and PyPy3
+* The project templates can be created for any programming language and any
+  markup format: Python, JavaScript, Ruby, ReST, CSS, HTML. Several languages
+  can also be used in the same template.
+* Templates can be easily adapted in the terminal:
 
   .. code-block:: console
 
@@ -14,13 +14,13 @@ CookieCutter-Features
     full_name [Veit Schiele]:
     …
 
-* Ihr könnt auch lokale Templates verwenden:
+* You can also use local templates:
 
   .. code-block:: console
 
     $ cookiecutter cookiecutter-namespace-template
 
-* Alternativ könnt ihr CookieCutter auch mit Python verwenden:
+* Alternatively you can also use CookieCutter with Python:
 
   .. code-block:: console
 
@@ -30,16 +30,16 @@ CookieCutter-Features
     full_name [Veit Schiele]:
     …
 
-* Verzeichnis- und Dateinamen können Vorlagen zugewiesen werden, z.B.:
+* Directory and file names can be assigned to templates, for example:
 
   .. code-block:: jinja
 
     {{cookiecutter.project_name}}/{{cookiecutter.namespace}}/{{cookiecutter.package_name}}/{{cookiecutter.project_slug}}.py
 
-* Die Verschachtelungstiefe ist unbegrenzt
-* Das Templating basiert auf `Jinja2 <http://jinja.pocoo.org/>`_
-* Ihr könnt eure Template-Variablen einfach in einer ``cookiecutter.json``-Datei
-  speichern, beispielsweise:
+* The nesting depth is unlimited
+* The templating is based on `Jinja2 <http://jinja.pocoo.org/>`_
+* You can simply save your template variables in a ``cookiecutter.json`` file,
+  for example:
 
   .. code-block:: json
 
@@ -60,8 +60,7 @@ CookieCutter-Features
       "license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
     }
 
-* Ihr könnt die Werte auch für mehrere Vorlagen hinterlegen in
-  ``~/cookiecutterrc``:
+* You can also save the values for several templates in ``~/cookiecutterrc``:
 
   .. code-block:: bash
 
@@ -71,9 +70,9 @@ CookieCutter-Features
         github_username: "veit"
     cookiecutters_dir: "~/.cookiecutters/"
 
-* CookieCutter-Templates, die aus einem Repository geladen wurden, werden
-  üblicherweise in ``~/.cookiecutters/`` gespeichert. Anschließend können sie
-  direkt über ihren Verzeichnisnamen referenziert werden, also z.B. mit:
+* CookieCutter templates loaded from a repository are usually stored in
+  ``~/.cookiecutters/``. Then they can be referenced directly via their
+  directory name, e.g. with:
 
   .. code-block:: console
 

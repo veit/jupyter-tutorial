@@ -1,28 +1,28 @@
-===========================
-Git flow und seine Probleme
-===========================
+=========================
+Git flow and its problems
+=========================
 
 .. image:: git-flow.png
 
-Git Flow war einer der ersten Vorschläge zur Verwendung von Git-Branches. Es
-empfahl einen ``master``-Branch und einen separaten ``develop``-Branch sowie
-diverse weitere Branches für Features, Releases und Hotfixes. Die verschiedenen
-Entwicklungen sollten im ``develop``-Branch zusammengeführt werden, anschließend
-in den ``release``-Branch überführt werden und schließlich im ``master``-Branch
-landen. So ist Git Flow zwar ein wohldefinierter, aber komplexer Standard, der
-praktisch die folgenden beiden Probleme hat:
+Git Flow was one of the earliest suggestions for using Git branches. It
+recommended a ``master`` branch and a separate ``develop`` branch as well as
+various other branches for features, releases and hotfixes. The various
+developments should be brought together in the ``develop`` branch, then
+transferred to the ``release`` branch and finally end up in the ``master``
+branch. Git Flow is a well-defined, but complex standard that practically has
+the following two problems:
 
-* Die meisten Entwickler und Werkzeuge gehen von der Annahme aus, dass der
-  ``master``-Branch der Hauptzweig ist von dem aus ``branch`` und ``merge``
-  ausgeführt wird. Bei Git Flow entsteht nun zusätzlicher Aufwand da immer
-  zunächst in den ``develop``-Branch gewechselt werden muss.
-* Auch die ``hotfixes``- und ``release``-Branches bringen eine zusätzliche
-  Komplexität, die nur in den seltensten Fällen Vorteile bringen dürfte.
+* Most developers and tools make the assumption that the ``master`` branch is
+  the main branch from which they run ``branch`` and ``merge``. With Git Flow,
+  there is now additional effort because you always have to switch to the
+  ``develop`` branch first.
+* The ``hotfixes`` and ``release`` branches also bring additional complexity,
+  which is only likely to bring advantages in the rarest of cases.
 
-Als Reaktion auf die Probleme von Git Flow entwickelten `GitHub
-<https://guides.github.com/introduction/flow/>`_ und `Atlassian
-<https://de.atlassian.com/git/tutorials/comparing-workflows>`_ einfachere
-Alternativen, die sich meist auf sog. :doc:`feature-branches` beschränken.
+In response to the problems of Git Flow, `GitHub
+<https://guides.github.com/introduction/flow/>`_ and `Atlassian
+<https://de.atlassian.com/git/tutorials/comparing-workflows>`_ developed simpler
+alternatives that are mostly limited to so-called :doc:`feature-branches`.
 
 .. seealso::
    `Vincent Driessen: A successful Git branching model

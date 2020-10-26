@@ -1,18 +1,17 @@
 Hypothesis
 ==========
 
-`Hypothesis <https://hypothesis.readthedocs.io/>`_ ist eine Bibliothek, mit der
-ihr Tests schreiben könnt, die anhand einer Quelle von Beispielen
-parametrisiert werden. Anschließend werden einfache und nachvollziehbare
-Beispiele generiert, anhand derer eure Tests fehlschlagen können und ihr mit
-geringen Aufwänden Fehler finden könnt.
+`Hypothesis <https://hypothesis.readthedocs.io/>`_ is a library that allows you
+to write tests that are parameterised from a source of examples. Then simple and
+comprehensible examples are generated, which can be used to fail your tests and
+to find errors with little effort.
 
-Beispiel
---------
+Example
+-------
 
-Zum Testen von Listen mit Fließkommazahlen werden viele Beispiele ausprobiert,
-jedoch im Report nur ein einfaches Beispiel für jeden Bug (eindeutiger
-*exception type* und Position) angegeben:
+To test lists with floating point numbers, many examples are tried, but only a
+simple example is given in the report for each bug (unique exception type and
+position):
 
 .. code-block:: python
 
@@ -53,9 +52,9 @@ jedoch im Report nur ein einfaches Beispiel für jeden Bug (eindeutiger
     Falsifying example: test_mean(ls=[8.988465674311579e+307, 8.98846567431158e+307])
     =========================== 1 failed in 0.11 seconds ===========================
 
-In unserem Beispiel haben wir :doc:`pytest <pytest:index>` den Test finden und
-ausführen lassen. Wir hätten jedoch auch explizit einen
-:class:`python:unittest.TestCase` definieren können:
+In our example we let  :doc:`pytest <pytest:index>` find the test and run it.
+However, we could also have :defined class:`python:unittest.TestCase`
+explicitly:
 
 .. code-block:: python
 
@@ -79,17 +78,16 @@ Installation
 
     $ pipenv install hypothesis
 
-Alternativ kann Hypothesis auch mit `Erweiterungen
-<https://hypothesis.readthedocs.io/en/latest/extras.html>`_ installiert werden,
-z.B.:
+Alternatively, Hypothesis can also be installed with `extras
+<https://hypothesis.readthedocs.io/en/latest/extras.html>`_, e.g.
 
 .. code-block:: console
 
     $ pipenv install hypothesis[numpy,pandas]
 
 .. note::
-   Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
-   unter :doc:`/first-steps/install`.
+   If you haven’t installed pipenv yet, you can find instructions on how to do
+   this in :doc:`/first-steps/install`.
 
 .. seealso::
    `Hypothesis for the Scientific Stack

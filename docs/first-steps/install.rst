@@ -1,17 +1,16 @@
-Jupyter Notebook installieren
-=============================
+Install Jupyter Notebook
+========================
 
 .. _pipenv-installieren:
 
-Pipenv installieren
--------------------
+Install Pipenv
+--------------
 
-:term:`pipenv` ist ein Abhängigkeitsmanager für Python-Projekte. Er nutzt
-:term:`Pip` zum Installieren von Python-Paketen, er vereinfacht jedoch die
-Verwaltung von Abhängigkeiten. Pip kann zum Installieren von Pipenv verwendet
-werden, es sollte jedoch das ``--user``-Flag verwendet werden, damit es nur
-für diesen Nutzer bereitsteht. Dadurch soll verhindert werden, dass
-versehentlich systemweite Pakete überschrieben werden:
+:term:`pipenv` is a dependency manager for Python projects. It uses Pip to
+install Python packages, but it simplifies dependency management. Pip can be
+used to install Pipenv, but the ``--user`` flag should be used so that it is
+only available to that user. This is to prevent system-wide packets from
+being accidentally overwritten:
 
 .. code-block:: console
 
@@ -25,46 +24,45 @@ versehentlich systemweite Pakete überschrieben werden:
 
 .. note::
 
-   Wenn Pipenv nach der Installation nicht in der Shell verfügbar ist, muss
-   ggf. das ``USER_BASE/bin``-Verzeichnis in ``PATH`` angegeben werden.
+   If Pipenv is not available in the shell after installation, the
+   ``USER_BASE/bin`` directory may have to be specified in ``PATH``.
 
-   * Unter Linux und MacOS lässt sich ``USER_BASE`` ermitteln mit:
+   Under Linux and MacOS, ``USER_BASE`` can be determined with:
 
-     .. code-block:: console
+   .. code-block:: console
 
         $ python3 -m site --user-base
         /home/veit/.local
 
-     Anschließend muss noch das ``bin``-Verzeichnis angehängt und zu ``PATH``
-     hinzugefügt werden. Alternativ kann ``PATH`` dauerhaft gesetzt werden, indem
-     ``~/.profile`` oder ``~/.bash_profile`` geändert werden, in meinem Fall also:
+   Then the ``bin`` directory has to be appended and added to the ``PATH``.
+   Alternatively, ``PATH`` can be set permanently by changing ``~/.profile`` or
+   ``~/.bash_profile``, in my case:
 
-     .. code-block:: bash
+   .. code-block:: bash
 
         export PATH=/home/veit/.local/bin:$PATH
 
-   * Unter Windows kann das Verzeichnis ermittelt werden mit
-     ``py -m site --user-site`` und anschließend ``site-packages`` durch
-     ``Scripts`` ersetzt werden. Dies ergibt dann z.B.:
+   * Under Windows, the directory can be determined with
+     ``py -m site --user-site`` and then ``site-packages`` can be replaced by
+    `` Scripts``. This then results in, for example:
 
-     .. code-block:: console
+    .. code-block:: console
 
         C:\Users\veit\AppData\Roaming\Python36\Scripts
 
-     Um dauerhaft zur Verfügung zu stehen, kann dieser Pfad unter ``PATH``
-     im Control Panel eingetragen werden.
+     In order to be permanently available, this path can be entered under
+     ``PATH`` in the control panel.
 
-Weitere Informationen zur nutzerspezifischen Installation findet ihr in `User
+Further information on user-specific installation can be found in `User
 Installs <https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_.
 
-Virtuelle Umgebung mit ``jupyter`` erstellen
---------------------------------------------
+Create a virtual environment with ``jupyter``
+---------------------------------------------
 
-:term:`Virtuelle Python-Umgebungen <Virtuelle Umgebung>` ermöglichen die
-Installation von Python-Paketen an einem isolierten Ort für eine bestimmte
-Anwendung, anstatt sie global zu installieren. Ihr habt also eure eigenen
-Installationsverzeichnisse und teilt keine Bibliotheken mit anderen
-virtuellen Umgebungen:
+`Python virtual environments <virtual environment>` allow Python packages to be
+installed in an isolated location for a specific application, rather than
+installing them globally. So you have your own installation directories and do
+not share libraries with other virtual environments:
 
 .. code-block:: console
 
@@ -79,8 +77,8 @@ virtuellen Umgebungen:
     Installing jupyter...
     ...
 
-``jupyter notebook`` starten
-----------------------------
+Start ``jupyter notebook``
+--------------------------
 
 .. code-block:: console
 
@@ -96,11 +94,11 @@ virtuellen Umgebungen:
         Or copy and paste one of these URLs:
             http://localhost:8888/?token=53abd45a3002329de77f66886e4ca02539d664c2f5e6072e
 
-Daraufhin wird euer Standard-Webbrowser mit dieser URL geöffnet.
+Your standard web browser will then open with this URL.
 
-Wenn das Notebook in eurem Browser geöffnet wird, wird das Notebook-Dashboard
-mit einer Liste der Notebooks, Dateien und Unterverzeichnisse in dem Verzeichnis
-angezeigt, in dem der Notebook-Server gestartet wurde. In den meisten Fällen möchtet
-ihr einen Notebook-Server in eurem Projektverzeichnis starten.
+When the notebook opens in your browser, the notebook dashboard is displayed
+with a list of the notebooks, files and subdirectories in the directory in which
+the notebook server was started. In most cases you want to start a notebook
+server in your project directory.
 
 .. image:: initial-jupyter-dashboard.png

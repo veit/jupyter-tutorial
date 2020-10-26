@@ -2,10 +2,10 @@
 =============
 
 `nbconvert <https://nbconvert.readthedocs.io/>`_
-    konvertiert Notebooks in andere Formate
+    converts notebooks to other formats
 
 .. seealso::
-    :doc:`/first-steps/install`: ``nbconvert`` ist Teil des Jupyter-Ökosystems.
+    :doc:`/first-steps/install`: ``nbconvert`` is part of the Jupyter ecosystem.
 
 Installation
 ------------
@@ -15,81 +15,78 @@ Installation
     $ pipenv install nbconvert
 
 .. important::
-    Um alle Funktionen von ``nbconvert`` nutzen zu können, sind Pandoc und TeX
-    (insbesondere XeLaTeX) erforderlich. Diese müssen separat installiert
-    werden.
+    To be able to use all functions of ``nbconvert``, Pandoc and TeX
+    (especially XeLaTeX) are required. These must be installed separately.
 
-Pandoc installieren
-~~~~~~~~~~~~~~~~~~~
+Install Pandoc
+~~~~~~~~~~~~~~
 
-``nbconvert`` verwendet `Pandoc <http://pandoc.org/>`_ um Markdown in andere
-Formate als HTML zu konvertieren.
+``nbconvert`` uses `Pandoc <http://pandoc.org/>`_  to convert Markdown to
+formats other than HTML.
 
-* für Ubuntu und Debian:
+* for Ubuntu and Debian:
 
   .. code-block:: console
 
     $ sudo apt install pandoc
 
-* für Mac OSX:
+* for Mac OSX:
 
   .. code-block:: console
 
     $ brew install pandoc
 
-Tex installieren
-~~~~~~~~~~~~~~~~
+Install Tex
+~~~~~~~~~~~
 
-Für die Konvertierung in PDF verwendet ``nbconvert`` das Tex-Ökosystem zur
-Vorbereitung: Es wird eine ``.tex``-Datei erstellt, die von der XeTeX-Engine
-in ein PDF konvertiert wird.
+For the conversion to PDF, ``nbconvert`` uses the Tex ecosystem in preparation:
+A ``.tex`` file is created, which is converted into a PDF by the XeTeX engine.
 
-* für Ubuntu und Debian:
+* for Ubuntu and Debian:
 
   .. code-block:: console
 
     $ sudo apt install texlive-xetex
 
-* für Mac OSX:
+* for Mac OSX:
 
   `MacTeX <http://tug.org/mactex/>`_
 
-Verwenden auf der Kommandozeile
--------------------------------
+Use on the command line
+-----------------------
 
 .. code-block:: console
 
     $ jupyter nbconvert --to FORMAT mynotebook.ipynb
 
 ``latex``
-    erzeugt eine Datei ``NOTEBOOK_NAME.tex`` und ggf. Bilder als PNG-Dateien in
-    einem Ordner. Mit ``--template`` kann zwischen einem von zwei Vorlagen
-    ausgewählt werden:
+    creates a ``NOTEBOOK_NAME.tex`` file and possibly images as PNG files in a
+    folder. With ``--template`` you can choose between one of two templates:
 
     ``--template article``
-        Standard
+        default
 
-        Latex-Artikel, abgeleitet aus dem How-To von Sphinx
+        Latex article, derived from the Sphinx how-to
 
     ``--template report``
         Latex-Bericht mit Inhaltsverzeichnis und Kapiteln
 
 ``pdf``
-    erzeugt ein PDF über Latex. Unterstützt die gleichen Vorlagen wie ``latex``.
+    creates a PDF over latex. Supports the same templates as ``latex``.
 
  ``slides``
-    erstellt `Reveal.js <https://revealjs.com/>`_-Slides.
+    creates `Reveal.js <https://revealjs.com/>`_ slides.
 
 ``script``
-    konvertiert das Notebook in ein ausführbares Skript. Dies ist der einfachste
-    Weg, ein Python-Skript oder ein Skript in einer anderen Sprache zu erzeugen.
+    kconverts the notebook into an executable script. This is the easiest way to
+    create a Python script or a script in another language.
 
     .. note::
-        Enthält ein Notebook *Magics*, so können dies möglicherweise nur in einer
-        Jupyter-Session ausgeführt werden.
+        If a notebook contains *Magics*, then this can possibly only be carried
+        out in one Jupyter session.
 
-    Wir können z.B. `docs/ipython/mypackage/foo.ipynb
-    <../ipython/mypackage/foo.ipynb>`_ in ein Python-Skript verwandeln mit:
+    We can e.g. vonvert `docs/ipython/mypackage/foo.ipynb
+    <../ipython/mypackage/foo.ipynb>`_ into a Python script with:
 
     .. code-block:: console
 
@@ -97,7 +94,7 @@ Verwenden auf der Kommandozeile
         [NbConvertApp] Converting notebook docs/basics/ipython/mypackage/foo.ipynb to script
         [NbConvertApp] Writing 245 bytes to docs/basics/ipython/mypackage/foo.py
 
-    Das Ergebnis ist dann ``foo.py`` mit:
+    The result is then ``foo.py`` with:
 
     .. code-block:: python
 
@@ -120,31 +117,31 @@ Verwenden auf der Kommandozeile
             return __name__
 
 .. note::
-    Um eine Zuordnung von Notebook-Cells zu Slides festzulegen, solltet ihr
-    in :menuselection:`View --> Cell Toolbar --> Slideshow` auswählen.
-    Daraufhin wird in jeder Zelle oben rechts ein Menü angezeigt mit den
-    Optionen: :menuselection:`Slide, Sub-Slide, Fragment, Skip, Notes`.
+    In order to assign notebook cells to slides, you should select
+    :menuselection:`View --> Cell Toolbar --> Slideshow`. Then a menu is
+    displayed in each cell at the top right with the options:
+    :menuselection:`Slide, Sub-Slide, Fragment, Skip, Notes`.
 
 .. note::
-    Für Vortragsnotizen ist eine lokale Kopie von ``reveal.js``
-    erforderlich. Damit ``nbconvert`` diese findet, kann folgende Option
-    angegeben werden: ``--reveal-prefix /path/to/reveal.js``.
+    Lecture notes require a local copy of ``reveal.js``. The following option
+    can be specified so that ``nbconvert`` can find this: ``--reveal-prefix
+    /path/to/reveal.js``.
 
-Weitere Angaben für ``FORMAT`` sind ``asciidoc``, ``custom``, ``html``,
-``markdown``, ``notebook``, und ``rst``.
+Further details for ``FORMAT`` are ``asciidoc``, ``custom``, ``html``,
+``markdown``, ``notebook``, and ``rst``.
 
 nb2xls
 ------
 
-`nb2xls <https://github.com/ideonate/nb2xls>`_ konvertiert Jupyter-Notebooks
-in Excel-Dateien (``.xlsx``) unter Berücksichtigung von pandas DataFrames und
-Matplotlib-Ausgaben. Die Eingabezellen werden jedoch nicht konvertiert und
-Markdown nur zum Teil.
+`nb2xls <https://github.com/ideonate/nb2xls>`_ converts Jupyter notebooks into
+Excel files (``.xlsx``) taking into account pandas DataFrames and Matplotlib
+outputs. However, the input cells are not converted and only part of the
+Markdown is converted.
 
-Eigene Exporter
----------------
+Own exporters
+-------------
 
 .. seealso::
     `Customizing exporters
     <https://nbconvert.readthedocs.io/en/latest/external_exporters.html>`_
-    erlaubt euch, eigene Exporter zu schreiben.
+    allows you to write your own exporters.

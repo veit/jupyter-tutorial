@@ -1,9 +1,9 @@
-Autorenschaft
-=============
+Authorship
+==========
 
-Bedauerlicherweise gibt es keine anerkannten Richtlinien für die Urheberschaft
-von Software. Neben der Rolle *programmers* können auch andere Rollen wie z.B.
-*software architects*, *technical writers* und *maintainers* definiert werden.
+Unfortunately, there are no recognized guidelines for software authorship. In
+addition to the *programmers* role, other roles such as *software architects*,
+*technical writers* and *maintainers* can also be defined.
 
 .. seealso::
    * `ICMJE: Defining the Role of Authors and Contributors

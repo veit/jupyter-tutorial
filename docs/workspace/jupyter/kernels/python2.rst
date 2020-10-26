@@ -2,8 +2,8 @@ Python2
 =======
 
 .. note::
-    IPython 6.0 hat die Unterstützung für Python 2 eingestellt. Wenn ihr also
-    IPython für Python 2 installieren wollt, verwendet eine ältere Version:
+    IPython 6.0 has ended support for Python 2. So if you want to install
+    IPython for Python 2, use an older version:
 
     .. code-block:: console
 

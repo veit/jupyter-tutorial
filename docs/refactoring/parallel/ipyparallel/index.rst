@@ -1,13 +1,9 @@
 ``ipyparallel``
 ===============
 
-Dieser Abschnitt gibt einen Überblick über `ipyparallel
-<https://ipyparallel.readthedocs.io/>`_, das verschiedene Arten von
-Parallelisierung unterstützt, u.a.:
-
-- Single Program, Multiple Data (SPMD)
-- Multiple program, multiple data (MPMD)
-- Message Passing Interface (MPI)
+This section provides an overview of `ipyparallel
+<https://ipyparallel.readthedocs.io/>` which supports different types of
+parallelisation, including:
 
 .. toctree::
     :hidden:

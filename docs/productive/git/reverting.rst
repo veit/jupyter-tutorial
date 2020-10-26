@@ -1,30 +1,30 @@
-Änderungen zurücknehmen
-=======================
+Undo changes
+============
 
 ``$ git reset [--hard] [target reference]``
-   wechselt vom aktuellen Zweig zur Zielreferenz und hinterlässt den Unterschied
-   als nicht festgeschriebene Änderung, z.B.:
+   switches from the current branch to the target reference and leaves the
+   difference as an uncommitted change, e.g.
 
    .. code-block:: console
 
         $ git reset HEAD setup.py
 
-   ``--hard`` verwirft alle Änderungen.
+   ``--hard`` discards all changes.
 
 ``$ git revert [commit sha]``
-    erstellt einen neuen Commit und nimmt die Änderungen des angegebenen Commits
-    zurück. Die Änderungen werden invertiert.
+    creates a new commit and undoes the changes to the specified commit. The
+    changes are inverted.
 ``$ git fetch [remote]``
-    übernimmt die Änderungen von Remote, aktualisiert jedoch nicht die Zweige.
+    accepts changes from remote but does not update branches.
 ``$ git fetch --prune [remote]``
-    Remote-Refs werden entfernt wenn sie im Remote-Repository entfernt wurden.
+    Remote refs are removed when they are removed from the remote repository.
 ``$ git pull [remote]``
-    ruft Änderungen aus dem Remote-Repository ab und führt den aktuellen Zweig
-    mit dem Upstream zusammen.
+    pulls changes from the remote repository and merges the current branch with
+    the upstream.
 ``$ git push [--tags] [remote]``
-    überträgt lokale Änderungen nach Remote.
+    transfers local changes to remote.
 
-    Mit ``--tags`` können gleichzeitig Tags übertragen werden.
+    With ``--tags`` tags can be transmitted at the same time.
 ``$ git push -u [remote] [branch]``
-    überträgt den lokalen Zweig in das Remote-Repository wobei die Kopie als
-    Upstream festgelegt wird.
+    transfers the local branch to the remote repository with the copy set as
+    upstream.

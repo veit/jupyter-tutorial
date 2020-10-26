@@ -1,8 +1,8 @@
 ``isort``
 =========
 
-`isort <https://github.com/timothycrosley/isort>`_ formatiert eure
-``import``-Anweisungen in getrennte und sortierte Blöcke.
+`isort <https://github.com/timothycrosley/isort>`_ formats your ``import``
+statements in separate and sorted blocks.
 
 Installation
 ------------
@@ -11,10 +11,10 @@ Installation
 
     $ pipenv install isort
 
-Konfiguration
+Configuration
 -------------
 
-``isort`` lässt sich z.B. in der ``pyproject.toml``-Datei konfigurieren:
+``isort`` can be configured e.g. in the ``pyproject.toml`` file:
 
 .. code-block:: ini
 
@@ -31,14 +31,14 @@ Konfiguration
     known_first_party="jupyter-tutorial"
     known_third_party=["mpi4py", "numpy", "requests"]
 
-Um Pakete von Drittanbietern gegenüber Euren Projektimporten zu erkennen, könnt
-ihr entweder Euer Projekt zusammen mit ``isort`` installieren oder
-`seed-isort-config <https://github.com/asottile/seed-isort-config>`_ verwenden.
+In order to recognise third-party packages for your project imports, you can
+either install your project together with ``isort`` or use `seed-isort-config
+<https://github.com/asottile/seed-isort-config>`_.
 
 .. note::
-    Mit isort 5 könnt Ihr Profile verwenden. Dies erleichtert die Konfiguration
-    von isort, um auch zukünftig mit :doc:`black` zusammenzuspielen:
-    
+    With isort 5 you can use profiles. This simplifies the configuration of
+    isort in order to continue to play with :doc:`black` in the future:
+
     .. code-block:: ini
 
         isort --profile black .

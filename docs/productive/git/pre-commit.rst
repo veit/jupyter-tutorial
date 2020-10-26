@@ -1,53 +1,49 @@
-Git pre-commit Hooks
+Git pre-commit hooks
 ====================
 
-`pre-commit <http://pre-commit.com/>`_ ist ein Framework zum Verwalten und
-Pflegen mehrsprachiger pre-commit-Hooks.
+`pre-commit <http://pre-commit.com/>`_ is a framework for managing and
+maintaining multilingual pre-commit hooks.
 
-Eine wesentliche Aufgabe ist es, dem gesamten Entwicklungsteam dieselben Skripte
-zur Verfügung zu stellen. `pre-commit <http://pre-commit.com/>`_ von yelp
-verwaltet solche pre-commit-Hooks und verteilt sie auf verschiedene Projekte und
-Entwickler.
+An essential task is to make the same scripts available to the entire
+development team. Yelp’s `pre-commit <http://pre-commit.com/>`_ manages such
+pre-commit hooks and distributes them to various projects and developers.
 
-Git pre-commit Hooks werden meist verwendet um vor Code Reviews automatisch auf
-Probleme im Code hinzuweisen, z.B. um die Formattierung zu überprüfen oder
-Debug-Anweisungen zu finden. Pre-Commit vereinfacht das projektübergreifende
-Teilen vom Pre-Commit-Hooks. Dabei ist auch die Sprache, in der z.B. ein Linter
-geschrieben wurde, wegabstrahiert – so ist ``scss-lint`` in Ruby geschrieben,
-Ihr könnt ihn jedoch mit Pre-Commit verwenden ohne Eurem Projekt ein Gemfile
-hinzufügen zu müssen.
+Git pre-commit hooks are mostly used to automatically point out problems in the
+code before code reviews, e.g. to check the formatting or to find debug
+instructions. Pre-commit simplifies the cross-project sharing of the pre-commit
+hook. The language in which a linter was written, for example, is also
+abstracted away – ``scss-lint`` is written in Ruby, but you can use it with
+pre-commit without having to add a gem file to your project.
 
 Installation
 ------------
 
-Bevor Ihr Hooks ausführen könnt, muss der pre-commit-Paketmanager installiert
-sein.
+Before you can hook the pre-commit package manager must be installed.
 
-… auf macOS:
+… on macOS:
 
 .. code-block:: console
 
     $ brew install pre-commit
 
-… in Eurem Python-Projekt:
+… in your Python project:
 
 .. code-block:: console
 
     $ pipenv install pre-commit
 
-Überprüfen der Installation z.B. mit
+Check the installation with, for example
 
 .. code-block:: console
 
     $ pipenv run pre-commit -V
     pre-commit 2.6.0
 
-Konfiguration
+Configuration
 -------------
 
-Nachdem Pre-Commit installiert ist, können mit der ``.pre-commit-
-config.yaml``-Datei im Root-Verzeichnis Eures Projekts Plugins für dieses
-Projekt konfiguriert werden.
+After pre-commit has been installed, plugins for this project can be configured
+with the ``.pre-commit-config.yaml`` file in the root directory of your project.
 
 .. code-block:: yaml
 
@@ -63,7 +59,7 @@ Projekt konfiguriert werden.
         hooks:
         -   id: black
 
-Ihr könnt Euch diese Datei auch generieren lassen mit
+You can also have this file generated with
 
 .. code-block:: console
 
@@ -79,15 +75,13 @@ Ihr könnt Euch diese Datei auch generieren lassen mit
         -   id: check-yaml
         -   id: check-added-large-files
 
-Wenn Ihr diesen pre-commit-Hook vor jedem commit ausführen möchtet, installiert
-diesen mit ``pre-commit install``. Sollen die Hooks manuell ausgeführt werden,
-kann dies mit ``pre-commit run --all-files`` geschehen. Einzelne Hooks können
-dann auch separat ausgeführt werden, z.B. ``pre-commit run
-trailing-whitespace``.
+If you want to run this pre-commit hook before every commit, install it with
+``pre-commit install``. If the hooks are to be executed manually, this can be
+done with ``pre-commit run --all-files``. Single hooks can then also be carried
+out separately, for example ``pre-commit run trailing-whitespace``.
 
-Beim ersten Aufruf eines pre-commit-Hooks wird dieser zunächst heruntergeladen
-und anschließend installiert. Dies kann einige Zeit benötigen, z.B. wenn eine
-Kopie von ``node`` erstellt werden muss.
+The first time a pre-commit hook is called, it is first downloaded and then
+installed. This can take some time, e.g. if a copy of ``node`` has to be made.
 
 .. code-block:: console
 
@@ -98,40 +92,40 @@ Kopie von ``node`` erstellt werden muss.
     Check for added large files..............................................Passed
     black....................................................................Passed
 
-Eine vollständige Liste der Konfigurationsoptionen erhaltet Ihr in `Adding pre-commit
-plugins to your project
+A full list of configuration options can be found in `Adding pre-commit plugins
+to your project
 <https://pre-commit.com/#adding-pre-commit-plugins-to-your-project>`_.
 
-Ihr könnt auch eigene Hooks schreiben, siehe `Creating new hooks
+You can also write your own hooks, see `Creating new hooks
 <https://pre-commit.com/#creating-new-hooks>`_.
 
-Ihr könnt die Hooks auch automatisch aktualisieren mit:
+You can also update the hooks automatically with:
 
 .. code-block:: console
 
     $ pipenv run pre-commit autoupdate
 
-Weitere Optionen findet Ihr unter `pre-commit autoupdate [options]
+Further options can be found in  `pre-commit autoupdate [options]
 <https://pre-commit.com/#pre-commit-autoupdate>`_.
 
-Installieren der Git-Hook-Skripte
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Install the Git-Hook scripts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Damit Pre-Commit auch vor jedem Commit zuverlässig ausgeführt wird, werden die
-Skripte in unserem Projekt installiert:
+The scripts are installed in our project so that pre-commit is reliably executed
+before each commit:
 
 .. code-block:: console
 
     $ pre-commit install
     pre-commit installed at .git/hooks/pre-commit
 
-Verwenden in CI
----------------
+Use in CI
+---------
 
-Pre-Commit kann auch für Continuous Integration verwendet werden.
+Pre-commit can also be used for continuous integration.
 
-Beispiel für GitHub Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example of GitHub Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
 
@@ -146,8 +140,8 @@ Beispiel für GitHub Actions
 
     `pre-commit/action <https://github.com/pre-commit/action>`_
 
-Beispiel für GitLab Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example for GitLab Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
 
@@ -160,6 +154,5 @@ Beispiel für GitLab Actions
 
 .. seealso::
 
-    Weitere Informationen zur Feinabstimmung des Caching findet Ihr in `Good
-    caching practices
+    For more information on fine-tuning caching, see `Good caching practices
     <https://docs.gitlab.com/ee/ci/caching/#good-caching-practices>`_.

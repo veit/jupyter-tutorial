@@ -1,14 +1,14 @@
-XML-Datenbanksysteme
+XML database systems
 ====================
 
-XML-Datenbanken sind in der Lage, XML-Dokumente gegen ein XML-Schema oder eine
-DTD zu validieren. Darüberhinaus unterstützen sie mindestens :term:`XPATH`,
-:term:`XQuery` und :term:`XSLT`.
+XML databases are able to validate XML documents against an XML schema or a DTD.
+In addition, they support at least :term:`XPATH`, :term:`XQuery` and
+:term:`XSLT`.
 
-Datenbanksysteme
+Database systems
 ----------------
 
-Beispiele für XML-Datenbanksysteme sind eXist und MonetDB.
+Examples of XML database systems are eXist and MonetDB.
 
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
 | **Home**               | `eXist`_                                       | `MonetDB`_                                     | `BaseX`_                                       |
@@ -17,24 +17,25 @@ Beispiele für XML-Datenbanksysteme sind eXist und MonetDB.
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
 | **Docs**               | `exist-db.org/exist/apps/doc/documentation`_   | `www.monetdb.org/Documentation`_               | `docs.basex.org`_                              |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Anwendungsgebiete**  | CMS                                            | CMS, Date-Warehouse, Data mining               | CMS                                            |
+| **Application areas**  | CMS                                            | CMS, Date-Warehouse, Data mining               | CMS                                            |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Entwicklungssprache**| Java                                           | C                                              | Java                                           |
+| **Development          | Java                                           | C                                              | Java                                           |
+| language**             |                                                |                                                |                                                |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Lizenzen**           | LGPL-2.1 License                               | Mozilla Public License 2.0                     | BSD-3-Clause License                           |
+| **Licenses**           | LGPL-2.1 License                               | Mozilla Public License 2.0                     | BSD-3-Clause License                           |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Datenmodell**        | XML                                            | XML, Spaltenorientierte Datenstruktur          | XML, `Geo-Daten`_                              |
+| **Data model**         | XML                                            | XML, column-oriented data structure            | XML, `geographic data`_                        |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Query-Langauge**     | :term:`XQuery`, :term:`XPATH`                  | SQL                                            | :term:`XQuery`, :term:`XPATH`                  |
+| **Query langauge**     | :term:`XQuery`, :term:`XPATH`                  | SQL                                            | :term:`XQuery`, :term:`XPATH`                  |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Transaktionen,       |                                                | :term:`Optimistic Concurrency <Locking>`       | :term:`ACID`, XQuery Locks                     |
-| Nebenläufigkeit**      |                                                |                                                |                                                |
+| **Transactions,        |                                                | :term:`Optimistic Concurrency <Locking>`       | :term:`ACID`, XQuery Locks                     |
+| concurrency**          |                                                |                                                |                                                |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Replikation,         | Master-Slave-Replikation                       | Transaktionsreplikation                        |                                                |
-| Skalierung**           |                                                |                                                |                                                |
+| **Replication,         | Master-slave replication                       | Transaction replication                        |                                                |
+| skaling**              |                                                |                                                |                                                |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Anmerkungen**        |                                                | Mit R können Analysen direkt auf Datenbankebene|                                                |
-|                        |                                                | durchgeführt werden.                           |                                                |
+| **Remarks**            |                                                | With R, analyzes can be carried out directly   |                                                |
+|                        |                                                | at the database level.                         |                                                |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
 
 .. _`eXist`: http://exist-db.org/
@@ -46,4 +47,4 @@ Beispiele für XML-Datenbanksysteme sind eXist und MonetDB.
 .. _`exist-db.org/exist/apps/doc/documentation`: https://exist-db.org/exist/apps/doc/documentation
 .. _`www.monetdb.org/Documentation`: https://www.monetdb.org/Documentation
 .. _`docs.basex.org`: https://docs.basex.org/wiki/Main_Page
-.. _`Geo-Daten`: https://docs.basex.org/wiki/Geo_Module
+.. _`geographic data`: https://docs.basex.org/wiki/Geo_Module

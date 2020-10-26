@@ -1,16 +1,15 @@
 ``unittest2``
 =============
 
-`unittest2 <http://pypi.org/project/unittest2>`_ ist ein Backport von
-:mod:`unittest`, mit verbesserter API und besseren *Assertions* als in früheren
-Python-Versionen.
+`unittest2 <http://pypi.org/project/unittest2>`_ is a backport of
+:mod:`unittest`, with improved API and better assertions than in previous Python
+versions.
 
-Beispiel
---------
+Example
+-------
 
-Möglicherweise wollt ihr das Modul unter dem Namen ``unittest`` importieren um
-die Portierung von Code auf neuere Versionen des Moduls in Zukunft zu
-vereinfachen:
+You may want to import the module under the name ``unittest`` to simplify the
+porting of code to newer versions of the module in the future:
 
 .. code-block:: python
 
@@ -19,9 +18,9 @@ vereinfachen:
     class MyTest(unittest.TestCase):
         ...
 
-Auf diese Weise könnt ihr, wenn ihr zu einer neueren Python-Version wechselt und
-das Modul ``unittest2`` nicht mehr benötigt, einfach den Import in eurem
-Testmodul ändern, ohne dass ihr weiteren Code ändern müsst.
+In this way, if you switch to a newer Python version and no longer need the
+module ``unittest2``, you can simply change the import in your test module
+without having to change any further code.
 
 Installation
 ------------
@@ -31,5 +30,5 @@ Installation
     $ pipenv install unittest2
 
 .. note::
-   Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
-   unter :doc:`/first-steps/install`.
+   If you haven’t installed pipenv yet, you can find instructions on how to do
+   this in :doc:`/first-steps/install`.

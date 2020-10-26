@@ -1,31 +1,29 @@
-Dokumentieren
-=============
+Document
+========
 
-Damit Euer Produkt sinnvoll genutzt werden kann, sind Dokumentationen sowohl für
-die Zielgruppen Daten-Wissenschaftler und Daten-Ingenieure als auch für
-System-Ingenieure erforderlich:
+So that your product can be used effectively, documentation is required for the
+target groups of data scientists and data engineers as well as for system
+engineers:
 
-* Daten-Wissenschaftler wollen dokumentiert sehen
+* Data scientists want to see documented
 
-  * welche Probleme Euer Produkt löst und was die Hauptfunktionen und
-    Limitationen der Software sind (``README``)
-  * wie das Produkt beispielhaft verwendet werden kann
-  * welche Veränderungen in aktuelleren Software-Versionen gekommen sind
-    (``CHANGELOG``)
+  * which problems your product solves and what the main functions and
+    limitations of the software are (``README``)
+  * how the product can be used
+  * which changes have come in more recent software versions (``CHANGELOG``)
 
-* Daten-Ingenieure wollen wissen, wie sie mit Fehlerbehebungen zur Verbesserung
-  des Produkts beitragen können (``CONTRIBUTING``) und wie sie mit anderen
-  kommunizieren (``CODE_OF_CONDUCT``) können
-* System-Ingenieure benötigen eine Installationsanleitung für Euer Produkt
-  und der erforderlichen Abhängigkeiten
+* Data engineers want to know how troubleshooting can help improve the product
+  (``CONTRIBUTING``) and how they can communicate with others
+  (``CODE_OF_CONDUCT``)
+* System engineers need installation instructions for your product and the
+  required dependencies
 
-Alle gemeinsam benötigen Informationen, wie das Produkt lizenziert ist
-(``LICENSE``-Datei oder ``LICENSES``-Ordner) und wie sie bei Bedarf Hilfe
-erhalten können.
+Together, they all need information about how the product is licensed
+(``LICENSE`` file or ``LICENSES`` folder and how they can get help if needed.
 
-Um schnell einen Überblick übr ein Produkt zu erhalten, sind sog. Badges
-hilfreich. Für das `cookiecutter-namespace-template
-<https://github.com/veit/cookiecutter-namespace-template>`_ sind dies z.B.:
+Badges are helpful in getting a quick overview of a product. For the
+`cookiecutter-namespace-template
+<https://github.com/veit/cookiecutter-namespace-template>`_ these are, for example:
 
 |Downloads| |Updates| |Versions| |Contributors| |License| |Docs|
 
@@ -42,43 +40,37 @@ hilfreich. Für das `cookiecutter-namespace-template
 .. |Docs| image:: https://readthedocs.org/projects/cookiecutter-namespace-template/badge/?version=latest
    :target: https://cookiecutter-namespace-template.readthedocs.io/en/latest/
 
-Für umfangreiche Dokuemtationen könnt Ihr z.B. `Sphinx
-<http://www.sphinx-doc.org/>`_ verwenden, ein Dokumentationswerkzeug, das
-:doc:`rest`, eine einfache Auszeichnungssprache, in HTML oder auch PDF,
-EPub und Manpages umwandelt. Auch das Jupyter-Tutorial ist mit Sphinx erstellt
-worden. Um einen ersten Eindruck von Sphinx zu erhalten, könnt Ihr Euch den
-Quellcode dieser Seite anschauen indem Ihr am Fuss dieser Seite dem Link
+For extensive documentation you can, for example, use `Sphinx
+<http://www.sphinx-doc.org/>`_, a documentation tool that converts :doc:`rest`,
+a simple markup language, into HTML or PDF, EPub and man pages. The Jupyter
+tutorial was also created with Sphinx. To get a first impression of the Sphinx,
+you can have a look at the source code of this page by following the link
 `Sources <../../_sources/productive/sphinx/index.rst.txt>`_ folgt.
 
-Ursprünglich wurde Sphinx für die Dokumentation von Python entwickelt und wird
-heute auch in fast allen Python-Projekten verwendet, u.a. für `NumPy und SciPy
+Originally, Sphinx was developed for the documentation of Python and is now used
+in almost all Python projects, including `NumPy und SciPy
 <https://docs.scipy.org/doc/>`_, `Matplotlib
 <https://matplotlib.org/users/index.html>`_, `Pandas
-<https://pandas.pydata.org/pandas-docs/>`_ und `SQLAlchemy
+<https://pandas.pydata.org/pandas-docs/>`_ and `SQLAlchemy
 <https://docs.sqlalchemy.org/>`_.
 
-Zur Verbreitung von Sphinx unter den Python-Entwicklern dürfte auch das Sphinx
-`autodoc
-<http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_-Feature
-beigetragen haben, mit dem Dokumentationen aus Python :doc:`docstrings`
-erzeugt werden können. Insgesamt erlaubt Sphinx Entwicklern, *in place* eine
-vollständige Dokumentation erstellen zu können. Häufig wird die Dokumentation
-auch im selben :doc:`Git <../git/index>`-Repository gespeichert, sodass das
-Erstellen der jeweils aktuellen Software-Dokumentation einfach bleibt.
+The Sphinx `autodoc
+<http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_ feature,
+which can be used to create documentation from Python :doc:`docstrings`, may
+also  be conducive to the spread of Sphinx among Python developers. Overall,
+Sphinx allows developers to create complete documentation in place. Often the
+documentation is also stored in the same :doc:`Git <../git/index>` repository,
+so that the creation of the latest software documentation remains easy.
 
-Sphinx wird auch in Projekten außerhalb der Python-Community verwendet, z.B. für
-die Dokumentation des Linux Kernels: `Kernel documentation update
+Sphinx is also used in projects outside the Python community, e.g. for the
+documentation of the Linux kernel: `Kernel documentation update
 <https://lwn.net/Articles/705224/>`_.
 
-Um die Erstellung von Dokumentationen weiter zu vereinfachen, wurde
-`Read the Docs <https://readthedocs.org/>`_ entwickelt. Read the Docs
-vereinfacht das Erstellen und Veröffentlichen von Dokumentation nach jedem
-*Commit*.
+`Read the Docs <https://readthedocs.org/>`_ was developed to forther simplify
+documentation. Read the Docs makes it easy to create and publish documentation
+after each commit.
 
 .. seealso::
-   * `Christina Czeschik und Matthias Lindhorst: Weniger schlecht über IT
-     schreiben
-     <https://www.oreilly.de/buecher/13079/9783960090632-weniger-schlecht-%C3%BCber-it-schreiben.html>`_
    * `Google developer documentation style guide
      <https://developers.google.com/style/>`_
    * `Google Technical Writing Courses for Engineers

@@ -1,37 +1,36 @@
-Dashboard-Layouts erstellen
-===========================
+Create dashboard layouts
+========================
 
-Ihr könnt ein normales Notebook verwenden mit Markdown- und Code-Zellen. Wenn
-ihr die Zellen ausführt, werden Text, Diagramme, Widgets usw. generiert.
-Anschließend könnt ihr in :menuselection:`Dashboard View`
-:menuselection:`Grid Layout` oder :menuselection:`Report Layout` auswählen:
+You can use a normal notebook with markdown and code cells. When you run the
+cells, text, charts, widgets, etc. are generated. Then you can choose in the
+:menuselection:`Dashboard View` either :menuselection:`Grid Layout` or
+:menuselection:`Report Layout`:
 
 .. image:: dashboard-view.png
    :scale: 53%
-   :alt: Optionen für die Dashboard-Ansicht
+   :alt: Dashboard view options
 
-Beim :menuselection:`Grid Layout` könnt ihr die Größe der Zellen im Raster
-ändern und sie verschieben. Ihr könnt auch
-:menuselection:`Cell --> Dashboard` verwenden:
+With the :menuselection:`Grid Layout` you can change the size of the cells in
+the grid and move them. You can also use :menuselection:`Cell --> Dashboard`:
 
 .. image:: dashboard-cell-menu.png
    :scale: 53%
-   :alt: Cell-Menü mit Dashboard-Optionen
+   :alt: Cell menu with dashboard options
 
-Im :menuselection:`Report Layout` könnt ihr Zellen anzeigen oder ausblenden.
+In the :menuselection:`Report Layout` you can show or hide cells.
 
-In beiden Layouts könnt ihr auf :menuselection:`MORE INFO` klicken um
-zusätzliche Informationen angezeigt zu bekommen:
+In both layouts you can click on :menuselection:`MORE INFO` to get additional
+information:
 
 .. image:: dashboard-info.png
    :scale: 53%
-   :alt: Dashboard-Info
+   :alt: Dashboard info
 
-Mit :menuselection:`Dashboard Preview` bekommt ihr eine Vorschau angezeigt, z.B.
-für :doc:`matplotlib-example`:
+With :menuselection:`Dashboard Preview` you get a preview, e.g. for the
+:doc:`matplotlib-example`:
 
 .. image:: dashboard-matplotlib-example.png
    :scale: 53%
-   :alt: Dashboard mit Matplotlib-Beispiel
+   :alt: Dashboard with matplotlib example
 
-:menuselection:`View --> Notebook` bringt euch zurück zum Notebook-Editor.
+:menuselection:`View --> Notebook` brings you back to the notebook editor.

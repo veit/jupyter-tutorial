@@ -1,7 +1,7 @@
-Übersicht
-=========
+Overview
+========
 
-Ein minimales CookieCutter-Template sieht so aus:
+A minimal CookieCutter template looks like this:
 
 .. code-block:: console
 
@@ -10,7 +10,7 @@ Ein minimales CookieCutter-Template sieht so aus:
     │   └── …
     └── cookiecutter.json                 <--- Prompts & default values
 
-Die  ``cookiecutter.json``-Datei kann beispielsweise so aussehen:
+For jsonexample, the file ``cookiecutter.json`` can look like this:
 
 .. code-block:: json
 
@@ -31,9 +31,9 @@ Die  ``cookiecutter.json``-Datei kann beispielsweise so aussehen:
       "license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
     }
 
-Darüberhinaus können beliebige Verzeichnisse und Dateien angelegt werden.
+In addition, any number of directories and files can be created.
 
-Als Ergebnis erhaltet ihr dann folgende Dateistruktur:
+As a result you will get the following file structure:
 
 .. code-block:: console
 

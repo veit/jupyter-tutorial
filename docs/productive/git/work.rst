@@ -1,69 +1,70 @@
-Mit Git arbeiten
+Working with Git
 ================
 
-Die Arbeit an einem Projekt beginnen
-------------------------------------
+Start working on a project
+--------------------------
 
-Ein eigenes Projekt starten
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Start your own project
+~~~~~~~~~~~~~~~~~~~~~~
 
 ``$ git init [my_project]``
-    erstellt ein neues, lokales Git-Repository
+    creates a new, local git repository
 
     ``[my_project]``
-        wenn der Projektname angegeben wird, erzeugt Git ein neues Verzeichnis
-        und initialisiert es
+        if the project name is given, Git creates a new directory and
+        initializes it
 
-        Wird kein Projektname angegeben, wird das aktuelle Verzeichnis
-        initialisiert
+        If no project name is given, the current directory is initialised
 
-An einem Projekt mitarbeiten
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Work on a project
+~~~~~~~~~~~~~~~~~
 
 ``$ git clone [project_url]``
-   lädt ein Projekt mit allen Zweigen (engl.: branches) und der gesamten
-   Historie vom entfernten Repository herunter
+   downloads a project with all branches and the entire history from the remote
+   repository
 
    ``--depth``
-       gibt die Anzahl der Commits an, die heruntergeladen werden sollen
+       indicates the number of commits to be downloaded
 
     ``-b``
-        gibt den Namen des entfernten Zweigs an, der heruntergeladen werden soll
+        specifies the name of the remote branch to be downloaded
 
-An einem Projekt arbeiten
--------------------------
+Work on a project
+-----------------
 
 ``$ git status``
-    zeigt den Status des aktuellen Zweiges im Arbeitsverzeichnisses an mit
-    neuen, geänderten und bereits zum Commit vorgemerkten Dateien.
+    shows the status of the current branch in the working directory with new,
+    changed and files already marked for commit.
 ``$ git add [file]``
-    fügt eine Datei dem Bühnenbereich hinzu.
+    adds a file to the stage area.
 ``$ git add -p [file]``
-    fügt Teile einer Datei dem Bühnenbereich hinzu.
+    adds parts of a file to the stage area.
 ``$ git add -e [file]``
-    die zu übernehmenden Änderungen können im Standardeditor bearbeitet werden.
+    the changes to be adopted can be edited in the standard editor.
 ``$ git diff [file]``
-    zeigt Unterschiede zwischen Arbeits- und Bühnenbereich.
+    shows differences between work and stage areas.
 ``$ git diff --staged [file]``
-    zeigt Unterschiede zwischen Bühnenbereich und Repository an.
+    shows differences between the stage area and the repository.
 ``$ git diff --word-diff``
-    zeigt die geänderten Wörter an.
+    shows the changed words.
 ``$ git checkout -- [file]``
-    unwiderruflich Änderungen im Arbeitsbereich verwerfen.
+    irrevocably discard changes in the work area.
 ``$ git commit -m 'Commit message'``
-    einen neuen Commit mit den hinzugefügten Änderungen machen.
+    make a new commit with the added changes.
 ``git commit --dry-run --short``
-    ``--dry-run`` zeigt, was committet werden würde.
-    ``--short`` zeigt den Status im Kurzformat an.
+    ``--dry-run``
+        shows what would be committed.
+    ``--short``
+        shows the status in short format.
+
 ``$ git reset [file]``
-    zurückkehren zur aktuellen Datei aus dem Bühnenbereich.
+    return to the current file from the stage area.
 ``$ git rm [file]``
-    entfernen einer Datei aus dem Arbeits- und Bühnenbereich.
+    remove a file from the work and stage areas.
 ``$ git stash``
-    verschieben der aktuellen Änderungen aus dem Arbeitsbereich in das Versteck
-    (engl.: stash).
+    move the current changes from the work area to the stash.
 ``$ git stash pop``
-    übernehmen der Änderungen aus dem Versteck in den Arbeitsbereich und leeren
-    des Verstecks.
+    transfer the changes from the hiding place to the work area and empty the
+    hiding place.
 ``$ git stash drop``
-    leeren eines spezifischen Verstecks.
+    emptying a specific stash.

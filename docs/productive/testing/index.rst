@@ -1,26 +1,26 @@
-Testen
-======
+Testing
+=======
 
 .. seealso::
    * `Python Testing and Continuous Integration
      <https://katyhuff.github.io/python-testing/>`_
 
-Konzepte
+Concepts
 --------
 
 .. glossary::
 
     Test Case (Testfall)
-        testet eine einzelnes Szenario.
+        tests a single scenario.
 
     Test Fixture (Prüfvorrichtung)
-        ist eine konsistente Testumgebung.
+        is a consistent test environment.
 
     Test Suite
-        ist eine Sammlung mehrerer Test Cases.
+        is a collection of several test cases.
 
     Test Runner
-        durchläuft eine Test Suite und stellt die Ergebnisse dar.
+        runs through a test suite and presents the results.
 
 Notebooks
 ---------

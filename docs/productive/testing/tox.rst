@@ -1,17 +1,16 @@
 tox
 ===
 
-`tox <https://tox.readthedocs.io/>`_ ist ein Tool zur Automatisierung des
-``virtualenv``-Environment-Management und zum Testen mit mehreren
-Interpreter-Konfigurationen.
+`tox <https://tox.readthedocs.io/>`_ is a tool for automating ``virtualenv``
+environment management and testing with multiple interpreter configurations.
 
-Mit ``tox`` könnt ihr komplexe Multiparameter-Testmatrizen über eine einfache
-Konfigurationsdatei im ``INI``-Stil konfigurieren.
+With ``tox`` you can configure complex multi-parameter test matrices via a
+simple configuration file in the ``INI`` style.
 
-Beispiel
---------
+Example
+-------
 
-Erstellt eine ``tox.ini``-Datei:
+Creates a ``tox.ini`` file:
 
 .. code-block:: ini
 
@@ -23,23 +22,22 @@ Erstellt eine ``tox.ini``-Datei:
     commands =
         pytest
 
-Beim Aufrufen von ``pipenv run tox`` werden dann die folgenden Schritte
-durchlaufen:
+When you call ``pipenv run tox``, the following steps are performed:
 
-#. Optional erstellen eines Python-Package mit
+#. Optionally create a Python package with
 
    .. code-block:: console
 
         $ pipenv run python setup.py sdist
 
-#. Erstellen der in ``envlist`` angegebenen Umgebungen
+#. Create the environments specified in ``envlist``
 
-   In jeder dieser Umgebungen werden dann
+   In each of these environments, then
 
-   #. die Abhängigkeiten und Pakete installiert
-   #. die Befehle aus ``commands`` ausgeführt
+   #. the dependencies and packages are installed
+   #. the commands specified in ``commands`` are executed
 
-#. Erstellen eines Reports mit den Ergebnissen aus jeder der Umgebungen, z.B.:
+#. Create a report with the results from each of the environments, e.g.
 
    .. code-block:: text
 
@@ -55,10 +53,10 @@ Installation
     $ pipenv install tox
 
 .. note::
-   Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
-   unter :doc:`/first-steps/install`.
+   If you haven't installed pipenv yet, you can find instructions on how to do
+   this in unter :doc:`/first-steps/install`.
 
 .. seealso::
 
-   * `Beispiele <https://tox.readthedocs.io/en/latest/examples.html>`_
+   * `Examples <https://tox.readthedocs.io/en/latest/examples.html>`_
    * `Plugins <https://tox.readthedocs.io/en/latest/plugins.html>`_

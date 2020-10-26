@@ -2,29 +2,29 @@
 ============
 
 `nbviewer <https://github.com/jupyter/nbviewer>`_
-    :doc:`nbconvert` als Web-Service: Rendert Jupyter Notebooks als statische
-    Webseiten.
+    :doc:`nbconvert` as web service: Renders Jupyter notebooks as static web
+    pages.
 
 Installation
 ------------
 
-#. Der Notebook Viewer benötigt mehrere Binärpakete, die auf unserem System
-   installiert werden müssen,
+#. The Notebook Viewer requires several binary packages that have to be
+   installed on our system,
 
-   für Ubuntu und Debian:
+   for Ubuntu and Debian:
 
    .. code-block:: console
 
     $ sudo apt install libmemcached-dev libcurl4-openssl-dev pandoc libevent-dev
 
-   für Mac OSX:
+   for Mac OSX:
 
    .. code-block:: console
 
     $ brew install libmemcached openssl pandoc libevent
 
-#. Anschließend kann der Jupyter Notebook Viewer in einem neuen virtuellen
-   Umgebung installiert werden mit:
+#. The Jupyter Notebook Viewer can then be installed in a new virtual
+   environment with:
 
    .. code-block:: console
 
@@ -33,10 +33,10 @@ Installation
     cd nbviewer
 
    .. note::
-        Die Notebook-App gibt bei aktuellen Versionen von `Tornado
-        <https://www.tornadoweb.org/en/stable/>`_ den Fehler ``AttributeError:
-        module 'tornado.gen' has no attribute 'Task'`` aus. Mit ``tornado<6.0``
-        tritt dieser Fehler jedoch nicht auf, s.a. `Delete Terminal Not Working
+        The notebook app outputs the error ``AttributeError: module
+        'tornado.gen' has no attribute 'Task'`` with current versions of
+        `Tornado <https://www.tornadoweb.org/en/stable/>`_. This error does not
+        occur with ``tornado<6.0``, , see also `Delete Terminal Not Working
         with Tornado version 6.0.1
         <https://github.com/jupyter/terminado/issues/62>`_:
 
@@ -44,29 +44,28 @@ Installation
 
             $ pipenv install "tornado<6.0"
 
-   Nun kann dann auch ``nbviewer`` installiert werden:
+   Now ``nbviewer`` can also be installed:
 
    .. code-block:: console
 
     $ pipenv install nbviewer
 
-#. Zum Testen kann der Server gestartet werden mit:
+#. For testing, the server can be started with:
 
    .. code-block:: console
 
     $ pipenv run python -m nbviewer --debug --no-cache
 
-Erweitern des Notebook-Viewers
-------------------------------
+Extending the Notebook Viewer
+-----------------------------
 
-Der Notebook-Viewer lässt sich um Provider erweitern, s.
+The notebook viewer can be extended to include providers, see
 `Extending the Notebook Viewer
 <https://github.com/jupyter/nbviewer#extending-the-notebook-viewer>`_.
 
 
-Zugriffsbeschränkung
---------------------
+Access control
+--------------
 
-Wenn der Viewer als :doc:`hub/nbviewer-service` ausgeführt wird, können nur Benutzer, die
-sich am JupyterHub authentifiziert haben, auf die Notebooks des ``nbviewer``
-zugreifen.
+If the viewer is run as :doc:`hub/nbviewer-service`, only users who have
+authenticated themselves on the JupyterHub can access the nbviewer’s notebooks.

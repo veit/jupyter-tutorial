@@ -1,11 +1,10 @@
 Panel
 =====
 
-`Panel <https://panel.pyviz.org/>`_ wurde auf Basis von `Bokeh
-<https://bokeh.pydata.org/en/latest/>`_ und `Param
-<https://github.com/pyviz/param>`_ entwickelt und bietet ein Toolkit speziell
-zur Erstellung von Apps und Dashboards, das jedoch nicht nur Bokeh-Plots
-unterstützt.
+`Panel <https://panel.pyviz.org/>`_ was developed on the basis of `Bokeh
+<https://bokeh.pydata.org/en/latest/>`_ and `Param
+<https://github.com/pyviz/param>`_ and offers a toolkit especially for creating
+apps and dashboards, which not only supports bokeh plots.
 
 .. seealso::
     * `Panel Announcement <http://blog.pyviz.org/panel_announcement.html>`_

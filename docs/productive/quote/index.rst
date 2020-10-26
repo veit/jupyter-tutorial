@@ -1,45 +1,40 @@
-Zitieren
-========
+Citing
+======
 
-Heute ist Software ein integraler Bestandteil wissenschaftlicher Forschung. Mit
-ihr werden Forschungsdaten erstellt, verarbeitet und analysiert sowie komplexe
-Prozesse modelliert und simuliert. Trotz ihrer zunehmenden Bedeutung in der
-Forschung ist kaum bekannt, wie sie in die wissenschaftlichen Anerkennungs-
-und Reputationssysteme eingebettet werden können.
-Eine wesentliche Möglichkeit in diesen Systemen sind Zitate, wobei jedoch nur
-wenige Forscher*innen wissen, wie Software zitiert werden könnte. James Howison
-und Julia Bullard führten in ihrem 2016 veröffentlichten Artikel `Software in
-the scientific literature <https://doi.org/10.1002/asi.23538>`_ folgende
-Beispiele in absteigender Reputation auf:
+Today software is an integral part of scientific research. It is used to create,
+process and analyse research data and to model and simulate complex processes.
+Despite their increasing importance in research, it’s little known how it can be
+embedded in the scientific recognition and reputation systems. Quotations are an
+essential option in these systems, but few researchers know how software could
+be cited. James Howison and Julia Bullard listed the following examples in
+descending reputations in their 2016 article `Software in the scientific
+literature <https://doi.org/10.1002/asi.23538>`_:
 
-#. zitieren von Veröffentlichungen, die die jeweilige Software beschreiben
-#. zitieren von Bedienungsanleitungen
-#. zitieren der Software-Projekt-Website
-#. Link auf eine Software-Projekt-Website
-#. erwähnen des Software-Namens
+#. citing publications that describe the respective software
+#. citing operating instructions
+#. citing the software project website
+#. link to a software project website
+#. mention the software name
 
-Die Situation bleibt dennoch unbefriedigend für die Autor*innen von Software,
-zumal wenn sie sich von den Autor*innen der Software-Beschreibung unterscheiden.
-Umgekehrt ist Forschungssoftware leider auch nicht immer gut geeignet um zitiert
-zu werden. So werden Kollegen Eure Software kaum direkt zitieren können, wenn Ihr
-ihnen die Software als Anhang von E-Mails schickt. Auch ein Download-Link ist
-hier noch nicht wirklich zielführend. Aber wie können Autor*innen ihre Software
-zitierfähig bereitstellen?
+Nevertheless, the situation remains unsatisfactory for software authors,
+especially if they differ from the authors of the software description.
+Conversely, research software is unfortunately not always well suited to be
+cited. Colleagues will hardly be able to cite your software directly if you send
+them the software as an attachment to an email. Even a download link is not
+really useful here. But how can authors make their software citable?
 
-Die `FORCE11 <https://www.force11.org/group/software-citation-working-group>`_
--Arbeitsgruppe hat ein Paper veröffentlicht, in denen Prinzipien des
-wissenschaftlichen Software-zitierens dargelegt werden: Arfon Smith, Daniel
-Katz, Kyle Niemeyer: `FORCE11 Software Citation Working Group
-<https://doi.org/10.7717/peerj-cs.86>`_, 2016. Dabei kristallisieren sich
-aktuell zwei Projekte für strukturierte Metadaten heraus:
+The `FORCE11 <https://www.force11.org/group/software-citation-working-group>`_
+working group has published a paper in which the principles of scientific
+software citation are presented: `FORCE11 Software Citation Working Group
+<https://doi.org/10.7717/peerj-cs.86>`_ by Arfon Smith, Daniel Katz and Kyle
+Niemeyer 2016. Two projects are currently emerging for structured metadata:
 
 `CodeMeta <https://codemeta.github.io/>`_
-    Austauschschema für allgemeine Software-Metadaten und
-    Referenzimplementierung für JSON for Linking Data (`JSON-LD
-    <https://json-ld.org/>`_).
+    Exchange scheme for general software metadata and reference implementation
+    for JSON for Linking Data (`JSON-LD <https://json-ld.org/>`_).
 
-    Dabei wird eine ``codemeta.json``-Datei im Stammverzeichnis des
-    Software-Repository erwartet. Die Datei kann z.B. so aussehen:
+    A ``codemeta.json`` file is expected in the root directory of the software
+    repository. The file can look like this:
 
     .. code-block:: javascript
 
@@ -66,15 +61,15 @@ aktuell zwei Projekte für strukturierte Metadaten heraus:
           <https://github.com/codemeta/codemeta-generator/>`_
 
 `Citation File Format <https://citation-file-format.github.io/>`_
-    Schema für Software-Citation-Metadaten in maschinenlesbarem `YAML
-    <https://yaml.org/>`_-Format
+    Scheme for software citation metadata in machine-readable `YAML
+    <https://yaml.org/>`_ format
 
-    Dabei sollte eine Datei ``CITATION.cff`` im Stammverzeichnis des
-    Software-Repository abegelgt werden.
+    A file ``CITATION.cff`` should be stored in the root directory of the
+    software repository.
 
-    Der Inhalt der Datei kann z.B. so aussehen:
+    The content of the file can look like this:
 
-    .. code-block:: yaml
+    .. code-block::
 
         # YAML 1.2
         ---
@@ -89,28 +84,26 @@ aktuell zwei Projekte für strukturierte Metadaten heraus:
         doi: 10.5281/zenodo.1234
         date-released: 2017-12-18
 
-    Ihr könnt einfach das obige Beispiel anpassen um Eure eigene
-    ``CITATION.cff``-Datei zu erzeugen oder die Website `cffinit
+    You can easily adapt the example above to create your own ``CITATION.cff``
+    file or use the `cffinit
     <https://citation-file-format.github.io/cff-initializer-javascript/>`_
-    verwenden.
+    website.
 
-    Es gibt auch einige Tools zum Verarbeiten von ``CITATION.cff``-Dateien:
+    There are also some tools for processing ``CITATION.cff`` files:
 
     * `cff-converter-python
       <https://github.com/citation-file-format/cff-converter-python>`_
-      konvertiert ``CITATION.cff``-Dateien in BibTeX, RIS, CodeMeta- und
-      andere Dateiformate
-    * `doi2cff <https://github.com/citation-file-format/doi2cff>`_ erstellt
-      eine ``CITATION.cff``-Datei aus einem Zenodo DOI
+      converts ``CITATION.cff`` files to BibTeX, RIS, CodeMeta and other file
+      formats
+    * `doi2cff <https://github.com/citation-file-format/doi2cff>`_ creates a
+      ``CITATION.cff`` file from a Zenodo DOI
 
-Ihr solltet einen `Persistent Identifier (PID)
-<https://de.wikipedia.org/wiki/Persistent_Identifier>`_ bereitstellen um die
-langfristige Verfügbarkeit Eurer Software sicherzustellen. Sowohl das `Zenodo
-<https://zenodo.org/>`_- als auch das `figshare
-<https://figshare.com/>`_-Repository akzeptieren Quellcode einschließlich
-Binärdateien und stellen DOIs hierfür breit. Und auch mit `CiteAs
-<https://citeas.org/>`_ lassen sich Zitierinformationen für Software
-abrufen.
+You should provide a `Persistent Identifier (PID)
+<https://en.wikipedia.org/wiki/Persistent_identifier>`_ to ensure the long-term
+availability of your software. Both the `Zenodo <https://zenodo.org/>`_ and
+`figshare <https://figshare.com/>`_ repositories accept source code including
+binary files and provide DOIs for this. And citation information for software
+can also be called up with `CiteAs <https://citeas.org/>`_.
 
 .. seealso::
    * `Should I cite? <https://mr-c.github.io/shouldacite/index.html>`_

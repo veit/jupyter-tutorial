@@ -1,8 +1,8 @@
-Parametrisierung
+Parameterisation
 ================
 
-In der nächsten Phase unseres Beispiels parametrisieren wir die Verarbeitung
-und erstellen hierfür die Datei ``params.yaml`` mit folgendem Inhalt:
+In the next phase of our example, we parameterise the processing and create the
+file ``params.yaml`` with the following content:
 
 .. code-block:: yaml
 
@@ -11,20 +11,20 @@ und erstellen hierfür die Datei ``params.yaml`` mit folgendem Inhalt:
       lo: 1
       hi: 2
 
-Damit die Parameter gelesen werden, wird dem ``dvc run``-Befehl noch ``-p
-<filename>:<params_list>`` hinzugefügt, also in unserem Beispiel:
+To read the parameters, the option ``-p <filename>:<params_list>`` must be added
+to the ommand ``dvc run``, in our example:
 
 .. code-block:: console
 
-    $ dvc run -n featurize -d src/featurization.py -d data/splitted \
+    $ dvc run -n featurise -d src/featurisation.py -d data/splitted \
         -p params.yaml:max_features,ngram_range.lo,ngram_range.hi -o data/features \
-        python src/featurization.py data/splitted data/features
+        python src/featurisation.py data/splitted data/features
 
-Dies ergänzt die ``dvc.yaml``-Datei um:
+This adds to the ``dvc.yaml`` file:
 
 .. code-block:: yaml
 
-    featurize:
+    featurise:
       cmd: python src/featurization.py data/splitted data/features
       deps:
       - data/splitted
@@ -36,17 +36,17 @@ Dies ergänzt die ``dvc.yaml``-Datei um:
       outs:
       - data/features
 
-Damit diese Phase wiederholt werden kann, werden die hd5-Hashwerte und
-Parameterwerte in der ``dvc.lock``-Datei gespeichert:
+So that this phase can be repeated, the hd5 hash values and parameter values are
+stored in the file ``dvc.lock``:
 
 .. code-block:: yaml
 
-    featurize:
-      cmd: python src/featurization.py data/splitted data/features
+    featurise:
+      cmd: python src/featurisation.py data/splitted data/features
       deps:
       - path: data/splitted
         md5: 1ce9051bf386e57c03fe779d476d93e7.dir
-      - path: src/featurization.py
+      - path: src/featurisation.py
         md5: a56570e715e39134adb4fdc779296373
       params:
         params.yaml:
@@ -54,8 +54,8 @@ Parameterwerte in der ``dvc.lock``-Datei gespeichert:
           ngram_range.hi: 2
           ngram_range.lo: 1
 
-Schließlich müssen noch ``dvc.lock``, ``dvc.yaml`` und ``data/.gitignore`` im
-Git-Repository aktualisiert werden:
+Finally ``dvc.lock``, ``dvc.yaml`` and ``data/.gitignore`` in the Git repository
+need to be updated:
 
 .. code-block:: console
 

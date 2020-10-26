@@ -1,11 +1,11 @@
-Git Best Practices
+Git best practices
 ==================
 
-- Macht früh Commits!
+- Commit early!
 
-  Macht Euren ersten Commit nachdem ihr die initiale Installation
-  fertiggestellt habt und noch bevor ihr erste Änderungen vornehmt. Für ein
-  Cookiecutter-Template z.B. nach den folgenden Schritten:
+  Make your first commit after you’ve finished the initial installation and
+  before you make your first changes. For a cookiecutter template, for example,
+  following the following steps:
 
   .. code-block:: console
 
@@ -16,23 +16,22 @@ Git Best Practices
     project_name [cusy.example]:
     …
 
-  Falls in eurem Projekt noch keine ``.gitignore``-Datei vorhanden ist, solltet
-  ihr diese anlegen und zumindest ``.ipynb_checkpoints`` und
-  ``*/.ipynb_checkpoints/*`` ausschließen::
+  If no ``.gitignore`` file is present in your project, you should create one
+  and at least -exclude ``.ipynb_checkpoints`` and ``*/.ipynb_checkpoints/*``.
 
-  Falls ihr versehentlich schon entsprechende Dateien in euer Git-Repository
-  eingecheckt habt, könnt ihr diese wieder entfernen mit:
+
+  If you have accidentally checked the corresponding files into your Git
+  repository, you can remove them again with:
 
   .. code-block:: console
 
     $ git rm -r .ipynb_checkpoints/
 
-  Eine Übersicht über weitere ``.gitignore``-Einträge
-  erhaltet ihr entweder im Repository `dotfiles
-  <https://github.com/veit/dotfiles>`_ oder auf der Website `gitignore.io
-  <https://gitignore.io/>`_.
+  You can get an overview of other ``.gitignore`` entries either in the
+  `dotfiles <https://github.com/veit/dotfiles>`_ repository or on the
+  `gitignore.io  <https://gitignore.io/>`_ website.
 
-  Anschließend können diese initialen Änderungen eingecheckt werden mit:
+  These initial changes can then be checked in with:
 
   .. code-block:: console
 
@@ -44,120 +43,117 @@ Git Best Practices
     $ git remote add origin ssh://git@github.com:veit/cusy.example.git
     $ git push -u origin master
 
-  Auch eine ``README.rst``-Datei sollte in jedem Repository vorhanden sein, in
-  der das Deployment und der grundsätzliche Aufbau des Codes beschrieben wird.
+  Each repository should also have a ``README.rst`` file that describes the
+  deployment and the basic structure of the code.
 
-- Macht oft Commits!
+- Commit often!
 
-  Dies erleichtert euch:
+  This makes it easier for you
 
-  - die Eingrenzung von Fehlern
-  - das Verständnis für den Code
-  - die zukünftige Wartung und Pflege.
+  - to isolate errors
+  - to understand the code
+  - to maintain the code in the future
 
-  Falls ihr doch einmal mehrere Änderungen an einer Datei durchgeführt habt,
-  könnt ihr diese auch später noch in mehrere Commits aufteilen mit:
+  If you have made several changes to a file, you can split them up into several
+  commits later with:
 
   .. code-block:: console
 
     $ git add -p my-changed-file.py
 
-- Ändert nicht die veröffentlichte Historie!
+- Don’t change the published history!
 
-  Auch wenn ihr zu einem späteren Zeitpunkt herausfindet, dass ein Commit, der
-  mit ``git push`` bereits veröffentlicht wurde, einen oder mehrere Fehler
-  enthält, so solltet ihr dennoch niemals versuchen, diesen Commit ungeschehen zu
-  machen. Vielmehr solltest Du durch weitere Commits den oder die aufgetretenen
-  Fehler zu beheben.
+  Even if you later find out that a commit that has already been published with
+  ``git push`` contains one or more errors, you should never try to undo this
+  commit. Rather, you should fix the error that have occurred through further
+  commits.
 
-- Wählt einen Git-Workflow!
 
-  Wählt einen Workflow, der am besten zu Eurem Projekt passt. Projekte sind
-  keineswegs identisch und ein Workflow, der zu einem Projekt passt, muss
-  nicht zwingend auch in einem anderen Projekt passen. Auch kann sich initial
-  ein anderer Workflow empfehlen als im weiteren Fortschritt des Projekts.
+- Choose a Git workflow!
 
-- Macht sinnvolle Commits!
+  Choose a workflow that fits best to your project. Projects are by no means
+  identical and a workflow that fits one project does not necessarily have to
+  fit in another project. A different workflow can be recommended initially than
+  in the further progress of the project.
 
-  Mit dem Erstellen aufschlussreicher und beschreibender Commit-Nachrichten
-  erleichtert ihr die Arbeit im Team ungemein. Sie ermöglichen anderen, eure
-  Änderungen zu verstehen. Auch sind sie zu einem späteren Zeitpunkt hilfreich
-  um nachvollziehen zu können, welches Ziel mit dem Code erreicht werden
-  sollte.
+- Make meaningful commits!
 
-  Üblicherweise sollten kurze, 50–72 Zeichen lange Nachrichten angegeben
-  werden, die in einer Zeile ausgegeben werden, z.B. mit
-  ``git log --oneline``.
+  By creating insightful and descriptive commit messages, you make working in a
+  team a lot easier. They allow others to understand your changes. They are also
+  helpful at a later point in time to understand which goal should be achieved
+  with the code.
 
-  Mit ``git blame`` könnt ihr euch auch später noch für jede Zeile angeben
-  lassen, in welcher Revision und von welchem Autor sie kam. Weitere
-  Informationen hierzu findet ihr in der Git-Dokumentation: `git-blame
-  <https://git-scm.com/docs/git-blame>`_.
+  Usually short messages, 50–72 characters long, should be specified and
+  displayed on one line, eg with ``git log --oneline``.
 
-  GitLab interpretiert bestimmte Commit-Nachrichten auch als Links interpretieren, z.B.:
+  With ``git blame`` you can later specify for each line in which revision and
+  by which author the change was made. You can find more information on this in
+  the Git documentation: `git-blame <https://git-scm.com/docs/git-blame>`_.
+
+  GitLab also interprets certain commit messages as links, e.g.
 
   .. code-block:: console
 
     $ git commit -m "Awesome commit message (Fixes #21 and Closes group/otherproject#22)"
 
-  * zu Issues: ``#123``
+  * links to issues: ``#123``
 
-    * auch in anderen Projekten: ``othergroup/otherproject#123``
+    * also for issues in other projects:: ``othergroup/otherproject#123``
 
-  * zu Merge Requests: ``!123``
-  * zu Snippets: ``$123``
+  * links to merge requests: ``!123``
+  * links to snippets: ``$123``
 
-  Dabei sollte es zu jedem Commit mindestens ein Ticket geben, das
-  ausführlichere Hinweise zu den Änderungen geben sollte.
+  There should be at least one ticket for each commit that should provide more
+  detailed information about the changes.
 
-  Weitere gute Hinweise findet ihr in `A Note About Git Commit Messages
+  You can find more good information in `A Note About Git Commit Messages
   <https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>`_.
 
-- Wartet euer Repository regelmäßig!
+- Maintain your repository regularly!
 
-  Folgende Wartungsarbeiten solltet ihr regelmäßig durchführen:
+  You should perform the following maintenance work regularly:
 
-  - Validiert das Repo mit ``git fsck``.
-  - Komprimiert das Repo mit ``git gc`` bzw. ``git gc --aggressive``.
+  - Validate the repo with ``git fsck``.
+  - Compresses the repo with  ``git gc`` or ``git gc --aggressive``.
 
     .. seealso::
         * `git gc <https://git-scm.com/docs/git-gc>`_
         * `Git Interna - Wartung und Datenwiederherstellung
           <https://git-scm.com/book/de/v2/Git-Interna-Wartung-und-Datenwiederherstellung>`_
 
-  - Bereinigt die Remote Tracking Branches mit ``git remote update --prune``.
-  - Überprüft vergessene Arbeiten mit ``git stash list``.
+  - Clean up the remote tracking branches with ``git remote update --prune``.
+  - Checks forgotten work with ``git stash list``.
 
-- Überprüft Eure Repositories regelmäßig auf unerwänschte Dateien!
+- Check your repositories regularly for unwanted files!
 
-  Mit `Gitleaks <https://github.com/zricethezav/gitleaks>`_ könnt Ihr Eure
-  Repositories regelmäßig auf ungewollt gespeicherte Zugangsdaten überprüfen.
+  With `Gitleaks <https://github.com/zricethezav/gitleaks>`_ you can regularly
+  check your repositories for unintentionally saved access data.
 
-  Und mit `Git Filter-Branch <https://git-scm.com/docs/git-filter-branch>`_,
-  `BFG Repo-Cleaner <https://rtyley.github.io/bfg-repo-cleaner/>`_ oder
-  `git-filter-repo <https://github.com/newren/git-filter-repo>`_ könnt Ihr
-  unerwünschte Dateien, seien es Zugangsdaten oder große Binärdateien aus Eurer
-  Git-Historie entfernen.
+  With `Git Filter-Branch <https://git-scm.com/docs/git-filter-branch>`_,
+  `BFG Repo-Cleaner <https://rtyley.github.io/bfg-repo-cleaner/>`_ or
+  `git-filter-repo <https://github.com/newren/git-filter-repo>`_ you can remove
+  unwanted files, be it access data or large binary files, from your Git
+  history.
 
-  Alternativ könnt Ihr auch auf der Kommandozeile die Daten löschen.
+  Alternatively, you can also delete the data on the command line.
 
-  – Löschen des letzten Commits
+  – Delete the last commit
 
     .. code-block:: console
 
         $ git reset HEAD^ --hard
         $ git push origin -f
 
-  – Löschen anderer Commits
+  – Delete other commits
 
     .. code-block:: console
 
         $ git rebase -i sha origin
 
     ``-i``
-        interaktiver Modus, in dem Euer Standardeditor geöffnet wird und eine
-        Liste aller Commits nach dem zu entfernenden Commit mit dem Hash-Wert
-        ``sha`` angezeigt wird, z.B.:
+        Interactive mode, in which your standard editor is opened and a list of
+        all commits after the commit with the hash value  ``sha`` to be removed
+        is displayed, e.g.
 
         .. code-block:: console
 
@@ -165,24 +161,21 @@ Git Best Practices
             pick 410266e Change import for the interface
             …
 
-        Wenn ihr nun eine Zeile entfernt, so wird dieser Commit nach dem
-        Speichern und Schließen des Editors gelöscht. Anschließend kann das
-        entfernte Repository aktualisiert werden mit:
+        If you now remove a line, this commit will be deleted after saving and
+        closing the editor. Then the remote repository can be updated with:
 
         .. code-block:: console
 
-            $ git push origin HEAD:master -f
+          $ git push origin HEAD:master -f
 
-  – Ändern einer Commit-Nachricht
+  – Modifying a commit message
 
-    Dies lässt sich ebenfalls einfach mit ``rebase`` realisieren wobei Ihr in
-    Ihrem Editor nicht die Zeile löschen sondern in der Zeile ``pick`` durch
-    ``r`` (*reword*) ersetzen müsst.
+    This can also be easily with ``rebase``  by not deleting the line in your
+    editor but replace ``pick`` with  ``r`` (*reword*).
 
-  – Entfernen einer Datei aus der Historie
+  – Remove a file from the history
 
-    Eine Datei kann vollständig aus Git-Historie des aktuellen Branches entfernt
-    werden mit:
+    A file can be completely removed from the current branch’s Git history with:
 
     .. code-block:: console
 
@@ -195,7 +188,7 @@ Git Best Practices
         $ git gc --aggressive --prune=now
         $ git push origin <branch> --force
 
-  – Entfernen einer Zeichenkette aus der Historie
+  – Removing a string from the history
 
     .. code-block:: console
 
@@ -204,8 +197,8 @@ Git Best Practices
         …
 
     .. note::
-        Bei macOS muss ``/usr/bin/true`` statt des ``/bin/true`` bei Linux
-        verwendet werden.
+        On macOS ``/usr/bin/true`` must be used instead of ``/bin/true`` on
+        Linux.
 
   .. seealso::
     * `git-reflog <https://git-scm.com/docs/git-reflog>`_

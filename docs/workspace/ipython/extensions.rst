@@ -1,32 +1,31 @@
-IPython-Erweiterungen
-=====================
+IPython extensions
+==================
 
-IPython-Erweterungen sind Python-Module, die das Verhalten der Shell ändern. Sie
-werden mit einem importierbaren Modulnamen bezeichnet und befinden sich
-üblicherweise in ``.ipython/extensions/``.
+IPython extensions are Python modules that change the behavior of the shell.
+They are identified by an importable module name and are usually located in
+``.ipython/extensions/``.
 
-Einige wichtige Erweiterungen sind bereits in IPython enthalten:
-:label:`extensions_autoreload` und :label:`extensions_storemagic`. Andere
-Erweiterungen findet ihr im  `Extensions Index
-<https://github.com/ipython/ipython/wiki/Extensions-Index>`_ oder auf PyPI unter
-dem `IPython tag <https://pypi.python.org/pypi?:action=browse&c=586>`_.
+Some important extensions are already included in IPython:
+:label:`extensions_autoreload` and :label:`extensions_storemagic`. You can find
+other extensions in the `Extensions Index
+<https://github.com/ipython/ipython/wiki/Extensions-Index>`_ or on PyPI with
+the  `IPython tag <https://pypi.python.org/pypi?:action=browse&c=586>`_..
 
 .. seealso::
     * `IPython extensions docs
       <https://ipython.readthedocs.io/en/stable/config/extensions/index.html>`_
 
-Erweiterungen verwenden
------------------------
+Use extensions
+--------------
 
-Die ``%load_ext``-Magie kann verwendet werden um Erweiterungen zu laden während
-IPython ausgeführt wird.
+The ``%load_ext`` magic can be used to load extensions while IPython is running.
 
 .. code-block:: ipython
 
     %load_ext myextension
 
-Alternativ kann eine Erweiterung auch bei jedem Start von IPython geladen
-werden, indem sie in der IPython-Konfigurationsdate aufgelistet wird:
+Alternatively, an extension can also be loaded each time IPython is started by
+listing it in the IPython configuration file:
 
 .. code-block:: Python
 
@@ -34,24 +33,22 @@ werden, indem sie in der IPython-Konfigurationsdate aufgelistet wird:
         'myextension'
     ]
 
-Falls ihr noch keine IPython-Konfigurationsdatei erstellt habt, könnt ihr dies
-mit:
+If you haven’t created an IPython configuration file yet, you can do this with:
 
 .. code-block:: console
 
     $ ipython profile create [profilename]
 
-Falls kein Profilname angegeben wird, wird ``default`` verwendet. Üblicherweise
-wird die Datei dann in ``~/.ipython/profile_default/`` erstellt und je nach
-Verwendungszweck benannt: ``ipython_config.py`` wird für alle IPython-Befehle
-verwendet, während ``ipython_notebook_config.py`` nur für Befehle in
-IPython-Notebooks Verwendung findet.
+If no profile name is given, ``default` is used. The file is usually created in
+``~/.ipython/profile_default/`` and named depending on the purpose:
+``ipython_config.py`` is used for all IPython commands, while
+``ipython_notebook_config.py`` is only used for commands in IPython notebooks.
 
-IPython-Erweiterungen schreiben
--------------------------------
+Writing IPython extensions
+--------------------------
 
-Eine IPython-Erweiterung ist ein importierbares Python-Modul, das über spezielle
-Funktionen zum Laden und Entladen verfügt:
+An IPython extension is an importable Python module that has special functions
+for loading and unloading:
 
 .. code-block:: python
 

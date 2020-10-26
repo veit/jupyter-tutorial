@@ -1,42 +1,40 @@
 ===============================
-Deployment und Release Branches
+Deployment and release branches
 ===============================
 
-Deployment-Branches
+Deployment branches
 ===================
 
-Sie empfehlen sich, wenn ihr z.B. den Release-Zeitpunkt nicht
-selbst bestimmen könnt, beispielsweise wenn eine iOS-Anwendung die
-App-Store-Validierung bestehen muss oder euch nur ein festes Zeitfenster für
-die Bereitstellung zur Verfügung steht. In diesem Fall empfiehlt sich ein
-Production-Branch ``prod``, der den bereitgestellten Code widerspiegelt. Ein
-solcher Arbeitsablauf verhindert den zusätzlichen Arbeitsaufwand bei ``git
-flow`` beim Releasing, Tagging und Merging.
+They are recommended if, for example, you cannot determine the release time
+yourself, for example if an iOS application has to pass the app store validation
+or you only have a fixed time window available for deployment. In this case, a
+production branch ``prod``, that reflects the code provided is recommended. Such
+a workflow prevents the additional work of ``git flow`` for releasing, tagging
+and merging.
 
-Angenommen, ihr verfügt über eine ``test``-, ``stage``- und ``prod``-Umgebung,
-dann wird zunächst ein *Merge Request* für den ``test``-Branch gestellt. Wenn
-die Tests bestanden werden, können die Änderungen auch in den ``stage``-Branch
-übernommen werden. Wenn die QA beschließt, dass der Code produktionsreif ist,
-kann er in den ``master``-Branch übernommen werden. Dieser Vorgang kann sich
-mehrfach wiederholen, bis z.B. der Zeitpunkt für das *Going Life* dieser
-Änderungen gekommen ist und ein ``prod``-Branch erstellt werden kann.
+Assuming you have a ``test``, ``stage`` and ``prod`` environment, a merge
+request is first made for the ``test`` branch. If the tests are passed, the
+changes can also be adopted in the ``stage`` branch. When the QA decides that
+the code is ready for production, it can be transferred to the  ``master``
+branch. This process can be repeated several times until, for example, the time
+for the going life of these changes has come and a ``prod`` branch can be
+created.
 
-Release-Branches
+Release branches
 ================
 
-Wenn Software an Kunden geliefert werden soll, empfehlen sich Release-Branches.
-In diesem Fall sollte jeder Branch eine *Minor Version*, also z.B. ``2.7`` oder
-``3.4`` enthalten. Üblicherweise werden diese Branches so spät wie möglich aus
-dem ``master``-Branch erzeugt. Dadurch wird bei Bugfixes die Anzahl der Merges,
-die auf mehrere Branches verteilt werden müssen, reduziert. Nachdem ein neuer
-Release-Branch erstellt wurde, erhält dieser nur noch Bugfixes. Meist werden
-diese zunächst in den ``master`` übernommen und anschließend von dort mit
-`git cherry-pick <https://git-scm.com/docs/git-cherry-pick>`_ in den
-Release-Branch übernommen. Dieser *upstream first*-Ansatz wird z.B. von `Google
+Release branches are recommended when software is to be delivered to customers.
+In this case each branch should contain a minor version, e.g. ``2.7`` or
+``3.4``. Usually these branches are created from the ``master`` branch as late
+as possible. This reduces the number of merges that have to be distributed
+across multiple branches during bug fixes. Usually, these are first transferred
+to the  ``master`` and then transferred from there to the release branch with
+`git cherry-pick <https://git-scm.com/docs/git-cherry-pick>`_. This upstream
+first approach is e.g. used by `Google
 <https://www.chromium.org/chromium-os/chromiumos-design-docs/upstream-first>`_
-und `Red Hat
-<https://www.redhat.com/en/blog/a-community-for-using-openstack-with-red-hat-rdo>`_
-verwendet. Jedes Mal, wenn ein Bugfix in einen Release-Branch übernommen wurde,
-wird das Release mit einem `Tag
-<https://git-scm.com/book/de/v2/Git-Grundlagen-Taggen>`_ um eine Patch-Version
-angehoben, s.a. `Semantic Versioning <https://semver.org/>`_.
+and `Red Hat
+<https://www.redhat.com/en/blog/a-community-for-using-openstack-with-red-hat-rdo>`_.
+Every time a bug fix has been adopted in a release branch, the release is
+increased by a patch version with a `Tag
+<https://git-scm.com/book/en/v2/Git-Basics-Tagging>`_, see also `Semantic
+Versioning <https://semver.org/>`_.

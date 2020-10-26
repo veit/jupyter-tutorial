@@ -1,19 +1,19 @@
-Prozedurale Programmiersprachen
-===============================
+Procedural programming languages
+================================
 
-Mit PostgreSQL können benutzerdefinierte Funktionen außer in SQL und C auch in
-anderen Sprachen geschrieben werden.
+With PostgreSQL, user-defined functions can be written in languages other than
+SQL and C.
 
-In der Standarddistribution von PostgreSQL stehen derzeit vier prozedurale
-Sprachen zur Verfügung:
+There are currently four procedural languages available in the standard
+PostgreSQL distribution:
 
 * `PL/pgSQL <https://www.postgresql.org/docs/current/plpgsql.html>`_
 * `PL/Tcl <https://www.postgresql.org/docs/current/pltcl.html>`_
 * `PL/Perl <https://www.postgresql.org/docs/current/plperl.html>`_
 * `PL/Python <https://www.postgresql.org/docs/current/plpython.html>`_
 
-Es sind zusätzliche prozedurale Programmiersprachen verfügbar, die jedoch nicht
-in der Kerndistribution enthalten sind:
+Additional procedural programming languages are available but are not included
+in the core distribution:
 
 * `PL/Java <https://tada.github.io/pljava/>`_
 * `PL/Lua <https://github.com/pllua/pllua>`_
@@ -25,5 +25,5 @@ in der Kerndistribution enthalten sind:
    `External Procedural Languages
    <https://www.postgresql.org/docs/current/external-pl.html>`_
 
-Zusätzlich können andere Sprachen definiert werden, s. `Writing A Procedural
+In addition, other languages can be defined, see also `Writing A Procedural
 Language Handler <https://www.postgresql.org/docs/current/plhandler.html>`_.

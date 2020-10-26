@@ -1,282 +1,265 @@
 Binary Extensions
 =================
 
-Eine der Funktionen des CPython-Interpreters besteht darin, dass neben der
-Ausführung von Python-Code auch eine reichhaltige C-API für die Verwendung
-durch andere Software verfügbar ist. Eine der häufigsten Anwendungen dieser
-C-API besteht darin, importierbare C-Erweiterungen zu erstellen, die Dinge
-ermöglichen, die im reinen Python-Code nur schwer zu erreichen sind.
+One of the features of the CPython interpreter is that in addition to executing
+Python code, it also has a rich C API available for use by other software. One
+of the most common uses of this C API is to create importable C extensions that
+allow things that are difficult to achieve in pure Python code.
 
 Use Cases
 ---------
 
-Die typischen Anwendungsfälle für Binary Extensions lassen sich in drei
-Kategorien unterteilen:
+The typical use cases for binary extensions can be divided into three
+categories:
 
-Accelerator-Module
-    Diese Module sind eigenständig und werden nur erstellt, um schneller zu
-    laufen als der entsprechende reine Python-Code. Im Idealfall haben die
-    Beschleunigermodule immer ein Python-Äquivalent, das als Fallback verwendet
-    werden kann, wenn die beschleunigte Version auf einem bestimmten System
-    nicht verfügbar ist.
+Accelerator modules
+    These modules are stand-alone and are only created to run faster than the
+    corresponding pure Python code. Ideally, the accelerator modules always
+    have a Python equivalent that can be used as a fallback if the accelerated
+    version is not available on a particular system.
 
-    Die CPython-Standardbibliothek verwendet viele Beschleunigermodule.
+    The CPython standard library uses many accelerator modules.
 
-Wrapper-Module
-    Diese Module werden erstellt, um vorhandene C-Interfaces in Python verfügbar
-    zu machen. Sie können entweder die zugrunde liegenden C-Interfaces direkt
-    verfügbar oder eine *Pythonic*-API bereitgestellt werden, die
-    Features von Python verwendet, um die API einfacher zu verwenden.
+Wrapper modules
+    These modules are created to make existing C interfaces available in Python.
+    You can either make the underlying C interfaces directly available or
+    provide a *Pythonic* API that uses features of Python to make the API easier
+    to use.
 
-    Die CPython-Standardbibliothek verwendet umfangreiche Wrapper-Module.
+    The CPython standard library uses extensive wrapper modules.
 
-Systemzugriffe auf niedriger Ebene
-    Diese Module werden erstellt, um auf Funktionen der
-    CPython-Laufzeitumgebung, des Betriebssystems oder der
-    zugrundeliegenden Hardware zuzugreifen. Durch plattformspezifischen Code
-    können mit solchen Erweiterungsmodulen Dinge erreicht werden, die mit reinem
-    Python-Code nicht möglich wären.
+Low-level system access
+    These modules are created to access functions of the CPython runtime
+    environment, the operating system or the underlying hardware. With
+    platform-specific code, things can be achieved that would not be possible
+    with pure Python code.
 
-    Eine Reihe von CPython-Standard-Bibliotheksmodulen sind in C geschrieben, um
-    auf Interpreter-Interna zuzugreifen, die nicht auf der Sprachebene verfügbar
-    sind.
+    A number of CPython standard library modules are written in C to access
+    interpreter internals that are not available at the language level.
 
-    Eine besonders bemerkenswerte Eigenschaft von C-Erweiterungen ist, dass sie,
-    den Global Interpreter Lock (GIL) von CPython bei lang andauernden
-    Operationen freigeben können, unabhängig davon, ob diese Operationen CPU-
-    oder IO-gebunden sind.
+    A particularly noteworthy property of C extensions is that they can release
+    the Global Interpreter Lock (GIL) of CPython for long-running operations,
+    regardless of whether these operations are CPU or IO-bound.
 
-Nicht alle Erweiterungsmodule passen genau in die oben genannten Kategorien. So
-umfassen z.B. die in `NumPy <http://www.numpy.org/>`_ enthaltenen
-Erweiterungsmodule alle drei Anwendungsfälle:
+Not all expansion modules fit exactly into the above categories. For example,
+the extension modules contained in `NumPy <http://www.numpy.org/>`_ cover all
+three use cases:
 
-* Sie verschieben innere Schleifen aus Geschwindigkeitsgründen auf C,
-* umschließen externe Bibliotheken in C, FORTRAN und anderen Sprachen und
-* verwenden Systemschnittstellen auf niedriger Ebene für CPython und das
-  zugrunde liegende Betriebssystem, um die gleichzeitige Ausführung von
-  vektorisierten Operationen zu unterstützen und das Speicherlayout von
-  erstellten Objekten genau zu steuern.
+* They move inner loops to C for speed reasons,
+* wrap external libraries in C, FORTRAN and other languages and
+* use low-level system interfaces of CPython and the underlying operating system
+  to support the concurrent execution of vectorised operations and to precisely
+  control the memory layout of objects created.
 
-Nachteile
----------
+Disadvantages
+-------------
 
-Früher war der Hauptnachteil bei der Verwendung von Binary Extensions, dass
-dadurch die Distribution der Software erschwert wurde. Heute ist dieser Nachteil
-durch :term:`wheel` kaum noch vorhanden. Einige Nachteile bleiben dennoch:
+In the past, the main disadvantage of using binary extensions was that they made
+it difficult to distribute the software. Today this disadvantage due to
+:term:`wheel` is hardly present. However, some disadvantages remain:
 
-* Die Installation aus den Sourcen bleibt weiterhin kompliziert.
-* Ggf. gibt es kein passendes :term:`wheel` für den verwendeten Build des
-  CPython-Interpreters oder alternativen Interpretern wie `PyPy
-  <https://pypy.org/>`_, `IronPython <http://ironpython.net/>`_ oder `Jython
+* The installation from the sources remains complicated.
+* Possibly there is no suitable :term:`wheel` for the build of the CPython
+  interpreter or alternative interpreters such as `PyPy
+  <https://pypy.org/>`_, `IronPython <http://ironpython.net/>`_ or `Jython
   <http://www.jython.org/>`_.
-* Die Wartung und Pflege der Pakete ist aufwändiger da die Maintainer nicht nur
-  mit Python sondern auch mit einer anderen Sprache und der CPython C-API
-  vertraut sein müssen. Zudem erhöht sich die Komplexität, wenn neben der
-  Binary Extension auch eine Python-Fallback-Implementierung bereitgestellt
-  wird.
-* Schließlich funktionieren häufig auch Importmechanismen, wie der direkte
-  Import aus ZIP-Dateien, nicht für Extensions-Module.
+* The maintenance of the packages is more time-consuming because the maintainers
+  not only have to be familiar with Python but also with another language and
+  the CPython C API. In addition, the complexity increases if a Python fallback
+  implementation is provided in addition to the binary extension.
+* Finally, import mechanisms, such as direct import from ZIP files, often do not
+  work for extension modules.
 
-Alternativen
+Alternatives
 ------------
 
-… zu Accelerator-Modulen
+… to accelerator modules
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Wenn Extensions-Module nur verwendet werden, um Code schneller auszuführen,
-sollten auch eine Reihe anderer Alternativen in Betracht gezogen werden:
+If extensions modules are only used to make code run faster, a number of other
+alternatives should also be considered:
 
-* Sucht nach vorhandenen optimierten Alternativen. Die CPython-Standardbibliothek
-  enthält eine Reihe optimierter Datenstrukturen und Algorithmen, insbesondere in
-  den builtins und den Modulen ``collections`` und ``itertools``.
+* Looks for existing optimised alternatives. The CPython standard library
+  contains a number of optimised data structures and algorithms, especially in
+  the builtins and the modules ``collections`` and ``itertools``.
 
-  Gelegentlich bietet auch der :term:`Python Package Index (PyPI)` zusätzliche
-  Alternativen. Manchmal kann ein Modul eines Drittanbieters die Notwendigkeit
-  vermeiden, ein eigenes Accelerator-Modul zu erstellen.
+  Occasionally the :term:`Python Package Index (PyPI)` also offers additional
+  alternatives. Sometimes a third-party module can avoid the need to create your
+  own accelerator module.
 
-* Für lange laufende Anwendungen kann der JIT-kompilierte `PyPy
-  <https://pypi.python.org/>`_-Interpreter eine geeignete Alternative zum
-  Standard-CPython sein. Die Hauptschwierigkeit bei der Übernahme von PyPy
-  besteht typischerweise in der Abhängigkeit von anderen Binary
-  Extensions-Modulen. Während PyPy die CPython C API emuliert, verursachen
-  Module, die darauf angewiesen sind, Probleme für das PyPy JIT, und die
-  Emulation legt oft Defekte in Extensions-Modulen offen, die CPython
-  toleriert. (häufig bei Reference Counting Errors).
+* For long-running applications, the JIT-compiled `PyPy
+  <https://pypi.python.org/>`_ interpreter can be a suitable alternative to the
+  standard CPython. The main difficulty with adopting PyPy is typically the
+  dependence on other Binary Extensions modules. While PyPy emulates the
+  CPython C API, modules that rely on it cause problems for the PyPy JIT, and
+  the emulation often exposes defects in extension modules that CPython
+  tolerates. (often with reference counting errors).
 
-* `Cython <http://cython.org/>`_ ist ein ausgereifter statischer Compiler, der
-  den meisten Python-Code zu C-Extensions-Modulen kompilieren kann. Die
-  anfängliche Kompilierung bietet einige Geschwindigkeitssteigerungen (durch
-  Umgehung der CPython-Interpreter-Ebene), und Cythons optionale statische
-  Typisierungsfunktionen können zusätzliche Möglichkeiten für
-  Geschwindigkeitssteigerungen bieten. Für Python-Programmierer bietet Cython
-  eine niedrigere Eintrittshürde relativ zu anderen Sprachen wie C oder C ++).
+* `Cython <http://cython.org/>`_ is a sophisticated static compiler that can
+  compile most Python code into C-Extension modules. The initial compilation
+  offers some speed increases (by bypassing the CPython interpreter level), and
+  Cython’s optional static typing functions can provide additional speed
+  increases. For Python programmers, Cython offers a lower barrier to entry
+  relative to other languages such as C or C ++).
 
-  Die Verwendung von Cython hat jedoch den Nachteil, die Komplexität der
-  Verteilung der resultierenden Anwendung zu erhöhen.
+  However, using Cython has the disadvantage of adding complexity to the
+  distribution of the resulting application.
 
-* `Numba <http://numba.pydata.org/>`_ ist ein neueres Tool, das die `LLVM
-  Compiler-Infrastruktur <https://llvm.org/>`_ nutzt, um während der Laufzeit
-  selektiv Teile einer Python-Anwendung auf nativen Maschinencode zu
-  kompilieren. Es erfordert, dass LLVM auf dem System verfügbar ist, auf dem der
-  Code ausgeführt wird. Es kann, insbesondere bei vektorisierbaren Vorgängen
-  zu erheblichen Geschwindigkeitssteigerungen führen.
+* `Numba <http://numba.pydata.org/>`_ is a newer tool that uses the `LLVM
+  compiler infrastructure <https://llvm.org/>`_ to selectively compile parts of
+  a Python application to native machine code at runtime. It requires LLVM to be
+  available on the system the code is running on. It can lead to considerable
+  increases in speed, especially with vectorisable processes.
 
-… zu Wrapper-Modulen
+… to wrapper modules
 ~~~~~~~~~~~~~~~~~~~~
 
-Die C-ABI (`Application Binary Interface
-<https://de.wikipedia.org/wiki/Bin%C3%A4rschnittstelle>`_) ist ein Standard für
-die gemeinsame Nutzung von Funktionen zwischen mehreren Anwendungen. Eine der
-Stärken der CPython C-API (`Application Programming Interface
-<https://de.wikipedia.org/wiki/Programmierschnittstelle>`_) ist es, dass
-Python-Benutzer diese Funktionalität nutzen können. Das manuelle Wrapping von
-Modulen ist jedoch sehr mühsam, so dass eine Reihe anderer Alternativen in
-Betracht gezogen werden sollten.
+The C-ABI (`Application Binary Interface
+<https://en.wikipedia.org/wiki/Application_binary_interface>`_) is a standard
+for the common use of functions between several applications. One of the
+strengths of the CPython C-API (`Application Programming Interface
+<https://en.wikipedia.org/wiki/API>`_) is that Python users can take advantage
+of this functionality. However, manually wrapping modules is very tedious, so a
+number of other alternatives should be considered.
 
-Die unten beschriebenen Ansätze vereinfachen nicht die Distribution, aber sie
-können den Wartungsaufwand im Vergleich zu Wrapper-Modulen deutlich reduzieren.
+The approaches described below do not simplify distribution, but they can
+significantly reduce the maintenance effort compared to wrapper modules.
 
-* `Cython <http://cython.org/>`_ eignet sich nicht nur zum Erstellen von
-  Accelerator-Modulen, sondern auch zum Erstellen von Wrapper-Modulen. Da das
-  Wrapping der API immer noch von Hand erfolgen muss, ist es keine gute Wahl beim
-  Wrapping großer APIs.
+* `Cython <http://cython.org/>`_ is useful not only for creating accelerator
+  modules, but also for creating wrapper modules. Since the API still needs to
+  be wrapped by hand, it is not a good choice when wrapping large APIs.
 
-* `cffi <https://cffi.readthedocs.io/>`_ ist das Projekt einiger `PyPy
-  <https://pypy.org/>`_-Entwickler, um Entwicklern, die sowohl Python als auch C
-  bereits kennen, die Möglichkeit zu geben, ihre C-Module für Python-Anwendungen
-  verfügbar zu machen. Es macht das Wrapping eines C-Moduls basierend auf seinen
-  Header-Dateien relativ einfach, auch wenn man sich mit C selbst nicht auskennt.
+* `cffi <https://cffi.readthedocs.io/>`_ is the project of some `PyPy
+  <https://pypy.org/>`_ developers to give developers who already know both
+  Python and C the possibility to make their C modules available for Python
+  applications. It makes wrapping a C module based on its header files
+  relatively easy, even if you are not familiar with C itself.
 
-  Einer der Hauptvorteile von cffi besteht darin, dass es mit dem PyPy-JIT
-  kompatibel ist, sodass CFFI-Wrapper-Module vollständig von den
-  PyPy-Tracing-JIT-Optimierungen partizipieren können.
+  One of the main advantages of cffi is that it is compatible with the PyPy JIT
+  so that CFFI wrapper modules can fully participate in the PyPy tracing JIT
+  optimisations.
 
-* `SWIG <http://www.swig.org/>`_ ist ein Wrapper Interface Generator, der eine
-  Vielzahl von Programmiersprachen, einschließlich Python, mit C- und C++-Code
-  verbindet.
+* `SWIG <http://www.swig.org/>`_ is a wrapper interface generator that combines
+  a variety of programming languages, including Python, with C and C ++ code.
 
-* Das ``ctypes``-Modul der Standardbibliothek ist zwar nützlich um Zugriff auf
-  C-Schnittstellen zu erhalten, wenn die Header-Informationen jedoch nicht
-  verfügbar sind, es leidet jedoch daran, dass es nur auf der C ABI-Ebene
-  arbeitet und somit keine automatische Konsistenzprüfung zwischen der
-  exportierten Schnittstelle und dem Python-Code macht. Im Gegensatz dazu
-  können die obigen Alternativen alle auf der C-API arbeiten und
-  C-Header-Dateien verwenden, um die Konsistenz zu gewährleisten.
+* The ``ctypes`` module of the standard library is useful to get access to C
+  interfaces, but if the header information is not available, it suffers from
+  the fact that it only works on the C ABI level and therefore no automatic
+  consistency check between the exported Interface and the Python code. In
+  contrast, the alternatives above can all work on the C API and use C header
+  files to ensure consistency.
 
-… für den Systemzugriff auf niedriger Ebene
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+… for low-level system access
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Für Anwendungen, die Low Level System Access benötigen, ist eine Binary
-Extension oft ist der beste Weg. Dies gilt insbesondere für den Low Level Access
-auf die CPython-Runtime, da einige Operationen (wie das Freigeben des Global
-Interpreter Lock (GIL) nicht zulässig sind, wenn der Interpreter den Code
-selbst ausführt, gerade auch wenn Module wie ``ctypes`` oder ``cffi`` verwendet
-werden, um Zugriff auf das relevanten C-API-Interfaces zu erhalten.
+For applications that require low level system access, a binary extension is
+often the best option. This applies in particular to the low level access to the
+CPython runtime, since some operations (such as releasing the Global Interpreter
+Lock (GIL) are not permitted when the interpreter executes the code itself,
+especially when modules such as ``ctypes`` or ``cffi`` are used to Get access to
+the relevant C-API interfaces.
 
-In Fällen, in denen das Erweiterungsmodul das zugrunde liegende Betriebssystem
-oder die Hardware (statt der CPython-Runtime) manipuliert, ist es manchmal
-besser, eine normale C-Bibliothek (oder eine Bibliothek in einer anderen
-Programmiersprache wie C ++ oder Rust) zu schreiben, die eine C-kompatible ABI),
-bereitstellt und anschließend eine der oben beschriebenen Wrapping-Techniken zu
-verwenden um das Interface als importierbares Python-Modul verfügbar zu machen.
+In cases where the expansion module is manipulating the underlying operating
+system or hardware (instead of the CPython runtime), it is sometimes better to
+write a normal C library (or a library in another programming language such as
+C++ or Rust) that provides a C-compatible ABI) and then use one of the wrapping
+techniques described above to make the interface available as an importable
+Python module.
 
-Implementierung
----------------
+Implementation
+--------------
 
-Der `CPython Extending and Embedding guide
-<https://docs.python.org/3/extending/>`_ enthält eine Einführung in das
-Schreiben eigener Extension-Module in C: `Extending Python with C or C++
-<https://docs.python.org/3/extending/extending.html>`_. Beachtet jedoch bitte,
-dass diese Einführung nur  die grundlegenden Tools zum Erstellen von
-Erweiterungen beshreibt, die im Rahmen von CPython bereitgestellt werden.
-Third-Party-Tools wie `Cython <http://cython.org/>`_, `cffi
-<https://cffi.readthedocs.io/>`_, `SWIG <http://www.swig.org/>`_ und `Numba
-<https://numba.pydata.org/>`_ bieten sowohl einfachere als auch ausgeklügeltere
-Ansätze zum Erstellen von C- und C ++ - Erweiterungen für Python.
+The `CPython Extending and Embedding guide
+<https://docs.python.org/3/extending/>`_ provides an introduction to writing
+your own extension modules in C: `Extending Python with C or C++
+<https://docs.python.org/3/extending/extending.html>`_. RPlease note, however,
+that this tutorial only covers the basic extension building tools provided with
+CPython. Third-party tools like `Cython <http://cython.org/>`_, `cffi
+<https://cffi.readthedocs.io/>`_, `SWIG <http://www.swig.org/>`_ and `Numba
+<https://numba.pydata.org/>`_ offer both simpler and more sophisticated
+approaches to creating C and C ++ extensions for Python.
 
 .. seealso::
     `Python Packaging User Guide: Binary Extensions
     <https://packaging.python.org/guides/packaging-binary-extensions/>`_
-    behandelt nicht nur verschiedene verfügbare Tools, die die Erstellung von
-    Binary Extensions vereinfachen, sondern erläutert auch die verschiedenen
-    Gründe, warum das Erstellen eines Extension Module wünschenswert sein
-    könnte.
+    not only covers various tools available to make creating Binary Extensions
+    easier, but it also explains the various reasons why it might be desirable
+    to create an Extension Module.
 
-Erstellen von Binary Extensions
--------------------------------
+Creating binary extensions
+--------------------------
 
-Binary Extensions für Windows
+Binary extensions for Windows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bevor ihr eine Binary Extension erstellen könnt, müsst ihr sicherstellen, dass
-ihr einen geeigneten Compiler zur Verfügung habt. Unter Windows wird Visual C
-zum Erstellen des offiziellen CPython-Interpreters verwendet und er sollte auch
-zum Erstellen kompatibler Binary Extensions verwendet werden:
+Before you can create a binary extension, you have to make sure that you have a
+suitable compiler available. On Windows, Visual C is used to create the official
+CPython interpreter, and it should also be used to create compatible binary
+extensions:
 
-für Python 2.7
-    #. installiert `Microsoft Visual C++ Compiler for Python 2.7
+for Python 2.7
+    #. install `Microsoft Visual C++ Compiler for Python 2.7
        <https://www.microsoft.com/en-gb/download/details.aspx?id=44266>`_
-    #. aktualisiert :term:`pip` und :term:`setuptools`
-für Python 3.4
-    #. installiert `Microsoft Windows SDK for Windows 7 and .NET Framework 4
+    #. update :term:`pip` and :term:`setuptools`
+for Python 3.4
+    #. install `Microsoft Windows SDK for Windows 7 and .NET Framework 4
        <https://www.microsoft.com/en-gb/download/details.aspx?id=8279>`_
-    #. arbeitet mit dem SDK-Command-Prompt (mit den Umgebungsvariablen und dem
-       SDK in ``PATH``).
-    #. setzt ``DISTUTILS_USE_SDK=1``.
-für Python 3.5+
-    #. installiert `Visual Studio Code <https://code.visualstudio.com/>`_ mit
+    #. work with the SDK command prompt (with the environment variables and the
+           SDK in ``PATH``).
+    #. set ``DISTUTILS_USE_SDK=1``.
+for Python 3.5+
+    #. install `Visual Studio Code <https://code.visualstudio.com/>`_ with
        `Python Extension
        <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_
 
     .. note::
-        Visual Studio arbeitet ab Python 3.5 abwärtskompatibel, d.h., dass jede
-        zukünftige Version von Visual Studio Python-Erweiterungen für alle
-        Python-Versionen ab Version 3.5 erstellen kann.
+        Visual Studio is backwards compatible from Python 3.5, which means that
+        any future version of Visual Studio can create Python extensions for all
+        Python versions from version 3.5.
 
-Das Erstellen mit dem empfohlenen Compiler unter Windows stellt sicher, dass
-eine kompatible C-Bibliothek im gesamten Python-Prozess verwendet wird.
+Building with the recommended compiler on Windows ensures that a compatible C
+library is used throughout the Python process.
 
-Binary Extensions für Linux
+Binary Extensions for Linux
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Linux-Binaries müssen eine ausreichend alte glibc verwenden, um mit älteren
-Distributionen kompatibel zu sein. `Distrowatch <https://distrowatch.com/>`_
-bereitet in tabellarischer Form auf, welche Versionen der Distributionen welche
-Bibliothek liefern:
+Linux binaries must use a sufficiently old glibc to be compatible with older
+distributions. `Distrowatch <https://distrowatch.com/>`_ prepares in table form
+which versions of the distributions deliver which library:
 
 * `Red Hat Enterprise Linux <https://distrowatch.com/table.php?distribution=redhat>`_
 * `Debian <https://distrowatch.com/table.php?distribution=debian>`_
 * `Ubuntu <https://distrowatch.com/table.php?distribution=ubuntu>`_
 * …
 
-Das `PYPA/Manylinux <https://github.com/pypa/manylinux>`_-Projekt erleichtert
-die Distribution von Binary Extensions als :term:`Wheels <wheel>` für die
-meisten Linux-Plattformen. Hieraus ging auch `PEP 513
-<https://www.python.org/dev/peps/pep-0513/>`_ hervor, das die
-``manylinux1_x86_64``- und ``manylinux1_i686``-Plattform-Tags definiert.
+The `PYPA/Manylinux <https://github.com/pypa/manylinux>`_ project facilitates
+the distribution of Binary extensions as :term:`Wheels <wheel>` for most Linux
+platforms. This also resulted in `PEP 513
+<https://www.python.org/dev/peps/pep-0513/>`_, which defines the
+``manylinux1_x86_64`` and ``manylinux1_i686`` platform tags.
 
-Binary Extensions für Mac
+Binary Extensions for Mac
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Die Binärkompatibilität auf macOS wird durch das Zielsystem für die minimale
-Implementierung bestimmt, z. B. *10.9* , das in der Umgebungsvariable
-``MACOSX_DEPLOYMENT_TARGET`` definiert wird. Beim Erstellen mit
-setuptools/distutils wird das Deployment-Ziel mit dem Flag ``--plat-name``
-angegeben, z.B. ``macosx-10.9-x86_64``. Weitere Informationen zu
-Deployment-Zielen für Mac OS Python-Distributionen findet ihr im `MacPython
-Spinning Wheels-Wiki <https://github.com/MacPython/wiki/wiki/Spinning-wheels>`_.
+Binary compatibility on macOS is determined by the target system for the minimal
+implementation, e.g. *10.9*, which is defined in the environment variable
+``MACOSX_DEPLOYMENT_TARGET``. When creating with setuptools/distutils the
+deployment target is specified with the flag ``--plat-name``, for example
+``macosx-10.9-x86_64``. For more information on deployment targets for Mac OS
+Python distributions, see the  `MacPython Spinning Wheels-Wiki
+<https://github.com/MacPython/wiki/wiki/Spinning-wheels>`_.
 
-Deployment von Binary Extensions
---------------------------------
+Deployment of binary extensions
+-------------------------------
 
-Im Folgenden soll das Deployment auf dem :term:`Python Package Index (PyPI)`
-oder einem anderen Index beschrieben werden.
+In the following, the deployment on the :term:`Python Package Index (PyPI)`
+or another index will be described.
 
 .. note::
-   Bei Deployments auf Linux-Distributionen sollte beachtet werden, dass diese
-   Anforderungen an das spezifische Build-System stellen. Daher sollten neben
-   :term:`Wheels <wheel>` immer auch :term:`Source Distributions (sdist)
-   <Source Distribution (sdist)>` bereitgestellt werden.
+   When deploying on Linux distributions, it should be noted that these make
+   demands on the specific build system. Therefore, :term:`Source Distributions
+   (sdist) <Source Distribution (sdist)>` should also be provided in addition to
+   :term:`Wheels <wheel>`.
 
 .. seealso::
    * `Deploying Python applications

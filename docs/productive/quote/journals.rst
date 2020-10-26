@@ -1,8 +1,8 @@
-Software-Journale
+Software journals
 =================
 
-Allgemein
----------
+General
+-------
 
 * `IEEE Computer Society Digital Library <https://www.computer.org/csdl/home>`_
 * `Wiley Online Library
@@ -21,14 +21,14 @@ Allgemein
 * `SoftwareX
   <http://www.journals.elsevier.com/softwarex/>`_
 
-Bildverarbeitung
+Image processing
 ----------------
 
 * `Image Processing On Line <http://www.ipol.im/>`_
 * `Insight Journal <http://insight-journal.org/>`_
 
-Biologie
---------
+Biology
+-------
 
 * `American Journal of Human Genetics <http://www.cell.com/AJHG/>`_
 * `Artificial Life <http://www.mitpressjournals.org/loi/artl>`_
@@ -67,8 +67,8 @@ Biologie
 * `PLoS ONE <http://www.plosone.org/>`_
 * `Trends in Parasitology <http://www.cell.com/trends/parasitology/>`_
 
-Chemie
-------
+Chemistry
+---------
 
 * `International Journal of Quantum Chemistry
   <http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291097-461X>`_
@@ -84,8 +84,8 @@ Chemie
 * `Wiley Interdisciplinary Reviews: Computational Molecular Science
   <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1759-0884>`_
 
-Geistes-und Sozialwissenschaften
---------------------------------
+Human and social sciences
+-------------------------
 
 * `Digital Humanities Quarterly
   <http://www.digitalhumanities.org/dhq/>`_
@@ -94,8 +94,8 @@ Geistes-und Sozialwissenschaften
 * `Journal of Economic Dynamics and Control
   <http://www.journals.elsevier.com/journal-of-economic-dynamics-and-control/>`_
 
-Ingenieurwesen
---------------
+Engineering
+-----------
 
 * `Advances in Engineering Software
   <http://www.sciencedirect.com/science/journal/09659978>`_
@@ -104,8 +104,8 @@ Ingenieurwesen
 * `Renewable Energy
   <http://www.sciencedirect.com/science/journal/09601481>`_
 
-Informatik, Mathematik und Statistik
-------------------------------------
+Computer science, mathematics and statistics
+--------------------------------------------
 
 * `ACM Transactions on Mathematical Software
   <http://toms.acm.org/>`_
@@ -140,8 +140,8 @@ Informatik, Mathematik und Statistik
   <http://www.journals.elsevier.com/science-of-computer-programming/>`_
 * `The Stata Journal  <http://www.stata-journal.com/submissions/#types>`_
 
-Physik und Geowissenschaften
-----------------------------
+Physics and Earth Sciences
+--------------------------
 
 * `AAS: The Astronomy Journal <http://aj.aas.org/>`_
 * `AAS: The Astrophysical Journal <http://apj.aas.org/>`_

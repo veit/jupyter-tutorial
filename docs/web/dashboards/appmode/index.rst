@@ -1,7 +1,7 @@
 Appmode
 =======
 
-Jupyter-Erweiterung, die aus Notebooks Webanwendungen macht.
+Jupyter extension that turns notebooks into web applications.
 
 .. toctree::
     :titlesonly:
@@ -10,21 +10,20 @@ Jupyter-Erweiterung, die aus Notebooks Webanwendungen macht.
 
     app-example.ipynb
 
-Beispiel
---------
+Example
+-------
 
-Beim Klick auf :menuselection:`Appmode` wird aus dem Notebook
-`app-example.ipynb <app-example.ipynb>`_ ein übersichtliche Web-Anwendung für
-einen Rechner:
+When you click on :menuselection:`Appmode` the notebook `app-example.ipynb
+<app-example.ipynb>`_ becomes a clear web application for a calculator:
 
 .. image:: appmode-app.png
    :scale: 53%
-   :alt: Appmode-App
+   :alt: Appmode app
 
 Installation
 ------------
 
-Für den Jupyter-Service muss ``appmode`` installiert werden mit
+For the Jupyter service ``appmode`` must be installed with
 
 .. code-block:: console
 
@@ -50,35 +49,35 @@ Für den Jupyter-Service muss ``appmode`` installiert werden mit
         - Validating...
           appmode.server_extension  OK
 
-Konfiguration
+Configuration
 -------------
 
-Serverseitige Konfiguration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Server-side configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Der Server kann mit folgenden drei Optionen konfiguriert werden:
+The server can be configured with the following three options:
 
 ``Appmode.trusted_path``
-    führt den App-Modus nur für Notizbücher unter diesem Pfad aus;
-    Voreinstellung: *Keine Einschränkungen*.
+    runs the app mode only for notebooks under this path; Default setting: *no
+    restrictions*.
 
 ``Appmode.show_edit_button``
-    zeigt :menuselection:`Edit App`-Taste im App-Modus an; Voreinstellung:
-    ``True``
+    displays :menuselection:`Edit App` button in app mode; Default setting:
+    ``True``.
 
 ``Appmode.show_other_buttons``
-    zeigt andere Schaltflächen im App-Modus an, z.B. :menuselection:`Logout`;
-    Voreinstellung: ``True``
+    shows other buttons in app mode, e.g. :menuselection:`Logout`; Default
+    setting: ``True``.
 
-Weitere Infos zur Server-Konfiguration erhaltet ihr in
+You can find more information about the server configuration in
 :doc:`/workspace/jupyter/notebook/config`.
 
-Clientseitige Konfiguration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Client-side configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Die UI-Elemente können auch clientseitig in der `custom.js
-<https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/JavaScript%20Notebook%20Extensions.html#custom.js>`_-Datei
-angepasst werden, z.B. mit:
+The UI elements can also be adapted on the client side in the `custom.js
+<https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/JavaScript%20Notebook%20Extensions.html#custom.js>`_
+file, e.g. with:
 
 .. code-block:: Javascript
 
@@ -92,5 +91,5 @@ angepasst werden, z.B. mit:
     $('#appmode-loader').append('<h2>Loading...</h2>');
 
 .. note::
-    Das Ausblenden der :menuselection:`Edit App`-Taste hindert Benutzer nicht am
-    Verlassen des App-Modus, indem die URL manuell geändert wird.
+    Hiding the :menuselection:`Edit App` button does not prevent users from
+    exiting app mode by manually changing the URL.

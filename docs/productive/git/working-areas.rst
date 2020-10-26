@@ -1,23 +1,21 @@
-Arbeitsbereiche
-===============
+Workspaces
+==========
 
 .. figure:: git-workspaces.png
-   :alt: Git Arbeitsbereiche
+   :alt: Git workspaces
 
 ``git add``
-    fügt Dateien aus dem Arbeitsverzeichnis dem Bühnenbereich (engl.: *staging
-    area*) hinzu.
+    adds files from the working directory to the staging area.
 ``git reset HEAD``
-    stellt eine Datei im Arbeitsbereich aus dem Bühnenbereich wieder her.
+    restores a file in the work area from the stage area.
 ``git stash``
-    verschiebt Dateien aus dem Arbeitsbereich in ein Versteck (engl.: *stash*).
+    moves files from the workspace to a stash.
 ``git stash pop``
-    holt Dateien aus dem Versteck in den Arbeitsbereich.
+    brings files from the stash to the work area.
 ``git push``
-    verschiebt Dateien aus dem Bühnenbereich in das Repository.
+    moves files from the staging area to the repository.
 
     ``git push -u origin master``
-        ``-u`` legt die Upstream-Referenz für jeden Zweig fest, deren Argumente
-        anschließend in ``git pull`` o.ä. nicht mehr explizit festgelegt werden
-        müssen. In unserem Beispiel wird ``master`` im entfernten Repository
-        referenziert.
+        ``-u`` defines the upstream reference for each branch, the arguments are
+        then given and no longer have to be specified explicitly.  In our
+        example ``master`` in the external repository is referenced.

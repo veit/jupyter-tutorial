@@ -12,13 +12,13 @@ Kernels
     python39.ipynb
     r
 
-Überblick
----------
+overview
+--------
 
-Das Jupyter-Team verwaltet den `IPython-Kernel
-<https://github.com/ipython/ipykernel>`_. Zusätzlich zu Python können in
-Notebooks auch viele andere Sprachen verwendet werden. Dabei sind die folgenden
-Jupyter-Kernels weit verbreitet:
+The Jupyter team manages the `IPython-Kernel
+<https://github.com/ipython/ipykernel>`_. In addition to Python, many other
+languages can be used in notebooks. The following Jupyter kernels are widely
+used:
 
 * R
 
@@ -31,5 +31,5 @@ Jupyter-Kernels weit verbreitet:
   * IJulia: `GitHub <https://github.com/JuliaLang/IJulia.jl>`__
   * Interact.jl: `GitHub <https://github.com/JuliaGizmos/Interact.jl>`__
 
-Eine Liste verfügbarer Kernel findet ihr unter `Jupyter kernels
+A list of available kernels can be found in `Jupyter kernels
 <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_.

@@ -1,26 +1,25 @@
 Pipelines
 =========
 
-Code und Daten verbinden
-------------------------
+Connect code and data
+---------------------
 
-Befehle wie ``dvc add``, ``dvc push`` und ``dvc pull`` können unabhängig von
-Änderungen im Git-Repository vorgenommen werden und bieten daher nur die Basis
-um große Datenmengen und Modelle zu verwalten. Um tatsächlich reproduzierbare
-Ergebnisse zu erzielen, müssen Code und Daten miteinander verbunden werden.
+Commands like ``dvc add``, ``dvc push`` and ``dvc pull`` can be made
+independently of changes in the Git repository and therefore only provide the
+basis for managing large amounts of data and models. In order to actually
+achieve reproducible results, code and data must be linked together.
 
 .. figure:: combine-git-dvc.png
-   :alt: Git und DVC verbinden
+   :alt: Connect Git and DVC
 
    Design: André Henze, Berlin
 
-Mit ``dvc run`` könnt Ihr einzelne Verbeitungsstufen erstellen, wobei jede
-Stufe durch eine, mit Git verwaltete, Quellcode-Datei sowie weiteren
-Abhängigkeiten und Ausgabedaten beschrieben wird. Alle Stufen zusammen bilden
-dann die DVC-Pipeline.
+With ``dvc run`` you can create individual processing levels, each level being
+described by a source code file managed with Git as well as other dependencies
+and output data. All stages together then form the DVC pipeline.
 
-In unserem Beispiel `dvc-example <https://github.com/veit/dvc-example>`_ soll
-die erste Stufe die Daten in Trainings- und Testdaten aufteilen:
+In our example `dvc-example <https://github.com/veit/dvc-example>`_, the first
+stage is to split the data into training and test data:
 
 .. code-block:: console
 
@@ -28,19 +27,18 @@ die erste Stufe die Daten in Trainings- und Testdaten aufteilen:
         python src/split.py data/data.xml
 
 ``-n``
-    gibt den Namen der Verarbeitungsstufe an.
+    indicates the name of the processing stage.
 ``-d``
-    gibt Abhängigkeiten (*dependencies*) für das reproduzierbare Kommando an.
+    dependencies on the reproducible command.
 
-    Wenn zum Reproduzieren der Ergebnisse beim nächsten Mal ``dvc repo``
-    aufgerufen wird, überprüft DVC diese Abhängigkeiten und entscheidet, ob
-    diese auf dem aktuellen Stand sond oder erneut ausgeführt werden müssen um
-    aktuellere Ergebnisse zu erhalten.
+    The next time ``dvc repo`` is called to reproduce the results, DVC checks
+    these dependencies and decides whether they need to be updated or run again
+    to get more current results.
 
 ``-o``
-    gibt die Ausgabedatei oder das Ausgabeverzeichnis an.
+    specifies the output file or directory.
 
-In unserem Fall sollte sich der Arbeitsbereich geändert haben in:
+In our case, the work area should have changed to:
 
 .. code-block:: console
 
@@ -57,7 +55,7 @@ In unserem Fall sollte sich der Arbeitsbereich geändert haben in:
       └── src
           └── split.py
 
-Die generierte ``dvc.yaml``-Datei sieht dann z.B. folgendermaßen aus:
+The generated ``dvc.yaml`` file looks like this, for example:
 
 .. code-block:: yaml
 
@@ -70,16 +68,15 @@ Die generierte ``dvc.yaml``-Datei sieht dann z.B. folgendermaßen aus:
         outs:
         - data/splitted
 
-Da die Daten im Ausgabeverzeichnis nie mit Git versioniert werden sollten, hat
-``dvc run`` dies auch bereits die ``data/.gitignore``-Datei geschrieben:
+Since the data in the output directory should never be versioned with Git, ``dvc
+run`` has already written the file ``data/.gitignore``:
 
  .. code-block:: console
 
       /data.xml
     + /splitted
 
-Anschließend müssen die geänderten Daten nur noch in Git bzw. DVC übernommen
-werden:
+Then the changed data only has to be transferred to Git or DVC:
 
 .. code-block:: console
 
@@ -87,6 +84,6 @@ werden:
     $ git commit -m "Create split stage"
     $ dvc push
 
-Werden nun mehrere Phasen mit ``dvc run`` erstellt, wobei die Ausgabe eines
-Kommandos als Abhängigkeit eines anderen angegeben wird, entsteht eine `DVC
-Pipeline <https://dvc.org/doc/commands-reference/pipeline>`_.
+If several phases are now created with ``dvc run`` and the output of one command
+being specified as a dependency of another, a `DVC Pipeline
+<https://dvc.org/doc/commands-reference/pipeline>`_ is created.

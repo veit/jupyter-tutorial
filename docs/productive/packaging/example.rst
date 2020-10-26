@@ -1,9 +1,9 @@
-Beispiel
-========
+Example
+=======
 
-#. Notebooks sind gut geeignet um schnell voranzukommen, doch bei umfangreicher
-   werdendem Code empfiehlt sich, stabilen Code in Module auszulagern. Wenn ihr
-   z.B. in eurem Notebook geschrieben habt:
+#. Notebooks are well suited for making rapid progress, but when the code
+   becomes more extensive, it is advisable to move stable code into modules. For
+   example, if you wrote in your notebook:
 
    .. code-block:: python
 
@@ -12,7 +12,7 @@ Beispiel
         df.query( ...
         df.groupby( ...
 
-   so könnt ihr das in eine Datei ``dataprep.py`` auslagern
+   so you can outsource it to a file ``dataprep.py``:
 
    .. code-block:: python
 
@@ -22,15 +22,15 @@ Beispiel
            # ...
            return df
 
-   und dies kann wieder in das Notebook übernommen werden mit
+   and this can be imported into the notebook with
 
    .. code-block:: python
 
         import dataprep
         df = dataprep.load_and_preprocess_data(filename)
 
-   Wenn ihr das Python-Skript ändert, kann die aktualiserte Variante automatisch
-   übernommen werden mit :mod:`IPython.extensions.autoreload`:
+   If you change the Python script, the updated variant can be automatically
+   adopted with :mod:`IPython.extensions.autoreload`:
 
    .. code-block:: python
 

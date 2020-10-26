@@ -2,9 +2,9 @@
 Pipenv
 ======
 
-`Pipenv <https://docs.pipenv.org/>`_ ist ein Python-Paketmanager. Er nutzt
-:term:`Pip` zum Installieren von Python-Paketen, vereinfacht jedoch auch die
-Verwaltung und Pflege von Abhängigkeiten.
+`Pipenv <https://docs.pipenv.org/>`_ is a Python package manager. He uses
+:term:`Pip` to install Python packages, but also simplifies the management and
+maintenance of dependencies.
 
 .. toctree::
     :hidden:

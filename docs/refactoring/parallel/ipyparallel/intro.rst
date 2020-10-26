@@ -1,10 +1,10 @@
-Überblick
-=========
+Overview
+========
 
-Architektur
------------
+Architecture
+------------
 
-Die ``IPython.parallel``-Architektur besteht aus vier Komponenten:
+The ``IPython.parallel`` architecture consists of four components:
 
 .. graphviz::
 
@@ -40,41 +40,40 @@ Die ``IPython.parallel``-Architektur besteht aus vier Komponenten:
 IPython-Engine
 ~~~~~~~~~~~~~~
 
-Die IPython-Engine ist eine Erweiterung des IPython-Kernels für Jupyter. Das
-Modul wartet auf Anfragen aus dem Netzwerk, führt Code aus und gibt die
-Ergebnisse zurück. IPython parallel erweitert das Jupyter-Messaging-Protokoll um
-native Python-Objektserialisierung und fügt einige zusätzliche Befehle hinzu.
-Zum parallelen und verteilten Rechnen werden mehrere Engines gestartet.
+The IPython engine is an extension of the IPython kernel for Jupyter. The module
+waits for requests from the network, executes code and returns the results.
+IPython parallel extends the Jupyter messaging protocol with native Python
+object serialisation and adds some additional commands. Several engines are
+started for parallel and distributed computing.
 
 IPython-Hub
 ~~~~~~~~~~~
 
-Die Hauptaufgabe des Hubs besteht darin, Verbindungen zu Clients und Engines
-herzustellen und zu überwachen.
+The main job of the hub is to establish and monitor connections to clients and
+engines.
 
 IPython-Schedulers
 ~~~~~~~~~~~~~~~~~~
 
-Alle Aktionen, die an der Engine ausgeführt werden können, durchlaufen einen
-Scheduler. Während die Engines selbst blockieren, wenn Benutzercode ausgeführt
-wird, verbergen die Scheduler dies vor dem Benutzer, um eine vollständig
-asynchrone Schnittstelle für eine Reihe von Engines bereitzustellen.
+All actions that can be carried out on the engine go through a scheduler. While
+the engines themselves block when user code is executed, the schedulers hide
+this from the user to provide a fully asynchronous interface for a number of
+engines.
 
 IPython-Client
 ~~~~~~~~~~~~~~
 
-Es gibt ein Hauptobjekt ``Client`` um eine Verbindung zum Cluster herzustellen.
-Für jedes Ausführungsmodell gibt es dann einen entsprechenden ``View``. Mit
-diesen ``Views`` können Benutzer mit einer Reihe von Engines interagieren. Dabei
-sind die beiden Standardansichten:
+There is a main object ``Client`` to connect to the cluster. Then there is a
+corresponding ``View`` for each execution model. These ``Views`` allow users to
+interact with a number of engines. The two standard views are:
 
-- :py:class:`ipyparallel.DirectView`-Klasse für die explizite Adressierung
-- :py:class:`ipyparallel.LoadBalancedView`-Klasse für zielunabhängiges Scheduling
+- :py:class:`ipyparallel.DirectView` class for explicit addressing
+- :py:class:`ipyparallel.LoadBalancedView` class for target-independent scheduling
 
-Starten
--------
+Start
+-----
 
-#. Starten des IPython-Hub:
+#. Starting the IPython Hub:
 
    .. code-block:: console
 
@@ -87,29 +86,28 @@ Starten
     [IPControllerApp] task::using Python leastload Task scheduler
     …
 
-   DB-Backend
-    Die Datenbank, in der die IPython-Tasks verwaltet werden. Neben der
-    In-Memory-Datenbank ``DictDB`` sind ``MongoDB`` und ``SQLite`` die weiteren
-    Optionen.
+   DB backend
+    The database in which the IPython tasks are managed. In addition to the
+    in-memory database ``DictDB``,  ``MongoDB`` and ``SQLite`` are further
+    options.
    ``ipcontroller-client.json``
-    Konfigurationsdatei für den IPython-Client
+    Configuration file for the IPython client
    ``ipcontroller-engine.json``
-    Konfigurationsdatei für die IPython-Engine
+    Configuration file for the IPython engine
    Task-Schedulers
-    Das mögliche Routing-Schema. ``leastload`` weist Aufgaben immer derjenigen
-    Engine zu, die die wenigsten offenen Aufgaben hat. Alternativ lasst sich
-    ``lru`` (Least Recently Used), ``plainrandom``,  ``twobin`` und
-    ``weighted`` auswählen, wobei die beiden letztgenannten zusätzlich Numpy
-    benötigen.
+    The possible routing scheme. ``leastload`` always assigns tasks to the
+    engine with the fewest open tasks. Alternatively, ``lru`` (Least Recently
+    Used), ``plainrandom``,  ``twobin`` and ``weighted`` can be selected, the
+    latter two also need Numpy.
 
-    Dies kann konfiguriert werden in ``ipcontroller_config.py``, z.B. mit
-    ``c.TaskScheduler.scheme_name = 'leastload'`` oder mit
+    This can be configured in ``ipcontroller_config.py``, for example with
+    ``c.TaskScheduler.scheme_name = 'leastload'`` or with
 
     .. code-block:: console
 
         $ pipenv run ipcontroller --scheme=pure
 
-#. Starten des IPython-Controller und der -Engines:
+#. Starting the IPython controller and the engines:
 
    .. code-block:: console
 
@@ -119,24 +117,22 @@ Starten
     [IPClusterStart] Starting Controller with LocalControllerLauncher
     [IPClusterStart] Starting 4 Engines with LocalEngineSetLauncher
 
-   Batch-Systeme
-    Neben  der Möglichkeit, ``ipcontroller`` und ``ipengine`` lokal zu starten,
-   siehe *Starting the controller and engine on your local machine* in
-   :ipyparallel:label:`ssh`, dRieas ``LocalControllerLauncher``
-    und ``LocalEngineSetLauncher`` starten,  gibt es auch noch die Profile
-    ``MPI``, ``PBS``, `SGE``, ``LSF``, ``HTCondor``, ``Slurm``,
-    ``SSH`` und ``WindowsHPC``.
+   Batch systems
+    Besides the possibility to start ``ipcontroller`` and ``ipengine`` locally,
+    see *Starting the controller and engine on your local machine* in
+    :ipyparallel:label:`ssh`, there are also the profiles for  ``MPI``, ``PBS``,
+    `SGE``, ``LSF``, ``HTCondor``, ``Slurm``, ``SSH`` and ``WindowsHPC``.
 
-    Dies kann konfiguriert werden in ``ipcluster_config.py`` z.B. mit
-    ``c.IPClusterEngines.engine_launcher_class = 'SSH'`` oder mit
+    This can be configured in ``ipcluster_config.py`` for example with
+   ``c.IPClusterEngines.engine_launcher_class = 'SSH'`` or with
 
-    .. code-block:: console
+   .. code-block:: console
 
         $ pipenv run ipcluster start --engines=MPI
 
-    .. seealso:: :ipyparallel:doc:`process`
+   .. seealso:: :ipyparallel:doc:`process`
 
-#. Starten des Jupyter Notebook und Laden der IPython-Parallel-Extension:
+#. Starting the Jupyter Notebook and loading the IPython-Parallel-Extension:
 
    .. code-block:: console
 
@@ -147,6 +143,6 @@ Starten
     [I NotebookApp] The Jupyter Notebook is running at:
     [I NotebookApp] http://localhost:8888/?token=4e9acb8993758c2e7f3bda3b1957614c6f3528ee5e3343b3
 
-#. Im Browser kann anschließend unter der Adresse
-   ``http://localhost:8888/tree/docs/parallel/ipyparallel#ipyclusters`` der
-   Cluster mit dem ``default``-Profil gestartet werden.
+#. Finally the cluster with the ``default`` profile can be startet in the
+   browser at the URL
+   ``http://localhost:8888/tree/docs/parallel/ipyparallel#ipyclusters``.

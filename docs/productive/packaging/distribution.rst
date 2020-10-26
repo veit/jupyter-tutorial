@@ -1,42 +1,40 @@
-Distribution Package erstellen
-==============================
+Create a distribution package
+=============================
 
-:term:`Distribution Packages <Distribution Package>` sind Archive, die in einen
-Paket-Index hochgeladen und mit :term:`Pip` installiert werden können.
+:term:`Distribution Packages <Distribution Package>` are archives that can be
+uploaded to a package index and installed with :term:`Pip`.
 
 .. note::
-    Beachtet bitte, dass es immer noch viele Anleitungen gibt, die einen Schritt
-    zum Aufruf der ``setup.py`` enthalten, z.B. ``python setup.py sdist``. Dies
-    wird jedoch heutzutage von Teilen der `Python Packaging Authority (PyPA)
-    <https://github.com/pypa/>`_ als `Anti-Pattern
-    <https://twitter.com/pganssle/status/1152695229105000453>`_ angesehen.
+    Please note that there are still many instructions that contain a step of
+    calling the ``setup.py``, e.g. ``python setup.py sdist``. However, this is
+    now seen as an `Anti-Pattern
+    <https://twitter.com/pganssle/status/1152695229105000453>`_ by parts of the
+    `Python Packaging Authority (PyPA) <https://github.com/pypa/>`_.
 
 ``setup.py``
 ------------
 
-Eine minimale und dennoch funktionale ``setup.py`` findet ihr z.B. im `attrs
-<https://github.com/python-attrs/attrs/>`_-Paket: `setup.py
-</https://github.com/python-attrs/attrs/blob/0023e5b/setup.py>`_. Daran könnt
-ihr erkennen, dass das meiste *Boilerplate* ist und lediglich die Zeilen 10–37
-Metadaten für diese spezielle Paket sind. Die meisten anderen Metadaten sind in
-der `__init__
-<https://github.com/python-attrs/attrs/blob/master/src/attr/__init__.py>`_
-gespeichert und werden mit regulären Ausdrücken erschlossen. Alternativ können
-diese Daten auch in ein separates Modul ausgelagert und mit Python analysiert
-werden, wie dies z.B. in `cryptography
-<https://github.com/pyca/cryptography/blob/e575e3d/setup.py#L37-L39>`_
-erfolgt.
+pyYou can find a minimal yet functional ``setup.py`` in the `attrs
+<https://github.com/python-attrs/attrs/>`_ package: `setup.py
+</https://github.com/python-attrs/attrs/blob/0023e5b/setup.py>`_. This tells you
+that most of it is boilerplate and only the lines 10–37 are metadata for this
+particular package. Most of the other metadata is stored in the `__init__
+<https://github.com/python-attrs/attrs/blob/master/src/attr/__init__.py>`_ and
+is accessed using regular expressions. Alternatively, this data can also be
+stored in a separate module and analysed with Python, as it is done in
+`cryptography
+<https://github.com/pyca/cryptography/blob/e575e3d/setup.py#L37-L39>`_.
 
-In beiden Fällen werden doppelte Metadaten in Paket und Code vermieden.
+In both cases, duplicate metadata in package and code is avoided.
 
 ``src``-Package
 ---------------
 
-Das `packages`-Feld verwendet setuptools’s `find_packages()
+The `packages` field uses setuptools’s `find_packages()
 <https://setuptools.readthedocs.io/en/latest/setuptools.html#using-find-packages>`_
-um darunterliegende Pakete zu finden und das `package_dir
-<https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages>`_-Feld
-beschreibt, wo das Root-Verzeichnis ist.
+to find underlying packages and the `package_dir
+<https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages>`_
+field describes where the root directory is.
 
 .. note::
     ``find_packages()`` ohne ``src/``-Verzeichnis würde alle Verzeichnisse mit
@@ -45,8 +43,8 @@ beschreibt, wo das Root-Verzeichnis ist.
 ``version``
 -----------
 
-Für ``version`` gibt es verschiedene Möglichkeiten, die in `PEP 0440
-<https://www.python.org/dev/peps/pep-0440/>`_ beschrieben sind.
+For ``version`` there are different ways described in `PEP 0440
+<https://www.python.org/dev/peps/pep-0440/>`_.
 
 .. seealso::
     * `Semantic Versioning <https://semver.org>`_
@@ -57,67 +55,65 @@ Für ``version`` gibt es verschiedene Möglichkeiten, die in `PEP 0440
 ``classifiers``
 ---------------
 
-`classifiers <https://pypi.org/classifiers/>`_ haben eine nützliche
-Zusatzfunktion: PyPI lehnt unbekannte *Classifiers* ab, sodass damit auch ein
-versehentlicher Upload vermieden werden kann.
+`classifiers <https://pypi.org/classifiers/>`_ have a useful additional
+function: PyPI rejects unknown classifiers, so that accidental uploads can be
+avoided.
 
 .. seealso::
     `Add invalid classifier for non open source license to avoid upload to…
     <https://github.com/veit/cookiecutter-namespace-template/commit/f4fff8ee8595ae2e59e5feb92211c8e3f1252461>`_
 
-Abhängigkeiten
---------------
+Dependencies
+------------
 
-Versionsnummern von Abhängigkeiten sollten üblicherweise nicht in der
-``setup.py`` festgeschrieben werden sondern in der `requirements.txt
-<https://pip.pypa.io/en/latest/user_guide/#requirements-files>`_-Datei.
+Version numbers of dependencies should usually not be set in the ``setup.py``
+but in the `requirements.txt
+<https://pip.pypa.io/en/latest/user_guide/#requirements-files>`_.
 
 .. seealso::
     `setup.py vs requirements.txt
     <https://caremad.io/posts/2013/07/setup-vs-requirement/>`_
 
-Andere Dateien
---------------
+Other files
+-----------
 
 ``MANIFEST.in``
 ~~~~~~~~~~~~~~~
 
-Die Datei enthält alle Dateien und Verzeichnisse, die nicht bereits mit
-``packages`` oder ``py_module`` erfasst werden. Sie kann z.B. so aussehen:
+The file contains all files and directories that are not already recorded with
+``packages`` or ``py_module``. For example, it could look like this:
 `attrs/MANIFEST.in
 <https://github.com/python-attrs/attrs/blob/a9a32a2/MANIFEST.in>`_.
 
-Weitere Anweisungen in `Manifest.in` findet ihr in `Creating a source
+Further instructions in `Manifest.in` can be found in `Creating a source
 distribution
 <https://docs.python.org/3/distutils/commandref.html?highlight=manifest#creating-a-source-distribution-the-sdist-command>`_.
 
 .. note::
-    Häufig wird die Aktualisierung der ``Manifest.in``-Datei vergessen. Um dies
-    zu vermeiden, könnt ihr `check-manifest
-    <https://pypi.org/project/check-manifest/>`_ in einem ``pre-commit``-Hook
-    verwenden.
+    Often people forget to update the ``Manifest.in`` file. To avoid this, you
+    can use `check-manifest <https://pypi.org/project/check-manifest/>`_ in a
+    ``pre-commit``-hook.
 
 .. note::
-    Wenn ihr Dateien und Verzeichnisse aus ``MANIFEST.in`` auch installiert
-    werden sollen, z.B. wenn es sich um laufzeitrelevante Daten handelt, könnt
-    ihr dies mit ``include_package_data=True`` in eurem ``setup()``-Aufruf
-    angeben.
+    If you want to install files and directories from ``MANIFEST.in``, for
+    example, when it comes to runtime-relevant data, you can specify this with
+    ``include_package_data=True`` in your ``setup()`` call.
 
 ``setup.cfg``
 ~~~~~~~~~~~~~
 
-Diese Datei wird nicht mehr benötigt, zumindest nicht für die Paketierung.
-``wheel`` sammelt heutzutage alle erforderlichen Lizenzdateien automatisch und
-``setuptools`` kann mit dem ``options``-Keyword-Argument universelle
-``whell``-Pakete bauen, z.B. ``attrs-19.3.0-py2.py3-none-any.whl``.
+This file is no longer needed, at least not for packaging. Today ``wheel``
+collects all the necessary license files automatically and  ``setuptools`` with
+the ``options`` keyword argument creates universal ``whell`` packages e.g.
+``attrs-19.3.0-py2.py3-none-any.whl``.
 
 ``pyproject.toml``
 ~~~~~~~~~~~~~~~~~~
 
-`PEP 517 <https://www.python.org/dev/peps/pep-0517/>`_ und `PEP 518
-<https://www.python.org/dev/peps/pep-0518/>`_ brachten Plugable Build-Backends,
-isolierte Builds und ``pyproject.toml``. Da wir ``setuptools`` verwenden,
-sollte die Datei so oder so ähnlich aussehen:
+`PEP 517 <https://www.python.org/dev/peps/pep-0517/>`_ and `PEP 518
+<https://www.python.org/dev/peps/pep-0518/>`_ brought plugable build backends,
+isolated builds, and ``pyproject.toml``. Since we’re using ``setuptools``, the
+file should look something like this:
 
 .. code-block:: toml
 
@@ -128,32 +124,31 @@ sollte die Datei so oder so ähnlich aussehen:
 ``LICENSE``
 ~~~~~~~~~~~
 
-Einen Überblick über freie und Open-Source-Software-Lizenzen erhaltet ihr in
-`Comparison of free and open-source software licenses
+You can get an overview of free and open-source software licenses in `Comparison
+of free and open-source software licenses
 <https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses>`_.
 
-Wenn ihr z.B. eine möglichst große Verbreitung eures Pakets erreichen wollt,
-sind MIT- oder die BSD-Varianten eine gute Wahl. Die Apache-Lizenz schützt euch
-besser vor Patentverletzungen ist jedoch nicht kompatibel mit der GPL v2. Daher
-solltet ihr schauen, welche Lizenzen diejenigen Pakete haben, von denen ihr
-abhängt und zu denen ihr kompatibel sein solltet. Zur Analyse von Lizenzen könnt
-ihr `licensechecker
+For example, if you want to achieve the widest possible distribution of your
+package, MIT or BSD variants are a good choice. The Apache license protects you
+better against patent infringements, but isn’t compatible with the GPL v2.
+Therefore, you should see which licenses have the packages that you depend on
+and with which you should be compatible. To analyse licenses, you can use
+`licensechecker
 <http://www.boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_,
-verwenden, ein Kommandozeilenwerkzeug, das Installationsverzeichnisse nach
-Lizenzen durchsucht.
+a command line tool that searches installation directories for licenses.
 
-Darüberhinaus kann es auch sinnvoll sein, ein Package unter mehreren Lizenzen
-zu veröffentlichen. Ein Beispiel hierfür ist `cryptography/LICENSE
+It can also be useful to publish a package under several licenses. An example of
+this is `cryptography/LICENSE
 <https://github.com/pyca/cryptography/blob/adf234e/LICENSE>`_.
 
 ``README.rst``
 ~~~~~~~~~~~~~~
 
-Diese Datei teilt potentiellen Nutzern mit, worauf sie bei der Verwendung des
-Pakets achten müssen. Schreibt das Dokument in `ReStructuredText (ReST)
+This file tells potential users what to look out for when using the package.
+Write the document in `ReStructuredText (ReST)
 <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-primer>`_,
-sodass ihr es später problemlos mit ``.. include:: ../../README.rst`` in die
-Sphinx-Dokumentation übernehmen könnt.
+so that you can easily transfer it to the Sphinx documentation later with
+``.. include:: ../../README.rst``.
 
 ``CHANGELOG.rst``
 ~~~~~~~~~~~~~~~~~
@@ -165,50 +160,50 @@ Sphinx-Dokumentation übernehmen könnt.
 Build
 -----
 
-Wechselt in das Verzeichnis, in dem sich die ``setup.py``-Datei befindet.
+Change to the directory in which the ``setup.py`` file is located.
 
 .. code-block:: console
 
     $ rm -rf build dist
     $ pipenv run python3 -m pep517.build .
 
-Die erste Zeile stellt sicher, dass ein sauberes Build ohne Artefakte
-früherer Builds erstellt wird. Die zweite Zeile baut ein ``sdist``-Archiv unter
-Linux/Mac als gezippte Tar-Datei (``.tar.gz``) und unter Windows eine ZIP-Datei
-sowie ein ``bdist_wheel``-Archiv  mit ``.whl`` im ``dist``-Verzeichnis.
+The first line ensures that a clean build is produced with no artifacts from
+previous builds. The second line builds an ``sdist`` archive under Linux/Mac as
+a zipped tar file (``.tar.gz``) and under Windows a ZIP file as well as an
+``bdist_wheel`` archive ``.whl`` in the ``dist`` directory.
 
-Dieser Befehl sollte also die folgenden beiden Dateien erzeugen::
+So this command should produce the following two files:
 
     dist/
       example-0.0.1-py3-none-any.whl
       example-0.0.1.tar.gz
 
 ``py3``
-    Python-Version, mit der das Paket gebaut wurde
+    Python version that the package was built with
 ``none``
-    nicht OS-spezifisch
+    not OS specific
 ``any``
-    geeignet für jede Prozessorarchitektur
+    suitable for every processor architecture
 
-Die Referenz für die Dateinamen findet ihr in `File name convention
+You can find the reference for the file names in `File name convention
 <https://www.python.org/dev/peps/pep-0427/#file-name-convention>`_.
 
 .. seealso::
-    Weitere Infos zu ``sdist`` erhaltet ihr in `Creating a Source Distribution
+    For more information, see `Creating a Source Distribution
     <https://docs.python.org/2/distutils/sourcedist.html#creating-a-source-distribution>`_.
-    und `PEP 376 <https://www.python.org/dev/peps/pep-0376/>`_.
+    and `PEP 376 <https://www.python.org/dev/peps/pep-0376/>`_.
 
 .. note::
-    Die Verwendung von `pep517.build <https://www.python.org/dev/peps/pep-0517/>`_
-    zum Erstellen von Paketen ist aktuell (Oktober 2019) noch `etwas umstritten
+    The use of `pep517.build <https://www.python.org/dev/peps/pep-0517/>`_
+    to create packages is currently (October 2019) a `bit controversial
     <https://discuss.python.org/t/building-distributions-and-drawing-the-platypus/2062>`_.
-    Es scheint Konsens zu sein, dass diese Funktionalität entweder in Pip oder in Twine
-    zusammengeführt werden sollte. Derzeit scheint der oben genannte Weg jedoch der
-    sauberste zu sein, ein Paket zu erstellen. Ich werde diesen Artikel
-    aktualisieren, sobald sich eine andere Lösung durchsetzt.
+    There seems to be a consensus that this functionality should be merged into
+    either Pip or Twine. At the moment, however, the above seems like the
+    cleanest way to package a package. I will update this article as soon as
+    another solution prevails.
 
-Testen
-------
+Testing
+-------
 
 .. code-block:: console
 
@@ -223,7 +218,7 @@ Testen
     >>> import attr; attr.__version__
     '19.3.0'
 
-oder
+or
 
 .. code-block:: console
 

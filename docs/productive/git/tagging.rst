@@ -1,8 +1,8 @@
-Git-Tagging
+Git tagging
 ===========
 
 ``$ git tag``
-    auflisten aller Tags, z.B.:
+    list all tags, e.g.
 
     .. code-block:: console
 
@@ -18,15 +18,15 @@ Git-Tagging
         0.6.1
 
 ``$ git tag -l regex``
-    listet nur  Tags auf, die zu einem regulären Ausdruck passen.
+    only lists tags that match a regular expression.
 
 ``$ git tag [name] [commit sha]``
-    erstellt einen Tag mit dem Namen ``name`` für den aktuellen Commit.
+    creates a tag with the name ``name`` for the current commit.
 
-    Mit ``sha`` erhält der spezifische Commit einen Tag, nicht der aktuelle.
+    With ``sha`` the specific commit gets a tag, not the current one.
 
 ``$ git tag -a [name] [commit sha] [-m 'Commit message']``
-    erstellt einen Tag mit dem Namen ``name`` für den aktuellen Commit, z.B.:
+    creates a tag with the name ``name`` for the current commit, e.g.:
 
     .. code-block:: console
 
@@ -39,7 +39,7 @@ Git-Tagging
          * [new tag]         0.6.1 -> 0.6.1
 
 ``git tag [-d name]``
-    löschen eines Tag, z.B.:
+    delete a tag, e.g.
 
     .. code-block:: console
 

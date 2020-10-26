@@ -1,33 +1,33 @@
-Spack-Installation
+Spack installation
 ==================
 
-Anforderungen
--------------
+Requirements
+------------
 
-* Python 2 oder Python 3
+* Python 2 or Python 3
 * C/C++ compiler
-* ``git`` und ``curl``
+* ``git`` and ``curl``
 
-  Für Linux:
+  For Linux:
 
   .. code-block:: console
 
     $ apt install curl git environment-modules
 
-  … oder für macOS:
+  … or for macOS:
 
   .. code-block:: console
 
     $ brew install curl git modules
 
-  Anschließend wird die Shell konfiguriert indem z.B. für die Bash folgendes in
-  die Bash-Konfiguration eingetragen wird:
+  Then the shell is configured by entering for example the following in the Bash
+  configuration:
 
   .. code-block:: console
 
     $ source /usr/local/opt/modules/init/bash
 
-* ``gnupg2`` für ``gpg``-Subcommand
+* ``gnupg2`` for the ``gpg`` subcommand
 
 Installation
 ------------
@@ -38,25 +38,25 @@ Installation
     Cloning into 'spack'...
     ...
 
-Shell konfigurieren
+Configure the shell
 -------------------
 
-#. Zur Konfiguration des Bash-Environment wird folgendes in ``~/.bashrc``
-   eingetragen:
+#. To configure the bash environment, the following is entered in the
+   ``~/.bashrc``:
 
    .. code-block:: bash
 
     export SPACK_ROOT=~/spack
     . $SPACK_ROOT/share/spack/setup-env.sh
 
-#. Die geänderte Konfiguration wird nun übernommen mit
+#. The changed configuration is read with
 
    .. code-block:: console
 
     $ source ~/.bashrc
 
-Überprüfen der Installation
----------------------------
+Checking the installation
+-------------------------
 
 .. code-block:: console
 
@@ -87,7 +87,7 @@ Shell konfigurieren
             ^perl@5.30.1%gcc@7.4.0+cpanm+shared+threads arch=linux-ubuntu18.04-sandybridge
         ^sqlite@3.30.1%gcc@7.4.0~column_metadata+fts~functions~rtree arch=linux-ubuntu18.04-sandybridge
 
-Compiler-Konfiguration
+Compiler configuration
 ----------------------
 
 .. code-block:: console
@@ -97,53 +97,50 @@ Compiler-Konfiguration
     -- clang mojave-x86_64 ------------------------------------------
     clang@10.0.1-apple
 
-GPG Signing
+GPG signing
 -----------
 
-Spack unterstützt das Signieren und Verifizieren von Paketen mit
-GPG-Schlüsseln. Für Spack wird ein separater Schlüsselring verwendet, weswegen
-keine Schlüssel aus dem Home-Verzeichnis von Nutzern verfügbar sind.
+Spack supports the signing and verification of packages with GPG keys. A
+separate key ring is used for Spack, why no keys are available from users’ home
+directories.
 
-Wenn Spack zum ersten Mal installiert wird, ist dieser Schlüsselring leer.
-Die in ``/var/spack/gpg`` gespeicherten Schlüssel sind die Standardschlüssel
-für eine Spack-Installation. Diese Schlüssel werden durch ``spack gpg init``
-importiert. Dadurch werden die Standardschlüssel als vertrauenswürdige Schlüssel
-in den Schlüsselbund importiert.
+When Spack is first installed, this key ring will be empty. The keys stored in
+``/var/spack/gpg`` are the standard keys for a Spack installation. These keys
+are imported by ``spack gpg init``. This will import the standard keys into the
+keyring as trusted keys.
 
-Schlüsseln vertrauen
-~~~~~~~~~~~~~~~~~~~~
+Trust keys
+~~~~~~~~~~
 
-Zusätzliche Schlüssel können dem Schlüsselring hinzugefügt werden mit
-``spack gpg trust <keyfile>``. Sobald ein Schlüssel vertrauenswürdig ist,
-können Pakete, die vom Besitzer dieses Schlüssels signiert wurden, installiert
-werden.
+Additional keys can be added to the key ring using ``spack gpg trust
+<keyfile>``. Once a key is trusted, packages signed by the owner of that key can
+be installed.
 
-Schlüssel erstellen
-~~~~~~~~~~~~~~~~~~~
+Create a key
+~~~~~~~~~~~~
 
-Ihr könnt auch eigene Schlüssel erstellen um eure eigenen Pakete signieren
-zu können mit
+You can also create your own keys to be able to sign your own packages with
 
 .. code-block:: console
 
     $ spack gpg export <location> [<key>…]
 
-Schlüssel auflisten
-~~~~~~~~~~~~~~~~~~~
+List keys
+~~~~~~~~~
 
-Die im Schlüsselbund verfügbaren Schlüssel können aufgelistet werden mit
+The keys available in the keyring can be listed with
 
 .. code-block:: console
 
     $ spack gpg list
 
-Schlüssel entfernen
-~~~~~~~~~~~~~~~~~~~
+Remove a key
+~~~~~~~~~~~~
 
-Schlüssel können entfernt werden mit
+Keys can be removed with
 
 .. code-block:: console
 
     $ spack gpg untrust <keyid>
 
-Schlüssel-IDs können E-Mail-Adressen, Namen oder Fingerprints sein.
+Key IDs can be email addresses, names or fingerprints.

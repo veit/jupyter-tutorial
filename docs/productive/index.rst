@@ -1,29 +1,26 @@
-Produkt erstellen
-=================
+Create a product
+================
 
-    »Nicht reproduzierbare Einzelereignisse sind für die Wissenschaft ohne
-    Bedeutung.«[#]_
+    «Non-reproducible single occurrences are of no significance to science.»[#]_
 
-.. [#] Karl Popper in *Logik der Forschung*, 1935
+.. [#] Karl Popper in *The Logic of Scientific Discovery*, 1959
 
-Damit auch andere Euren Code nutzen können, sollte er einige Bedingungen
-erfüllen:
+In order for others to be able to use your code, it should meet some conditions:
 
-* Ihr solltet Euch nicht stillschweigend auf bestimmte Ressourcen und Umgebungen
-  verlassen
-* Erforderliche Software-Pakete und Hardware sollten in den Anforderungen
-  angegeben werden
-* Pfadangaben werden in einem anderen Kontext nur innerhalb Eures Pakets oder in
-  vorher generierten Verzeichnissen und Dateien funktionieren
-* Teilt keine Geheimnisse wie Zugangsdaten oder interne IP-Nummern in Eurem
-  veröffentlichten Produkt
+* You should not silently rely on specific resources and environments
+* Required software packages and hardware should be specified in the
+  requirements
+* Path information will only work in a different context within your package or
+  in previously generated directories and files
+* Do not share secrets like login details or internal IP numbers in your
+  published product
 
-Es gibt diverse Werkzeuge, die Euch beim Erstellen von gemeinsam nutzbaren
-Produkten unterstützen. Dies können Werkzeuge einerseits für die Versionierung
-des :doc:`Quellcodes <git/index>` und der :doc:`Trainingsdaten <dvc/index>`
-sowie für die Reproduzierbarkeit der :doc:`Ausführungsumgebungen <envs/index>`,
-andererseits für das :doc:`testing/index`, :doc:`logging`, :doc:`Dokumentieren
-<documenting/index>` und :doc:`Erstellen von Paketen <packaging/index>` sein.
+There are various tools that support you in creating shareable products. These
+can be tools on the one hand for the :doc:`versioning of the source code
+<git/index>` and the :doc:`training data <dvc/index>` as well as for the
+reproducibility of the :doc:`execution environments <envs/index>`, on the other
+hand for :doc:`testing/index`, :doc:`logging`, :doc:`documenting
+<documenting/index>` and :doc:`creating packages <packaging/index>`.
 
 .. seealso::
 

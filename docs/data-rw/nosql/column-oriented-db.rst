@@ -1,16 +1,15 @@
-Spaltenorientierte Datenbanksysteme
-===================================
+Column-oriented database systems
+================================
 
-Spaltenorientierte Datenbanken, auch Wide Column Stores genannt, speichern Daten
-mehrerer Einträge zusammen mit einem Zeitstempel in Spalten. Spalten mit
-ähnlichen oder verwandten Inhalten können in einer :term:`Column Family`
-zusammengefasst werden.
+Column-oriented databases, also known as wide column stores, store data from
+several entries together with a time stamp in columns. Columns with similar or
+related content can be combined in a :term:`Column family`.
 
-Datenbanksysteme
+Database systems
 ----------------
 
-Beispiele für spaltenorientierte Datenbanksysteme sind
-:term:`Cassandra`, :term:`Hypertable` und :term:`HBase`.
+Examples of column-oriented database systems are :term:`Cassandra`,
+:term:`Hypertable` and :term:`HBase`.
 
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Home**               | `Cassandra`_                   | `Hypertable`_                  | `HBase`_                       |
@@ -19,39 +18,36 @@ Beispiele für spaltenorientierte Datenbanksysteme sind
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Docs**               | `cassandra.apache.org/doc/`_   | `hypertable.com/documentation`_| `hbase.apache.org/book.html`_  |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anwendungsgebiete**  | Georedundanz, hohe             | Das Bigtable-Design von        | IoT, fraud detection,          |
-|                        | Schreibgeschwindigkeit,        | Hypertable löst horizontale    | recommendation engines         |
-|                        | demokratische Peer-to-peer     | Skalierungsprobleme durch ein  |                                |
-|                        | (P2P)-Architektur, Daten mit   | verteiltes Speichersystem für  |                                |
-|                        | definierter Lebenszeit         | strukturierte Daten.           |                                |
-|                        |                                |                                |                                |
+| **Application areas**  | Georedundancy, high writing    | Hypertable's Bigtable design   | IoT, fraud detection,          |
+|                        | speed, democratic peer-to-peer | solves horizontal scaling      | recommendation engines         |
+|                        | (P2P) architecture, data with  | problems through a distributed |                                |
+|                        | a defined lifetime             | storage system for structured  |                                |
+|                        |                                | data.                          |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Entwicklungssprache**| Java                           | C++                            | Java                           |
+| **Development          | Java                           | C++                            | Java                           |
+| language**             |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Lizenzen**           | Apache License 2.0             | GPL-3.0 License                | Apache-2.0 License             |
+| **Licenses**           | Apache License 2.0             | GPL-3.0 License                | Apache-2.0 License             |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Datenmodell**        | :term:`Column Family`          | Zuordnungstabellen             | In Regionen unterteilte        |
-|                        | entsprechen Tabellen,          | (engl. Associative arrays)     | Tabellen                       |
-|                        | *Keyspaces* Datenbanken; keine |                                |                                |
-|                        | logische Struktur, kein Schema |                                |                                |
-|                        |                                |                                |                                |
+| **Data model**         | :term:`Column Family`          | Associative arrays             | Tables divided into regions    |
+|                        | correspond to tables,          |                                |                                |
+|                        | *Keyspaces* databases; no      |                                |                                |
+|                        | logical structure, no scheme   |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Query-Langauge**     | `Cassandra Query Language      | `Hypertable Query Language     | Java Client API, Thrift/REST   |
+| **Query langauge**     | `Cassandra Query Language      | `Hypertable Query Language     | Java Client API, Thrift/REST   |
 |                        | (CQL)`_                        | (HQL)`_                        | API                            |
-|                        |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Transaktionen,       | :term:`Eventual Consistency`   | :term:`MVCC – Multiversion     | :term:`ACID` je Zeile,         |
-| Nebenläufigkeit**      |                                | Concurrency Control`           | :term:`MVCC – Multiversion     |
+| **Transactions,        | :term:`Eventual Consistency`   | :term:`MVCC – Multiversion     | :term:`ACID` per line,         |
+| concurrency**          |                                | Concurrency Control`           | :term:`MVCC – Multiversion     |
 |                        |                                |                                | Concurrency Control`           |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | SimpleStrategy,                | Replikation auf Dateisystem-   | Master-Slave-Replikation       |
-| Skalierung**           | NetworkTopologyStrategy und    | Ebene                          |                                |
+| **Replication,         | SimpleStrategy,                | File system level replication  | Master-Slave-Replikation       |
+| skaling**              | NetworkTopologyStrategy and    |                                |                                |
 |                        | OldNetworkTopologyStrategy     |                                |                                |
-|                        |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anmerkungen**        |                                | basiert auf verteilten         |                                |
-|                        |                                | Dateisystemen wie Apache       |                                |
-|                        |                                | Hadoop, DFS oder GlusterFS     |                                |
+| **Remarks**            |                                | is based on distributed file   |                                |
+|                        |                                | systems such as Apache Hadoop, |                                |
+|                        |                                | DFS or GlusterFS               |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 
 .. _`Cassandra`: https://cassandra.apache.org/

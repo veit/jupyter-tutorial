@@ -1,17 +1,17 @@
 Mock
 ====
 
-:mod:`unittest.mock` ist eine Python-Testbibliothek. Ab Python 3.3 ist sie in
-der Python-Standardbibliothek verfügbar.
+:mod:`unittest.mock` is a Python test library. As of Python 3.3, it is available
+in the Python standard library.
 
-Beispiel
---------
+Example
+-------
 
-Es ermöglicht euch, Teile eurer zu testenden Anwendung durch `Mock-Objekte
-<https://de.wikipedia.org/wiki/Mock-Objekt>`_ zu testen und *Assertions*
-darüber zu treffen, wie diese verwendet wurden.
+It allows you to test parts of your application with `mock objects
+<https://en.wikipedia.org/wiki/Mock_object>`_ and make assertions about how they
+have been used.
 
-Zum Beispiel könnt ihr einen Monkeypatch für eine Methode ausführen:
+For example, you can do a monkey patch for a method:
 
 .. code-block:: python
 
@@ -22,10 +22,9 @@ Zum Beispiel könnt ihr einen Monkeypatch für eine Methode ausführen:
 
     thing.method.assert_called_with(3, 4, 5, key='value')
 
-Um Mock-Klassen oder- Objekte in einem zu testenden Modul zu erzeugen, kann der
-``patch``-Dekorator verwendet werden. Im folgenden Beispiel wird ein externes
-Suchsystem durch eine Mock-Klasse ersetzt, die immer das gleiche Ergebnis
-liefert:
+The ``patch`` decorator can be used to create mock classes or objects in a
+module under test. In the following example, an external search system is
+replaced by a mock class that always delivers the same result:
 
 .. code-block:: python
 
@@ -39,24 +38,24 @@ liefert:
     def test_new_watchlist_activities(self):
         self.assertEqual(len(myapp.get_search_results(q="fish")), 3)
 
-``SearchForm`` bezieht sich hier auf die importierte Klassenreferenz in
-``myapp``, nicht auf die ``SearchForm``-Klasse selbst.
+``SearchForm`` refers here to the imported class reference in ``myapp``, not to
+the ``SearchForm`` class itself.
 
-``get_search_results`` führt eine Suche durch und iteriert über das Ergebnis.
+``get_search_results`` performs a search and iterates over the result.
 
 Installation
 ------------
 
-Für ältere Python-Versionen kann sie installiert werden mit
+For older Python versions it can be installed with
 
 .. code-block:: console
 
     $ pipenv install mock
 
 .. note::
-   Falls ihr pipenv noch nicht installiert hab, findet ihr eine Anleitung hierzu
-   unter :doc:`/first-steps/install`.
+   If you haven’t installed pipenv yet, you can find instructions on how to do
+   this in :doc:`/first-steps/install`.
 
 .. seealso::
-   Mit `responses <https://github.com/getsentry/responses>`_ könnt Ihr
-   Mock-Objekte für die :doc:`/data-rw/requests/index`-Bibliothek erstellen.
+   With `responses <https://github.com/getsentry/responses>`_ you can create
+   mock objects for the :doc:`/data-rw/requests/index` library.

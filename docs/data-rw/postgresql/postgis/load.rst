@@ -1,25 +1,25 @@
-Laden von Geodaten
-==================
+Loading geospatial data
+=======================
 
-Nun Laden wir einige Geodaten in unsere Datenbank, damit wir uns mit den Tools
-und Prozessen zum Abrufen dieser Daten vertraut machen können.
+Now let`s load some geospatial data into our database so that we can familiarise
+ourselves with the tools and processes used to retrieve that data.
 
-`Natural Earth <http://www.naturalearthdata.com/>`_ bietet eine großartige
-Quelle für Basisdaten für die ganze Welt in verschiedenen Maßstäben. Und sas
-Beste ist, dass diese Daten gemeinfrei sind:
+`Natural Earth <http://www.naturalearthdata.com/>`_  provides a great source of
+basic data for the whole world on various scales. And the best thing is that
+this data is in the public domain:
 
-#. Herunterladen der Daten
+#. Download the data
 
-.. code-block:: console
+   .. code-block:: console
 
     $ mkdir nedata
     $ cd !$
     cd nedata
     $ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
 
-#. Entpacken der Datei
+#. Unzip the file
 
-.. code-block:: console
+   .. code-block:: console
 
     $ sudo apt install unzip
     $ unzip ne_110m_admin_0_countries.zip
@@ -32,30 +32,29 @@ Beste ist, dass diese Daten gemeinfrei sind:
       inflating: ne_110m_admin_0_countries.shp
       inflating: ne_110m_admin_0_countries.shx
 
-#. Laden in unsere ``postgis_db``-Datenbank
+#. Load into our ``postgis_db`` database
 
-   Die Dateien ``.dbf``, ``.prj``, ``.shp`` und ``.shp`` bilden ein sog.
-   ShapeFile, ein beliebtes Geodaten-Datenformat, das von der GIS-Software
-   verwendet wird. Um dies in unsere Datenbank zu laden, benötigen wir
-   zusätzlich `GDAL <http://www.gdal.org/>`_, die *Geospatial Data Abstraction
-   Library*. Wenn wir GDAL installieren, erhalten wir auch OGR, *OpenGIS Simple
-   Features Reference Implementation*, eine Vektordaten-Übersetzungsbibliothek,
-   mit der wir das Shapefile in Daten übersetzen können.
+   The files ``.dbf``, ``.prj``, ``.shp`` and ``.shp`` form a so-called
+   ShapeFile, a popular geospatial data format that is used by GIS software. To
+   load this into our database, we also need `GDAL <http://www.gdal.org/>`_, the
+   *Geospatial Data Abstraction Library*. When we install GDAL we also get OGR,
+   *OpenGIS Simple Features Reference Implementation*, a vector data translation
+   library that we can use to translate the shapefile into data.
 
-   #. GDAL kann un einfach mit dem Paketmanager installiert werden:
+   #. GDAL can be easily installed with the package manager:
 
       .. code-block:: console
 
         $ sudo apt install gdal-bin
 
-   #. Anschließend wechseln wir in den ``postgresql``-User:
+   #. Then we switch to the ``postgresql`` user:
 
       .. code-block:: console
 
         $ sudo -i -u postgres
 
-   #. Nun konvertieren wir das Shapefile mit ``ogr2ogr`` und importieren es in
-      unsere Datenbank:
+   #. Now we convert the shapefile with ``ogr2ogr`` and import it into our
+      database:
 
       .. code-block:: console
 
@@ -64,27 +63,27 @@ Beste ist, dass diese Daten gemeinfrei sind:
             /home/veit/nedata/ne_110m_admin_0_countries.shp
 
       ``-f PostgreSQL``
-        gibt an, dass das Ziel eine PostgreSQL-Datenbank ist
+        iindicates that the target is a PostgreSQL database
       ``PG:dbname=postgis_db``
-        gibt den PostgreSQL-Datenbanknamen an.
-        Neben dem Namen können so auch weitere Optionen angegeben werden, allgemein:
+        specifies the PostgreSQL database name. In addition to the name, other
+        options can also be specified, in general:
 
         .. code-block::
 
             PG:"dbname='db_ename' host='addr' port='5432' user='x' password='y'"
 
       ``-progress``
-        gibt einen Fortschrittsbalken aus
+        outputs a progress bar
       ``-nlt PROMOTE_TO_MULTI``
-        gibt an, dass alle Objekttypen als Multipolygone in die Datenbank
-        geladen werden sollen
+        indicates that all object types should be loaded into the database as
+        multipolygons
       ``/home/veit/nedata/ne_110m_admin_0_countries.shp``
-        gibt den Pfad zur Eingabedatei an
+        specifies the path to the input file
 
       .. seealso::
          * `ogr2ogr <http://www.gdal.org/ogr2ogr.html>`_
 
-   #. Überprüfen des Imports mit ``ogrinfo``
+   #. Check the import with ``ogrinfo``
 
       .. code-block:: console
 
@@ -98,7 +97,7 @@ Beste ist, dass diese Daten gemeinfrei sind:
         Feature Count: 177
         …
 
-   #. Alternativ können wir uns auch einzelne Tabellen auflisten lassen:
+   #. Alternatively, we can also list individual tables:
 
       .. code-block:: console
 
@@ -111,7 +110,7 @@ Beste ist, dass diese Daten gemeinfrei sind:
          public | spatial_ref_sys           | table | postgres
         (2 rows)
 
-   #. Schließlich können wir uns bei der Datenbank abmelden mit
+   #. Finally, we can log out of the database with
 
       .. code-block:: console
 

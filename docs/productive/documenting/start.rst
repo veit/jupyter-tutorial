@@ -1,7 +1,7 @@
-Sphinx-Projekt erstellen
-========================
+Create a Sphinx project
+=======================
 
-Installation und Start
+Installation and start
 ----------------------
 
 .. code-block:: console
@@ -40,7 +40,7 @@ Installation und Start
     Creating file docs/Makefile.
     Creating file docs/make.bat.
 
-Sphinx-Layout
+Sphinx layout
 -------------
 
 ::
@@ -56,6 +56,6 @@ Sphinx-Layout
         ├── index.rst
         └── make.bat
 
-``index.rst`` ist die initiale Datei für die Dokumentation, in der sich das
-Inhaltsverzeichnis befindet. Das Inhaltsverzeichnis wird von euch erweitert
-werden sobald ihr neue ``*.rst``-Dateien hinzufügt.
+``index.rst`` is the initial file for the documentation, in which the table of
+contents is located. The table of contents will be expanded by you as soon as you
+add new ``*.rst`` files.

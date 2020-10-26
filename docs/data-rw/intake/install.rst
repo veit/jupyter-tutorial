@@ -1,26 +1,25 @@
-Intake installieren
-===================
+Install Intake
+==============
 
-Anforderungen
--------------
+Requirements
+------------
 
-Für die Verwendung von `intake.gui` müssen aktuelle Versionen von
-Bokeh≥2.0 und Panel verfügbar sein.
+Current versions of Bokeh≥2.0 and Panel must be available in order to use
+`intake.gui`.
 
 Installation
 ------------
 
-Intake lässt sich einfach für euren Jupyter-Kernel installieren mit:
+Intake can be easily installed for your Jupyter kernel with:
 
 .. code-block:: console
 
     $ pipenv install intake
 
-Katalog mit Beispieldaten erstellen
------------------------------------
+Create a catalog with sample data
+---------------------------------
 
-Für die nachfolgenden Beispiele benötigen wir einige Datensätze, die wir
-erstellen mit:
+For the following examples we need some data sets that we create with:
 
 .. code-block:: console
 

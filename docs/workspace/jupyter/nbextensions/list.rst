@@ -1,52 +1,48 @@
-Liste der Erweiterungen
-=======================
+List of extensions
+==================
 
-Ihr könnt die Notebook-Erweiterungen aktivieren und konfigurieren, indem ihr auf
-den Reiter :menuselection:`Nbextensions` klickt. Dort habt ihr Zugriff auf die
-Erweiterungen, die über Kontrollkästchen aktiviert/deaktiviert werden können.
-Zusätzlich werden für jede Erweiterung eine Dokumentation und
-Konfigurationsoptionen angezeigt.
+You can activate and configure the notebook extensions by clicking on the
+:menuselection:`Nbextensions` tab. There you have access to the extensions,
+which can be activated/deactivated via checkboxes. In addition, documentation
+and configuration options are displayed for each extension.
 
 .. image:: configure-nbextensions.png
-   :alt: Konfiguration der Notebook-Erweiterungen
+   :alt: Configuration of the notebook extensions
 
-Im Folgenden gebe ich einen kurzen Überblick über einige der
-Notebook-Erweiterungen.
+hereinafter I will give a brief overview of some of the notebook expansions.
 
 (some) LaTeX environments for Jupyter notebook
-    ermöglicht die Verwendung von Markdown-Zellen für LaTeX-Befehle und
-    -Umgebungen. Zudem werden zwei Menüs hinzugefügt:
-    :menuselection:`LaTeX_envs` für die schnelle Auswahl der passenden
-    LaTeX-Umgebung und  :menuselection:`Some configuration options` weiteren
-    Optionen:
+    enables the use of Markdown cells for LaTeX commands and environments. In
+    addition, two menus are added: :menuselection:`LaTeX_envs` for quick
+    selection of the suitable LaTeX environment and :menuselection:`Some
+    configuration options` for further options:
 
     .. image:: latex-env.png
-       :alt: LaTeX-Umgebung
+       :alt: LaTeX environment
 
-    Das Notebook kann anschließend als HTML oder LaTeX-Dokument exportiert
-    werden.
+    The notebook can then be exported as an HTML or LaTeX document.
 
-    Die Konfiguration der LaTeX-Umgebungen erfolgt in ``user_envs.json`` und für
-    die Stile in ``latex_env.css``. Weitere Umgebungen können in
-    ``user_envs.json`` oder in ``thmsInNb4.js`` hinzugefügt werden
-    (→ `LaTeX-Environments doc
+    The configuration of the LaTeX environments is done in  ``user_envs.json``
+    and for the styles in ``latex_env.css``. Additional environments can be
+    added in ``user_envs.json`` or in ``thmsInNb4.js`` (→ `LaTeX-Environments
+    doc
     <https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/doc/documentation.pdf>`_).
 
 :doc:`nbextensions/code_prettify/README_autopep8`
-    formatiert/verschönert Code in Python-Code-Zellen. Die Erweiterung verwendet
-    `autopep8 <https://github.com/hhatto/autopep8>`_ und ist daher nur mit
-    Python-Kernel zu verwenden.
+    formats/beautifies Python code in cells. The extension uses `autopep8
+    <https://github.com/hhatto/autopep8>`_ and can therefore only be used with
+    a Python kernel.
 
 :doc:`nbextensions/code_prettify/README_code_prettify`
-    formatiert/verschönert Code in Notebook-Code-Zellen. Dabei wird der aktuelle
-    Notebook-Kernel verwendet, weswegen das verwendete Prettifier-Paket in
-    diesem Kernel verfügbar sein muss. Beispielimplementierungen werden für
-    ipython-, R- und Javascript-Kernel bereitgestellt.
+    formats/beautifies code notebook code cells. The current notebook kernel is
+    used, which is why the Prettifier package used must be available in this
+    kernel. Sample implementations are provided for ipython, R, and Javascript
+    kernels.
 
 :doc:`nbextensions/limit_output/readme`
-    begrenzt die Anzahl der Zeichen, die eine Codezelle als Text oder HTML
-    ausgibt. Dies unterbricht auch Endlosschleifen. Ihr könnt die Anzahl der
-    Zeichen mit dem ``ConfigManager`` festlegen:
+    limits the number of characters that a code cell outputs as text or HTML.
+    This also breaks endless loops. You can set the number of characters with
+    the ``ConfigManager``:
 
     .. code-block::
 
@@ -54,16 +50,15 @@ Notebook-Erweiterungen.
         cm = ConfigManager().update('notebook', {'limit_output': 1000})
 
 `Nbextensions edit menu item <https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator>`_
-    fügt ein Bearbeitungsmenü hinzu, um die Konfigurationsseite für
-    ``nbextensions`` zu öffnen.
+    adds an edit menu to open the configuration page of ``nbextensions``.
 
 :doc:`nbextensions/printview/readme`
-    fügt eine Symbol hinzu, um die Druckansicht des aktuellen Notizbuchs in einem
-    neuen Browser-Reiter anzuzeigen.
+    adds an icon to display the print preview of the current notebook in a new
+    browser tab.
 
 :doc:`nbextensions/ruler/readme`
-    fügt ein Lineal nach einer bestimmten Anzahl von Zeichen hinzu. Die Anzahl
-    der Zeichen lässt sich mit dem  ``ConfigManager`` festlegen:
+    adds a ruler after a certain number of characters. The number of characters
+    can be specified with the ``ConfigManager``:
 
     .. code-block::
 
@@ -73,81 +68,78 @@ Notebook-Erweiterungen.
         cm.update('notebook', {"ruler_column": [80]})
 
 :doc:`nbextensions/scratchpad/README`
-    fügt dem Notizbuch eine Notizzelle hinzu. In dieser Zelle könnt ihr Code
-    des aktuellen Kernel ausführen, ohne das Dokument zu ändern.
+    adds a note cell to the notebook. In this cell you can run code from the
+    current kernel without changing the document.
 
 :doc:`nbextensions/snippets/README`
-    fügt Notebooks ein konfigurierbares Menüelement hinzu um Snippets,
-    Boilerplate und Codebeispiele einzufügen.
+    adds a configurable menu item to notebooks to insert snippets,
+    boilerplate and code examples.
 
     .. image:: snippets-menu.png
-       :alt: Snippets-Menü
+       :alt: Snippets menu
 
-    Ihr könnt auch eigene Menüeinträge definieren, s.
+    You can also define your own menu items, see also
     :doc:`nbextensions/snippets/README`.
 
 :doc:`nbextensions/toc2/README`
-    ermöglicht es, alle Überschriften zu sammeln und in einem schwebenden
-    Fenster, als Sidebar oder in einem Navigationsmenü anzuzeigen.
+    makes it possible to collect all headings and display them in a floating
+    window, as a sidebar or in a navigation menu.
 
-    Falls Überschriften nicht im Inhaltsverzeichnis angezeigt werden sollen,
-    geht dies mit:
+    If headings shouldn’t be displayed in the table of contents, you can do this
+    with:
 
     .. code-block:: HTML
 
         ## My title <a class="tocSkip">
 
-    Das Inhaltsverzeichnis lässt sich auch exportieren indem ein entsprechendes
-    Template angegeben wird, also z.B.
+    The table of contents can also be exported by specifying a corresponding
+    template, e.g.
 
     .. code-block:: console
 
         $ jupyter nbconvert mynotebook.ipynb --template toc2
 
-    Eine allgemeine Dokumentation zu Vorlagen findet ihr in
+    General documentation on templates can be found in
     :label:`nbconvert:external_exporters`.
 
 :doc:`nbextensions/tree-filter/readme`
-    filtert im Jupyter-Dashboard nach Dateinamen.
+    filters in the Jupyter dashboard by file name.
 
 :doc:`nbextensions/code_prettify/README_2to3`
-    konvertiert in einer Code-Zelle Python2- in Python3-Code unter Verwendung der
-    `lib2to3 <https://github.com/python/cpython/tree/3.7/Lib/lib2to3/>`_-Bibliothek
+    converts Python2 to Python3 code in a code cell using the `lib2to3
+    <https://github.com/python/cpython/tree/3.7/Lib/lib2to3/>`_ library.
 
 :doc:`nbextensions/codefolding/readme`
-    ermöglicht Codefolding in Code-Zellen.
+    enables code folding in code cells.
 
     .. image:: code-folding.png
        :alt: Codefolding
 
-    Üblicherweise wird das Codefolding beim Export mit :doc:`../nbconvert`
-    beibehalten. Dies kann entweder in ``jupyter_nbconvert_config.py`` geändert
-    werden mit:
+    Usually code folding is retained when exporting with nbconvert. This can
+    either be changed in ``jupyter_nbconvert_config.py`` with:
 
     .. code-block:: python
 
         c.CodeFoldingPreprocessor.remove_folded_code=True = True
 
-    oder auf der Kommandozeile mit
+    or on the command line with:
 
     .. code-block:: console
 
         $ jupyter nbconvert --to html --CodeFoldingPreprocessor.remove_folded_code=True mynotebook.ipynb
 
 :doc:`nbextensions/collapsible_headings/readme`
-    ermöglicht Notebooks, zusammenklappbare Abschnitte zu haben, die durch
-    Überschriften getrennt werden.
+    eenables notebooks to have collapsible sections separated by headings.
 
 :doc:`nbextensions/datestamper/readme`
-    fügt die aktuelle Zeit und das aktuelle Datum in eine Zelle ein.
+    inserts the current time and date in one cell.
 
 :doc:`nbextensions/hinterland/README`
-    ermöglicht Autovervollständigung.
+    enables autocompletion.
 
 :doc:`nbextensions/varInspector/README`
-    sammelt alle definierten Variablen und zeigt sie in einem schwebenden
-    Fenster an.
+    collects all defined variables and displays them in a floating window.
 
 :doc:`nbextensions/load_tex_macros/readme`
-    lädt automatisch eine Reihe von Latex-Befehlen aus der Datei
-    ``latexdefs.tex`` wenn ein Notizbuch geöffnet wird.
+    automatically loads a series of latex commands from the ``latexdefs.tex``
+    file when a notebook is opened.

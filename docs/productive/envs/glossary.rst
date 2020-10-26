@@ -1,27 +1,26 @@
-Glossar
-=======
+Glossary
+========
 
 .. glossary::
 
-   Built Distribution
-       Eine Struktur aus Dateien und Metadaten, die bei der Installation nur an den
-       richtigen Speicherort auf dem Zielsystem verschoben werden müssen.
-       :term:`Wheel` ist ein solches Format, nicht jedoch *distutil’s*
-       :term:`Source Distributions <Source Distribution (sdist)>`, die einen
-       Build-Schritt erfordern.
+   built distribution
+       A structure of files and metadata that only needs to be moved to the
+       correct location on the target system during installation. :term:`wheel`
+       is such a format, but not *distutil’s* :term:`source distributions
+       <source distribution (sdist)>` that require a build step.
 
    conda
-       Paketmanagement-Tool für die `Anaconda
-       <http://docs.continuum.io/anaconda/index.html>`_-Distribution von
-       `Continuum Analytics <http://continuum.io/downloads>`_. Sie ist speziell
-       auf die wissenschaftliche Gemeinschaft ausgerichtet, insbesondere auf
-       Windows, wo die Installation von binären Erweiterungen oft schwierig ist.
+       Package management tool for the `Anaconda
+       <http://docs.continuum.io/anaconda/index.html>`_ distribution from
+       `Continuum Analytics <http://continuum.io/downloads>`_. It’s specifically
+       aimed at the scientific community, particularly Windows, where installing
+       binary extensions is often difficult.
 
-       Conda installiert keine Pakete von PyPI und kann nur von den offiziellen
-       Continuum-Repositories oder von `anaconda.org <https://anaconda.org/>`_
-       oder lokalen (z.B. Intranet-) Paketservern installieren. Beachtet jedoch,
-       dass Pip in conda installiert werden und Seite an Seite arbeiten kann, um
-       Distributionen von PyPI zu verwalten.
+       Conda does not install packages from PyPI and can only install from the
+       official Continuum repositories or from `anaconda.org
+       <https://anaconda.org/>`_ or local ( e.g. intranet) package servers.
+       Note, however, that Pip can be installed in conda and can work side by
+       side to manage distributions of PyPI.
 
        .. seealso::
           * `Conda: Myths and Misconceptions
@@ -30,68 +29,66 @@ Glossar
             <https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html>`_
 
    devpi
-       `devpi <https://devpi.net/>`_ ist ein leistungsstarker PyPI-kompatibler
-       Server und ein PyPI-Proxy-Cache mit einem Befehlszeilenwerkzeug um
-       Paketierungs-, Test- und Veröffentlichungsaktivitäten zu ermöglichen.
+       `devpi <https://devpi.net/>`_ is a powerful PyPI compatible server and
+       PyPI proxy cache with a command line tool to enable packaging, testing
+       and publishing activities.
 
-   Distribution Package
-       Eine versionierte Archivdatei, die Python-:term:`Pakete <Import Package>`,
-       -:term:`Module <Modul>` und andere Ressourcendateien enthält, die zum
-       Verteilen eines :term:`Releases <Release>` verwendet werden.
+   distribution package
+       A versioned archive file that contains Python :term:`packages <import
+       package>`, :term:`modules <module>`, and other resource files used to
+       distribute a :term:`release`.
 
-   Egg
-       Ein :term:`Built Distribution`-Format, das von :term:`Setuptools`
-       eingeführt wurde und nun durch :term:`Wheel` ersetzt wird. Weitere
-       Informationen findet ihr unter `The Internal Structure of Python Eggs
-       <https://setuptools.readthedocs.io/en/latest/formats.html>`_ und `Python
+   egg
+       A :term:`built distribution` format introduced by :term:`setuptools`
+       that is now being replaced by :term:`wheel`. For more information, see
+       `The Internal Structure of Python Eggs
+       <https://setuptools.readthedocs.io/en/latest/formats.html>`_ and `Python
        Eggs <http://peak.telecommunity.com/DevCenter/PythonEggs>`_.
 
-   Import Package
-       Ein Python-Modul, das andere Module oder rekursiv andere Pakete enthalten
-       kann.
+   import package
+       A Python module that can contain other modules or recursively other
+       packages.
 
-   Modul
-       Die Grundeinheit der Wiederverwendbarkeit von Code in Python, die in
-       einem von zwei Typen existiert:
+   module
+       The basic unit of code reusability in Python, which exists in one of two
+       types:
 
-       Pure Module
-           Ein Modul, das in Python geschrieben wurde und in einer einzigen
-           ``.py``-Datei enthalten ist (und möglicherweise zugehörigen
-           ``.pyc``- und/oder ``.pyo``-Dateien).
+       pure module
+           A module written in Python contained in a single ``.py`` file (and
+           possibly associated ``.pyc``- and/or ``.pyo`` files).
 
-       Extension Module
-           In der Regel in eine einzelne dynamisch ladbare vorkompilierte
-           Datei, z. B. einer gemeinsamen Objektdatei (``.so``).
+       extension module
+           Usually a single dynamically loadable precompiled file, e.g. a common
+           object file (``.so``).
 
    pip
-       Ein Tool zum Installieren von Python-Paketen.
+       A tool for installing Python packages.
 
        `Docs <https://pip.pypa.io/en/stable/>`_ |
        `GitHub <https://github.com/pypa/pip>`_ |
        `PyPI <https://pypi.python.org/pypi/pip/>`_ |
 
    Pipfile
-       Anwendungsfreundliche, auf `TOML <https://github.com/toml-lang/toml>`_
-       basierende Alternative zur ``requirements.txt``-Datei von pip.
+       User-friendly, on `TOML <https://github.com/toml-lang/toml>`_ based
+       alternative to the ``requirements.txt`` file of pip.
 
-       Dabei kann unterschieden werden zwischen zwei verschiedenen Gruppen von
-       Paketen: ``[packages]`` und ``[dev-packages]``.
+       A distinction can be made between two different groups of packages:
+       ``[packages]`` and ``[dev-packages]``.
 
        `GitHub <https://github.com/pypa/pipfile>`_
 
    Pipfile.lock
-       Maschinenlesbare Datei auf Basis von `JSON
-       <https://www.json.org/json-de.html>`_, die alle transitiven
-       Abhängigkeiten mit deren exakten Versionen und Download-Hashes enthält.
+       Machine-readable file based on `JSON
+       <https://www.json.org/json-de.html>`_ that contains all transitive
+       dependencies with their exact versions and download hashes.
 
-       Auch Pipfile.lock unterscheidet zwischen ``[packages]`` und
+       Pipfile.lock also differentiates between ``[packages]`` and
        ``[dev-packages]``.
 
    Pipenv
-       Pipenv ist ein Projekt, das darauf abzielt, die beste aller
-       Verpackungswelten in die Python-Welt zu bringen. Es vereint
-       :term:`pipfile`, :term:`pip` und :term:`virtualenv <Virtuelle Umgebung>`
-       in einer einzigen Toolchain.
+       Pipenv is a project that aims to bring the best of all packaging worlds
+       to the Python world. It combines :term:`pipfile`, :term:`pip` and
+       :term:`virtualenv` in a single toolchain.
 
        `Docs <https://docs.pipenv.org/>`_ |
        `GitHub <https://github.com/kennethreitz/pipenv>`_ |
@@ -99,46 +96,44 @@ Glossar
 
 
    pypi.org
-       `pypi.org  <https://pypi.org/>`_ ist der Domainname für den
-       Python Package Index (PyPI). Er löste 2017 den alten Index-Domain-Namen
-       *pypi.python.org* ab. Er wird von :term:`warehouse` unterstützt.
+       `pypi.org  <https://pypi.org/>`_ is the domain name for the Python
+       Package Index (PyPI). In 2017 it replaced the old index domain name
+       *pypi.python.org*. He is supported by :term:`warehouse`.
 
    Python Package Index (PyPI)
-       `PyPI <https://pypi.org/>`_ ist der Standard-Paket-Index für die
-       Python-Community. Alle Python-Entwickler können ihre Distributionen nutzen
-       und verteilen.
+       `PyPI <https://pypi.org/>`_ is the standard package index for the Python
+       community. All Python developers can use and distribute their
+       distributions.
 
-   Release
-       Der Snapshot eines Projekts zu einem bestimmten Zeitpunkt, gekennzeichnet
-       durch eine Versionskennung.
+   release
+       The snapshot of a project at a specific point in time, identified by a
+       version identifier.
 
-       Eine Veröffentlichung kann mehrere :term:`Built Distributions
-       <Built Distribution>` zur Folge haben.
+       One release can result in several :term:`Built Distributions
+       <built distribution>`.
 
    setuptools
-       setuptools (und ``easy_install``) ist eine Sammlung von Verbesserungen der
-       Python-Distutils, mit denen ihr Python-Distributionen einfacher erstellen
-       und verteilen könnt, insbesondere solche, die Abhängigkeiten von anderen
-       Paketen haben.
+       setuptools (and ``easy_install``) is a collection of improvements to the
+       Python Distutils that make it easier to create and distribute Python
+       distributions, especially those that have dependencies on other packages.
 
-   Source Distribution (sdist)
-        Ein Verteilungsformat (das normalerweise mithilfe von ``python setup.py
-        sdist`` generiert wird).
+   source distribution (sdist)
+        A distribution format (typically generated using) ``python setup.py
+        sdist``.
 
-        Es stellt Metadaten und die wesentlichen Quelldateien bereit, die für
-        die Installation mit einem Tool wie :term:`Pip` oder zum Generieren
-        von :term:`Built Distributions <Built Distribution>` benötigt werden.
+        It provides metadata and the essential source files required for
+        installation with a tool like :term:`Pip` or for generating :term:`built
+        distributions <built distribution>`.
 
    Spack
-       Ein flexibler Paketmanager, der mehrere Versionen, Konfigurationen,
-       Plattformen und Compiler unterstützt. Spack ist ähnlich wie der `Nix
-       <https://nixos.org/nix/>`_-Paketmanager, ermöglicht jedoch die Definition
-       virtueller Abhängigkeiten und bietet eine Syntax zur Parametrisierung. Die
-       Pakete sind in Python geschrieben, um einen einfachen Austausch von
-       Compilern, Bibliotheksversionen, Build-Optionen usw. zu ermöglichen. Es
-       können beliebig viele Versionen von Paketen gleichzeitig auf demselben
-       System existieren. Spack wurde für den raschen Aufbau wissenschaftlicher
-       Anwendungen auf Clustern und Supercomputern entwickelt.
+       A flexible package manager that supports multiple versions,
+       configurations, platforms, and compilers. Spack is similar to the `Nix
+       <https://nixos.org/nix/>`_ package manager, but allows the definition of
+       virtual dependencies and offers a syntax for parameterisation. The
+       packages are written in Python for easy exchange of compilers, library
+       versions, build options, etc. Any number of versions of packages can
+       coexist on the same system. Spack was developed for rapidly building
+       scientific applications on clusters and supercomputers.
 
        `Docs <https://spack.readthedocs.io/>`_ |
        `GitHub <https://github.com/llnl/spack/>`_ |
@@ -146,27 +141,27 @@ Glossar
        `The Spack package manager: bringing order to HPC software chaos
        <http://ieeexplore.ieee.org/document/7832814/>`_ |
 
-   Virtuelle Umgebung
-       Eine isolierte Python-Umgebung, die die Installation von Paketen für eine
-       bestimmte Anwendung ermöglicht, anstatt sie systemweit zu installieren.
+   virtualenv
+       An isolated Python environment that allows packages to be installed for a
+       specific application rather than installing them system-wide.
 
        `Docs <https://docs.python.org/3/library/venv.html>`_ |
        `Creating Virtual Environments
        <https://packaging.python.org/tutorials/installing-packages/#creating-and-using-virtual-environments>`_ |
 
    Warehouse
-       Die aktuelle Codebasis, die den Python Package Index (PyPI) antreibt. Sie
-       wird auf `pypi.org`_ gehostet.
+       The current code base that powers the Python Package Index (PyPI). It is
+       hosted on `pypi.org`_.
 
-   Wheel
-       Distributionsformat, das mit `PEP 427
-       <https://www.python.org/dev/peps/pep-0427/>`_ eingeführt wurde. Es soll das
-       :term:`Egg`-Format ersetzen und wird von aktuellen
-       :term:`Pip`-Installationen unterstützt.
+   wheel
+       Distribution format introduced with `PEP 427
+       <https://www.python.org/dev/peps/pep-0427/>`_. It is intended to replace
+       the :term:`Egg` format and is supported by current :term:`pip`
+       installations.
 
-       C-Erweiterungen können als plattformspezifische Wheels für Windows, Mac OS
-       und Linux auf PyPI bereitgestellt werden. Dies hat für die Benutzer des
-       Pakets den Vorteil, bei der Installation nicht kompilieren zu müssen.
+       C extensions can be provided as platform-specific wheels for Windows, Mac
+       OS and Linux on PyPI. This has the advantage for the users of the package
+       that they don’t have to compile during the installation.
 
        `Home <https://pythonwheels.com/>`_ |
        `Docs <https://wheel.readthedocs.io/>`_ |

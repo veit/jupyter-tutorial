@@ -1,62 +1,61 @@
-Git-Installation und -Konfiguration
-===================================
+Git installation and configuration
+==================================
 
 Installation
 ------------
 
-Für iX-Distributionen sollte Git im Standard-Repository vorhanden sein.
+For iX distributions, Git should be in the standard repository.
 
-* Für Debian/Ubuntu:
+* For Debian/Ubuntu:
 
   .. code-block:: console
 
     $ sudo apt install git-all
 
-  Mit der Bash-Autovervollständigung lässt sich Git auf der Kommandozeile
-  einfacher bedienen:
+  The bash autocompletion makes Git easier to use on the command line:
 
   .. code-block:: console
 
     $ sudo apt install bash-completion
 
-* Für macOS:
+* For macOS:
 
-  Es gibt verschiedene Möglichkeiten, Git auf einem Mac zu installieren. Am
-  einfachsten ist es vermutlich, die Xcode Command Line Tools zu installieren.
-  Hierfür müsst Ihr nur ``git`` das erste Mal vom Terminal aufrufen:
+  There are several different ways to install Git on a Mac. Probably the easiest
+  eay to do is to install the Xcode Command Line Tools. For this you only have
+  to call up ``git`` in the terminal for the first time:
 
   .. code-block:: console
 
     $ git --version
 
-  ``git-completion`` könnt Ihr mit `Homebrew <https://brew.sh/>`_ installieren:
+  ``git-completion`` you can install with `Homebrew <https://brew.sh/>`_:
 
-  Anschließend müsst Ihr folgende Zeile in ``~/.bash_profile`` hinzufügen:
+  Then you have to add the following line in ``~/.bash_profile``:
 
   .. code-block:: bash
 
     [[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
-* Für Windows:
+* For Windows:
 
-  Ihr könnt einfach https://git-scm.com/download/win aufrufen um den Download
-  automatisch zu starten. Weitere Informationen findet Ihr unter
+  You can simply go to https://git-scm.com/download/win to start the download
+  automatically. Further information can be found at
   https://gitforwindows.org/.
 
-Konfiguration
+Configuration
 -------------
 
 ``$ git config --global user.name "[name]"``
-    legt den Namen fest, den mit Euren Commit-Transaktionen verknüpft wird.
+    defines the name associated with your commit transactions.
 ``$ git config --global user.email "[email address]"``
-    legt die E-Mail fest, die mit Euren Commit-Transaktionen verknüpft wird.
+    defines the email that will be linked to your commit transactions.
 ``$ git config --global color.ui auto``
-    aktiviert die Kolorierung der Befehlszeilenausgabe.
+    activates the coloring of the command line output.
 
-Die ``~/.gitconfig``-Datei
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+The ``~/.gitconfig`` file
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Mit den oben angegebenen Befehle kann z.B. folgende Datei erstellt werden:
+For example, the following file can be created with the commands given above:
 
 .. code-block:: ini
 
@@ -69,7 +68,7 @@ Mit den oben angegebenen Befehle kann z.B. folgende Datei erstellt werden:
         status = auto
         branch = auto
 
-In der ``~/.gitconfig``-Datei können jedoch auch Aliase festgelegt werden:
+However, aliases can also be specified in the ``~/.gitconfig`` file:
 
 .. code-block:: ini
 
@@ -81,8 +80,8 @@ In der ``~/.gitconfig``-Datei können jedoch auch Aliase festgelegt werden:
         df = diff
         dfs = diff --staged
 
-Auch der Editor lässt sich angeben und die Hervorhebung von Leerzeichenfehlern
-in ``git diff``:
+The editor can also be specified and space errors can be highlighted in ``git
+diff``:
 
 .. code-block:: ini
 
@@ -93,19 +92,19 @@ in ``git diff``:
         # Highlight whitespace errors in git diff:
         whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
 
-Anmeldedaten verwalten
-::::::::::::::::::::::
+Manage login data
+:::::::::::::::::
 
-Seit der Git-Version 1.7.9 lassen sich die Zugangsdaten zu git-Repositories mit
-`gitcredentials <https://git-scm.com/docs/gitcredentials>`_ verwalten. Um diese
-zu nutzen, könnt Ihr z.B. folgendes angeben:
+Since Git version 1.7.9, the access data to git repositories can be managed with
+`gitcredentials <https://git-scm.com/docs/gitcredentials>`_. To use this, you
+can, for example, specify the following:
 
 .. code-block:: console
 
     $ git config --global credential.helper Cache
 
-Hiermit wird Ihr Passwort für 15 Minuten im Cache-Speicher gehalten. Der Timeout
-kann ggf. erhöht werden, z.B. mit:
+This will keep your password in the cache for 15 minutes. The timeout can be
+increased if necessary, e.g. with:
 
 .. code-block:: console
 
@@ -114,10 +113,9 @@ kann ggf. erhöht werden, z.B. mit:
 macOS
 :::::
 
-Unter macOS lässt sich mit `osxkeychain` die Schlüsselbundverwaltung
-(*Keychain*) nutzen um die Zugangsdaten zu speichern. `osxkeychain` setzt Git in
-der Version 1.7.10 oder neuer voraus und kann im selben Verzeichnis wie Git
-installiert werden mit:
+With macOS you can use `osxkeychain` to store the login information.
+`osxkeychain` requires Git version 1.7.10 or newer and can be installed in the
+same directory as Git with:
 
 .. code-block:: console
 
@@ -129,7 +127,7 @@ installiert werden mit:
     Password:
     git config --global credential.helper osxkeychain
 
-Dies trägt folgendes in die ~/.gitconfig ein:
+This enters the following in the `~/.gitconfig` file:
 
 .. code-block:: ini
 
@@ -139,25 +137,24 @@ Dies trägt folgendes in die ~/.gitconfig ein:
 Windows
 :::::::
 
-Für Windows steht `Git Credential Manager for Windows
-<https://github.com/Microsoft/Git-Credential-Manager-for-Windows>`_ zur
-Verfügung. Für das Programm muss der `Installer
+For Windows `Git Credential Manager for Windows
+<https://github.com/Microsoft/Git-Credential-Manager-for-Windows>`_ is
+available. First the `Installer
 <https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest>`_
-heruntergeladen werden. Nach dem Doppelklick führt er Euch durch die weitere
-Installation. Als Terminal-Emulator für Git Bash solltet Ihr das
-Standardkonsolenfenster von Windows auswählen.
+must be downloaded for the program. After double-clicking, it will guide you
+through the rest of the installation. As a terminal emulator for Git, you should
+select the standard Windows console window.
 
 .. note::
-    Ein umfangreiches Beispiel einer `~/.gitconfig`-Datei findet Ihr in meinem
-    `dotfiles <https://github.com/veit/dotfiles/>`_-Repository: `.gitconfig
+    You can find a comprehensive example of a `~/.gitconfig` file in my
+    `dotfiles <https://github.com/veit/dotfiles/>`_ repository: `.gitconfig
     <https://github.com/veit/dotfiles/blob/master/.gitconfig>`_.
 
-Die ``.gitgnore``-Datei
-~~~~~~~~~~~~~~~~~~~~~~~
+The ``.gitgnore`` file
+~~~~~~~~~~~~~~~~~~~~~~
 
-In der ``.gitgnore``-Datei eines Repository könnt Ihr Dateien von der
-Versionsverwaltung ausschließen. Eine typische ``.gitgnore``-Datei kann z.B. so
-aussehen:
+In the ``.gitgnore`` file you can exclude files from version management. A
+typical ``.gitgnore`` file can look like this:
 
 .. code-block:: ini
 
@@ -166,18 +163,18 @@ aussehen:
     /tmp
     *.swp
 
-Git-commit leerer Ordner
-::::::::::::::::::::::::
+Git-commit empty folder
+:::::::::::::::::::::::
 
-In obigem Beispiel seht Ihr, dass mit ``/logs/*`` keine Inhalte des
-``logs``-Verzeichnis mit Git versioniert werden soll, in der Folgezeile jedoch
-eine Ausnahme definiert wird: ``!logs/.gitkeep`` erlaubt, dass die Datei
-``.gitkeep`` mit Git verwaltet werden darf. Damit wird dann auch das
-``logs``-Verzeichnis in das Git-Repository übernommen. Diese Hilfskonstruktion
-ist erforderlich, da leere Ordner nicht mit Git verwaltet werden können.
+In the example above you can see that with ``/logs/*`` no content of the
+``logs`` directory should be versioned with Git, but an exception is defined in
+the following line: ``!logs/.gitkeep`` allows the file  ``.gitkeep`` to be
+managed with Git. The ``logs`` directory is then also transferred to the Git
+repository. This construction is necessary because empty folders cannot be
+managed with Git.
 
-Eine andere Möglichkeit besteht darin, in einem leeren Ordner eine
-``.gitignore``-Datei mit folgendem Inahlt zu erstellen:
+Another possibility is to create a  ``.gitignore`` file in an empty folder with
+the following content:
 
 .. code-block:: ini
 
@@ -193,8 +190,8 @@ Eine andere Möglichkeit besteht darin, in einem leeren Ordner eine
 ``excludesfile``
 ::::::::::::::::
 
-Ih könnt jedoch auch zentral für alle Git-Repositories Dateien ausschließen.
-Hierfür wird üblicherweise in der ``~/.gitconfig``-Datei folgendes angegeben:
+However, you can also exclude files centrally for all Git repositories. For this
+purpose, you can set ``excludesfile`` in the ``~/.gitconfig`` file:
 
 .. code-block:: ini
 
@@ -205,6 +202,6 @@ Hierfür wird üblicherweise in der ``~/.gitconfig``-Datei folgendes angegeben:
         …
 
 .. note::
-    Hilfreiche Vorlagen findet Ihr in meinem `dotfiles
-    <https://github.com/veit/dotfiles/tree/master/gitignores>`_-Repository oder
-    auf der Website `gitignore.io <https://gitignore.io/>`_.
+    You can find helpful templates in my `dotfiles
+    <https://github.com/veit/dotfiles/tree/master/gitignores>`_ repository or
+    on the `gitignore.io <https://gitignore.io/>`_ website.

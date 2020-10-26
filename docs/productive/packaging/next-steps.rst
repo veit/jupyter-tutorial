@@ -1,21 +1,19 @@
-Nächste Schritte
-================
+Next steps
+==========
 
-Denkt bitte daran, dass ihr nun euer Paket zu *Test-PyPI* hochladen könnt und
-dass die Pakete auf *Test-PyPI* nur temporär gespeichert werden. Wenn ihr ein
-Paket in den echten :term:`Python Package Index (PyPI)` hochladen wollt, könnt
-ihr dies tun, indem ihr ein Konto auf https://pypi.org anlegt und die gleichen
-Anweisungen befolgt, jedoch ``twine upload dist/*`` verwendet.
+Pleas keep in mind that your package on  *Test-PyPI* is only stored temporarily.
+If you want to upload a package to the real :term:`Python Package Index (PyPI)`,
+you can do so by creating an account on https://pypi.org and following the same
+instructions, but using ``twine upload dist/*``.
 
-Und wenn ihr mehr über Python-Bibliotheken erfahren wollt, könnt ihr
+And if you want to learn more about Python libraries, you can
 
-* weiterlesen, wie `setuptools
-  <https://packaging.python.org/key_projects/#setuptools>`_ verwendet werden
-  kann zum Packen und Verteilen von Paketen: `Packaging and distributing
-  projects
+* read more about how `setuptools
+  <https://packaging.python.org/key_projects/#setuptools>`_ can be used to pack
+  and distribute packages: `Packaging and distributing projects
   <https://packaging.python.org/guides/distributing-packages-using-setuptools/>`_.
-* Alternativen zu `setuptools
-  <https://packaging.python.org/key_projects/#setuptools>`_ anschauen wie
+* look at alternatives to `setuptools
+  <https://packaging.python.org/key_projects/#setuptools>`_ like
   `flit <https://packaging.python.org/key_projects/#flit>`_,
-  `hatch <https://github.com/ofek/hatch>`_ und
+  `hatch <https://github.com/ofek/hatch>`_ and
   `poetry <https://github.com/sdispater/poetry>`_.

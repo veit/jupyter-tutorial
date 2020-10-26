@@ -1,5 +1,5 @@
-Einführung
-==========
+Introduction
+============
 
 Status
 ------
@@ -15,110 +15,108 @@ Status
 .. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
    :target: https://jupyter-tutorial.readthedocs.io/de/latest/
 
-Zielgruppe
-----------
+Target group
+------------
 
-Die Nutzer von Jupyter-Notebooks sind vielfältig von Daten-Wissenschaftlern über
--Ingenieure und -Analysten bis hin zu System-Ingenieuren. Dabei sind ihre
-Fähigkeiten und Arbeitsabläufe sehr unterschiedlich. Eine der großen Stärken von
-Jupyter-Notebooks ist jedoch, dass sie eine enge Zusammenarbeit dieser
-unterschiedlichen Experten in funktionsübergreifenden Teams ermöglichen.
+The users of Jupyter notebooks are diverse, from data scientists to data
+engineers and analysts to system engineers. Their skills and workflows are very
+different. However, one of the great strengths of Jupyter notebooks is that they
+allow these different experts to work closely together in cross-functional
+teams.
 
-* **Daten-Wissenschaftler** führen Experimente mit verschiedenen Koeffizienten
-  durch und fassen die Ergebnisse zusammen.
-* **Daten-Ingenieure** überprüfen die Qualität des Codes und machen ihn robuster,
-  effizienter und skalierbar.
-* **Daten-Analysten** führen systematische Untersuchungen der Daten durch, wobei
-  sie den von Dateningenieuren bereitgestellten Code verwenden.
-* **System-Ingenieure** erstellen das `Hub <https://jupyter.org/hub>`_, die
-  Kernel, Erweiterungen etc. und gewährleisten den möglichst reibungslosen
-  Betrieb dieser Infrastruktur.
+* **Data scientists**
+  conduct experiments with different coefficients and summarise the results.
 
-In diesem Tutorial wenden wir uns zunächst vor allem an System-Ingenieure,
-die eine Plattform auf Basis von Jupyter-Notebooks aufbauen und betreiben
-wollen. In der Folge erläutern wir dann, wie diese Plattform effektiv von
-Datenwissenschaftlern, -Ingenieuren und -Analysten genutzt werden kann.
+* **Data engineers**
+  check the quality of the code and make it more robust, efficient and scalable.
 
-Aufbau des Jupyter-Tutorial
----------------------------
+* **Data analysts**
+  perform systematic studies of the data using code provided by data engineers.
 
-Das Jupyter-Tutorial folgt ab Kapitel 3 dem prototypischen Verlauf eines
-Forschungsprojekts:
+* **System engineers**
+  create the hub, the kernel, extensions, etc. and ensure that this
+  infrastructure runs as smoothly as possible.
 
-3. **Arbeitsbereich einrichten** mit der Installation und Konfiguration von
-   :doc:`workspace/ipython/index`, :doc:`workspace/jupyter/index` mit
-   :doc:`workspace/jupyter/nbextensions/index` und
+In this tutorial, we primarily address system engineers who want to build and
+operate a platform based on Jupyter notebooks. Then, we explain how this
+platform can be used effectively by data scientists, data engineers, and
+analysts.
+
+Structure of the Jupyter tutorial
+---------------------------------
+
+From Chapter 3, the Jupyter tutorial follows the prototype of a research
+project:
+
+3. **Set up the workspace** with the installation and configuration of
+   :doc:`workspace/ipython/index`,
+   :doc:`workspace/jupyter/index` with
+   :doc:`workspace/jupyter/nbextensions/index` and
    :doc:`workspace/jupyter/ipywidgets/index`.
-4. **Daten sammeln**, entweder durch eine :doc:`Rest-API <data/web-api>` oder
-   direkt von einer :doc:`HTML-Seite <data/html>`.
-5. **Daten bereinigen** ist eine wiederkehrende Aufgabe, die u.a. redundante,
-   inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
-6. **Erschließen der Daten –** :doc:`viz/index` umfasst expolorative Analysen und
-   das Visualisieren von Daten.
-7. **Refactoring** umfasst das Parametrisieren, Validieren und
-   Performance-Optimierungen, u.a. durch :doc:`Parallelisierung
+4. **Collect data,** either through a :doc:`REST API <data/web-api>` or directly
+   from an HTML page.
+5. **Cleaning up data** is a recurring task that includes Remove or modify
+   redundant, inconsistent, or incorrectly formatted data.
+6. **Analyse data** through exploratory analysis and :doc:`visualising data
+   <viz/index`.
+7. **Refactoring** includes parameterisation, validation and performance
+   optimisation, including through :doc:`parallelisation
    <refactoring/parallel/index>`.
-8. **Produkt erstellen** umfasst das :doc:`productive/testing/index`,
-   :doc:`productive/logging` und :doc:`productive/documenting/index` der
-   Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
-   <productive/packaging/index>`.
-9. **Web-Anwendungen** können entweder aus Jupyter-Notebooks
-   :doc:`web/dashboards/index` generieren oder umfassendere
-   Applikationslogik benötigen, wie z.B. in
-   :doc:`pyviz:bokeh/embedding-export/flask` demonstriert, oder Daten über eine
-   `RESTful API
-   <https://de.wikipedia.org/wiki/Representational_State_Transfer>`_
-   bereitstellen.
+8. **Creating a product**
+   includes :doc:`productive/testing/index`, :doc:`productive/logging` and
+   :doc:`productive/documenting/index` the methods and functions as well
+   as :doc:`creating packages  <productive/packaging/index>`.
+9. **Web applications**
+   can either generate dashboards from Jupyter notebooks or require more
+   comprehensive application logic, such as demonstrated in
+   :doc:`pyviz:bokeh/embedding-export/flask`, or provide data via a `RESTful API
+   <https://en.wikipedia.org/wiki/Representational_state_transfer>`_.
 
-Warum Jupyter?
---------------
+Why Jupyter?
+------------
 
-Wie können nun diese vielfältigen Aufgaben vereinfacht werden? Es wird sich
-kaum ein Werkzeug finden, das all diese Aufgaben abdeckt und selbst für einzelne
-Aufgaben sind häufig mehrere Werkzeuge notwendig. Daher suchen wir auf einer
-abstrakteren Ebene allgemeinere Muster für Tools und Sprachen, mit denen Daten
-analysiert und visualisiert sowie ein Projekt dokumentiert und präsentiert
-werden kann. Genau dies wir mit dem `Project Jupyter <https://jupyter.org/>`_
-angestrebt.
+How can these diverse tasks be simplified? You will hardly find a tool that
+covers all of these tasks, and several tools are often required even for
+individual tasks. Therefore, on a more abstract level, we are looking for more
+general patterns for tools and languages with which data can be analysed and
+visualised and a project can be documented and presented. This is exactly what
+we are aiming for with `Project Jupyter <https://jupyter.org/>`_.
 
-Das Projekt Jupyter startete 2014 mit dem Ziel, ein konsistentes Set von
-Open-Source-Tools für wissenschaftliche Forschung, reproduzierbare Workflows,
-`Computational Narratives
+The Jupyter project started in 2014 with the aim of creating a consistent set of
+open source tools for scientific research, reproducible workflows,
+`computational narratives
 <https://blog.jupyter.org/project-jupyter-computational-narratives-as-the-engine-of-collaborative-data-science-2b5fb94c3c58>`_
-und Datenanalyse zu erstellen. Bereits 2017 wurde Jupyter dann mit dem `ACM
-Software Systems Award
+and data analysis. In 2017, Jupyter received the `ACM Software Systems Award
 <https://blog.jupyter.org/jupyter-receives-the-acm-software-system-award-d433b0dfe3a2>`_
-ausgezeichnet - eine prestigeträchtige Auszeichnung, die es u.a. mit Unix und
-dem Web teilt.
+– a prestigious award which, among other things, shares with Unix and the web.
 
-Um zu verstehen, warum Jupyter-Notebooks so erfolgreich sind, schauen wir uns
-die Kernfunktionen einmal genauer an:
+To understand why Jupyter notebooks are so successful, let’s take a closer look
+at the core functions:
 
 `Jupyter Notebook Format <https://nbformat.readthedocs.io/>`_
-    Jupyter Notebooks sind ein offenes, auf JSON basierendes Dokumentenformat
-    mit vollständigen Aufzeichnungen der Sitzungen des Benutzers und des
-    enthalten Code.
+    Jupyter Notebooks are an open, JSON-based document format with full records
+    of the user’s sessions and the code they contain.
 Interactive Computing Protocol
-    Das Notebook kommuniziert mit Rechenkernel über das *Interactive Computing
-    Protocol*, einem offenen Netzwerkprotokoll basierend auf JSON-Daten über
-    `ZMQ <http://zeromq.org/>`_ und `WebSockets
+    The notebook communicates with the computing kernel via the *Interactive
+    Computing Protocol*, an open network protocol based on JSON data via `ZMQ
+    <http://zeromq.org/>`_ and `WebSockets
     <https://de.wikipedia.org/wiki/WebSocket>`_.
 :doc:`workspace/jupyter/kernels/index`
-    Kernel sind Prozesse, die interaktiven Code in einer bestimmten
-    Programmiersprache ausführen und die Ausgabe an den Benutzer zurückgeben.
+    Kernels are processes that execute interactive code in a specific
+    programming language and return the output to the user.
 
-Jupyter-Infrastruktur
----------------------
+Jupyter infrastructure
+----------------------
 
-Eine Plattform für die oben genannten Use Cases erfordert eine umfangreiche
-Infrastruktur, die nicht nur die Bereitstellung der Kernel sowie die
-Parametrisierung, Zeitsteuerung und Parallelisierung von Notebooks erlaubt,
-sondern darüberhinaus auch die gleichmäßige Bereitstellung der Ressourcen.
+A platform for the above-mentioned use cases requires an extensive
+infrastructure that not only allows the provision of the kernel and the
+parameterization, time control and parallelisation of notebooks, but also the
+uniform provision of resources.
 
-Mit diesem Tutorial wird eine Plattform bereitgestellt, die über Jupyter
-Notebooks hinaus schnelle, flexible und umfassende Datenanalysen ermöglicht.
-Aktuell gehen wir jedoch noch nicht darauf ein, wie sie sich um *Streaming
-Pipelines* und *Domain Driven Data Stores* erweitern lässt.
+This tutorial provides a platform that enables fast, flexible and comprehensive
+data analysis beyond Jupyter notebooks. At the moment, however, we are not yet
+going into how it can be expanded to include streaming pipelines and
+domain-driven data stores.
 
-Die Beispiele des Jupyter-Tutorials könnt Ihr jedoch auch lokal erstellen und
-ausführen.
+However, you can also create and run the examples in the Jupyter tutorial
+locally.

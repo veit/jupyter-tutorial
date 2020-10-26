@@ -1,10 +1,10 @@
-Installation und Nutzung
-========================
+Installation and use
+====================
 
 Installation
 ------------
 
-voilà kann installiert werden mit:
+voilà can be installed with:
 
 .. code-block:: console
 
@@ -15,29 +15,29 @@ voilà kann installiert werden mit:
     Successfully installed jupyter-server-0.1.1 jupyterlab-pygments-0.1.0 voila-0.1.10
     …
 
-Starten
--------
+Start
+-----
 
-… als eigenständige Anwendung
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+… as a stand-alone application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ihr könnt die Installation überprüfen,z.B. mit:
+You can check the installation, e.g. with:
 
 .. code-block:: console
 
-    $ pipenv run voila docs/workspace/jupyter/ipywidgets/examples.ipynb
+    $ pipenv run voila pipenv run voila docs/workspace/jupyter/ipywidgets/examples.ipynb
     …
     [Voila] Voila is running at:
     http://localhost:8866/
 
-Hierbei sollte sich euer Standardbrowser öffnen und die ``ipywidget``-Beispiele
-aus unserem Tutorial anzeigen:
+Your standard browser should open and display the ``ipywidget`` examples from
+our tutorial:
 
 .. image:: voila-example-1.png
-   :alt: Voilà-Beispiel examples.ipynb
+   :alt: Voilà example examples.ipynb
 
-Alternativ könnt ihr euch auch ein Verzeichnis anzeigen lassen mit allen darin
-enthaltenen Notebooks:
+Alternatively, you can also display a directory with all the notebooks it
+contains:
 
 .. code-block:: console
 
@@ -45,9 +45,9 @@ enthaltenen Notebooks:
     …
 
 .. image:: voila-example-2.png
-   :alt: Voilà-Beispiel für eine Verzeichnisansicht
+   :alt: Voilà example of a directory view
 
-Es ist auch möglich, sich den Quellcode anzeigen zu lassen mit:
+It is also possible to display the source code with:
 
 .. code-block:: console
 
@@ -55,29 +55,29 @@ Es ist auch möglich, sich den Quellcode anzeigen zu lassen mit:
     …
 
 .. note::
-    Beachtet, dass der Code nur angezeigt wird. Voilà erlaubt Benutzern nicht,
-    den Code zu bearbeiten oder auszuführen.
+    Note that the code is only displayed. Voilà does not allow users to edit or
+    run the code.
 
 .. image:: voila-example-3.png
-   :alt: Voilà-Beispiel mit Quellcode
+   :alt: Voilà example with source code
 
-Üblicherweise wird das ``light``-Theme verwendet; ihr könnt jedoch auch das
-``dark``-Theme auswählen:
+Usually the ``light`` theme is used; however, you can also choose the ``dark``
+theme:
 
 .. code-block:: console
 
     $ pipenv run voila --theme=dark docs/workspace/jupyter/ipywidgets/examples.ipynb
     …
 
-… als Erweiterung des Jupyter-Server
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+… as an extension of the Jupyter server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Alternativ könnt ihr voilà auch als Erweiterung des Jupyter-Server starten:
+Alternatively you can start voilà as an extension of the Jupyter server:
 
 .. code-block:: console
 
     $ pipenv run jupyter notebook
     …
 
-Anschließend könnt ihr voilà aufrufen, z.B. unter der URL
+Then you can call up voilà, e.g. under the URL
 ``http://localhost:8888/voila``.

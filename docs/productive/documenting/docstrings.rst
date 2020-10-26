@@ -1,23 +1,23 @@
 Docstrings
 ==========
 
-Mit der Sphinx-Erweiterung `sphinx.ext.autodoc
-<http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_ lassen
-sich auch Docstrings in die Dokumentation übernehmen. Dabei lassen sich die
-folgenden drei Direktiven angeben:
+With the Sphinx extension `sphinx.ext.autodoc
+<http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_,
+docstrings can also be included in the documentation. The following three
+directives can be specified:
 
 .. rst:directive::  automodule
                     autoclass
                     autoexception
 
-Diese dokumentieren ein Modul, eine Klasse oder eine Exception anhand des
-Docstrings des jeweiligen Objekts.
+These document a module, a class or an exception using the docstring of the
+respective object.
 
 Installation
 ------------
 
-Üblicherweise ist ``sphinx.ext.autodoc`` bereits in der
-Sphinx-Konfigurationsdatei ``docs/conf.py`` angegeben:
+``sphinx.ext.autodoc`` is usually already specified in the Sphinx configuration
+file  ``docs/conf.py``:
 
 .. code-block:: python
 
@@ -26,34 +26,34 @@ Sphinx-Konfigurationsdatei ``docs/conf.py`` angegeben:
         …
     ]
 
-Wenn euer Paket und die zugehörige Dokumentation Teil des gleichen Repository
-sind, haben sie immer die gleiche relative Position im Dateisystem. In diesem
-Fall könnt ihr die Sphinx-Konfiguration einfach so bearbeiten, dass ``sys.path``
-den relativen Pfad zum Paket angibt, also:
+If your package and its documentation are part of the same repository, they will
+always have the same relative position in the filesystem. In this case you can
+simply edit the Sphinx configuration for ``sys.path`` to indicate the relative
+path to the package, so:
 
 .. code-block:: python
 
     sys.path.insert(0, os.path.abspath('..'))
     import requests
 
-Wen ihr eure Sphinx-Dokumentation in einer virtuellen Umgebung installiert
-habt, könnt ihr dort auch euer Paket installieren mit:
+If you have installed your Sphinx documentation in a virtual environment, you
+can also install your package there with:
 
-.. code-block:: python
+.. code-block:: console
 
     $ pipenv install my.package
 
-bzw., wenn ihr auch das Paket weiterentwickeln wollt mit:
+or, if you want to develop the package further with:
 
 .. code-block:: console
 
     $ pipenv install -e https://github.com/veit/my.package.git
 
-Beispiele
----------
+Examples
+--------
 
-Hier einige Beispiele aus der API-Dokumentation des `requests
-<http://docs.python-requests.org/en/master/>`_-Modul:
+Here are some examples from the API documentation for the `requests
+<http://docs.python-requests.org/en/master/>`_ module:
 
 .. code-block:: rest
 
@@ -78,7 +78,8 @@ Hier einige Beispiele aus der API-Dokumentation des `requests
     .. autoclass:: Session
        :inherited-members:
 
-Dies führt zu :doc:`docstrings-example`, generiert aus den folgenden Docstrings:
+This leads to the :doc:`docstrings-example`, generated from the following
+docstrings:
 
 * `requests.head <http://docs.python-requests.org/en/master/_modules/requests/api/#head>`_
 * `requests.RequestException <http://docs.python-requests.org/en/master/_modules/requests/exceptions/#RequestException>`_
@@ -88,8 +89,7 @@ Dies führt zu :doc:`docstrings-example`, generiert aus den folgenden Docstrings
    :inherited-members:
 
 .. note::
-   Ihr solltet euch beim Schreiben von  Docstrings an die folgenden
-   Anleitungen halten:
+   You should follow these guidelines when writing docstrings:
 
    * `Python Style Guide: comments
      <https://www.python.org/dev/peps/pep-0008/#comments>`_
@@ -99,13 +99,14 @@ Dies führt zu :doc:`docstrings-example`, generiert aus den folgenden Docstrings
 ``sphinx-autodoc-typehints``
 ----------------------------
 
-Mit `PEP 484 <https://www.python.org/dev/peps/pep-0484/>`_ wurde eine
-Standardmethode zum Ausdrücken von Typen in Python-Code eingeführt. Damit lassen
-sich auch Typen in Docstrings anders ausdrücken. Dabei bietet die Variante mit
-Typen gemäß PEP 484 den Vorteil, dass Typenprüfer und IDEs zur statischen
-Codeanalyse genutzt werden können.
+With `PEP 484 <https://www.python.org/dev/peps/pep-0484/>`_ a standard method
+for expressing types in Python code was introduced. This also allows types to be
+expressed differently in docstrings. The variant with types according to PEP 484
+has the advantage that type testers and IDEs can be used for static code
+analysis.
 
 Python 3 type annotations:
+
     .. code-block:: python
 
         def func(arg1: int, arg2: str) -> bool:
@@ -124,6 +125,7 @@ Python 3 type annotations:
             return True
 
 Types in Docstrings:
+
     .. code-block:: python
 
         def func(arg1, arg2):
@@ -142,17 +144,17 @@ Types in Docstrings:
             return True
 
 .. note::
-   `Python2/3-kompatible Anmerkungen
+   `Python 2/3 compatible annotations
    <https://www.python.org/dev/peps/pep-0484/#suggested-syntax-for-python-2-7-and-straddling-code>`_
-   werden aktuell nicht von Sphinx unterstützt und erscheinen nicht in der
-   generierten Dokumentation.
+   are currently not supported by Sphinx and do not appear in the generated
+   documentation.
 
 ``sphinx.ext.napoleon``
 -----------------------
 
-Die Sphinx-Erweiterung `sphinx.ext.napoleon
-<https://sphinxcontrib-napoleon.readthedocs.io/>`_ erlaubt euch, verschiedene
-Abschnitte in Docstrings zu definieren, u.a.:
+The sphinx extension `sphinx.ext.napoleon
+<https://sphinxcontrib-napoleon.readthedocs.io/>`_ allows you to define
+different sections in docstrings, including:
 
 * ``Attributes``
 * ``Example``
@@ -162,15 +164,16 @@ Abschnitte in Docstrings zu definieren, u.a.:
 * ``Warning``
 * ``Yield``
 
-Dabei unterscheidet ``sphinx.ext.napoleon`` zwei Stilen von Docstrings:
+There are two styles of docstrings in ``sphinx.ext.napoleon``:
 
 * `Google <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_
 * `NumPy <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html>`_
 
-Die wesentlichen Unterschiede sind, dass Google Einrückungen verwendet und NumPy
-Unterstriche:
+The main differences are that Google uses indentations and NumPy uses
+underscores:
 
 Google:
+
     .. code-block:: python
 
         def func(arg1, arg2):
@@ -189,6 +192,7 @@ Google:
             return True
 
 NumPy:
+
     .. code-block:: python
 
         def func(arg1, arg2):
@@ -211,5 +215,5 @@ NumPy:
             """
             return True
 
-Die detailierten Konfigurationsoptionen findet ihr in `sphinxcontrib.napoleon.Config
+You can find the detailed configuration options in `sphinxcontrib.napoleon.Config
 <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/sphinxcontrib.napoleon.html#sphinxcontrib.napoleon.Config>`_.

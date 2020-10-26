@@ -1,35 +1,31 @@
 Voilà
 =====
 
-`Voilà <https://github.com/voila-dashboards/voila>`_ wurde von `QuantStack
-<http://quantstack.net/>`_ entwickelt.
+`Voilà <https://github.com/voila-dashboards/voila>`_ was developed by
+`QuantStack <http://quantstack.net/>`_.
 
 Features
 --------
 
-* Voilà unterstützt :doc:`interaktive Jupyter-Widgets
-  </workspace/jupyter/ipywidgets/index>`, einschließlich der Roundtrips zum
-  Kernel. Auch benutzerdefinierte Widgets wie
-  :doc:`pyviz:d3js/bqplot/index`,
+* Voilà supports :doc:`interactive Jupyter widgets
+  </workspace/jupyter/ipywidgets/index>`, including round trips to the kernel.
+  Custom widgets like :doc:`pyviz:d3js/bqplot/index`,
   :doc:`pyviz:js/ipyleaflet`,
   :doc:`pyviz:js/ipyvolume`,
   `ipympl <https://github.com/matplotlib/jupyter-matplotlib/>`_,
   :doc:`ipysheet </workspace/jupyter/ipywidgets/libs/ipysheet>`,
   `plotly <https://github.com/plotly/plotly.py>`_,
-  `ipywebrtc <https://github.com/maartenbreddels/ipywebrtc>`_ usw. werden
-  unterstützt.
-* Voilà erlaubt keine willkürliche Ausführung von Code durch Nutzer von
-  Dashboards.
-* Voilà basiert auf Jupyter-Standardprotokollen und -Dateiformaten und
-  funktioniert mit jedem
-  :doc:`Jupyter-Kernel </workspace/jupyter/kernels/index>`: C++, Python, Julia.
-  Dies macht es zu einem sprachunabhängigen Dashboard-System.
-* Voilà ist erweiterbar. Es enthält ein flexibles :doc:`Template
-  <templating>`-System zur Erstellung
-  umfangreicher Layouts.
+  `ipywebrtc <https://github.com/maartenbreddels/ipywebrtc>`_ etc. are also
+  supported.
+* Voilà does not allow arbitrary code execution by dashboard users.
+* Voilà is based on Jupyter standard protocols and file formats and works with
+  any :doc:`Jupyter-Kernel </workspace/jupyter/kernels/index>`: C++, Python,
+  Julia. This makes it a language-independent dashboard system.
+* Voilà is expandable. It contains a flexible  :doc:`Template <templating>`
+  system for creating extensive layouts.
 
-Ausführungsmodell
------------------
+Execution model
+---------------
 
 .. graphviz::
 
@@ -41,19 +37,19 @@ Ausführungsmodell
         subgraph cluster_browser {
             notebook_url [
                 shape=box,
-                label="Notebook URL";
+                label="Notebook url";
                 style=filled;
                 fillcolor="#edf8fb";
                 color="#b2e2e2"];
             html_rendering [
                 shape=box,
-                label="HTML-Rendering";
+                label="HTML rendering";
                 style=filled;
                 fillcolor="#edf8fb";
                 color="#b2e2e2"];
             init_websocket [
                 shape=box,
-                label="Javascript initiiert Websocket\nmit dem Jupyter-Kernel",
+                label="Javascript initiates Websocket\nwith the Jupyter kernel",
                 style=filled;
                 fillcolor="#edf8fb";
                 color="#b2e2e2"];
@@ -63,19 +59,19 @@ Ausführungsmodell
         subgraph cluster_server {
             html_open_notebook [
                 shape=box,
-                label="Notebook öffnen und\nzugehörigen Kernel starten";
+                label="Open the notebook and start\nthe associated kernel";
                 style=filled;
                 fillcolor="#bdd7e7";
                 color="#2171b5"];
             html_run_notebook [
                 shape=box,
-                label="Notebook-Zellen ausführen\nErgebnisse ausgeben\nVoilà-Template zuweisen\nNotebook konvertieren";
+                label="Run notebook cells\nOutput results\nAssign Voilà template\nConvert notebook";
                 style=filled;
                 fillcolor="#bdd7e7";
                 color="#2171b5"];
             ws_open_notebook [
                 shape=box,
-                label="Notebook öffnen und\nzugehörigen Kernel starten";
+                label="Open the notebook and\nstart the associated kernel";
                 style=filled;
                 fillcolor="#bdd7e7";
                 color="#2171b5"];
@@ -85,7 +81,7 @@ Ausführungsmodell
         // Edges
         notebook_url -> html_open_notebook [label="GET Request"]
         html_open_notebook -> html_run_notebook
-        html_run_notebook -> html_rendering [label="HTTP Responses\lmit HTML oder\lHTML-Fragmenten\l"]
+        html_run_notebook -> html_rendering [label="HTTP Responses\lwith HTML or\lHTML fragments\l"]
         html_rendering -> init_websocket
         init_websocket -> ws_open_notebook [dir=both label="Web-Socket:\l- comm_msg\l- comm_info_request\l- kernel_info_request\l- shutdown_request\l"]
         // Arrangement
@@ -93,17 +89,17 @@ Ausführungsmodell
         {rank = same; html_open_notebook; html_run_notebook; ws_open_notebook;}
     }
 
-Ein wichtiger Aspekt dieses Ausführungsmodells ist, dass vom Frontend nicht
-angegeben werden kann, welcher Code vom Backend ausgeführt wird. Sofern mit der
-Option ``--strip-sources=False`` nicht anders angegeben, gelangt der Quellcode
-des gerenderten Notizbuchs noch nicht einmal an das Frontend. Die Voilà-Instanz
-des ``jupyter_server`` erlaubt standardmäßig keine Ausführungsanforderungen.
+An important aspect of this execution model is that the frontend cannot specify
+which code is executed by the backend. Unless otherwise specified with the option
+``--strip-sources=False``, the source code of the rendered notebook does not
+even reach the frontend. The Voilà instance of ``jupyter_server`` does not allow
+execution requests by default.
 
 .. warning::
-    Die aktuelle Version von Voilà antwortet auf den ersten ``GET``-Request
-    erst, wenn alle Zellen ausgeführt wurden. Dies kann länger dauern. Es wird
-    jedoch daran gearbeitet, progressives Rendern zu ermöglichen, s. `feat:
-    progressive cell rendering
+    The current version of Voilà does not respond to the first ``GET`` request
+    until all cells have been executed. This can take longer. However, work is
+    being done to enable progressive rendering, s. `feat: progressive cell
+    rendering
     <https://github.com/maartenbreddels/voila/commit/cfd0204231313ebe5dd110c488a5cc6254c85a65>`_.
 
 .. seealso::

@@ -1,10 +1,10 @@
-Automatisieren der Code-Qualität
-================================
+Automating code quality
+=======================
 
-Im Folgenden möchte ich einige Werkzeuge und Konzepte vorstellen, die die
-Wartung und Pflege von Python-Paketen und anderem Quellcode vereinfachen.
-Zusammen mit :doc:`/productive/git/pre-commit` läßt sich mit ihnen die
-Code-Qualität automatisiert überprüfen und verbessern.
+In the following I would like to introduce some tools and concepts that simplify
+the maintenance of Python packages and other source code. Together with
+:doc:`/productive/git/pre-commit`, they can be used to automatically check and
+improve the code quality.
 
 Checker
 -------

@@ -1,39 +1,39 @@
 PostgreSQL
 ==========
 
-Grundfunktionen
----------------
+Basic funtions
+--------------
 
-ACID-konform
-    ACID (**A** tomicity, **C** onsistency, **I** solation, **D** urability) ist
-    eine Reihe von Eigenschaften, die Datenbanktransaktionen erfüllen sollten
-    um auch im Störungsfall weiterhin die Gültigkeit der Daten gewährleisten
-    zu können.
+ACID compliant
+    ACID (**A** tomicity, **C** onsistency, **I** solation, **D** urability) is
+    a series of properties that database transactions should fulfill to
+    guarantee the validity of the data even in the event of a fault.
 
 SQL:2011
-    Mit `temporal_tables <https://github.com/arkhipov/temporal_tables>`_ wird
-    auch der SQL-Standard ISO/IEC 9075:2011 erfüllt, u.a. durch:
+    Ttemporal_tables <https://github.com/arkhipov/temporal_tables>`_ also meet
+    the SQL standard ISO/IEC 9075:2011, including:
 
-    * Time Period definitions
+    * Time period definitions
     * Valid time tables
     * Transaction time tables (system-versioned tables) with time-sliced and
       sequenced queries
 
-Datentypen
-    Folgende Datentypen werden out of the box unterstützt:
+Data types
+    The following data types are supported out of the box:
 
-    * primitiven Datentypen: Integer, Numeric, String, Boolean
-    * Strukturierte Datentypen: Date/Time, Array, Range, UUID
-    * Dokumenttypen: JSON/JSONB, XML, Key-value (`Hstore
-      <https://www.postgresql.org/docs/current/hstore.html>`_)
-    * Geometrische Datentypen: Point, Line, Circle, Polygon
-    * Anpassungen: Composite, Custom Types
+     * primitive data types: Integer, Numeric, String, Boolean
 
-Transactional Data Definition Language (DDL)
-    Transactional DDL wird via `Write-Ahead Logging
-    <https://www.postgresql.org/docs/current/wal-intro.html>`_ realisiert.
-    Dabei sind auch große Änderungen möglich, nicht jedoch *add* und *drop* von
-    Datenbanken und Tabellen::
+     * structured data types: Date/Time, Array, Range, UUID
+
+     * document types: JSON/JSONB, XML, key-value (`Hstore
+       <https://www.postgresql.org/docs/current/hstore.html>`_)
+     * geometric data types: point, line, circle, polygon
+     * adjustments: composite, custom Types
+     * transactional data definition language (DDL)
+
+       Transactional DDL is implemented via `write-ahead logging
+       <https://www.postgresql.org/docs/current/wal-intro.html>`_. Big changes
+       are also possible, but not adding and dropping databases and tables::
 
         $ psql mydb
         mydb=# DROP TABLE IF EXISTS foo;
@@ -51,25 +51,25 @@ Transactional Data Definition Language (DDL)
         ERROR: relation "foo" does not exist
 
 Concurrent Index
-    PostgreSQL kann Indizes erstellen ohne Schreibzugriffe auf Tabellen sperren
-    zu müssen.
+    PPostgreSQL can create indexes without having to lock write access to
+    tables.
 
     .. seealso::
         `Building Indexes Concurrently
         <https://www.postgresql.org/docs/current/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY>`_
 
-Erweiterungen
-    PostgreSQL kann einfach erweitert werden. Das mit dem Quellcode gelieferte
-    `contrib/ <https://github.com/postgres/postgres/tree/master/contrib>`_-Verzeichnis
-    enthält verschiedene Erweiterungen, die in `Appendix F
-    <https://www.postgresql.org/docs/9.5/contrib.html>`_ beschrieben sind.
-    Andere Erweiterungen sind unabhängig entwickelt worden, wie z.B. `PostGIS
-    <http://postgis.net/>`_ oder `Slony-I <http://www.slony.info/>`_.
+Extensions
+    PostgreSQL can easily be extended. The `contrib/
+    <https://github.com/postgres/postgres/tree/master/contrib>`_ directory
+    supplied with the source code contains various extensions that are described
+    in `Appendix F <https://www.postgresql.org/docs/9.5/contrib.html>`_. Other
+    extensions have been developed independently, such as :doc:`postgis/index`
+    or `Slony-I <http://www.slony.info/>`_.
 
 Common Table Expression
     `WITH Queries (Common Table Expressions)
-    <https://www.postgresql.org/docs/current/queries-with.html>`_ unterteilt
-    komplexe Anfragen in einfachere Anfragen, z.B.::
+    <https://www.postgresql.org/docs/current/queries-with.html>`_ divides
+    complex queries into simpler queries, e.g .::
 
         WITH regional_insolation AS (
             SELECT region, SUM(amount) AS total_insolation
@@ -81,9 +81,9 @@ Common Table Expression
             WHERE total_insolation > (SELECT SUM(total_insolation)/10 FROM regional_insolation)
         )
 
-    Zudem gibt es auch noch einen ``RECURSIVE``-Modifier, der die
-    ``WITH``-Abfrage auf seine eigene Ausgabe verweist. Im folgenden ein
-    Beispiel zum Summieren der Zahlen von 1 bis 100::
+    There is also a ``RECURSIVE`` modifier that refers the ``WITH`` query to its
+    own output. The following is an example of how to sum the numbers from 1 to
+    100::
 
         WITH RECURSIVE t (n) AS (
             WERTE (1)
@@ -94,23 +94,23 @@ Common Table Expression
 
 Multi-Version Concurrency Control (MVCC)
     `Multi-Version Concurrency Control
-    <https://www.postgresql.org/docs/current/mvcc.html>`_ erlaubt, dass zwei
-    oder mehr Sessions gleicheitig auf dieselben Daten zugreifen ohne dabei die
-    Integrität der Daten zu gefährden.
+    <https://www.postgresql.org/docs/current/mvcc.html>`_ allows two or more
+    sessions to access the same data at the same time without compromising the
+    integrity of the data.
 
-Cross Platform
-    PostgreSQL läuft auf gängigen CPU-Architekturen wie ``x86``, ``PowerPC``,
-    ``Sparc``, ``ARM``, ``MIPS`` oder ``PA-RISC``. Auch die meisten
-    Betriebssysteme werden unterstützt: ``Linux``, ``Windows``, ``FreeBSD``,
-    ``OpenBSD``, ``NetBSD``, ``Mac OS``, ``AIX``, ``HP/UX`` und ``Solaris``.
+Cross platform
+    PostgreSQL runs on common CPU architectures such as ``x86``, ``PowerPC``,
+    ``Sparc``, ``ARM``, ``MIPS`` or `PA-RISC```. Most operating systems are also
+    supported: ``Linux``, ``Windows``, ``FreeBSD``, ``OpenBSD``, ``NetBSD``,
+    ``Mac OS``, ``AIX``, ``HP/UX`` and ``Solaris``.
 
 .. seealso::
 
     `explain.depesz.com <https://explain.depesz.com/>`_
-        Web-App, die PostgreSQLs `EXPLAIN
-        <https://www.postgresql.org/docs/current/sql-explain.html>`_- und
+        Web app that visualises PostgreSQL’s `EXPLAIN
+        <https://www.postgresql.org/docs/current/sql-explain.html>`_ and
         `ANALYZE <https://www.postgresql.org/docs/current/sql-analyze.html>`_
-        -Anweisungen visualisiert.
+        statements.
 
 .. toctree::
     :hidden:

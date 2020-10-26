@@ -7,93 +7,93 @@ Jupyter
         graph [fontname = "Calibri", fontsize="16"];
         node [fontname = "Calibri", fontsize="16"];
         edge [fontname = "Calibri", fontsize="16"];
-        tooltip="Wie entscheide ich, welche Jupyter-Pakete ich benötige?";
+        tooltip="How do I decide which Jupyter packages I need?";
         // Top Level
         what [
             shape=diamond,
-            label="Was wollt ihr machen?",
-            tooltip="Jupyter bietet euch verschiedene Möglichkeiten, wie ihr die Notebooks nutzen könnt"]
+            label="What do you want to do?",
+            tooltip="Jupyter offers you different ways how you can use the notebooks"]
         // Second Level
         jupyter [
             label="Jupyter",
-            tooltip="Jupyter lokal installieren",
+            tooltip="Install Jupyter locally",
             target="_top",
             href="../workspace/jupyter/notebook/index.html"]
         hub [
             label="JupyterHub",
-            tooltip="JupyterHub\ninstallieren",
+            tooltip="Install\nJupyterHub",
             target="_top",
             href="../workspace/jupyter/hub/index.html"]
         nbconvert [
             label="nbconvert",
-            tooltip="nbconvert installieren und nutzen",
+            tooltip="Install and\nuse nbconvert",
             target="_top",
             href="../workspace/jupyter/nbconvert.html"]
         nbviewer [
             label="nbviewer",
-            tooltip="nbviewer installieren und nutzen",
+            tooltip="Install and\nuse nbviewer",
             target="_top",
             href="../workspace/jupyter/nbviewer.html"]
         kernels [
             label="Kernels",
-            tooltip="Kernels installieren, anzeigen und starten",
+            tooltip="Install, view and\nstart kernels",
             target="_top",
             href="../workspace/jupyter/kernels/install.html"]
         extensions [
             shape=plaintext,
             label=" ",
-            tooltip="Notebook-Erweiterungen installieren"]
+            tooltip="Install notebook extensions"]
         embed [
             shape=plaintext,
             label="",
-            tooltip="Notebooks in andere Anwendungen einbinden"]
+            tooltip="Embed notebooks in other applications"]
         examples [
-            label="Unternehmens-\nanwendungen",
-            tooltip="Anwendungsbeispiele bei Netflix, Bloomberg etc.",
+            label="Enterprise\napplications",
+            tooltip="Application examples at\nNetflix, Bloomberg etc.",
             target="_top",
             href="../workspace/jupyter/use-cases.html"]
         // 3rd Level
         widgets [
             label="Widgets",
-            tooltip="ipywidgets installieren und nutzen",
+            tooltip="Install and\nuse ipywidgets",
             target="_top",
             href="../workspace/jupyter/ipywidgets/index.html"]
         extend [
             label="nbextensions",
-            tooltip="Installieren und Verwenden verschiedener Notebook-Erweiterungen",
+            tooltip="Install and use various\nnotebook extensions",
             target="_top",
             href="../workspace/jupyter/nbextensions/index.html"]
         viz [
-            label="Visualisierung",
-            tooltip="Bibliotheken zur Datenvisualisierung",
+            label="Visualisation",
+            tooltip="Data visualisation libraries",
             target="_top",
             href="../viz/index.html"]
         dash [
             label="Dashboards",
-            tooltip="Installieren und Verwenden von Dashboards",
+            tooltip="Install and\nuse Dashboards",
             target="_top",
             href="../web/dashboards/index.html"]
         html [
             label="HTML",
-            tooltip="Einbinden von Notebooks in statisches HTML",
+            tooltip="Embed notebooks in\nstatic HTML",
             target="_top",
             href="../workspace/jupyter/ipywidgets/embedding.html"]
         sphinx [
             label="Sphinx",
-            tooltip="Einbinden von Notebooks in den Sphinx Document Generator",
+            tooltip="Embed notebooks in the\nSphinx Document Generator",
             target="_top",
             href="../workspace/jupyter/nbsphinx.html"]
         // Edges
-        what -> jupyter [label="Einzel-\nnutzer"]
-        what -> hub [label="Team-\narbeit"]
-        what -> nbconvert [label="Konvertieren"]
-        nbconvert -> nbviewer [label="Konvertier-\nservice"]
+        what -> jupyter [label="Single\nuser"]
+        what -> hub [label="Teamwork"]
+        what -> nbconvert [label="Convert"]
+        nbconvert -> nbviewer [label="Conversion\nservice"]
         what -> kernels [label="Java, R,\nJulia etc."]
-        what -> extensions [label="Notebook\nerweitern"]
-        what -> embed [label="Notebooks\neinbetten"]
-        what -> examples [label="Beispiele"]
+        what -> extensions [label="Extend\nNotebook"]
+        what -> embed [label="Embed\nNotebooks"]
+        what -> examples [label="Examples"]
         extensions -> {widgets extend viz dash}
-        embed -> {html sphinx}
+        embed -> {html sphinx} [label="Embed"]
         // Arrangement
         {rank = same; what;}
         {rank = same; jupyter; hub; nbconvert; kernels; extensions; embed; examples;}

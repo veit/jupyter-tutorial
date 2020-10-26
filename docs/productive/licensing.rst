@@ -1,105 +1,102 @@
-Lizenzieren
-===========
+Licensing
+=========
 
-Damit andere Eure Software verwenden können, sollte sie eine Lizenz erhalten,
-die die Nutzungsbedingungen beschreibt. Andernfalls dürfte sie meist
-urheberrechtlich geschützt sein. Urheber sind diejenigen, die zur Software
-originär beigetragen haben. Wenn eine Software relizenziert werden soll, ist
-die Zustimmung aller Urheber erforderlich.
+In order for others to use your software, it should be given a license that
+describes the terms of use. Otherwise, it should mostly be protected by
+copyright. Authors are those who originally contributed to the software. If
+software is to be relicensed, the consent of all authors is required.
 
 .. note::
-   Dies stellt keine Rechtsberatung dar. Wendet Euch im Zweifelsfall bitte an
-   einen Anwalt oder die Rechtsabteilung Eures Unternehmens.
+   This does not constitute legal advice. If in doubt, please contact a lawyer
+   or the legal department of your company.
 
-Proprietäre Softwarelizenzen
-----------------------------
+Proprietary software licenses
+-----------------------------
 
-Proprietäre Softwarelizenzen sind selten standardisiert; sie können kommerziell,
-Shareware oder Freeware sein.
+Proprietary software licenses are rarely standardised; they can be commercial,
+shareware, or freeware.
 
-Freie und Open-Source Software-Lizenzen
----------------------------------------
+Free and open source software licenses
+--------------------------------------
 
-Sie werden von der `Free Software Foundation (FSF)
-<https://www.fsf.org/de/?set_language=de>`_ und der `Open Source Initiative
-(OSI) <https://opensource.org/>`_ definiert. Dabei kann im Wesentlichen
-unterschieden werden zwischen Copyleft-, freizügigen- und gemeinfreien Lizenzen.
+They are defined by the `Free Software Foundation (FSF)
+<https://www.fsf.org/de/?set_language=de>`_ and the `Open Source Initiative
+(OSI) <https://opensource.org/>`_. A distinction can essentially be made between
+copyleft, permissive and public domain licenses.
 
-Copyleft-Lizenzen
+Copyleft licenses
 ~~~~~~~~~~~~~~~~~
 
-Copyleft-Lizenzen verpflichten die Lizenznehmer, jegliche Bearbeitung der
-Software unter die Lizenz des ursprünglichen Werks zu stellen. Dies soll
-Nutzungseinschränkungen der Software verhindern. Die bekannteste Copyleft-Lizenz
-ist die GNU General Public License (GPL). Dabei wird das Copyleft der GPL als
-sehr stark, das der Mozilla Public License hingegen als sehr schwach angesehen.
+Copyleft licenses oblige the licensees to place any processing of the software
+under the license of the original work. This is to prevent usage restrictions of
+the software. The best known copyleft license is the GNU General Public License
+(GPL). The copyleft of the GPL is seen as very strong, while that of the Mozilla
+Public License is seen as very weak.
 
-Da die Lizenzgeber nicht selbst an ih eigenes Copyleft gebunden sind, können sie
-neue Versionen auch unter proprietärer Lizenz veröffentlichen oder Dritten dies
-erlauben (Mehrfachlizenzierung).
+Since the licensors are not bound by their own copyleft, they can also publish
+new versions under a proprietary license or allow third parties to do so
+(multiple licensing).
 
-Durch Copyleft-Lizenzen können jedoch schnell Inkompatibilitäten auch zu freien
-Lizenzen ohne Copyleft entstehen. So ist beispielsweise die 3-Clause-BSD-Lizenz
-mit der GPL inkompatibel.
+Copyleft licenses can quickly lead to incompatibilities with free licenses
+without copyleft. For example, the 3 Clause BSD license is incompatible with the
+GPL.
 
-Freizügige Open-Source-Lizenzen
+Permissive open source licenses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Freizügige oder permissive Open-Source-Lizenzen erlauben eine breitere
-Wiederverwendung als die Copyleft-Lizenzen. Ableitungen und Kopien des
-Quellcodes können unter Bedingungen verbreitet werden, die grundlegend andere
-Eigenschaften haben als die der Originallizenz. Die bekanntesten Beispiele
-solcher Lizenzen sind die MIT-Lizenz und die BSD-Lizenz.
+Permissive open source licenses allow broader reuse than copyleft licenses.
+Derivatives and copies of the source code can be distributed under conditions
+that have fundamentally different properties than those of the original license.
+The best known examples of such licenses are the MIT license and the BSD
+license.
 
-Gemeinfreie Lizenzen
-~~~~~~~~~~~~~~~~~~~~
+Public domain licenses
+~~~~~~~~~~~~~~~~~~~~~~
 
-Bei gemeinfreien oder Public Domain-Lizenzen gehen die Urheberrechte an die
-Allgemeinheit über. Zur Kennzeichnung der Freigabe weitest möglicher
-Nutzungsrechte wurde die Creative Commons Zero-Lizenz erstellt.
+In the case of public domain licenses, copyrights are transferred to the general
+public. The Creative Commons Zero license was created to identify the release of
+the greatest possible usage rights.
 
-Auswahl einer geeigneten Lizenz
--------------------------------
+Choosing a suitable license
+---------------------------
 
-Übersichten über mögliche Lizenzen findet Ihr in `SPDX License List
-<https://spdx.org/licenses/>`_ oder `OSI Open Source Licenses by Category
-<https://opensource.org/licenses/category>`_. Bei der Wahl einer geeigneten
-Lizenz unterstützt Euch die Website `Choose an open source license
-<https://choosealicense.com/>`_.
+Overviews of possible licenses can be found in the `SPDX License List
+<https://spdx.org/licenses/>`_ or `OSI Open Source Licenses by Category
+<https://opensource.org/licenses/category>`_. The website `Choose an open source
+license <https://choosealicense.com/>`_ supports you in choosing a suitable
+license.
 
 GitHub
 ------
 
-Auf `GitHub <http://github.com/>`_ könnt Ihr Euch eine Open Source-Lizenz in
-Eurem Repository erstellen lassen.
+On `GitHub <http://github.com/>`_ you can have an open source license created in
+your repository.
 
-#. Geht zur Hauptseite Eures Repository.
-#. Klickt auf *Create new file* und gebt anschließend als Dateiname ``LICENSE``
-   oder ``LICENSE.md`` ein.
-#. Anschließend könnt Ihr rechts neben dem Feld für den Dateinamen auf *Choose a
-   license template* klicken.
-#. Nun könnt Ihr die für Euer Repository passende Open Source-Lizenz auswählen.
-#. Ihr werdet nun zu zusätzlichen Angaben aufgefordert, sofern die gewählte
-   Lizenz dies erfordert.
-#. Nachdem Ihr eine Commit-Message angegeben habt, z.B. ``Add license``, könnt
-   Ihr auf *Commit new file* klicken.
+#. Go to the main page of your repository.
+#. Click on *Create new file* and then enter ``LICENSE`` or ``LICENSE.md``as the
+   file name.
+#. Then you can click on *Choose a license template*.
+#. Now you can select the open source license that is suitable for your
+   repository.
+#. You will now be asked for additional information if the selected license
+   requires this.
+#. After you have given a commit message, for example ``Add license``, you can
+   click on *Commit new file*.
 
-Falls Ihr in Eurem Repository bereits eine ``/LICENSE``-Datei hinzugefügt habt,
-verwendet GitHub `licensee <https://github.com/licensee/licensee>`_ um die Datei
-mit einer kurzen `Liste von Open-Source-Lizenzen
-<https://choosealicense.com/appendix/>`_ abzugleichen. Falls GitHub die Lizenz
-Eures Repository nicht erkennen kann, enthält es möglicherweise mehrere
-Lizenzen oder ist zu komplex. Überlegt Euch dann, ob Ihr die Lizenz vereinfachen
-könnt, z.B. indem Ihr Komplexität in die ``/README``-Datei auslagert.
+If you’ve already added a ``/LICENSE`` file to your repository, GitHub uses
+`licensee <https://github.com/licensee/licensee>`_ to compare the file with a
+short `list of open source licenses  <https://choosealicense.com/appendix/>`_.
+If GitHub can’t detect your repository’s license, it might contain multiple
+licenses or be too complex. Then consider whether you can simplify the license,
+for example by outsourcing complexity to the ``/README`` file.
 
-Umgekehrt könnt Ihr auf GitHub auch nach Repositories mit bestimmten Lizenzen
-oder Lizenzfamilien suchen. Eine Übersicht über die Lizenz-Schlüsswlwörter
-erhaltet Ihr in `Searching GitHub by license type
+Conversely, you can also search for repositories with specific licenses or
+license families on GitHub. You can get an overview of the license keywords in
+`Searching GitHub by license type
 <https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository#searching-github-by-license-type>`_.
 
-Schließlich könnt Ihr Euch von `Shields.io <https://shields.io/>`_ ein
-License-Badge generieren lassen, das Ihr z.B. auf Eurer ``README``-Datei
-einbinden könnt, z.B.
+Finally, you can have `Shields.io <https://shields.io/>`_ generate a license
+badge for you, which you can include in your ``README`` file, for example
 
 .. code-block:: rst
 
@@ -113,31 +110,31 @@ einbinden könnt, z.B.
 .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
    :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
 
-Standardformat für die Lizenzierung
------------------------------------
+Standard format for licensing
+-----------------------------
 
-Wir empfehlen die Verwendung von ``SPDX-FileCopyrightText: [year] [copyright
-holder]``. Üblicherweise sollte die Angabe das gesamte Software-Produkt
-umfassen, Ihr könnt jedoch auch Elemente ausnehmen.
+We recommend using ``SPDX-FileCopyrightText: [year] [copyright holder]``.
+Usually the information should include the entire software product, but you can
+also exclude elements.
 
-Konformität überprüfen
-----------------------
+Check conformity
+----------------
 
-`REUSE <https://reuse.software/>`_ wurde von der  Free Software Foundation
-Europe (FSFE) initiiert, um die Lizenzierung freier Software-Projekte zu
-erleichtern. Das `REUSE tool <https://git.fsfe.org/reuse/tool>`_ überprüft
-Lizenzen und unterstützt Euch bei der Einhaltung der Lizenzkonformität.
-Mit der `REUSE API <https://reuse.software/dev/#api>`_ könnt Ihr Euch auch
-ein dynamisches Compliance-Badge generieren:
+`REUSE <https://reuse.software/>`_ was initiated by the Free Software Foundation
+Europe (FSFE) to facilitate the licensing of free software projects. The `REUSE
+tool <https://git.fsfe.org/reuse/tool>`_ checks licenses and supports you in
+compliance with the license. With the `REUSE API
+<https://reuse.software/dev/#api>`_ you can also generate a dynamic compliance
+badge:
 
 .. figure:: reuse-compliant.png
    :alt: REUSE-compliant Badge
 
-CI-Workflow
+CIR wrkflow
 ~~~~~~~~~~~
 
-Ihr könnt REUSE einfach in Euren Continuous Integration-Workflow integrieren,
-z.B. für GitLab in der ``.gitlab-ci.yml``-Datei mit:
+You can easily integrate REUSE into your continuous integration workflow, e.g.
+for GitLab in the ``.gitlab-ci.yml`` file with:
 
 .. code-block:: yaml
 
@@ -148,22 +145,22 @@ z.B. für GitLab in der ``.gitlab-ci.yml``-Datei mit:
       script:
         - reuse lint
 
-Alternativen
+Alternatives
 ~~~~~~~~~~~~
 
 `SPDX <https://spdx.org/>`_
-    SPDX definiert eine standardisierte Methode zum Austausch von Urheberrechts-
-    und Lizenzinformationen zwischen Projekten und Personen
+    SPDX defines a standardised method for exchanging copyright and license
+    information between projects and people
 `ClearlyDefined <https://clearlydefined.io/>`_
-    Es sammelt und zeigt Informationen über die Lizenzierungs- und
-    Urheberrechtssituation eines Software-Projekts an
+    It collects and displays information about the licensing and copyright
+    situation of a software project
 `OpenChain <https://www.openchainproject.org/>`_
-    Es empfiehlt REUSE als eine Komponente, um die Klarheit der Lizenz- und
-    Urheberrechtssituation zu verbessern, stellt jedoch höhere Anforderungen, um
-    eine vollständige Konformität zu erreichen.
+    It recommends REUSE as a component to improve the clarity of the licensing
+    and copyright situation, but has more stringent requirements to achieve full
+    compliance.
 `FOSSology <https://www.fossology.org/>`_
-    Toolkit für die Einhaltung freier Software, das Informationen in einer
-    Datenbank mit Lizenz-, Copyright- und Exportscanner
+    Free software compliance toolkit that stores information in a database with
+    license, copyright, and export scanners
 
 .. seealso::
    * `A Quick Guide to Software Licensing for the Scientist-Programmer

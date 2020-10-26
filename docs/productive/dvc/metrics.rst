@@ -1,18 +1,17 @@
-Versuchsmetriken
-================
+Trial metrics
+=============
 
-Mit dem `dvc metrics <https://dvc.org/doc/commands-reference/metrics>`_-Kommando
-ist DVC auch ein Framework zum Erfassen und Vergleichen der Performance von
-Experimenten.
+With the `dvc metrics <https://dvc.org/doc/commands-reference/metrics>`_
+command, DVC is also a framework for recording and comparing the performance of
+experiments.
 
 `evaluate.py
 <https://github.com/veit/dvc-example/blob/master/src/evaluate.py>`_
-berechnet den AUC (**A** rea **U** nder the **C** urve, deutsch `Fläche unter
-der Kurve <https://de.wikipedia.org/wiki/Fl%C3%A4che_unter_der_Kurve>`_)-Wert.
-Dabei verwendet es den Testdatensatz, ließt die Features aus ``features/test.pkl``
-und erstellt die Metrikdatei ``auc.metric``. Sie kann DVC als Metrik kenntlich
-gemacht werden mit der ``-M``-Option von `dvc run
-<https://dvc.org/doc/commands-reference/run>`_, in unserem Beispiel also mit:
+calculates the AUC (**A** rea **U** nder the **C** urve). It uses the test data
+set, reads the features from the file ``features/test.pkl`` and creates the
+metrics file ``auc.metric``. It can be identified as a DVC metric with the
+``-M`` option of `dvc run <https://dvc.org/doc/commands-reference/run>`_, in our
+example with:
 
 .. code-block:: console
 
@@ -31,16 +30,16 @@ gemacht werden mit der ``-M``-Option von `dvc run
       - auc.json:
           cache: false
 
-Mit ``dvc metrics show`` lassen sich Experimente dann auch über verschiedene
-Branches und Tags hinweg vergleichen:
+With ``dvc metrics show`` experiments can be compared then through various
+branches and tags:
 
 .. code-block:: console
 
     $ dvc metrics show
             auc.json: 0.514172
 
-Um nun unsere erste Version der DVC-Pipeline abzuschließen, fügen wir die
-Dateien und ein Tag dem Git-Repository hinzu:
+Now to complete our first version of the DVC pipeline, let's add the files and a
+tag to the Git repository:
 
 .. code-block:: console
 

@@ -1,9 +1,8 @@
 Templating
 ==========
 
-Mit `Cookiecutter <https://cookiecutter.readthedocs.io/>`_ lassen sich
-Dateistrukturen erstellen, die u.a. das Erstellen von Python-Paketen deutlich
-vereinfachen.
+With `Cookiecutter <https://cookiecutter.readthedocs.io/>`_, file structures
+can be created which simplify the creation of Python packages significantly.
 
 .. toctree::
    :hidden:

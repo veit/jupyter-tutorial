@@ -1,27 +1,27 @@
 Installation
 ============
 
-Voraussetzungen
----------------
+Requirements
+------------
 
-* Python-Interpreter
+* Python interpreter
 
-* Pfad zum Basisverzeichnis für euere Python-Pakete
+* Path to the base directory for your Python packages
 
-  Stellt sicher, dass sich euer ``bin``-Verzeichnis im Pfad  befindet. In der
-  Regel ist dies ``~/.local/`` für Linux und Mac OS oder ``%APPDATA%\Python``
-  unter Windows. Weitere Infos findet ihr in `site.USER_BASE
+  Make sure your ``bin`` bindirectory is in the path. Usually this is
+  ``~/.local/`` for Linux and Mac OS or ``%APPDATA%\Python``. on Windows. You
+  can find more information at `site.USER_BASE
   <https://docs.python.org/3/library/site.html#site.USER_BASE>`_.
 
-  * Linux und MacOS
+  * Linux and MacOS
 
-    Für Bash könnt ihr den Pfad in eurer ``~/.bash_profile`` angeben:
+    For bash you can enter the path in your ``~/.bash_profile``:
 
     .. code-block:: bash
 
       export PATH=$HOME/.local/bin:$PATH
 
-    und anschließend die Datei einlesen mit:
+    and then read the file with:
 
     .. code-block:: console
 
@@ -29,12 +29,11 @@ Voraussetzungen
 
   * Windows
 
-    Stellt sicher, dass das Verzeichnis, in dem CookieCutter installiert wird,
-    sich in eurem ``Path`` befindet, damit ihr es direkt aufrufen könnt. Sucht
-    dazu auf Ihrem Computer nach *Environment Variables* und fügt dieses
-    Verzeichnis zu ``Path`` hinzu, also z.B. ``%APPDATA%\Python\Python3x\Scripts``.
-    Anschließend müsst ihr vermutlich die Session neu starten um die
-    Umgebungsvariablen nutzen zu können.
+    Make sure the directory where CookieCutter will be installed is in your
+    ``Path`` so you can go directly to it. To do this, look for *Environment
+    Variables* on your computer and add this directory to  ``Path``, for
+    example ``%APPDATA%\Python\Python3x\Scripts``. Then you probably have to
+    restart the session in order to be able to use the environment variables.
 
     .. seealso::
        `Configuring Python

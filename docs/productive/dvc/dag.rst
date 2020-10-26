@@ -1,8 +1,8 @@
-Pipelines anzeigen
-==================
+View pipelines
+==============
 
-Solche Datenpipelines lassen sich anzeigen oder als Abhängigkeitsgraph
-darstellen mit ``dvc dag``:
+Such data pipelines can be displayed or represented as a dependency graph with
+``dvc dag``:
 
   .. code-block:: console
 
@@ -42,8 +42,8 @@ darstellen mit ``dvc dag``:
     train.dvc
     evaluate.dvc
 
-* Mit ``dvc dag --dot`` kann auch eine ``.dot``-Datei für `Graphviz
-  <http://www.graphviz.org/>`_ generiert werden:
+* With ``dvc dag --dot`` a ``.dot`` file for `Graphviz
+  <http://www.graphviz.org/>`_ is generated:
 
 .. graphviz::
 

@@ -1,44 +1,44 @@
-Optimieren von PostgreSQL für GIS-Datenbankobjekte
-==================================================
+Optimising PostgreSQL for GIS database objects
+==============================================
 
-In der Standardinstallation ist PostgreSQL sehr zurückhaltend konfiguriert um
-auf möglichst vielen Systemen lauffähig zu sein. GIS-Datenbankobjekte sind
-jedoch im Vergleich zu Textdaten groß. Daher sollte PostgreSQL so konfiguriert
-werden, dass sie mit diesen Objekten besser funktioniert. Hierfür konfigurieren
-wir die Datei ``/etc/postgresql/9.3/main/postgresql.conf`` folgendermaßen:
+In the standard installation, PostgreSQL is configured very cautiously so that
+it can run on as many systems as possible. However, GIS database objects are
+large compared to text data. Therefore, PostgreSQL should be configured to work
+better with these objects. To do this, we configure the
+``/etc/postgresql/9.3/main/postgresql.conf`` file as follows:
 
-#. ``shared_buffer`` sollte auf ca. 75% des gesamten Arbeitsspeichers geändert
-   werden, jedoch 128 kB nie unterschreiten:
+#. ``shared_buffer`` should be changed to approx. 75% of the total working
+   memory, but never fall below 128 kB:
 
    .. code-block::
 
     shared_buffers = 768MB
 
-#. ``work_mem`` sollte auf mindestens 16MB erhöht werden:
+#. ``work_mem`` should be increased to at least 16MB:
 
    .. code-block::
 
     work_mem = 16MB
 
-#. ``maintenance_work_mem`` sollte auf 128MB erhöht werden:
+#. ``maintenance_work_mem`` should be increased to 128MB:
 
    .. code-block::
 
     maintenance_work_mem = 128MB
 
-#. ``checkpoint_segments`` sollte auf ``6`` gesetzt werden:
+#. ``checkpoint_segments`` should be set to ``6``:
 
    .. code-block::
 
     checkpoint_segments = 6
 
-#. Schließlich sollte noch ``random_page_cost`` auf ``2.0`` gesetzt werden.
+#. Finally, ``random_page_cost`` should be set to ``2.0``.
 
    .. code-block::
 
     random_page_cost = 2.0
 
-Damit die Änderungen übernommen werden, sollte PostgreSQL neu gestartet werden:
+PostgreSQL should be restarted for the changes to take effect:
 
 .. code-block:: console
 

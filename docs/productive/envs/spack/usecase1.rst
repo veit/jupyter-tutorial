@@ -1,8 +1,8 @@
-Use Case 1: Verwalten kombinatorischer Installationen
-=====================================================
+Use case 1: managing combinatorial installations
+================================================
 
-Anzeige aller installierten Konfigurationen
--------------------------------------------
+Display all installed configurations
+------------------------------------
 
 .. code-block:: console
 
@@ -21,14 +21,13 @@ Anzeige aller installierten Konfigurationen
     boost@1.55.0        hwloc@1.9            libelf@0.8.13       starpu@1.1.4
 
 
-* ``spack find`` zeigt alle installierten Konfigurationen
-* Dabei kann es auch verschiedene Versionen desselben Pakets geben
-* Pakete werden differenziert zwischen Architektur und Compiler
-* Spack generiert ebenfalls ``modulefiles``, diese müssen jedoch nicht genutzt
-  werden
+* ``spack find`` shows all installed configurations
+* There can also be different versions of the same package
+* Packages are differentiated between architecture and compiler
+* Spack also generates ``modulefiles``, but these do not have to be used
 
-Spack-Syntax zum Einschränken der Anfragen
-------------------------------------------
+Spack syntax to restrict the requests
+-------------------------------------
 
 .. code-block:: console
 
@@ -55,7 +54,7 @@ Spack-Syntax zum Einschränken der Anfragen
     -- linux-x86_64 / intel@15.0.1 ------
     libelf@0.8.13
 
-Spack-Syntax zum Anzeigen der Abhängigkeiten
+Spack syntax for displaying the dependencies
 --------------------------------------------
 
 .. code-block:: console

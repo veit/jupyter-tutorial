@@ -3,13 +3,13 @@ R-Kernel
 
 #. ZMQ
 
-   Für Ubuntu & Debian:
+   For Ubuntu & Debian:
 
    .. code-block:: console
 
         $ sudo apt install libzmq3-dev libcurl4-openssl-dev libssl-dev jupyter-core jupyter-client
 
-#. R-Pakete
+#. R packages
 
    .. code-block:: console
 
@@ -26,7 +26,7 @@ R-Kernel
         from URL https://api.github.com/repos/IRkernel/repr/zipball/master
         ...
 
-#. Kernel bereitstellen
+#. Deploy the kernel
 
    .. code-block:: console
 
@@ -34,7 +34,7 @@ R-Kernel
         ...
         [InstallKernelSpec] Installed kernelspec ir in /Users/veit/Library/Jupyter/kernels/ir3.3.3/share/jupyter/kernels/ir
 
-   Ihr könnt den Kernel auch systemweit bereitstellen:
+   You can also deploy the kernel system-wide:
 
    .. code-block:: console
 

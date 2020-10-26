@@ -1,144 +1,144 @@
-Tastaturkürzel
-==============
+Keyboard shortcuts
+==================
 
-Wenn ihr die `Jupyter
-<https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/>`_-Tastaturkürzel
-kennt, könnt ihr sehr viel effizienter mit Notebooks arbeiten.
+If you know the `Jupyter
+<https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/>`_
+keyboard shortcuts, you can work much more efficiently with notebooks.
 
-Jupyter Notebooks verfügen über zwei verschiedene Tastatureingabemodi.
+Jupyter notebooks have two different keyboard input modes.
 
-Im **Bearbeitungsmodus**  könnt ihr Code oder Text in eine Zelle eingeben. Dies
-wird durch einen grünen Zellenrand angezeigt.
+In **edit mode** you can enter code or text in a cell. This is indicated by a
+green cell border.
 
-Der **Befehlsmodus** bindet die Tastatur an Befehle auf Notebook-Ebene und wird
-durch einen grauen Zellenrand mit einem blauen linken Rand angezeigt.
+**Command mode** binds the keyboard to notebook-level commands and is indicated
+by a gray cell border with a blue left border.
 
-Befehlsmodus
+Command mode
 ------------
 
-Dieser Modus wird mit ``esc`` verfügbar.
+This mode is available with ``esc``.
 
 +----------------+----------------------------------------+
-| ``↩``          | Bearbeitungsmodus aufrufen             |
+| ``↩``          | Call up edit mode                      |
 +----------------+----------------------------------------+
-| ``⇧↩``         | Zelle ausführen, unten auswählen       |
+| ``⇧↩``         | Execute cell, select below             |
 +----------------+----------------------------------------+
-| ``⌃↩``         | Zelle ausführen                        |
+| ``⌃↩``         | Run cell                               |
 +----------------+----------------------------------------+
-| ``⌥↩``         | Zelle ausführen, unten einfügen        |
+| ``⌥↩``         | Execute cell, insert below             |
 +----------------+----------------------------------------+
-| ``Y``          | zur Code-Zelle                         |
+| ``Y``          | to the code cell                       |
 +----------------+----------------------------------------+
-| ``M``          | zur Markdown-Zelle                     |
+| ``M``          | to the markdown cell                   |
 +----------------+----------------------------------------+
-| ``R``          | zur *Raw*-Ansicht                      |
+| ``R``          | to the raw view                        |
 +----------------+----------------------------------------+
-| ``1``, ``2``   | Ändern der Zelle zu ``h1``, ``h2``     |
+| ``1``, ``2``   | Change the cell to ``h1``, ``h2``      |
 | etc.           | etc.                                   |
 +----------------+----------------------------------------+
-| ``↑``, ``K``   | zur darüberliegenden Zelle             |
+| ``↑``, ``K``   | to the cell above                      |
 +----------------+----------------------------------------+
-| ``↓``, ``J``   | zur nächsten Zelle                     |
+| ``↓``, ``J``   | to the next cell                       |
 +----------------+----------------------------------------+
-| ``A``, ``B``   | Zelle darüber oder darunter einfügen   |
+| ``A``, ``B``   | Insert cell above or below             |
 +----------------+----------------------------------------+
-| ``X``          | Markierte Zelle ausschneiden           |
+| ``X``          | Cut out selected cell                  |
 +----------------+----------------------------------------+
-| ``C``          | Markierte Zelle kopieren               |
+| ``C``          | Copy selected cell                     |
 +----------------+----------------------------------------+
-| ``⇧V``         | Zeile oben einfügen                    |
+| ``⇧V``         | Insert line above                      |
 +----------------+----------------------------------------+
-| ``V``          | Zelle darunter einfügen                |
+| ``V``          | Insert cell below                      |
 +----------------+----------------------------------------+
-| ``Z``          | Zelle löschen rückgängig machen        |
+| ``Z``          | Undo delete cell                       |
 +----------------+----------------------------------------+
-| ``D``-``D``    | Zelle löschen                          |
+| ``D``-``D``    | Delete cell                            |
 +----------------+----------------------------------------+
-| ``⇧M``         | Zelle mit nächster zusammenführen      |
+| ``⇧M``         | Merge cell with next                   |
 +----------------+----------------------------------------+
-| ``⌘S``         | Speichern und Checkpoint               |
+| ``⌘S``         | Save and checkpoint                    |
 +----------------+----------------------------------------+
-| ``L``          | Zeilennummern umschalten               |
+| ``L``          | Toggle line numbers                    |
 +----------------+----------------------------------------+
-| ``O``          | Ausgabe umschalten                     |
+| ``O``          | Toggle output                          |
 +----------------+----------------------------------------+
-| ``⇧O``         | Scrollen des Outputs umschalten        |
+| ``⇧O``         | Toggle the scrolling of the output     |
 +----------------+----------------------------------------+
-| ``Esc``, ``Q`` | Befehlsmodus verlassen                 |
+| ``Esc``, ``Q`` | Exit command mode                      |
 +----------------+----------------------------------------+
-| ``H``          | Hilfedialog für Tastaturkürzel         |
+| ``H``          | Help dialog for keyboard shortcuts     |
 +----------------+----------------------------------------+
-| ``I``-``I``    | Kernel unterbrechen                    |
+| ``I``-``I``    | Interrupt kernel                       |
 +----------------+----------------------------------------+
-| ``0``-``0``    | Kernel neu starten                     |
+| ``0``-``0``    | Restart the kernel                     |
 +----------------+----------------------------------------+
-| ``␣``          | runterscrollen                         |
+| ``␣``          | scroll down                            |
 +----------------+----------------------------------------+
-| ``⇧␣``         | hochscrollen                           |
+| ``⇧␣``         | scroll up                              |
 +----------------+----------------------------------------+
-| ``⇧``          | ignorieren                             |
+| ``⇧``          | ignore                                 |
 +----------------+----------------------------------------+
 
-Bearbeitungsmodus
------------------
+Edit mode
+---------
 
-Dieser Modus wird mit ``Enter`` verfügbar.
+This mode becomes available with ``Enter``.
 
 +----------------+----------------------------------------+
-| ``⇥``          | Code-Vervollständigung oder Einzug     |
+| ``⇥``          | Code completion or indentation         |
 +----------------+----------------------------------------+
 | ``⇧⇥``         | Tooltip                                |
 +----------------+----------------------------------------+
-| ``⌘]``         | Einrücken                              |
+| ``⌘]``         | Indent                                 |
 +----------------+----------------------------------------+
-| ``⌘[``         | Ausrücken                              |
+| ``⌘[``         | Move out                               |
 +----------------+----------------------------------------+
-| ``⌘A``         | Alles auswählen                        |
+| ``⌘A``         | Select all                             |
 +----------------+----------------------------------------+
-| ``⌘Z``         | Rückgängig machen                      |
+| ``⌘Z``         | Undo                                   |
 +----------------+----------------------------------------+
-| ``⌘⇧Z``, ``⌘Y``| Wiederholen                            |
+| ``⌘⇧Z``, ``⌘Y``| Repeat                                 |
 +----------------+----------------------------------------+
-| ``⌘↑``         | zum Zellenanfang                       |
+| ``⌘↑``         | to the beginning of the cell           |
 +----------------+----------------------------------------+
-| ``⌘↓``         | zum Zellenende                         |
+| ``⌘↓``         | to the end of the cell                 |
 +----------------+----------------------------------------+
-| ``⌥←``         | ein Wort nach links                    |
+| ``⌥←``         | one word to the left                   |
 +----------------+----------------------------------------+
-| ``⌥→``         | ein Wort nach rechts                   |
+| ``⌥→``         | one word to the right                  |
 +----------------+----------------------------------------+
-| ``⌥⌫``         | voriges Wort löschen                   |
+| ``⌥⌫``         | delete previous word                   |
 +----------------+----------------------------------------+
-| ``⌥⌦``         | folgendes Wort löschen                 |
+| ``⌥⌦``         | delete the following word              |
 +----------------+----------------------------------------+
-| ``⌘⇧Z``        | Wiederholen                            |
+| ``⌘⇧Z``        | Repeat                                 |
 +----------------+----------------------------------------+
-| ``⌘⇧U``        | Auswahl wiederholen                    |
+| ``⌘⇧U``        | Repeat selection                       |
 +----------------+----------------------------------------+
-| ``⌘⌫``         | bis zum Anfang der Zeile löschen       |
+| ``⌘⌫``         | delete to the beginning of the line    |
 +----------------+----------------------------------------+
-| ``⌘⌦``         | bis zum Ende der Zeile löschen         |
+| ``⌘⌦``         | delete to the end of the line          |
 +----------------+----------------------------------------+
-| ``⌃M``, ``Esc``| Befehlsmodus                           |
+| ``⌃M``, ``Esc``| Command mode                           |
 +----------------+----------------------------------------+
-| ``⇧↩``         | Zelle ausführen, unten auswählen       |
+| ``⇧↩``         | Execute cell, select below             |
 +----------------+----------------------------------------+
-| ``⌃↩``         | Ausgewählte Zellen ausführen           |
+| ``⌃↩``         | Run selected cells                     |
 +----------------+----------------------------------------+
-| ``⌥↩``         | Zelle ausführen, unten einfügen        |
+| ``⌥↩``         | Execute cell, insert below             |
 +----------------+----------------------------------------+
-| ``⌃⇧-``        | Zelle am Cursor teilen                 |
+| ``⌃⇧-``        | Split cell at cursor                   |
 +----------------+----------------------------------------+
-| ``⌘S``         | Speichern und Checkpoint               |
+| ``⌘S``         | Save and checkpoint                    |
 +----------------+----------------------------------------+
-| ``↓``          | Cursor nach unten                      |
+| ``↓``          | Cursor down                            |
 +----------------+----------------------------------------+
-| ``↑``          | Cursor nach oben                       |
+| ``↑``          | Cursor up                              |
 +----------------+----------------------------------------+
 
-Eigene Tastaturkürzel
----------------------
+Own keyboard shortcuts
+----------------------
 
-Gegebenenfalls könnt ihr auch eigene Tastaturkürzel definieren (s.
-`Keyboard Shortcut Customization
+If necessary, you can also define your own keyboard shortcuts (see `Keyboard
+Shortcut Customization
 <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Custom%20Keyboard%20Shortcuts.html>`_).

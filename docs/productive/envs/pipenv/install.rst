@@ -1,16 +1,15 @@
 Installation
 ============
 
-Dieser Abschnitt behandelt die Grundlagen zur Installation von
-:term:`Python-Paketen <Distribution Package>`.
+This section covers the basics of installing :term:`Python packages
+<Distribution Package>`.
 
-Voraussetzungen für die Installation von Paketen
-------------------------------------------------
+Requirements for installing packages
+------------------------------------
 
-Vor der Installation von Python-Paketen müssen einige Voraussetzungen erfüllt
-sein.
+Before installing Python packages, a few prerequisites must be met.
 
-#. Stellt sicher, dass ihr die gewünschte Python-Version verwendet:
+#. Make sure you are using the version of Python you want:
 
    .. code-block:: console
 
@@ -18,8 +17,7 @@ sein.
     Python 3.6.3
 
    .. note::
-        In iPython oder einem Jupyter Notebook könnt ihr die Version
-        folgendermaßen herausbekommen:
+        In iPython or a Jupyter Notebook you can find out the version with:
 
         .. code-block:: ipython
 
@@ -28,40 +26,38 @@ sein.
             Python 3.6.3
 
    .. note::
-        Falls ihr das System-Python eurer Linux-Distribution verwendet, solltet
-        ihr zunächst eine virtuelle Umgebung mit Python 3 und :term:`Pip <pip>`
-        erstellen.
+        If you use the system Python of your Linux distribution, you should
+        first create a virtual environment with Python 3 and :term:`Pip <pip>`.
 
-#. Stellt sicher, dass :term:`Pip <pip>` installiert ist:
+#. Make sure :term:`Pip <pip>` :is installed:
 
    .. code-block:: console
 
     $ pip --version
     pip 10.0.1
 
-   #. Falls Pip noch nicht installiert ist, könnt ihr es installieren (lassen)
+   #. If Pip is not yet installed, you can install it
 
-      * für Python 2 mit:
+      * for Python 2 with:
 
         .. code-block:: console
 
             $ sudo apt install python-pip
 
-      * für Python 3 mit:
+      * for Python 3 with:
 
         .. code-block:: console
 
             $ sudo apt install python3-venv python3-pip
 
-Pipenv installieren
--------------------
+nstall Pipenv
+-------------
 
-:term:`pipenv` ist ein Abhängigkeitsmanager für Python-Projekte. Er nutzt
-:term:`Pip` zum Installieren von Python-Paketen, er vereinfacht jedoch die
-Verwaltung von Abhängigkeiten. Pip kann zum Installieren von Pipenv verwendet
-werden, es sollte jedoch das ``--user``-Flag verwendet werden, damit es nur
-für diesen Nutzer bereitsteht. Dadurch soll verhindert werden, dass
-versehentlich systemweite Pakete überschrieben werden:
+:term:`pipenv` is a dependency manager for Python projects. It to install Python
+packages, but it simplifies dependency management. Pip can be used to install
+Pipenv, but the ``--user`` flag should be used so that it is only available to
+that user. This is to prevent system-wide packages from being accidentally
+overwritten:
 
 .. code-block:: console
 
@@ -75,42 +71,41 @@ versehentlich systemweite Pakete überschrieben werden:
 
 .. note::
 
-   Wenn pipenv nach der Installation nicht in der Shell verfügbar ist, muss
-   ggf. das ``USER_BASE/bin``-Verzeichnis in ``PATH`` angegeben werden.
+   If pipenv is not available in the shell after the installation, the
+   ``USER_BASE/bin`` directory may have to be specified in ``PATH``.
 
-   * Unter Linux und MacOS lässt sich ``USER_BASE`` ermitteln mit::
+   * On Linux and MacOS the ``USER_BASE`` can be determined with:
 
         $ python3 -m site --user-base
         /Users/veit/.local
 
-     Anschließend muss noch das ``bin``-Verzeichnis angehängt und zu ``PATH``
-     hinzugefügt werden. Alternativ kann ``PATH`` dauerhaft gesetzt werden, indem
-     ``~/.profile`` oder ``~/.bash_profile`` geändert werden, in meinem Fall also::
+     Then the ``bin`` directory must be appended and added to ``PATH``.
+     Alternatively, ``PATH`` can be set permanently by changing ``~/.profile``
+     or ``~/.bash_profile``, in my case::
 
         export PATH=/Users/veit/.local/bin:$PATH
 
-   * Unter Windows kann das Verzeichnis ermittelt werden mit
-     ``py -m site --user-site`` und anschließend ``site-packages`` durch
-     ``Scripts`` ersetzt werden. Dies ergibt dann z.B.:
+   * On Windows, the directory can be determined with ``py -m site --user-site``
+     and then ``site-packages`` can be replaced by ``Scripts``. his then gives,
+     for example:
 
      .. code-block:: console
 
         C:\Users\veit\AppData\Roaming\Python36\Scripts
 
-     Um dauerhaft zur Verfügung zu stehen, kann dieser Pfad unter ``PATH``
-     im Control Panel eingetragen werden.
+     In order to be permanently available, this path can be entered in ``PATH``
+     in the control panel
 
-Weitere Informationen zur nutzerspezifischen Installation findet ihr in `User
+Further information on user-specific installations can be found in `User
 Installs <https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_.
 
-Virtuelle Umgebungen erstellen
-------------------------------
+Create virtual environments
+---------------------------
 
-:term:`Virtuelle Python-Umgebungen <Virtuelle Umgebung>` ermöglichen die
-Installation von Python-Paketen an einem isolierten Ort für eine bestimmte
-Anwendung, anstatt sie global zu installieren. Ihr habt also eure eigenen
-Installationsverzeichnisse und teilt keine Bibliotheken mit anderen
-virtuellen Umgebungen:
+:term:`Python virtual environments <Virtual environment>` allow Python packages
+to be installed in an isolated location for a specific application, rather than
+installing them globally. So you have your own installation directories and do
+not share libraries with other virtual environments:
 
 .. code-block:: console
 

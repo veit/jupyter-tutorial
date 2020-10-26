@@ -1,15 +1,14 @@
-Pipenv und Spack
+Pipenv and Spack
 ================
 
-Pipenv wurde bereits zur :doc:`Installation von Jupyter Notebooks
-</first-steps/install>` verwendet. Wir benötigen hier jedoch Pipenv für unsere
-:doc:`Spack Environments <../../envs/spack/envs>` um
-einerseits binärkompatible Builds mit Spack erzeugen zu können und andererseits
-Python-Pakete für die Datenerhebung, -Visualisierung etc. einfach nutzen zu
-können.
+Pipenv has already been used to :doc:`install Jupyter notebooks
+</first-steps/install>`. However, we need Pipenv for our :doc:`Spack
+environments <../../envs/spack/envs>` to be able to generate binary-compatible
+builds with Spack on the one hand and to be able to easily use Python packages
+for data collection, visualization, etc. on the other.
 
-Aktiviert hierfür zunächst die passende Python-Version aus dem
-Spack-Environment:
+To do this, first activate the appropriate Python version from the Spack
+environment:
 
    .. code-block:: console
 
@@ -19,7 +18,7 @@ Spack-Environment:
     $ which python
     /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view/bin/python
 
-Das bestehende Pipenv-Environment könnt ihr anschließend installieren mit:
+Then you can install the existing Pipenv environment with:
 
    .. code-block:: console
 
@@ -31,8 +30,7 @@ Das bestehende Pipenv-Environment könnt ihr anschließend installieren mit:
     Using /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view/bin/python3.7 (3.7.4) to create virtualenv…
     …
 
-Dies verwendet das mit Spack installierte Environment und installiert weitere
-Pakete.
+This uses the environment installed with Spack and installs additional packages.
 
 .. seealso::
 

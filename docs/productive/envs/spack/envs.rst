@@ -1,7 +1,7 @@
-Environments, ``spack.yaml`` und ``spack.lock``
+Environments, ``spack.yaml`` and ``spack.lock``
 ===============================================
 
-#. Erstellen einer virtuellen Umgebung:
+#. Create a virtual environment:
 
    .. code-block:: console
 
@@ -9,8 +9,7 @@ Environments, ``spack.yaml`` und ``spack.lock``
     ==> Updating view at /Users/veit/spack/var/spack/environments/python-374/.spack-env/view
     ==> Created environment 'python-374' in /Users/veit/spack/var/spack/environments/python-374
 
-   Alternativ kann sie auch an beliebigen anderen Orten gespeichert werden,
-   z.B.:
+   Alternatively, it can also be saved in any other location, for example:,
 
    .. code-block:: console
 
@@ -19,7 +18,7 @@ Environments, ``spack.yaml`` und ``spack.lock``
     ==> Updating view at /srv/jupyter/jupyter-tutorial/spackenvs/python-374/.spack-env/view
     ==> Created environment in /srv/jupyter/jupyter-tutorial/spackenvs/python-374
 
-#. Überprüfen der virtuellen Umgebung:
+#. Check the virtual environment:
 
    .. code-block:: console
 
@@ -27,17 +26,16 @@ Environments, ``spack.yaml`` und ``spack.lock``
     ==> 1 environments
         python-374
 
-#. Aktivieren der virtuellen Umgebung:
+#. Activate the virtual environment:
 
    .. code-block:: console
 
     $ spack env activate python-374
 
-#. Überprüfen der Aktivierung:
+#. Check activation:
 
-   Wenn ihr eine Umgebung aktiviern habt, wird euch nur das angezeigt, was sich
-   in der aktuellen Umgebung befindet. Das sollte unmittelbar nach der
-   Aktivierung nichts sein:
+   If you have activated an environment, you will only see what is in the
+   current environment. That shouldn’t be anything immediately after activation:
 
    .. code-block:: console
 
@@ -47,16 +45,16 @@ Environments, ``spack.yaml`` und ``spack.lock``
 
     ==> 0 installed packages
 
-   Und wenn ihr überprüfen möchtet, in welcher Umgebung ihr euch befindet, dann
-   könnt ihr dies abfragen mit:
+   And if you want to check what environment you are in, you can query this
+   with:
 
    .. code-block:: console
 
     $ spack env status
     ==> In environment python-374
 
-#. Schließlich könnt ihr die aktivierte Umgebung verlassen mit ``spack env
-   deactivate`` oder kurz ``despacktivate``.
+#. Finally, you can leave the activated environment with ``spack env
+   deactivate`` or briefly ``despacktivate``.
 
    .. code-block:: console
 
@@ -71,8 +69,8 @@ Environments, ``spack.yaml`` und ``spack.lock``
     expat@2.2.5    openblas@0.3.6  py-numpy@1.16.4       sqlite@3.28.0
     gdbm@1.18.1    openssl@1.1.1b  py-setuptools@41.0.1  xz@5.2.4
 
-Compiler installieren
----------------------
+Install compiler
+----------------
 
 #. Installation
 
@@ -82,10 +80,10 @@ Compiler installieren
     …
     [+] /srv/jupyter/spack/opt/spack/linux-ubuntu18.04-sandybridge/gcc-7.4.0/gcc-9.1.0-zaj3xkm5onfgeweaeav5kuubwmjaokmz
 
-#. Konfiguration
+#. Configuration
 
-   Um den neuen gcc-Compiler verwenden zu können, muss er in
-   ``~/.spack/linux/compilers.yaml`` eingetragen werden mit:
+   In order to be able to use the new gcc compiler, it must be entered in
+   ``~/.spack/linux/compilers.yaml``:
 
    .. code-block:: console
 
@@ -95,7 +93,7 @@ Compiler installieren
     ==> Compilers are defined in the following files:
         /srv/jupyter/.spack/linux/compilers.yaml
 
-#. Überprüfen
+#. Check
 
    .. code-block:: console
 
@@ -105,8 +103,8 @@ Compiler installieren
     autoconf@2.69    gcc@9.1.0    gmp@6.1.2  libsigsegv@2.12  m4@1.4.18  mpfr@3.1.6   perl@5.30.1    readline@8.0
     automake@1.16.1  gdbm@1.18.1  isl@0.20   libtool@2.4.6    mpc@1.1.0  ncurses@6.1  pkgconf@1.6.3  zlib@1.2.11
 
-Pakete installieren
--------------------
+Install packages
+----------------
 
 .. code-block:: console
 
@@ -121,7 +119,7 @@ Pakete installieren
     -- linux-debian9-x86_64 / gcc@9.1.0 -----------------------------
     bzip2@1.0.6  expat@2.2.5  gdbm@1.18.1  libbsd@0.9.1  libffi@3.2.1  ncurses@6.1  openblas@0.3.5  openssl@1.1.1b  py-numpy@1.16.2  python@3.7.2  readline@7.0  sqlite@3.26.0  xz@5.2.4  zlib@1.2.11
 
-Mit ``spack cd -e python-374`` könnt ihr in dieses Verzeichnis wechseln, z.B.:
+With ``spack cd -e python-374`` you can change to this directory, for example:
 
 .. code-block:: console
 
@@ -129,21 +127,20 @@ Mit ``spack cd -e python-374`` könnt ihr in dieses Verzeichnis wechseln, z.B.:
     $ pwd
     /Users/veit/spack/var/spack/environments/python-374
 
-Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
+There you will find the two files ``spack.yaml`` and ``spack.lock``.
 
 ``spack.yaml``
-    ist die Konfigurationsdatei für die virtuelle Umgebung. Sie wird in
-    ``~/spack/var/spack/environments/`` beim Aufruf von ``spack env create``
-    erstellt.
+    is the configuration file for the virtual environment. It is created in
+    ``~/spack/var/spack/environments/`` when you call ``spack env create``.
 
-    Alternativ zu ``spack install`` können in ``spack.yaml`` auch der
-    ``specs``-Liste Python-3.7.4, Numpy etc. hinzugefügt werden:
+    As an alternative to ``spack install`` Python-3.7.4, Numpy etc. can also be
+    added to the ``specs`` list in ``spack.yaml``:
 
     .. code-block:: yaml
 
         specs: [gcc@9.1.0, python@3.7.4%gcc@9.1.0, py-numpy ^python@3.7.4, …]
 
-    Schließlich kann die virtuelle Umgebung erstellt werden mit:
+    Finally, the virtual environment can be created with:
 
     .. code-block:: console
 
@@ -161,9 +158,10 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
         …
 
 ``spack.lock``
-    Mit ``spack install`` werden die Specs konkretisiert, in ``spack.lock`` geschrieben und  installiert.
-    Im Gegensatz zu ``spack.yaml`` ist ``spack.lock`` im ``json``-Format geschrieben und enthält die
-    notwendigen Informationen um reproduzierbare Builds der Umgebung erstellen zu können:
+    With ``spack install`` the specs are concretized, written in ``spack.lock``
+    and installed. In contrast to ``spack.yaml`` ``spack.lock`` is written in
+    ``json`` format and contains the necessary information to be able to create
+    reproducible builds of the environment:
 
     .. code-block:: javascript
 
@@ -219,12 +217,12 @@ Dort befinden sich die beiden Dateien ``spack.yaml`` und ``spack.lock``.
          }
         }
 
-Installation zusätzlicher Pakete
---------------------------------
+Installation of additional packages
+-----------------------------------
 
-Zusätzliche Pakete können in der virtuellen Umgebung installiert werden mit
-``spack add`` und ``spack install``. Für `Matplotlib <https://matplotlib.org/>`_
-sieht dies z.B. folgendermaßen aus:
+Additional packages can be installed in the virtual environment with ``spack
+add`` and ``spack install``. For `Matplotlib <https://matplotlib.org/>`_ it
+looks like this:
 
 .. code-block:: console
 
@@ -241,9 +239,9 @@ sieht dies z.B. folgendermaßen aus:
     [+] /srv/jupyter/spack/opt/spack/linux-debian9-x86_64/gcc-9.1.0/py-matplotlib-3.0.2-4d6nj4hfo3yvkqovp243p4qeebeb5zl6
 
 .. note::
-   Falls von diesem Spack-Environment bereits ein :doc:`Pipenv-Environment
-   <../pipenv/env>` abgeleitet wurde, muss dieses neu gebaut werden um das
-   zusätzliche Spack-Paket zu erhalten:
+   If a :doc:`Pipenv environment <../pipenv/env>` has already been derived from
+   this Spack environment, it must be rebuilt in order to receive the additional
+   Spack package:
 
    .. code-block:: console
 
@@ -266,7 +264,7 @@ sieht dies z.B. folgendermaßen aus:
     To activate this project's virtualenv, run pipenv shell.
     Alternatively, run a command inside the virtualenv with pipenv run.
 
-   Anschließend kann die Installation überprüft werden mit:
+   The installation can then be checked with:
 
    .. code-block:: console
 
@@ -276,10 +274,10 @@ sieht dies z.B. folgendermaßen aus:
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import matplotlib.pyplot as plt
 
-Konfiguration
+Configuration
 -------------
 
-``spack spec`` spezifiziert die Abhängigkeiten bestimmter Pakete, z.B.:
+``spack spec`` specifies the dependencies of certain packages, e.g.
 
 .. code-block:: console
 
@@ -298,8 +296,8 @@ Konfiguration
             ^libpng@1.6.34%gcc@9.1.0 arch=linux-debian9-x86_64
                 ^zlib@1.2.11%gcc@9.1.0+optimize+pic+shared arch=linux-debian9-x86_64
 
-Mit ``spack config get`` könnt ihr euch die Konfiguration einer bestimmten
-Umgebung anschauen:
+With ``spack config get`` you can look at the configuration of a certain
+environment:
 
 .. code-block:: console
 
@@ -320,24 +318,25 @@ Umgebung anschauen:
       config: {}
       upstreams: {}
 
-Mit ``spack config edit`` kann die Konfigurationsdatei ``spack.yaml`` editiert werden.
+With ``spack config edit`` the configuration file ``spack.yaml`` can be edited.
 
 .. note::
-   Wenn in der Umgebung bereits Pakete installiert sind, sollten mit ``spack
-   concretize -f`` alle Abhängigkeiten erneut spezifiziert werden.
+    If packages are already installed in the environment, all dependencies
+    should be specified again with ``spack concretize -f``.
 
-Laden der Module
-----------------
 
-Mit ``spack env loads -r <env>`` werden alle Module mit ihren Abhängigkeiten
-geladen.
+Loading the modules
+-------------------
+
+With ``spack env loads -r <env>`` all modules are loaded with their
+dependencies.
 
 .. note::
-   Aktuell funktioniert dies jedoch nicht beim Laden der Module aus
-   Environments, die nicht in ``$SPACK_ROOT/var/environments`` liegen.
+   However, this does not currently work when loading modules from environments
+   that are not in ``$SPACK_ROOT/var/environments``.
 
-   Daher ersetzen wir das Verzeichnis ``$SPACK_ROOT/var/environments`` durch
-   einen symbolischen Link:
+   Therefore we replace the directory ``$SPACK_ROOT/var/environments`` with a
+   symbolic link:
 
    .. code-block:: console
 

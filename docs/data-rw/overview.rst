@@ -1,8 +1,8 @@
-Überblick
-=========
+Overview
+========
 
-Entfernte Speichermedien
-------------------------
+Remote storage media
+--------------------
 
 `boto3 <https://aws.amazon.com/de/sdk-for-python/>`_
     S3
@@ -16,26 +16,25 @@ Entfernte Speichermedien
 `PyArrow <https://arrow.apache.org/docs/python/>`_
     HDFS
 
-Geodaten
---------
+Geodata
+-------
 
 `Rasterio <https://rasterio.readthedocs.io/en/latest/>`_
-    liest und schreibt GeoTIFF und andere Formen von Raster-Datasets
+    reads and writes GeoTIFF and other forms of raster datasets.
 `Geospatial Data Abstraction Library (GDAL) <https://gdal.org/>`_
-    bietet eine Low-Level-, aber leistungsfähigere API zum Lesen und Schreiben
-    hunderter Datenformate.
+    provides a low-level but more powerful API for reading and writing hundreds
+    of data formats.
 `satpy <https://satpy.readthedocs.io/>`_
-    Einfach zu verwendende API für Satellitenbildformate von Sensoren wie
-    `MODIS <https://modis.gsfc.nasa.gov/data/>`_, `Sentinel-2
+    Easy to use API for sensors of satellite images like `MODIS
+    <https://modis.gsfc.nasa.gov/data/>`_, `Sentinel-2
     <https://sentinel.esa.int/web/sentinel/missions/sentinel-2>`_ etc.
 `sentinelsat <https://github.com/sentinelsat/sentinelsat>`_
-    Suchen und Herunterladen von Copernicus Sentinel-Satellitenbildern über
-    Befehlszeile oder Python.
+    Find and download Copernicus Sentinel satellite imagery using command line
+    or Python.
 `fiona <https://fiona.readthedocs.io/en/latest/>`_
-   liest und schreibt ``*shp``- und ``*json``-Daten und viele weitere Formate.
+   reads and writes ``*shp``- and ``*json`` data and many other formats.
 `pyproj <https://github.com/pyproj4/pyproj>`_
-    Python-Schnittstelle zu `PROJ <https://proj.org/>`_, einer Bibliothek für
-    kartografische Projektionen und Koordinatentransformationen.
+    Python interface to `PROJ <https://proj.org/>`_, a library for cartographic
+    projections and coordinate transformations.
 `pyModis  <http://www.pymodis.org/>`_
-    Sammlung von Python-Skripten zum Herunterladen und Mosaizieren von
-    MODIS-Daten.
+    Collection of Python scripts for downloading and mosaicking MODIS data.

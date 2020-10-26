@@ -1,5 +1,5 @@
-Kombinatorische Builds
-======================
+Combinatorial builds
+====================
 
 Environment modules
 -------------------
@@ -14,17 +14,15 @@ Environment modules
     $ module load intel/13.0
     $ module load mvapich2-pgi-shmem/1.7
 
-* Vorteile
+* Pros
 
-    * tauschen verschiedene Versionen dynamisch in der Shell aus
-    * abstrahieren viel von der Environment-Komplexität
+    * replace different versions dynamically in the shell
+    * abstract a lot from the complexity of the environment
 
-* Nachteile
+* Cons
 
-    * Benutzer müssen daran denken, mit welchen Versionen der Build
-      durchgeführt wurde
-    * Es ist einfach, das falsche Modul zu laden und einen Build fehlschlagen
-      zu lassen
+    * Users need to keep in mind which versions of the build were made
+    * It’s easy to load the wrong module and cause a build to fail
 
 Dependency DAG
 --------------
@@ -60,7 +58,7 @@ Dependency DAG
         libdwarf -> libelf
     }
 
-Installationslayout
+Installation layout
 -------------------
 
 .. code-block:: console
@@ -75,19 +73,18 @@ Installationslayout
         │   │   │   ├── autoheader
     ...
 
-* Jeder eindeutige Abhängigkeitsgraph erhält eine einzigartige Konfiguration
-* Jede Konfiguration ist in einem eindeutigen Verzeichnis installiert
+* Each unique dependency graph is given a unique configuration
+* Each configuration is installed in a unique directory
 
-  * Konfigurationen des gleichen Pakets koexistieren nebeneinander
+  * Configurations of the same package coexist
 
-* Der Hash-Wert eines gerichteten azyklischen Graphen wird angehängt
-* Installierte Pakete finden automatisch ihre Abhängigkeiten
+* The hash value of a directed acyclic graph is appended
+* Installed packages automatically find their dependencies
 
-  * Spack bettet ``RPATH`` in Binärdateien ein
-  * Es besteht keine Notwendigkeit, Module zu verwenden oder
-    ``LD_LIBRARY_PATH`` zu setzen
+  * Spack embeds ``RPATH`` in binary files
+  * There is no need to use modules or to set the ``LD_LIBRARY_PATH``
 
-``spack list`` zeigt die verfügbaren Pakete:
+``spack list`` shows the available packages:
 
 .. code-block:: console
 
@@ -98,70 +95,69 @@ Installationslayout
     accfft                                 py-flake8
     ...
 
-Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
+Spack provides a ``spec`` syntax for describing custom DAGs:
 
-* ohne Einschränkungen
+* without restrictions
 
   .. code-block:: console
 
     $ spack install mpileaks
 
-* ``@``: Benutzerdefinierte Version
+* ``@``: custom version
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3
 
-* ``%``: Benutzerdefinierter Compiler
+* ``%``: custom compiler
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3 %gcc@4.7.3
 
-* ``+``/``-``: Build-Option
+* ``+``/``-``: Build option
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3 %gcc@4.7.3 +threads
 
-* ``=``: Cross-compile
+* ``=``: Cross compile
 
   .. code-block:: console
 
     $ spack install mpileaks@3.3 =bgq
 
-* ``^``: Version von Abhängigkeiten
+* ``^``: Version of dependencies
 
   .. code-block:: console
 
     $ spack install mpileaks %intel@12.1 ^libelf@0.8.12
 
-* Spack stellt eine Konfiguration jeder Bibliothek pro DAG sicher
+* Spack ensures a configuration of each library per DAG
 
-  * gewährleistet die Konsistenz des Application Binary Interface (ABI)
-  * Der Benutzer muss die DAG-Struktur nicht kennen, sondern nur die Namen der
-    abhängigen Bibliotheken
+  * ensures the consistency of the Application Binary Interface (ABI)
+  * The user does not need to know the DAG structure, just the names of the
+    dependent libraries
 
-* Spack kann sicherstellen, dass Builds den gleichen Compiler verwenden
-* Es können auch verschiedene Compiler für verschiedene Bibliotheken eines DAG
-  angegeben werden
-* Spack kann auch ABI-inkompatible, versionierte Schnittstellen wie z.B. das
-  Message Passing Interface (MPI) bereitstellen
-* So kann z.B. ``mpi`` auf unterschiedliche Weise erstellt werden:
+* Spack can ensure that builds use the same compiler
+* Different compilers can also be specified for different libraries of a DAG
+* Spack can also provide ABI-incompatible, versioned interfaces such as the
+  Message Passing Interface (MPI)
+* For example, you can create ``mpi`` in different ways:
 
   .. code-block:: console
 
     $ spack install mpileaks ^mvapich@1.9
     $ spack install mpileaks ^openmpi@1.4
 
-* Alternativ kann Spack auch selbst das passende Build wählen sofern nur das
-  MPI 2-Interface implementiert wird:
+* Alternatively, Spack can also choose the right build himself if only the MPI
+  2 interface is implemented:
 
   .. code-block:: console
 
     $ spack install mpileaks ^mpi@2
 
-* Spack-Pakete sind einfache Python-Skripte:
+* Spack packages are simple Python scripts:
 
   .. code-block:: python
 
@@ -198,9 +194,9 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
             make()
             make("install")
 
-* Abhängigkeiten in Spack können optional sein:
+* Dependencies in Spack can be optional:
 
-  * Ihr könnt *named variants* definieren, wie z.B. in
+  * You can define *named variants*, e.g. in
     ``~/spack/var/spack/repos/builtin/packages/vim/package.py``:
 
     .. code-block:: python
@@ -213,34 +209,32 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
             variant('ruby', default=False, description="build with Ruby")
             depends_on('ruby', when='+ruby')
 
-  * …  und zum Installieren verwenden:
+  * … and use to install:
 
     .. code-block:: console
 
         $ spack install vim +python
         $ spack install vim –python
 
-  * Abhängig von anderen Bedingungen können Abhängigkeiten optional gelten,
-    z.B. gcc-Abhängigkeit von mpc ab Version 4.5:
+  * Depending on other conditions, dependencies can optionally apply, e.g. gcc
+    dependency on mpc from version 4.5:
 
     .. code-block:: python
 
         depends_on("mpc", when="@4.5:")
 
-* DAGs sind nicht immer vollständig bevor sie konkretisiert werden.
-  Konkretisierungen füllen die fehlenden Konfigurationsdetails aus wenn ihr sie
-  nicht explizit benennt:
+* DAGs are not always complete before they are specified. Concretisations fill
+  in the missing configuration details if you do not name them explicitly:
 
-  #. Normalisierung
+  #. Normalisation
 
      .. code-block:: console
 
         $ spack install mpileaks ^callpath@1.0+debug ^libelf@0.8.11
 
-  #. Konkretisierung
+  #. Specification
 
-     Die detaillierte Herkunft wird mit dem installierten Paket in
-     ``spec.yaml`` gespeichert:
+     The detailed origin is saved with the installed package in ``spec.yaml``:
 
      .. code-block:: yaml
 
@@ -279,10 +273,10 @@ Spack bietet eine ``spec``-Syntax zum Beschreiben benutzerdefinierter DAGs:
               version: 1.59.0
             ...
 
-     #. Wenn unspezifiziert, werden bei der Konkretisierung Werte basierend auf
-        den Nutzereinstellungen gewählt.
-     #. Bei der Konkretisierung werden neue Abhängigkeiten unter
-        Berücksichtigung der Constraints hinzugefügt.
-     #. Beim aktuellen Algorithmus kann nicht zurückverfolgt werden, warum eine
-        Entscheidung getroffen wurde.
-     #. Zukünftig soll es einen *Full constraint solver* geben.
+     #. If unspecified, values based on the user settings are selected during
+        the specification.
+     #. During the concretisation, new dependencies are added taking the
+        constraints into account.
+     #. With the current algorithm, it is not possible to trace why a decision
+        was made.
+     #. In the future there should be a full constraint solver.

@@ -2,54 +2,51 @@
 Monorepos
 =========
 
-Git ist ein sehr flexibles Versionskontrollsystem. Insbesondere ``branch`` und
-``merge`` sind mächtige Werkzeuge in verteilten Entwicklungsumgebungen. Manchmal
-schafft dies jedoch auch eine unnötige Komplexität. In diesen Fällen kann es
-sinnvoll sein, mit einem monolithischen Repository oder *Monorepo* zu arbeiten.
+Git is a very flexible version control system. In particular, ``branch`` and
+``merge`` are powerful tools in distributed development environments. However,
+sometimes this also creates unnecessary complexity. In these cases it can make
+sense to work with a monolithic repository or monorepo.
 
 Definition
 ==========
 
-* Das Repository enthält mehrere logische Projekte (z.B. einen iOS-Client und
-  eine Webanwendung)
-* Diese Projekte sind meist nur lose miteinander verbunden
-* Meist haben diese Projekte auch eine lineare History
+* The repository contains several logical projects (e.g. an iOS client and a web
+  application)
+* These projects are usually only loosely connected to one another
+* Most of these projects also have a linear history
 
-Vor- und Nachteile
-==================
+Pros and cons
+=============
 
-Ein Vorteil von Monorepos kann sein, dass die Aufwände um zu bestimmen, welche
-Versionen des einen Projekts mit welchen Versionen des anderen Projekts
-kompatibel sind, deutlich verringert sein könnten. Dies ist zumindest immer
-dan der Fall, wenn alle Projekte eines Repository von nur einem Entwicklerteam
-bearbeitet werden. Dann empfiehlt sich, mit jedem *Merge* wieder eine lauffähige
-Version zu erhalten auch wenn die API zwischen den beiden Projekten geändert
-wurde.
+One advantage of monorepos can be that the effort involved in determining which
+versions of one project are compatible with which versions of the other project
+could be significantly reduced. This is at least always the case when all
+projects in a repository are processed by just one development team. Then it is
+advisable to get an executable version with each merge, even if the API was
+changed between the two projects.
 
-Als Nachteil können sich jedoch Performance-Einbußen erweisen. Diese können z.B.
-entstehen durch:
+However, a disadvantage can be a loss of performance. These can arise, for
+example, from:
 
-eine große Anzahl an Commits
-    Da Git DAGs (*directed acyclic graphs*) verwendet um die Historie eines
-    Projekts darzustellen, werden alle Operationen, die diesen Graphen
-    durchlaufen, also z.B. ``git log`` oder ``git blame``, langsam werden.
+a large number of commits
+    Since Git uses DAGs ((*directed acyclic graphs*) to display the history of a
+    project, all operations that run through this graph, e.g. ``git log`` or
+    ``git blame``, will be slow.
 
-eine große Anzahl von Refs
-    Eine große Anzahl von *branches* und *tags* verlangsamen git ebenfalls.
-    Mit ``git ls-remote`` könnt ihr euch die *Refs* eines Repository anzeigen
-    lassen und mit ``git gc`` werden lose *Refs* in einer einzigen Datei
-    zusammengefasst.
+a large number of refs
+    A large number of branches and tags also slow down git. With
+    ``git ls-remote`` you can display the refs of a repository and with ``git
+    gc`` loose refs are summarised in a single file.
 
-    Jede Operation, die den Commit-Verlauf eines Repositories durchlaufen und die
-    einzelnen *Refs* berücksichtigen muss, wie z.B. bei ``git branch --contains
-    <commit>``, werden bei einem Repo mit vielen *Refs* langsam.
+    Every operation that goes through the commit process of a repository and has
+    to take the individual refs into account, such as  ``git branch --contains
+    <commit>``, becomes slow with a repo with many refs.
 
-eine große Anzahl an versionierten Dateien
-    Der Index des Directory Cache (``.git/index``) wird von Git verwendet um
-    zu ermitteln, ob die Datei verändert wurde. Dabei verlangsamen sich mit
-    zunehmender Anzahl an Dateien viele Vorgänge, wie z.B. ``git status``
-    und ``git commit``.
+a large number of versioned files
+    The directory cache index (``.git/index``) is used by Git to determine
+    whether the file has been modified. Many processes, such as  ``git status``
+    and ``git commit``, slow down as the number of files increases.
 
-große Dateien
-    Große Dateien in einem Teilbaum oder einem Projekt verringern die Leistung
-    des gesamten Repository.
+large files
+    Large files in a subtree or project reduce the performance of the entire
+    repository.
