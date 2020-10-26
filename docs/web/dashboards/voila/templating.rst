@@ -169,4 +169,4 @@ Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
 ``static``
     Verzeichnis für statische Dateien.
 ``templates``
-    Benutzerdefinierte Tornado-Templates
+    Benutzerdefinierte Tornado-Templates.
