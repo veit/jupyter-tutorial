@@ -1,10 +1,9 @@
 JupyterHub
 ==========
 
-`JupyterHub <https://jupyterhub.readthedocs.io/>`_ ist ein Multi-User Server für
-:doc:`Jupyter Notebooks </workspace/jupyter/notebook/index>`, der viele
-verschiedene Instanzen von Jupyter Notebooks erzeugen und verwalten kann und der
-als Proxy fungiert.
+`JupyterHub <https://jupyterhub.readthedocs.io/>`_ is a multi-user server for
+Jupyter Notebooks, which can create and manage many different instances of
+Jupyter Notebooks and which acts as a proxy.
 
 .. toctree::
     :hidden:

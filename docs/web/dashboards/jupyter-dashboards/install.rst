@@ -1,5 +1,5 @@
-Installation der Jupyter Dashboards
-===================================
+Installation of Jupyter dashboards
+==================================
 
 .. code-block:: console
 

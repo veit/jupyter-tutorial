@@ -1,8 +1,7 @@
 Installation
 ============
 
-Ihr könnt Panel in der virtuellen Umgebung eurer Jupyter-Kernels installieren
-mit:
+You can install Panel in the virtual environment of your Jupyter kernel with:
 
 .. code-block:: console
 
@@ -14,9 +13,9 @@ mit:
     Successfully installed bokeh-1.3.4 markdown-3.1.1 panel-0.6.2 param-1.9.1 pyct-0.4.6 pyviz-comms-0.7.2
     …
 
-Für einige der folgenden Beispiele werden zusätzliche Pakete benötigt wie
-z.B. `Holoviews <http://holoviews.org/>`_ und `hvPlot
-<https://hvplot.pyviz.org/>`_. Sie können installiert werden mit:
+For some of the following examples additional packages are required such as
+`Holoviews <http://holoviews.org/>`_ and `hvPlot
+<https://hvplot.pyviz.org/>`_. They can be installed with:
 
 .. code-block:: console
 
@@ -34,20 +33,19 @@ z.B. `Holoviews <http://holoviews.org/>`_ und `hvPlot
     Successfully installed hvplot-0.4.0
     …
 
-Beispiele
----------
+Examples
+--------
 
-#. Herunterladen
+#. Download
 
    .. code-block:: console
 
     $ pipenv run panel examples
     Copied examples to /Users/veit/jupyter-tutorial/panel-examples
 
-#. Betrachten
+#. View
 
-   Anschließend könnt ihr euch die Beispiele anschauen, z.B.
-   ``Introduction.ipynb`` mit
+   Then you can look at the examples, for example ``Introduction.ipynb`` with
 
    .. code-block:: console
 

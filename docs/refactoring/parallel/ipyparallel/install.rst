@@ -7,7 +7,7 @@ Installation
 
     $ pipenv install ipython[all]
 
-#. Notebook-Server-Extension aktivieren:
+#. Activate notebook server extension:
 
    .. code-block:: console
 
@@ -17,7 +17,7 @@ Installation
         - Validating...
           ipyparallel.nbextension  OK
 
-#. Notebook-Extension installieren:
+#. Install notebook extension:
 
    .. code-block:: console
 
@@ -29,7 +29,7 @@ Installation
 
               jupyter nbextension enable ipyparallel --py
 
-#. Notebook-Extension aktivieren:
+#. Activate notebook extension:
 
    .. code-block:: console
 

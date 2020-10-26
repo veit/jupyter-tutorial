@@ -1,55 +1,50 @@
-Graphdatenbanksysteme
-=====================
+Graph database systems
+======================
 
-Graphdatenbanken sind spezialisiert auf vernetzte Informationen und
-möglichst einfache und effiziente :term:`Graph traversal`.
+Graph databases specialise in networked information and the simplest and most
+efficient possible :term:`Graph traversal`.
 
-Graphenmodell
--------------
+Graph model
+-----------
 
-Ein Graph besteht aus einer Menge an Knoten und Kanten. Graphen werden genutzt,
-um eine Vielfalt an Problemen durch Knoten, Kanten und ihren Beziehungen
-darzustellen, z.B. in Navigationssystemen, in denen die Wege in Form von Graphen
-gespeichert werden.
+A graph consists of a number of nodes and edges. Graphs are used to represent a
+variety of problems through nodes, edges and their relationships, for example
+in navigation systems in which the paths are stored in the form of graphs.
 
 Graph traversal
 ---------------
 
-Graph traversal wird meist zur Suche von Knoten verwendet. Es gibt verschiedene
-Algorithmen für solche Suchanfragen in einem Graphen, die sich grob einteilen
-lassen in
+Graph traversal is mostly used to find nodes. There are different algorithms for
+such search queries in a graph, which can be roughly divided into
 
-* Breiten- und Tiefensuche (engl: breadth-first search, BFS und
-  depth-first search, DFS)
+* Breadth-first search, BFS and depth-first search, DFS
 
-  Die Breitensuche beginnt mit allen Nachbarknoten des Startknotens.
-  Im nächsten Schritt werden dann die Nachbarn der Nachbarn durchsucht.
-  Die Pfadlänge erhöht sich mit jeder Iteration.
+  The breadth-first search begins with all neighboring nodes of the start node.
+  In the next step, the neighbors of the neighbors are then searched. The path
+  length increases with each iteration.
 
-  Die Tiefensuche verfolgt einen Pfad solange, bis ein Knoten ohne
-  ausgehende Kanten gefunden wird. Der Pfad wird anschließend
-  zurückverfolgt bis zu einem Knoten, der noch weitere ausgehende Kanten
-  hat. Dort wird die Suche dann fortgesetzt.
+  The depth-first search follows a path until a node with no outgoing edges is
+  found. The path is then traced back to a node that has further outgoing edges.
+  The search will then continue there.
 
-* Algorithmische Traversierung
+* Algorithmic traversal
 
-  Beispiele für die algorithmische Traversierung sind
+  Examples of algorithmic traversal are
 
-  * Hamiltonweg (Traveling Salesman)
-  * Eulerweg
-  * Dijkstra-Algorithmus
+  * Hamiltonian path (traveling salesman)
+  * Eulerian path
+  * Dijkstra’s algorithm
 
-* Randomisierte Traversierung
+* Randomised traversal
 
-  Der Graph wird nicht nach einem bestimmten Schema durchlaufen, sondern
-  der nächste Knoten wird zufällig ausgewählt. Dadurch kann vor allem bei
-  großen Graphen wesentlich schneller ein Suchergebnis präsentieren, dieses
-  ist jedoch nicht immer das beste.
+  The graph is not run through according to a certain scheme, but the next node
+  is selected at random. This allows a search result to be presented much
+  faster, especially with large graphs, but this is not always the best.
 
-Datenbanksysteme
+Database systems
 ----------------
 
-Typische Graphdatenbanken sind Neo4j, OrientDB InfiniteGraph und ArangoDB.
+Typical graph databases are Neo4j, OrientDB InfiniteGraph and ArangoDB.
 
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Home**               | `Neo4j`_                       | `OrientDB`_                    | `InfiniteGraph`_               | `ArangoDB`_                    |
@@ -58,41 +53,41 @@ Typische Graphdatenbanken sind Neo4j, OrientDB InfiniteGraph und ArangoDB.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Docs**               | `neo4j.com/docs/`_             | `orientdb.org/docs/`_          | `InfiniteGraph Tutorials`_     | `arangodb.com/documentation/`_ |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anwendungsgebiete**  | CMS, Soziale Netzwerke,        | Stammdatenverwaltung, soziale  | Erweiterung von                | Fraud Detection, IoT,          |
-|                        | GIS-Systeme, ERP, …            | Netzwerke, `Time Series`_,     | Objectivity/DB-Installationen  | Identitätsmanagement,          |
-|                        |                                | `Key Value`_,                  |                                | E-Commerce, Netzwerk, Logistik,|
-|                        |                                | Verkehrsmanagement             |                                | CMS                            |
+| **Application areas**  | CMS, social networks,          | Master data management, social | Extension of                   | Fraud Detection, IoT,          |
+|                        | GIS systems, ERP, …            | networks, `time series`_,      | Objectivity/DB installations   | identity management,,          |
+|                        |                                | `key value`_,                  |                                | e-commerce, network, logistics,|
+|                        |                                | traffic management             |                                | CMS                            |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Entwicklungssprache**| Java                           | Java                           | Java                           | C++, JavaScript                |
+| **Development          | Java                           | Java                           | Java                           | C++, JavaScript                |
+| language**             |                                |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Lizenzen**           | AGPL u. kommerziell            | Apache License 2.0             | kommerziell                    | Apache License 2.0             |
+| **Licenses**           | AGPL and commercially          | Apache License 2.0             | commercially                   | Apache License 2.0             |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Datenmodell**        | :term:`Property-Graph-Modell   | Multi-Model                    | :term:`Property-Graph-Modell   | Multi-Model: Dokumente, Graphen|
-|                        | (PGM)`                         |                                | (PGM)`                         | und :term:`Schlüssel/Wert-Paar`|
+| **Data model**         | :term:`Property graph model    | Multi-Model                    | :term:`Property graph model    | Multi-model: documents, graphs |
+|                        | (PGM)`                         |                                | (PGM)`                         | and :term:`Key/value pair`     |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Query-Langauge**     | REST, `Cypher`_, `Gremlin`_    | `Extended SQL`_, `Gremlin`_    | Traverser API, PQL             |`ArangoDB Query Language (AQL)`_|
+| **Query langauge**     | REST, `Cypher`_, `Gremlin`_    | `Extended SQL`_, `Gremlin`_    | Traverser API, PQL             |`ArangoDB Query Language (AQL)`_|
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Transaktionen,       | * :term:`Two-phase locking     | :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
-| Nebenläufigkeit**      |   (2PL)`,                      |                                |                                | :term:`MVCC – Multiversion     |
-|                        | * einzelner Server:            |                                |                                | Concurrency Control`           |
-|                        |   :term:`ACID`,                |                                |                                |                                |
-|                        | * verteilte Systeme:           |                                |                                |                                |
-|                        |   :term:`BASE`                 |                                |                                |                                |
+| **Transactions,        |* :term:`Two-phase locking(2PL)`| :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
+| concurrency**          |                                |                                |                                | :term:`MVCC – Multiversion     |
+|                        |* single Server:                |                                |                                | Concurrency Control`           |
+|                        |  :term:`ACID`                  |                                |                                |                                |
+|                        |* distributed systems:          |                                |                                |                                |
+|                        |  :term:`BASE`                  |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | Master-Slave mit Master        | Multi-Master-Replikation,      | Objectivity/DB,                | Master-Slave-Replikation,      |
-| Skalierung**           | Failover                       | Sharding                       | keine                          | Sharding                       |
-|                        |                                |                                | :term:`Graphpartitionierung`   |                                |
+| **Replication,         | Master-slave with master       | Multi-master replication,      | Objectivity/DB,                | Master-slave replication,      |
+| skaling**              | failover                       | Sharding                       | no                             | sharding                       |
+|                        |                                |                                | :term:`Graph partitioning`     |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anmerkungen**        |                                |                                | InfiniteGraph ist eine, auf    |                                |
-|                        |                                |                                | dem :doc:`object-db`           |                                |
-|                        |                                |                                | Objectivity/DB aufsetzende     |                                |
-|                        |                                |                                | Graphdatenbank, wobei die      |                                |
-|                        |                                |                                | Objekte durch Kanten verbunden |                                |
-|                        |                                |                                | werden. Hierbei sind auch      |                                |
-|                        |                                |                                | mehrfache und bidirektionale   |                                |
-|                        |                                |                                | Kanten erlaubt.                |                                |
+| **Remarks**            |                                |                                | InfiniteGraph is a graph       |                                |
+|                        |                                |                                | database on top of the         |                                |
+|                        |                                |                                | :doc:`object-db`               |                                |
+|                        |                                |                                | Objectivity/DB, whereby the    |                                |
+|                        |                                |                                | objects are connected by edges.|                                |
+|                        |                                |                                | Multiple and bidirectional     |                                |
+|                        |                                |                                | edges are also allowed here.   |                                |
 |                        |                                |                                |                                |                                |
-|                        |                                |                                | Iteratoren entsprechen dem     |                                |
+|                        |                                |                                | Iterators correspond to the    |                                |
 |                        |                                |                                | :term:`Graph traversal`.       |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 
@@ -103,8 +98,8 @@ Typische Graphdatenbanken sind Neo4j, OrientDB InfiniteGraph und ArangoDB.
 .. _`ArangoDB`: https://www.arangodb.com/
 .. _`orientechnologies/orientdb`: https://github.com/orientechnologies/orientdb
 .. _`arangodb/arangodb`: https://github.com/arangodb/arangodb
-.. _`Time Series`: https://orientdb.org/docs//2.0/orientdb.wiki/Time-series-use-case.html
-.. _`Key Value`: https://orientdb.org/docs//2.0/orientdb.wiki/Key-Value-use-case.html
+.. _`time series`: https://orientdb.org/docs//2.0/orientdb.wiki/Time-series-use-case.html
+.. _`key value`: https://orientdb.org/docs//2.0/orientdb.wiki/Key-Value-use-case.html
 .. _`neo4j.com/docs/`: https://neo4j.com/docs/
 .. _`orientdb.org/docs/`: https://orientdb.org/docs/
 .. _`InfiniteGraph Tutorials`:

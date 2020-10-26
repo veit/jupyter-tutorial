@@ -1,14 +1,14 @@
-Web-Applikationen erstellen
-===========================
+Create web applications
+=======================
 
-Im Folgenden stelle ich euch drei verschiedene Arten von Web-Anwendungen vor:
+I will introduce you to three different types of web applications:
 
-* aus Jupyter-Notebooks generierte :doc:`dashboards/index`
-* über die Notebooks hinausgehende Web-Anwendungen, die z.B. Bokeh-Plots
-  einbinden, wie in :doc:`pyviz:bokeh/embedding-export/flask` demonstriert
-* schließlich die Bereitstellung eurer Daten über eine `RESTful API
-  <https://de.wikipedia.org/wiki/Representational_State_Transfer>`_, z.B.
-  mit dem `FastAPI framework <https://fastapi.tiangolo.com/>`_.
+* :doc:`dashboards/index` generated from Jupyter notebooks
+* Web applications that go beyond notebooks, such as integrating bokeh plots, as
+  demonstrated in :doc:`pyviz:bokeh/embedding-export/flask`
+* Finally, the provision of your data via a `RESTful API
+  <https://en.wikipedia.org/wiki/Representational_state_transfer>`_, e.g. with
+  the `FastAPI framework <https://fastapi.tiangolo.com/>`_.
 
 .. toctree::
     :hidden:

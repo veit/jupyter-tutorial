@@ -1,17 +1,17 @@
-NoSQL-Datenbanken
-=================
+NoSQL databases
+===============
 
-Bisher gibt es keine einheitliche Definition von NoSQL, die meisten
-NoSQL-Datenbanksysteme haben jedoch meist folgendes gemeinsam:
+So far there is no uniform definition of NoSQL, but most NoSQL database systems
+usually have the following in common:
 
-* kein relationales Datenmodell
-* verteilte und horizontale Skalierbarkeit
-* keine oder schwache Schemarestriktionen
-* einfache API
-* kein :term:`ACID`, sondern :term:`Eventual Consistency` oder :term:`BASE` als
-  Konsistenzmodell
+* no relational data model
+* distributed and horizontal scalability
+* no or weak schema restrictions
+* simple API
+* no :term:`ACID`, but :term:`Eventual consistency` or :term:`BASE` as the
+  consistency model
 
-NoSQL-Datenbanken lassen sich untergliedern in
+NoSQL databases can be divided into
 
 .. toctree::
     :titlesonly:
@@ -24,12 +24,12 @@ NoSQL-Datenbanken lassen sich untergliedern in
     object-db
     xml-db
 
-Bedeutende Konzepte und Technologien von NoSQL-Datenbanken sind
+Major concepts and technologies of NoSQL databases are
 
 * :term:`MapReduce`
-* :term:`CAP-Theorem`
-* :term:`Eventual Consistency` und :term:`BASE`
-* :term:`Konsistente Hashfunktion`
-* :term:`MVCC – Multiversion Concurrency Control`
-* :term:`Vektoruhr`
+* :term:`CAP theorem`
+* :term:`Eventual consistency` and :term:`BASE`
+* :term:`Consistent hash function`
+* :term:`MVCC – Multiversion RCncurrency Control`
+* :term:`Vector clock`
 * :term:`Paxos`

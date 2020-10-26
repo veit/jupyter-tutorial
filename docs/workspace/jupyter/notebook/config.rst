@@ -1,16 +1,14 @@
-Jupyter-Pfade und -Konfiguration
-================================
+Jupyter paths and configuration
+===============================
 
-Konfigurationsdateien werden üblicherweise im ``~/.jupyter``-Verzeichnis
-gespeichert. Mit der Umgebungsvariablen ``JUPYTER_CONFIG_DIR`` kann jedoch auch
-ein anderes Verzeichnis festgelegt werden. Falls Jupyter im
-``JUPYTER_CONFIG_DIR`` keine Konfiguration findet, durchläuft Jupyter den
-Suchpfad mit ``{sys.prefix}/etc/jupyter/`` und anschließend für Unix
-``/usr/local/etc/jupyter/`` und ``/etc/jupyter/``, für Windows
-``%PROGRAMDATA%\jupyter\``.
+Configuration files are usually stored in the ~``~/.jupyter`` directory.
+However, another directory can be specified with the environment variable
+``JUPYTER_CONFIG_DIR``. If Jupyter cannot find a configuration in
+``JUPYTER_CONFIG_DIR``, Jupyter runs through the search path with
+``{sys.prefix}/etc/jupyter/`` and then for Unix ``/usr/local/etc/jupyter/`` and
+``/etc/jupyter/``, for Windows ``%PROGRAMDATA%\jupyter\``.
 
-Ihr könnt Euch die aktuell verwendeten Konfigurationsverzeichnisse aufzulisten
-lassen mit:
+You can have the currently used configuration directories listed with:
 
 .. code-block:: console
 
@@ -22,57 +20,56 @@ lassen mit:
         /etc/jupyter
     ...
 
-Erstellen der Konfigurationsdateien
------------------------------------
+Create the configuration files
+------------------------------
 
-Ihr könnt eine Standardkonfiguration erstellen mit:
+You can create a standard configuration with:
 
 .. code-block:: console
 
     $ pipenv run jupyter notebook --generate-config
     Writing default config to: /Users/veit/.jupyter/jupyter_notebook_config.py
 
-Allgemeiner lassen sich Konfigurationsdateien für alle Jupyter-Applikationen
-anlegen mit:
+More generally, configuration files can be created for all Jupyter applications
+with:
 
 .. code-block:: console
 
     $ pipenv run jupyter {application} --generate-config
 
-Ändern der Konfiguration
+Change the configuration
 ------------------------
 
-… durch Bearbeiten der Konfigurationsdatei
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+… by editing the configuration file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-z.B. in ``jupyter_notebook_config.py``:
+e.g. in ``jupyter_notebook_config.py``:
 
 .. code-block:: python
 
     c.NotebookApp.port = 8754
 
-Sofern die Werte als ``list``, ``dict`` oder ``set`` gespeichert werden, können
-diese auch ergänzt werden mit ``append``, ``extend``, ``prepend``, ``add`` und
-``update``, z.B.:
+If the values are saved as ``list``, ``dict`` od ``set``, they can also be
+supplemented with  ``append``, ``extend``, ``prepend``, ``add`` and
+``update``, e.g.:
 
 .. code-block:: python
 
     c.TemplateExporter.template_path.append('./templates')
 
-… mit der Befehlszeile
-~~~~~~~~~~~~~~~~~~~~~~
+… with the command line
+~~~~~~~~~~~~~~~~~~~~~~~
 
-z.B.:
+e.g.:
 
 .. code-block:: console
 
     $ pipenv run jupyter notebook --NotebookApp.port=8754
 
-Dabei gibt es für häufig verwendete Optionen Aliase wie z.B. für ``--port``
-oder ``--no-browser``.
+There are aliases for frequently used options such as for ``--port`` or
+``--no-browser``.
 
-Die Befehlszeilenoptionen überschreiben die in einer Konfigurationsdatei
-festgelegten Optionen.
+The command line options override options set in a configuration file.
 
 .. seealso::
    `traitlets.config

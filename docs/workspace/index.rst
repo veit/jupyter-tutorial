@@ -1,9 +1,9 @@
-Arbeitsbereich
-==============
+Workspace
+=========
 
-Das Einrichten des Arbeitsbereichs umfasst das Installieren und Konfigurieren
-von :doc:`ipython/index` und :doc:`jupyter/index` mit
-:doc:`jupyter/nbextensions/index` und :doc:`jupyter/ipywidgets/index`.
+Setting up the workspace includes installing and configuring
+:doc:`ipython/index` and :doc:`jupyter/index` with :doc:`jupyter/nbextensions/index`
+and :doc:`jupyter/ipywidgets/index`.
 
 .. toctree::
     :hidden:

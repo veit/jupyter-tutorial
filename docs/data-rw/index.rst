@@ -1,13 +1,13 @@
-Daten lesen und schreiben
-=========================
+Read and write data
+===================
 
-Einen Überblick über öffentliche Repositories mit Forschungsdaten erhaltet ihr
-z.B. in der `Registry of research data repositories (re3data)
-<https://www.re3data.org/>`_.
+You can get an overview of public repositories with research data e.g. in the
+`Registry of research data repositories (re3data) <https://www.re3data.org/>`_.
 
-Neben spezifischen Python-Bibliotheken zum Zugriff auf :ref:`entfernte
-Speichermedien </data-rw/overview.rst#entfernte-speichermedien>` und
-:ref:`/data-rw/overview.rst#geodaten` stellen wir Euch vier Werkzeuge genauer vor:
+In addition to specific Python libraries for accessing :ref:`remote storage
+media</data-rw/overview.rst#remotestorage-media>` and
+:ref:`/data-rw/overview.rst#geodata`, we will introduce you to four tools in
+more detail:
 
 * :doc:`requests/index`
 * :doc:`beautifulsoup`
@@ -16,20 +16,19 @@ Speichermedien </data-rw/overview.rst#entfernte-speichermedien>` und
 
 .. seealso::
     `Scrapy <https://scrapy.org/>`_
-        Framework zum Extrahieren von Daten aus Websites als JSON-, CSV- oder
-        XML-Dateien.
+        Framework for extracting data from websites as JSON, CSV or XML files.
     `Pattern <https://github.com/clips/pattern>`_
-        Python-Modul zum Data Mining, Verarbeitung natürlicher Sprache, ML und
-        Netzwerkanalyse
+        Python module for data mining, natural language processing, ML and
+        network analysis.
     `Web Scraping Reference <https://blog.hartleybrody.com/web-scraping-cheat-sheet/#javascript-heavy-websites>`_
-        Übersicht zu Web Scraping mit Python
+        Overview of web scraping with Python.
 
-Zum Speichern von relationalen Daten, Python-Objekten und Geodaten stellen wir
-Euch :doc:`postgresql/index`, :doc:`postgresql/sqlalchemy` und
-:doc:`postgresql/postgis/index` vor.
+We introduce :doc:`postgresql/index`, :doc:`postgresql/sqlalchemy` and
+:doc:`postgresql/postgis/index` for storing relational data, Python objects and
+geodata.
 
-Zum Bereinigen und Vorbereiten der Daten stellen wir Euch einige Best Practices
-und hilfreiche Python-Pakete in :doc:`../clean-prep/index` vor.
+To clean up and prepare the data, we present you some best practices and helpful
+Python packages in Data  :doc:`../clean-prep/index`.
 
 .. toctree::
     :hidden:

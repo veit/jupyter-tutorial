@@ -1,7 +1,7 @@
 {
   "name": "jupyter-tutorial",
-  "version": "0.7.0",
-  "description": "Aufbau und Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks",
+  "version": "0.8.0",
+  "description": "Development and use of a research infrastructure based on Jupyter notebooks",
   "main": "",
   "directories": {
     "doc": "docs"

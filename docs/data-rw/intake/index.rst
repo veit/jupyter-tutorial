@@ -1,9 +1,9 @@
 Intake
 ======
 
-Intake erleichtert das Auffinden, Untersuchen, Laden und Verbreiten von Daten.
-Es ist damit nicht nur für Datenwissenschaftler und -ingenieure interessant,
-sondern auch für Datenanbieter.
+Intake makes it easy to find, explore, load, and distribute data. Therefore it
+is not only interesting for data scientists and engineers, but also for data
+providers.
 
 .. seealso::
     * `Docs <https://intake.readthedocs.io/>`_

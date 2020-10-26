@@ -1,14 +1,13 @@
 ================
-Jupyter-Tutorial
+Jupyter Tutorial
 ================
 
-`Jupyter-Notebooks <https://jupyter-notebook.readthedocs.io/>`_ erfreuen sich
-bei Datenwissenschaftlern wachsender Beliebtheit und wurden zum
-De-facto-Standard für schnelles Prototyping und explorative Analysen. Sie
-beflügeln nicht nur Experimente und Innovationen enorm, sie machen auch den
-gesamten Forschungsprozess schneller und zuverlässiger. Zudem entstehen viele
-zusätzliche Komponenten, die die ursprünglichen Grenzen ihrer Nutzung erweitern
-und neue Verwendungsmöglichkeiten ermöglichen.
+`Jupyter notebooks <https://jupyter-notebook.readthedocs.io/>`_ are growing in
+popularity with data scientists and have become the de facto standard for
+rapid prototyping and exploratory analysis. They inspire experiments and
+innovations enormously and as well they make the entire research process faster
+and more reliable. In addition, many additional components are created that
+expand the original limits of their use and enable new uses.
 
 .. toctree::
     :hidden:

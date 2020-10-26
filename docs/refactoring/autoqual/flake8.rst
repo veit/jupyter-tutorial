@@ -1,10 +1,10 @@
 ``flake8``
 ==========
 
-`flake8 <https://pypi.org/project/flake8/>`_ stellt sicher, dass euer Code
-größtenteils `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_ folgt. Eine
-automatische Formattierung, z.B. mit :doc:`black`, ist jedoch noch komfortabler.
-Zudem prüft ``flake8`` auf nicht verwendete Importe.
+`flake8 <https://pypi.org/project/flake8/>`_ ensures that most of your code
+follows `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_. However, automatic
+formatting, for example with :doc:`black`, is even more convenient. In addition
+``flake8`` also checks for unused imports.
 
 Installation
 ------------
@@ -14,18 +14,18 @@ Installation
     $ spack env activate python-374
     $ spack install py-flake8 ^python@3.7.4
 
-Überprüfen
-----------
+Check
+-----
 
 .. code-block:: console
 
     $ flake8 path/to/your/code
 
-Konfiguration
+Configuration
 -------------
 
-``flake8`` kann für :doc:`/productive/testing/tox` konfiguriert werden in der
-``tox.ini``-Dateie eines Pakets, z.B.:
+``flake8`` can be configured for :doc:`/productive/testing/tox` in the
+``tox.ini`` file of a package, e.g.:
 
 .. code-block:: ini
 

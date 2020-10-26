@@ -1,10 +1,10 @@
-Ausführung parallelisieren
-==========================
+Parallelise execution
+=====================
 
-Anhand von drei Beispielen zu :doc:`Threading <threading-example>`,
-:doc:`Multiprocessing <multiprocessing>` und :doc:`Async
-<async-example>` werden die Regeln und Best Practices bei der Nutzung von
-Parallelisierung veranschaulicht.
+
+Three examples of :doc:`Threading <threading-example>`, :doc:`Multiprocessing
+<multiprocessing>` and :doc:`Async <async-example>` illustrate the rules and
+best practices for using parallelisation.
 
 .. toctree::
     :hidden:

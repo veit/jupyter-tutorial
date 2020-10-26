@@ -1,27 +1,27 @@
 DB-API 2.0
 ==========
 
-Die Python-API für Datenbank-Konnektoren ist einfach zu bedienen und zu
-verstehen. Die beiden wesentlichen Konzepte sind:
+The Python API for database connectors is easy to use and understand. The two
+main concepts are:
 
 Connection
     `Connection Objects
-    <https://www.python.org/dev/peps/pep-0249/#connection-objects>`_ erlauben
-    die folgenden Methoden:
+    <https://www.python.org/dev/peps/pep-0249/#connection-objects>`_ allow the
+    following methods:
 
     ``connect(parameters…)``
-        öffnet die Verbindung zur Datenbank
+        opens the connection to the database
     ``.close()``
-        schließt die Verbindung zur Datenbank
+        closes the connection to the database
     ``.commit()``
-        überträgt die ausstehende Transaktion zur Datenbank
+        transfers the outstanding transaction to the database
     ``.rollback()``
-        Diese Methode ist optional da nicht alle Datenbanken das Zurückrollen
-        von Transaktionen erlauben.
+        This method is optional as not all databases allow transactions to be
+        rolled back.
     ``.cursor ()``
-        Rückgabe eines neuen Corsor-Objekts über die Verbindung
+        Return of a new cursor object via the connection.
 
-    Beispiel::
+    Example::
 
         import driver
 
@@ -38,16 +38,16 @@ Connection
             conn.close()
 
 Cursor
-    `Cursorobjekte <https://www.python.org/dev/peps/pep-0249/#cursor-objects>`_
-    werden zum Verwalten des Kontexts einer ``.fetch*()``-Methode verwendet.
+    `Cursor objects <https://www.python.org/dev/peps/pep-0249/#cursor-objects>`_
+    are used to manage the context of a ``.fetch*()`` method.
 
-    Dabei sind Cursor, die in derselben *Connection* erstellt werden, nicht
-    isoliert voneinander.
+    Cursors that are created in the same connection are not isolated from one
+    another.
 
-    Es gibt zwei Attribute für Cursor-Objekte:
+    There are two attributes for cursor objects:
 
     ``.description``
-        enthält die folgenden sieben Elemente:
+        contains the following seven elements:
 
         #. ``name``
         #. ``type_code``
@@ -57,17 +57,15 @@ Cursor
         #. ``scale``
         #. ``null_ok``
 
-        Die ersten beiden Elemente (``name`` und ``type_code``) sind
-        obligatorisch, die anderen fünf sind optional und werden auf
-        ``None`` gesetzt, wenn keine sinnvollen Werte angegeben
-        werden können.
+        The first two elements (``name`` and ``type_code``) are mandatory, the
+        other five are optional and are set to ``None`` if no meaningful values
+        can be specified.
 
     ``.rowcount``
-        gibt die Anzahl der Zeilen an, die der letzte Aufruf von
-        `` .execute*()`` mit ``SELECT``, ``UPDATE`` oder ``INSERT``
-        ergab.
+        indicates the number of lines that the last call of ``.execute*()`` with
+        ``SELECT``, ``UPDATE`` or ``INSERT`` resulted in.
 
-    Beispiel::
+    Example::
 
         cursor = conn.cursor()
         cursor.execute("""

@@ -1,15 +1,15 @@
-ipywidgets-Bibliotheken
-=======================
+ipywidgets libraries
+====================
 
-Beliebte Widget-Bibliotheken sind
+Popular widget libraries are
 
 ``qplot``
-    2-D Plotting-Bibliothek für Jupyter-Notebooks
+    2-D plotting library for Jupyter notebooks
 
     * :doc:`pyviz:d3js/bqplot/index`
 
 ``ipycanvas``
-    Interaktive Canvas-Elemente in Jupyter-Notebooks
+    Interactive canvas elements in Jupyter notebooks
 
     .. toctree::
        :maxdepth: 1
@@ -17,25 +17,25 @@ Beliebte Widget-Bibliotheken sind
        ipycanvas.ipynb
 
 ``pythreejs``
-    Jupyter-`Three.js <https://threejs.org/>`_-Bridge
+    Jupyter `Three.js <https://threejs.org/>`_ bridge
 
     * :doc:`pyviz:js/pythreejs`
 
 ``ipyvolume``
-    IPyvolume ist eine Python-Bibliothek zur Visualisierung von 3D-Volumen und
-    Glyphen (z.B. 3D-Scatter-Plots).
+    IPyvolume is a Python library for visualizing 3D volumes and glyphs (e.g.
+    3D scatter plots).
 
     * :doc:`pyviz:js/ipyvolume`
 
 ``ipyleaflet``
-    Jupyter-`Leaflet.js <https://leafletjs.com/>`_-Bridge
+    Jupyter-`Leaflet.js <https://leafletjs.com/>`_  bidge
 
     * :doc:`pyviz:js/ipyleaflet`
 
 ``ipywebrtc``
-    `WebRTC <https://webrtc.org/>`_- und `MediaStream-API
-    <https://developer.mozilla.org/en-US/docs/Web/API/MediaStream>`_ für
-    Jupyter-Notebooks
+    `WebRTC <https://webrtc.org/>`_ and `MediaStream
+    <https://developer.mozilla.org/en-US/docs/Web/API/MediaStream>`_ API for
+    Jupyter notebooks
 
     .. toctree::
        :maxdepth: 1
@@ -43,8 +43,7 @@ Beliebte Widget-Bibliotheken sind
        ipywebrtc.ipynb
 
 ``ipysheet``
-    Interaktive Tabellen um IPython Widgets in Tabellen von Jupyter Notebooks
-    zu verwenden.
+    Interactive tables to use IPython widgets in tables of Jupyter notebooks.
 
     .. toctree::
        :maxdepth: 1
@@ -52,8 +51,8 @@ Beliebte Widget-Bibliotheken sind
        ipysheet.ipynb
 
 ``qgrid``
-    Widget auf Basis von `SlickGrid <https://github.com/mleibman/SlickGrid>`_
-    zum Rendern von pandas DataFrames in Jupyter-Notebooks
+    Widget based on  `SlickGrid <https://github.com/mleibman/SlickGrid>`_ for
+    rendering pandas DataFrames in Jupyter notebooks
 
     .. toctree::
        :maxdepth: 1
@@ -61,7 +60,7 @@ Beliebte Widget-Bibliotheken sind
        qgrid.ipynb
 
 ``ipyvuetify``
-    `Vuetify <https://v15.vuetifyjs.com/en/>`_-Widgets in Jupyter Notebooks
+    `Vuetify <https://v15.vuetifyjs.com/en/>`_ widgets in Jupyter notebooks
 
     .. toctree::
        :maxdepth: 1
@@ -69,9 +68,9 @@ Beliebte Widget-Bibliotheken sind
        ipyvuetify.ipynb
 
 ``ipympl``
-    ``ipympl`` oder `jupyter-matplotlib
-    <https://github.com/matplotlib/jupyter-matplotlib>`_ bieten interaktive
-    Widgets für Matplotlib.
+    ``ipympl`` or `jupyter-matplotlib
+    <https://github.com/matplotlib/jupyter-matplotlib>`_ offer interactive
+    widgets for matplotlib.
 
     .. toctree::
        :maxdepth: 1

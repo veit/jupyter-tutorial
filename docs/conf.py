@@ -22,7 +22,7 @@ copyright = "2019–2020, Veit Schiele"
 author = "Veit Schiele"
 
 # The full version, including alpha/beta/rc tags
-release = "0.7.0"
+release = "0.8.0"
 
 
 # -- General configuration ---------------------------------------------------
@@ -50,7 +50,7 @@ master_doc = "index"
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = "de"
+language = "en"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -75,7 +75,7 @@ html_theme = "alabaster"
 # documentation.
 #
 html_theme_options = {
-    "description": "Materialen für die <a href='https://cusy.io/de/seminare'>Cusy-Schulungen</a> zum Aufbau und zur Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks.",
+    "description": "Training materials for the <a href='https://cusy.io/en/seminars'>Cusy training courses</a> on setting up and using a research infrastructure based on Jupyter notebooks.",
     "fixed_sidebar": False,
     "show_powered_by": False,
     "github_user": "veit",
@@ -90,7 +90,7 @@ html_theme_options = {
 html_sidebars = {"**": ["about.html", "searchbox.html", "navigation.html"]}
 
 # Change default HTML title
-html_title = "Jupyter Tutorial 0.7.0"
+html_title = "Jupyter Tutorial 0.8.0"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

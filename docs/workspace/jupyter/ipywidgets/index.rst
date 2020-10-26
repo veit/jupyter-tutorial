@@ -1,10 +1,9 @@
 ``ipywidgets``
 ==============
 
-`ipywidgets <https://ipywidgets.readthedocs.io/>`_ sind interaktive Widgets für
-Jupyter Notebooks. Sie  erweitern Notebooks um die Möglichkeit, dass Nutzer
-selbst Daten eingeben, Daten manipulieren und die veränderten Ergebnisse sehen
-können.
+`ipywidgets <https://ipywidgets.readthedocs.io/>`_ are interactive widgets for
+Jupyter notebooks. They extend notebooks by the possibility that users can enter
+data themselves, manipulate data and see the changed results.
 
 .. toctree::
    :hidden:

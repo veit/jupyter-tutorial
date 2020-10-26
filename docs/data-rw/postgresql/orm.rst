@@ -1,28 +1,27 @@
-Objektrelationale Abbildung
-===========================
+Object-relational mapping
+=========================
 
-    «Objektrelationale Abbildung (englisch object-relational mapping, ORM) ist
-    eine Technik der Softwareentwicklung, mit der ein in einer
-    objektorientierten Programmiersprache geschriebenes Anwendungsprogramm seine
-    Objekte in einer relationalen Datenbank ablegen kann.»[#]_
+    «Object-relational mapping (…) in computer science is a programming
+    technique for converting data between incompatible type systems using
+    object-oriented programming languages.»[#]_
 
-.. [#] `Wikipedia: Objektrelationale Abbildung
-   <https://de.wikipedia.org/wiki/Objektrelationale_Abbildung>`_
+.. [#] `Wikipedia: relational mapping
+    <https://en.wikipedia.org/wiki/Object-relational_mapping>`_
 
-Im einfachsten Fall werden Klassen auf Tabellen abgebildet, wobei jedes Objekt einer
-Tabellenzeile entspricht und jedem Attribut eine Tabellenspalte.
+In the simplest case, classes are mapped to tables, with each object
+corresponding to a table row and each attribute to a table column.
 
-Um Vererbungshierarchien abzubilden gibt es im Wesentlichen drei verschiedene
-Verfahren:
+There are essentially three different methods of mapping inheritance
+hierarchies:
 
 *Single Table*
-    Dabei wird eine Tabelle pro Vererbungshierarchie angelegt, wobei alle
-    Attribute der Basisklasse und aller davon abgeleiteten Klassen in einer
-    gemeinsamen Tabelle gespeichert wird.
+    One table is created for each inheritance hierarchy, with all attributes of
+    the base class and all classes derived from it being stored in a common
+    table.
 *Joined Table* oder *Class Table*
-    Dabei wird eine Tabelle je Unterklasse angelegt und für jede davon
-    abgeleitete Unterklasse eine weitere Tabelle.
-*Table per Class* oder *Concrete Table*
-    Dabei werden die Attribute der abstrakten Basisklasse in die Tabellen für
-    die konkreten Unterklassen mit aufgenommen. Hierbei ist es jedoch nicht
-    möglich, mit einer Abfrage Instanzen verschiedener Klassen zu ermitteln.
+    A table is created for each subclass and a further table for each subclass
+    derived from it.
+*Table per Class* or *Concrete Table*
+    The attributes of the abstract base class are included in the tables for the
+    specific subclasses. However, it is not possible to determine instances of
+    different classes with one query.

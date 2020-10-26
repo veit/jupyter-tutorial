@@ -1,56 +1,52 @@
-Objektdatenbanksysteme
-======================
+Object database systems
+=======================
 
-Viele Programmiersprachen legen eine objektorientierte Programmierung nahe und
-daher erscheint die Speicherung dieser Objekte natürlich. Daher liegt nahe, den
-kompletten Prozess von der Implementierung bis zur Speicherung einheitlich und
-einfach zu gestalten. Im Einzelnen sind die Vorteile:
+Many programming languages suggest object-oriented programming, so storing these
+objects seems natural. It therefore makes sense to design the entire process
+from implementation to storage uniformly and simply. In detail, the advantages
+are:
 
-Natürliche Modellierung und Repräsentation von Problemen
-    Probleme lassen sich auf eine Weise modellieren, die der menschlichen
-    Denkweise sehr nahe kommen.
-Übersichtlicher, lesbarer und verständlicher
-    Die Daten und die auf diesen operierenden Funktionen werden zu einer Einheit
-    zusammengefasst, wodurch die Programme übersichtlicher, lesbarer und
-    verständlicher werden.
-Modular und wiederverwendbar
-    Programmteile  lassen sich einfach und flexibel wiederverwenden.
-Erweiterbar
-    Programme lassen sich einfach erweitern und an geänderte Anforderungen
-    anpassen.
+Natural modeling and representation of problems
+    Problems can be modeled in ways that are very close to the human way of
+    thinking.
+Clearer, more readable and more understandable
+    The data and the functions operating on them are combined into one unit,
+    making the programs clearer, more readable and easier to understand.
+Modular and reusable
+    Program parts can be easily and flexibly reused.
+Expandable
+    Programs can be easily expanded and adapted to changed requirements.
 
 Object-relational impedance mismatch
 ------------------------------------
 
-Objektorientierte Programmierung und relationale Datenhaltung sind aus
-verschiedenen Gründen problematisch. So ist ein wichtiges Konzept der OOP zur
-Umsetzung komplexer Modelle die Vererbung. Im relationalen Paradigma gibt es
-jedoch nichts vergleichbares. Zur Umwandlung entsprechender Klassenhierarchien
-in ein relationales Modell wurden objekt-relationale Mapper, ORM entwickelt, wie
-z.B. :doc:`../postgresql/sqlalchemy`. Prinzipiell gibt es zwei verschiedene
-Ansätze für ein ORM, wobei in beiden Fällen eine Tabelle für eine Klasse
-angelegt wird:
+Object-oriented programming and relational data storage are problematic for
+various reasons. Inheritance is an important concept in OOP for implementing
+complex models. In the relational paradigm, however, there is nothing like it.
+Object-relational mappers, ORM, such as :doc:`../postgresql/sqlalchemy`, were
+developed to convert corresponding class hierarchies into a relational model. In
+principle there are two different approaches for an ORM, whereby in both cases a
+table is created for a class:
 
-Vertikale Partitionierung
-    Die Tabelle enthält nur die Attribute der entsprechenden Klasse sowie einen
-    Fremdschlüssel für die Tabelle der Oberklasse. Für jedes Objekt wird ein dann
-    ein Eintrag in der zur Klasse gehörenden Tabelle sowie in den Tabellen aller
-    Oberklassen angelegt. Beim Zugriff müssen die Tabellen mit Joins verbunden
-    werden, wodurch es bei komplexen Modellen zu erheblichen
-    Performance-Verlusten kommen kann.
-Horizontale Partitionierung
-    Jede Tabelle enthält die Attribute der zugehörigen Klasse sowie aller
-    Oberklassen. Bei einer Änderung der Oberklasse müssen dann jedoch die
-    Tabellen aller abgeleiteten Klassen ebenfalls aktualisiert werden.
+Vertical partitioning
+    The table only contains the attributes of the corresponding class and a
+    foreign key for the table of the superclass. An entry is then created for
+    each object in the table belonging to the class and in the tables of all
+    superclasses. When accessing the tables, joins must be used, which can
+    lead to significant performance losses in complex models.
+Horizontal partitioning
+    Each table contains the attributes of the associated class and all
+    superclasses. If the superclass is changed, however, the tables of all
+    derived classes must also be updated.
 
-Grundsätzlich müssen bei der Kombination von OOP und relationaler Datenhaltung
-immer zwei Datenmodelle erstellt werden. Dies macht diese Architektur deutlich
-komplexer, fehleranfälliger und in der Wartung aufwändiger.
+Basically, when combining OOP and relational data management, two data models
+must always be created. This makes this architecture significantly more complex,
+more error-prone and more time-consuming to maintain.
 
-Datenbanksysteme
+Database systems
 ----------------
 
-Beispiele für Objektdatenbanksysteme sind ZODB und Objectivity/DB.
+Examples of object database systems are ZODB and Objectivity/DB.
 
 +------------------------+----------------------------------------+----------------------------------------+
 | **Home**               | `ZODB`_                                | `Objectivity/DB`_                      |
@@ -59,24 +55,26 @@ Beispiele für Objektdatenbanksysteme sind ZODB und Objectivity/DB.
 +------------------------+----------------------------------------+----------------------------------------+
 | **Docs**               | `www.zodb.org/en/latest/tutorial.html`_| `Objectivity/DB Basics Tutorial`_      |
 +------------------------+----------------------------------------+----------------------------------------+
-| **Anwendungsgebiete**  | Plone, Pyramid, BTrees, volatile Daten | IoT, Telekommunikation, Netzwerktechnik|
+| **Application areas**  | Plone, Pyramid, BTrees, volatile data  | IoT, telecommunications, network       |
+|                        |                                        | technology                             |
 +------------------------+----------------------------------------+----------------------------------------+
-| **Entwicklungssprache**| Python                                 | Java                                   |
+| **Development          | Python                                 | Java                                   |
+| language**             |                                        |                                        |
 +------------------------+----------------------------------------+----------------------------------------+
-| **Lizenzen**           | Zope Public License (ZPL) 2.1          | kommerziell                            |
+| **Licenses**           | Zope Public License (ZPL) 2.1          | commercially                           |
 +------------------------+----------------------------------------+----------------------------------------+
-| **Datenmodell**        | PersistentList, PersistentMapping,     | Objects, References, Relationships,    |
-|                        | BTree                                  | Indexes, Trees und Collections         |
+| **Data model**         | PersistentList, PersistentMapping,     | Objects, References, Relationships,    |
+|                        | BTree                                  | Indexes, Trees and Collections         |
 +------------------------+----------------------------------------+----------------------------------------+
-| **Query-Langauge**     |                                        | Objectivity/DB predicate query language|
+| **Query langauge**     |                                        | Objectivity/DB predicate query language|
 +------------------------+----------------------------------------+----------------------------------------+
-| **Transaktionen,       | :term:`ACID`                           | :term:`ACID`                           |
-| Nebenläufigkeit**      |                                        |                                        |
+| **Transactions,        | :term:`ACID`                           | :term:`ACID`                           |
+| concurrency**          |                                        |                                        |
 +------------------------+----------------------------------------+----------------------------------------+
-| **Replikation,         | `ZODB Replication Services (ZRS)`_     | Quorum basierte synchrone Replikation  |
-| Skalierung**           |                                        |                                        |
+| **Replication,         | `ZODB Replication Services (ZRS)`_     | Quorum based synchronous replication   |
+| skaling**              |                                        |                                        |
 +------------------------+----------------------------------------+----------------------------------------+
-| **Anmerkungen**        |                                        |                                        |
+| **Remarks**            |                                        |                                        |
 +------------------------+----------------------------------------+----------------------------------------+
 
 .. _`ZODB`: hhttp://www.zodb.org/

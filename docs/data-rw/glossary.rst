@@ -1,106 +1,100 @@
-Glossar
-=======
+Glossary
+========
 
 .. glossary::
 
     ACID
-        ACID ist ein Akronym für **A**\tomicity **C**\onsistency **I**\solation
-        **D**\urability. Sie gelten als Voraussetzung für die Verlässlichkeit
-        von Datenbanktransaktionen.
+        ACID is an acronym for **A**\tomicity **C**\onsistency **I**\solation
+        **D**\urability. They are a prerequisite for the reliability of database
+        transactions.
 
-        Atomarität
-            Eine Transaktion ist eine Folge von Datenbankoperationen, die
-            entweder vollständig oder gar nicht ausgeführt werden.
-        Konsistenz
-            Transaktion, die nach Beendigung einen konsistenten Zustand
-            hinterlässt. Dabei werden vor Abschluss der Transaktion die im
-            Datenbankschema definierten Integritätsbedingungen überprüft.
+        Atomicity
+            A transaction is a series of database operations that are either
+            carried out completely or not at all.
+        Consistency
+            Transaction that leaves a consistent state after completion. The
+            integrity conditions defined in the database schema are checked
+            before the transaction is completed.
         Isolation
-            Nebenläufige Transaktionen dürfen sich nicht beeinflussen.
-            Realisiert wird dies üblicherweise mit :term:`Locking`, das die
-            Nebenläufigkeit einschränkt.
+            Concurrent transactions must not influence each other. This is
+            usually achieved with :term:`Locking`, which restricts the
+            concurrency.
         Durability
-            Daten müssen nach erfolgreicher Transaktion dauerhaft in der
-            Datenbankgespeichert bleiben und kann z.B. durch das Schreiben
-            eines Transaktionslogs sichergestellt werden.
+            After a successful transaction, data must be permanently stored in
+            the database and can be secured, for example, by writing a
+            transaction log.
 
     BASE
-        BASE ist ein Akronym für **B**\asically **A**\vailable, **S**\oft State,
-        **E**\ventually Consistent und als Gegenbegriff zu :term:`ACID`
-        entstanden.
+        BASE is an acronym for **B**\asically **A**\vailable, **S**\oft State,
+        **E**\ventually Consistent and originated as the opposite of
+        :term:`ACID`.
 
-        Dabei wird ein sehr optimistischer Konsistenzbegriff verwendet, der ohne
-        :term:`Locking` auskommt. Locks sind in mehrerlei Hinsicht
-        problematisch, da Zugriffe nicht möglich sind, solange Datensätze durch
-        andere Transaktionen gesperrt sind. Zudem ist die Übereinkunft zum
-        Setzen eines Locks bereits sehr aufwändig.
+        A very optimistic concept of consistency is used that does not require
+        :term:`Locking`. Locks are problematic in several ways, since access is
+        not possible as long as data records are locked by other transactions.
+        In addition, the agreement to set a lock is already very complex.
 
-        Konsistenz der Daten wird als ein Zustand betrachtet, der irgendwann
-        erreicht werden kann. Dies ist die Idee der :term:`Eventual
-        Consistency`.
+        Data consistency is seen as a state that can be achieved at some point.
+        This is the idea of :term:`Eventual Consistency`.
 
-        Konkurrierende Zugriffe werden bei BASE durch :term:`MVCC –
-        Multiversion Concurrency Control` vermieden. Es gibt jedoch eine große
-        Bandbreite von Lösungen für die verschiedenen verteilten
-        Datenbanksysteme:
+        With BASE, competing access is avoided through :term:`MVCC –
+        Multiversion Concurrency Control` However, there is a wide range of
+        solutions for the various distributed database systems:
 
         * Causal Consistency
 
-          ist der Konsistenz in :term:`ACID` vergleichbar.
+          is comparable to the consistency in :term:`ACID`.
 
         * Read Your Writes
         * Session Consistency
         * Monotonic Read Consistency
         * Monotonic Write Consistency
 
-    CAP-Theorem
-        CAP ist ein Akronym für **C**\onsistency, **A**\vailability
-        (Verfügbarkeit) und **P**\artition Tolerance (Ausfalltoleranz). Die
-        Erkenntnisse des CAP-Theorems spielen bei der Auswahl eines
-        verteilten Datenbanksystems eine zentrale Rolle.
+    CAP theorem
+        CAP is an acronym for **C**\onsistency, **A**\vailability and
+        **P**\artition Tolerance. The findings of the CAP theorem play a central
+        role in the selection of a distributed database system.
 
-        Das CAP-Theorem besagt, dass in verteilen Systemen die drei
-        Anforderungen Konsistenz, Verfügbarkeit und  Ausfalltoleranz nicht
-        vollständig vereinbar und nur maximal zwei von dreien erreichbar sind.
-        Für jede Anwendung muss daher individuell entschieden werden, ob eine
-        CA-, CP-, AP-Applikation realisiert werden soll.
+        The CAP theorem states that in distributed systems the three
+        requirements of consistency, availability and failure tolerance are not
+        fully compatible and only a maximum of two out of three can be achieved.
+        Therefore it must be decided individually for each application whether a
+        CA, CP or AP application should be implemented.
 
     Cassandra
-        Cassandra ist ein :doc:`nosql/column-oriented-db`, und wurde
-        ursprünglich von Facebook entwickelt um Suchen im E-Mail-Engang zu
-        optimieren. Heute wird es unter dem Dach der `Apache Software Foundation
-        <http://www.apache.org/>`_ weiterentwickelt.
+        Cassandra is a :doc:`nosql/column-oriented-db`, and was originally
+        developed by Facebook to optimise searches in email. Today it is further
+        developed under the umbrella of the `Apache Software Foundation
+        <http://www.apache.org/>`_.
 
-        Das Datenmodell von Cassandra hat weder eine logische Struktur noch ein
-        Schema. Für die Modellierung wird empfohlen *«First write your queries,
-        then model your data»*. Meist wird dann eine *Column Family* für jede
-        erwartete Anfrage erstellt. Dabei werden die Daten zwar denormalisiert,
-        aber jede *Column Family* antwortet auf eine bestimmte Art von Anfragen.
+        Cassandra's data model has neither a logical structure nor a schema. For
+        the modeling it is recommended *«First write your queries then model
+        your data»*. Then usually a *Column Family* is created for each expected
+        request. The data is denormalised, but each column family responds to a
+        specific type of query.
 
-        In Cassandra kann für jede Anfrage die Konsistenz angegeben werden. Das
-        ermöglicht, dass spezifische Anfragen sehr konsistent sein können
-        während andere die Konsistenz der Geschwindigkeit opfern. Für die
-        Schreibkonsistenz gibt es z.B. die folgenden vier Ebenen:
+        In Cassandra, the consistency can be specified for each request. This
+        allows specific requests to be very consistent while others sacrifice
+        consistency for speed. There are, for example, the following four levels
+        for write consistency:
 
         ANY
-            gewährleistet, dass die Daten in mindestens einem Knoten gespeichert
-            sind.
+            ensures that the data is stored in at least one node.
         ONE
-            gewährleistet, dass die Daten im Commit-Log von mindestens einer
-            Replica gespeichert sind.
+            ensures that the data is stored in the commit log of at least one
+            replica.
         QUORUM
-            gewährleistet, dass die Daten in einen Quorum von Replicas
-            gespeichert sind.
+            ensures that the data is stored in a quorum of replicas.
         ALL
-            gewährleistet, dass die Daten auf alle Replicas gespeichert sind.
+            ensures that the data is saved on all replicas.
 
-        Cassandra stellt zwei verschiedene APIs zur Verfügung: `Thrift
-        <https://thrift.apache.org/>`_ und `CQL (Cassandra Query Language)
+        Cassandra provides two different APIs: `Thrift
+        <https://thrift.apache.org/>`_ and `CQL (Cassandra Query Language)
         <https://cassandra.apache.org/doc/latest/cql/>`_.
 
     Column Family
-        Column Families entsprechen Tabellen in relationalen Datenbanken. Sie
-        gruppieren Spalten gleichen oder ähnlichen Inhalts, z.B.:
+        Column families correspond to tables in relational databases. They group
+        columns with the same or similar content, e.g.
 
         .. code-block:: javascript
 
@@ -116,196 +110,186 @@ Glossar
                 }
             }
 
+    Consistent hash function
+        Consistent hash functions minimise the number of reallocations, since
+        not all keys have to be reallocated when a change occurs, only the size
+        of a hash table is changed.
+
+    Consistency
+        The state of a database is said to be consistent if the stored data
+        meets all requirements for :term:`Semantic integrity`.
+
     CouchDB
-        CouchDB ein Akronym für **C**\luster **o**\f **u**\nreliable
-        **c**\ommodity **h**\ardware **D**\ata **B**\ase. Dabei handelt es sich
-        um ein :doc:`nosql/document-oriented-db`.
+        CouchDB an acronym for **C**\luster **o**\f **u**\nreliable
+        **c**\ommodity **h**\ardware **D**\ata **B**\ase. This is a
+        :doc:`nosql/document-oriented-db`.
 
     Eventual Consistency
-        *»Konsistenz als Zustandsübergang, der irgendwann erreicht wird.«*
+        *«Consistency as a state transition that is reached at some point.»*
 
-        Der Begriff wurde für :term:`BASE` als Alternative zu :term:`ACID`
-        entwickelt.
+        The term was developed for :term:`BASE` as an alternative to
+        :term:`ACID`.
 
     Graph traversal
-        Graph traversal wird meist zur Suche von Knoten verwendet. Es gibt
-        verschiedene Algorithmen für solche Suchanfragen in einem Graphen, die
-        sich grob einteilen lassen in
+        Graph traversal is mostly used to find nodes. There are different
+        algorithms for such search queries in a graph, which can be roughly
+        divided into
 
-        * Breiten- und Tiefensuche (engl: breadth-first search, BFS und
-          depth-first search, DFS)
+        * Breadth-first search, BFS and depth-first search, DFS
 
-          Die Breitensuche beginnt mit allen Nachbarknoten des Startknotens.
-          Im nächsten Schritt werden dann die Nachbarn der Nachbarn durchsucht.
-          Die Pfadlänge erhöht sich mit jeder Iteration.
+          The breadth-first search begins with all neighboring nodes of the start node.
+          In the next step, the neighbors of the neighbors are then searched. The path
+          length increases with each iteration.
 
-          Die Tiefensuche verfolgt einen Pfad solange, bis ein Knoten ohne
-          ausgehende Kanten gefunden wird. Der Pfad wird anschließend
-          zurückverfolgt bis zu einem Knoten, der noch weitere ausgehende Kanten
-          hat. Dort wird die Suche dann fortgesetzt.
+          The depth-first search follows a path until a node with no outgoing edges is
+          found. The path is then traced back to a node that has further outgoing edges.
+          The search will then continue there.
 
-        * Algorithmische Traversierung
+        * Algorithmic traversal
 
-          Beispiele für die algorithmische Traversierung sind
+          Examples of algorithmic traversal are
 
-          * Hamiltonweg (Traveling Salesman)
-          * Eulerweg
-          * Dijkstra-Algorithmus
+          * Hamiltonian path (traveling salesman)
+          * Eulerian path
+          * Dijkstra’s algorithm
 
-        * Randomisierte Traversierung
+        * Randomised traversal
 
-          Der Graph wird nicht nach einem bestimmten Schema durchlaufen, sondern
-          der nächste Knoten wird zufällig ausgewählt. Dadurch kann vor allem bei
-          großen Graphen wesentlich schneller ein Suchergebnis präsentieren, dieses
-          ist jedoch nicht immer das beste.
+          The graph is not run through according to a certain scheme, but the next node
+          is selected at random. This allows a search result to be presented much
+          faster, especially with large graphs, but this is not always the best.
 
-    Graphenmodell
-        Ein Graph besteht aus einer Menge an Knoten und Kanten. Graphen werden
-        genutzt, um eine Vielfalt an Problemen durch Knoten, Kanten und ihren
-        Beziehungen darzustellen, z.B. in Navigationssystemen, in denen die Wege
-        in Form von Graphen gespeichert werden.
+    Graph model
+        A graph consists of a number of nodes and edges. Graphs are used to
+        represent a variety of problems through nodes, edges and their
+        relationships, for example in navigation systems in which the paths are
+        stored in the form of graphs.
 
-    Graphpartitionierung
-        Mit Graphpartitionierung werden Graphen in kleinere Teilgraphen
-        unterteilt. Dabei gibt es jedoch keine mathematisch exakte Methode, um
-        die Anzahl der durchschnittenen Kanten zu minimieren, sondern nur ein
-        paar heuristische Algorithmen, z.B. Clustering-Algorithmen, die stark
-        vernetzte Teilgraphen zu abstrakten Knoten zusammenziehen.
+    Graph partitioning
+        With graph partitioning, graphs are divided into smaller subgraphs.
+        However, there is no mathematically exact method to minimise the number
+        of intersected edges, but only a few heuristic algorithms, e.g.
+        clustering algorithms, which combine strongly networked subgraphs to
+        abstract nodes.
 
-        Von sich überlappenden Partitionierung spricht man bei Graphen, die
-        nicht komplett geteilt werden können und in mehreren Teilgraphen
-        existieren.
+        One speaks of overlapping partitioning in the case of graphs that cannot
+        be completely divided and exist in several subgraphs.
 
     HBase
-        HBase ist ein :doc:`nosql/column-oriented-db`, welches auf verteilten
-        Dateisystemen aufbaut und für real-time-Zugriffe auf großen
-        Datenbeständen konzipiert ist.
+        HBase is a :doc:`nosql/column-oriented-db`, which is based on
+        distributed file systems and is designed for real-time access to large
+        databases.
 
     Hypertable
-        Hypertable ist ein :doc:`nosql/column-oriented-db` und auf
-        verteilten Dateisystemen basiert. Das Datenmodell ist das einer
-        mehrdimensionalen Tabelle, die mit Schlüsseln durchsucht werden
-        kann. Die erste Dimension ist der sog. *row-key*, die zweite die
-        :term:`Column Family` die dritte Dimension der *Column Qualifier*
-        und die vierte Dimension die Zeit.
+        Hypertable is a :doc:`nosql/column-oriented-db` and is based on
+        distributed file systems. The data model is that of a multi-dimensional
+        table that can be searched using keys. The first dimension is the
+        so-called *row key*, the second is the :term:`Column family`, the third
+        dimension is the *column qualifier* and the fourth dimension is time.
 
-    Konsistente Hashfunktion
-        Konsistente Hashfunktionen minimieren die Anzahl der Neuzuordnungen, da
-        bei einer Änderung nicht alle Schlüssel neu zugeordnet werden müssen
-        sondern nur die Größe einer Hash-Tabelle geändert wird.
-
-    Konsistenz
-        Der Zustand einer Datenbank wird als konsistent bezeichnet, wenn die
-        gespeicherten Daten alle Anforderungen for :term:`Semantische
-        Integrität` erfüllen.
+    Key/value pair
+        A value is always assigned to a specific key, which can consist of a
+        structured or arbitrary character string. These keys can be divided into
+        namespaces and databases. In addition to strings, the values can also
+        contain lists, sets or hashes.
 
     Locking
-        Als Locking bezeichnet man das Sperren von Daten für nebenläufige
-        Transaktionen.
+        Locking is the term used to describe the blocking of data for concurrent
+        transactions.
 
-        Je nach Art des Zugriffs gibt es unterschiedliche Lock-Verfahren:
+        There are different lock procedures, depending on the type of access:
 
-        Optimistic Concurrency
-            Optimistic Concurrency, auch Optimistisches Locking geht davon aus,
-            dass wenige schreibende Zugriffe auf der Datenbank stattfinden und
-            lesende Zugriffe keine Sperre auslösen. Bei Änderungen wird dann
-            zunächst geprüft, ob der Zeitstempel seit dem Lesen der Daten
-            unverändert geblieben ist.
-        Pessimistic Locking
-            Pessimistic Locking geht von vielen Schreibzugriffen auf die
-            Datenbank aus. Daher sperren auch lesende Zugriffe die Daten werden
-            erst wieder freigegeben, wenn die Änderungen gespeichert sind.
+        Optimistic concurrency
+            Optimistic concurrency, also called optimistic locking, assumes that
+            there are few write accesses to the database and read accesses do
+            not trigger a lock. In the event of changes, a check is first made
+            to determine whether the time stamp has remained unchanged since the
+            data was read.
+        Pessimistic locking
+            Pessimistic locking assumes a lot of write accesses to the database.
+            Read access is therefore also blocked. The data is only released
+            again when the changes have been saved.
         Two-phase locking (2PL)
-            Das Zwei-Phasen-Sperrprotokoll unterscheidet zwei Phasen von
-            Transaktionen:
+            The two-phase locking protocol distinguishes between two phases of
+            transactions:
 
-            #. Die Wachstumsphase, in welcher Sperren nur gesetzt, aber nicht
-               freigegeben werden dürfen.
-            #. Die Schrumpfungsphase, in welcher Sperren nur freigegeben, aber
-               nicht angefordert werden dürfen.
+            #. The growth phase in which locks can only be set but not released.
+            #. The shrinkage phase, in which locks can only be released but not
+               requested.
 
-            Das Zwei-Phasen-Sperrprotokoll kennt dabei drei Sperrzustände:
+            The two-phase lock protocol knows three lock states:
 
-            SLOCK, Shared Lock oder Read-Lock
-                wird bei lesendem Zugriff auf Daten gesetzt
-            XLOCK, Exclusive Lock oder Write-Lock
-                wird bei schreibendem Zugriff auf Daten gesetzt
+            SLOCK, shared lock or read lock
+                is set with read access to data
+            XLOCK, exclusive lock or write lock
+                is set with write access to data
             UNLOCK
-                hebt die Sperren SLOCK und XLOCK auf.
+                removes the locks SLOCK and XLOCK.
 
     MapReduce
-        MapReduce ist ein von Google Inc. 2004 eingeführtes Framework, das für
-        die nebenläufige Berechnungen enorm großer Datenmengen auf
-        Computerclustern verwendet wird. Es wurde durch die, in der funktionalen
-        Programmierung häufig verwendeten Funktionen *map* und *reduce*
-        inspiriert auch wenn die Semantik von diesen etwas abweicht.
+        MapReduce is a framework introduced by Google Inc. in 2004, which is
+        used for the concurrent computations of enormous amounts of data on
+        computer clusters. It was inspired by the *map* and *reduce* functions,
+        which are often used in functional programming, even if the semantics
+        deviate slightly from them.
 
     MongoDB
-        MongoDB ist eine schemafrei :doc:`nosql/document-oriented-db`,
-        die Dokumente im `BSON <http://www.bsonspec.org/>`_-Format verwaltet.
+        MongoDB is a schema-free :doc:`nosql/document-oriented-db`,
+        that manages documents in `BSON <http://www.bsonspec.org/>`_ format.
 
     MVCC – Multiversion Concurrency Control
-        MVCC werden kontrolliert konkurrierende Zugriffe auf Datensätze (Lesen,
-        Einfügen, Ändern, Löschen) durch verschiedene, unveränderliche Versionen
-        dieser Datensätze. Die verschiedenen Versionen werden in eine zeitliche
-        Reihenfolge gebracht, indem jede Version auf ihre Vorgängerversion
-        verweist. MVCC hat sich gerade bei :doc:`nosql/index` zu einer zentralen
-        Basistechnologie entwickelt, die es ermöglicht, konkurrierende Zugriffe
-        auch ohne das :term:`Locking` von Datensätzen zu koordinieren.
+        MVCC controls concurrent accesses to data records (read, insert, change,
+        delete) by different, unchangeable versions of these data records. The
+        various versions are arranged in a chronological order, with each
+        version referring to its previous version. MVCC has developed into a
+        central basic technology for NoSQL databases in particular, which makes
+        it possible to coordinate competing accesses even without locking data
+        records.
 
     Paxos
-        Paxos ist eine Familie von Protokollen zur Herstellung von Konsens in
-        einem Netzwerk unzuverlässiger oder fehlbarer Prozessoren.
+        Paxos is a family of protocols for building consensus on a network of
+        unreliable or fallible processors.
 
-    Property-Graph-Modell (PGM)
-        Knoten und Kanten bestehen aus Objekten mit darin eingebetteten
-        Eigenschaften (Properties). Es wird nicht nur ein Wert (Label) in einer
-        Kante bzw. einem Knoten gespeichert, sondern ein
-        :term:`Schlüssel/Wert-Paar`.
+    Property graph model (PGM)
+        Nodes and edges consist of objects with properties embedded in them. Not
+        only a value (label) is stored in an edge or a node, but a
+        :term:`Key/value pair`.
 
     Riak
-        Im Wesentlichen ist Riak ein dezentraler :term:`Schlüssel/Wert-Paar` mit
-        einer flexiblen :term:`MapReduce`-Engine.
+        In essence, Riak is a decentralised :term:`Key/value pair` with a
+        flexible :term:`MapReduce` engine.
 
     Redis
-        Redis ist ein :doc:`nosql/key-value-store`, die üblicherweise alle
-        Daten im RAM speichert.
+        Redis is a :doc:`nosql/key-value-store`, that usually stores all data in
+        RAM.
 
-    Schlüssel/Wert-Paar
-        Ein Wert ist immer einem bestimmten Schlüssel zugeordnet, der aus einer
-        strukturierten oder willkürlichen Zeichenkette bestehen kann. Diese
-        Schlüssel können in Namensräume und Datenbanken aufgeteilt werden. Die
-        Werte können neben Strings auch Listen, Sets oder Hashes enthalten.
+    Semantic integrity
+        Semantic integrity is always given when the entries are correct and
+        consistent. Then we talk of consistent data. If this is not the case,
+        the data is inconsistent. In SQL, the semantic integrity can be checked
+        with ``TRIGGER`` and ``CONSTRAINT``
 
-    Semantische Integrität
-        Semantische Integrität ist immer dann gegeben, wenn die Eingaben richtig
-        und in sich stimmig sind. Dann wird auch von konsistenten Daten
-        gesprochen. Ist dies nicht der Fall, sind die Daten inkonsistent. In SQL
-        kann die semantische Integrität mit ``TRIGGER`` und ``CONSTRAINT``
-        überprüft werden.
-
-    Vektoruhr
-        Eine Vektoruhr ist eine Softwarekomponente zum Zuweisen von eindeutigen
-        Zeitstempeln an Nachrichten. Sie erlaubt, den Ereignissen in verteilten
-        Systemen aufgrund eines Zeitstempels eine Kausalordnung zuzuweisen und
-        insbesondere die Nebenläufigkeit von Ereignissen zu ermitteln.
+    Vector clock
+        A vector clock is a software component used to assign unique time stamps
+        to messages. It allows a causal order to be assigned to the events in
+        distributed systems on the basis of a time stamp and, in particular, to
+        determine the concurrency of events.
 
     XPATH
-        XPATH verarbeitet die Baumstruktur eines XML-Dokuments und erzeugt dabei
-        Ausschnitte aus XML-Dokumenten. Um als Ergebnis vollständige
-        XML-Dokumente zu erhalten, müssen diese z.B. mit :term:`XQuery` oder
-        :term:`XSLT` erstellt werden. XPATH ist keine vollständige
-        Abfragesprache, da sie auf Selektionen und Extraktionen beschränkt
-        ist.
+        XPATH processes the tree structure of an XML document and generates
+        extracts from XML documents. In order to receive complete XML documents
+        as a result, these must be created with :term:`XQuery` or  :term:`XSLT`,
+        for example. XPATH is not a complete query language as it is limited to
+        selections and extractions.
 
-        XPATH ist ein Bestandteil von :term:`XQuery` seit Version 1.1 und ab
-        Version 2.0 wird XPATH durch :term:`XQuery` erweitert.
+        XPATH has been part of :term:`XQuery` since version 1.1 and from version
+        2.0 onwards, XPATH is extended by :term:`XQuery`.
 
     XQuery
-        XQuery steht für *XML Query Language* und ist hauptsächlich eine
-        funktionale Sprache, bei der während einer Abfrage auch verschachtelte
-        Ausdrücke ausgewertet werden können.
+        XQuery stands for *XML Query Language* and is mainly a functional
+        language in which nested expressions can also be evaluated during a
+        query.
 
     XSLT
-        XSLT ist ein Akronym für **E**\xtensible **S**\tylesheet **L**\anguage
-        **T**\ransformation. Mit ihr lassen sich XML-Dokumente transformieren.
+        XSLT is an acronym for **E**\xtensible **S**\tylesheet **L**\anguage
+        **T**\ransformation. It can be used to transform XML documents.

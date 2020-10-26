@@ -1,8 +1,8 @@
-Anwendungsbeispiele
-===================
+Use cases
+=========
 
-In einigen Unternehmen werden Jupyter Notebooks genutzt um explorativ die immer
-größer werdenden Datenmengen zu erschließen. Hierzu gehören:
+In some companies, Jupyter notebooks are used to explore the ever-increasing
+amounts of data. These include:
 
 * Netflix
 

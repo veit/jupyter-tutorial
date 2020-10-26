@@ -1,29 +1,28 @@
 PostGIS
 =======
 
-`PostGIS <https://postgis.net/>`_ ist eine Erweiterung für PostgreSQL, die
-geografische Objekte und Funktionen umfasst. Die Erweiterung implementiert u.a.
-die `Simple-Feature-Access <https://www.ogc.org/standards/sfa>`_-Spezifikation
-des `Open Geospatial Consortium <https://www.ogc.org/>`_. Obwohl PostgreSQL
-bereits Geometrietypen unterstützt, sind diese jedoch für geographische Aufgaben
-ungenügend. Daher erstellt PostGIS eigene Datentypen, die besser für
-geographische Aufgaben geeignet sind. Im Einzelnen werden folgende
-Geometrietypen unterstützt:
+`PostGIS <https://postgis.net/>`_ is an extension for PostgreSQL that includes
+geographic objects and functions. The extension implements i.a. the `Simple
+Feature Access <https://www.ogc.org/standards/sfa>`_ specification of the `Open
+Geospatial Consortium <https://www.ogc.org/>`_. Although PostgreSQL already
+supports geometry types, these are insufficient for geographic tasks. Therefore,
+PostGIS creates its own data types that are better suited for geographic tasks.
+The following geometry types are supported:
 
-* OpenGIS mit Well-Known Text und Well-Known Binary
-* Extended Well-Known Text und Extended Well-Known Binary zusätzlich mit
-  Höheninformationen und/oder Messwerten
-* SQL/MM mit Circularstring, Compoundcurve, Curvepolygon, Multicurve und
+* OpenGIS with well-known text and well-known binary
+* Extended Well-Known Text and Extended Well-Known Binary also with height
+  information and/or measured values
+* SQL/MM with Circularstring, Compoundcurve, Curvepolygon, Multicurve und
   Multisurface
 
-`GEOS <https://trac.osgeo.org/geos/>`_ hingegen enthält die zahlreichen
-räumlichen Funktionen und Operatoren für geographische Daten.
+`GEOS <https://trac.osgeo.org/geos/>`_, on the other hand, contains the numerous
+spatial functions and operators for geographic data.
 
-`pgRouting <https://pgrouting.org/>`_ schließlich enthält Routing-Funktionen
-auf Basis von PostGIS.
+Finally, `pgRouting <https://pgrouting.org/>`_ contains routing functions based
+on PostGIS.
 
-Im `OpenStreetMap <https://www.openstreetmap.org>`_-Projekt wird PostGIS zum
-Rendern von Karten mit `Mapnik <https://mapnik.org/>`_ verwendet.
+In the  `OpenStreetMap <https://www.openstreetmap.org>`_ project, PostGIS is
+used to render maps with `Mapnik <https://mapnik.org/>`_.
 
 .. toctree::
     :hidden:

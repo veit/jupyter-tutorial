@@ -1,16 +1,14 @@
-Dokumentenorientierte Datenbanksysteme
-======================================
+Document-oriented database systems
+==================================
 
-Ein Dokument in diesem Zusammenhang ist eine strukturierte Zusammenstellung
-bestimmter Daten. Die Daten eines Dokumente werden als
-:term:`Schlüssel/Wert-Paar` gespeichert, wobei der Wert auch eine Liste oder ein
-Array sein kann.
+A document in this context is a structured compilation of certain data. The data
+of a document is stored as a :term:`Key/value pair`, whereby the value can also
+be a list or an array.
 
-Datenbanksysteme
+Database systems
 ----------------
-
-Dokumentenorientierte Datenbanksysteme sind z.B. MongoDB, CouchDB, Riak,
-OrientDB und ArangoDB.
+Document-oriented database systems are, for example, MongoDB, CouchDB, Riak,
+OrientDB and ArangoDB.
 
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Home**               | `MongoDB`_                     | `CouchDB`_                     | `Riak`_                        | `OrientDB`_                    | `ArangoDB`_                    |
@@ -19,34 +17,35 @@ OrientDB und ArangoDB.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Docs**               | `docs.mongodb.com`_            | `docs.couchdb.org`_            | `docs.riak.com`_               | `www.orientdb.com/docs`_       | `arangodb.com/documentation/`_ |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anwendungsgebiete**  | IoT, Mobile apps, CMS,         | Mobile, CRM, CMS, …            | Session storage, Log data,     | Stammdatenverwaltung, soziale  | Fraud Detection, IoT,          |
-|                        | `einfache Geodaten`_, …        |                                | Sensor data, CMS               | Netzwerke, `Time Series`_,     | Identitätsmanagement,          |
-|                        |                                |                                |                                | `Key Value`_, `Chat`_,         | E-Commerce, Netzwerk, Logistik,|
-|                        |                                |                                |                                | Verkehrsmanagement             | CMS                            |
+| **Application areas**  | IoT, Mobile apps, CMS,         | Mobile, CRM, CMS, …            | Session storage, Log data,     | Master data management, social | Fraud Detection, IoT,          |
+|                        | `simple geospatial data`_, …   |                                | Sensor data, CMS               | networks, `Time Series`_,      | identity management,           |
+|                        |                                |                                |                                | `Key Value`_, `Chat`_,         | e-commerce, network, logistics,|
+|                        |                                |                                |                                | traffic management             | CMS                            |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Entwicklungssprache**| C++                            | Erlang                         | Erlang                         | Java                           | C++, JavaScript                |
+| **Development          | C++                            | Erlang                         | Erlang                         | Java                           | C++, JavaScript                |
+| language**             |                                |                                |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Lizenzen**           | Server Side Public License     | Apache License 2.0             | Apache License 2.0             | Apache License 2.0             | Apache License 2.0             |
+| **Licenses**           | Server Side Public License     | Apache License 2.0             | Apache License 2.0             | Apache License 2.0             | Apache License 2.0             |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Datenmodell**        | Flexibles Schema mit           | Flexibles Schema               | Im Wesentlichen                | Multi-Model                    | Multi-Model: Dokumente, Graphen|
-|                        | denormalisiertem Modell        |                                | :term:`Schlüssel/Wert-Paar`    |                                | und :term:`Schlüssel/Wert-Paar`|
+| **Data model**         | Flexible scheme with           | Flexible scheme                | Essentially                    | Multi-Model                    | Multi-model: documents, graphs |
+|                        | denormalised model             |                                | :term:`Key/Value pair`         |                                | and :term:`Key/value pair`     |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Query-Langauge**     | jQuery, :term:`MapReduce`      | REST, :term:`MapReduce`        | Keyfilter, :term:`MapReduce`,  | `Extended SQL`_, `Gremlin`_    |`ArangoDB Query Language (AQL)`_|
-|                        |                                |                                | Link-Walking, keine Ad-hoc     |                                |                                |
-|                        |                                |                                | Queries möglich                |                                |                                |
+| **Query langauge**     | jQuery, :term:`MapReduce`      | REST, :term:`MapReduce`        | Key filter, :term:`MapReduce`, | `Extended SQL`_, `Gremlin`_    |`ArangoDB Query Language (AQL)`_|
+|                        |                                |                                | link walking, no ad-hoc        |                                |                                |
+|                        |                                |                                | queries possible               |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Transaktionen,       | :term:`Two-phase locking (2PL)`| * :term:`Two-phase locking     | :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
-| Nebenläufigkeit**      |                                |   (2PL)`,                      |                                |                                | :term:`MVCC – Multiversion     |
-|                        |                                | * einzelner Server:            |                                |                                | Concurrency Control`           |
-|                        |                                |   :term:`ACID`,                |                                |                                |                                |
-|                        |                                | * verteilte Systeme:           |                                |                                |                                |
-|                        |                                |   :term:`BASE`                 |                                |                                |                                |
+| **Transactions,        | :term:`Two-phase locking (2PL)`|* :term:`Two-phase locking (2PL)| :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
+| concurrency**          |                                |  (2PL)`,                       |                                |                                | :term:`MVCC – Multiversion     |
+|                        |                                |* single server:                |                                |                                | Concurrency Control`           |
+|                        |                                |  :term:`ACID`,                 |                                |                                |                                |
+|                        |                                |* distributed systems:          |                                |                                |                                |
+|                        |                                |  :term:`BASE`                  |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replikation,         | Master-Slave-Replikation,      | Master-Master-Replikation      | Multi-Master-Replikation       | Multi-Master-Replikation,      | Master-Slave-Replikation,      |
-| Skalierung**           | Auto-Sharding                  |                                |                                | Sharding                       | Sharding                       |
+| **Replication,         | Master-Slave replikation,      | Master-master replication      | Multi-master replication       | Multi-Master-Replikation,      | Master-slave replication,      |
+| skaling**              | Auto-Sharding                  |                                |                                | Sharding                       | sharding                       |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Anmerkungen**        | `BSON` mit einre maximalen     |                                |                                |                                |                                |
-|                        | Dokumentengröße von 16 MB.     |                                |                                |                                |                                |
+| **Remarks**            | `BSON` with a maximum          |                                |                                |                                |                                |
+|                        | document size of 16 MB.        |                                |                                |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 
 .. _`MongoDB`: https://www.mongodb.com/
@@ -70,5 +69,5 @@ OrientDB und ArangoDB.
 .. _`Extended SQL`: https://orientdb.org/docs/2.2.x/SQL.html
 .. _`Gremlin`: https://github.com/tinkerpop/gremlin/wiki
 .. _`ArangoDB Query Language (AQL)`: https://www.arangodb.com/docs/stable/aql/
-.. _`einfache Geodaten`: https://docs.mongodb.com/manual/core/geospatial-indexes/
+.. _`simple geospatial data`: https://docs.mongodb.com/manual/core/geospatial-indexes/
 .. _`BSON`: http://www.bsonspec.org/

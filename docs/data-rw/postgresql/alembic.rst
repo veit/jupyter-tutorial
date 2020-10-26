@@ -1,21 +1,21 @@
 Alembic
 =======
 
-`Alembic <https://alembic.sqlalchemy.org/>`_ basiert auf SQLAlchemy und dient als
-Datenbankmigrationswerkzeug mit den folgenden Funktionen:
+`Alembic <https://alembic.sqlalchemy.org/>`_ is based on SQLAlchemy and serves
+as a database migration tool with the following functions:
 
-* ``ALTER``-Anweisungen an eine Datenbank ausgeben um die Strukturen von
-  Tabellen und anderen Konstrukten zu ändern
-* System zum Erstellen von Migrationsskripten. Optional kann auch die
-  Reihenfolge der Schritte für das Downgrade angegeben werden.
-* Die Skripte werden in einer bestimmten Reihenfolge ausgeführt.
+* ``ALTER`` statements to a database to change the structure of tables and other
+  constructs
+* System for creating migration scripts. Optionally, the sequence of steps for
+  the downgrade can also be specified.
+* The scripts are executed in a specific order.
 
-Migrationsumgebung erstellen
+Create migration environment
 ----------------------------
 
-Das Migration Environment ist ein Verzeichnis, das für eine bestimmte Anwendung
-spezifisch ist. Sie wird mit dem ``ini``-Befehl von Alembic erstellt und
-anschließend zusammen mit dem Quellcode der Anwendung verwaltet.
+The Migration Environment is a directory that is specific to a particular
+application. It is created with the Alembic ``ini`` command and then managed
+along with the application’s source code.
 
 ::
 
@@ -30,10 +30,7 @@ anschließend zusammen mit dem Quellcode der Anwendung verwaltet.
     Please edit configuration/connection/logging settings in
     '/path/to/myproject/alembic.ini' before proceeding.
 
-Die Struktur eines solchen Migrationsumgebung kann später dann  z.B. so
-aussehen:
-
-::
+The structure of such a migration environment can e.g. look like this::
 
     myproject/
     └── alembic
@@ -46,11 +43,9 @@ aussehen:
             ├── 3512b954651e_add_account.py
             └── 3adcc9a56557_rename_username_field.py
 
-Vorlagen
---------
-
-Alembic erhält eine Reihe von Vorlagen, die mit ``list`` angezeigt werden
-können::
+Templates
+---------
+Alembic includes a number of templates that can be displayed with list::
 
     $ alembic list_templates
     Available templates:
@@ -63,10 +58,10 @@ können::
 
       alembic init --template pylons ./scripts
 
-ini-Datei konfigurieren
------------------------
+Configure ``ini`` file
+----------------------
 
-Die mit der ``generic``-Vorlage erstellte Datei sieht folgendermaßen aus::
+The file created with the ``generic`` template looks like this::
 
     # A generic, single database configuration.
 
@@ -143,27 +138,27 @@ Die mit der ``generic``-Vorlage erstellte Datei sieht folgendermaßen aus::
     datefmt = %H:%M:%S
 
 ``%(here)s``
-    Ersetzungsvariable zum Erstellen absoluter Pfade
+    Replacement variable for creating absolute paths
 ``file_template``
-    Dies ist das Namensschema, das zum Generieren neuer Migrationsdateien
-    verwendet wird. Zu den verfügbaren Variablen gehören:
+    This is the naming scheme used to generate new migration files. The
+    available variables include:
 
     ``%%(rev)s``
-        Revision-ID
+        Revision ID
     ``%%(slug)s``
-        Verkürzte Revisionsnachricht
+        Abbreviated revision message
     ``%%(year)d, %%(month).2d, %%(day).2d, %%(hour).2d, %%(minute).2d, %%(second).2d``
-        Erstellungszeitpunkt
+        Creation time
 
-Erstellen eines Migrationsskripts
----------------------------------
+Create a migration script
+-------------------------
 
-Eine neue Revision kann erstellt werden mit::
+A new revision can be created with::
 
     $ alembic revision -m "create account table"
     Generating /path/to/yourproject/alembic/versions/1975ea83b712_create_account_table.py...done
 
-Die Datei ``1975ea83b712_create_account_table.py`` sieht dann folgendermaßen aus::
+Then the file ``1975ea83b712_create_account_table.py`` looks like this::
 
     """create account table
 
@@ -188,15 +183,15 @@ Die Datei ``1975ea83b712_create_account_table.py`` sieht dann folgendermaßen au
         pass
 
 ``down_revision``
-    Variable, die Alembic mitteilt, in welcher Reihenfolge die Migrationen
-    ausgeführt werden sollen, z.B.::
+    Variable that tells Alembic in which order the migrations should be carried
+    out, e.g.::
 
         # revision identifiers, used by Alembic.
         revision = 'ae1027a6acf'
         down_revision = '1975ea83b712'
 
 ``upgrade``, ``downgrade``
-    z.B.::
+    e.g.::
 
         def upgrade():
             op.create_table(
@@ -209,49 +204,47 @@ Die Datei ``1975ea83b712_create_account_table.py`` sieht dann folgendermaßen au
         def downgrade():
             op.drop_table('account')
 
-    ``create_table()`` und ``drop_table()`` sind Alembic-Direktiven. Einen
-    Überblick über alle Alembic-Direktiven erhaltet ihr in der `Operation Reference
+    ``create_table()`` and ``drop_table()`` are Alembic directives. You can get
+    an overview of all Alembic directives in the `Operation Reference
     <https://alembic.sqlalchemy.org/en/latest/ops.html#ops>`_.
 
-Ausführen von Migration
------------------------
+Run migration
+-------------
 
-Erste Migration::
+First migration::
 
     $ alembic upgrade head
     INFO  [alembic.context] Context class PostgresqlContext.
     INFO  [alembic.context] Will assume transactional DDL.
     INFO  [alembic.context] Running upgrade None -> 1975ea83b712
 
-Wir können auch direkt auf Revisionsnummern verweisen::
+We can also refer directly to revision numbers::
 
     $ alembic upgrade ae1
 
-Auch relative Migrationen können angestoßen werden::
+Relative migrations can also be initiated::
 
     $ alembic upgrade +2
 
-oder::
+or::
 
     $ alembic downgrade -1
 
-oder::
+or::
 
 $ alembic upgrade ae10+2
 
-Informationen anzeigen
-----------------------
+Display Information
+-------------------
 
-Aktuelle Version
-    ::
+Current version::
 
         $ alembic current
         INFO  [alembic.context] Context class PostgresqlContext.
         INFO  [alembic.context] Will assume transactional DDL.
         Current revision for postgresql://scott:XXXXX@localhost/test: 1975ea83b712 -> ae1027a6acf (head), Add a column
 
-Historie
-    ::
+History::
 
         $ alembic history --verbose
 
@@ -275,15 +268,15 @@ Historie
             Revises:
             Create Date: 2014-11-20 13:02:46.257104
 
-    Die Historie kann auch spezifischer angezeigt werden::
+    The history can also be displayed more specifically::
 
         $ alembic history -r1975ea:ae1027
 
-    oder::
+    or::
 
         $ alembic history -r-3:current
 
-    oder::
+    or::
 
         $ alembic history -r1975ea:
 

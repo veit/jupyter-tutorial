@@ -1,7 +1,7 @@
-Konfiguration
+Configuration
 =============
 
-JupyterHub-Konfiguration
+JupyterHub configuration
 ------------------------
 
 .. code-block:: console
@@ -14,10 +14,10 @@ JupyterHub-Konfiguration
    * :doc:`JupyterHub Configuration Basics <jupyterhub:getting-started/index>`
    * :doc:`JupyterHub Networking basics <jupyterhub:getting-started/networking-basics>`
 
-System-Service für JupyterHub
+System service for JupyterHub
 -----------------------------
 
-#. Ermitteln des *Python Virtual Environment*:
+#. Finding the Python virtual environment:
 
    .. code-block:: console
 
@@ -25,7 +25,7 @@ System-Service für JupyterHub
     $ pipenv --venv
     /srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W
 
-#. Konfigurieren von ``/etc/systemd/system/jupyterhub.service`` und
+#. Configuring ``/etc/systemd/system/jupyterhub.service`` and
    ``/lib/systemd/system/jupyterhub.service``:
 
    .. code-block:: ini
@@ -41,47 +41,45 @@ System-Service für JupyterHub
     [Install]
     WantedBy=multi-user.target
 
-#. Laden der Konfiguration
+#. Loading the configuration
 
-   mit:
+   with:
 
    .. code-block:: console
 
     # systemctl daemon-reload
 
-#. Der JupyterHub lässt sich verwalten mit:
+#. The JupyterHub can be managed with:
 
    .. code-block:: console
 
     # systemctl <start|stop|status> jupyterhub
 
-#. Um sicherzustellen, dass der Dienst auch bei einem Systemstart mitgeladen
-   wird, wird folgendes aufgerufen:
+#. To ensure that the service is also loaded when the system is started, the
+   following is called:
 
    .. code-block:: console
 
     $ systemctl enable jupyterhub.service
     systemctl enable jupyterhub.service
 
-TLS-Verschlüsselung
--------------------
+TLS encryption
+--------------
 
-Da JupyterHub eine Authentifizierung beinhaltet und die Ausführung von
-beliebigem Code erlaubt, sollte es nicht ohne SSL (HTTPS) ausgeführt werden.
-Dazu muss ein offizielles, vertrauenswürdiges SSL-Zertifikat erstellt werden.
-Nachdem ihr einen Schlüssel und ein Zertifikat erhalten und installiert habt,
-konfiguriert ihr jedoch nicht das JupyterHub selbst sondern den vorgeschalteten
-Apache Webserver.
+Since JupyterHub includes authentication and allows the execution of any code,
+it should not be executed without SSL (HTTPS). To do this, an official,
+trustworthy SSL certificate must be created. After you have received and
+installed a key and a certificate, you don’t configure the JupyterHub itself,
+but the upstream Apache web server.
 
-#. Hierfür werden zunächst die Zusatzmodule aktiviert mit
+#. For this purpose, the additional modules are first activated with
 
    .. code-block:: apacheconf
 
     # a2enmod ssl rewrite proxy proxy_http proxy_wstunnel
 
-#. Anschließend kann der VirtualHost in
-   ``/etc/apache2/sites-available/jupyter.cusy.io.conf`` konfiguriert
-   werden mit
+#. Then the VirtualHost can be configured in
+   ``/etc/apache2/sites-available/jupyter.cusy.io.conf``
 
    .. code-block:: console
 
@@ -125,13 +123,13 @@ Apache Webserver.
        CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
      </VirtualHost>
 
-#. Dieser VirtualHost wird aktiviert mit
+#. This VirtualHost is activated with
 
    .. code-block:: console
 
      # a2ensite jupyter.cusy.io.conf
 
-#. Schließlich wird der Status des Apache-Webserver überprüft mit
+#. Finally, the status of the Apache web server is checked with
 
    .. code-block:: console
 
@@ -149,25 +147,25 @@ Apache Webserver.
 
     Mar 27 06:25:01 jupyter.cusy.io systemd[1]: Reloaded The Apache HTTP Server.
 
-Cookie-Secret
+Cookie Secret
 -------------
 
-Das Cookie secret ist zum Verschlüsseln der Browser-Cookies, die zur
-Authentifizierung verwendet werden.
+The cookie secret is used to encrypt the browser cookies that are used for
+authentication.
 
-#. Das Cookie-Secret kann z.B. erstellt werden mit
+#. The cookie secret can e.g. be created with
 
    .. code-block:: console
 
     $ openssl rand -hex 32 > /srv/jupyterhub/venv/jupyterhub_cookie_secret
 
-#. Die Datei sollte weder für ``group`` noch für ``anonymous`` lesbar sein:
+#. The file should not be readable by either  ``group`` or ``anonymous``:
 
    .. code-block:: console
 
     $ chmod 600 /srv/jupyterhub/venv/jupyterhub_cookie_secret
 
-#. Schließlich wird es in die ``jupyterhub_config.py``-Datei eingetragen:
+#. Finally it will be entered in the ``jupyterhub_config.py`` file:
 
    .. code-block:: python
 
@@ -176,20 +174,18 @@ Authentifizierung verwendet werden.
 Proxy authentication token
 --------------------------
 
-Der Hub authentifiziert seine Anforderungen an den Proxy unter Verwendung
-eines geheimen Tokens, auf das sich der Hub und der Proxy einigen.
-Üblicherweise muss der Proxy authentication token nicht festgelegt werden,
-da der Hub selbst einen zufälligen Schlüssel generiert. Dies bedeutet, dass
-der Proxy jedes Mal neu gestartet werden muss sofern der Proxy nicht ein
-Unterprozess des Hubs ist.
+The hub authenticates its requests to the proxy using a secret token that the
+hub and proxy agree on. Usually, the proxy authentication token does not need to
+be set, as the hub itself generates a random key. This means that the proxy has
+to be restarted every time unless the proxy is a subprocess of the hub.
 
-#. Alternativ kann Der Wert z.B. generiert werden mit
+#. Alternatively, the value can e.g. can be generated with
 
    .. code-block:: console
 
     $ openssl rand -hex 32
 
-#. Anschließend kann er in der Konfigurationsdatei eingetragen werde, z.B. mit
+#. It can then be entered in the configuration file, e.g. with
 
    .. code-block:: python
 

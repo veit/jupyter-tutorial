@@ -1,40 +1,39 @@
 Jupyter Dashboards
 ==================
 
-Die `Jupyter Dashboards Layout Extension
-<https://jupyter-dashboards-layout.readthedocs.io/>`_ ist ein Add-On für
-Jupyter-Notebooks, womit Outputs (Text, Plots, Widgets usw.) in einem
-Gestaltungsraster oder in Berichtform angeordnet werden können. Sie speichert
-die Informationen zum Layout direkt im Notebook, sodass andere Nutzer dieser
-Erweiterung das Notebook ebenfalls im entsprechenden Notebook angezeigt
-bekommen. Beispiele für Dashboards findet ihr in `Jupyter Dashboards Demos
+The `Jupyter Dashboards Layout Extension
+<https://jupyter-dashboards-layout.readthedocs.io/>`_ is an add-on for Jupyter
+notebooks, with which outputs (text, plots, widgets, etc.) can be arranged in a
+design grid or in report form. It saves the information on the layout directly
+in the notebook so that other users of this extension can also see the notebook
+in the same layout. For examples of dashboards, see `Jupyter Dashboards Demos
 <https://github.com/jupyter/dashboards/tree/master/etc/notebooks>`_.
 
-Use Case
+Use case
 --------
 
-Die Jupyter Dashboards sollten folgendes Problem lösen:
+The Jupyter dashboards should solve the following problem:
 
-#. Alice erstellt ein Jupyter Notebook mit Plots und interaktiven Widgets.
-#. Alice ordnet die Notebook-Zellen in einem Raster- oder Report-Format an.
-#. Alice stellt das Dashboard auf einem Dashboard-Server bereit.
-#. Bob ruft das Dashboard auf dem `Jupyter Dashboards Server
-   <https://github.com/jupyter-attic/dashboards_server>`_ auf und interagiert
-   mit Alice Dashboard-Applikation.
-#. Alice aktualisiert ihr Jupyter Notebook und stellt das Dashboard anschließend
-   erneut auf dem Dashboard-Server bereit.
+#. Alice creates a Jupyter notebook with plots and interactive widgets.
+#. Alice arranges the notebook cells in a grid or report format.
+#. Alice provides the dashboard on a dashboard server.
+#. Bob calls up the dashboard on the `Jupyter Dashboards Server
+   <https://github.com/jupyter-attic/dashboards_server>`_ and interacts with
+   Alice Dashboard application.
+#. Alice updates her Jupyter notebook and then makes the dashboard available
+   again on the dashboard server.
 
 .. note::
-    Für die Schritte 3–5 werden zusätzlich `Jupyter Dashboards Bundler
-    <https://github.com/jupyter-attic/dashboards_bundlers>`_ und `Jupyter
+    For steps 3–5, `Jupyter Dashboards Bundler
+    <https://github.com/jupyter-attic/dashboards_bundlers>`_ and `Jupyter
     Dashboards Server <https://github.com/jupyter-attic/dashboards_server>`_
-    benötigt; beide sind jedoch mittlerweile in Status *retired*, sollten also
-    nicht weiter verwendet werden.
+    are also required; however, both are now retired and should not be used any
+    longer.
 
-    Die Roadmap für das :ref:`Voila-Gridstack-Template <voila-gridstack>` sieht
-    vor, die gesamte Spezifikation für die Jupyter-Dashboards zu unterstützen.
-    Aktuell ist das Voilà-Gridstack-Template jedoch noch in einem frühen
-    Entwicklungsstadium s.a. `And voilà!
+    The roadmap for the :ref:`Voila-Gridstack-Template <voila-gridstack>` is to
+    support the entire specification for the Jupyter dashboards. Currently,
+    however, the Voilà gridstack template is still in an early stage of
+    development, see also `And voilà!
     <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
 
 .. toctree::

@@ -1,9 +1,9 @@
 ``nbextensions``
 ================
 
-:doc:`Jupyter Notebook Extensions <jupyter-contrib-nbextensions:index>` enthält
-eine Sammlung von Erweiterungen. Diese sind größtenteils in Javascript
-geschrieben und werden lokal in eurem Browser geladen.
+:doc:`Jupyter Notebook Extensions <jupyter-contrib-nbextensions:index>` contains
+a collection of extensions. These are mostly written in Javascript and are
+loaded locally in your browser.
 
 .. seealso::
 

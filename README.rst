@@ -1,5 +1,5 @@
-Schnelleinstieg
-===============
+Quick start
+===========
 
 |Contributors| |License| |Docs| |Pyup|
 
@@ -17,7 +17,7 @@ Schnelleinstieg
 Installation
 ------------
 
-#. Herunterladen und Auspacken:
+#. Download and unpack:
 
    .. code-block:: console
 
@@ -28,11 +28,11 @@ Installation
        creating: jupyter-tutorial-master/
     …
 
-#. Pipenv installieren
+#. Install Pipenv
 
-   Siehe :doc:`Pipenv installieren </productive/envs/pipenv/install>`
+   Pleas refer :doc:`Install Pipenv </productive/envs/pipenv/install>`
 
-#. Python-Pakete installieren:
+#. Install Python packages:
 
    .. code-block:: console
 
@@ -46,8 +46,9 @@ Installation
         Enabling notebook extension highlighter/highlighter...
               - Validating: OK
 
-#. Javascript- und CSS-Dateien der `Jupyter Notebook Extensions
-   <https://jupyter-contrib-nbextensions.readthedocs.io/>`_ installieren
+#. Install the `Jupyter Notebook Extensions
+   <https://jupyter-contrib-nbextensions.readthedocs.io/>` Javascript and CSS
+   files:
 
    .. code-block:: console
 
@@ -63,7 +64,7 @@ Installation
     Enabling notebook extension latex_envs/latex_envs...
           - Validating: OK
 
-#. HTML-Dokumentation erstellen:
+#. Create HTML documentation:
 
    .. code-block:: console
 
@@ -72,17 +73,17 @@ Installation
     $ bin/python -m pip install -r docs/constraints.txt
     $ bin/sphinx-build -ab html docs/ docs/_build/
 
-#. PDF erstellen:
+#. Create a PDF:
 
-   Für die Erstellung von PDFs benötigt ihr weitere Pakete.
+   For the creation of a PDF file you need additional packages.
 
-   Für Debian/Ubuntu erhaltet ihr diese mit:
+   For Debian/Ubuntu you get this with:
 
    .. code-block:: console
 
     $ apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
 
-   oder für macOS mit:
+   or for macOS with:
 
    .. code-block:: console
 
@@ -95,7 +96,7 @@ Installation
     mktexlsr: Updating /usr/local/texlive/2020/texmf-dist/ls-R...
     mktexlsr: Done.
 
-   Anschließend könnt ihr ein PDF generieren mit:
+   Then you can generate a PDF with:
 
    .. code-block:: console
 
@@ -106,9 +107,9 @@ Installation
     Run 'make' in that directory to run these through (pdf)latex
     …
 
-   Das PDF findet ihr anschließend in ``docs/_build/latex/jupytertutorial.pdf``.
+   You can find the PDF at ``docs/_build/latex/jupytertutorial.pdf``.
 
-Folge uns
+Follow us
 ---------
 
 * `GitHub <https://github.com/veit/jupyter-tutorial>`_
@@ -118,9 +119,9 @@ Folge uns
 Pull-Requests
 -------------
 
-Wenn ihr Vorschläge für Verbesserungen und Ergänzungen habt, empfehle ich euch,
-einen `Fork <https://github.com/veit/jupyter-tutorial/fork>`_ meines
-`GitHub-Repository <https://github.com/veit/jupyter-tutorial/>`_ zu erstellen
-und darin eure Änderungen vorzunehmen. Gerne dürft ihr auch einen *Pull Request*
-stellen. Sofern die darin enthaltenen Änderungen klein und atomar sind, schaue ich
-mir eure Vorschläge gerne an.
+If you have suggestions for improvements and additions, I recommend that you
+create a `Fork <https://github.com/veit/jupyter-tutorial/fork>`_ of my `GitHub
+Repository <https://github.com/veit/jupyter-tutorial/>`_ and make your changes
+there. . You are also welcome to make a *pull request*. If the changes
+contained therein are small and atomic, I’ll be happy to look at your
+suggestions.

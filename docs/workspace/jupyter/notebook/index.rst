@@ -11,22 +11,21 @@ Notebook
     shortcuts
     config
 
-Einführung
-----------
+Introduction
+------------
 
-Jupyter Notebooks erweitern den konsolenbasierten Ansatz für *interactive
-Computing* um eine webbasierte Anwendung, mit der der gesamte Prozess erfasst
-werden kann: vom Entwickeln zum Ausführen des Codes bis hin zum Dokumentieren
-und Präsentieren der Ergebnisse. Dabei kombinieren Jupyter-Notebooks drei
-verschiedene Komponenten:
+Jupyter Notebooks extend the console-based approach to interactive computing
+with a web-based application, with which the entire process can be recorded:
+from developing and executing the code to documenting and presenting the
+results. Jupyter notebooks combine three different components:
 
 Interactive Computing Protocol:
-    offenes Netzwerkprotokoll basierend auf JSON-Daten über `ZMQ
-    <http://zeromq.org/>`_ und `WebSockets
-    <https://de.wikipedia.org/wiki/WebSocket>`_.
+    Open network protocol based on JSON data via `ZMQ
+    <http://zeromq.org/>`_ and `WebSockets
+    <https://en.wikipedia.org/wiki/WebSocket>`_.
 Notebook Document Format:
-    offenes, auf JSON basierendes Dokumentenformat mit vollständigen
-    Aufzeichnungen der Sitzungen des Benutzers und des enthalten Code.
+    Open JSON-based document format with full records of the user’s sessions and
+    the code contained therein.
 Kernel:
-    Prozesse, die interaktiven Code in einer bestimmten Programmiersprache
-    ausführen und die Ausgabe an den Benutzer zurückgeben.
+    Processes that execute interactive code in a particular programming language
+    and return output to the user.

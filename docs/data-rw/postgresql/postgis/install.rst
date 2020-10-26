@@ -1,43 +1,43 @@
-PostGIS installieren
-====================
+Install PostGIS
+===============
 
-Für Ubuntu 20.04 und  18.04 sowie Debian 10 könnt Ihr PostGIS einfach
-installieren mit:
+For Ubuntu 20.04 and 18.04 as well as Debian 10 you can simply install PostGIS
+with:
 
-code-block:: console
+.. code-block:: console
 
     $ sudo apt install postgis postgresql-12-postgis-3
 
-Anschließend könnt Ihr PostGIS aktivieren.
+Then you can activate PostGIS.
 
-#. Wechseln zum PostgreSQL-User:
+#. Switch to the PostgreSQL user:
 
    .. code-block:: console
 
     $ sudo -i -u postgres
 
-#. Testuser und Datenbank erstellen:
+#. Create test user and database:
 
    .. code-block:: console
 
     $ createuser postgis
     $ createdb postgis_db -O postgis
 
-#. Verbindung zur Datenbank herstellen:
+#. Establish a connection to the database:
 
    .. code-block:: console
 
     $ psql -d postgis_db
     psql (11.5 (Debian 11.5-3.pgdg100 + 1))
 
-#. Aktivieren der PostGIS-Erweiterung in der Datenbank:
+#. Activate the PostGIS extension in the database:
 
    .. code-block:: console
 
     ppostgis_db = # CREATE EXTENSION postgis;
     CREATE EXTENSION
 
-#. Überprüfen, ob PostGIS funktioniert:
+#. Check that PostGIS is working:
 
    .. code-block:: console
 
