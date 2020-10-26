@@ -94,7 +94,7 @@ voila-debug
 -----------
 
 `voila-debug <https://github.com/QuantStack/voila-debug>`_ ist ein Template zum
-Anzeigen von Debug-Informationen bei der Arbeit an Voila-Anwendungen.
+Anzeigen von Debug-Informationen bei der Arbeit an Voilà-Anwendungen.
 
 Installation
 ~~~~~~~~~~~~
@@ -106,7 +106,7 @@ Installation
 Verwendung
 ~~~~~~~~~~
 
-Ihr könnt das Template :doc:debug.ipynb` nutzen mit:
+Ihr könnt das Template :doc:`debug.ipynb` nutzen mit:
 
 .. code-block:: console
 
