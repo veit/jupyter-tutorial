@@ -1,7 +1,7 @@
 Quick start
 ===========
 
-|Contributors| |License| |Docs| |Pyup|
+|Contributors| |License| |Docs| |Pyup| |DOI|
 
 .. |Contributors| image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
    :target: https://github.com/veit/jupyter-tutorial/graphs/contributors
@@ -11,6 +11,8 @@ Quick start
    :target: https://jupyter-tutorial.readthedocs.io/de/latest/
 .. |Pyup| image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
    :target: https://pyup.io/repos/github/veit/jupyter-tutorial/
+.. |DOI| image:: https://zenodo.org/badge/doi/10.5281/zenodo.4147287.svg
+   :target: https://zenodo.org/badge/latestdoi/199994535
 
 .. first-steps::
 
