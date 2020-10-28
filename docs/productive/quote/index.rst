@@ -23,6 +23,49 @@ cited. Colleagues will hardly be able to cite your software directly if you send
 them the software as an attachment to an email. Even a download link is not
 really useful here. But how can authors make their software citable?
 
+`Digital object identifier (DOI)
+<https://en.wikipedia.org/wiki/Digital_object_identifier>`_ are commonly used in
+science for citations. `Zenodo <https://zenodo.org/>`_ enables software to be
+archived and a DOI to be provided for it. In the following I will show which
+steps are required on the example of the Jupyter tutorial:
+
+#. If you haven’t already, `create an account on Zenodo
+   <https://zenodo.org/signup/>`_, preferably with GitHub.
+
+#. Now select the repository that you want to archive:
+
+   .. figure:: zenodo-github.png
+      :alt: Enable repositories for Zenodo
+
+#. Check whether Zenodo has created a webhook in your repository for the
+   *Releases* event:
+
+   .. figure:: zenodo-webhook.png
+      :alt: Zenodo webhook
+
+#. Create a new release:
+
+   .. figure:: github-release.png
+      :alt: Github releases
+
+#. Check that the Doi was created correctly:
+
+   .. figure:: zenodo-release.png
+      :alt: Zenodo release
+
+#. Finally, you can include a badge in the readme of your software, e.g.:
+
+   Markdown:
+    .. code-block:: md
+
+        [![DOI](https://zenodo.org/badge/199994535.svg)](https://zenodo.org/badge/latestdoi/199994535)
+
+   reStructedText:
+    .. code-block:: rst
+
+        .. image:: https://zenodo.org/badge/199994535.svg
+           :target: https://zenodo.org/badge/latestdoi/199994535
+
 The `FORCE11 <https://www.force11.org/group/software-citation-working-group>`_
 working group has published a paper in which the principles of scientific
 software citation are presented: `FORCE11 Software Citation Working Group
