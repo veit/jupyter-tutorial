@@ -1996,7 +1996,7 @@
                 "sha256:ce82cc06588e5cbc2a7df3c8a9c778f2cb722f56835a23a68b5a7264726bb00c",
                 "sha256:dea0ba7fe6f9461d244679efa968d215ea1f989b9c1957d7f10c21e5c7c09ad6"
             ],
-            "version": "==3.0"
+            "version": "==3.2"
         },
         "lazy": {
             "hashes": [
