@@ -4,10 +4,12 @@ Introduction
 Status
 ------
 
-|Contributors| |License| |Docs| |Pyup| |DOI|
+|Contributors| |Commits| |License| |Docs| |Pyup| |DOI|
 
 .. |Contributors| image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
    :target: https://github.com/veit/jupyter-tutorial/graphs/contributors
+.. |Commits| image::  https://raster.shields.io/github/commit-activity/y/veit/jupyter-tutorial
+   :target: https://github.com/veit/jupyter-tutorial/commits
 .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
    :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
 .. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
