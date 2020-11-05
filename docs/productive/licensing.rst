@@ -73,8 +73,8 @@ On `GitHub <http://github.com/>`_ you can have an open source license created in
 your repository.
 
 #. Go to the main page of your repository.
-#. Click on *Create new file* and then enter ``LICENSE`` or ``LICENSE.md``as the
-   file name.
+#. Click on *Create new file* and then enter ``LICENSE`` or ``LICENSE.md`` as
+   the file name.
 #. Then you can click on *Choose a license template*.
 #. Now you can select the open source license that is suitable for your
    repository.
