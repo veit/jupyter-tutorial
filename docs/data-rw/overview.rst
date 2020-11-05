@@ -38,3 +38,9 @@ Geodata
     projections and coordinate transformations.
 `pyModis  <http://www.pymodis.org/>`_
     Collection of Python scripts for downloading and mosaicking MODIS data.
+`Arcpy <https://pro.arcgis.com/de/pro-app/arcpy/get-started/what-is-arcpy-.htm>`_
+    is used by Esri ArcGIS to perform geographic data analysis, data conversion,
+    data management, and map automation.
+`RSGISLib <https://www.rsgislib.org/>`_
+    or *The Remote Sensing and GIS Software Library* is a set of remote sensing
+    tools for raster processing and analysis.
