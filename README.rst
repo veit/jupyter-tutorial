@@ -8,7 +8,7 @@ Quick start
 .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
    :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
 .. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
-   :target: https://jupyter-tutorial.readthedocs.io/de/latest/
+   :target: https://jupyter-tutorial.readthedocs.io/en/latest/
 .. |Pyup| image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
    :target: https://pyup.io/repos/github/veit/jupyter-tutorial/
 .. |DOI| image:: https://zenodo.org/badge/doi/10.5281/zenodo.4147287.svg
