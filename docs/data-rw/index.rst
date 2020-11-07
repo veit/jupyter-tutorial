@@ -15,6 +15,7 @@ more detail:
 * :doc:`DVC <../productive/dvc/index>`
 
 .. seealso::
+    `pandas I/O API <https://pandas.pydata.org/docs/user_guide/io.html>`_
     `Scrapy <https://scrapy.org/>`_
         Framework for extracting data from websites as JSON, CSV or XML files.
     `Pattern <https://github.com/clips/pattern>`_
