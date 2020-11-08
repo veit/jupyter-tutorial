@@ -9,6 +9,7 @@ validation with Python.
 
     * `Data Cleaning 101 <https://github.com/kjam/data-cleaning-101>`_ by
       Katharine Jarmul
+    * `Great Expectations <https://greatexpectations.io/>`_
 
 .. toctree::
     :hidden:
