@@ -1,4 +1,4 @@
-Sphinx==3.2.1
+Sphinx==3.3.0
 jupyter-client==6.1.7
 notebook==6.1.4
 jupyter==1.0.0
