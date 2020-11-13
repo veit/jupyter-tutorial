@@ -21,7 +21,7 @@ Overview
 | Human readability     | \+    | Basic YAML is really easy to read, however YAML’s     |
 |                       |       | complexity can confuse a reader.                      |
 +-----------------------+-------+-------------------------------------------------------+
-| Speed                 | --    | YAML is very slow to serialise and deserialise.       |
+| Speed                 | -\-   | YAML is very slow to serialise and deserialise.       |
 +-----------------------+-------+-------------------------------------------------------+
 | File size             | +-    | yaml is in the medium range similar to :doc:`JSON`    |
 |                       |       | and :doc:`toml`.                                      |

@@ -16,7 +16,7 @@ Overview
 | Language support      | ++    | The protobuf format is well supported by many         |
 |                       |       | programming languages.                                |
 +-----------------------+-------+-------------------------------------------------------+
-| Human readability     | --    | Protobuf ist not designed to be human readable.       |
+| Human readability     | -\-   | Protobuf ist not designed to be human readable.       |
 +-----------------------+-------+-------------------------------------------------------+
 | Speed                 | ++    | Protobuf is very fast, especially in C++.             |
 +-----------------------+-------+-------------------------------------------------------+
