@@ -24,7 +24,7 @@ Overview
 | Speed                 | \+    | XML is quite fast, although typically slower to parse |
 |                       |       | than JSON.                                            |
 +-----------------------+-------+-------------------------------------------------------+
-| File size             | --    | XML has the largest file size in comparison.          |
+| File size             | -\-   | XML has the largest file size in comparison.          |
 |                       |       |                                                       |
 +-----------------------+-------+-------------------------------------------------------+
 

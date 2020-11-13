@@ -5,15 +5,15 @@ Overview
 --------
 
 +-----------------------+-------+-------------------------------------------------------+
-| Data structure support| --    | CSV is used to store tabular data, but unlike other   |
+| Data structure support| -\-   | CSV is used to store tabular data, but unlike other   |
 |                       |       | serialisation formats reviewed here, it’s not suitable|
 |                       |       | for (nested) objects.                                 |
 +-----------------------+-------+-------------------------------------------------------+
-| Standardisation       | --    | CSV is not well standardised: neither the encoding is |
+| Standardisation       | -\-   | CSV is not well standardised: neither the encoding is |
 |                       |       | defined nor the separation of the cell contents       |
 |                       |       | (comma, semicolon etc.).                              |
 +-----------------------+-------+-------------------------------------------------------+
-| Schema IDL            | --    | No                                                    |
+| Schema IDL            | -\-   | No                                                    |
 +-----------------------+-------+-------------------------------------------------------+
 | Language support      | ++    | The CSV format is well supported by almost every      |
 |                       |       | programming language. A `csv`_ module is included in  |
@@ -30,7 +30,7 @@ Overview
 |                       |       | cases it will be difficult to identify the            |
 |                       |       | corresponding columns.                                |
 +-----------------------+-------+-------------------------------------------------------+
-| Speed                 | +     | CSV is very fast to serialise and deserialise.        |
+| Speed                 | \+    | CSV is very fast to serialise and deserialise.        |
 +-----------------------+-------+-------------------------------------------------------+
 | File size             | ++    | Only :doc:`protobuf` should be more compact.          |
 |                       |       |                                                       |
