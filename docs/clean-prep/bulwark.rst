@@ -1,5 +1,5 @@
-Bulwark
-=======
+Pandas DataFrame validation with Bulwark
+========================================
 
 `Bulwark <https://bulwark.readthedocs.io/en/stable/index.html>`_ is a package
 for property-based testing of pandas dataframes. The project was heavily
