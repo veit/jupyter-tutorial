@@ -3,9 +3,8 @@ Cite data
 
 The DataCite Metadata Working Group published the DataCite Metadata Schema
 Documentation for the publication and citation of research data in 2019:
-`https://schema.datacite.org/meta/kernel-4.3/
-<https://doi.org/10.14454/7xq3-zf69>`_ together with a XSD (XML Schema
-Definition): `metadata.xsd
+`DataCite Metadata Schema 4.3 <https://doi.org/10.14454/7xq3-zf69>`_ together
+with a XSD (XML Schema Definition): `metadata.xsd
 <https://schema.datacite.org/meta/kernel-4.3/metadata.xsd>`_.
 
 A simple datacite example can look like this:
