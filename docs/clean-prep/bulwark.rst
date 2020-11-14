@@ -3,7 +3,7 @@ Bulwark
 
 `Bulwark <https://bulwark.readthedocs.io/en/stable/index.html>`_ is a package
 for property-based testing of pandas dataframes. The project was heavily
-influenced by the no-longer-supported :doc:`engarde.ipynb` library.
+influenced by the no-longer-supported :doc:`Engarde <engarde>` library.
 
 Installation
 ------------
