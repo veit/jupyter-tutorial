@@ -43,5 +43,5 @@ Example
     * `Validator <http://validator.w3.org/>`_
     * `The XML FAQ <http://xml.silmaril.ie/>`_
 
-.. _ `XML schema`: https://www.w3.org/TR/xmlschema-0/
+.. _`XML schema`: https://www.w3.org/TR/xmlschema-0/
 .. _`RELAX NG`: https://relaxng.org/
