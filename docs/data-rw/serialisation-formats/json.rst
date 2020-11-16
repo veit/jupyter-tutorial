@@ -38,7 +38,8 @@ Overview
 |                       |       | gives some hints.                                     |
 +-----------------------+-------+-------------------------------------------------------+
 | Schema IDL            | +-    | Partly with `JSON Schema Proposal`_, `JSON Encoding   |
-|                       |       | Rules (JER)`_, `Kwalify`_, `Rx`_ or `JSON-LD`_.       |
+|                       |       | Rules (JER)`_, `Kwalify`_, `Rx`_, `JSON-LD`_or        |
+|                       |       | `JMESPath`_.                                          |
 +-----------------------+-------+-------------------------------------------------------+
 | Language support      | ++    | The JSON format is very well supported by almost every|
 |                       |       | programming language.                                 |
@@ -131,3 +132,4 @@ the different programming languages.
 .. _`Kwalify`: http://www.kuwata-lab.com/kwalify/
 .. _`Rx`: http://rx.codesimply.com/
 .. _`JSON-LD`: https://json-ld.org/#
+.. _`JMESPath`: https://jmespath.org/
