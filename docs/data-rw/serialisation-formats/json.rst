@@ -38,7 +38,7 @@ Overview
 |                       |       | gives some hints.                                     |
 +-----------------------+-------+-------------------------------------------------------+
 | Schema IDL            | +-    | Partly with `JSON Schema Proposal`_, `JSON Encoding   |
-|                       |       | Rules (JER)`_, `Kwalify`_, `Rx`_, `JSON-LD`_or        |
+|                       |       | Rules (JER)`_, `Kwalify`_, `Rx`_, `JSON-LD`_ or       |
 |                       |       | `JMESPath`_.                                          |
 +-----------------------+-------+-------------------------------------------------------+
 | Language support      | ++    | The JSON format is very well supported by almost every|
@@ -123,7 +123,7 @@ the different programming languages.
     * `Home <https://www.json.org/json-en.html>`_
     * `RFC 8259 <https://tools.ietf.org/html/rfc8259>`_
 
-.. _`JSON standard`: https://www.json.org/json-en.html
+.. _`standard`: https://www.json.org/json-en.html
 .. _`RFC 7159`: https://tools.ietf.org/html/rfc7159
 .. _`RFC 7158 #9`: https://www.ietf.org/rfc/rfc7158.html#section-9
 .. _`JSON_Checker`: http://www.json.org/JSON_checker/
@@ -131,5 +131,5 @@ the different programming languages.
 .. _`JSON Encoding Rules (JER)`: https://www.itu.int/rec/T-REC-X.697-201710-I/
 .. _`Kwalify`: http://www.kuwata-lab.com/kwalify/
 .. _`Rx`: http://rx.codesimply.com/
-.. _`JSON-LD`: https://json-ld.org/#
+.. _`JSON-LD`: https://json-ld.org#
 .. _`JMESPath`: https://jmespath.org/
