@@ -18,6 +18,10 @@ Undo changes
     accepts changes from remote but does not update branches.
 ``$ git fetch --prune [remote]``
     Remote refs are removed when they are removed from the remote repository.
+``$ git commit --amend``
+    updates and replaces the most recent commit with a new commit that combines
+    any staged changes with the contents of the previous commit. With nothing
+    currently staged, this just rewrites the previous commit message.
 ``$ git pull [remote]``
     pulls changes from the remote repository and merges the current branch with
     the upstream.
