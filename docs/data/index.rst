@@ -1,5 +1,5 @@
-Read and write data
-===================
+Read, persist and provide data
+==============================
 
 You can get an overview of public repositories with research data e.g. in the
 `Registry of research data repositories (re3data) <https://www.re3data.org/>`_.
@@ -45,4 +45,5 @@ Python packages in Data  :doc:`../clean-prep/index`.
     intake/index
     postgresql/index
     nosql/index
+    fastapi/index
     glossary
