@@ -10,7 +10,7 @@ Overview
 |                       |       | floats and dates. YAML even supports references and   |
 |                       |       | external data.                                        |
 +-----------------------+-------+-------------------------------------------------------+
-| Standardisation       | \+    | YAML is a strongly tpyed formal standard, bit it’s    |
+| Standardisation       | \+    | YAML is a strongly tpyed formal standard, but it’s    |
 |                       |       | hard to find schema validators.                       |
 +-----------------------+-------+-------------------------------------------------------+
 | Schema-IDL            | +-    | Partly with `Kwalify`_, `Rx`_ and built-in language   |
