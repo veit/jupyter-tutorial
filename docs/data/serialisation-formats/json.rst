@@ -16,7 +16,8 @@ Overview
 |                       |       | comments and you have to work arround e.g. with a     |
 |                       |       | ``__comment__`` key/value pair.                       |
 +-----------------------+-------+-------------------------------------------------------+
-| Standardisation       | \+    | JSON has a formal strongly typed `standard`_.         |
+| Standardisation       | \+    | JSON has a formal strongly typed `standard`_ (see     |
+|                       |       | also `RFC 8259`_).                                    |
 |                       |       | However, JSON data also contains some pitfalls due to |
 |                       |       | the ambiguity of the JSON specifications:             |
 |                       |       |                                                       |
@@ -40,6 +41,9 @@ Overview
 | Schema IDL            | +-    | Partly with `JSON Schema Proposal`_, `JSON Encoding   |
 |                       |       | Rules (JER)`_, `Kwalify`_, `Rx`_, `JSON-LD`_ or       |
 |                       |       | `JMESPath`_.                                          |
+|                       |       |                                                       |
+|                       |       | After all, there are many different `validators`_ are |
+|                       |       | available.                                            |
 +-----------------------+-------+-------------------------------------------------------+
 | Language support      | ++    | The JSON format is very well supported by almost every|
 |                       |       | programming language.                                 |
@@ -110,20 +114,8 @@ Response of the :ref:`OSM-Nomination-API <Example-OSM-Nomination-API>`
         }
     ]
 
-JSON Schema
------------
-
-The JSON schema defines the structure of JSON data that can be used for
-validation. Many different `validators
-<https://json-schema.org/implementations.html#validators>`_ are available for
-the different programming languages.
-
-.. seealso::
-
-    * `Home <https://www.json.org/json-en.html>`_
-    * `RFC 8259 <https://tools.ietf.org/html/rfc8259>`_
-
 .. _`standard`: https://www.json.org/json-en.html
+.. _`RFC 8259`: https://tools.ietf.org/html/rfc8259
 .. _`RFC 7159`: https://tools.ietf.org/html/rfc7159
 .. _`RFC 7158 #9`: https://www.ietf.org/rfc/rfc7158.html#section-9
 .. _`JSON_Checker`: http://www.json.org/JSON_checker/
@@ -133,3 +125,4 @@ the different programming languages.
 .. _`Rx`: http://rx.codesimply.com/
 .. _`JSON-LD`: https://json-ld.org#
 .. _`JMESPath`: https://jmespath.org/
+.. _`validators`: https://json-schema.org/implementations.html#validators
