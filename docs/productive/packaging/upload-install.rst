@@ -183,3 +183,43 @@ Finally, you can publish your package on PyPI:
 .. seealso::
     * `PyPI Release Checklist
       <https://cookiecutter-namespace-template.readthedocs.io/en/latest/pypi-release-checklist.html>`_
+
+GitHub Action
+-------------
+
+You can also create a GitHub action, which creates a package and uploads it to
+PyPI at every time a release is created. Such a ``.github/workflows/pypi.yml``
+file could look like this:
+
+.. code-block:: yaml
+
+    name: pypi
+    on:
+      release:
+        types: [created]
+
+    jobs:
+      package-and-deploy:
+
+        runs-on: ubuntu-latest
+
+        steps:
+          - uses: actions/checkout@v2
+          - name: Set up Python
+          - uses: actions/setup-python@v2
+            with:
+              python-version: 3.7
+          - name: Install dependencies
+            run: |
+              python -m pip install --upgrade pip setuptools wheel twine
+          - name: Build and publish
+            env:
+              TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+              TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+            run: |
+              python setup.py sdist bdist_wheel
+              twine upload dist/*
+
+.. seealso::
+
+   * `GitHub Actions <https://docs.github.com/en/free-pro-team@latest/actions>`_
