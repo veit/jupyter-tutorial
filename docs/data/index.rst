@@ -7,13 +7,12 @@ You can get an overview of public repositories with research data e.g. in the
 In addition to specific Python libraries for accessing :ref:`remote storage
 media </data/overview.rst#remote-storage-media>` and
 :ref:`/data/overview.rst#geodata`, we will introduce you to different
-:doc:`serialisation formats <serialisation-formats/index>` and four tools in
-more detail:
+:doc:`serialisation formats <serialisation-formats/index>` and three tools in
+more detail that make data accessible:
 
 * :doc:`requests/index`
 * :doc:`beautifulsoup`
 * :doc:`intake/index`
-* :doc:`DVC <../productive/dvc/index>`
 
 .. seealso::
     `pandas I/O API <https://pandas.pydata.org/docs/user_guide/io.html>`_
@@ -27,6 +26,11 @@ more detail:
         network analysis.
     `Web Scraping Reference <https://blog.hartleybrody.com/web-scraping-cheat-sheet/#javascript-heavy-websites>`_
         Overview of web scraping with Python.
+
+
+With :doc:`DVC <../productive/dvc/index>` we present you a tool that allows data
+provenance, i.e. the traceability of the origin of the data and the way they are
+created.
 
 We introduce :doc:`postgresql/index`, :doc:`postgresql/sqlalchemy` and
 :doc:`postgresql/postgis/index` for storing relational data, Python objects and
