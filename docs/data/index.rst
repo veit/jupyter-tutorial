@@ -28,16 +28,21 @@ more detail that make data accessible:
         Overview of web scraping with Python.
 
 
-With :doc:`DVC <../productive/dvc/index>` we present you a tool that allows data
-provenance, i.e. the traceability of the origin of the data and the way they are
-created.
-
 We introduce :doc:`postgresql/index`, :doc:`postgresql/sqlalchemy` and
 :doc:`postgresql/postgis/index` for storing relational data, Python objects and
 geodata.
 
-To clean up and prepare the data, we present you some best practices and helpful
-Python packages in Data  :doc:`../clean-prep/index`.
+For the storage of other data types we introduce you to different
+:doc:`NoSQL databases and concepts <nosql/index>`.
+
+With :doc:`fastapi/index` we show you a way to provide data with a REST server.
+
+With :doc:`DVC <../productive/dvc/index>` we present you a tool that allows data
+provenance, i.e. the traceability of the origin of the data and the way they are
+created.
+
+Finally in the next chapter you will learn some good practices and helpful
+Python packages to :doc:`clean up and validate data <../clean-prep/index>`.
 
 .. toctree::
     :hidden:
