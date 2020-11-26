@@ -7,7 +7,8 @@ You can get an overview of public repositories with research data e.g. in the
 In addition to specific Python libraries for accessing :ref:`remote storage
 media </data/overview.rst#remote-storage-media>` and
 :ref:`/data/overview.rst#geodata`, we will introduce you to different
-:doc:`serialisation-formats` and four tools in more detail:
+:doc:`serialisation formats <serialisation-formats/index>` and four tools in
+more detail:
 
 * :doc:`requests/index`
 * :doc:`beautifulsoup`
