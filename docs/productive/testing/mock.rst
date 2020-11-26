@@ -58,4 +58,4 @@ For older Python versions it can be installed with
 
 .. seealso::
    With `responses <https://github.com/getsentry/responses>`_ you can create
-   mock objects for the :doc:`/data-rw/requests/index` library.
+   mock objects for the :doc:`/data/requests/index` library.
