@@ -35,7 +35,7 @@ Bulwark comes with checks for many of the common assumptions.
 Decorators
 ~~~~~~~~~~
 
-For each check in ```check.py`` ``bulwark.decorators`` creates decorators, e.g.:
+For each check in ``check.py`` ``bulwark.decorators`` creates decorators, e.g.:
 
 .. code-block:: python
 
