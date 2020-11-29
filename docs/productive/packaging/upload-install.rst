@@ -195,8 +195,9 @@ file could look like this:
 
     name: pypi
     on:
-      release:
-        types: [created]
+      push:
+        tags:
+        - '*'
 
     jobs:
       package-and-deploy:
