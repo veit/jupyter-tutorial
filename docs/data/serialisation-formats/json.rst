@@ -42,7 +42,7 @@ Overview
 |                       |       | Rules (JER)`_, `Kwalify`_, `Rx`_, `JSON-LD`_ or       |
 |                       |       | `JMESPath`_.                                          |
 |                       |       |                                                       |
-|                       |       | After all, there are many different `validators`_ are |
+|                       |       | After all, there are many different `validators`_     |
 |                       |       | available.                                            |
 +-----------------------+-------+-------------------------------------------------------+
 | Language support      | ++    | The JSON format is very well supported by almost every|
