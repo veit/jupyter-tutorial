@@ -8,6 +8,10 @@ Today, IPython is not only an interactive interface to Python, but also offers a
 number of useful syntactic additions for the language. In addition, IPython is
 closely related to the `Jupyter project <https://jupyter.org/>`_.
 
+.. seealso::
+    * `Miki Tebeka - IPython: The Productivity Booster
+      <https://www.youtube.com/watch?v=Zmo2ZN1SJ_Q>`_
+
 .. toctree::
     :hidden:
     :titlesonly:
