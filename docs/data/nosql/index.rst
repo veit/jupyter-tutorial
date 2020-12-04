@@ -30,6 +30,6 @@ Major concepts and technologies of NoSQL databases are
 * :term:`CAP theorem`
 * :term:`Eventual consistency` and :term:`BASE`
 * :term:`Consistent hash function`
-* :term:`MVCC – Multiversion RCncurrency Control`
+* :term:`MVCC – Multiversion Concurrency Control`
 * :term:`Vector clock`
 * :term:`Paxos`
