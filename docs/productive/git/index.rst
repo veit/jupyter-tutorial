@@ -34,4 +34,5 @@ Notebooks <first-steps>` can be  managed with Git, and on the other hand
     reverting
     best-practices
     workflows/index
+    git-big-picture
     glossary
