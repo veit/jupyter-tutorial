@@ -104,7 +104,7 @@ will create the following section in your ``~/.gitconfig`` file:
     $ git-big-picture -g
     fatal: Options '-g | --graphviz' and '-p | --processed' are incompatible with other output options.
 
-   In this case you must also specify the ``-V`` or ``--no-viewer`` option:
+  In this case you must also specify the ``-V`` or ``--no-viewer`` option:
 
   .. code-block:: console
 
