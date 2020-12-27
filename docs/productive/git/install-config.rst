@@ -150,11 +150,11 @@ select the standard Windows console window.
     `dotfiles <https://github.com/veit/dotfiles/>`_ repository: `.gitconfig
     <https://github.com/veit/dotfiles/blob/master/.gitconfig>`_.
 
-The ``.gitgnore`` file
-~~~~~~~~~~~~~~~~~~~~~~
+The ``.gitignore`` file
+~~~~~~~~~~~~~~~~~~~~~~~
 
-In the ``.gitgnore`` file you can exclude files from version management. A
-typical ``.gitgnore`` file can look like this:
+In the ``.gitignore`` file you can exclude files from version management. A
+typical ``.gitignore`` file can look like this:
 
 .. code-block:: ini
 
