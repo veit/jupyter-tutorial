@@ -51,6 +51,7 @@ ipycanvas = "*"
 plotnine = {extras = ["all"],version = "*"}
 ipylayout = "*"
 pre-commit = "*"
+git-big-picture = "*"
 
 [dev-packages]
 
