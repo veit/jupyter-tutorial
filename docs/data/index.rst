@@ -15,6 +15,7 @@ You can get an overview of public repositories with research data e.g. in
 * `UNICEF Data <https://data.unicef.org/>`_
 * `IATI Registry <https://www.iatiregistry.org/>`_
 * `World Bank Open Data <https://data.worldbank.org/>`_
+* `Open Data Inception <https://opendatainception.io/>`_
 * `EU Open Data Portal Data <http://open-data.europa.eu/en/data/>`_
 * `GovData.de <https://www.govdata.de/>`_
 * `US Census Bureau <https://www.census.gov/data.html>`_
