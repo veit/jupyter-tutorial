@@ -16,6 +16,7 @@ You can get an overview of public repositories with research data e.g. in
 * `IATI Registry <https://www.iatiregistry.org/>`_
 * `World Bank Open Data <https://data.worldbank.org/>`_
 * `EU Open Data Portal Data <http://open-data.europa.eu/en/data/>`_
+* `GovData.de <https://www.govdata.de/>`_
 * `US Census Bureau <https://www.census.gov/data.html>`_
 * `data.gov <https://www.data.gov/>`_
 * `Google Dataset Search <https://datasetsearch.research.google.com/>`_
