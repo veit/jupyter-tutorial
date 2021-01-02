@@ -13,6 +13,7 @@ You can get an overview of public repositories with research data e.g. in
 * `World Health Data Platform/Global Health Observatory
   <https://www.who.int/data/gho/>`_
 * `UNICEF Data <https://data.unicef.org/>`_
+* `IATI Registry <https://www.iatiregistry.org/>`_
 * `World Bank Open Data <https://data.worldbank.org/>`_
 * `EU Open Data Portal Data <http://open-data.europa.eu/en/data/>`_
 * `US Census Bureau <https://www.census.gov/data.html>`_
