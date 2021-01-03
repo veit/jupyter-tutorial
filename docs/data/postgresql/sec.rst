@@ -132,5 +132,7 @@ Deletion can be accelerated if a separate partition is created for each day with
 the PostgreSQL extension `pg_partman <https://t.co/3Q1FsU8uVg?amp=1>`_.
 
 .. seealso::
+   * `Veil2  – Relational Security for Postgres
+     <https://marcmunro.github.io/veil2/html/index.html>`_
    * `PostgreSQL Secure Monitoring (Posemo)
      <https://github.com/alvar-freude/Posemo>`_
