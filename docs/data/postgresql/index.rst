@@ -126,3 +126,4 @@ Cross platform
     alembic
     postgis/index
     sec
+    pgmonitor
