@@ -2,8 +2,8 @@ pgMonitor
 =========
 
 `pgMonitor <https://access.crunchydata.com/documentation/pgmonitor/latest/>`_ is
-an environment to visualise the healtch and performance of a PostgreSQL cluster.
-It combines a suite of tools to faciliate the collection of important metrics,
+an environment to visualise the health and performance of a PostgreSQL cluster.
+It combines a suite of tools to facilitate the collection of important metrics,
 including:
 
 * number of connections
@@ -18,9 +18,9 @@ monitoring environment, including:
 
 `PostgreSQL Exporter <https://github.com/wrouesnel/postgres_exporter>`_
     an open-source data export to Prometheus that supports collecting metrics
-    from any PostgreSQL ≥ 9.1 server.
+    from any PostgreSQL server ≥ 9.1.
 `Prometheus <https://prometheus.io/>`_
-    an open-source metrics collector that is highly customizable.
+    an open-source metrics collector that is highly customisable.
 `Grafana <https://grafana.com/>`_
     an open-source data visualiser that allows you to generate many different
     kinds of charts and graphs.
