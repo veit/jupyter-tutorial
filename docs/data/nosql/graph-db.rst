@@ -91,6 +91,14 @@ Typical graph databases are Neo4j, OrientDB InfiniteGraph and ArangoDB.
 |                        |                                |                                | :term:`Graph traversal`.       |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 
+.. seealso::
+   * `Apache TinkerPop Home <https://tinkerpop.apache.org/>`_
+   * `TinkerPop Documentation <https://tinkerpop.apache.org/docs/current/>`_
+   * `github.com/apache/tinkerpop <https://github.com/apache/tinkerpop>`_
+   * `Practical Gremlin – An Apache TinkerPop Tutorial
+     <https://kelvinlawrence.net/book/Gremlin-Graph-Guide.html>`_
+   * `gremlinpython <https://pypi.org/project/gremlinpython/>`_
+
 .. _`Neo4j`: https://neo4j.com
 .. _`OrientDB`: https://orientdb.org/
 .. _`InfiniteGraph`: https://www.objectivity.com/products/infinitegraph
