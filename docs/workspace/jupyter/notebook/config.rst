@@ -1,7 +1,7 @@
 Jupyter paths and configuration
 ===============================
 
-Configuration files are usually stored in the ~``~/.jupyter`` directory.
+Configuration files are usually stored in the ``~/.jupyter`` directory.
 However, another directory can be specified with the environment variable
 ``JUPYTER_CONFIG_DIR``. If Jupyter cannot find a configuration in
 ``JUPYTER_CONFIG_DIR``, Jupyter runs through the search path with
