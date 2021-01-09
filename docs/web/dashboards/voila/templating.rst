@@ -131,6 +131,84 @@ kernel:
     button.on_click(kill_kernel)
     button
 
+voila-reveal
+------------
+
+`voila-reveal <https://github.com/voila-dashboards/voila-reveal>`_ is a template
+for slideshows based on `RevealJS <https://revealjs.com/>`_.
+
+Installation
+~~~~~~~~~~~~
+
+.. code-block:: console
+
+    $ pipenv install voila-reveal
+
+Usage
+~~~~~
+
+You can use the template with:
+
+.. code-block:: console
+
+    $ pipenv run voila --template=reveal reveal.ipynb
+
+Additional options can be used to override the default settings, e.g. to change
+the default value for transition ``Fade`` to ``Zoom`` with:
+
+.. code-block:: console
+
+    $ pipenv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
+
+If configuration options are to be saved permanently, a  ``conf.json`` file can
+be created in ``share/jupyter/voila/templates/reveal/``:
+
+.. code-block:: javascript
+
+    {
+      "traitlet_configuration": {
+        "resources": {
+          "reveal": {
+            "scroll": false,
+            "theme": "simple",
+            "transition": "zoom"
+          }
+        }
+      }
+    }
+
+You can then turn your notebook into a slideshow in :menuselection:`View -->
+Cell Toolbar --> Slideshow`. In a cell toolbar you can choose between
+
+Slide
+    left to right
+Sub-Slide
+    top to bottom
+Fragment
+    stops inside a slide
+Notes
+    Speaker notes opened in a new window when the presenter press the ``t`` key
+
+If you want to publish your slideshow on `binder <https://mybinder.org/>`_, you
+must write the following tag in the metadata of the notebook in
+:menuselection:`Edit --> Edit Notebook Metadata`:
+
+.. code-block:: javascript
+
+    "rise": {
+        "autolaunch": true
+    }
+
+You can also use the `chalkboard reveal plugin
+<https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard>`_ in the
+metadata of the notebook:
+
+.. code-block:: javascript
+
+    "rise": {
+      "enable_chalkboard": true
+    }
+
 Create your own templates
 -------------------------
 
