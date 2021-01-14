@@ -152,6 +152,8 @@ can also be called up with `CiteAs <https://citeas.org/>`_.
      <https://danielskatzblog.wordpress.com/2018/02/06/compact-identifiers-for-software-the-last-missing-link-in-user-oriented-software-citation/>`_
    * `Neil Chue Hong: How to cite software: current best practice
      <https://zenodo.org/record/2842910#.XspLsxMzbOQ>`_
+   * `Recognizing the value of software: a software citation guide
+     <https://f1000research.com/articles/9-1257/v2>`_
    * Stephan Druskat, Radovan Bast, Neil Chue Hong, Alexander Konovalov, Andrew
      Rowley, Raniere Silva: `A standard format for CITATION files
      <https://www.software.ac.uk/index.php/blog/2017-12-12-standard-format-citation-files>`_
