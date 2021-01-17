@@ -27,4 +27,6 @@ Overview
 
     * `Home <https://developers.google.com/protocol-buffers/>`_
     * `GitHub <https://github.com/protocolbuffers/protobuf>`_
+    * `Language Guide (proto3)
+      <https://developers.google.com/protocol-buffers/docs/proto3>`_
     * :doc:`../grpc/index`
