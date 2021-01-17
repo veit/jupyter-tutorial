@@ -9,10 +9,13 @@ available elsewhere.
 
 .. seealso::
 
+    * :download:`Git Cheat Sheet (PDF) <git-cheatsheet-web.pdf>`
+    * `Interactive Git Cheatsheet <http://ndpsoftware.com/git-cheatsheet.html>`_
     * `Software Carpentry Version Control with Git
       <https://swcarpentry.github.io/git-novice/>`_
+    * `Flight rules for Git <https://github.com/k88hudson/git-flight-rules>`_
+    * `First Aid git <http://firstaidgit.io/>`_
     * `Pro Git book <https://git-scm.com/book>`_
-    * :download:`Git Cheat Sheet (PDF) <git-cheatsheet-web.pdf>`
     * `Git reference <https://git-scm.com/docs>`_
 
 Essentially, in this tutorial, I show on the one hand how :doc:`Jupyter
