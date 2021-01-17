@@ -1,7 +1,7 @@
 gRPC-Example
 ============
 
-By default, gRPC uses :doc:`../serialisation-formats/protobuf` for serialising
+By default, gRPC uses :doc:`serialisation-formats/protobuf` for serialising
 data, although it also works with other data formats such as JSON.
 
 Define the data structure
@@ -10,7 +10,7 @@ The first step when working with protocol buffers is to define the structure for
 the data you want to serialise in a ``.proto`` file. Protocol buffer data is
 structured as *messages*, where each message is a small logical record of
 information containing a series of name-value pairs called *fields*. Here’s a
-simple example ``person.proto``:
+simple example :download:`person.proto`:
 
 .. code-block:: proto
 
@@ -37,6 +37,8 @@ parameters and return types specified as protocol buffer messages:
 
 .. code-block:: proto
 
+    syntax = "proto3";
+
     // The salutation service definition.
     service Salutation {
       rpc Salutation (SalutationRequest) returns (SalutationReply) {}
@@ -57,19 +59,20 @@ Generate the gRPC Code
 
 .. code-block:: console
 
-    $ python -m grpc_tools.protoc -I . --python_out= . --grpc_python_out=. person.proto
+    $ pipenv install grpcio grpcio-tools
+    $ pipenv run python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. person.proto
 
 This generates two files:
 
-``person_pb2.py``
+:download:`person_pb2.py`
     which contains the generated request and response classes
-``person_grpc.py``
+:download:`person_pb2_grpc.py`
     which contains the generated client and server classes.
 
 Update the server
 -----------------
 
-Now we can define our ``Salutation`` in ``person_server.py``:
+Now we can define our ``Salutation`` in :download:`person_server.py`:
 
 .. code-block:: python
 
@@ -91,7 +94,7 @@ Now we can define our ``Salutation`` in ``person_server.py``:
     def serve():
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         person_pb2_grpc.add_SalutationServicer_to_server(Salutation(), server)
-        server.add_insecure_port('[::]:50051')
+        server.add_insecure_port('[::]:8081')
         server.start()
         server.wait_for_termination()
 
@@ -103,7 +106,7 @@ Now we can define our ``Salutation`` in ``person_server.py``:
 Update the client
 -----------------
 
-We create ``person_client.py`` with the ``run`` method:
+We create :download:`person_client.py` with the ``run`` method:
 
 .. code-block:: python
 
@@ -116,7 +119,7 @@ We create ``person_client.py`` with the ``run`` method:
 
 
     def run():
-        channel = grpc.insecure_channel('localhost:50051')
+        channel = grpc.insecure_channel('localhost:8081')
         stub = person_pb2_grpc.SalutationStub(channel)
         response = stub.Salutation(person_pb2.SalutationRequest(name='you'))
         print("Person client received: " + response.message)
@@ -133,36 +136,11 @@ Run client and server
 
    .. code-block:: console
 
-        $ python person_server.py
+        $ pipenv run python person_server.py
 
 #. Run the client from another terminal:
 
    .. code-block:: console
 
-        $ python person_client.py
-
-Check
------
-
-To check, we can use a current version of Curl. With ``curl --version`` you
-should get the HTTP2 support:
-
-.. code-block:: console
-
-    $ curl --version
-    curl …  nghttp2 …
-    …
-    Features: … HTTP2 …
-
-Otherwise you will have to install the latest version of Curl
-
-* for Mac OS with:
-
-  .. code-block:: console
-
-    $ brew reinstall curl
-
-* for Debian/Ubuntu see:
-
-  `Curl With HTTP2 Support
-  <https://serversforhackers.com/c/curl-with-http2-support>`_
+        $ pipenv run python person_client.py
+        Person client received: Hello, you!
