@@ -89,7 +89,7 @@ specifies the communication between clients and servers:
 #. The server answers with an optional ``Initial-Metadata``
 
    #. followed by ``Payload Messages``
-   #. and erminated with mandatory ``Status`` and optional ``Status-Metadata``.
+   #. and terminated with mandatory ``Status`` and optional ``Status-Metadata``.
 
    Payload Messages are serialised into a byte stream fragmented into HTTP/2
    frames. ``Status`` and ``Trailing-Metadata`` are sent as HTTP/2 trailing
