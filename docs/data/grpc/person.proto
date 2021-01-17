@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+// The salutation service definition.
+service Salutation {
+  rpc Salutation (SalutationRequest) returns (SalutationReply) {}
+}
+
+// The request message contains the person’s id.
+message SalutationRequest {
+  string name = 1;
+}
+
+// The response message contains the person’s name
+message SalutationReply {
+  string message = 2;
+}
