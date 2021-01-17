@@ -90,5 +90,6 @@ Python packages to :doc:`clean up and validate data <../clean-prep/index>`.
     intake/index
     postgresql/index
     nosql/index
+    grpc/index
     fastapi/index
     glossary
