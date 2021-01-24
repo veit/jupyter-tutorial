@@ -43,7 +43,7 @@ Generate the gRPC Code
 This generates two files:
 
 :download:`accounts_pb2.py`
-    which contains the generated request and response classes
+    which contains the generated request and response classes.
 :download:`accounts_pb2_grpc.py`
     which contains the generated client and server classes.
 
