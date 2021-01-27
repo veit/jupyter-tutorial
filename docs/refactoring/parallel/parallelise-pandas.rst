@@ -1,5 +1,5 @@
-Pandas alternatives
-===================
+Parallelise pandas
+==================
 
 In  :doc:`pandas:user_guide/enhancingperf`, some possibilities are described for
 improving the performance of pandas. However, there are also special libraries
