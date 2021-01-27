@@ -1,10 +1,10 @@
-Parallelise execution
-=====================
+Parallel programming
+====================
 
 
 Three examples of :doc:`Threading <threading-example>`, :doc:`Multiprocessing
 <multiprocessing>` and :doc:`Async <async-example>` illustrate the rules and
-best practices for using parallelisation.
+best practices for parallel programming.
 
 .. toctree::
     :hidden:
