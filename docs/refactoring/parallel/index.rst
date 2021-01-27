@@ -17,6 +17,7 @@ best practices for parallel programming.
     threading-forking-combined.ipynb
     async-example.ipynb
     ipyparallel/index.rst
+    pandas-alternatives
 
 .. seealso::
     * `Faster CPython <https://faster-cpython.readthedocs.io/>`_
