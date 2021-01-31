@@ -13,6 +13,10 @@ Concepts
     Test Case
         tests a single scenario.
 
+        .. seealso::
+            * `pytest fixtures
+              <https://docs.pytest.org/en/stable/fixture.html>`_
+
     Test Fixture
         is a consistent test environment.
 
