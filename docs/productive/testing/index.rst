@@ -10,10 +10,10 @@ Concepts
 
 .. glossary::
 
-    Test Case (Testfall)
+    Test Case
         tests a single scenario.
 
-    Test Fixture (Prüfvorrichtung)
+    Test Fixture
         is a consistent test environment.
 
     Test Suite

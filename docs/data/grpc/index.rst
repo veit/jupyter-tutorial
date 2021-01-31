@@ -107,3 +107,4 @@ specifies the communication between clients and servers:
 
     install
     example
+    test
