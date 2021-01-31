@@ -3,7 +3,17 @@ Test gRPC
 
 gRPC can be tested automatically with pytest-grpc.
 
-#. First, we create a :term:`Test Fixture` for our :doc:`example` with:
+#. First, we install
+
+   .. code-block:: console
+
+    $$ pipenv install pytest-grpc
+    Installing pytest-grpc…
+    Adding pytest-grpc to Pipfile's [packages]…
+    ✔ Installation Succeeded
+    …
+
++. Then we create a :term:`Test Fixture` for our :doc:`example` with:
 
    .. literalinclude:: tests/test_accounts.py
       :language: python
