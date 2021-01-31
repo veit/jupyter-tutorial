@@ -22,14 +22,19 @@ def grpc_servicer():
 def grpc_stub(grpc_channel):
     from accounts_pb2_grpc import AccountsStub
 
-    return AccountsStub
+    return AccountsStub(grpc_channel)
 
 
 def test_create_account(grpc_stub):
-    request = CreateAccountRequest()
-    response = accounts_server.CreateAccount(request)
+    value = "test-data"
+    nl = "\n"
+    request = CreateAccountRequest(account_name=value)
+    response = grpc_stub.CreateAccount(request)
 
-    assert response.name == f"test-{request.name}"
+    assert (
+        f"{response.account}"
+        == f'account_id: 1{nl}account_name: "test-data"{nl}'
+    )
 
 
 def test_get_accounts(grpc_stub):
