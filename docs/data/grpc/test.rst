@@ -7,7 +7,7 @@ gRPC can be tested automatically with pytest-grpc.
 
    .. code-block:: console
 
-    $$ pipenv install pytest-grpc
+    $ pipenv install pytest-grpc
     Installing pytest-grpc…
     Adding pytest-grpc to Pipfile's [packages]…
     ✔ Installation Succeeded
