@@ -26,13 +26,13 @@ gRPC can be tested automatically with pytest-grpc.
 
    .. literalinclude:: tests/test_accounts.py
       :language: python
-      :lines: 28-38
+      :lines: 28-44
 
 #. Authentication can also be tested, e.g. with:
 
    .. literalinclude:: tests/test_accounts.py
       :language: python
-      :lines: 1,3,39-93
+      :lines: 1,3,47-97
 
 #. Afterwards we can test against a real gRPC server with:
 
