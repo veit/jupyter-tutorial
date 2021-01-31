@@ -38,13 +38,21 @@ gRPC can be tested automatically with pytest-grpc.
 
    .. code-block:: console
 
-    $ pytest
+    $ pipenv run pytest
 
    or directly against the Python code:
 
    .. code-block:: console
 
-    $ pytest --grpc-fake-server
+    $ pipenv run pytest --grpc-fake-server
+    ============================= test session starts ==============================
+    platform darwin -- Python 3.7.3, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+    rootdir: /Users/veit/cusy/trn/jupyter-tutorial/docs/data/grpc
+    plugins: grpc-0.8.0
+    collected 2 items
+
+    tests/test_accounts.py .F                                                [100%]
+    …
 
 .. seealso::
    * `PyPI <https://pypi.org/project/pytest-grpc/>`_
