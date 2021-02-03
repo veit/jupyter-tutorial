@@ -124,6 +124,7 @@ Cross platform
     orm
     sqlalchemy
     alembic
+    ipython-sql
     postgis/index
     sec
     pgmonitor
