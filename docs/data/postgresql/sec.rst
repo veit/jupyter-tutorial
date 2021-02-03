@@ -47,8 +47,8 @@ similar:
 .. code-block:: postgresql
 
     CREATE ROLE myapp_users;
-    CREATE USER myapp_reader IN ROLE users PASSWORD '…';
-    CREATE USER myapp_writer IN ROLE users PASSWORD '…';
+    CREATE ROLE myapp_reader IN ROLE myapp_users LOGIN PASSWORD '…';
+    CREATE ROLE myapp_writer IN ROLE myapp_users LOGIN PASSWORD '…';
 
 Then users with the role ``myapp_users`` first get ``CONNECT`` rights and then
  ``myapp_reader`` read rights and ``myapp_writer`` write rights:
