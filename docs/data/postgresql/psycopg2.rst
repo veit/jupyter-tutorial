@@ -16,3 +16,13 @@ offers:
   <http://initd.org/psycopg/docs/advanced.html#support-for-coroutine-libraries>`_
 * `Adaptation of the Python types in SQL
   <http://initd.org/psycopg/docs/usage.html#adaptation-of-python-values-to-sql-types>`_
+
+Install
+-------
+
+With Spack you can provide psycopg2 in your kernel, e.g. with
+
+.. code-block:: console
+
+    $ spack env activate python-374
+    $ spack install py-psycopg2 ^python@3.7.4
