@@ -2,8 +2,8 @@
 ===============
 
 This section provides an overview of `ipyparallel
-<https://ipyparallel.readthedocs.io/>` which supports different types of
-parallelisation, including:
+<https://ipyparallel.readthedocs.io/>`_ which supports different types of
+parallelisation.
 
 .. toctree::
     :hidden:
