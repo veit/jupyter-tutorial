@@ -100,7 +100,7 @@ Multi-Version Concurrency Control (MVCC)
 
 Cross platform
     PostgreSQL runs on common CPU architectures such as ``x86``, ``PowerPC``,
-    ``Sparc``, ``ARM``, ``MIPS`` or `PA-RISC```. Most operating systems are also
+    ``Sparc``, ``ARM``, ``MIPS`` or ``PA-RISC``. Most operating systems are also
     supported: ``Linux``, ``Windows``, ``FreeBSD``, ``OpenBSD``, ``NetBSD``,
     ``Mac OS``, ``AIX``, ``HP/UX`` and ``Solaris``.
 
