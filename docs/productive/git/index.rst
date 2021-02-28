@@ -2,7 +2,7 @@ Manage code with Git
 ====================
 
 In order to have better control over your source code, it is usually managed
-with  `Git <https://git-scm.com/>`. However, I will only briefly explain the
+with  `Git <https://git-scm.com/>`_. However, I will only briefly explain the
 most important terms and provide brief :doc:`installation and configuration
 instructions <install-config>`. General introductions to Git are sufficiently
 available elsewhere.
