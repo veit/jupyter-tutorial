@@ -49,4 +49,4 @@ hand for :doc:`testing/index`, :doc:`logging`, :doc:`documenting
     quote/index
     envs/index
     testing/index
-    logging.ipynb
+    logging/index
