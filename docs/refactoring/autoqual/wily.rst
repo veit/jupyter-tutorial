@@ -40,7 +40,7 @@ and applications. For this purpose, Wily uses the following metrics:
     operators and operands.
 Maintainability Index
     is based on the cyclomatic complexity, the Halstead complexity measures and
-    the number of lines of code:
+    the number of lines of code [#]_:
 
     +--------------------------------+--------------------------------+
     | Index                          | Maintainability                |
