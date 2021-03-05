@@ -25,4 +25,3 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     importing.ipynb
     extensions
     debugging.ipynb
-    profiling.ipynb
