@@ -24,6 +24,7 @@ Checker
    pytype
    wily
    pyre
+   pysa
 
 Formatter
 ---------
