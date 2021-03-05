@@ -1,10 +1,12 @@
-Automating code quality
-=======================
+Check and improve code quality and complexity
+=============================================
 
-In the following I would like to introduce some tools and concepts that simplify
-the maintenance of Python packages and other source code. Together with
-:doc:`/productive/git/pre-commit`, they can be used to automatically check and
-improve the code quality.
+Before you start refactoring, you should measure the complexity of your code. In
+the following, I would like to introduce you to some tools and concepts that
+check the complexity of your code and simplify the maintenance and care of
+Python packages and other source code. Often, together with
+:doc:`/productive/git/pre-commit`, the code quality can also be checked and
+improved automatically.
 
 .. seealso::
    * `PyCQA Meta Documentation <https://meta.pycqa.org/en/latest/>`_
@@ -19,6 +21,7 @@ Checker
    flake8
    manifest
    mypy
+   wily
 
 Formatter
 ---------
