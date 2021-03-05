@@ -3,6 +3,12 @@ Mypy
 
 With `Mypy <http://mypy-lang.org/>`_ you can do a static type check.
 
+.. seealso::
+    * `Home <http://mypy-lang.org/>`_
+    * `GitHub <https://github.com/python/mypy>`_
+    * `Docs <https://mypy.readthedocs.io/>`_
+    * `PyPI <https://pypi.org/project/mypy/>`_
+
 Installation
 ------------
 
@@ -28,6 +34,3 @@ Then you can check it, e.g. with:
     .. code-block:: console
 
         $ pipenv run mypy --py2 myprogram.py
-
-.. seealso::
-    * `Mypy docs <https://mypy.readthedocs.io/>`_
