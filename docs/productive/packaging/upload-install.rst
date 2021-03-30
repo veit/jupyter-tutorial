@@ -176,9 +176,15 @@ Finally, you can publish your package on PyPI:
     $ pipenv run twine upload -r pypi -s dist/*
 
 .. note::
-    You can delete PyPI releases, but you cannot upload them again under the
-    same version number! So be careful before deleting and uploading: Releases
-    cannot simply be replaced.
+    You cannot simply replace releases as you cannot re-upload packages with the
+    same version number.
+
+    Do not remove old versions from the Python Package Index.This only causes
+    work for those who want to keep using that version and then have to switch
+    to old versions on GitHub. PyPI has a `yank
+    <https://pypi.org/help/#yanked>`_ function that you can use instead. This
+    will ignore a particular version if it is not explicitly specified with
+    ``==`` or ``===``.
 
 .. seealso::
     * `PyPI Release Checklist
