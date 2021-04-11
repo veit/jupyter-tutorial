@@ -101,6 +101,18 @@ specifies the communication between clients and servers:
    frames. ``Status`` and ``Trailing-Metadata`` are sent as HTTP/2 trailing
    headers.
 
+Unlike Fastapi, however, the gRPC API cannot simply be tested on the command
+line with cURL. If necessary, you can use `grpcurl
+<https://github.com/fullstorydev/grpcurl>`_. This requires that the gRPC server
+supports the `GRPC Server Reflection Protocol
+<https://grpc.github.io/grpc/core/md_doc_server-reflection.html>`_. Usually
+*Reflection* should only be available in the development phase. Then you can
+call grpcurl, e.g. with:
+
+.. code-block:: console
+
+    $ grpcurl localhost:9111 list
+
 .. seealso::
     * `Home <https://grpc.io/>`_
     * `GitHub <https://github.com/grpc/grpc>`_
