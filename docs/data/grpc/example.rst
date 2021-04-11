@@ -16,6 +16,13 @@ simple example ``accounts.proto``:
    :language: proto
    :lines: 1-6
 
+.. warning::
+    Please note that you should not simply use ``uint32`` for user or group IDs,
+    as these would be far too easy to guess. You can use an `RFC 4122
+    <https://tools.ietf.org/html/rfc4122>`_-compliant implementation for this
+    purpose. You can find a corresponding protobuf configuration in
+    :download:`rfc4122.proto`.
+
 After you have defined your data structure, you use the protocol buffer compiler
 ``protoc`` to generate descriptors in your preferred languages. These provide
 simple accessors for each field, as well as methods to serialise the whole

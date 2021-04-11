@@ -1,0 +1,24 @@
+// A UUID in accordance with section 4.1.2 of the RFC 4122.
+message Uuid {
+    // The low field of the timestamp: unsigned 32 bit integer
+    fixed32 time_low = 1;
+
+    // The middle field of the timestamp: unsigned 16 bit integer
+    uint32 time_mid = 2;
+
+    // The high field of the timestamp multiplexed with the version number:
+    // unsigned 16 bit integer
+    uint32 time_hi_and_version = 3;
+
+    // The high field of the clock sequence multiplexed with the variant:
+    // unsigned 8 bit integer
+    uint32 clock_seq_hi_and_reserved = 4;
+
+    // The low field of the clock sequence:
+    // unsigned 8 bit integer
+    uint32 clock_seq_low = 5;
+
+    // The spatially unique node identifier:
+    // unsigned 48 bit integer
+    uint64 node = 6;
+}
