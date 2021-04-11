@@ -17,7 +17,7 @@ client has a stub that provides the same methods as the server.
 
     digraph grpc_concept {
         rankdir="LR";
-        graph [fontname = "Calibri", fontsize="16", overlap=false];
+        graph [fontname = "Calibri", fontsize="16", penwidth="5px", overlap=false];
         node [fontname = "Calibri", fontsize="16", style="bold", penwidth="5px"];
         edge [fontname = "Calibri", fontsize="16", style="bold", penwidth="5px"];
         tooltip="gRPC concept";
@@ -25,49 +25,55 @@ client has a stub that provides the same methods as the server.
         // C++ service
         subgraph "cluster_cpp_service" {
             label="C++ Service";
+            fontcolor="#2D7BFD";
             shape=box;
-            style= "rounded, filled";
-            color="#00FFFF";
+            style= "rounded";
+            color="#2D7BFD";
             "grpc_server" [
                 label="gRPC server",
+                fontcolor="#640FFB"
                 shape=box,
-                style= "rounded, filled",
-                color="#4da6ff"
+                style= "rounded",
+                color="#640FFB"
                 ];
             }
 
-        // Python stub
+        // Python-Stub
         subgraph cluster_python_client {
             label="Python client";
+            fontcolor="#2D7BFD";
             shape=box;
-            style= "rounded, filled";
-            color="#00FFFF";
+            style= "rounded";
+            color="#2D7BFD";
             grpc_python_stub [
-                label="gRPC Python stub",
+                label="gRPC Python-Stub",
+                fontcolor="#640FFB"
                 shape=box,
-                style= "rounded, filled",
-                color="#4da6ff"
+                style= "rounded",
+                color="#640FFB"
                 ];
             }
 
-        // Android-Java stub
+        // Android-Java-Stub
         subgraph cluster_android_java_client {
             label="Android-Java client";
+            fontcolor="#2D7BFD";
             shape=box;
-            style= "rounded, filled";
-            color="#00FFFF";
+            style= "rounded";
+            color="#2D7BFD";
             grpc_android_java_stub [
-                label="gRPC Android-Java stub",
+                label="gRPC Android-Java-Stub",
+                fontcolor="#640FFB"
                 shape=box,
-                style= "rounded, filled",
-                color="#4da6ff"
+                style= "rounded",
+                color="#640FFB"
                 ];
             }
 
-        grpc_python_stub -> grpc_server [label="Proto-Request", color="#4da6ff"]
-        grpc_server -> grpc_python_stub [label="Proto-Response", color="#4da6ff"]
-        grpc_server -> grpc_android_java_stub [label="Proto-Response", color="#4da6ff"]
-        grpc_android_java_stub -> grpc_server [label="Proto-Request", color="#4da6ff"]
+        grpc_python_stub -> grpc_server [label="Proto-Request", fontcolor="#640FFB", color="#7539FC"]
+        grpc_android_java_stub -> grpc_server [label="Proto-Request", fontcolor="#640FFB", color="#7539FC"]
+        grpc_server -> grpc_python_stub [label="Proto-Response", fontcolor="#300099", color="#300099"]
+        grpc_server -> grpc_android_java_stub [label="Proto-Response", fontcolor="#300099", color="#300099"]
 
     }
 
