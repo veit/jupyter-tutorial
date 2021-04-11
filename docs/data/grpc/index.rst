@@ -104,7 +104,7 @@ specifies the communication between clients and servers:
 .. seealso::
     * `Home <https://grpc.io/>`_
     * `GitHub <https://github.com/grpc/grpc>`_
-    * `gRPC Load Balancing <https://grpc.io/blog/grpc-load-balancing/#why-grpc>`_
+    * `gRPC Blog <https://grpc.io/blog/>`_
 
 .. toctree::
     :hidden:
