@@ -9,7 +9,7 @@ and configuration options are displayed for each extension.
 .. image:: configure-nbextensions.png
    :alt: Configuration of the notebook extensions
 
-hereinafter I will give a brief overview of some of the notebook expansions.
+Hereinafter I will give a brief overview of some of the notebook extensions.
 
 (some) LaTeX environments for Jupyter notebook
     enables the use of Markdown cells for LaTeX commands and environments. In
