@@ -32,7 +32,7 @@ Installation
 
 #. Install Pipenv
 
-   Pleas refer :doc:`Install Pipenv </productive/envs/pipenv/install>`
+   Please refer to :doc:`Install Pipenv </productive/envs/pipenv/install>`
 
 #. Install Python packages:
 
