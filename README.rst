@@ -30,6 +30,13 @@ Installation
        creating: jupyter-tutorial-main/
     …
 
+#. Edit the ``Pipfile`` in the unpacked archive and enter your current Python version in this section:
+
+  .. code-block:: console
+
+    [requires]
+    python_version = ""
+
 #. Install Pipenv
 
    Please refer to :doc:`Install Pipenv </productive/envs/pipenv/install>`
