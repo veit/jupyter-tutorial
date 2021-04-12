@@ -23,11 +23,11 @@ Installation
 
    .. code-block:: console
 
-    $ curl -O https://codeload.github.com/veit/jupyter-tutorial/zip/master
-    $ unzip master
-    Archive:  master
+    $ curl -O https://codeload.github.com/veit/jupyter-tutorial/zip/main
+    $ unzip main
+    Archive:  main
     …
-       creating: jupyter-tutorial-master/
+       creating: jupyter-tutorial-main/
     …
 
 #. Install Pipenv
@@ -38,7 +38,7 @@ Installation
 
    .. code-block:: console
 
-    $ cd jupyter-tutorial
+    $ cd jupyter-tutorial-main
     $ pipenv install
     Creating a virtualenv for this project…
     …
