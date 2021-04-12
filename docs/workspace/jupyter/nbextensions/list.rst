@@ -129,7 +129,7 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
         $ jupyter nbconvert --to html --CodeFoldingPreprocessor.remove_folded_code=True mynotebook.ipynb
 
 :doc:`nbextensions/collapsible_headings/readme`
-    eenables notebooks to have collapsible sections separated by headings.
+    enables notebooks to have collapsible sections separated by headings.
 
 :doc:`nbextensions/datestamper/readme`
     inserts the current time and date in one cell.
