@@ -75,6 +75,14 @@ Installation
 
 #. Create HTML documentation:
 
+   Note that pandoc has to be installed. On Debian/Ubuntu you can just run
+
+   .. code-block:: console
+
+    $  sudo apt-get install pandoc
+
+    To create the HTML documentation run these commands:
+
    .. code-block:: console
 
     $ python3 -m venv .
@@ -90,7 +98,7 @@ Installation
 
    .. code-block:: console
 
-    $ apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
+    $ sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
 
    or for macOS with:
 
