@@ -17,7 +17,7 @@ expand the original limits of their use and enable new uses.
     intro
     first-steps/index
     workspace/index
-    data/index
+    data-processing/index
     clean-prep/index
     viz/index
     refactoring/index

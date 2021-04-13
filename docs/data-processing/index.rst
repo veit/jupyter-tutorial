@@ -5,8 +5,8 @@ You can get an overview of public repositories with research data e.g. in
 :doc:`opendata`.
 
 In addition to specific Python libraries for accessing :ref:`remote storage
-media </data/overview.rst#remote-storage-media>` and
-:ref:`/data/overview.rst#geodata`, we will introduce you to different
+media </data-processing/overview.rst#remote-storage-media>` and
+:ref:`/data-processing/overview.rst#geodata`, we will introduce you to different
 :doc:`serialisation formats <serialisation-formats/index>` and three tools in
 more detail that make data accessible:
 
