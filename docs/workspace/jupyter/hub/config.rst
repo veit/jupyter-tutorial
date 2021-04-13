@@ -25,8 +25,13 @@ System service for JupyterHub
     $ pipenv --venv
     /srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W
 
-#. Configuring ``/etc/systemd/system/jupyterhub.service`` and
-   ``/lib/systemd/system/jupyterhub.service``:
+#. Add a new systemd unit file ``/etc/systemd/system/jupyterhub.service`` with this command:
+
+   .. code-block:: console
+
+      # systemctl edit --force --full jupyterhub.service
+
+   Insert your according Python virtual environment.
 
    .. code-block:: ini
 
@@ -36,18 +41,10 @@ System service for JupyterHub
     [Service]
     User=root
     Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W/bin"
-    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyter-tutorial/jupyterhub_config.py
+    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyter-tutorial/jupyterhub_config.py
 
     [Install]
     WantedBy=multi-user.target
-
-#. Loading the configuration
-
-   with:
-
-   .. code-block:: console
-
-    # systemctl daemon-reload
 
 #. The JupyterHub can be managed with:
 
@@ -60,8 +57,8 @@ System service for JupyterHub
 
    .. code-block:: console
 
-    $ systemctl enable jupyterhub.service
-    systemctl enable jupyterhub.service
+    # systemctl enable jupyterhub.service
+    Created symlink /etc/systemd/system/multi-user.target.wants/jupyterhub.service → /etc/systemd/system/jupyterhub.service.
 
 TLS encryption
 --------------
