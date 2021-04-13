@@ -99,8 +99,8 @@ but the upstream Apache web server.
        SSLEngine On
        SSLCertificateFile /etc/ssl/certs/jupyter.cusy.io_cert.pem
        SSLCertificateKeyFile /etc/ssl/private/jupyter.cusy.io_sec_key.pem
-       SSLProtocol All -SSLv2 -SSLv3
-       SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+       # for an up-to-date SSL configuration see e.g.
+       # https://ssl-config.mozilla.org/
 
        # Use RewriteEngine to handle websocket connection upgrades
        RewriteEngine On
