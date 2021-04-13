@@ -21,12 +21,17 @@ System service for JupyterHub
 
    .. code-block:: console
 
-    $ cd ~/jupyterhub
+    $ cd ~/jupyter-tutorial
     $ pipenv --venv
-    /srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W
+    /srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W
 
-#. Configuring ``/etc/systemd/system/jupyterhub.service`` and
-   ``/lib/systemd/system/jupyterhub.service``:
+#. Add a new systemd unit file ``/etc/systemd/system/jupyterhub.service`` with this command:
+
+   .. code-block:: console
+
+      # systemctl edit --force --full jupyterhub.service
+
+   Insert your according Python virtual environment.
 
    .. code-block:: ini
 
@@ -35,19 +40,11 @@ System service for JupyterHub
 
     [Service]
     User=root
-    Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin"
-    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyterhub/jupyterhub_config.py
+    Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W/bin"
+    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyter-tutorial/jupyterhub_config.py
 
     [Install]
     WantedBy=multi-user.target
-
-#. Loading the configuration
-
-   with:
-
-   .. code-block:: console
-
-    # systemctl daemon-reload
 
 #. The JupyterHub can be managed with:
 
@@ -60,8 +57,8 @@ System service for JupyterHub
 
    .. code-block:: console
 
-    $ systemctl enable jupyterhub.service
-    systemctl enable jupyterhub.service
+    # systemctl enable jupyterhub.service
+    Created symlink /etc/systemd/system/multi-user.target.wants/jupyterhub.service → /etc/systemd/system/jupyterhub.service.
 
 TLS encryption
 --------------
@@ -102,8 +99,8 @@ but the upstream Apache web server.
        SSLEngine On
        SSLCertificateFile /etc/ssl/certs/jupyter.cusy.io_cert.pem
        SSLCertificateKeyFile /etc/ssl/private/jupyter.cusy.io_sec_key.pem
-       SSLProtocol All -SSLv2 -SSLv3
-       SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+       # for an up-to-date SSL configuration see e.g.
+       # https://ssl-config.mozilla.org/
 
        # Use RewriteEngine to handle websocket connection upgrades
        RewriteEngine On
