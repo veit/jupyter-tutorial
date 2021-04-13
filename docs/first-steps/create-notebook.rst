@@ -54,8 +54,7 @@ This file describes a notebook in `JSON <https://en.wikipedia.org/wiki/JSON>`_
 format. Each cell and its contents including pictures are listed there along
 with some metadata. You can have a look at them if you select the notebook in
 the dashboard and then click on :menuselection:`edit`. E.g. the JSON file for
-`my-first-notebook.ipynb <my-first-notebook.ipynb <my-first-notebook.ipynb>`_
-looks like this:
+`my-first-notebook.ipynb <my-first-notebook.ipynb>`_ looks like this:
 
 .. code-block:: json
 
