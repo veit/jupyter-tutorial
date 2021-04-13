@@ -52,6 +52,13 @@ Installation
 
     $  source ~/.profile
 
+#. Edit the ``Pipfile`` in the unpacked archive and enter your current Python version in this section:
+
+  .. code-block:: console
+
+    [requires]
+    python_version = ""
+
 #. Create a virtual environment and install JupyterHub:
 
    .. code-block:: console
