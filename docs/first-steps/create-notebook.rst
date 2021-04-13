@@ -41,8 +41,8 @@ There are two important terms used to describe Jupyter Notebooks: *cell* and
            contains code to be executed in the kernel, and the output which is
            shown below.
 
-           Vor den Code-Zellen sind exkige Klammern die die Reihenfolge
-           anzeigen, in der der Code ausgeführt wurde.
+           In front of the code cells are brackets that indicate the order in
+           which the code was executed.
 
            ``In [ ]:``
             indicates that the code has not yet been executed.
