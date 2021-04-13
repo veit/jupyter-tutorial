@@ -86,13 +86,13 @@ Installation
 
    .. code-block:: console
 
-    $ npm install
+    # npm install
 
 #. Install the HTTP-Proxy:
 
    .. code-block:: console
 
-    $ $ npm install -g configurable-http-proxy
+    # npm install -g configurable-http-proxy
     /usr/local/bin/configurable-http-proxy -> /usr/local/lib/node_modules/configurable-http-proxy/bin/configurable-http-proxy
     + configurable-http-proxy@4.1.0
     added 47 packages from 62 contributors in 6.208s
