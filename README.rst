@@ -56,7 +56,7 @@ Installation
               - Validating: OK
 
 #. Install the `Jupyter Notebook Extensions
-   <https://jupyter-contrib-nbextensions.readthedocs.io/>` Javascript and CSS
+   <https://jupyter-contrib-nbextensions.readthedocs.io/>`_ Javascript and CSS
    files:
 
    .. code-block:: console

@@ -7,7 +7,7 @@ Overview
 +-----------------------+-------+-------------------------------------------------------+
 | Data structure support| \+    | TOML (Tom’s Obvious, Minimal Language) supports most  |
 |                       |       | common including strings, integers, floats and dates, |
-|                       |       | but not references like :doc:`YAML` does.             |
+|                       |       | but not references like :doc:`yaml` does.             |
 +-----------------------+-------+-------------------------------------------------------+
 | Standardisation       | ++    | TOML is a formal strongly typed standard.             |
 +-----------------------+-------+-------------------------------------------------------+

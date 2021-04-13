@@ -44,7 +44,7 @@ being accidentally overwritten:
 
    * Under Windows, the directory can be determined with
      ``py -m site --user-site`` and then ``site-packages`` can be replaced by
-    `` Scripts``. This then results in, for example:
+    ``Scripts``. This then results in, for example:
 
     .. code-block:: console
 
