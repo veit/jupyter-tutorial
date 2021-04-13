@@ -21,9 +21,9 @@ System service for JupyterHub
 
    .. code-block:: console
 
-    $ cd ~/jupyterhub
+    $ cd ~/jupyter-tutorial
     $ pipenv --venv
-    /srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W
+    /srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W
 
 #. Configuring ``/etc/systemd/system/jupyterhub.service`` and
    ``/lib/systemd/system/jupyterhub.service``:
@@ -35,8 +35,8 @@ System service for JupyterHub
 
     [Service]
     User=root
-    Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin"
-    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyterhub/jupyterhub_config.py
+    Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W/bin"
+    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyter-tutorial/jupyterhub_config.py
 
     [Install]
     WantedBy=multi-user.target
