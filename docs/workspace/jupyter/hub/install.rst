@@ -75,7 +75,7 @@ Installation
 
    ``10.x`` indicates the major version of ``nodejs``.
 
-#. Installi the ``npm`` packages:
+#. Install the ``npm`` packages:
 
    .. code-block:: console
 
