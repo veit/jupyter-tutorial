@@ -23,22 +23,29 @@ Installation
 
    .. code-block:: console
 
-    $ curl -O https://codeload.github.com/veit/jupyter-tutorial/zip/master
-    $ unzip master
-    Archive:  master
+    $ curl -O https://codeload.github.com/veit/jupyter-tutorial/zip/main
+    $ unzip main
+    Archive:  main
     …
-       creating: jupyter-tutorial-master/
+       creating: jupyter-tutorial-main/
     …
+
+#. Edit the ``Pipfile`` in the unpacked archive and enter your current Python version in this section:
+
+  .. code-block:: console
+
+    [requires]
+    python_version = ""
 
 #. Install Pipenv
 
-   Pleas refer :doc:`Install Pipenv </productive/envs/pipenv/install>`
+   Please refer to :doc:`Install Pipenv </productive/envs/pipenv/install>`
 
 #. Install Python packages:
 
    .. code-block:: console
 
-    $ cd jupyter-tutorial
+    $ cd jupyter-tutorial-main
     $ pipenv install
     Creating a virtualenv for this project…
     …
@@ -68,6 +75,14 @@ Installation
 
 #. Create HTML documentation:
 
+   Note that pandoc has to be installed. On Debian/Ubuntu you can just run
+
+   .. code-block:: console
+
+    $  sudo apt-get install pandoc
+
+    To create the HTML documentation run these commands:
+
    .. code-block:: console
 
     $ python3 -m venv .
@@ -83,7 +98,7 @@ Installation
 
    .. code-block:: console
 
-    $ apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
+    $ sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
 
    or for macOS with:
 
