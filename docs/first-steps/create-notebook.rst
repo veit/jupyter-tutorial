@@ -40,6 +40,21 @@ There are two important terms used to describe Jupyter Notebooks: *cell* and
        *Code*
            contains code to be executed in the kernel, and the output which is
            shown below.
+
+           Vor den Code-Zellen sind exkige Klammern die die Reihenfolge
+           anzeigen, in der der Code ausgeführt wurde.
+
+           ``In [ ]:``
+            indicates that the code has not yet been executed.
+           ``In [*]:``
+            indicates that the execution has not yet been completed.
+
+            .. warning::
+                The output of cells can be used in other cells later. Therefore,
+                the result depends on the order. If you choose a different order
+                than the one from top to bottom, you may get different results
+                later when you e.g. select :menuselection:`Cell --> Run All`.
+
        *Markdown*
            contains text formatted with `Markdown
            <https://daringfireball.net/projects/markdown/syntax>`_, which is
