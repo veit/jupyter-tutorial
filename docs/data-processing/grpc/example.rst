@@ -37,7 +37,7 @@ parameters and return types specified as protocol buffer messages:
 
 .. literalinclude:: accounts.proto
    :language: proto
-   :lines: 8-
+   :lines: 8-23,32-34,36
 
 Generate the gRPC Code
 ----------------------
@@ -50,22 +50,24 @@ Generate the gRPC Code
 This generates two files:
 
 :download:`accounts_pb2.py`
-    which contains the generated request and response classes.
+    contains classes for the messages defined in ``accounts.proto``.
 :download:`accounts_pb2_grpc.py`
-    which contains the generated client and server classes.
+    contains the defined classes ``AccountsStub`` for calling RPCs,
+    ``AccountsServicer`` for the API definition of the service and a function
+    ``add_AccountsServicer_to_server`` for the server.
 
-Update the server
------------------
+Create server
+-------------
 
-Now we can define our ``Salutation`` in :download:`accounts_server.py`:
+For this we write the file :download:`accounts_server.py`:
 
 .. literalinclude:: accounts_server.py
    :language: python
 
-Update the client
------------------
+Create client
+-------------
 
-We create :download:`accounts_client.py` with the ``run`` method:
+For this we create :download:`accounts_client.py`:
 
 .. literalinclude:: accounts_client.py
    :language: python
@@ -73,13 +75,13 @@ We create :download:`accounts_client.py` with the ``run`` method:
 Run client and server
 ---------------------
 
-#. Run the server:
+#. Starting the server:
 
    .. code-block:: console
 
         $ pipenv run python accounts_server.py
 
-#. Run the client from another terminal:
+#. Starting the client from another terminal:
 
    .. code-block:: console
 
