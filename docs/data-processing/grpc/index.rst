@@ -146,7 +146,6 @@ call grpcurl, e.g. with:
 .. [#] * `gRPC-Web is Generally Available <https://grpc.io/blog/grpc-web-ga/>`_
 .. [#] * `gRPC-Web Client Runtime Library <https://www.npmjs.com/package/grpc-web>`_
 .. [#] * `gRPC + JSON <https://grpc.io/blog/grpc-with-json/>`_
-.. [#] * `gRPC with REST and Open APIs <https://grpc.io/blog/coreos/>`_
 
 .. toctree::
     :hidden:
