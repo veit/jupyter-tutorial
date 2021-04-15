@@ -10,7 +10,7 @@ The first step when working with protocol buffers is to define the structure for
 the data you want to serialise in a ``.proto`` file. Protocol buffer data is
 structured as *messages*, where each message is a small logical record of
 information containing a series of name-value pairs called *fields*. Here’s a
-simple example ``accounts.proto``:
+simple example :download:`accounts.proto`:
 
 .. literalinclude:: accounts.proto
    :language: proto
