@@ -142,10 +142,10 @@ call grpcurl, e.g. with:
 
 ----
 
-.. [#] * `gRPC in Android Java <https://grpc.io/docs/platforms/android/java/quickstart/>`_
-.. [#] * `gRPC-Web is Generally Available <https://grpc.io/blog/grpc-web-ga/>`_
-.. [#] * `gRPC-Web Client Runtime Library <https://www.npmjs.com/package/grpc-web>`_
-.. [#] * `gRPC + JSON <https://grpc.io/blog/grpc-with-json/>`_
+.. [#] `gRPC in Android Java <https://grpc.io/docs/platforms/android/java/quickstart/>`_
+.. [#] `gRPC-Web is Generally Available <https://grpc.io/blog/grpc-web-ga/>`_
+.. [#] `gRPC-Web Client Runtime Library <https://www.npmjs.com/package/grpc-web>`_
+.. [#] `gRPC + JSON <https://grpc.io/blog/grpc-with-json/>`_
 
 .. toctree::
     :hidden:
