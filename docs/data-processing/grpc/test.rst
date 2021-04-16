@@ -1,7 +1,11 @@
 Test gRPC
 =========
 
-gRPC can be tested automatically with pytest-grpc.
+``pytest-grpc``
+---------------
+
+gRPC can be tested automatically with `pytest-grpc
+<https://pypi.org/project/pytest-grpc>`_.
 
 #. First, we install
 
@@ -55,7 +59,31 @@ gRPC can be tested automatically with pytest-grpc.
     …
 
 .. seealso::
-   * `PyPI <https://pypi.org/project/pytest-grpc/>`_
    * `GitHub <https://github.com/kataev/pytest-grpc>`_
    * `Example
      <https://github.com/kataev/pytest-grpc/blob/master/example/test_example.py>`_
+
+Wireshark
+---------
+
+`Wireshark <https://www.wireshark.org/>`_ is an open source tool for analysing
+network protocols. In the following, we will show you how to use the gRPC and
+Protobuf dissectors. They make it easier for you to decode gRPC messages that
+are serialised in :doc:`Protobuf <../serialisation-formats/protobuf>` or
+:doc:`../serialisation-formats/json` format. You can also use them to analyse
+server, client and bidirectional gRPC streaming.
+
+.. note::
+    Usually, Wireshark can only analyse gRPC messages in plain text. For
+    dissecting a TLS session, Wireshark needs the secret key, the export of
+    which is currently only supported by `Go gRPC
+    <https://grpc.io/docs/languages/go/>`_ [#]_.
+
+.. seealso::
+    * `Analyzing gRPC messages using Wireshark
+      <https://grpc.io/blog/wireshark/>`_
+
+----
+
+.. [#] `How to Export TLS Master keys of gRPC
+       <https://gitlab.com/wireshark/wireshark/-/wikis/How-to-Export-TLS-Master-keys-of-gRPC>`_
