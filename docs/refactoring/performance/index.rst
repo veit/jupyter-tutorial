@@ -11,9 +11,20 @@ it is usually counterproductive to worry about the efficiency of the code.
 
 .. [#] Donald Knuth in Computer Programming as an Art (1974)
 
+Performance measurement
+-----------------------
+
 However, once you have worked with your code, it can be useful to examine its
 efficiency more closely. The :doc:`ipython-profiler` or :doc:`scalene` can be
 used for this.
+
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    ipython-profiler.ipynb
+    scalene
 
 Parallel programming
 --------------------
