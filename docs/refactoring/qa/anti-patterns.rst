@@ -81,7 +81,7 @@ Another possibility is to use list comprehensions. This way the code
         if item == match:
             results.append(item)
 
- can be replaced by
+can be replaced by
 
 .. code-block:: python
 
@@ -99,7 +99,7 @@ Query tools for complex dicts
 
 `JMESPath <https://jmespath.org/>`_, `glom <https://github.com/mahmoud/glom>`_,
 `asq <https://asq.readthedocs.io/en/latest/>`_ and `flupy
-<https://flupy.readthedocs.io/en/latest/>`_can significantly simplify the query
+<https://flupy.readthedocs.io/en/latest/>`_ can significantly simplify the query
 of dicts in Python.
 
 Reduce code with ``dataclasses`` and ``attrs``
@@ -114,7 +114,7 @@ Nested Dicts [#]_. Data classes save you from writing and managing these
 methods.
 
 .. seealso::
-   * [PEP 557 – Data Classes](https://www.python.org/dev/peps/pep-0557/)
+   * `PEP 557 – Data Classes <https://www.python.org/dev/peps/pep-0557/>`_
 
 `attrs <https://www.attrs.org/en/stable/>`_  is a Python package that has been
 around much longer than ``dataclasses``, is more comprehensive and can also be
