@@ -9,5 +9,5 @@ results should remain unchanged. A distinction is made between two main goals:
     :titlesonly:
     :maxdepth: 1
 
-    autoqual/index
+    qa/index
     performance/index
