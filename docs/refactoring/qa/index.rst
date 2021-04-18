@@ -42,4 +42,5 @@ Refactoring
 .. toctree::
    :maxdepth: 1
 
+   anti-patterns
    rope.ipynb
