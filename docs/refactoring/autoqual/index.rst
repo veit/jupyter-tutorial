@@ -35,3 +35,11 @@ Formatter
    black
    isort
    prettier
+
+Refactoring
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+   rope.ipynb
