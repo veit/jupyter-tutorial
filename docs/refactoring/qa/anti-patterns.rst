@@ -1,6 +1,9 @@
 Code-Smells and Anti-Patterns
 =============================
 
+.. seealso::
+   * `Effective Python by Brett Slatkin <https://effectivepython.com/>`_
+
 Functions that should be objects
 --------------------------------
 
