@@ -4,6 +4,9 @@ Refactoring
 Refactoring is understood as the improvement of the source code, whereby the
 results should remain unchanged. A distinction is made between two main goals:
 
+.. seealso::
+   * `Refactoring by Martin Fowler <https://refactoring.com/>`_
+
 .. toctree::
     :hidden:
     :titlesonly:
