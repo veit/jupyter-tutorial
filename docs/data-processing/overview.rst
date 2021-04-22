@@ -44,3 +44,6 @@ Geodata
 `RSGISLib <https://www.rsgislib.org/>`_
     or *The Remote Sensing and GIS Software Library* is a set of remote sensing
     tools for raster processing and analysis.
+`pgeocode <https://pypi.org/project/pgeocode/>`_
+    is used for querying of GPS coordinates and municipality names from postal
+    codes, distances between postal codes as well as general distances.
