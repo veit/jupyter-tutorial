@@ -1,16 +1,6 @@
 Performance measurement and optimisation
 ========================================
 
-When developing code, there can often be trade-offs between different
-implementations. However, at the beginning of the development of an algorithm,
-it is usually counterproductive to worry about the efficiency of the code.
-
-    «We should forget about small efficiencies, say about 97% of the time:
-    premature optimization is the root of all evil. Yet we should not pass up
-    our opportunities in that critical 3%.»[#]_
-
-.. [#] Donald Knuth in Computer Programming as an Art (1974)
-
 Performance measurement
 -----------------------
 
