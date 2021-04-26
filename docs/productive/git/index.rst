@@ -15,6 +15,7 @@ available elsewhere.
       <https://swcarpentry.github.io/git-novice/>`_
     * `Flight rules for Git <https://github.com/k88hudson/git-flight-rules>`_
     * `First Aid git <http://firstaidgit.io/>`_
+    * `git-tips <https://github.com/git-tips/tips>`_
     * `Pro Git book <https://git-scm.com/book>`_
     * `Git reference <https://git-scm.com/docs>`_
 
