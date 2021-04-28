@@ -63,6 +63,7 @@ booleans, and None.
 
     csv
     json
+    pickle
     protobuf
     toml
     xml
