@@ -37,6 +37,7 @@ of the various libraries.
     "`nbviewer <https://github.com/jupyter/nbviewer>`_",".. image:: https://raster.shields.io/github/stars/jupyter/nbviewer",".. image:: https://raster.shields.io/github/contributors/jupyter/nbviewer",".. image:: https://raster.shields.io/github/commit-activity/y/jupyter/nbviewer",".. image:: https://raster.shields.io/github/license/jupyter/nbviewer"
     "`Panel <https://github.com/holoviz/panel>`_",".. image:: https://raster.shields.io/github/stars/holoviz/panel",".. image:: https://raster.shields.io/github/contributors/holoviz/panel",".. image:: https://raster.shields.io/github/commit-activity/y/holoviz/panel",".. image:: https://raster.shields.io/github/license/holoviz/panel"
     "`Voilà <https://github.com/voila-dashboards/voila>`_",".. image:: https://raster.shields.io/github/stars/voila-dashboards/voila",".. image:: https://raster.shields.io/github/contributors/voila-dashboards/voila",".. image:: https://raster.shields.io/github/commit-activity/y/voila-dashboards/voila",".. image:: https://raster.shields.io/github/license/voila-dashboards/voila"
+    "`jupyter-flex <https://github.com/danielfrg/jupyter-flex>`_",".. image:: https://raster.shields.io/github/stars/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/contributors/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/commit-activity/y/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/license/danielfrg/jupyter-flex"
 
 .. toctree::
     :titlesonly:
