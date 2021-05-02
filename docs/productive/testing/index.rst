@@ -47,3 +47,4 @@ Tools
    tox
    unittest2
    mock
+   coverage
