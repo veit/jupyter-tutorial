@@ -36,7 +36,7 @@ This adds to the ``dvc.yaml`` file:
       outs:
       - data/features
 
-So that this phase can be repeated, the hd5 hash values and parameter values are
+So that this phase can be repeated, the MD5 hash values and parameter values are
 stored in the file ``dvc.lock``:
 
 .. code-block:: yaml
