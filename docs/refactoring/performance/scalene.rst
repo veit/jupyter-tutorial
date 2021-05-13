@@ -8,7 +8,7 @@ usually very low at 10-20%.
    * `GitHub <https://github.com/emeryberger/Scalene>`_
    * `PyPI <https://pypi.org/project/scalene/>`_
    * `scalene-paper.pdf
-     <https://github.com/emeryberger/scalene/raw/master/scalene-paper.pdf>`_
+     <https://github.com/plasma-umass/scalene/blob/master/docs/scalene-paper.pdf>`_
 
 Installation
 ------------
