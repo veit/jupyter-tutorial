@@ -21,6 +21,7 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     magics.ipynb
     shell.ipynb
     file-system.ipynb
+    create-delete.ipynb
     pipes-filters.ipynb
     display.ipynb
     mypackage/foo.ipynb
