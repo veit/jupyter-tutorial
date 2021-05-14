@@ -23,6 +23,7 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     file-system.ipynb
     create-delete.ipynb
     pipes-filters.ipynb
+    grep-find.ipynb
     display.ipynb
     mypackage/foo.ipynb
     importing.ipynb
