@@ -25,6 +25,7 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     pipes-filters.ipynb
     grep-find.ipynb
     regex.ipynb
+    shell-variables.ipynb
     display.ipynb
     mypackage/foo.ipynb
     importing.ipynb
