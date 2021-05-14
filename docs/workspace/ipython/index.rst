@@ -20,6 +20,7 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     start
     magics.ipynb
     shell.ipynb
+    file-system.ipynb
     display.ipynb
     mypackage/foo.ipynb
     importing.ipynb
