@@ -24,6 +24,7 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     create-delete.ipynb
     pipes-filters.ipynb
     grep-find.ipynb
+    regex.ipynb
     display.ipynb
     mypackage/foo.ipynb
     importing.ipynb
