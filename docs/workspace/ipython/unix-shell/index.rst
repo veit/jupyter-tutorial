@@ -2,8 +2,8 @@ Unix-Shell
 ==========
 
 Any command on the command line will also work in Jupyter Notebooks if prefixed
-with `!`. The results can then interact with the Jupyter namespace, see `Passing
-values to and from the shell
+with ``!``. The results can then interact with the Jupyter namespace, see
+`Passing values to and from the shell
 <../shell.ipynb#Passing-values-to-and-from-the-shell>`_.
 
 .. toctree::
