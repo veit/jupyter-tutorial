@@ -20,12 +20,7 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     start
     magics.ipynb
     shell.ipynb
-    file-system.ipynb
-    create-delete.ipynb
-    pipes-filters.ipynb
-    grep-find.ipynb
-    regex.ipynb
-    shell-variables.ipynb
+    unix-shell/index
     display.ipynb
     mypackage/foo.ipynb
     importing.ipynb
