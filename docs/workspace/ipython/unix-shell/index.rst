@@ -1,4 +1,4 @@
-Unix-Shell
+Unix shell
 ==========
 
 Any command on the command line will also work in Jupyter Notebooks if prefixed
