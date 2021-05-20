@@ -14,7 +14,7 @@ Create packages
    to your notebooks, but also to your Python packages, for example with `black
    <https://black.readthedocs.io/en/stable/>`_.
 
-   For other languages ​​you can find overviews in `Awesome-Linters
+   For other languages you can find overviews in `Awesome-Linters
    <https://awesome-linters.hugomartins.io/>`_ and `awesome-code-formatters
    <https://github.com/rishirdua/awesome-code-formatters>`_.
 
