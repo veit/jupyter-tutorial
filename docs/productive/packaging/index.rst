@@ -42,5 +42,6 @@ Create packages
    distribution
    upload-install
    binary-extensions
+   cibuildwheel
    templating/index
    next-steps
