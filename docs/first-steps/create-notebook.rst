@@ -10,8 +10,8 @@ In your standard browser you should see the notebook dashboard with the *New*
 menu on the right. All notebook kernels are listed in this menu, but initially
 probably only *Python 3*.
 
-After you have selected :menuselection:`New --> Python 3`, a new notebook
- ``Untitled.ipynb`` will be created and displayed in a new tab:
+After you have selected :menuselection:`New --> Python 3`, a new notebook 
+``Untitled.ipynb`` will be created and displayed in a new tab:
 
 .. image:: initial-notebook.png
 
