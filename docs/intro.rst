@@ -62,7 +62,7 @@ project:
 5. **Cleaning up data** is a recurring task that includes Remove or modify
    redundant, inconsistent, or incorrectly formatted data.
 6. **Analyse data** through exploratory analysis and :doc:`visualising data
-   <viz/index`.
+   <viz/index>`.
 7. **Refactoring** includes parameterisation, validation and performance
    optimisation, including through :doc:`parallelisation
    <refactoring/parallel/index>`.
