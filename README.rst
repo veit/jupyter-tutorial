@@ -94,7 +94,7 @@ Installation
 
    For the creation of a PDF file you need additional packages.
 
-   For Debian/Ubuntu you get this with:
+   For Debian/Ubuntu you get them with the following command:
 
    .. code-block:: console
 
