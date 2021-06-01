@@ -75,8 +75,8 @@ after each commit.
      <https://developers.google.com/style/>`_
    * `Google Technical Writing Courses for Engineers
      <https://developers.google.com/tech-writing/overview>`_
-   * `Eric Holscher: Testing your Documentation
-     <http://www.writethedocs.org/guide/tools/testing/>`_
+   * `Cusy-Design-System: Testen
+     <https://cusy-design-system.readthedocs.io/de/latest/content/testing.html>`_
 
 .. toctree::
     :hidden:
