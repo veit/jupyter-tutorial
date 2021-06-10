@@ -28,7 +28,7 @@ best practices for parallel programming.
     :titlesonly:
     :maxdepth: 0
 
-    concurrency.ipynb
+    concurrency
     threading-example.ipynb
     multiprocessing.ipynb
     threading-forking-combined.ipynb
