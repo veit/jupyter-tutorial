@@ -59,72 +59,83 @@ are already some solutions:
 Multithreading, multiprocessing and asynchronous communication
 --------------------------------------------------------------
 
-Multithreading
---------------
++------------------+------------------+------------------+--------------------------------+
+| Criterion        | Multithreading   | Multiprocessing  | asyncio                        |
++==================+==================+==================+================================+
+| Separation       | Threads share one| The processes are| With                           |
+|                  | state.           | independent of   | ``run_coroutine_threadsafe()``,|
+|                  |                  | each other.      | ``asyncio`` objects can also   |
+|                  | However, sharing |                  | be used by other threads.      |
+|                  | a state can lead | If they are to   |                                |
+|                  | to race          | communicate with | Almost all ``asyncio`` objects |
+|                  | conditions, i.e. | each other,      | are not thread-safe.           |
+|                  | the result of an | `interprocess    |                                |
+|                  | operation can    | communication    |                                |
+|                  | depend on the    | (IPC)`_, `object |                                |
+|                  | timing of certain| pickling`_  and  |                                |
+|                  | individual       | other overhead   |                                |
+|                  | operations.      | is necessary.    |                                |
++------------------+------------------+------------------+--------------------------------+
+| Switch           | Threads change   | As soon as you   | ``asyncio`` switches           |
+|                  | `preemptively`_, | get a process    | `cooperatively`_, i.e. `yield`_|
+|                  | i.e. no explicit | assigned,        | or `await`_ must be explicitly |
+|                  | code needs to be | significant      | specified to cause a switch.   |
+|                  | added to cause   | progress should  | You can therefore keep the     |
+|                  | a change of      | be made. So you  | effort to these changes very   |
+|                  | tasks.           | should not make  | low.                           |
+|                  |                  | too many         |                                |
+|                  | However, such a  | roundtrips back  |                                |
+|                  | change is        | and forth.       |                                |
+|                  | possible at any  |                  |                                |
+|                  | time;            |                  |                                |
+|                  | accordingly,     |                  |                                |
+|                  | critical areas   |                  |                                |
+|                  | must be protected|                  |                                |
+|                  | with ``lock``.   |                  |                                |
++------------------+------------------+------------------+--------------------------------+
+| Tooling          | Threads require  | Simple tooling   | At least for complex systems,  |
+|                  | very little      | with `map`_ and  | ``asyncio`` leads to the goal  |
+|                  | tooling: `Lock`_ | `imap_unordered`_| more easy than multithreading  |
+|                  | and `Queue`_.    | among others, to | locks.                         |
+|                  |                  | test individual  |                                |
+|                  | Locks are        | processes in a   | However ``asyncio`` requires a |
+|                  | difficult to     | single thread    | large set of tools:            |
+|                  | understand in    | before switching | `futures`_, `event loops`_ and |
+|                  | non-trivial      | to               | non-blocking versions of almost|
+|                  | examples. For    | multiprocessing. | everything.                    |
+|                  | complex          |                  |                                |
+|                  | applications, it | If IPC or        |                                |
+|                  | is therefore     | object pickling  |                                |
+|                  | better to use    | is used, the     |                                |
+|                  | atomic message   | tooling becomes  |                                |
+|                  | queues or        | more complex.    |                                |
+|                  | ``asyncio``.     |                  |                                |
++------------------+------------------+------------------+--------------------------------+
+| Performance      | Multithreading   | The processes can| Calling a poor Python function |
+|                  | produces the best| be distributed   | takes more overhead than       |
+|                  | results for      | to several CPUs  | requesting a ``generator`` or  |
+|                  | IO-heavy tasks.  | and should       | ``awaitable`` – i.e.,          |
+|                  |                  | therefore be     | ``asyncio`` can utilise the CPU|
+|                  | The performance  | used for         | efficiently.                   |
+|                  | limit for threads| CPU-heavy tasks. |                                |
+|                  | is one CPU minus |                  | For CPU-intensive tasks,       |
+|                  | task switches and| However,         | however, multiprocessing is    |
+|                  | synchronisation  | additional effort| more suitable.                 |
+|                  | overheads.       | may be required  |                                |
+|                  |                  | and              |                                |
+|                  |                  | synchronisation  |                                |
+|                  |                  | of the processes.|                                |
++------------------+------------------+------------------+--------------------------------+
 
-Pros
-~~~~
-
-* Threads have the advantage of sharing a common status. However, this can also
-  lead to race conditions, ie the results of an operation can depend on the
-  timing of certain individual operations.
-* Threads change preemptively, see `Preemptive multitasking
-  <https://en.wikipedia.org/wiki/Computer_multitasking#Preemptive_multitasking>`_.
-  This is useful because you don’t have to add any explicit code to cause the
-  task to switch.
-* Threading usually works with existing code and tools as long as locks are
-  added to critical sections.
-* Threads require very little tooling: `Lock
-  <https://docs.python.org/3/library/threading.html#threading.Lock>`_ and `Queue
-  <https://docs.python.org/3/library/queue.html>`_.
-
-Cons
-~~~~
-
-* The cost of this convenience is that you have to assume that such a change is
-  possible at any time. Accordingly, critical areas must be protected with
-  locks.
-* The performance limit for threads is one CPU minus the costs for task switches
-  and synchronization efforts.
-
-Multiprocessing
----------------
-
-Pros
-~~~~
-
-* The strength of processes is to be independent of one another.
-
-Cons
-~~~~
-
-* However, they do not communicate with each other either. Therefore,
-  `Interprocess Communication (IPC)
-  <https://docs.python.org/3/library/ipc.html>`_, `object pickling
-  <https://docs.python.org/3/library/pickle.html>`_ and other overheads are
-  necessary.
-
-Asynchronous communication
---------------------------
-
-Pros
-~~~~
-
-* Async switches cooperatively, so you have to explicitly add `yield
-  <https://docs.python.org/3/reference/simple_stmts.html#yield>`_ or `await
-  <https://docs.python.org/3/reference/expressions.html#await>`_ for a task
-  switch. This allows you to control when these tasks switches and, if
-  necessary, locks and synchronisations should take place. You can therefore
-  keep the effort for task switches very low. In addition, calling a pure Python
-  function has more overhead than requesting a generator or awaitable again –
-  that is, async is very cheap.
-* Async can improve CPU usage because it can reduce the usual overhead.
-* With complex systems, async is much easier than threads with locks.
-
-Cons
-~~~~
-
-* Async requires a large number of tools: `futures
-  <https://docs.python.org/3/library/asyncio-task.html#future>`_, `Event Loops
-  <https://docs.python.org/3/library/asyncio-eventloops.html>`_, and
-  non-blocking versions of almost everything.
+.. _`interprocess Communication (IPC)`: https://docs.python.org/3/library/ipc.html
+.. _`object pickling`: https://docs.python.org/3/library/pickle.html
+.. _`preemptively`: https://en.wikipedia.org/wiki/Computer_multitasking#Preemptive_multitasking
+.. _`Lock`: https://docs.python.org/3/library/threading.html#threading.Lock
+.. _`Queue`: https://docs.python.org/3/library/queue.html
+.. _`cooperatively`: https://en.wikipedia.org/wiki/Computer_multitasking#Cooperative_multitasking
+.. _`yield`: https://docs.python.org/3/reference/simple_stmts.html#yield
+.. _`await`: https://docs.python.org/3/reference/expressions.html#await
+.. _`map`: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.map
+.. _`imap_unordered`: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap_unordered
+.. _`futures`: https://docs.python.org/3/library/asyncio-task.html#future
+.. _`Event Loops`: https://docs.python.org/3/library/asyncio-eventloops.html
