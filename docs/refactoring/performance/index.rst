@@ -20,8 +20,8 @@ Parallel programming
 --------------------
 
 Three examples of :doc:`Threading <threading-example>`, :doc:`Multiprocessing
-<multiprocessing>` and :doc:`Async <async-example>` illustrate the rules and
-best practices for parallel programming.
+<multiprocessing>` and :doc:`Async <asyncio-example.ipynb>` illustrate the rules
+and best practices for parallel programming.
 
 .. toctree::
     :hidden:
@@ -32,7 +32,7 @@ best practices for parallel programming.
     threading-example.ipynb
     multiprocessing.ipynb
     threading-forking-combined.ipynb
-    async-example.ipynb
+    asyncio-example.ipynb
     parallelise-pandass
     ipyparallel/index.rst
 

@@ -52,6 +52,7 @@ plotnine = {extras = ["all"],version = "*"}
 ipylayout = "*"
 pre-commit = "*"
 git-big-picture = "*"
+nest-asyncio = "*"
 
 [dev-packages]
 

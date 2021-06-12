@@ -40,6 +40,8 @@ voluptuous = "*"
 engarde = "*"
 tdda = "*"
 hypothesis = {extras = ["numpy", "pandas"],version = "*"}
+pytest = "*"
+aiodebug = "*"
 
 [requires]
 python_version = "3.7.4"
