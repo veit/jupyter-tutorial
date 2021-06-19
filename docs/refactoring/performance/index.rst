@@ -20,8 +20,8 @@ Parallel programming
 --------------------
 
 Three examples of :doc:`Threading <threading-example>`, :doc:`Multiprocessing
-<multiprocessing>` and :doc:`Async <asyncio-example.ipynb>` illustrate the rules
-and best practices for parallel programming.
+<multiprocessing>` and :doc:`Async <>asyncio-example` illustrate the rules and
+best practices for parallel programming.
 
 .. toctree::
     :hidden:
