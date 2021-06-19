@@ -118,8 +118,8 @@ Git best practices
 
     .. seealso::
         * `git gc <https://git-scm.com/docs/git-gc>`_
-        * `Git Interna - Wartung und Datenwiederherstellung
-          <https://git-scm.com/book/de/v2/Git-Interna-Wartung-und-Datenwiederherstellung>`_
+        * `Git Internals - Maintenance and Data Recovery
+          <https://git-scm.com/book/en/v2/Git-Internals-Maintenance-and-Data-Recovery>`_
 
   - Clean up the remote tracking branches with ``git remote update --prune``.
   - Checks forgotten work with ``git stash list``.
