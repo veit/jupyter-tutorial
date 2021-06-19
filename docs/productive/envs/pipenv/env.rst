@@ -38,11 +38,6 @@ The credentials, e.g. of the version management, can also be specified in the
     name = "cusy-pypi"
 
 .. note::
-   ``pipenv`` hasht das ``Pipfile``, bevor die Umgebungsvariablen ermittelt
-   werden, und auch in ``Pipfile.lock`` werden die Umgebungsvariablen
-   geschrieben, sodass keine Credentials in der Versionsverwaltung gespeichert
-   werden müssen.
-
    ``pipenv`` hashes the ``Pipfile`` before determining the environment
    variables, and the environment variables are also written in
    ``Pipfile.lock``, so that no credentials need to be stored in the version
