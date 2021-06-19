@@ -1,20 +1,19 @@
-Umgebungsvariablen
-==================
+Environment variables
+=====================
 
-``pipenv``-Umgebungsvariablen
------------------------------
+``pipenv`` environment variables
+--------------------------------
 
-``pipenv --envs`` gibt Optionen der Environment-Variablen aus.
+``pipenv --envs`` outputs options of the environment variables.
 
-Weitere Informationen hierzu findet ihr unter
-`Configuration With Environment Variables
+For more information, see `Configuration With Environment Variables
 <https://docs.pipenv.org/advanced/#configuration-with-environment-variables>`_.
 
-``.env``-Datei
---------------
+``.env`` file
+-------------
 
-Wenn eine ``.env``-Datei in eurer virtuellen Umgebung vorhanden ist, werden
-``$ pipenv shell`` und ``$ pipenv run`` diese automatisch laden:
+If an ``.env`` file exists in your virtual environment, ``$ pipenv shell`` and
+``$ pipenv run`` will automatically load it:
 
 .. code-block:: console
 
@@ -28,8 +27,8 @@ Wenn eine ``.env``-Datei in eurer virtuellen Umgebung vorhanden ist, werden
     >>> os.environ['USERNAME']
     'Veit'
 
-Auch die Credentials, z.B. der Versionsverwaltung lassen sich im ``Pipfile``
-angeben, z.B.:
+The credentials, e.g. of the version management, can also be specified in the
+``Pipfile``, e.g.:
 
 .. code-block:: ini
 
@@ -44,16 +43,19 @@ angeben, z.B.:
    geschrieben, sodass keine Credentials in der Versionsverwaltung gespeichert
    werden müssen.
 
-Ihr könnt die ``.env``-Datei auch außerhalb eures Virtual Environments
-speichern. Ihr müsst dann nur den Pfad zu dieser Datei angeben in
-``PIPENV_DOTENV_LOCATION``:
+   ``pipenv`` hashes the ``Pipfile`` before determining the environment
+   variables, and the environment variables are also written in
+   ``Pipfile.lock``, so that no credentials need to be stored in the version
+   management.
+
+You can also save the ``.env`` file outside your virtual environment. You then
+only have to specify the path to this file in ``PIPENV_DOTENV_LOCATION``:
 
 .. code-block:: console
 
     $ PIPENV_DOTENV_LOCATION=/path/to/.env pipenv shell
 
-Ihr könnt auch verhindern, dass ``pipenv`` eine vorhanden ``.env``-Datei
-verwenet mit:
+You can also prevent ``pipenv`` from using an existing ``.env`` file with:
 
 .. code-block:: console
 

@@ -1,39 +1,38 @@
-Titel mit Satzzeichen  unterstreichen
-=====================================
+Underline the title with punctuation marks
+==========================================
 
-Wechselt für Untertitel das Satzzeichen
----------------------------------------
+Change the punctuation mark for subtitles
+-----------------------------------------
 
-*Italic*, **fett** und ``vorformatiert``
-`Hyperlink <https://en.wikipedia.org/wiki/Hyperlink>`_ `Link`_
+*Italic*, **bold** und ``preformatted``
+`hyperlink <http://en.wikipedia.org/wiki/Hyperlink>`_ `link`_
 
-.. _Link: https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)
+.. _link: http://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)
 .. image:: python-logo.png
-.. Ein Kommentarblock beginnt mit zwei Punkten und kann weiter eingerückt
-   werden.
+.. A comment block begins with two points and can be indented further
 
-Ein Absatz besteht aus einer oder mehreren Zeilen mit nicht eingerücktem
-Text, getrennt aus dem Material oben und unten durch Leerzeilen.
+A paragraph consists of one or more lines of non-indented text, separated
+from the material above and below by blank lines.
 
-    »Block-Anführungszeichen sehen aus wie Absätze, sind aber eingerückt mit
-    einem oder mehreren Leerzeichen.«
+    »Block quotation marks look like paragraphs, but are indented with one
+    or more spaces.«
 
-| Aufgrund des Pipe-Zeichens wird dies zu einer Zeile.
-| Und dies wird eine andere Zeile werden.
+| Because of the pipe character, this becomes one line.
+| And this will be another line.
 
-Begriff
-  Definition für den Begriff
-Anderer Begriff
-  …und seine Definition
+term
+  Definition of the term
+Different term
+  …and its definition
 
-* Jeder Eintrag in einer Liste beginnt mit einem Sternchen (oder ``1.``,
-  ``a.`` usw.).
-* Listenelemente können für mehrere Zeilen angezeigt werden, solange die
-  Listenelemente eingerückt bleiben
+* Each entry in a list begins with an asterisk (or ``1.``,
+  ``a.`` etc.).
+* List items can be displayed for multiple lines as long as the list items
+  remain indented
 
-Codeblöcke werden mit einem Doppelpunkt eingeführt und eingerückt::
+Blocks of code are introduced and indented with a colon::
 
     import docutils
     print help(docutils)
 
->>> print 'Aber doctests beginnen mit ">>>" und brauchen keine Einrückung.'
+>>> print 'But doctests start with ">>>" and don’t need to be indented.'

@@ -58,10 +58,10 @@ Occasionally, however, Git runs into issues with merging, such as:
 
     .. seealso::
 
-        * `Git Branching - Einfaches Branching und Merging
-          <https://git-scm.com/book/de/v2/Git-Branching-Einfaches-Branching-und-Merging>`_
-        * `Git Tools - Fortgeschrittenes Merging
-          <https://git-scm.com/book/de/v2/Git-Tools-Fortgeschrittenes-Merging>`_
+        * `Git Branching - Basic Branching and Merging
+          <https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging>`_
+        * `Git Tools - Advanced Merging
+          <https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging>`_
 
 Branches
 --------

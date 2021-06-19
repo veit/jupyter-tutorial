@@ -69,7 +69,7 @@ Use on the command line
         Latex article, derived from the Sphinx how-to
 
     ``--template report``
-        Latex-Bericht mit Inhaltsverzeichnis und Kapiteln
+        Latex report with table of contents and chapters
 
 ``pdf``
     creates a PDF over latex. Supports the same templates as ``latex``.
