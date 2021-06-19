@@ -48,7 +48,7 @@ you can have a look at the source code of this page by following the link
 `Sources <../../_sources/productive/sphinx/index.rst.txt>`_ folgt.
 
 Originally, Sphinx was developed for the documentation of Python and is now used
-in almost all Python projects, including `NumPy und SciPy
+in almost all Python projects, including `NumPy and SciPy
 <https://docs.scipy.org/doc/>`_, `Matplotlib
 <https://matplotlib.org/users/index.html>`_, `Pandas
 <https://pandas.pydata.org/docs/>`_ and `SQLAlchemy
