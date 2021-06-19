@@ -146,17 +146,17 @@ can also be called up with `CiteAs <https://citeas.org/>`_.
 .. seealso::
    * `Should I cite? <https://mr-c.github.io/shouldacite/index.html>`_
    * `How to cite software “correctly”
-     <https://research-software.org/citation/researchers#how-to-cite-software-correctly>`_
+     <https://cite.research-software.org/>`_
    * Daniel S. Katz: `Compact identifiers for software: The last missing link in
      user-oriented software citation?
      <https://danielskatzblog.wordpress.com/2018/02/06/compact-identifiers-for-software-the-last-missing-link-in-user-oriented-software-citation/>`_
    * `Neil Chue Hong: How to cite software: current best practice
-     <https://zenodo.org/record/2842910#.XspLsxMzbOQ>`_
+     <https://zenodo.org/record/2842910>`_
    * `Recognizing the value of software: a software citation guide
      <https://f1000research.com/articles/9-1257/v2>`_
    * Stephan Druskat, Radovan Bast, Neil Chue Hong, Alexander Konovalov, Andrew
      Rowley, Raniere Silva: `A standard format for CITATION files
-     <https://www.software.ac.uk/index.php/blog/2017-12-12-standard-format-citation-files>`_
+     <https://www.software.ac.uk/blog/2017-12-12-standard-format-citation-files>`_
    * `Module-5-Open-Research-Software-and-Open-Source
      <https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/master/content_development/README.md/>`_
    * Software Heritage: `Save and reference research software

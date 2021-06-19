@@ -3,7 +3,7 @@ Testing
 
 .. seealso::
    * `Python Testing and Continuous Integration
-     <https://katyhuff.github.io/python-testing/>`_
+     <https://carpentries-incubator.github.io/python-testing/>`_
 
 Concepts
 --------

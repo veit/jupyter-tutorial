@@ -38,7 +38,7 @@ Examples of XML database systems are eXist and MonetDB.
 |                        |                                                | at the database level.                         |                                                |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
 
-.. _`eXist`: http://exist-db.org/
+.. _`eXist`: https://exist-db.org/
 .. _`MonetDB`: https://www.monetdb.org/
 .. _`BaseX`: https://basex.org/
 .. _`eXist-db/exist`: https://github.com/eXist-db/exist

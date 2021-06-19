@@ -61,7 +61,7 @@ For this you can add the following in the ``.travis.yml`` file:
 … together with ``tox``
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Codecov can be set up with :doc:`tox`:
+Codecov can be set up with :doc:`../tox`:
 
 .. code-block:: ini
 

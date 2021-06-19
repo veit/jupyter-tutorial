@@ -73,7 +73,7 @@ Popular widget libraries are
 
 ``ipympl``
     ``ipympl`` or `jupyter-matplotlib
-    <https://github.com/matplotlib/jupyter-matplotlib>`_ offer interactive
+    <https://github.com/matplotlib/ipympl>`_ offer interactive
     widgets for matplotlib.
 
     .. toctree::

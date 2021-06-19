@@ -14,8 +14,8 @@ You can install Panel in the virtual environment of your Jupyter kernel with:
     …
 
 For some of the following examples additional packages are required such as
-`Holoviews <http://holoviews.org/>`_ and `hvPlot
-<https://hvplot.pyviz.org/>`_. They can be installed with:
+`Holoviews <https://holoviews.org/>`_ and `hvPlot
+<https://hvplot.holoviz.org/>`_. They can be installed with:
 
 .. code-block:: console
 

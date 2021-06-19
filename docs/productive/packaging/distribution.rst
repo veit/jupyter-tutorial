@@ -31,7 +31,7 @@ In both cases, duplicate metadata in package and code is avoided.
 ---------------
 
 The `packages` field uses setuptools’s `find_packages()
-<https://setuptools.readthedocs.io/en/latest/setuptools.html#using-find-packages>`_
+<https://setuptools.readthedocs.io/en/latest/userguide/package_discovery.html#using-find-or-find-packages>`_
 to find underlying packages and the `package_dir
 <https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages>`_
 field describes where the root directory is.
@@ -134,7 +134,7 @@ better against patent infringements, but isn’t compatible with the GPL v2.
 Therefore, you should see which licenses have the packages that you depend on
 and with which you should be compatible. To analyse licenses, you can use
 `licensechecker
-<http://www.boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_,
+<https://boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_,
 a command line tool that searches installation directories for licenses.
 
 It can also be useful to publish a package under several licenses. An example of

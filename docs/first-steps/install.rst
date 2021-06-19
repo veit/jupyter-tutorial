@@ -54,7 +54,7 @@ being accidentally overwritten:
      ``PATH`` in the control panel.
 
 Further information on user-specific installation can be found in `User
-Installs <https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_.
+Installs <https://pip.pypa.io/en/latest/user_guide/#user-installs>`_.
 
 Create a virtual environment with ``jupyter``
 ---------------------------------------------

@@ -1,7 +1,7 @@
 IPython
 =======
 
-`IPython <http://ipython.org/>`_, or *Interactive Python*, was initially an
+`IPython <https://ipython.org/>`_, or *Interactive Python*, was initially an
 advanced Python interpreter that has now grown into an extensive project
 designed to provide tools for the entire life cycle of research computing.
 Today, IPython is not only an interactive interface to Python, but also offers a

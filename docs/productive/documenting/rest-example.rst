@@ -5,9 +5,9 @@ Wechselt für Untertitel das Satzzeichen
 ---------------------------------------
 
 *Italic*, **fett** und ``vorformatiert``
-`Hyperlink <http://en.wikipedia.org/wiki/Hyperlink>`_ `Link`_
+`Hyperlink <https://en.wikipedia.org/wiki/Hyperlink>`_ `Link`_
 
-.. _Link: http://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)
+.. _Link: https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)
 .. image:: python-logo.png
 .. Ein Kommentarblock beginnt mit zwei Punkten und kann weiter eingerückt
    werden.

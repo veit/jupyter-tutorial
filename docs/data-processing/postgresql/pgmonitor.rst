@@ -16,7 +16,7 @@ including:
 It combines multiple open-source software packages to create a robust PostgreSQL
 monitoring environment, including:
 
-`PostgreSQL Exporter <https://github.com/wrouesnel/postgres_exporter>`_
+`PostgreSQL Exporter <https://github.com/prometheus-community/postgres_exporter>`_
     an open-source data export to Prometheus that supports collecting metrics
     from any PostgreSQL server ≥ 9.1.
 `Prometheus <https://prometheus.io/>`_

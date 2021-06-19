@@ -26,12 +26,12 @@ Multicorn
 
     * `GitHub <sqlalchem://github.com/Kozea/Multicorn>`_
     * `PGXN <https://pgxn.org/dist/multicorn/>`_
-    * `Docs <http://multicorn.org/foreign-data-wrappers/#sqlalchemy-foreign-data-wrapper>`_
+    * `Docs <https://multicorn.org/foreign-data-wrappers/#sqlalchemy-foreign-data-wrapper>`_
 
 VirtDB
     Native access to VirtDB (SAP ERP, Oracle RDBMS)
 
-    * `GitHub <https://github.com/virtdb/virtdb-fdw>`_
+    * `GitHub <https://github.com/dbeck/virtdb-fdw>`_
 
 Specific SQL wrappers
 ---------------------
@@ -71,7 +71,7 @@ NoSQL database wrappers
 -----------------------
 
 Cassandra
-    FDW for `Cassandra <http://cassandra.apache.org/>`_
+    FDW für `Cassandra <https://cassandra.apache.org//>`_
 
     * `GitHub <https://github.com/rankactive/cassandra-fdw>`_
     * `rankactive <https://rankactive.com/resources/postgresql-cassandra-fdw>`_
@@ -100,7 +100,7 @@ CSV
     Official extension for PostgreSQL 9.1
 
     * `Git <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/file_fdw;hb=HEAD>`_
-    * `Docs <https://www.postgresql.org/docs/current/static/file-fdw.html>`_
+    * `Docs <https://www.postgresql.org/docs/current/file-fdw.html>`_
 
 JSON
     FDW for JSON files
@@ -118,7 +118,7 @@ Geo wrappers
 ------------
 
 GDAL/OGR
-    FDW for the  `GDAL/OGR <http://www.gdal.org/>`_ driver including databases
+    FDW for the  `GDAL/OGR <https://gdal.org/>`_ driver including databases
     like Oracle and SQLite as well as file formats like MapInfo, CSV, Excel,
     OpenOffice, OpenStreetMap PBF and XML.
 
@@ -147,12 +147,12 @@ ICAL
 IMAP
     FDW for the Internet Message Access Protocol (IMAP)
 
-    * `Docs <http://multicorn.org/foreign-data-wrappers/#idimap-foreign-data-wrapper>`_
+    * `Docs <https://multicorn.org/foreign-data-wrappers/#imap-foreign-data-wrapper>`_
 
 RSS
     FDQ for RSS feeds
 
-    * `Docs <http://multicorn.org/foreign-data-wrappers/#idrss-foreign-data-wrapper>`_
+    * `Docs <https://multicorn.org/foreign-data-wrappers/#rss-foreign-data-wrapper>`_
 
 .. seealso::
    * `PostgreSQL wiki

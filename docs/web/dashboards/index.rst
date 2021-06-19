@@ -11,14 +11,14 @@ Dashboards
     conjunction with :doc:`interaktiven Widgets
     </workspace/jupyter/ipywidgets/embedding>`.
 :doc:`panel/index`
-    was developed on the basis of `Bokeh <https://bokeh.pydata.org/en/latest/>`_
-    and `Param <https://github.com/pyviz/param>`_ and offers a toolkit
+    was developed on the basis of `Bokeh <https://docs.bokeh.org/>`_
+    and `Param <https://github.com/holoviz/param>`_ and offers a toolkit
     especially for creating apps and dashboards, which not only supports bokeh
     plots, see also `Panel: Ahigh-level app and dashboarding solution for the
     PyData ecosystem
     <https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52>`_.
 :doc:`voila/index`
-    was developed by `QuantStack <http://quantstack.net/>`_, see also `And
+    was developed by `QuantStack <https://quantstack.net/>`_, see also `And
     voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
 :doc:`jupyter-flex/index`
     Jupyter extension that turns notebooks into dashboards.

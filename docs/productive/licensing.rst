@@ -69,7 +69,7 @@ license.
 GitHub
 ------
 
-On `GitHub <http://github.com/>`_ you can have an open source license created in
+On `GitHub <https://github.com/>`_ you can have an open source license created in
 your repository.
 
 #. Go to the main page of your repository.
@@ -148,7 +148,7 @@ for GitLab in the ``.gitlab-ci.yml`` file with:
 Alternatives
 ~~~~~~~~~~~~
 
-`SPDX <https://spdx.org/>`_
+`SPDX <https://spdx.dev/>`_
     SPDX defines a standardised method for exchanging copyright and license
     information between projects and people
 `ClearlyDefined <https://clearlydefined.io/>`_

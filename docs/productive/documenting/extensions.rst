@@ -4,30 +4,30 @@ Extensions
 Built-in extensions
 -------------------
 
-`sphinx.ext.autodoc <http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_
+`sphinx.ext.autodoc <https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_
     Integrate documentation from docstrings
-`sphinx.ext.autosummary <http://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html>`_
+`sphinx.ext.autosummary <https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html>`_
     generates summaries of functions, methods and attributes from docstrings
-`sphinx.ext.autosectionlabel <http://www.sphinx-doc.org/en/master/usage/extensions/autosectionlabel.html>`_
+`sphinx.ext.autosectionlabel <https://www.sphinx-doc.org/en/master/usage/extensions/autosectionlabel.html>`_
     references section using the title
-`sphinx.ext.graphviz <http://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_
+`sphinx.ext.graphviz <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_
     Rendering of `Graphviz <https://www.graphviz.org/>`_ graphs
-`sphinx.ext.ifconfig <http://www.sphinx-doc.org/en/master/usage/extensions/ifconfig.html>`_
+`sphinx.ext.ifconfig <https://www.sphinx-doc.org/en/master/usage/extensions/ifconfig.html>`_
     includes content only under certain conditions
-`sphinx.ext.intersphinx <http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html>`_
+`sphinx.ext.intersphinx <https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html>`_
     allows the linking of other project documentation
-`sphinx.ext.mathjax <http://www.sphinx-doc.org/en/master/usage/extensions/math.html#module-sphinx.ext.mathjax>`_
+`sphinx.ext.mathjax <https://www.sphinx-doc.org/en/master/usage/extensions/math.html#module-sphinx.ext.mathjax>`_
     Rendering via JavaScript
-`sphinx.ext.napoleon <http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html>`_
+`sphinx.ext.napoleon <https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html>`_
     Support for NumPy and Google style docstrings
-`sphinx.ext.todo <http://www.sphinx-doc.org/en/master/usage/extensions/todo.html>`_
+`sphinx.ext.todo <https://www.sphinx-doc.org/en/master/usage/extensions/todo.html>`_
     Support for ToDo items
-`sphinx.ext.viewcode <http://www.sphinx-doc.org/en/master/usage/extensions/viewcode.html>`_
+`sphinx.ext.viewcode <https://www.sphinx-doc.org/en/master/usage/extensions/viewcode.html>`_
     adds links to the source code of the Sphinx documentation
 
 .. seealso::
    You can get a complete overview at `Sphinx Extensions
-   <http://www.sphinx-doc.org/en/master/usage/extensions/index.html>`_
+   <https://www.sphinx-doc.org/en/master/usage/extensions/index.html>`_
 
 Third-party extensions
 ----------------------

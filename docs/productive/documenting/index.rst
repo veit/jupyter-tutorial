@@ -27,7 +27,7 @@ Badges are helpful in getting a quick overview of a product. For the
 
 |Downloads| |Updates| |Versions| |Contributors| |License| |Docs|
 
-.. |Downloads| image:: https://pepy.tech/badge/cookiecutter-namespace-template
+.. |Downloads| image:: https://static.pepy.tech/badge/cookiecutter-namespace-template
    :target: https://pepy.tech/project/cookiecutter-namespace-template
 .. |Updates| image:: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/shield.svg
    :target: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/
@@ -36,12 +36,12 @@ Badges are helpful in getting a quick overview of a product. For the
 .. |Contributors| image:: https://img.shields.io/github/contributors/veit/cookiecutter-namespace-template.svg
    :target: https://github.com/veit/cookiecutter-namespace-template/graphs/contributors
 .. |License| image:: https://img.shields.io/github/license/veit/cookiecutter-namespace-template.svg
-   :target: https://github.com/veit/cookiecutter-namespace-template/blob/master/LICENSE
+   :target: https://github.com/veit/cookiecutter-namespace-template/blob/main/LICENSE
 .. |Docs| image:: https://readthedocs.org/projects/cookiecutter-namespace-template/badge/?version=latest
    :target: https://cookiecutter-namespace-template.readthedocs.io/en/latest/
 
 For extensive documentation you can, for example, use `Sphinx
-<http://www.sphinx-doc.org/>`_, a documentation tool that converts :doc:`rest`,
+<https://www.sphinx-doc.org/>`_, a documentation tool that converts :doc:`rest`,
 a simple markup language, into HTML or PDF, EPub and man pages. The Jupyter
 tutorial was also created with Sphinx. To get a first impression of the Sphinx,
 you can have a look at the source code of this page by following the link
@@ -51,7 +51,7 @@ Originally, Sphinx was developed for the documentation of Python and is now used
 in almost all Python projects, including `NumPy und SciPy
 <https://docs.scipy.org/doc/>`_, `Matplotlib
 <https://matplotlib.org/users/index.html>`_, `Pandas
-<https://pandas.pydata.org/pandas-docs/>`_ and `SQLAlchemy
+<https://pandas.pydata.org/docs/>`_ and `SQLAlchemy
 <https://docs.sqlalchemy.org/>`_.
 
 The Sphinx `autodoc

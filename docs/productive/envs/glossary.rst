@@ -11,8 +11,8 @@ Glossary
 
    conda
        Package management tool for the `Anaconda
-       <http://docs.continuum.io/anaconda/index.html>`_ distribution from
-       `Continuum Analytics <http://continuum.io/downloads>`_. It’s specifically
+       <https://docs.continuum.io/anaconda/index.html>`_ distribution from
+       `Continuum Analytics <https://www.anaconda.com/>`_. It’s specifically
        aimed at the scientific community, particularly Windows, where installing
        binary extensions is often difficult.
 
@@ -42,8 +42,8 @@ Glossary
        A :term:`built distribution` format introduced by :term:`setuptools`
        that is now being replaced by :term:`wheel`. For more information, see
        `The Internal Structure of Python Eggs
-       <https://setuptools.readthedocs.io/en/latest/formats.html>`_ and `Python
-       Eggs <http://peak.telecommunity.com/DevCenter/PythonEggs>`_.
+       <https://setuptools.readthedocs.io/en/latest/deprecated/python_eggs.html>`_
+       and `Python Eggs <http://peak.telecommunity.com/DevCenter/PythonEggs>`_.
 
    import package
        A Python module that can contain other modules or recursively other
@@ -64,9 +64,10 @@ Glossary
    pip
        A tool for installing Python packages.
 
-       `Docs <https://pip.pypa.io/en/stable/>`_ |
+
+       `Docs <https://pip.pypa.io/>`_ |
        `GitHub <https://github.com/pypa/pip>`_ |
-       `PyPI <https://pypi.python.org/pypi/pip/>`_ |
+       `PyPI <https://pypi.org/project/pip/>`_ |
 
    Pipfile
        User-friendly, on `TOML <https://github.com/toml-lang/toml>`_ based
@@ -91,9 +92,8 @@ Glossary
        :term:`virtualenv` in a single toolchain.
 
        `Docs <https://docs.pipenv.org/>`_ |
-       `GitHub <https://github.com/kennethreitz/pipenv>`_ |
-       `PyPI <https://pypi.python.org/pypi/pipenv>`_ |
-
+       `GitHub <https://github.com/pypa/pipenv>`_ |
+       `PyPI <https://pypi.org/project/pipenv/>`_ |
 
    pypi.org
        `pypi.org  <https://pypi.org/>`_ is the domain name for the Python
@@ -128,7 +128,7 @@ Glossary
    Spack
        A flexible package manager that supports multiple versions,
        configurations, platforms, and compilers. Spack is similar to the `Nix
-       <https://nixos.org/nix/>`_ package manager, but allows the definition of
+       <https://nixos.org/>`_ package manager, but allows the definition of
        virtual dependencies and offers a syntax for parameterisation. The
        packages are written in Python for easy exchange of compilers, library
        versions, build options, etc. Any number of versions of packages can
@@ -136,10 +136,10 @@ Glossary
        scientific applications on clusters and supercomputers.
 
        `Docs <https://spack.readthedocs.io/>`_ |
-       `GitHub <https://github.com/llnl/spack/>`_ |
+       `GitHub <https://github.com/spack/spack>`_ |
        `Slides <https://tgamblin.github.io/files/Gamblin-Spack-SC15-Talk.pdf>`_ |
        `The Spack package manager: bringing order to HPC software chaos
-       <http://ieeexplore.ieee.org/document/7832814/>`_ |
+       <https://ieeexplore.ieee.org/document/7832814>`_ |
 
    virtualenv
        An isolated Python environment that allows packages to be installed for a

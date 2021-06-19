@@ -11,7 +11,7 @@ Status
 .. |Commits| image::  https://raster.shields.io/github/commit-activity/y/veit/jupyter-tutorial
    :target: https://github.com/veit/jupyter-tutorial/commits
 .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
-   :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+   :target: https://github.com/veit/jupyter-tutorial/blob/main/LICENSE
 .. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
    :target: https://jupyter-tutorial.readthedocs.io/en/latest/
 .. |Pyup| image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
@@ -57,17 +57,18 @@ project:
    :doc:`workspace/jupyter/index` with
    :doc:`workspace/jupyter/nbextensions/index` and
    :doc:`workspace/jupyter/ipywidgets/index`.
-4. **Collect data,** either through a :doc:`REST API <data/web-api>` or directly
-   from an HTML page.
+4. **Collect data,** either through a :doc:`REST API
+   <data-processing/requests/index>` or directly from an :doc:`HTML page
+   <data-processing/beautifulsoup>`.
 5. **Cleaning up data** is a recurring task that includes Remove or modify
    redundant, inconsistent, or incorrectly formatted data.
 6. **Analyse data** through exploratory analysis and :doc:`visualising data
    <viz/index>`.
 7. **Refactoring** includes parameterisation, validation and performance
-   optimisation, including through :doc:`parallelisation
-   <refactoring/parallel/index>`.
+   optimisation, including through :doc:`concurrency
+   <refactoring/performance/concurrency>`.
 8. **Creating a product**
-   includes :doc:`productive/testing/index`, :doc:`productive/logging` and
+   includes :doc:`productive/testing/index`, :doc:`productive/logging/index` and
    :doc:`productive/documenting/index` the methods and functions as well
    as :doc:`creating packages  <productive/packaging/index>`.
 9. **Web applications**
@@ -103,8 +104,8 @@ at the core functions:
 Interactive Computing Protocol
     The notebook communicates with the computing kernel via the *Interactive
     Computing Protocol*, an open network protocol based on JSON data via `ZMQ
-    <http://zeromq.org/>`_ and `WebSockets
-    <https://de.wikipedia.org/wiki/WebSocket>`_.
+    <https://zeromq.org/>`_ and `WebSockets
+    <https://en.wikipedia.org/wiki/WebSocket>`_.
 :doc:`workspace/jupyter/kernels/index`
     Kernels are processes that execute interactive code in a specific
     programming language and return the output to the user.

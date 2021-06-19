@@ -1,7 +1,7 @@
 Panel
 =====
 
-`Panel <https://panel.pyviz.org/>`_ was developed on the basis of `Bokeh
+`Panel <https://panel.holoviz.org/>`_ was developed on the basis of `Bokeh
 <https://bokeh.pydata.org/en/latest/>`_ and `Param
 <https://github.com/pyviz/param>`_ and offers a toolkit especially for creating
 apps and dashboards, which not only supports bokeh plots.

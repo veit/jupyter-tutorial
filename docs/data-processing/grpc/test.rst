@@ -24,7 +24,7 @@ gRPC can be tested automatically with `pytest-grpc
       :lines: 2,4-25
 
    .. seealso::
-      * `pytest fixtures <https://docs.pytest.org/en/latest/fixture.html>`_
+      * `pytest fixtures <https://docs.pytest.org/en/latest/explanation/fixtures.html>`_
 
 #. Afterwards we can write tests, e.g.:
 

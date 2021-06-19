@@ -7,14 +7,13 @@ amounts of data. These include:
 * Netflix
 
   * `Beyond Interactive: Notebook Innovation at Netflix
-    <https://medium.com/netflix-techblog/notebook-innovation-591ee3221233>`_
+    <https://netflixtechblog.com/notebook-innovation-591ee3221233>`_
   * `Part 2: Scheduling Notebooks at Netflix
-    <https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6>`_
+    <https://netflixtechblog.com/scheduling-notebooks-348e6c14cfd6>`_
 
 * Bloomberg BQuant platform
 
-  * `Bloomberg BQNT (1) <https://adrian-gao.com/2018/02/bloomberg-bqnt-1/>`_
-  * `Bloomberg BQNT (2) <https://adrian-gao.com/2018/04/bloomberg-bqnt-2/>`_
+  * `Bloomberg BQuant (BQNT) <https://mingze-gao.com/posts/bloomberg-bquant/>`_
 
 * PayPal
 

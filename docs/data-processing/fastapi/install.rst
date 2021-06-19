@@ -50,7 +50,7 @@ Starlette can use the optional dependencies
     if you want to use the default template configuration.
 `python-multipart <https://andrew-d.github.io/python-multipart/>`_
     if you want to support form parsing, with ``request.form()``.
-`itsdangerous <https://pythonhosted.org/itsdangerous/>`_
+`itsdangerous <https://itsdangerous.palletsprojects.com/>`_
     required for ``SessionMiddleware`` support.
 `pyyaml <https://pyyaml.org/wiki/PyYAMLDocumentation>`_
     for Starlette’s ``SchemaGenerator`` support.

@@ -42,7 +42,7 @@ Low-level system access
     regardless of whether these operations are CPU or IO-bound.
 
 Not all expansion modules fit exactly into the above categories. For example,
-the extension modules contained in `NumPy <http://www.numpy.org/>`_ cover all
+the extension modules contained in `NumPy <https://numpy.org/>`_ cover all
 three use cases:
 
 * They move inner loops to C for speed reasons,
@@ -61,8 +61,8 @@ it difficult to distribute the software. Today this disadvantage due to
 * The installation from the sources remains complicated.
 * Possibly there is no suitable :term:`wheel` for the build of the CPython
   interpreter or alternative interpreters such as `PyPy
-  <https://pypy.org/>`_, `IronPython <http://ironpython.net/>`_ or `Jython
-  <http://www.jython.org/>`_.
+  <https://www.pypy.org/>`_, `IronPython <https://ironpython.net/>`_ or `Jython
+  <https://ironpython.net/>`_.
 * The maintenance of the packages is more time-consuming because the maintainers
   not only have to be familiar with Python but also with another language and
   the CPython C API. In addition, the complexity increases if a Python fallback
@@ -88,14 +88,14 @@ alternatives should also be considered:
   own accelerator module.
 
 * For long-running applications, the JIT-compiled `PyPy
-  <https://pypi.python.org/>`_ interpreter can be a suitable alternative to the
+  <https://www.pypy.org/>`_ interpreter can be a suitable alternative to the
   standard CPython. The main difficulty with adopting PyPy is typically the
   dependence on other Binary Extensions modules. While PyPy emulates the
   CPython C API, modules that rely on it cause problems for the PyPy JIT, and
   the emulation often exposes defects in extension modules that CPython
   tolerates. (often with reference counting errors).
 
-* `Cython <http://cython.org/>`_ is a sophisticated static compiler that can
+* `Cython <https://cython.org/>`_ is a sophisticated static compiler that can
   compile most Python code into C-Extension modules. The initial compilation
   offers some speed increases (by bypassing the CPython interpreter level), and
   Cython’s optional static typing functions can provide additional speed
@@ -125,7 +125,7 @@ number of other alternatives should be considered.
 The approaches described below do not simplify distribution, but they can
 significantly reduce the maintenance effort compared to wrapper modules.
 
-* `Cython <http://cython.org/>`_ is useful not only for creating accelerator
+* `Cython <https://cython.org/>`_ is useful not only for creating accelerator
   modules, but also for creating wrapper modules. Since the API still needs to
   be wrapped by hand, it is not a good choice when wrapping large APIs.
 
@@ -197,10 +197,6 @@ suitable compiler available. On Windows, Visual C is used to create the official
 CPython interpreter, and it should also be used to create compatible binary
 extensions:
 
-for Python 2.7
-    #. install `Microsoft Visual C++ Compiler for Python 2.7
-       <https://www.microsoft.com/en-gb/download/details.aspx?id=44266>`_
-    #. update :term:`pip` and :term:`setuptools`
 for Python 3.4
     #. install `Microsoft Windows SDK for Windows 7 and .NET Framework 4
        <https://www.microsoft.com/en-gb/download/details.aspx?id=8279>`_

@@ -125,6 +125,7 @@ used with older versions of Python.
 
 ----
 
-.. [#] `Records (Python recipe) <https://code.activestate.com/recipes/576555-records/>`_
+.. [#] `Records (Python recipe)
+       <https://web.archive.org/web/20170904185553/http://code.activestate.com/recipes/576555-records/>`_
 .. [#] `Dot-style nested lookups over dictionary based data structures (Python recipe)
-       <http://code.activestate.com/recipes/576586-dot-style-nested-lookups-over-dictionary-based-dat/>`_
+       <https://web.archive.org/web/20100604034714/http://code.activestate.com/recipes/576586-dot-style-nested-lookups-over-dictionary-based-dat>`_

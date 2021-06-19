@@ -100,7 +100,7 @@ Multithreading, multiprocessing and asynchronous communication
 |                  |                  | test individual  |                                |
 |                  | Locks are        | processes in a   | However ``asyncio`` requires a |
 |                  | difficult to     | single thread    | large set of tools:            |
-|                  | understand in    | before switching | `futures`_, `event loops`_ and |
+|                  | understand in    | before switching | `futures`_, `Event Loops`_ and |
 |                  | non-trivial      | to               | non-blocking versions of almost|
 |                  | examples. For    | multiprocessing. | everything.                    |
 |                  | complex          |                  |                                |
@@ -137,5 +137,5 @@ Multithreading, multiprocessing and asynchronous communication
 .. _`await`: https://docs.python.org/3/reference/expressions.html#await
 .. _`map`: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.map
 .. _`imap_unordered`: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap_unordered
-.. _`futures`: https://docs.python.org/3/library/asyncio-task.html#future
-.. _`Event Loops`: https://docs.python.org/3/library/asyncio-eventloops.html
+.. _`futures`: https://docs.python.org/3/library/asyncio-task.html#awaitables
+.. _`Event Loops`: https://docs.python.org/3/library/asyncio-eventloop.html

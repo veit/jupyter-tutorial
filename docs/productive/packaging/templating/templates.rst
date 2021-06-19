@@ -16,16 +16,17 @@ Python
     Deployments (C extension support for `cffi
     <https://cffi.readthedocs.io/>`_ and `Cython <http://cython.org/>`_,
     test support for `Tox <https://tox.readthedocs.io/>`_,
-    `Pytest <https://pytest.org/>`_, `Travis-CI <https://travis-ci.org/>`_,
+    `Pytest <https://docs.pytest.org/>`_, `Travis-CI <https://travis-ci.org/>`_,
     `Coveralls <https://github.com/coveralls-clients/coveralls-python>`_,
     `Codacy <https://github.com/codacy/python-codacy-coverage/>`_,
     and `Code Climate <https://github.com/codeclimate/python-test-reporter>`_,
     documentation with `Sphinx <http://www.sphinx-doc.org/>`_,
     packaging checks with `Landscape <https://landscape.io/>`_,
     `scrutinizer <https://scrutinizer-ci.com/docs/guides/python/>`_,
-    `Isort <https://github.com/timothycrosley/isort>`_ etc.
-`cookiecutter-python-cli <https://github.com/xuanluong/cookiecutter-python-cli>`_
-    Template for creating a Python CLI application with `Click <http://click.pocoo.org/>`_
+    `Isort <<https://github.com/PyCQA/isort>`_ etc.
+`cookiecutter-python-cli <https://github.com/seanluong/cookiecutter-python-cli>`_
+    Template for creating a Python CLI application with `Click
+    <https://click.palletsprojects.com/>`_
 `widget-cookiecutter <https://github.com/jupyter-widgets/widget-cookiecutter>`_
     Template for creating Jupyter widgets
 

@@ -4,7 +4,7 @@ Loading geospatial data
 Now let`s load some geospatial data into our database so that we can familiarise
 ourselves with the tools and processes used to retrieve that data.
 
-`Natural Earth <http://www.naturalearthdata.com/>`_  provides a great source of
+`Natural Earth <https://www.naturalearthdata.com/>`_  provides a great source of
 basic data for the whole world on various scales. And the best thing is that
 this data is in the public domain:
 
@@ -81,7 +81,7 @@ this data is in the public domain:
         specifies the path to the input file
 
       .. seealso::
-         * `ogr2ogr <http://www.gdal.org/ogr2ogr.html>`_
+         * `ogr2ogr <https://gdal.org/programs/ogr2ogr.html>`_
 
    #. Check the import with ``ogrinfo``
 

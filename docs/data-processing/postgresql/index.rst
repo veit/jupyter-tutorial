@@ -64,7 +64,7 @@ Extensions
     supplied with the source code contains various extensions that are described
     in `Appendix F <https://www.postgresql.org/docs/9.5/contrib.html>`_. Other
     extensions have been developed independently, such as :doc:`postgis/index`
-    or `Slony-I <http://www.slony.info/>`_.
+    or `Slony-I <https://www.slony.info/>`_.
 
 Common Table Expression
     `WITH Queries (Common Table Expressions)

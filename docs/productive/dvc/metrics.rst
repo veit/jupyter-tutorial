@@ -6,7 +6,7 @@ command, DVC is also a framework for recording and comparing the performance of
 experiments.
 
 `evaluate.py
-<https://github.com/veit/dvc-example/blob/master/src/evaluate.py>`_
+<https://github.com/veit/dvc-example/blob/main/src/evaluate.py>`_
 calculates the AUC (**A** rea **U** nder the **C** urve). It uses the test data
 set, reads the features from the file ``features/test.pkl`` and creates the
 metrics file ``auc.metric``. It can be identified as a DVC metric with the

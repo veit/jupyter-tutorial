@@ -21,7 +21,7 @@ the following two problems:
 
 In response to the problems of Git Flow, `GitHub
 <https://guides.github.com/introduction/flow/>`_ and `Atlassian
-<https://de.atlassian.com/git/tutorials/comparing-workflows>`_ developed simpler
+<https://www.atlassian.com/git/tutorials/comparing-workflows>`_ developed simpler
 alternatives that are mostly limited to so-called :doc:`feature-branches`.
 
 .. seealso::

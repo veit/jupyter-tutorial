@@ -1,7 +1,7 @@
 ``unittest2``
 =============
 
-`unittest2 <http://pypi.org/project/unittest2>`_ is a backport of
+`unittest2 <https://pypi.org/project/unittest2>`_ is a backport of
 :mod:`unittest`, with improved API and better assertions than in previous Python
 versions.
 

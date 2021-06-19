@@ -12,7 +12,7 @@ Features
   Custom widgets like :doc:`pyviz:d3js/bqplot/index`,
   :doc:`pyviz:js/ipyleaflet`,
   :doc:`pyviz:js/ipyvolume`,
-  `ipympl <https://github.com/matplotlib/jupyter-matplotlib/>`_,
+  `ipympl <https://github.com/matplotlib/ipympl>`_,
   :doc:`ipysheet </workspace/jupyter/ipywidgets/libs/ipysheet>`,
   `plotly <https://github.com/plotly/plotly.py>`_,
   `ipywebrtc <https://github.com/maartenbreddels/ipywebrtc>`_ etc. are also

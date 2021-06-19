@@ -24,7 +24,7 @@ Installation
     # su - jupyter
     $ git clone https://github.com/veit/jupyter-tutorial.git
 
-#. Install `Pipenv <https://pipenv.readthedocs.io/>`_:
+#. Install `Pipenv <https://pipenv.pypa.io/>`_:
 
    .. code-block:: console
 

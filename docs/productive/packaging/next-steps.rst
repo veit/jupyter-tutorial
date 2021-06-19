@@ -16,4 +16,4 @@ And if you want to learn more about Python libraries, you can
   <https://packaging.python.org/key_projects/#setuptools>`_ like
   `flit <https://packaging.python.org/key_projects/#flit>`_,
   `hatch <https://github.com/ofek/hatch>`_ and
-  `poetry <https://github.com/sdispater/poetry>`_.
+  `poetry <https://github.com/python-poetry/poetry>`_.

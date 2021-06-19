@@ -6,7 +6,7 @@ Database permissions
 
 The PostgreSQL login via superuser ``postgres`` should only ever be allowed via
 Unix domain sockets and via ``localhost``. Access with `peer authentication
-<https://www.postgresql.org/docs/current/auth-methods.html#AUTH-PEER>`_ in the
+<https://www.postgresql.org/docs/current/auth-peer.html>`_ in the
 `pg_hba.conf <https://www.postgresql.org/docs/current/auth-pg-hba-conf.html>`_,
 however, can be granted:
 
@@ -33,7 +33,7 @@ Passwords should never be in plain text, e.g. also not be saved in an ``.env``
 file. When saving and transmitting passwords, this should always be `salted
 <https://en.wikipedia.org/wiki/Salt_(cryptography>`_. For PostgreSQL there is
 the extension `pgcrypto
-<https://www.postgresql.org/docs/current/static/pgcrypto.html>`_, which can be
+<https://www.postgresql.org/docs/current/pgcrypto.html>`_, which can be
 easily activated with
 
 .. code-block:: postgresql
@@ -129,7 +129,7 @@ after thirty days with:
     DELETE FROM diagnosis_key WHERE age(submission_timestamp) > 30;
 
 Deletion can be accelerated if a separate partition is created for each day with
-the PostgreSQL extension `pg_partman <https://t.co/3Q1FsU8uVg?amp=1>`_.
+the PostgreSQL extension `pg_partman <https://github.com/pgpartman/pg_partman>`_.
 
 .. seealso::
    * `Veil2  – Relational Security for Postgres

@@ -17,4 +17,4 @@ IntelliJ IDEs
 <https://plugins.jetbrains.com/plugin/11368-data-version-control-dvc-support>`_
 is a plugin for IntelliJ IDEs including PyCharm, IntelliJ IDEA and CLion. It can
 be downloaded from the `JetBrains Plugins-Repository
-<https://plugins.jetbrains.com/plugin/11368-dvc-support-poc>`_.
+<https://plugins.jetbrains.com/plugin/11368-data-version-control-dvc-support/>`_.

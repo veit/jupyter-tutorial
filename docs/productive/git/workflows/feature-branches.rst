@@ -6,7 +6,7 @@ Feature branches
 intended as a greatly simplified alternative to :doc:`git-flow`, whereby there
 should only be different feature branches in addition to the  ``master`` branch.
 Atlassian also recommends a `similar strategy
-<http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/>`_, but using
+<https://www.atlassian.com/blog/git/simple-git-workflow-is-simple>`_, but using
 ``rebase`` for the feature branches. These strategies offer two advantages:
 
 * The code inventory remains relatively small as the feature branches are

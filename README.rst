@@ -131,7 +131,7 @@ Follow us
 
 * `GitHub <https://github.com/veit/jupyter-tutorial>`_
 * `Twitter <https://twitter.com/JupyterTutorial>`_
-* `Mastodon <https://mastodon.social/web/accounts/1089854>`_
+* `Mastodon <https://mastodon.social/@JupyterTutorial>`_
 
 Pull-Requests
 -------------

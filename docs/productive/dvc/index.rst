@@ -26,8 +26,8 @@ which are then easily managed with Git. DVC, on the other hand, stores each step
 in the pipeline in a separate ``.dvc`` file that can then be managed by Git.
 
 These ``.dvc`` files, however, allow practical tools for manipulating and
-visualizing DAGs, see, for example, :ref:`visualisation of DAGs
-<dvc-pipeline-show>`.
+visualizing DAGs, see, for example, :doc:`visualisation of DAGs
+<pipeline>`.
 
 Finally, external dependencies can also be specified with :ref:`dvc remote
 <dvc-remote>`.

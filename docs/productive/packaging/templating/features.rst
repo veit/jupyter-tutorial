@@ -37,7 +37,7 @@ CookieCutter features
     {{cookiecutter.project_name}}/{{cookiecutter.namespace}}/{{cookiecutter.package_name}}/{{cookiecutter.project_slug}}.py
 
 * The nesting depth is unlimited
-* The templating is based on `Jinja2 <http://jinja.pocoo.org/>`_
+* The templating is based on `Jinja <https://jinja.palletsprojects.com/>`_
 * You can simply save your template variables in a ``cookiecutter.json`` file,
   for example:
 

@@ -25,14 +25,14 @@ hand for :doc:`testing/index`, :doc:`logging/index`, :doc:`documenting
 .. seealso::
 
    * `Dustin Boswell, Trevor Foucher: The Art of Readable Code
-     <http://shop.oreilly.com/product/9780596802301.do>`_
+     <https://learning.oreilly.com/library/view/~/9781449318482/>`_
    * TIB workshop «FAIR Data and Software»
 
      * `GitHub Page
        <https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/>`_
      * `GitHub Repository
        <https://github.com/TIBHannover/2018-07-09-FAIR-Data-and-Software>`_
-     * `Slides <http://doi.org/10.5281/zenodo.3707745>`_
+     * `Slides <https://doi.org/10.5281/zenodo.3707745>`_
    * `Dryad: Best practices for creating reusable data publications
      <https://datadryad.org/stash/best_practices>`_
 

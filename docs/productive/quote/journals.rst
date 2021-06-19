@@ -9,17 +9,17 @@ General
   <https://onlinelibrary.wiley.com/>`_
 * `Journal of Open Source Software <https://joss.theoj.org/>`_
 * `Journal of Open Research Software (JORS)
-  <http://openresearchsoftware.metajnl.com/>`_
+  <https://openresearchsoftware.metajnl.com/>`_
 * `Journal of Software: Practice and Experience
-  <http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X>`_
+  <https://onlinelibrary.wiley.com/journal/1097024x>`_
 * `Nature Toolbox
-  <http://www.nature.com/news/toolbox>`_
+  <https://www.nature.com/nature/articles?type=toolbox>`_
 * `Research Ideas and Outcomes (RIO)
-  <http://riojournal.com/>`_
+  <https://riojournal.com/>`_
 * `SIAM Journal on Scientific Computing (SISC) Software section
-  <http://www.siam.org/journals/sisc/policy.php>`_
+  <https://www.siam.org/publications/journals/siam-journal-on-scientific-computing-sisc/editorial-policy>`_
 * `SoftwareX
-  <http://www.journals.elsevier.com/softwarex/>`_
+  <https://www.journals.elsevier.com/softwarex>`_
 
 Image processing
 ----------------
@@ -30,59 +30,59 @@ Image processing
 Biology
 -------
 
-* `American Journal of Human Genetics <http://www.cell.com/AJHG/>`_
-* `Artificial Life <http://www.mitpressjournals.org/loi/artl>`_
-* Psychonomic Society: `Behaviour Research Methods <http://www.psychonomic.org/page/springerBRM>`_
-* Oxford Academic: `Bioinformatics <http://bioinformatics.oxfordjournals.org/>`_
+* `American Journal of Human Genetics <https://www.cell.com/ajhg/home>`_
+* `Artificial Life <https://direct.mit.edu/artl>`_
+* Psychonomic Society: `Behaviour Research Methods <https://www.psychonomic.org/page/BRM>`_
+* Oxford Academic: `Bioinformatics <https://academic.oup.com/bioinformatics/>`_
 * `Bioinformatics and Biology Insights
-  <https://us.sagepub.com/en-us/nam/insights-journals>`_
+  <https://journals.sagepub.com/home/bbia>`_
 * `Biophysical Journal
   <https://www.cell.com/biophysj/home>`_
 * `BMC Bioinformatics <https://bmcbioinformatics.biomedcentral.com/>`_
 * `BMC Systems Biology <https://bmcneurosci.biomedcentral.com/>`_
 * `Bone <https://www.sciencedirect.com/journal/bone>`_
 * `Computer Methods and Programs in Biomedicine
-  <http://www.journals.elsevier.com/computer-methods-and-programs-in-biomedicine/>`_
+  <https://www.journals.elsevier.com/computer-methods-and-programs-in-biomedicine>`_
 * `Current Protocols in Bioinformatics
   <https://currentprotocols.onlinelibrary.wiley.com/journal/1934340x>`_
 * `Database: The Journal of Biological Databases and Curation
-  <http://database.oxfordjournals.org/>`_
+  <https://academic.oup.com/database>`_
 * `Ecography <http://www.ecography.org/>`_
 * `eLife <http://elifesciences.org/category/tools-and-resources>`_
-* `Epidemiology <http://journals.lww.com/epidem/pages/default.aspx>`_
+* `Epidemiology <https://journals.lww.com/epidem/pages/default.aspx>`_
 * `Evolutionary Bioinformatics
-  <http://www.la-press.com/evolutionary-bioinformatics-journal-j17>`_
-* `F1000 Research <http://f1000research.com/>`_
-* `Frontiers in Neuroinformatics <http://www.frontiersin.org/Neuroinformatics>`_
-* `Gigascience <http://www.gigasciencejournal.com/>`_
-* `Methods in Ecology and Evolution <http://www.methodsinecologyandevolution.org/>`_
-* `Nature Methods <http://www.nature.com/nmeth/index.html>`_
-* `Neurocomputing <http://www.journals.elsevier.com/neurocomputing/>`_
+  <https://journals.sagepub.com/home/evb>`_
+* `F1000 Research <https://f1000research.com/>`_
+* `Frontiers in Neuroinformatics <https://www.frontiersin.org/journals/neuroinformatics>`_
+* `Gigascience <https://academic.oup.com/gigascience>`_
+* `Methods in Ecology and Evolution <https://besjournals.onlinelibrary.wiley.com/journal/2041210x>`_
+* `Nature Methods <https://www.nature.com/nmeth/>`_
+* `Neurocomputing <https://www.journals.elsevier.com/neurocomputing>`_
 * `Neuroinformatics
-  <http://www.springer.com/biomed/neuroscience/journal/12021>`_
-* `Nucleic Acids Research <http://nar.oxfordjournals.org/>`_
+  <https://www.springer.com/journal/12021>`_
+* `Nucleic Acids Research <https://academic.oup.com/nar>`_
 * `PeerJ <https://peerj.com/about/publications/#PeerJ>`_
 * `PLoS Computational Biology: Software collection
-  <http://collections.plos.org/software>`_
-* `PLoS ONE <http://www.plosone.org/>`_
-* `Trends in Parasitology <http://www.cell.com/trends/parasitology/>`_
+  <https://collections.plos.org/collection/software/>`_
+* `PLoS ONE <https://journals.plos.org/plosone/>`_
+* `Trends in Parasitology <https://www.cell.com/trends/parasitology/home>`_
 
 Chemistry
 ---------
 
 * `International Journal of Quantum Chemistry
-  <http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291097-461X>`_
+  <https://onlinelibrary.wiley.com/journal/1097461x>`_
 * `Journal of Applied Crystallography <https://journals.iucr.org/j/>`_
 * `Journal of Chemical Theory and Computation
-  <http://pubs.acs.org/journal/jctcce>`_
+  <https://pubs.acs.org/journal/jctcce>`_
 * `Journal of Chemical Information and Modelling
-  <http://pubs.acs.org/journal/jcisd8>`_
-* `Journal of Cheminformatics <http://jcheminf.springeropen.com/>`_
+  <https://pubs.acs.org/journal/jcisd8>`_
+* `Journal of Cheminformatics <https://jcheminf.biomedcentral.com/>`_
 * `Journal of Computational Chemistry
-  <http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291096-987X>`_
-* `Molecular Simulation <http://www.tandfonline.com/loi/gmos20>`_
+  <https://onlinelibrary.wiley.com/journal/1096987x>`_
+* `Molecular Simulation <https://www.tandfonline.com/loi/gmos20>`_
 * `Wiley Interdisciplinary Reviews: Computational Molecular Science
-  <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1759-0884>`_
+  <https://onlinelibrary.wiley.com/journal/17590884>`_
 
 Human and social sciences
 -------------------------
@@ -92,72 +92,72 @@ Human and social sciences
 * `Journal of Artificial Societies and Social Simulation
   <http://jasss.soc.surrey.ac.uk/JASSS.html>`_
 * `Journal of Economic Dynamics and Control
-  <http://www.journals.elsevier.com/journal-of-economic-dynamics-and-control/>`_
+  <https://www.journals.elsevier.com/journal-of-economic-dynamics-and-control>`_
 
 Engineering
 -----------
 
 * `Advances in Engineering Software
-  <http://www.sciencedirect.com/science/journal/09659978>`_
+  <https://www.sciencedirect.com/journal/advances-in-engineering-software>`_
 * `Coastal Engineering
-  <http://www.journals.elsevier.com/coastal-engineering/>`_
+  <https://www.journals.elsevier.com/coastal-engineering>`_
 * `Renewable Energy
-  <http://www.sciencedirect.com/science/journal/09601481>`_
+  <https://www.sciencedirect.com/journal/renewable-energy>`_
 
 Computer science, mathematics and statistics
 --------------------------------------------
 
 * `ACM Transactions on Mathematical Software
-  <http://toms.acm.org/>`_
+  <https://dl.acm.org/journal/toms>`_
 * `The Archive of Numerical Software
-  <http://www.archnumsoft.org/>`_
+  <https://journals.ub.uni-heidelberg.de/index.php/ans/>`_
 * `Future Generation Computer Systems
-  <http://www.journals.elsevier.com/future-generation-computer-systems/>`_
+  <https://www.sciencedirect.com/journal/future-generation-computer-systems>`_
 * Journal of Machine Learning Research: `Machine Learning Open Source Software
-  track <http://jmlr.csail.mit.edu/mloss/mloss-info.html>`_
+  track <https://jmlr.csail.mit.edu/mloss/mloss-info.html>`_
 * `Journal of Multiscale Modelling and Simulation
-  <http://www.siam.org/journals/mms.php>`_
+  <https://www.siam.org/publications/journals/multiscale-modeling-and-simulation-a-siam-interdisciplinary-journal-mms>`_
 * `Journal of Parallel and Distributed Computing
-  <http://www.journals.elsevier.com/journal-of-parallel-and-distributed-computing/>`_
+  <https://www.journals.elsevier.com/journal-of-parallel-and-distributed-computing>`_
 * `Journal of Software for Algebra and Geometry
-  <http://j-sag.org/>`_
+  <https://msp.org/jsag/>`_
 * `Journal of Statistical Softwarer
   <https://www.jstatsoft.org/>`_
 * `Knowledge-Based Systemsr
   <https://www.journals.elsevier.com/knowledge-based-systems//>`_
 * `LMS Journal of Computation and Mathematics
-  <http://www.lms.ac.uk/publications/jcm>`_
+  <https://www.lms.ac.uk/publications/jcm>`_
 * `The Mathematica Journal
-  <http://www.mathematica-journal.com/>`_
+  <https://www.mathematica-journal.com/>`_
 * `Mathematical Programming Computation
-  <http://www.springer.com/mathematics/journal/12532>`_
+  <https://www.springer.com/journal/12532>`_
 * `Numerical Algorithms
-  <http://www.springer.com/computer/theoretical+computer+science/journal/11075>`_
+  <https://www.springer.com/journal/11075>`_
 * `PeerJ Computer Science
   <https://peerj.com/computer-science/>`_
-* `The R Journal <http://journal.r-project.org/>`_
+* `The R Journal <https://journal.r-project.org/>`_
 * `Science of Computer Programming
-  <http://www.journals.elsevier.com/science-of-computer-programming/>`_
-* `The Stata Journal  <http://www.stata-journal.com/submissions/#types>`_
+  <https://www.journals.elsevier.com/science-of-computer-programming>`_
+* `The Stata Journal  <https://www.stata-journal.com/>`_
 
 Physics and Earth Sciences
 --------------------------
 
-* `AAS: The Astronomy Journal <http://aj.aas.org/>`_
-* `AAS: The Astrophysical Journal <http://apj.aas.org/>`_
-* `AAS: The Astrophysical Journal Supplement Series <http://apjs.aas.org/>`_
+* `AAS: The Astronomy Journal <https://iopscience.iop.org/journal/1538-3881/>`_
+* `AAS: The Astrophysical Journal <https://iopscience.iop.org/journal/0004-637X/>`_
+* `AAS: The Astrophysical Journal Supplement Series <https://iopscience.iop.org/journal/0067-0049/>`_
 * `Astronomy and Computing
-  <http://www.journals.elsevier.com/astronomy-and-computing/>`_
-* `Communications in Computational Physics <http://www.global-sci.com/>`_
+  <https://www.journals.elsevier.com/astronomy-and-computing>`_
+* `Communications in Computational Physics <http://www.global-sci.com/index/index.html>`_
 * `Computational Astrophysics and Cosmology
-  <http://www.comp-astrophys-cosmol.com/>`_
+  <https://comp-astrophys-cosmol.springeropen.com/>`_
 * `Computer Physics Communications
-  <http://www.sciencedirect.com/science/journal/00104655>`_
+  <https://www.sciencedirect.com/journal/computer-physics-communications>`_
 * `Computers and Geosciences
-  <http://www.journals.elsevier.com/journal-of-economic-dynamics-and-control/>`_
+  <https://www.journals.elsevier.com/journal-of-economic-dynamics-and-control>`_
 * `Computing and Software for Big Science
-  <http://www.springer.com/physics/particle+and+nuclear+physics/journal/41781>`_
+  <https://www.springer.com/journal/41781>`_
 * `Environmental Modelling & Software
   <https://www.journals.elsevier.com/environmental-modelling-and-software>`_
 * `Geoscientific Model Development
-  <http://www.geoscientific-model-development.net/index.html>`_
+  <https://www.geoscientific-model-development.net/index.html>`_

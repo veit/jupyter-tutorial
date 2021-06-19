@@ -9,7 +9,7 @@ Some important extensions are already included in IPython:
 :label:`extensions_autoreload` and :label:`extensions_storemagic`. You can find
 other extensions in the `Extensions Index
 <https://github.com/ipython/ipython/wiki/Extensions-Index>`_ or on PyPI with
-the  `IPython tag <https://pypi.python.org/pypi?:action=browse&c=586>`_..
+the  `IPython tag <https://pypi.org/search/?c=Framework+%3A%3A+IPython>`_.
 
 .. seealso::
     * `IPython extensions docs
