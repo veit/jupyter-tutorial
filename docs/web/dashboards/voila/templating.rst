@@ -6,7 +6,7 @@ Templating
 Voilà gridstack
 ---------------
 
-`gridstack.js <http://gridstackjs.com/>`_ is a jQuery plugin for widget layouts.
+`gridstack.js <https://gridstackjs.com/>`_ is a jQuery plugin for widget layouts.
 This enables multi-column drag and drop grids and customizable layouts suitable
 for `Bootstrap v3 <https://getbootstrap.com/docs/3.4/>`_. It also works with
 `knockout.js <https://knockoutjs.com/>`_ and touch devices.
@@ -102,7 +102,7 @@ Installation
 Usage
 ~~~~~
 
-You can use the template :doc:`debug.ipynb` with:
+You can use the template :doc:`debug` with:
 
 .. code-block:: console
 

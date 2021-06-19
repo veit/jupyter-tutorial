@@ -42,7 +42,7 @@ Configuration
 
 .. seealso::
     * `Configuring flake8
-      <http://flake8.pycqa.org/en/latest/user/configuration.html>`_
+      <https://flake8.pycqa.org/en/latest/user/configuration.html>`_
     * `flake8 error/violation codes
       <https://flake8.pycqa.org/en/latest/user/error-codes.html>`_
     * `pycodestyle error codes

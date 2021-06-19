@@ -47,7 +47,7 @@ Configure Sphinx
     ]
 
    You can find an example in the `conf.py
-   <https://github.com/veit/jupyter-tutorial/blob/master/docs/conf.py>`_ file of
+   <https://github.com/veit/jupyter-tutorial/blob/main/docs/conf.py>`_ file of
    the Jupyter tutorial.
 
 You can make further configurations for ``nbsphinx``.

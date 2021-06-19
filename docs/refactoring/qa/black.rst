@@ -1,7 +1,7 @@
 Black
 =====
 
-`Black <https://github.com/python/black>`_ formats your code in a nice and
+`Black <https://github.com/psf/black>`_ formats your code in a nice and
 deterministic format.
 
 .. seealso::
@@ -34,7 +34,7 @@ use Black in your Jupyter notebooks.
 .. seealso::
     Integration into other editors such as PyCharm, Wing IDE or Vim is also
     possible, see `Editor integration
-    <https://black.readthedocs.io/en/stable/editor_integration.html>`_
+    <https://black.readthedocs.io/en/stable/integrations/editors.html>`_
 
 Configuration
 -------------
@@ -52,4 +52,4 @@ For this you can enter the following in ``pyproject.toml``:
 .. seealso::
     You can get more information about the configuration of Black in the Toml
     file in `pyproject.toml
-    <https://black.readthedocs.io/en/stable/pyproject_toml.html>`_.
+    <https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file>`_.

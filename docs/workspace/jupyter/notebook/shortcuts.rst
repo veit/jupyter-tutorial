@@ -2,7 +2,7 @@ Keyboard shortcuts
 ==================
 
 If you know the `Jupyter
-<https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/>`_
+<https://cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/>`_
 keyboard shortcuts, you can work much more efficiently with notebooks.
 
 Jupyter notebooks have two different keyboard input modes.

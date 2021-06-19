@@ -118,4 +118,4 @@ following options:
         Alternate text if the widget cannot be rendered
 
 .. seealso::
-   `Options <https://github.com/jupyter-widgets/jupyter-sphinx#options>`_
+   `Options <https://jupyter-sphinx.readthedocs.io/en/latest/#configuration-options>`_
