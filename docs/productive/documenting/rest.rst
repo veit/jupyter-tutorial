@@ -13,7 +13,7 @@ Den folgenden reStructuredText könnt ihr euch als HTML anschauen unter
     Change the punctuation mark for subtitles
     -----------------------------------------
 
-    *Italic*, **bold** und ``preformatted``
+    *Italic*, **bold** and ``preformatted``
     `hyperlink <http://en.wikipedia.org/wiki/Hyperlink>`_ `link`_
 
     .. _link: http://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)
