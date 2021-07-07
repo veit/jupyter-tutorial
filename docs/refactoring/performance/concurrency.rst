@@ -141,6 +141,16 @@ Multithreading, multiprocessing and asynchronous communication
 |                  |                  | of the processes.|                                |
 +------------------+------------------+------------------+--------------------------------+
 
+Summary
+-------
+
+There is no one ideal implementation of concurrency – each of the approaches
+presented next has specific advantages and disadvantages. So before you decide
+which approach to follow, you should analyse the performance problems carefully
+and then choose the most suitable solution. In our projects, we often use
+several approaches, depending on the part for which the performance is to be
+optimised.
+
 .. _`interprocess Communication (IPC)`: https://docs.python.org/3/library/ipc.html
 .. _`object pickling`: https://docs.python.org/3/library/pickle.html
 .. _`preemptively`: https://en.wikipedia.org/wiki/Computer_multitasking#Preemptive_multitasking
