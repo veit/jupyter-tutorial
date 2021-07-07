@@ -56,6 +56,20 @@ are already some solutions:
 * `PyPy <https://www.pypy.org/>`_ with a more universal JIT compiler, but which
   has to emulate existing C extension like NumPy, which is really inefficient.
 
+Faster CPython
+--------------
+
+At PyCon US in May 2021, Guido van Rossum presented `Faster CPython
+<https://github.com/faster-cpython>`_, a project that aims to double the speed
+of Python 3.11. The cooperation with the other Python core developers is
+regulated in `PEP 659 – Specializing Adaptive Interpreter
+<https://www.python.org/dev/peps/pep-0659/>`_. There is also an open `issue
+tracker <https://github.com/faster-cpython/ideas/issues>`_ and various `tools
+for collecting bytecode statistics <https://github.com/faster-cpython/tools>`_.
+CPU-intensive Python code in particular is likely to benefit from the changes;
+code already written in C, I/O-heavy processes and multithreaded code, on the
+other hand, are unlikely to benefit.
+
 Multithreading, multiprocessing and asynchronous communication
 --------------------------------------------------------------
 
