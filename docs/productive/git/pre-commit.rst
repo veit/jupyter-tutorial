@@ -124,6 +124,8 @@ Use in CI
 
 Pre-commit can also be used for continuous integration.
 
+.. _gh-action-pre-commit-example:
+
 Example of GitHub Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
