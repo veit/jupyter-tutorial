@@ -1,23 +1,9 @@
 Introduction
 ============
 
-Status
-------
-
-|Contributors| |Commits| |License| |Docs| |Pyup| |DOI|
-
-.. |Contributors| image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
-   :target: https://github.com/veit/jupyter-tutorial/graphs/contributors
-.. |Commits| image::  https://raster.shields.io/github/commit-activity/y/veit/jupyter-tutorial
-   :target: https://github.com/veit/jupyter-tutorial/commits
-.. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
-   :target: https://github.com/veit/jupyter-tutorial/blob/main/LICENSE
-.. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
-   :target: https://jupyter-tutorial.readthedocs.io/en/latest/
-.. |Pyup| image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
-   :target: https://pyup.io/repos/github/veit/jupyter-tutorial/
-.. |DOI| image:: https://zenodo.org/badge/doi/10.5281/zenodo.4147287.svg
-   :target: https://zenodo.org/badge/latestdoi/199994535
+.. include:: ../README.rst
+   :start-after: badges
+   :end-before: first-steps
 
 Target group
 ------------

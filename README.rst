@@ -1,17 +1,25 @@
 Quick start
 ===========
 
-|Contributors| |License| |Docs| |Pyup| |DOI|
+.. badges::
 
-.. |Contributors| image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
+Status
+------
+
+.. image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
+   :alt: Contributors
    :target: https://github.com/veit/jupyter-tutorial/graphs/contributors
-.. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
+.. image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
+   :alt: License
    :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
-.. |Docs| image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
+.. image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
+   :alt: Docs
    :target: https://jupyter-tutorial.readthedocs.io/en/latest/
-.. |Pyup| image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
+.. image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
+   :alt: Pyup
    :target: https://pyup.io/repos/github/veit/jupyter-tutorial/
-.. |DOI| image:: https://zenodo.org/badge/doi/10.5281/zenodo.4147287.svg
+.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.4147287.svg
+   :alt: DOI
    :target: https://zenodo.org/badge/latestdoi/199994535
 
 .. first-steps::
