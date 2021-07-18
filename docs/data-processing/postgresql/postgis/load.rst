@@ -63,7 +63,7 @@ this data is in the public domain:
             /home/veit/nedata/ne_110m_admin_0_countries.shp
 
       ``-f PostgreSQL``
-        iindicates that the target is a PostgreSQL database
+        indicates that the target is a PostgreSQL database
       ``PG:dbname=postgis_db``
         specifies the PostgreSQL database name. In addition to the name, other
         options can also be specified, in general:

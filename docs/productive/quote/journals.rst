@@ -121,10 +121,10 @@ Computer science, mathematics and statistics
   <https://www.journals.elsevier.com/journal-of-parallel-and-distributed-computing>`_
 * `Journal of Software for Algebra and Geometry
   <https://msp.org/jsag/>`_
-* `Journal of Statistical Softwarer
+* `Journal of Statistical Software
   <https://www.jstatsoft.org/>`_
-* `Knowledge-Based Systemsr
-  <https://www.journals.elsevier.com/knowledge-based-systems//>`_
+* `Knowledge-Based Systems
+  <https://www.journals.elsevier.com/knowledge-based-systems/>`_
 * `LMS Journal of Computation and Mathematics
   <https://www.lms.ac.uk/publications/jcm>`_
 * `The Mathematica Journal

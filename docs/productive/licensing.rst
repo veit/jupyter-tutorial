@@ -130,8 +130,8 @@ badge:
 .. figure:: reuse-compliant.png
    :alt: REUSE-compliant Badge
 
-CIR wrkflow
-~~~~~~~~~~~
+CIR workflow
+~~~~~~~~~~~~
 
 You can easily integrate REUSE into your continuous integration workflow, e.g.
 for GitLab in the ``.gitlab-ci.yml`` file with:

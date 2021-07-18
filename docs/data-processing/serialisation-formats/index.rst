@@ -2,7 +2,7 @@ Serialisation formats
 =====================
 
 Data serialisation converts structured data to a format that allows sharing and
-or storing of the data. Bevore serialising data you have to decide how the data
+or storing of the data. Before serialising data you have to decide how the data
 should be structured – flat or nested. The differences in the two styles are
 shown in the examples below:
 

@@ -41,8 +41,8 @@ Examples of column-oriented database systems are :term:`Cassandra`,
 | concurrency**          |                                | Concurrency Control`           | :term:`MVCC – Multiversion     |
 |                        |                                |                                | Concurrency Control`           |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replication,         | SimpleStrategy,                | File system level replication  | Master-Slave-Replikation       |
-| skaling**              | NetworkTopologyStrategy and    |                                |                                |
+| **Replication,         | SimpleStrategy,                | File system level replication  | Master-Slave-Replication       |
+| scaling**              | NetworkTopologyStrategy and    |                                |                                |
 |                        | OldNetworkTopologyStrategy     |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Remarks**            |                                | is based on distributed file   |                                |

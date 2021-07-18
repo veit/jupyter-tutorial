@@ -143,6 +143,6 @@ Start
     [I NotebookApp] The Jupyter Notebook is running at:
     [I NotebookApp] http://localhost:8888/?token=4e9acb8993758c2e7f3bda3b1957614c6f3528ee5e3343b3
 
-#. Finally the cluster with the ``default`` profile can be startet in the
+#. Finally the cluster with the ``default`` profile can be started in the
    browser at the URL
    ``http://localhost:8888/tree/docs/parallel/ipyparallel#ipyclusters``.

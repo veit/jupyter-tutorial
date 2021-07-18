@@ -34,7 +34,7 @@ Examples of XML database systems are eXist and MonetDB.
 | **Replication,         | Master-slave replication                       | Transaction replication                        |                                                |
 | skaling**              |                                                |                                                |                                                |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
-| **Remarks**            |                                                | With R, analyzes can be carried out directly   |                                                |
+| **Remarks**            |                                                | With R, analyses can be carried out directly   |                                                |
 |                        |                                                | at the database level.                         |                                                |
 +------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+
 

@@ -12,7 +12,7 @@ The following geometry types are supported:
 * OpenGIS with well-known text and well-known binary
 * Extended Well-Known Text and Extended Well-Known Binary also with height
   information and/or measured values
-* SQL/MM with Circularstring, Compoundcurve, Curvepolygon, Multicurve und
+* SQL/MM with Circularstring, Compoundcurve, Curvepolygon, Multicurve and
   Multisurface
 
 `GEOS <https://trac.osgeo.org/geos/>`_, on the other hand, contains the numerous

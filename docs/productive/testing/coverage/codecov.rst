@@ -2,7 +2,7 @@ Codecov
 =======
 
 Codecov collects coverage reports for Python, C#/.net, Java,
-Node/Javascript/Coffee, C/C++, D, Go, Groovy, Kotlin, PHP, R, Scala, Xtern,
+Node/Javascript/Coffee, C/C++, D, Go, Groovy, Kotlin, PHP, R, Scala, Xterm,
 Xcode, Lua, and other languages, then submits them to `codecov.io
 <https://about.codecov.io/>`_
 

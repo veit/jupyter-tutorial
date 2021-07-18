@@ -6,8 +6,8 @@ Basic funtions
 
 ACID compliant
     ACID (**A** tomicity, **C** onsistency, **I** solation, **D** urability) is
-    a series of properties that database transactions should fulfill to
-    guarantee the validity of the data even in the event of a fault.
+    a series of properties that database transactions should fulfil to guarantee
+    the validity of the data even in the event of a fault.
 
 SQL:2011
     Ttemporal_tables <https://github.com/arkhipov/temporal_tables>`_ also meet

@@ -18,7 +18,7 @@ hierarchies:
     One table is created for each inheritance hierarchy, with all attributes of
     the base class and all classes derived from it being stored in a common
     table.
-*Joined Table* oder *Class Table*
+*Joined Table* or *Class Table*
     A table is created for each subclass and a further table for each subclass
     derived from it.
 *Table per Class* or *Concrete Table*

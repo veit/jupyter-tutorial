@@ -158,7 +158,7 @@ There you will find the two files ``spack.yaml`` and ``spack.lock``.
         …
 
 ``spack.lock``
-    With ``spack install`` the specs are concretized, written in ``spack.lock``
+    With ``spack install`` the specs are concretised, written in ``spack.lock``
     and installed. In contrast to ``spack.yaml`` ``spack.lock`` is written in
     ``json`` format and contains the necessary information to be able to create
     reproducible builds of the environment:

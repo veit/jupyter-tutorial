@@ -38,7 +38,7 @@ Key/value database systems are e.g. Riak, Cassandra, Redis and MongoDB.
 | **Transactions,        | :term:`ACID`                   | :term:`Eventual Consistency`   | in-memory, asynchronous on disc| :term:`Two-phase locking (2PL)`|
 | concurrency**          |                                |                                | with *Append Only File Mode*   |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Replication,         | Multi-master replikation       | SimpleStrategy,                |Master-N-Slaves replikation,    | Master-Slave replikation,      |
+| **Replication,         | Multi-master replication       | SimpleStrategy,                |Master-N-Slaves replication,    | Master-Slave replication,      |
 | skaling**              |                                | NetworkTopologyStrategy and    |Sharding using                  | Auto-Sharding                  |
 |                        |                                | OldNetworkTopologyStrategy     |:term:`Consistent hash function`|                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+

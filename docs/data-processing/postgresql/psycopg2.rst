@@ -1,7 +1,7 @@
 Psycopg
 =======
 
-`Pycopg <https://www.psycopg.org/>`_ is a PostgreSQL adapter based on the C
+`Psycopg <https://www.psycopg.org/>`_ is a PostgreSQL adapter based on the C
 library for PostgreSQL `libpq
 <https://www.postgresql.org/docs/current/libpq.html>`_. Among other things, it
 offers:

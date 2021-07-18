@@ -43,7 +43,7 @@ steps are required on the example of the Jupyter tutorial:
    .. figure:: github-release.png
       :alt: Github releases
 
-#. Check that the Doi was created correctly:
+#. Check that the :abbr:`DOI (Digital object identifier)` was created correctly:
 
    .. figure:: zenodo-release.png
       :alt: Zenodo release

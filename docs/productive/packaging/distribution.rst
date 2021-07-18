@@ -37,8 +37,9 @@ to find underlying packages and the `package_dir
 field describes where the root directory is.
 
 .. note::
-    ``find_packages()`` ohne ``src/``-Verzeichnis würde alle Verzeichnisse mit
-    einer ``__init__.py``-Datei paketieren, also auch ``tests/``-Verzeichnisse.
+    ``find_packages()`` without :file:`src/` directory would package all
+    directories with an ``__init__.py`` file, including :file:`tests/`
+    directories.
 
 ``version``
 -----------
@@ -174,9 +175,12 @@ a zipped tar file (``.tar.gz``) and under Windows a ZIP file as well as an
 
 So this command should produce the following two files:
 
+.. code-block:: console
+
+    $ tree dist/
     dist/
-      example-0.0.1-py3-none-any.whl
-      example-0.0.1.tar.gz
+    ├── example-0.0.1-py3-none-any.whl
+    └── example-0.0.1.tar.gz
 
 ``py3``
     Python version that the package was built with

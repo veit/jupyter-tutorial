@@ -8,7 +8,7 @@ Overview
 | Data structure support| ++    | XML is very flexible as each element can have         |
 |                       |       | attributes and arbitrary child elements.              |
 +-----------------------+-------+-------------------------------------------------------+
-| Standardisation       | ++    | XML is well standardised, the specification can bei   |
+| Standardisation       | ++    | XML is well standardised, the specification can be    |
 |                       |       | found at https://www.w3.org/TR/xml/. XML supports     |
 |                       |       | both DOM style and streaming SAX style parsers.       |
 +-----------------------+-------+-------------------------------------------------------+

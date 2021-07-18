@@ -43,9 +43,9 @@ Badges are helpful in getting a quick overview of a product. For the
 For extensive documentation you can, for example, use `Sphinx
 <https://www.sphinx-doc.org/>`_, a documentation tool that converts :doc:`rest`,
 a simple markup language, into HTML or PDF, EPub and man pages. The Jupyter
-tutorial was also created with Sphinx. To get a first impression of the Sphinx,
-you can have a look at the source code of this page by following the link
-`Sources <../../_sources/productive/sphinx/index.rst.txt>`_ folgt.
+tutorial was also created with Sphinx. To get a first impression of Sphinx, you
+can have a look at the source code of this page by following the link `Sources
+<../../_sources/productive/sphinx/index.rst.txt>`_.
 
 Originally, Sphinx was developed for the documentation of Python and is now used
 in almost all Python projects, including `NumPy and SciPy

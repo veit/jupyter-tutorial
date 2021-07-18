@@ -49,7 +49,7 @@ e.g. in ``jupyter_notebook_config.py``:
 
     c.NotebookApp.port = 8754
 
-If the values are saved as ``list``, ``dict`` od ``set``, they can also be
+If the values are saved as ``list``, ``dict`` or ``set``, they can also be
 supplemented with  ``append``, ``extend``, ``prepend``, ``add`` and
 ``update``, e.g.:
 

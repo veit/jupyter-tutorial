@@ -84,7 +84,7 @@ This means that ``myapp_reader`` can only read a single data record.
 id
 --
 
-The ``id`` shouldn`t be written as ``serial``, ``bigserial`` or similar.
+rhe ``id`` shouldn’t be written as ``serial``, ``bigserial`` or similar.
 Counting numbers could be easily guessed by attackers. Therefore the UUIDv4 data
 type is much more suitable. In PostgreSQL you can generate UUIDv4 with the
 `uuid-ossp <https://www.postgresql.org/docs/current/uuid-ossp.html>`_ extension

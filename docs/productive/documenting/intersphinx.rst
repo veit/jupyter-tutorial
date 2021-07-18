@@ -75,7 +75,7 @@ Custom links
 ------------
 
 You can also create your own ``intersphinx`` assignments, e.g. if
-``objects.inv`` in `Beautyfull Soup
+``objects.inv`` in `Beautiful Soup
 <https://bugs.launchpad.net/beautifulsoup/+bug/1453370>`_ has errors.
 
 The error can be corrected with:

@@ -4,7 +4,7 @@ reStructuredText
 Quick guide
 -----------
 
-Den folgenden reStructuredText könnt ihr euch als HTML anschauen unter
+You can view the following reStructuredText as HTML at
  :doc:`rest-example`::
 
     Underline the title with punctuation marks
