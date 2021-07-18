@@ -47,7 +47,7 @@ Installation
 
 #. Install Pipenv
 
-   Please refer to :doc:`Install Pipenv </productive/envs/pipenv/install>`
+   Refer to :doc:`Install Pipenv </productive/envs/pipenv/install>`
 
 #. Install Python packages:
 
@@ -133,6 +133,32 @@ Installation
     …
 
    You can find the PDF at ``docs/_build/latex/jupytertutorial.pdf``.
+
+#. Install vnd run ale to check spelling
+
+   You can install Vale with:
+
+   .. code-block:: console
+
+    $ brew install vale
+
+   You can install the parser for Restructuredtext with:
+
+   .. code-block:: console
+
+    $ brew install docutils
+
+   .. seealso::
+      * `Vale installation <https://docs.errata.ai/vale/install>`_
+      * `Vale formats <https://docs.errata.ai/vale/scoping#formats>`_
+
+   Now you can check the RestructuredText files with:
+
+   .. code-block:: console
+
+    $ cd jupyter-tutorial
+    $ vale docs/
+    ✔ 0 errors, 0 warnings and 0 suggestions in 1 file.
 
 Follow us
 ---------
