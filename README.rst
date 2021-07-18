@@ -158,7 +158,7 @@ Installation
 
     $ cd jupyter-tutorial
     $ vale docs/
-    ✔ 0 errors, 0 warnings and 0 suggestions in 1 file.
+    ✔ 0 errors, 0 warnings and 0 suggestions in 201 files.
 
 Follow us
 ---------
