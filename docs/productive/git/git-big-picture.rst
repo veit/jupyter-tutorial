@@ -96,8 +96,8 @@ will create the following section in your ``~/.gitconfig`` file:
         viewer = firefox
 
 .. note::
-  Please note, however, that this disables other options at the same time. For
-  example, you can no longer display the graph with Graphviz:
+  However, this disables other options at the same time. For example, you can
+  no longer display the graph with Graphviz:
 
   .. code-block:: console
 

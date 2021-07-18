@@ -29,8 +29,7 @@ These ``.dvc`` files, however, allow practical tools for manipulating and
 visualizing DAGs, see, for example, :doc:`visualisation of DAGs
 <pipeline>`.
 
-Finally, external dependencies can also be specified with :ref:`dvc remote
-<dvc-remote>`.
+External dependencies can also be specified with :ref:`dvc remote <dvc-remote>`.
 
 .. seealso::
    * `Tutorial <https://dvc.org/doc/tutorial>`_
@@ -40,14 +39,16 @@ Finally, external dependencies can also be specified with :ref:`dvc remote
 Installation
 ------------
 
-Finally, external dependencies can also be specified with Pipenv. Please note,
-however, that you have to explicitly state the extras. This can be ``[ssh]``,
-``[s3]``, ``[gs]``, ``[azure]``, and ``[oss]`` or ``[all]``. For ``ssh`` the
-command looks like this:
+Finally, external dependencies can also be specified with Pipenv.
 
-.. code-block:: console
+.. note::
+   You have to explicitly state the extras. This can be ``[ssh]``, ``[s3]``,
+   ``[gs]``, ``[azure]``, and ``[oss]`` or ``[all]``. For ``ssh`` the command
+   looks like this:
 
-    $ pipenv install dvc[ssh]
+   .. code-block:: console
+
+        $ pipenv install dvc[ssh]
 
 Alternatively, DVC can also be installed via the package management of
 Ubuntu/Debian with:
@@ -65,9 +66,9 @@ For macOS DVC can be installed with:
     $ brew install iterative/homebrew-dvc/dvc
 
 .. note::
-    Please note that the following example was created with a current DVC
-    version (1.0.0a9), which partly uses a different syntax than earlier
-    versions. You can currently (8th June 2020) only install this with pip:
+    The following example was created with a current DVC version (1.0.0a9),
+    which partly uses a different syntax than earlier versions. You can
+    currently (8th June 2020) only install this with pip:
 
      .. code-block:: console
 

@@ -72,11 +72,11 @@ Set up
 
     $ nbstrip_jq example.ipynb > stripped.ipynb
 
-#. If you start with an already existing notebook, you should first add a
-   ``filter`` commit by simply reading in the newly filtered version of your
-   notebook without the unwanted metadata. After you have added the notebook
-   with  ``git add``, you can see whether the filter has really worked with
-    ``git diff --cached``  before you do ``git commit -m 'filter'``.
+#. If you start with an existing notebook, you should first add a ``filter``
+   commit by simply reading in the newly filtered version of your notebook
+   without the unwanted metadata. After you have added the notebook with ``git
+   add``, you can see whether the filter has really worked with ``git diff
+   --cached``  before you do ``git commit -m 'filter'``.
 
 #. If you want to use this filter for all Git repositories, you can also
    configure your Git globally:

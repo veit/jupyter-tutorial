@@ -7,8 +7,8 @@ copyright. Authors are those who originally contributed to the software. If
 software is to be relicensed, the consent of all authors is required.
 
 .. note::
-   This does not constitute legal advice. If in doubt, please contact a lawyer
-   or the legal department of your company.
+   This does not constitute legal advice. If in doubt, contact a lawyer or the
+   legal department of your company.
 
 Proprietary software licenses
 -----------------------------

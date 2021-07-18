@@ -12,8 +12,8 @@ Overview
 |                       |       | However, JSON does not support all data types of      |
 |                       |       | JavaScript: ``NaN`` and ``Infinity`` become ``null``. |
 |                       |       |                                                       |
-|                       |       | Please note that the JSON syntax also don’t support   |
-|                       |       | comments and you have to work arround e.g. with a     |
+|                       |       | Note that the JSON syntax also don’t support comments |
+|                       |       | and you have to work arround for example with a       |
 |                       |       | ``__comment__`` key/value pair.                       |
 +-----------------------+-------+-------------------------------------------------------+
 | Standardisation       | \+    | JSON has a formal strongly typed `standard`_ (see     |

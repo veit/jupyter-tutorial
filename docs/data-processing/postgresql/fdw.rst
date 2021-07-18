@@ -8,8 +8,8 @@ a number of Foreign Data Wrappers (FDW) have been developed for PostgreSQL.
 The following is just a small selection of the best-known FDWs:
 
 .. note::
-   Please note that most of these wrappers are not officially supported by the
-   PostgreSQL Global Development Group (PGDG).
+   Most of these wrappers are not officially supported by the PostgreSQL Global
+   Development Group (PGDG).
 
 Generic SQL wrappers
 --------------------

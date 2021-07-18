@@ -135,8 +135,8 @@ module and referencing the ``name`` property that was previously ntered in
 README
 ~~~~~~
 
-Please also check whether the ``README.rst`` is displayed correctly on the test
-PyPI page.
+Also check whether the ``README.rst`` is displayed correctly on the test PyPI
+page.
 
 PyPI
 ----

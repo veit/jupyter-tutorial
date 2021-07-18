@@ -41,6 +41,8 @@ run through the pipeline again:
     To track the changes with git, run:
         git add dvc.lock
 
-In our case, changing the parameters had no effect on the result. Please note,
-that DVC recognises changes to dependencies and outputs via md5 hash values in
-``dvc.lock``.
+In our case, changing the parameters had no effect on the result.
+
+.. note::
+   DVC recognises changes to dependencies and outputs via md5 hash values in
+   ``dvc.lock``.

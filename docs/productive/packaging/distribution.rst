@@ -5,9 +5,9 @@ Create a distribution package
 uploaded to a package index and installed with :term:`Pip`.
 
 .. note::
-    Please note that there are still many instructions that contain a step of
-    calling the ``setup.py``, e.g. ``python setup.py sdist``. However, this is
-    now seen as an `Anti-Pattern
+    There are still many instructions that contain a step of calling the
+    ``setup.py``, for example ``python setup.py sdist``. However, this is now
+    seen as an `Anti-Pattern
     <https://twitter.com/pganssle/status/1152695229105000453>`_ by parts of the
     `Python Packaging Authority (PyPA) <https://github.com/pypa/>`_.
 

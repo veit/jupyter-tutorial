@@ -129,10 +129,9 @@ The error can be corrected with:
     - :meth:`bs4.BeautifulSoup.get_text`
     - :class:`bs4.element.Tag`
 
-   .. note::
-      Please note the  `Sphinx objects.inv v2 Syntax
-      <https://sphobjinv.readthedocs.io/en/latest/syntax.html>`_ of these text
-      files.
+   .. seealso::
+      * `Sphinx objects.inv v2 Syntax
+      <https://sphobjinv.readthedocs.io/en/latest/syntax.html>`_
 
 #. Create a new ``objects.inv`` file:
 
