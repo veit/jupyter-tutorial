@@ -1,0 +1,7 @@
+extends: spelling
+message: "Did you really mean '%s'?"
+dicpath: /Library/Spelling
+dictionaries:
+  - en_GB
+level: warning
+ignore: styles/cusy/ignore.txt

@@ -201,5 +201,5 @@ can also specify other references, e.g. ``HEAD^1`` with
 .. [#] `PEP 20 – The Zen of Python <https://www.python.org/dev/peps/pep-0020/>`_
 .. [#] `C4 Software Technology Reference Guide, S. 147
        <https://resources.sei.cmu.edu/asset_files/Handbook/1997_002_001_16523.pdf>`_
-.. [#] `Using Metrics to Evaluate Software Svstem Maintainability
+.. [#] `Using Metrics to Evaluate Software System Maintainability
        <https://www.ecs.csun.edu/~rlingard/comp589/ColemanPaper.pdf>`_

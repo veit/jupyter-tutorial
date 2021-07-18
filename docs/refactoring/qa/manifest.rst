@@ -2,7 +2,7 @@
 ==================
 
 `check-manifest <https://pypi.org/project/check-manifest/>`_ is a tool with
-which you can quickly check whether the file ``Manifest.in`` for Pyton packages
+which you can quickly check whether the file ``Manifest.in`` for Python packages
 is complete.
 
 Installation

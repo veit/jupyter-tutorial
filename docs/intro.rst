@@ -101,7 +101,7 @@ Jupyter infrastructure
 
 A platform for the above-mentioned use cases requires an extensive
 infrastructure that not only allows the provision of the kernel and the
-parameterization, time control and parallelisation of notebooks, but also the
+parameterisation, time control and parallelisation of notebooks, but also the
 uniform provision of resources.
 
 This tutorial provides a platform that enables fast, flexible and comprehensive

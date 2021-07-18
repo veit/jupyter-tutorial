@@ -28,7 +28,7 @@ Popular widget libraries are
     * :doc:`pyviz:js/ipyvolume`
 
 ``ipyleaflet``
-    Jupyter-`Leaflet.js <https://leafletjs.com/>`_  bidge
+    Jupyter-`Leaflet.js <https://leafletjs.com/>`_  bridge
 
     * :doc:`pyviz:js/ipyleaflet`
 
