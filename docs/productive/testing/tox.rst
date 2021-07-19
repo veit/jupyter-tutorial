@@ -163,7 +163,8 @@ Actions to automatically run your tests in different environments:
       * `Workflow syntax
         <https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions>`_
 
-#. Now you can add a badge to your :file:`README.rst` file, for example with:
+#. Now you can add a badge of your :abbr:`CI (Continuous Integration)` status to
+   your :file:`README.rst` file, for example with:
 
    .. code-block::
 
