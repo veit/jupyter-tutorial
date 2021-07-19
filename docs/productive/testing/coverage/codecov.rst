@@ -29,19 +29,22 @@ Use
 
     $ codecov -t <repository-upload-token>
 
+.. _together-with-github-actions:
+
 … together with GitHub Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A minimal configuration for public repos:
+To do this, you can add the following to your :file:`ci.yml` file, for example:
 
 .. code-block:: yaml
+   :emphasize-lines: 3-6
 
-    steps:
-      …
-      - name: "Upload coverage to Codecov"
-        uses: codecov/codecov-action@v1
-        with:
-          fail_ci_if_error: true
+    - name: "Convert coverage"
+      run: "python -m coverage xml"
+    - name: "Upload coverage to Codecov"
+      uses: "codecov/codecov-action@v1"
+      with:
+        fail_ci_if_error: true
 
 .. seealso::
    * `Codecov GitHub Action <https://github.com/codecov/codecov-action>`_
@@ -69,3 +72,17 @@ Codecov can be set up with :doc:`../tox`:
     passenv = TOXENV CI TRAVIS TRAVIS_* CODECOV_*
     deps = codecov>=1.4.0
     commands = codecov -e TOXENV
+
+.. _codecov-badge:
+
+Badge
+-----
+
+Finally, you can also add a badge for code coverage in your :file:`README.rst`
+file, for example with:
+
+   .. code-block::
+
+    .. image:: https://codecov.io/gh/YOU/YOUR_PROJECT/branch/main/graph/badge.svg
+       :target: https://codecov.io/gh/YOU/YOUR_PROJECT
+       :alt: Code Coverage Status (Codecov)

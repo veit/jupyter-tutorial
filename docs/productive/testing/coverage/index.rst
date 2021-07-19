@@ -1,5 +1,5 @@
-Coverage.py
-===========
+Coverage
+========
 
 You can create coverage reports with `coverage.py
 <https://github.com/nedbat/coveragepy>`_.
@@ -62,5 +62,5 @@ You can run your usual test runner together with coverage with
     :titlesonly:
     :maxdepth: 0
 
-    opencoverage
     codecov
+    opencoverage

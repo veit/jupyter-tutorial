@@ -157,6 +157,12 @@ Actions to automatically run your tests in different environments:
         other in a container, the advantages of parallel execution are lost
         here.
 
+   .. seealso::
+      * `Build & test Python
+        <https://docs.github.com/en/actions/guides/building-and-testing-python>`_
+      * `Workflow syntax
+        <https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions>`_
+
 #. Now you can add a badge to your :file:`README.rst` file, for example with:
 
    .. code-block::
@@ -165,29 +171,7 @@ Actions to automatically run your tests in different environments:
          :target: https://github.com/YOU/YOUR_PROJECT/actions?workflow=CI
          :alt: CI Status
 
-#. You can publish the code coverage on `Codecov <https://about.codecov.io/>`_.
-   To do this, you can add the following to your :file:`ci.yml` file, for example:
-
-   .. code-block:: yaml
-
-    - name: "Convert coverage"
-      run: "python -m coverage xml"
-    - name: "Upload coverage to Codecov"
-      uses: "codecov/codecov-action@v1"
-      with:
-        fail_ci_if_error: true
-
-#. Finally, you can also add a badge for code coverage in your
-   :file:`README.rst` file, for example with:
-
-   .. code-block::
-
-    .. image:: https://codecov.io/gh/YOU/YOUR_PROJECT/branch/main/graph/badge.svg
-       :target: https://codecov.io/gh/YOU/YOUR_PROJECT
-       :alt: Code Coverage Status (Codecov)
-
-.. seealso::
-   * `Build & test Python
-     <https://docs.github.com/en/actions/guides/building-and-testing-python>`_
-   * `Workflow syntax
-     <https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions>`_
+#. You can publish the code coverage on :doc:`coverage/codecov`, see
+   :ref:`Codecov and GitHub Actions <together-with-github-actions>`.
+#. You can also add a badge for code coverage in your :file:`README.rst` file,
+   see :ref:`Codecov Badge <codecov-badge>`.

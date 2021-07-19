@@ -43,8 +43,8 @@ Tools
    :titlesonly:
    :maxdepth: 3
 
-   hypothesis
-   tox
    unittest2
    mock
-   coverage
+   hypothesis
+   coverage/index
+   tox
