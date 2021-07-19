@@ -100,7 +100,7 @@ Actions to automatically run your tests in different environments:
 
         strategy:
           matrix:
-            python-version: ["3.6", "3.7, "3.8"]
+            python-version: ["3.6", "3.7", "3.8"]
 
         steps:
           - uses: "actions/checkout@v2"
