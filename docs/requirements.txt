@@ -3,4 +3,7 @@ jupyter-client==6.2.0
 notebook==6.4.0
 jupyter==1.0.0
 nbsphinx==0.8.6
+# Jinja2 update to version 3 breaks nbsphinx
+# See https://github.com/spatialaudio/nbsphinx/issues/563
+Jinja2==2.11.3
 ipylayout==0.1.6
