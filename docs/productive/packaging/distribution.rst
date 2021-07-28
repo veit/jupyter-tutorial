@@ -16,7 +16,7 @@ uploaded to a package index and installed with :term:`Pip`.
 
 pyYou can find a minimal yet functional ``setup.py`` in the `attrs
 <https://github.com/python-attrs/attrs/>`_ package: `setup.py
-</https://github.com/python-attrs/attrs/blob/0023e5b/setup.py>`_. This tells you
+<https://github.com/python-attrs/attrs/blob/0023e5b/setup.py>`_. This tells you
 that most of it is boilerplate and only the lines 10–37 are metadata for this
 particular package. Most of the other metadata is stored in the `__init__
 <https://github.com/python-attrs/attrs/blob/master/src/attr/__init__.py>`_ and
