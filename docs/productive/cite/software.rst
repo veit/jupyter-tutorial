@@ -159,6 +159,9 @@ Niemeyer 2016. Two projects are currently emerging for structured metadata:
        :alt: Popup on the landing page of a GitHub repository with the
              possibility to export ADA and BibTex formats.
 
+     When registering a DOI via Zenodo the ``CITATION.cff`` file in the GitHub
+     repository is also be used.
+
     .. seealso::
        * `GitHub Docs: About CITATION files
          <https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files>`_
