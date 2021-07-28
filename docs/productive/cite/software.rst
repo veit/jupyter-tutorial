@@ -1,5 +1,5 @@
-Citing software
-===============
+Cite software
+=============
 
 James Howison and Julia Bullard listed the following examples in descending
 reputations in their 2016 article `Software in the scientific literature

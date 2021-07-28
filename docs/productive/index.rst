@@ -46,7 +46,7 @@ hand for :doc:`testing/index`, :doc:`logging/index`, :doc:`documenting
     packaging/index
     documenting/index
     licensing
-    quote/index
+    cite/index
     envs/index
     testing/index
     logging/index
