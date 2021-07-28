@@ -152,8 +152,8 @@ Niemeyer 2016. Two projects are currently emerging for structured metadata:
     * `doi2cff <https://github.com/citation-file-format/doi2cff>`_ creates a
       ``CITATION.cff`` file from a Zenodo DOI
 
-    Auch GitHub bietet einen Service um die Informationen aus ``CITATION.cff``
-    files im APA- and BibTex-Format zu kopieren.
+    GitHub also offers a service to copy the information from ``CITATION.cff``
+    files in APA and BibTex format.
 
     .. figure:: github-cite.png
        :alt: Popup on the landing page of a GitHub repository with the
