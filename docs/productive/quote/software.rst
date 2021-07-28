@@ -109,18 +109,34 @@ Niemeyer 2016. Two projects are currently emerging for structured metadata:
 
     .. code-block::
 
-        # YAML 1.2
-        ---
-        cff-version: 1.1.0
-        message: If you use this software, please cite it as below.
+        cff-version: "1.1.0"
+        message: "If you use this tutorial, please cite it as below."
         authors:
-          - family-names: Druskat
-            given-names: Stephan
-            orcid: https://orcid.org/0000-0003-4925-7248
-        title: "My Research Software"
-        version: 2.0.4
-        doi: 10.5281/zenodo.1234
-        date-released: 2017-12-18
+          -
+            family-names: Schiele
+            given-names: Veit
+            orcid: "https://orcid.org/https://orcid.org/0000-0002-2448-8958"
+        identifiers:
+          -
+            type: doi
+            value: "10.5281/zenodo.4147287"
+        keywords:
+          - "data-science"
+          - jupyter
+          - "jupyter-notebooks"
+          - "jupyter-kernels"
+          - ipython
+          - pandas
+          - spack
+          - pipenv
+          - ipywidgets
+          - "ipython-widget"
+          - dvc
+        title: "Jupyter tutorial"
+        version: "0.8.0"
+        date-released: 2020-10-08
+        license: "BSD-3-Clause"
+        repository-code: "https://github.com/veit/jupyter-tutorial"
 
     You can easily adapt the example above to create your own ``CITATION.cff``
     file or use the `cffinit
@@ -135,6 +151,17 @@ Niemeyer 2016. Two projects are currently emerging for structured metadata:
       formats
     * `doi2cff <https://github.com/citation-file-format/doi2cff>`_ creates a
       ``CITATION.cff`` file from a Zenodo DOI
+
+    Auch GitHub bietet einen Service um die Informationen aus ``CITATION.cff``
+    files im APA- and BibTex-Format zu kopieren.
+
+    .. figure:: github-cite.png
+       :alt: Popup on the landing page of a GitHub repository with the
+             possibility to export ADA and BibTex formats.
+
+    .. seealso::
+       * `GitHub Docs: About CITATION files
+         <https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files>`_
 
 You should provide a `Persistent Identifier (PID)
 <https://en.wikipedia.org/wiki/Persistent_identifier>`_ to ensure the long-term
