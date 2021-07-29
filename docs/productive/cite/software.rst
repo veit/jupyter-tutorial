@@ -159,12 +159,15 @@ Niemeyer 2016. Two projects are currently emerging for structured metadata:
        :alt: Popup on the landing page of a GitHub repository with the
              possibility to export ADA and BibTex formats.
 
-     When registering a DOI via Zenodo the ``CITATION.cff`` file in the GitHub
-     repository is also be used.
-
     .. seealso::
        * `GitHub Docs: About CITATION files
          <https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files>`_
+
+    When registering a DOI via Zenodo the ``CITATION.cff`` file in the GitHub
+    repository is also be used.  Also `Zotero <https://www.zotero.org/>`_
+    interprets the CFF file in GitHub repositories; however, Zotero can take
+    meta-information of the repository, such as company, programming language
+    etc., even without a CFF file.
 
 You should provide a `Persistent Identifier (PID)
 <https://en.wikipedia.org/wiki/Persistent_identifier>`_ to ensure the long-term
