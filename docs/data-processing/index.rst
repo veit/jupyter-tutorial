@@ -35,8 +35,7 @@ geodata.
 For the storage of other data types we introduce you to different
 :doc:`NoSQL databases and concepts <nosql/index>`.
 
-Next we will show you how to provide data with :doc:`fastapi/index` or
-:doc:`grpc/index`.
+Next, we will show you how to provide the data via an :doc:`apis/index`.
 
 With :doc:`DVC <../productive/dvc/index>` we present you a tool that allows data
 provenance, i.e. the traceability of the origin of the data and the way they are
@@ -57,6 +56,5 @@ Python packages to :doc:`clean up and validate data <../clean-prep/index>`.
     intake/index
     postgresql/index
     nosql/index
-    grpc/index
-    fastapi/index
+    apis/index
     glossary
