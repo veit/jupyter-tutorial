@@ -10,6 +10,9 @@ software is to be relicensed, the consent of all authors is required.
    This does not constitute legal advice. If in doubt, contact a lawyer or the
    legal department of your company.
 
+.. seealso::
+   * `License compatibility <https://en.wikipedia.org/wiki/License_compatibility>`_
+
 Proprietary software licenses
 -----------------------------
 
