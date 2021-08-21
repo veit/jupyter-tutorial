@@ -32,10 +32,6 @@ operate a platform based on Jupyter notebooks. Then, we explain how this
 platform can be used effectively by data scientists, data engineers, and
 analysts.
 
-.. seealso::
-   * `Jupyter celebrates 20 years
-     <https://data.berkeley.edu/news/project-jupyter-celebrates-20-years-fernando-perez-reflects-how-it-started-open-sciences>`_
-
 Structure of the Jupyter tutorial
 ---------------------------------
 
@@ -99,6 +95,10 @@ Interactive Computing Protocol
 :doc:`workspace/jupyter/kernels/index`
     Kernels are processes that execute interactive code in a specific
     programming language and return the output to the user.
+
+.. seealso::
+   * `Jupyter celebrates 20 years
+     <https://data.berkeley.edu/news/project-jupyter-celebrates-20-years-fernando-perez-reflects-how-it-started-open-sciences>`_
 
 Jupyter infrastructure
 ----------------------
