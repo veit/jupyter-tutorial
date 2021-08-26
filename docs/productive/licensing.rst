@@ -11,6 +11,12 @@ software is to be relicensed, the consent of all authors is required.
    legal department of your company.
 
 .. seealso::
+   * `The Whys and Hows of Licensing Scientific Code
+     <https://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/>`_
+   * `A Quick Guide to Software Licensing for the Scientist-Programmer
+     <https://doi.org/10.1371/journal.pcbi.1002598>`_
+   * Karl Fogel: `Producing Open Source Software <https://producingoss.com/>`_
+   * `Choose an open source license <https://choosealicense.com/>`_
    * `License compatibility <https://en.wikipedia.org/wiki/License_compatibility>`_
 
 Proprietary software licenses
@@ -164,8 +170,3 @@ Alternatives
 `FOSSology <https://www.fossology.org/>`_
     Free software compliance toolkit that stores information in a database with
     license, copyright, and export scanners
-
-.. seealso::
-   * `A Quick Guide to Software Licensing for the Scientist-Programmer
-     <https://doi.org/10.1371/journal.pcbi.1002598>`_
-   * `Producing Open Source Software <https://producingoss.com/>`_ by Karl Fogel
