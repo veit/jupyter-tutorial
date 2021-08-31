@@ -1,5 +1,5 @@
 Sphinx==4.0.3
-jupyter-client==7.0.1
+jupyter-client==7.0.2
 notebook==6.4.3
 jupyter==1.0.0
 nbsphinx==0.8.7
