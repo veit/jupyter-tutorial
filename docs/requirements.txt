@@ -1,3 +1,4 @@
+furo
 ipython
 numpy
 Pillow

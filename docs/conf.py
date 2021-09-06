@@ -68,36 +68,24 @@ exclude_patterns = [
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = "alabaster"
+html_theme = "furo"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {
-    "description": "Training materials for the <a href='https://cusy.io/en/seminars'>Cusy training courses</a> on setting up and using a research infrastructure based on Jupyter notebooks.",
-    "fixed_sidebar": False,
-    "show_powered_by": False,
-    "github_user": "veit",
-    "github_repo": "jupyter-tutorial",
-    "github_banner": False,
-    "github_button": False,
-    "show_related": True,
-    "show_relbar_bottom": True,
-    "sidebar_includehidden": True,
-}
-
-html_sidebars = {"**": ["about.html", "searchbox.html", "navigation.html"]}
-
 # Change default HTML title
 html_title = "Jupyter Tutorial 0.8.0"
+#
+# html_theme_options = {}
+# html_sidebars = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-html_logo = "_static/images/logo/logo.png"
+html_logo = "_static/images/logo/logo.svg"
 html_favicon = "_static/images/logo/favicon.ico"
 
 # Add any paths that contain templates here, relative to this directory.
