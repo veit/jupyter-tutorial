@@ -33,8 +33,9 @@ best practices for parallel programming.
     multiprocessing.ipynb
     threading-forking-combined.ipynb
     asyncio-example.ipynb
-    parallelise-pandass
+    parallelise-pandas
     ipyparallel/index.rst
+    dask.ipynb
 
 .. seealso::
     * `Faster CPython <https://faster-cpython.readthedocs.io/>`_
