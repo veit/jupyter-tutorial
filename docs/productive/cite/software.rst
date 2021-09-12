@@ -143,7 +143,11 @@ Niemeyer 2016. Two projects are currently emerging for structured metadata:
     <https://citation-file-format.github.io/cff-initializer-javascript/>`_
     website.
 
-    There are also some tools for processing ``CITATION.cff`` files:
+    With `cff-validator <https://github.com/marketplace/actions/cff-validator>`_
+    you have a GitHub action that checks ``CITATION.cff`` files with the R
+    package ``V8``.
+
+    There are also some tools for the workflow of ``CITATION.cff`` files:
 
     * `cff-converter-python
       <https://github.com/citation-file-format/cff-converter-python>`_
@@ -198,3 +202,7 @@ can also be called up with `CiteAs <https://citeas.org/>`_.
      <https://www.softwareheritage.org/2019/05/28/mining-software-metadata-for-80-m-projects-and-even-more/>`_
    * `Extensions to schema.org to support structured, semantic, and executable
      documents <https://github.com/stencila/schema>`_
+   * `Guide to Citation File Format schema
+     <https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md>`_
+   * `schema.json
+     <https://github.com/citation-file-format/citation-file-format/blob/main/schema.json>`_
