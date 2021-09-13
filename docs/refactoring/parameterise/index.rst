@@ -1,5 +1,5 @@
-Parameterise
-============
+Parameterisation and scheduling
+===============================
 
 With `papermill <https://papermill.readthedocs.io/en/latest/>`_ you can
 parameterise and automate notebooks. You can run the notebooks time-controlled
@@ -30,10 +30,10 @@ Use
 
    .. code-block:: console
 
-        $ pipenv run papermill --help-notebook docs/productive/parameterise/input.ipynb
+        $ pipenv run papermill --help-notebook docs/refactoring/parameterise/input.ipynb
         Usage: papermill [OPTIONS] NOTEBOOK_PATH [OUTPUT_PATH]
 
-        Parameters inferred for notebook 'docs/productive/parameterise/input.ipynb':
+        Parameters inferred for notebook 'docs/refactoring/parameterise/input.ipynb':
           msg: Unknown type (default None)
 
 #. Execute
@@ -92,6 +92,24 @@ Use
      .. seealso::
         * `CLI reference
           <https://papermill.readthedocs.io/en/latest/usage-cli.html>`_
+
+     You can also add a timestamp to the file name:
+
+     .. code-block:: console
+
+        $ dt=$(date '+%Y-%m-%d_%H:%M:%S')
+        $ pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
+
+     This creates an output file whose file name contains a timestamp, e.g.
+     :doc:`output_2021-09-13_10:42:33.ipynb <output_2021-09-13_10:42:33>`.
+
+     Finally, you can use ``crontab -e`` to execute the two commands
+     automatically at certain times, e.g. on the first day of every month:
+
+     .. code-block::
+
+        dt=$(date '+%Y-%m-%d_%H:%M:%S')
+        0 0 1 * * cd ~/jupyter-notebook && pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
 #. Store
 
