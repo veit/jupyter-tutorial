@@ -73,7 +73,7 @@ Use
 
         $ pipenv run papermill input.ipynb output.ipynb -p salutation 'Hello' -p name 'pythonistas'
 
-     Alternativ kann auch eine YAML-Datei mit den Parametern angegeben werden, z.B.
+     Alternatively, a YAML file can be specified with the parameters, e.g.
      ``params.yaml``:
 
      .. literalinclude:: params.yaml
