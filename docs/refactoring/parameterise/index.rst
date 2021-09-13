@@ -22,7 +22,7 @@ Use
 #. Parameterise
 
    The first step is to parameterise the notebook. For this purpose the cells are
-   tagged as `parameters` in :menuselection:`View --> Cell Toolbar --> Tags.
+   tagged as `parameters` in :menuselection:`View --> Cell Toolbar --> Tags`.
 
 #. Inspect
 
