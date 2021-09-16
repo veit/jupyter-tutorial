@@ -25,6 +25,9 @@ monitoring environment, including:
     an open-source data visualiser that allows you to generate many different
     kinds of charts and graphs.
 
+.. seealso::
+   * `pgexporter <https://pgexporter.github.io/>`_
+
 Installation and configuration
 ------------------------------
 
