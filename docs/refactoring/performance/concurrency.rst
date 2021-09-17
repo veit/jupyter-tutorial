@@ -154,14 +154,14 @@ can distribute tasks in a cluster.  In doing so, they have different focuses:
 * Ray provides a simple, universal API for building distributed applications.
 
   * `RLlib <https://docs.ray.io/en/latest/rllib.html>`_ will scale reinforcement
-    learning in particular
-  * a `backend for joblib <https://docs.ray.io/en/latest/joblib.html>`_ supports
-    distributed `scikit-learn <https://scikit-learn.org/stable/>`_ programs
+    learning in particular.
+  * A `backend for joblib <https://docs.ray.io/en/latest/joblib.html>`_ supports
+    distributed `scikit-learn <https://scikit-learn.org/stable/>`_ programs.
   * `XGBoost-Ray <https://docs.ray.io/en/latest/xgboost-ray.html>`_ is a backend
-    for distributed `XGBoost <https://xgboost.readthedocs.io/en/latest/>`_
+    for distributed `XGBoost <https://xgboost.readthedocs.io/en/latest/>`_.
   * `LightGBM-Ray <https://docs.ray.io/en/latest/lightgbm-ray.html>`_ is a
     backend for distributed `LightGBM
-    <https://lightgbm.readthedocs.io/en/latest/>`_
+    <https://lightgbm.readthedocs.io/en/latest/>`_.
   * `Collective Communication Lib
     <https://docs.ray.io/en/latest/ray-collective.html>`_ offers a set of native
     collective primitives for `Gloo
