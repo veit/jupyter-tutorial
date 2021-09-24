@@ -14,18 +14,15 @@ different. However, one of the great strengths of Jupyter notebooks is that they
 allow these different experts to work closely together in cross-functional
 teams.
 
-* **Data scientists**
-  conduct experiments with different coefficients and summarise the results.
-
-* **Data engineers**
-  check the quality of the code and make it more robust, efficient and scalable.
-
-* **Data analysts**
-  perform systematic studies of the data using code provided by data engineers.
-
-* **System engineers**
-  create the hub, the kernel, extensions, etc. and ensure that this
-  infrastructure runs as smoothly as possible.
+* **Data scientists** explore data with different parameters and summarise the
+  results.
+* **Data engineers** check the quality of the code and make it more robust,
+  efficient and scalable.
+* **Data analysts** use the code provided by data engineers to systematically
+  analyse the data.
+* **System engineers** provide the research platform based on the
+  :doc:`workspace/jupyter/hub/index` on which the other roles can perform their
+  work.
 
 In this tutorial, we primarily address system engineers who want to build and
 operate a platform based on Jupyter notebooks. Then, we explain how this
