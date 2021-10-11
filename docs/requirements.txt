@@ -1,4 +1,4 @@
-furo
+furo==2021.10.9
 ipython
 numpy
 Pillow
