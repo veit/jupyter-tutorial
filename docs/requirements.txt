@@ -1,5 +1,5 @@
 furo==2021.10.9
 ipython==7.28.0
 numpy==1.21.2
-Pillow
+Pillow==8.3.2
 nbsphinx
