@@ -14,7 +14,7 @@ entrypoints==0.3
 furo==2021.10.9
 idna==3.3
 imagesize==1.2.0
-ipython==7.28.0
+ipython==7.29.0
 ipython-genutils==0.2.0
 jedi==0.18.0
 Jinja2==3.0.2
