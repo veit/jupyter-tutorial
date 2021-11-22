@@ -1,15 +1,14 @@
-Clean up and validate data
-==========================
+Data cleansing and validation
+=============================
 
-In this chapter we want to give you a practical overview of libraries and
-methods for `data cleansing <https://en.wikipedia.org/wiki/Data_cleansing>`_ and
-validation with Python.
-
-.. seealso::
-
-    * `Data Cleaning 101 <https://github.com/kjam/data-cleaning-101>`_ by
-      Katharine Jarmul
-    * `Great Expectations <https://greatexpectations.io/>`_
+In the following, we want to give you a practical overview of various libraries
+and methods for `data cleansing <https://en.wikipedia.org/wiki/Data_cleansing>`_
+and validation with Python. Besides well-known libraries like NumPy and Pandas,
+we also use several small, specialised libraries like :doc:`dedupe
+<deduplicate>`, :doc:`fuzzywuzzy <string-matching>`, :doc:`voluptuous
+<voluptuous>`, :doc:`bulwark <bulwark>`, :doc:`tdda <tdda>` and :doc:`hypothesis
+<hypothesis>`. We prefer these more lightweight solutions to large, universal
+systems like `Great Expectations <https://greatexpectations.io/>`_.
 
 .. toctree::
     :hidden:
@@ -23,6 +22,6 @@ validation with Python.
     dask-pipeline.ipynb
     voluptuous.ipynb
     engarde.ipynb
-    bulwark
+    bulwark.ipynb
     tdda.ipynb
     hypothesis.ipynb
