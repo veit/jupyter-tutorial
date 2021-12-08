@@ -12,4 +12,4 @@ not_skip="__init__.py"
 use_parentheses=true
 
 known_first_party="jupyter-tutorial"
-known_third_party=["accounts_pb2", "accounts_pb2_grpc", "google", "grpc", "mpi4py", "numpy", "pydantic", "pytest", "requests"]
+known_third_party=["accounts_pb2", "accounts_pb2_grpc", "google", "grpc", "mpi4py", "numpy", "pandas", "pydantic", "pytest", "requests"]

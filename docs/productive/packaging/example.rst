@@ -16,12 +16,9 @@ so you can outsource it to a module. The file name is the module name
 
 Within this file you can now define the method ``load_data``:
 
-.. code-block:: python
-
-    def load_data(filename):
-        """Documentation"""
-        df = pd.read_csv(filename)
-        return df
+.. literalinclude:: dataprep.py
+   :language: python
+   :linenos:
 
 and this can be imported into the notebook with
 
