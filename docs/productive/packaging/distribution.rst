@@ -145,6 +145,15 @@ similar:
    :lines: 1-4,6-
    :linenos:
 
+``build-system``
+    defines a section describing the build system
+``requires``
+    defines a list of dependencies that must be installed for the build system
+    to work. A setuptools build system requires ``setuptools`` and ``wheel``.
+``build-backend``
+    identifies the entry point for the build-backend object as a dotted path.
+    The setuptools backend object is located at ``setuptools.build_meta``.
+
 ``LICENSE``
 ~~~~~~~~~~~
 
