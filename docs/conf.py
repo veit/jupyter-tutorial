@@ -22,7 +22,7 @@ copyright = "2019–2021, Veit Schiele"
 author = "Veit Schiele"
 
 # The full version, including alpha/beta/rc tags
-release = "0.8.0"
+release = "0.9.0"
 
 
 # -- General configuration ---------------------------------------------------
@@ -75,7 +75,7 @@ html_theme = "furo"
 # documentation.
 #
 # Change default HTML title
-html_title = "Jupyter Tutorial 0.8.0"
+html_title = "Jupyter Tutorial 0.9.0"
 #
 # html_theme_options = {}
 # html_sidebars = {}
