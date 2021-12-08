@@ -43,10 +43,11 @@ hand for :doc:`testing`, :doc:`logging/index`, :doc:`documenting
 
     git/index
     dvc/index
+    envs/index
     packaging/index
     documenting/index
     licensing
     cite/index
-    envs/index
     testing
     logging/index
+    qa/index

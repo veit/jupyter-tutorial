@@ -92,4 +92,4 @@ Use
     jumps to the first call and shows the source code
 
 Further commands can be found in `Commands
-<https://pyre-check.org/docs/static-analysis-post-processor#commands>`_.
+<https://pyre-check.org/docs/static-analysis-post-processor/#commands>`_.
