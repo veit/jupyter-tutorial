@@ -32,7 +32,6 @@ Create packages
    * `The Hitchhiker’s Guide to Python: Structuring Your Project
      <https://docs.python-guide.org/writing/structure>`_
    * `Poetry <https://python-poetry.org/>`_
-   * :doc:`Python Modules <python:tutorial/modules>`
    * `Python Packaging <https://python-packaging.readthedocs.io/>`_
 
 .. toctree::
