@@ -1,5 +1,5 @@
-Example
-=======
+Module
+======
 
 Notebooks are well suited for making rapid progress, but when the code
 becomes more extensive, it is advisable to move stable code to individual

@@ -37,7 +37,7 @@ Create packages
 .. toctree::
    :hidden:
 
-   example
+   module
    distribution
    upload-install
    binary-extensions
