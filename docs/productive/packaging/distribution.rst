@@ -12,10 +12,11 @@ A minimal distribution package can look like this, for example:
 .. code-block:: console
 
     dataprep
-    ├── dataprep
-    │   ├── __init__.py
-    │   └── loaders.py
-    └── setup.py
+    ├── setup.py
+    └── src
+        └── dataprep
+            ├── __init__.py
+            └── loaders.py
 
 ``setup.py``
 ------------
@@ -25,11 +26,11 @@ for example:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 1-12,31-
+   :lines: 1-14,33-
    :linenos:
 
-``dataprep``-Package
---------------------
+``src``-Package
+---------------
 
 ``package_dir`` points to the ``src`` directory, which can contain one or more
 packages. Then you can use setuptools's `find_packages()
@@ -66,8 +67,8 @@ avoided.
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 13-29
-   :lineno-start: 13
+   :lines: 15-31
+   :lineno-start: 15
 
 .. seealso::
     `Add invalid classifier for non open source license to avoid upload to…
@@ -81,8 +82,8 @@ Dependencies are specified with ``install_requires``:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 31
-   :lineno-start: 31
+   :lines: 32
+   :lineno-start: 32
 
 .. note::
    Version numbers of dependencies should usually not be set in the ``setup.py``

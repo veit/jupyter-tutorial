@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 setup(
@@ -9,7 +9,8 @@ setup(
     author="Veit Schiele",
     author_email="veit@cusy.io",
     license="BSD-3-Clause",
-    packages=["dataprep"],
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     zip_safe=False,
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
