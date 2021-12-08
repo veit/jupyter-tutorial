@@ -32,22 +32,21 @@ you must first install twine with:
 
 .. code-block:: console
 
-    $ pipenv update pip pep517 twine
+    $ pipenv update pip build twine
     …
     All dependencies are now up-to-date!
 
 .. note::
    Run this command before each release to ensure that all release tools are up
-   to date. The remaining build tools are automatically installed in the
-   isolated build environment by pep517.
+   to date.
 
 Now you can create your *Distribution Packages* with:
 
 .. code-block:: console
 
+    $ cd /path/to/your/distribution_package
     $ rm -rf build dist
-    $ pipenv run python -m pep517.build .
-    …
+    $ pipenv run pyproject-build .
 
 After installing Twine you can upload all archives in ``/dist`` to the Python
 Package Index with:
