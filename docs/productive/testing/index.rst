@@ -33,6 +33,7 @@ Notebooks
    :maxdepth: 1
 
    unittest.ipynb
+   unittest2.ipynb
    doctest.ipynb
    ipytest.ipynb
 
