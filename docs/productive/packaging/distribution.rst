@@ -133,9 +133,12 @@ the ``options`` keyword argument creates universal ``wheel`` packages e.g.
 ~~~~~~~~~~~~~~~~~~
 
 `PEP 517 <https://www.python.org/dev/peps/pep-0517/>`_ and `PEP 518
-<https://www.python.org/dev/peps/pep-0518/>`_ brought plugable build backends,
-isolated builds, and ``pyproject.toml``. Since we’re using ``setuptools``, the
-file should look something like this:
+<https://www.python.org/dev/peps/pep-0518/>`_ brought extensible build backends,
+isolated builds and  `pyproject.toml
+<https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/>`_.. The
+file uses the :doc:`../../data-processing/serialisation-formats/toml` format and
+since we use ``setuptools``, the file should look like this or something
+similar:
 
 .. literalinclude:: dataprep/pyproject.toml
    :language: toml
