@@ -30,7 +30,7 @@ Notebooks
 
    unittest.ipynb
    doctest.ipynb
-   ipytest.ipynb
+   mock.ipynb
 
 Tools
 -----
@@ -40,5 +40,4 @@ Tools
    :maxdepth: 3
 
    unittest2.ipynb
-   mock
    hypothesis
