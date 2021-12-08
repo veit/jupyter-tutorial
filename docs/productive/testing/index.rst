@@ -33,7 +33,6 @@ Notebooks
    :maxdepth: 1
 
    unittest.ipynb
-   unittest2.ipynb
    doctest.ipynb
    ipytest.ipynb
 
@@ -44,7 +43,7 @@ Tools
    :titlesonly:
    :maxdepth: 3
 
-   unittest2
+   unittest2.ipynb
    mock
    hypothesis
    coverage/index
