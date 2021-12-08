@@ -2,8 +2,8 @@ Example
 =======
 
 #. Notebooks are well suited for making rapid progress, but when the code
-   becomes more extensive, it is advisable to move stable code into modules. For
-   example, if you wrote in your notebook:
+   becomes more extensive, it is advisable to move stable code into
+   :doc:`python:tutorial/modules`. For example, if you wrote in your notebook:
 
    .. code-block:: python
 
