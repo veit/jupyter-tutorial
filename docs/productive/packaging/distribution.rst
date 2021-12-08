@@ -34,7 +34,7 @@ The `packages` field uses setuptools’s `find_packages()
 <https://setuptools.readthedocs.io/en/latest/userguide/package_discovery.html#using-find-or-find-packages>`_
 to find underlying packages and the `package_dir
 <https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages>`_
-field describes where the root directory is.
+dict describes where the root directory is.
 
 .. note::
     ``find_packages()`` without :file:`src/` directory would package all
