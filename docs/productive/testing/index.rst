@@ -46,4 +46,3 @@ Tools
    unittest2.ipynb
    mock
    hypothesis
-   coverage/index
