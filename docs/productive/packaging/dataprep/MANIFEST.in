@@ -1,0 +1,3 @@
+include LICENSE *.rst *.toml *.yml *.yaml *.ini
+graft src
+recursive-exclude __pycache__ *.py[cod]

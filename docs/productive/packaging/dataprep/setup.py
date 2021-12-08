@@ -1,4 +1,5 @@
 from setuptools import find_packages, setup
+from Cython.Build import cythonize
 
 
 setup(
@@ -30,4 +31,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     install_requires=["pandas"],
+    ext_modules=cythonize("src/dataprep/cymean.pyx"),
 )

@@ -11,5 +11,5 @@ multi_line_output=3
 not_skip="__init__.py"
 use_parentheses=true
 
-known_first_party="jupyter-tutorial"
-known_third_party=["accounts_pb2", "accounts_pb2_grpc", "google", "grpc", "mpi4py", "numpy", "pandas", "pydantic", "pytest", "requests", "setuptools"]
+known_first_party="jupyter-tutorial-de"
+known_third_party=["Cython", "accounts_pb2", "accounts_pb2_grpc", "dataprep", "google", "grpc", "mpi4py", "numpy", "pandas", "pydantic", "pytest", "requests", "setuptools"]

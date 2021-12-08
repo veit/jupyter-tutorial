@@ -26,7 +26,7 @@ for example:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 1-14,33-
+   :lines: 1,3-15,34-
    :linenos:
 
 ``src``-Package
@@ -67,8 +67,8 @@ avoided.
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 15-31
-   :lineno-start: 15
+   :lines: 16-32
+   :lineno-start: 16
 
 .. seealso::
     `Add invalid classifier for non open source license to avoid upload to…
@@ -82,8 +82,8 @@ Dependencies are specified with ``install_requires``:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 32
-   :lineno-start: 32
+   :lines: 33
+   :lineno-start: 33
 
 .. note::
    Version numbers of dependencies should usually not be set in the ``setup.py``
@@ -137,11 +137,10 @@ the ``options`` keyword argument creates universal ``wheel`` packages e.g.
 isolated builds, and ``pyproject.toml``. Since we’re using ``setuptools``, the
 file should look something like this:
 
-.. code-block:: toml
-
-    [build-system]
-    requires = ["setuptools>=40.6.0", "wheel"]
-    build-backend = "setuptools.build_meta"
+.. literalinclude:: dataprep/pyproject.toml
+   :language: toml
+   :lines: 1-4,6-
+   :linenos:
 
 ``LICENSE``
 ~~~~~~~~~~~

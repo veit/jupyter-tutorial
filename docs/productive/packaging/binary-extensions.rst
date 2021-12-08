@@ -169,22 +169,82 @@ Python module.
 Implementation
 --------------
 
-The `CPython Extending and Embedding guide
-<https://docs.python.org/3/extending/>`_ provides an introduction to writing
-your own extension modules in C: `Extending Python with C or C++
-<https://docs.python.org/3/extending/extending.html>`_. RPlease note, however,
-that this tutorial only covers the basic extension building tools provided with
-CPython. Third-party tools like `Cython <http://cython.org/>`_, `cffi
-<https://cffi.readthedocs.io/>`_, `SWIG <http://www.swig.org/>`_ and `Numba
-<https://numba.pydata.org/>`_ offer both simpler and more sophisticated
-approaches to creating C and C ++ extensions for Python.
+We now want to extend our ``dataprep`` package and integrate some C code. For
+this we use `Cython <https://cython.org/>`_ to translate the Python code from
+:download:`dataprep/src/dataprep/cymean.pyx` into optimised C code during the
+build process. Cython files have the suffix ``pyx`` and can contain both Python
+and C code.
+
+Since Cython itself is a Python package, it can simply be added to the list of
+dependencies in the :download:`dataprep/pyproject.toml` file. The setup tools
+use file to include non-Python files in a package. With the ``graft`` directive,
+all files from the ``src/`` directory are included.
+
+Now we can specify our external module in :download:`dataprep/setup.py` with:
+
+.. literalinclude:: dataprep/setup.py
+   :language: python
+   :lines: 2-5,34-
+
+Now you can run the build process with the ``pyproject-build`` command and check
+whether the Cython file ends up in the package as expected:
+
+.. code-block:: console
+
+    $ pipenv run pyproject-build ../dataprep
+    * Creating venv isolated environment...
+    * Installing packages in isolated environment... (cython, setuptools>=40.6.0, wheel)
+    * Getting dependencies for sdist...
+    Compiling src/dataprep/cymean.pyx because it changed.
+    [1/1] Cythonizing src/dataprep/cymean.pyx
+    …
+    copying src/dataprep/cymean.c -> dataprep-0.1.0/src/dataprep
+    copying src/dataprep/cymean.pyx -> dataprep-0.1.0/src/dataprep
+    …
+    running build_ext
+    building 'dataprep.cymean' extension
+    …
+    Successfully built dataprep-0.1.0.tar.gz and dataprep-0.1.0-cp39-cp39-macosx_10_9_x86_64.whl
+
+Finally, we can check our package with ``check-wheel-contents``:
+
+.. code-block:: console
+
+    $ pipenv run check-wheel-contents dataprep/dist/*.whl
+    dataprep/dist/dataprep-0.1.0-cp39-cp39-macosx_10_9_x86_64.whl: OK
+
+
+Alternatively, you can install our ``dataprep`` package and use ``mean``:
+
+.. code-block:: console
+
+    $ pipenv run python -m pip install dataprep/dist/dataprep-0.1.0-cp39-cp39-macosx_10_9_x86_64.whl
+    $ pipenv run python
+
+.. code-block:: python
+    >>> from dataprep.mean import mean
+    >>> from random import randint
+    >>> nums = [randint(1, 1_000_000) for _ in range(1_000_000)]
+    >>> mean(nums)
+    500097.867198
 
 .. seealso::
-    `Python Packaging User Guide: Binary Extensions
-    <https://packaging.python.org/guides/packaging-binary-extensions/>`_
-    not only covers various tools available to make creating Binary Extensions
-    easier, but it also explains the various reasons why it might be desirable
-    to create an Extension Module.
+   The `CPython Extending and Embedding guide
+   <https://docs.python.org/3/extending/>`_ contains an introduction to writing
+   your own extension modules in C: `Extending Python with C or C++
+   <https://docs.python.org/3/extending/extending.html>`_. However, please note
+   that this introduction only discusses the basic tools for creating extensions
+   that are provided as part of CPython. Third-party tools such as `Cython
+   <http://cython.org/>`_, `cffi <https://cffi.readthedocs.io/>`_, `SWIG
+   <http://www.swig.org/>`_, and `Numba <https://numba.pydata.org/>`_  offer
+   both simpler and more sophisticated approaches to building C and C++
+   extensions for Python.
+
+   `Python Packaging User Guide: Binary Extensions
+   <https://packaging.python.org/guides/packaging-binary-extensions/>`_ not only
+   covers various available tools that simplify the creation of binary
+   extensions, but also explains the various reasons why creating an extension
+   module might be desirable.
 
 Creating binary extensions
 --------------------------
