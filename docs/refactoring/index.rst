@@ -8,7 +8,6 @@ results should remain unchanged. A distinction is made between three main goals:
     :titlesonly:
     :maxdepth: 1
 
-    qa/index
     parameterise/index
     performance/index
 
