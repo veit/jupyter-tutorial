@@ -1,11 +1,17 @@
+import codecs
 from setuptools import find_packages, setup
 from Cython.Build import cythonize
 
+
+with codecs.open("README.rst", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name="dataprep",
     version="0.1.0",
     description="Toolbox for preparing data",
+    long_description=long_description,
+    long_description_content_type="text/x-rst",
     url="http://github.com/veit/dataprep",
     author="Veit Schiele",
     author_email="veit@cusy.io",

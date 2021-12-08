@@ -26,7 +26,7 @@ for example:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 1,3-15,34-
+   :lines: 3-6,10-13,16-22,42-
    :linenos:
 
 ``src``-Package
@@ -67,7 +67,7 @@ avoided.
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 16-32
+   :lines: 23-39
    :lineno-start: 16
 
 .. seealso::
@@ -82,7 +82,7 @@ Dependencies are specified with ``install_requires``:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 33
+   :lines: 40
    :lineno-start: 33
 
 .. note::
@@ -162,11 +162,16 @@ Detailed information on this can be found in the section :doc:`../licensing`.
 ``README.rst``
 ~~~~~~~~~~~~~~
 
-This file tells potential users what to look out for when using the package.
-Write the document in `ReStructuredText (ReST)
-<https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-primer>`_,
-so that you can easily transfer it to the Sphinx documentation later with
-``.. include:: ../../README.rst``.
+This file briefly tells those who are interested in the package how to use it.
+If you write the document in :doc:`../documenting/rest`, you can also include
+the contents as a detailed description in your package:
+
+.. literalinclude:: dataprep/setup.py
+   :language: python
+   :lines: 1,5-10,14-15,42
+
+You can also add them to your Sphinx documentation with
+``... include:: ../../README.rst``.
 
 ``CHANGELOG.rst``
 ~~~~~~~~~~~~~~~~~
