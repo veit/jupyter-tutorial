@@ -127,7 +127,7 @@ distribution
 This file is no longer needed, at least not for packaging. Today ``wheel``
 collects all the necessary license files automatically and  ``setuptools`` with
 the ``options`` keyword argument creates universal ``wheel`` packages e.g.
-``attrs-19.3.0-py2.py3-none-any.whl``.
+``dataprep-0.1.0-py3-none-any.whl``.
 
 ``pyproject.toml``
 ~~~~~~~~~~~~~~~~~~
