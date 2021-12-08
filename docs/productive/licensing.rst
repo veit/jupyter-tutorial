@@ -157,7 +157,7 @@ compliance with the license. With the `REUSE API
 <https://reuse.software/dev/#api>`_ you can also generate a dynamic compliance
 badge:
 
-.. figure:: reuse-compliant.png
+.. figure:: reuse-compliant.svg
    :alt: REUSE-compliant Badge
 
 CIR workflow
