@@ -188,12 +188,23 @@ This command should create the following two files for our distribution package:
       dataprep-0.1.0-py3-none-any.whl
       dataprep-0.1.0.tar.gz
 
+``dataprep``
+    is the normalised package name
+``0.1.0``
+    is the version of the distribution package
 ``py3``
-    Python version that the package was built with
+    specifies the Python version and, if applicable, the C `ABI
+    <https://en.wikipedia.org/wiki/Application_binary_interface>`_
 ``none``
     not OS specific
 ``any``
-    suitable for every processor architecture
+    indicates the platform for which the distribution package was built.
+
+    ``any``
+        suitable for any processor architecture
+    ``macosx_10_9_x86_64``
+        is suitable for MacOS version 10.9 with x86 instruction set on a 64-bit
+        architecture
 
 You can find the reference for the file names in `File name convention
 <https://www.python.org/dev/peps/pep-0427/#file-name-convention>`_.
