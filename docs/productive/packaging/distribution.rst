@@ -125,22 +125,7 @@ file should look something like this:
 ``LICENSE``
 ~~~~~~~~~~~
 
-You can get an overview of free and open-source software licenses in `Comparison
-of free and open-source software licenses
-<https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses>`_.
-
-For example, if you want to achieve the widest possible distribution of your
-package, MIT or BSD variants are a good choice. The Apache license protects you
-better against patent infringements, but isn’t compatible with the GPL v2.
-Therefore, you should see which licenses have the packages that you depend on
-and with which you should be compatible. To analyse licenses, you can use
-`licensechecker
-<https://boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_,
-a command line tool that searches installation directories for licenses.
-
-It can also be useful to publish a package under several licenses. An example of
-this is `cryptography/LICENSE
-<https://github.com/pyca/cryptography/blob/adf234e/LICENSE>`_.
+Detailed information on this can be found in the section :doc:`../licensing`.
 
 ``README.rst``
 ~~~~~~~~~~~~~~

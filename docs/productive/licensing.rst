@@ -16,8 +16,6 @@ software is to be relicensed, the consent of all authors is required.
    * `A Quick Guide to Software Licensing for the Scientist-Programmer
      <https://doi.org/10.1371/journal.pcbi.1002598>`_
    * Karl Fogel: `Producing Open Source Software <https://producingoss.com/>`_
-   * `Choose an open source license <https://choosealicense.com/>`_
-   * `License compatibility <https://en.wikipedia.org/wiki/License_compatibility>`_
 
 Proprietary software licenses
 -----------------------------
@@ -71,9 +69,24 @@ Choosing a suitable license
 
 Overviews of possible licenses can be found in the `SPDX License List
 <https://spdx.org/licenses/>`_ or `OSI Open Source Licenses by Category
-<https://opensource.org/licenses/category>`_. The website `Choose an open source
-license <https://choosealicense.com/>`_ supports you in choosing a suitable
-license.
+<https://opensource.org/licenses/category>`_. The websites
+`Choose an open source license <https://choosealicense.com/>`_ and `Comparison
+of free and open-source software licenses
+<https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses>`_
+supports you in choosing a suitable license.
+
+If you want to achieve the widest possible distribution of your package, for
+example, MIT or BSD versions are a good choice. The Apache licence protects you
+better from from patent infringement, but it is not compatible with the GPL v2.
+You should check what licences those packages have that you depend on and to
+which you should be compatible. To analyse licences you can use `license
+compatibility <https://en.wikipedia.org/wiki/License_compatibility>`_
+and the `licensechecker
+<https://boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_, a command line tool that scans installation directories for licences. for licences.
+
+Furthermore, it can also be useful to publish a package under several licences.
+An example of this is `cryptography/LICENSE
+<https://github.com/pyca/cryptography/blob/adf234e/LICENSE>`_.
 
 GitHub
 ------
@@ -122,9 +135,17 @@ badge for you, which you can include in your ``README`` file, for example
 Standard format for licensing
 -----------------------------
 
-We recommend using ``SPDX-FileCopyrightText: [year] [copyright holder]``.
-Usually the information should include the entire software product, but you can
-also exclude elements.
+`SPDX <https://spdx.dev/>`_ stands for *Software Package Data Exchange* and
+defines a standardised method for the exchange of copyright and licensing
+information between projects and people. You can choose the appropriate SPDX
+identifiers from the `SPDX License List <https://spdx.org/licenses/>`_ and then
+add to the header of your licence files:
+
+.. code-block::
+
+    # SPDX-FileCopyrightText: [year] [copyright holder] <[email address]>
+    #
+    # SPDX-License-Identifier: [identifier]
 
 Check conformity
 ----------------
@@ -157,9 +178,6 @@ for GitLab in the ``.gitlab-ci.yml`` file with:
 Alternatives
 ~~~~~~~~~~~~
 
-`SPDX <https://spdx.dev/>`_
-    SPDX defines a standardised method for exchanging copyright and license
-    information between projects and people
 `ClearlyDefined <https://clearlydefined.io/>`_
     It collects and displays information about the licensing and copyright
     situation of a software project
