@@ -19,7 +19,7 @@ There are various tools that support you in creating shareable products. These
 can be tools on the one hand for the :doc:`versioning of the source code
 <git/index>` and the :doc:`training data <dvc/index>` as well as for the
 reproducibility of the :doc:`execution environments <envs/index>`, on the other
-hand for :doc:`testing/index`, :doc:`logging/index`, :doc:`documenting
+hand for :doc:`testing`, :doc:`logging/index`, :doc:`documenting
 <documenting/index>` and :doc:`creating packages <packaging/index>`.
 
 .. seealso::
@@ -48,5 +48,5 @@ hand for :doc:`testing/index`, :doc:`logging/index`, :doc:`documenting
     licensing
     cite/index
     envs/index
-    testing/index
+    testing
     logging/index

@@ -20,6 +20,7 @@ expand the original limits of their use and enable new uses.
     data-processing/index
     clean-prep/index
     viz/index
+    testing/index
     refactoring/index
     productive/index
     web/index

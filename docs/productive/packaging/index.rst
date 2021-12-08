@@ -3,8 +3,12 @@ Create packages
 
 #. Notebooks are well suited for moving forward quickly, but when the code
    becomes more extensive, it is advisable to store stable code in packages.
-#. You can use :ref:`pytest </productive/testing/ipytest.ipynb>` not only within
+#. You can use :ref:`pytest <../../testing/ipytest.ipynb>` not only within
    your notebooks for testing, but also within your packages.
+
+   .. seealso::
+      :doc:`python-basics:test/pytest`
+
 #. Use Clean Code principles with meaningful variable and function names, make
    meaningful comments and modularise the code.
 
