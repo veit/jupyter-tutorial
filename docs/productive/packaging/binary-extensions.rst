@@ -184,7 +184,7 @@ Now we can specify our external module in :download:`dataprep/setup.py` with:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 4-6,10,41-
+   :lines: 3-5,9,40-
 
 Now you can run the build process with the ``pyproject-build`` command and check
 whether the Cython file ends up in the package as expected:
