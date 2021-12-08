@@ -191,28 +191,33 @@ This command should create the following two files for our distribution package:
       dataprep-0.1.0-py3-none-any.whl
       dataprep-0.1.0.tar.gz
 
-``dataprep``
-    is the normalised package name
-``0.1.0``
-    is the version of the distribution package
-``py3``
-    specifies the Python version and, if applicable, the C `ABI
-    <https://en.wikipedia.org/wiki/Application_binary_interface>`_
-``none``
-    not OS specific
-``any``
-    indicates the platform for which the distribution package was built.
+``sdist``
+    with ``dataprep-0.1.0.tar.gz`` the sources were made available in a
+    distribution package.
 
-    ``any``
-        suitable for any processor architecture
-    ``macosx_10_9_x86_64``
-        is suitable for MacOS version 10.9 with x86 instruction set on a 64-bit
-        architecture
+``wheel``
+    is a binary distribution format with the suffix ``.whl``, where the file
+    name is composed as follows:
 
-You can find the reference for the file names in `File name convention
-<https://www.python.org/dev/peps/pep-0427/#file-name-convention>`_.
+    ``dataprep``
+        is the normalised package name
+    ``0.1.0``
+        is the version of the distribution package
+    ``py3``
+        specifies the Python version and, if applicable, the C `ABI
+        <https://en.wikipedia.org/wiki/Application_binary_interface>`_
+    ``none``, ``macosx_10_9``
+        Indicates whether the *Wheel* package is suitable for every OS or only
+        specific ones
+    ``any``,  ``x86_64``
+        ``any`` is suitable for any processor architecture, ``x86_64`` on the
+        other hand only for chips with the x86 instruction set and a 64-bit
+        architecture.
 
 .. seealso::
+    The reference for the file names can be found in `File name convention
+   <https://www.python.org/dev/peps/pep-0427/#file-name-convention>`_.
+
     For more information, see `Creating a Source Distribution
     <https://docs.python.org/2/distutils/sourcedist.html#creating-a-source-distribution>`_.
     and `PEP 376 <https://www.python.org/dev/peps/pep-0376/>`_.
