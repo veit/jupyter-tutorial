@@ -40,7 +40,7 @@ The restrictions refer to  ``pd.read_json``, which is only implemented for
 Dask
 ----
 
-`Dask DataFrame <../../refactoring/performance/dask.html#Dask-DataFrame>`_ is a
+`Dask DataFrame <../../performance/dask.html#Dask-DataFrame>`_ is a
 large parallel DataFrame made up of multiple Pandas DataFrames. Here, the
 ``dask.dataframe`` API is a subset of the Pandas API, although there are minor
 changes.
