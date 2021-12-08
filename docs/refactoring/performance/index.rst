@@ -14,7 +14,7 @@ used for this.
     :maxdepth: 0
 
     ipython-profiler.ipynb
-    scalene
+    scalene.ipynb
 
 Parallel programming
 --------------------
