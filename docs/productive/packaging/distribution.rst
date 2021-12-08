@@ -26,7 +26,7 @@ for example:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 3-6,10-13,16-22,42-
+   :lines: 2,4-5,9-21,39,41-
    :linenos:
 
 ``src``-Package
@@ -67,7 +67,7 @@ avoided.
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 23-39
+   :lines: 22-38
    :lineno-start: 16
 
 .. seealso::
@@ -82,7 +82,7 @@ Dependencies are specified with ``install_requires``:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 40
+   :lines: 39
    :lineno-start: 33
 
 .. note::
@@ -168,7 +168,7 @@ the contents as a detailed description in your package:
 
 .. literalinclude:: dataprep/setup.py
    :language: python
-   :lines: 1,5-10,14-15,42
+   :lines: 1,4-9,13-14,41
 
 You can also add them to your Sphinx documentation with
 ``... include:: ../../README.rst``.
