@@ -20,8 +20,9 @@ expand the original limits of their use and enable new uses.
     data-processing/index
     clean-prep/index
     viz/index
+    parameterise/index
     testing/index
-    refactoring/index
+    performance/index
     productive/index
     web/index
     genindex
