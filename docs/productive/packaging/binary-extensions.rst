@@ -224,9 +224,12 @@ Alternatively, you can install our ``dataprep`` package and use ``mean``:
 .. code-block:: python
     >>> from dataprep.mean import mean
     >>> from random import randint
-    >>> nums = [randint(1, 1_000_000) for _ in range(1_000_000)]
+    >>> nums = [randint(1, 1_000) for _ in range(1_000_000)]
     >>> mean(nums)
     500097.867198
+
+With the ``random.randint`` function a tlist of one million random numbers with
+values between 1 and 1000 was created.
 
 .. seealso::
    The `CPython Extending and Embedding guide
