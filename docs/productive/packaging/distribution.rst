@@ -50,6 +50,7 @@ For ``version`` there are different ways described in `PEP 0440
 .. seealso::
     * `Semantic Versioning <https://semver.org>`_
     * `Calendar Versioning <https://calver.org>`_
+    * `ZeroVer <https://0ver.org/>`_
     * `bump2version <https://pypi.org/project/bump2version/>`_
     * `Git Tags <https://git-scm.com/book/en/v2/Git-Basics-Tagging>`_
 
