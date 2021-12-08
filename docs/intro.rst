@@ -49,7 +49,7 @@ project:
    <viz/index>`.
 7. **Refactoring** includes parameterisation, validation and performance
    optimisation, including through :doc:`concurrency
-   <refactoring/performance/concurrency>`.
+   <performance/concurrency>`.
 8. **Creating a product**
    includes :doc:`productive/testing`, :doc:`productive/logging/index` and
    :doc:`productive/documenting/index` the methods and functions as well
