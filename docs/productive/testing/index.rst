@@ -47,4 +47,3 @@ Tools
    mock
    hypothesis
    coverage/index
-   tox
