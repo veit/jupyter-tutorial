@@ -24,8 +24,8 @@ Check
 Configuration
 -------------
 
-``flake8`` can be configured for :doc:`/productive/testing/tox` in the
-``tox.ini`` file of a package, e.g.:
+``flake8`` can be configured for :doc:`/testing/tox` in the ``tox.ini`` file of
+a package, for example:
 
 .. code-block:: ini
 

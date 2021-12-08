@@ -51,7 +51,7 @@ project:
    optimisation, including through :doc:`concurrency
    <refactoring/performance/concurrency>`.
 8. **Creating a product**
-   includes :doc:`productive/testing/index`, :doc:`productive/logging/index` and
+   includes :doc:`testing/index`, :doc:`productive/logging/index` and
    :doc:`productive/documenting/index` the methods and functions as well
    as :doc:`creating packages  <productive/packaging/index>`.
 9. **Web applications**
