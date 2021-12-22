@@ -23,7 +23,7 @@ Then you can check the installation with
 
 .. code-block:: console
 
-    $ pipenv run black /path/to/your/source/file
+    $ pipenv run black /PATH/TO/YOUR/SOURCE/FILE
 
 Integration
 -----------
