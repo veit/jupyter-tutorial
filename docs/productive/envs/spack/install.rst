@@ -119,6 +119,53 @@ Compiler configuration
     -- apple-clang bigsur-x86_64 ------------------------------------
     apple-clang@13.0.0
 
+Build your own compiler
+-----------------------
+
+.. code-block:: console
+
+    $ spack install gcc@11.2.0
+    ...
+    ==> gcc: Successfully installed gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+      Fetch: 12.09s.  Build: 2h 8m 13.92s.  Total: 2h 8m 26.01s.
+    [+] /Users/veit/spack/opt/spack/darwin-bigsur-cannonlake/apple-clang-13.0.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+
+However, Spack doesn’t find the compiler at first:
+
+.. code-block:: console
+
+    $ $ spack compilers
+    ==> Available compilers
+    -- apple-clang bigsur-x86_64 ------------------------------------
+    apple-clang@13.0.0
+
+However, you can add it with ``spack compiler find``:
+
+.. code-block:: console
+
+    spack compiler find /Users/veit/spack/opt/spack/darwin-bigsur-cannonlake/apple-clang-13.0.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+    ==> Added 1 new compiler to /Users/veit/.spack/darwin/compilers.yaml
+        gcc@11.2.0
+    ==> Compilers are defined in the following files:
+        /Users/veit/.spack/darwin/compilers.yaml
+
+.. code-block:: console
+
+    $ spack compiler find /Users/veit/spack/opt/spack/darwin-bigsur-cannonlake/apple-clang-13.0.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+    ==> Added 1 new compiler to /Users/veit/.spack/darwin/compilers.yaml
+        gcc@11.2.0
+    ==> Compilers are defined in the following files:
+        /Users/veit/.spack/darwin/compilers.yaml
+
+If you want to overwrite the default and site settings, you can edit
+:file:`${HOME}/.spack/packages.yaml`:
+
+.. code-block:: yaml
+
+    packages:
+      all:
+        compiler: [gcc@11.2.0]
+
 GPG signing
 -----------
 
