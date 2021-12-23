@@ -69,40 +69,6 @@ Environments, ``spack.yaml`` and ``spack.lock``
     expat@2.2.5    openblas@0.3.6  py-numpy@1.16.4       sqlite@3.28.0
     gdbm@1.18.1    openssl@1.1.1b  py-setuptools@41.0.1  xz@5.2.4
 
-Install compiler
-----------------
-
-#. Installation
-
-   .. code-block:: console
-
-    $ spack install gcc@9.1.0
-    …
-    [+] /srv/jupyter/spack/opt/spack/linux-ubuntu18.04-sandybridge/gcc-7.4.0/gcc-9.1.0-zaj3xkm5onfgeweaeav5kuubwmjaokmz
-
-#. Configuration
-
-   In order to be able to use the new gcc compiler, it must be entered in
-   ``~/.spack/linux/compilers.yaml``:
-
-   .. code-block:: console
-
-    $ spack compiler find /srv/jupyter/spack/opt/spack/linux-ubuntu18.04-sandybridge/gcc-7.4.0/gcc-9.1.0-zaj3xkm5onfgeweaeav5kuubwmjaokmz
-    ==> Added 1 new compiler to /srv/jupyter/.spack/linux/compilers.yaml
-        gcc@9.1.0
-    ==> Compilers are defined in the following files:
-        /srv/jupyter/.spack/linux/compilers.yaml
-
-#. Check
-
-   .. code-block:: console
-
-    $ spack find
-    ==> 16 installed packages
-    -- linux-ubuntu18.04-sandybridge / gcc@7.4.0 --------------------
-    autoconf@2.69    gcc@9.1.0    gmp@6.1.2  libsigsegv@2.12  m4@1.4.18  mpfr@3.1.6   perl@5.30.1    readline@8.0
-    automake@1.16.1  gdbm@1.18.1  isl@0.20   libtool@2.4.6    mpc@1.1.0  ncurses@6.1  pkgconf@1.6.3  zlib@1.2.11
-
 Install packages
 ----------------
 
