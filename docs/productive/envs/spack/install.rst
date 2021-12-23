@@ -4,30 +4,39 @@ Spack installation
 Requirements
 ------------
 
-* Python 2 or Python 3
-* C/C++ compiler
-* ``git`` and ``curl``
+* Interpreter for Spack:
 
-  For Linux:
+  * Python 2.7 or Python 3.5–3.9
+
+* Building software
+
+  * C/C++ compilers
+  * ``make``,  ``patch`` and ``bash``
+
+* Create and extract archives
+
+  * ``tar``, ``gzip`` and ``bzip``
+
+* Manage software repositories
+
+  * ``git``
+
+* Sign and verify Build caches
+
+  * ``gnupg2``
+
+… for Debian/Ubuntu:
 
   .. code-block:: console
 
-    $ apt install curl git environment-modules
+    $ sudo apt install build-essential patch tar gzip bzip2 git gnupg2
 
-  … or for macOS:
-
-  .. code-block:: console
-
-    $ brew install curl git modules
-
-  Then the shell is configured by entering for example the following in the Bash
-  configuration:
+… or for macOS:
 
   .. code-block:: console
 
-    $ source /usr/local/opt/modules/init/bash
-
-* ``gnupg2`` for the ``gpg`` subcommand
+    $ brew install libc++ make bash gzip bzip2 git gnupg
+    $ brew link gnupg
 
 Installation
 ------------
@@ -37,6 +46,8 @@ Installation
     $ git clone https://github.com/spack/spack.git
     Cloning into 'spack'...
     ...
+    $ cd spack
+    $ $ git checkout releases/v0.17
 
 Configure the shell
 -------------------
@@ -67,35 +78,36 @@ Checking the installation
 
     Concretized
     --------------------------------
-    python@3.7.6%gcc@7.4.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-ubuntu18.04-sandybridge
-        ^bzip2@1.0.8%gcc@7.4.0+shared arch=linux-ubuntu18.04-sandybridge
-            ^diffutils@3.7%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-                ^libiconv@1.16%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-        ^expat@2.2.9%gcc@7.4.0+libbsd arch=linux-ubuntu18.04-sandybridge
-            ^libbsd@0.10.0%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-        ^gdbm@1.18.1%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-            ^readline@8.0%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-                ^ncurses@6.1%gcc@7.4.0~symlinks+termlib arch=linux-ubuntu18.04-sandybridge
-                    ^pkgconf@1.6.3%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-        ^gettext@0.20.1%gcc@7.4.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu18.04-sandybridge
-            ^libxml2@2.9.9%gcc@7.4.0~python arch=linux-ubuntu18.04-sandybridge
-                ^xz@5.2.4%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-                ^zlib@1.2.11%gcc@7.4.0+optimize+pic+shared arch=linux-ubuntu18.04-sandybridge
-            ^tar@1.32%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-        ^libffi@3.2.1%gcc@7.4.0 arch=linux-ubuntu18.04-sandybridge
-        ^openssl@1.1.1d%gcc@7.4.0+systemcerts arch=linux-ubuntu18.04-sandybridge
-            ^perl@5.30.1%gcc@7.4.0+cpanm+shared+threads arch=linux-ubuntu18.04-sandybridge
-        ^sqlite@3.30.1%gcc@7.4.0~column_metadata+fts~functions~rtree arch=linux-ubuntu18.04-sandybridge
+    python@3.8.12%apple-clang@13.0.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=darwin-bigsur-cannonlake
+        ^apple-libuuid@1353.100.2%apple-clang@13.0.0 arch=darwin-bigsur-cannonlake
+        ^bzip2@1.0.8%apple-clang@13.0.0~debug~pic+shared arch=darwin-bigsur-cannonlake
+            ^diffutils@3.8%apple-clang@13.0.0 arch=darwin-bigsur-cannonlake
+                ^libiconv@1.16%apple-clang@13.0.0 libs=shared,static arch=darwin-bigsur-cannonlake
+        ^expat@2.4.1%apple-clang@13.0.0~libbsd arch=darwin-bigsur-cannonlake
+        ^gdbm@1.19%apple-clang@13.0.0 arch=darwin-bigsur-cannonlake
+            ^readline@8.1%apple-clang@13.0.0 arch=darwin-bigsur-cannonlake
+                ^ncurses@6.2%apple-clang@13.0.0~symlinks+termlib abi=none arch=darwin-bigsur-cannonlake
+                    ^pkgconf@1.8.0%apple-clang@13.0.0 arch=darwin-bigsur-cannonlake
+        ^gettext@0.21%apple-clang@13.0.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=darwin-bigsur-cannonlake
+            ^libxml2@2.9.12%apple-clang@13.0.0~python arch=darwin-bigsur-cannonlake
+                ^xz@5.2.5%apple-clang@13.0.0~pic libs=shared,static arch=darwin-bigsur-cannonlake
+                ^zlib@1.2.11%apple-clang@13.0.0+optimize+pic+shared arch=darwin-bigsur-cannonlake
+            ^tar@1.34%apple-clang@13.0.0 arch=darwin-bigsur-cannonlake
+        ^libffi@3.3%apple-clang@13.0.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=darwin-bigsur-cannonlake
+        ^openssl@1.1.1l%apple-clang@13.0.0~docs certs=system arch=darwin-bigsur-cannonlake
+            ^perl@5.34.0%apple-clang@13.0.0+cpanm+shared+threads arch=darwin-bigsur-cannonlake
+                ^berkeley-db@18.1.40%apple-clang@13.0.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=darwin-bigsur-cannonlake
+        ^sqlite@3.36.0%apple-clang@13.0.0+column_metadata+fts~functions~rtree arch=darwin-bigsur-cannonlake
 
 Compiler configuration
 ----------------------
 
 .. code-block:: console
 
-    $ spack compilers
+    $ $ spack compilers
     ==> Available compilers
-    -- clang mojave-x86_64 ------------------------------------------
-    clang@10.0.1-apple
+    -- apple-clang bigsur-x86_64 ------------------------------------
+    apple-clang@13.0.0
 
 GPG signing
 -----------
