@@ -27,13 +27,13 @@ Requirements
 
 … for Debian/Ubuntu:
 
-  .. code-block:: console
+.. code-block:: console
 
     $ sudo apt install build-essential patch tar gzip bzip2 git gnupg2
 
 … or for macOS:
 
-  .. code-block:: console
+.. code-block:: console
 
     $ brew install libc++ make bash gzip bzip2 git gnupg
     $ brew link gnupg
