@@ -42,13 +42,16 @@ Requirements
 Installation
 ------------
 
+To install Spack the repository is cloned and then changed from the `develop`
+branch to the branch of the current release, in our case to `v0.17.1`:
+
 .. code-block:: console
 
     $ git clone https://github.com/spack/spack.git
     Cloning into 'spack'...
     ...
     $ cd spack
-    $ $ git checkout releases/v0.17
+    $ git checkout v0.17.1
 
 Configure the shell
 -------------------
@@ -114,10 +117,10 @@ Compiler configuration
 
 .. code-block:: console
 
-    $ $ spack compilers
+    $ spack compilers
     ==> Available compilers
-    -- apple-clang bigsur-x86_64 ------------------------------------
-    apple-clang@13.0.0
+    -- gcc ubuntu20.04-x86_64 ---------------------------------------
+    gcc@9.3.0
 
 Build your own compiler
 -----------------------
@@ -126,28 +129,28 @@ Build your own compiler
 
     $ spack install gcc@11.2.0
     ...
-    ==> gcc: Successfully installed gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+    ==> gcc: Successfully installed gcc-11.2.0-p75qa4yddpmzdejs35ck5sdagzs5jjhs
       Fetch: 12.09s.  Build: 2h 8m 13.92s.  Total: 2h 8m 26.01s.
-    [+] /Users/veit/spack/opt/spack/darwin-bigsur-cannonlake/apple-clang-13.0.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+    [+] /srv/jupyter/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/gcc-11.2.0-p75qa4yddpmzdejs35ck5sdagzs5jjhs
 
 However, Spack doesn’t find the compiler at first:
 
 .. code-block:: console
 
-    $ $ spack compilers
+    $ spack compilers
     ==> Available compilers
-    -- apple-clang bigsur-x86_64 ------------------------------------
-    apple-clang@13.0.0
+    -- gcc ubuntu20.04-x86_64 ---------------------------------------
+    gcc@9.3.0
 
 Now, you can add the compiler with ``spack compiler find``:
 
 .. code-block:: console
 
-    spack compiler find /Users/veit/spack/opt/spack/darwin-bigsur-cannonlake/apple-clang-13.0.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
-    ==> Added 1 new compiler to /Users/veit/.spack/darwin/compilers.yaml
+    $ spack compiler find /srv/jupyter/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/gcc-11.2.0-p75qa4yddpmzdejs35ck5sdagzs5jjhs
+    ==> Added 1 new compiler to /srv/jupyter/.spack/linux/compilers.yaml
         gcc@11.2.0
     ==> Compilers are defined in the following files:
-        /Users/veit/.spack/darwin/compilers.yaml
+        /srv/jupyter/.spack/linux/compilers.yaml
 
 ``spack compilers`` should now also find the newly installed compiler:
 
@@ -155,11 +158,8 @@ Now, you can add the compiler with ``spack compiler find``:
 
     $ spack compilers
     ==> Available compilers
-    -- apple-clang bigsur-x86_64 ------------------------------------
-    apple-clang@13.0.0
-
-    -- gcc bigsur-x86_64 --------------------------------------------
-    gcc@11.2.0
+    -- gcc ubuntu20.04-x86_64 ---------------------------------------
+    gcc@11.2.0  gcc@9.3.0
 
 If you want to overwrite the default and site settings, you can edit
 :file:`${HOME}/.spack/packages.yaml`:
