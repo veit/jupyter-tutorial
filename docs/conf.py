@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "Jupyter Tutorial"
-copyright = "2019–2021, Veit Schiele"
+copyright = "2019–2022, Veit Schiele"
 author = "Veit Schiele"
 
 # The full version, including alpha/beta/rc tags
