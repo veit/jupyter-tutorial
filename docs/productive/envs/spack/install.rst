@@ -84,10 +84,7 @@ pre-built binaries you can simply specify a package:
     Concretized
     --------------------------------
     ==> Bootstrapping clingo from pre-built binaries
-    ==> Fetching https://mirror.spack.io/bootstrap/github-actions/v0.1/build_cache/darwin-catalina-x86_64/apple-clang-12.0.0/clingo-bootstrap-spack/darwin-catalina-x86_64-apple-clang-12.0.0-clingo-bootstrap-spack-omsvlh5v6fi2saw5qyqvzsbvqpvrf5yw.spack
-    ==> Installing "clingo-bootstrap@spack%apple-clang@12.0.0~docs~ipo+python build_type=Release arch=darwin-catalina-x86_64" from a buildcache
-    zlib@1.2.11%apple-clang@13.0.0+optimize+pic+shared arch=darwin-bigsur-cannonlake
-
+    zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-sandybridge
 
 .. note::
    When bootstrapping from pre-built binaries, Spack requires ``patchelf`` on
@@ -104,20 +101,23 @@ with:
 .. code-block:: console
 
     $ spack find --bootstrap
-    ==> Showing internal bootstrap store at "/Users/veit/.spack/bootstrap/store"
-    ==> 2 installed packages
-    -- darwin-catalina-x86_64 / apple-clang@12.0.0 ------------------
-    clingo-bootstrap@spack  python@3.9
+    ==> Showing internal bootstrap store at "/srv/jupyter/.spack/bootstrap/store"
+    ==> 3 installed packages
+    -- linux-rhel5-x86_64 / gcc@9.3.0 -------------------------------
+    clingo-bootstrap@spack  python@3.8
+
+    -- linux-ubuntu20.04-sandybridge / gcc@9.3.0 --------------------
+    patchelf@0.13
 
 Compiler configuration
 ----------------------
 
 .. code-block:: console
 
-    $ $ spack compilers
+    $ spack compilers
     ==> Available compilers
-    -- apple-clang bigsur-x86_64 ------------------------------------
-    apple-clang@13.0.0
+    -- gcc ubuntu20.04-x86_64 ---------------------------------------
+    gcc@9.3.0
 
 Build your own compiler
 -----------------------
@@ -126,28 +126,29 @@ Build your own compiler
 
     $ spack install gcc@11.2.0
     ...
-    ==> gcc: Successfully installed gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
-      Fetch: 12.09s.  Build: 2h 8m 13.92s.  Total: 2h 8m 26.01s.
-    [+] /Users/veit/spack/opt/spack/darwin-bigsur-cannonlake/apple-clang-13.0.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+    ==> gcc: Successfully installed gcc-11.2.0-p75qa4yddpmzdejs35ck5sdagzs5jjhs
+      Fetch: 11.70s.  Build: 1h 4m 50.74s.  Total: 1h 5m 2.44s.
+    [+] /srv/jupyter/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/gcc-11.2.0-p75qa4yddpmzdejs35ck5sdagzs5jjhs
+
 
 However, Spack doesn’t find the compiler at first:
 
 .. code-block:: console
 
-    $ $ spack compilers
+    $ spack compilers
     ==> Available compilers
-    -- apple-clang bigsur-x86_64 ------------------------------------
-    apple-clang@13.0.0
+    -- gcc ubuntu20.04-x86_64 ---------------------------------------
+    gcc@9.3.0
 
 Now, you can add the compiler with ``spack compiler find``:
 
 .. code-block:: console
 
-    spack compiler find /Users/veit/spack/opt/spack/darwin-bigsur-cannonlake/apple-clang-13.0.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
-    ==> Added 1 new compiler to /Users/veit/.spack/darwin/compilers.yaml
+    spack compiler find /srv/jupyter/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+    ==> Added 1 new compiler to /srv/jupyter/.spack/linux/compilers.yaml
         gcc@11.2.0
     ==> Compilers are defined in the following files:
-        /Users/veit/.spack/darwin/compilers.yaml
+        /srv/jupyter/.spack/linux/compilers.yaml
 
 ``spack compilers`` should now also find the newly installed compiler:
 
@@ -155,11 +156,8 @@ Now, you can add the compiler with ``spack compiler find``:
 
     $ spack compilers
     ==> Available compilers
-    -- apple-clang bigsur-x86_64 ------------------------------------
-    apple-clang@13.0.0
-
-    -- gcc bigsur-x86_64 --------------------------------------------
-    gcc@11.2.0
+    -- gcc ubuntu20.04-x86_64 ---------------------------------------
+    gcc@11.2.0  gcc@9.3.0
 
 If you want to overwrite the default and site settings, you can edit
 :file:`${HOME}/.spack/packages.yaml`:
