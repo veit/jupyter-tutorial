@@ -42,13 +42,16 @@ Requirements
 Installation
 ------------
 
+To install Spack the repository is cloned and then changed from the `develop`
+branch to the branch of the current release, in our case to `v0.17.1`:
+
 .. code-block:: console
 
     $ git clone https://github.com/spack/spack.git
     Cloning into 'spack'...
     ...
     $ cd spack
-    $ $ git checkout releases/v0.17
+    $ git checkout v0.17.1
 
 Configure the shell
 -------------------
@@ -130,7 +133,6 @@ Build your own compiler
       Fetch: 11.70s.  Build: 1h 4m 50.74s.  Total: 1h 5m 2.44s.
     [+] /srv/jupyter/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/gcc-11.2.0-p75qa4yddpmzdejs35ck5sdagzs5jjhs
 
-
 However, Spack doesn’t find the compiler at first:
 
 .. code-block:: console
@@ -144,7 +146,7 @@ Now, you can add the compiler with ``spack compiler find``:
 
 .. code-block:: console
 
-    spack compiler find /srv/jupyter/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/gcc-11.2.0-azhiay4ugfrs634hqlez7u3f2li3wvzd
+    $ spack compiler find /srv/jupyter/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/gcc-11.2.0-p75qa4yddpmzdejs35ck5sdagzs5jjhs
     ==> Added 1 new compiler to /srv/jupyter/.spack/linux/compilers.yaml
         gcc@11.2.0
     ==> Compilers are defined in the following files:
