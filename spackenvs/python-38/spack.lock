@@ -94,6 +94,10 @@
       "spec": "py-cartopy@0.18.0%gcc@11.2.0~epsg~ows~plotting"
     },
     {
+      "hash": "iwfic4aguyjyywke3uo3xhb45x3r23l5",
+      "spec": "py-bokeh@2.4.1%gcc@11.2.0"
+    },
+    {
       "hash": "naenbvqpxwm7527vxcrak4wzjwtcqv52",
       "spec": "py-pre-commit@1.20.0%gcc@11.2.0"
     },
@@ -18512,6 +18516,180 @@
       ],
       "hash": "vshkxo6bcvkehhpnrnj6i5yvyobo546z"
     },
+    "iwfic4aguyjyywke3uo3xhb45x3r23l5": {
+      "name": "py-bokeh",
+      "version": "2.4.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-jinja2",
+          "build_hash": "wbr3zs32sh3inlvy4vzvne7fd6isj7ij",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-numpy",
+          "build_hash": "f6vem357q2kzvlvim4wx237yxutgtjya",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-packaging",
+          "build_hash": "fgnsklobk6qr5jfrzufyidnijona4heu",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-pillow",
+          "build_hash": "3ece4ulzvwsuexb5uvxb24lr5iby5gfv",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-pyyaml",
+          "build_hash": "olzfb763d54voe6e6vx4ixqxdf2aidht",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-tornado",
+          "build_hash": "sbixx2wa7k52dgbenkxnqrdrpgp4doia",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-typing-extensions",
+          "build_hash": "2ywn5neinp7pd4paekt334uprb4lwjso",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "624lizflupkio7xuewlscc4o6f2d4g3u"
+    },
+    "2ywn5neinp7pd4paekt334uprb4lwjso": {
+      "name": "py-typing-extensions",
+      "version": "3.10.0.2",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "wpznnm3xohoff3zveyss4raok7uxu73p"
+    },
     "naenbvqpxwm7527vxcrak4wzjwtcqv52": {
       "name": "py-pre-commit",
       "version": "1.20.0",
@@ -20515,65 +20693,6 @@
         }
       ],
       "hash": "tj6eekw7lbmm6oawu7kdtcwiynftki3o"
-    },
-    "2ywn5neinp7pd4paekt334uprb4lwjso": {
-      "name": "py-typing-extensions",
-      "version": "3.10.0.2",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "wpznnm3xohoff3zveyss4raok7uxu73p"
     },
     "r3mpmhmzufbeipqhgsdj4efrw4oljn3q": {
       "name": "py-grandalf",
