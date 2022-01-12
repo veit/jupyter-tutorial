@@ -37,6 +37,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.graphviz",
     "sphinx.ext.todo",
+    "sphinxcontrib.rsvgconverter",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
