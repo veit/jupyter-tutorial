@@ -18,7 +18,6 @@ spack:
   - py-sphinxcontrib-programoutput@0.15%gcc@11.2.0
   - py-beautifulsoup4@4.10.0%gcc@11.2.0~html5lib~lxml
   - py-requests@2.25.1%gcc@11.2.0~socks
-  - snappy@1.1.8%gcc@11.2.0~ipo+pic+shared
   - py-graphviz@0.13.2%gcc@11.2.0~dev~docs
   - py-pydot@1.4.2%gcc@11.2.0
   - py-networkx@2.5.1%gcc@11.2.0
@@ -27,11 +26,16 @@ spack:
   - py-geopandas@0.9.0%gcc@11.2.0
   - py-seaborn@0.11.2%gcc@11.2.0
   - py-cartopy@0.18.0%gcc@11.2.0~epsg~ows~plotting
+  - py-bokeh@2.4.1%gcc@11.2.0
+  - py-selenium@3.141.0%gcc@11.2.0
+  - snappy@1.1.8%gcc@11.2.0~ipo+pic+shared
+  - py-dask@2021.6.2%gcc@11.2.0+array+bag+dataframe+delayed~diagnostics+distributed+yaml
+  - py-s3fs@0.5.2%gcc@11.2.0
+  - py-xarray@0.18.2%gcc@11.2.0~io
   - py-pre-commit@1.20.0%gcc@11.2.0
   - py-dvc@2.1.0%gcc@11.2.0~s3~ssh
   - py-autopep8@1.6.0%gcc@11.2.0
   - py-pytest@6.2.4%gcc@11.2.0
-  - py-selenium@3.141.0%gcc@11.2.0
   - py-line-profiler@2.1.2%gcc@11.2.0
   - py-memory-profiler@0.57.0%gcc@11.2.0
   - py-ipyparallel@7.1.0%gcc@11.2.0
