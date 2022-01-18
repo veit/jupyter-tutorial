@@ -5,4 +5,4 @@ ipython
 numpy
 Pillow
 nbsphinx
-sphinxcontrib-svg2pdfconverter[CairoSVG]
+sphinxcontrib-svg2pdfconverter
