@@ -29,4 +29,10 @@ Overview
     * `GitHub <https://github.com/protocolbuffers/protobuf>`_
     * `Language Guide (proto3)
       <https://developers.google.com/protocol-buffers/docs/proto3>`_
+    * Buf
+
+      * `Home <https://buf.build/>`_
+      * `Docs <https://docs.buf.build/introduction>`_
+      * `GitHub <https://github.com/bufbuild/buf>`_
+
     * :doc:`../apis/grpc/index`
