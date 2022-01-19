@@ -2,16 +2,16 @@ gRPC
 ====
 
 gRPC is a modern, open source, high-performance remote procedure call (RPC)
-framework. By default, gRPC uses :doc:`../serialisation-formats/protobuf` as the
-Interface Definition Language (IDL) for describing both the service interface
-and the structure of the payload messages. In gRPC, a client application can
-directly call a method on a server application on a different machine as if it
-were a local object, making it easier for you to create distributed applications
-and services. As in many RPC systems, gRPC is based on the idea of defining a
-service, specifying the methods that can be called remotely with their
-parameters and return types. The server implements the interface and runs a gRPC
-server to handle client calls; the client has a stub that provides the same
-methods as the server.
+framework. By default, gRPC uses :doc:`../../serialisation-formats/protobuf` as
+the Interface Definition Language (IDL) for describing both the service
+interface and the structure of the payload messages. In gRPC, a client
+application can directly call a method on a server application on a different
+machine as if it were a local object, making it easier for you to create
+distributed applications and services. As in many RPC systems, gRPC is based on
+the idea of defining a service, specifying the methods that can be called
+remotely with their parameters and return types. The server implements the
+interface and runs a gRPC server to handle client calls; the client has a stub
+that provides the same methods as the server.
 
 The following are the main design principles of gRPC:
 
