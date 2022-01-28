@@ -29,7 +29,7 @@ Before installing Python packages, a few prerequisites must be met.
         If you use the system Python of your Linux distribution, you should
         first create a virtual environment with Python 3 and :term:`Pip <pip>`.
 
-#. Make sure :term:`Pip <pip>` :is installed:
+#. Make sure :term:`Pip <pip>` is installed:
 
    .. code-block:: console
 
