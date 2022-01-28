@@ -14,7 +14,7 @@ Before installing Python packages, a few prerequisites must be met.
    .. code-block:: console
 
     $ python --version
-    Python 3.6.3
+    Python 3.8.12
 
    .. note::
         In iPython or a Jupyter Notebook you can find out the version with:
@@ -34,7 +34,7 @@ Before installing Python packages, a few prerequisites must be met.
    .. code-block:: console
 
     $ pip --version
-    pip 10.0.1
+    pip 21.3.1
 
    #. If Pip is not yet installed, you can install it
 
