@@ -22,8 +22,8 @@ Before installing Python packages, a few prerequisites must be met.
         .. code-block:: ipython
 
             In [1]: import sys
-                    !{sys.executable} --version
-            Python 3.6.3
+                    sys.version_info
+            sys.version_info(major=3, minor=8, micro=12, releaselevel='final', serial=0)
 
    .. note::
         If you use the system Python of your Linux distribution, you should
