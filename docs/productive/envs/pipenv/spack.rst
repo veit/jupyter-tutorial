@@ -12,11 +12,11 @@ environment:
 
    .. code-block:: console
 
-    $ spack env activate python-374
+    $  spack env activate python-38
     $ spack env status
-    ==> In environment python-374
+    ==> In environment python-38
     $ which python
-    /Users/veit/jupyter-tutorial/spackenvs/python-374/.spack-env/view/bin/python
+    /srv/jupyter/spack/var/spack/environments/python-38/.spack-env/view/bin/python
 
 Then you can install the existing Pipenv environment with:
 
