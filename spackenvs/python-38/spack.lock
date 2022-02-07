@@ -148,6 +148,14 @@
     {
       "hash": "kkvpkwnp2vjtpi2p7dug34jxqc4epoct",
       "spec": "py-nest-asyncio@1.4.0%gcc@11.2.0"
+    },
+    {
+      "hash": "rbgb5y24mywcyqk6juqf5oftrtpqspxg",
+      "spec": "py-xlrd@2.0.1%gcc@11.2.0"
+    },
+    {
+      "hash": "6iaswtiw6gb4qhfuwtm34yobfzidseai",
+      "spec": "py-openpyxl@3.0.3%gcc@11.2.0"
     }
   ],
   "concrete_specs": {
@@ -25678,6 +25686,258 @@
         }
       ],
       "hash": "xzvie4vms5ak4zw2y5owqydcijsyupql"
+    },
+    "rbgb5y24mywcyqk6juqf5oftrtpqspxg": {
+      "name": "py-xlrd",
+      "version": "2.0.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "67qj5kzveivzzttu7ddl6ioluwpdwuoj"
+    },
+    "6iaswtiw6gb4qhfuwtm34yobfzidseai": {
+      "name": "py-openpyxl",
+      "version": "3.0.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-et-xmlfile",
+          "build_hash": "vbkhyml57cyidiyt2ge4gp5xjflx44iz",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-jdcal",
+          "build_hash": "rdiqt2qamlw4tzum6v52sbuudlxr4boj",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "z6diqgdugqx3ucp3cepm2sldswetoy6y"
+    },
+    "vbkhyml57cyidiyt2ge4gp5xjflx44iz": {
+      "name": "py-et-xmlfile",
+      "version": "1.0.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "rz6nbsgacom4p65v3jc6vgc2kwc4sx4u"
+    },
+    "rdiqt2qamlw4tzum6v52sbuudlxr4boj": {
+      "name": "py-jdcal",
+      "version": "1.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "qomyv47be7yev3v5m2z5vye7nebme524"
     }
   }
 }
