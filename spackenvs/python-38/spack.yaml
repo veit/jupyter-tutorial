@@ -41,5 +41,7 @@ spack:
   - py-ipyparallel@7.1.0%gcc@11.2.0
   - py-netcdf4@1.5.3%gcc@11.2.0+mpi
   - py-nest-asyncio@1.4.0%gcc@11.2.0
+  - py-xlrd@2.0.1%gcc@11.2.0
+  - py-openpyxl@3.0.3%gcc@11.2.0
   concretization: together
   view: true
