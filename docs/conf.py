@@ -100,7 +100,7 @@ latex_elements = {
     # The font size ('10pt', '11pt' or '12pt').
     # 'pointsize': '9pt',
     # Additional stuff for the LaTeX preamble.
-    # 'preamble': '',
+    'preamble': r'\usepackage{pmboxdraw}',
     # Latex figure (float) alignment
     # 'figure_align': 'htbp',
 }
