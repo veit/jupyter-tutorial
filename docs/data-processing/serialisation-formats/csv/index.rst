@@ -58,3 +58,10 @@ Example
 .. _`pandas`: https://pandas.pydata.org/
 .. _`read_excel`: https://pandas.pydata.org/docs/user_guide/io.html#io-excel-reader
 .. _`iris.csv`: https://sourceforge.net/projects/irisdss/files/IRIS.csv
+
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    example.ipynb

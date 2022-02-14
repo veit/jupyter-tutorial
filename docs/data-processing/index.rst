@@ -50,6 +50,7 @@ Python packages to :doc:`clean up and validate data <../clean-prep/index>`.
     :maxdepth: 0
 
     opendata
+    pandas-io
     serialisation-formats/index
     requests/index
     beautifulsoup

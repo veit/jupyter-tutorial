@@ -1,0 +1,30 @@
+[
+    {
+        "Title": "Python basics",
+        "Language": "en",
+        "Authors": "Veit Schiele",
+        "License": "BSD-3-Clause",
+        "Publication date": "2021-10-28"
+    },
+    {
+        "Title": "Jupyter Tutorial",
+        "Language": "en",
+        "Authors": "Veit Schiele",
+        "License": "BSD-3-Clause",
+        "Publication date": "2019-06-27"
+    },
+    {
+        "Title": "Jupyter Tutorial",
+        "Language": "de",
+        "Authors": "Veit Schiele",
+        "License": "BSD-3-Clause",
+        "Publication date": "2020-10-26"
+    },
+    {
+        "Title": "PyViz Tutorial",
+        "Language": "en",
+        "Authors": "Veit Schiele",
+        "License": "BSD-3-Clause",
+        "Publication date": "2020-04-13"
+    }
+]

@@ -73,7 +73,7 @@ Response of the :ref:`OSM-Nomination-API <Example-OSM-Nomination-API>`
     [
         {
             'place_id': 234847916,
-            'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright',
+            'licence': 'Data Â© OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright',
             'osm_type': 'relation',
             'osm_id': 131761,
             'boundingbox': ['52.5200695', '52.5232601', '13.4103097', '13.4160798'],
@@ -86,13 +86,13 @@ Response of the :ref:`OSM-Nomination-API <Example-OSM-Nomination-API>`
         },
         {
             'place_id': 53256307,
-            'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright',
+            'licence': 'Data Â© OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright',
             'osm_type': 'node',
             'osm_id': 4389211800,
             'boundingbox': ['52.5231653', '52.5232653', '13.414475', '13.414575'],
             'lat': '52.5232153',
             'lon': '13.414525',
-            'display_name': 'Alexanderplatz, Alexanderstraße, Mitte, Berlin, 10178, Deutschland',
+            'display_name': 'Alexanderplatz, AlexanderstraÃŸe, Mitte, Berlin, 10178, Deutschland',
             'class': 'highway',
             'type': 'bus_stop',
             'importance': 0.22100000000000003,
@@ -100,13 +100,13 @@ Response of the :ref:`OSM-Nomination-API <Example-OSM-Nomination-API>`
         },
         {
             'place_id': 90037579,
-            'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright',
+            'licence': 'Data Â© OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright',
             'osm_type': 'way',
             'osm_id': 23853138,
             'boundingbox': ['52.5214702', '52.5217276', '13.4037885', '13.4045026'],
             'lat': '52.5215991',
             'lon': '13.404112295159964',
-            'display_name': 'Alexander Plaza, 1, Rosenstraße, Mitte, Berlin, 10178, Deutschland',
+            'display_name': 'Alexander Plaza, 1, RosenstraÃŸe, Mitte, Berlin, 10178, Deutschland',
             'class': 'tourism',
             'type': 'hotel',
             'importance': 0.11100000000000002,
@@ -126,3 +126,10 @@ Response of the :ref:`OSM-Nomination-API <Example-OSM-Nomination-API>`
 .. _`JSON-LD`: https://json-ld.org#
 .. _`JMESPath`: https://jmespath.org/
 .. _`validators`: https://json-schema.org/implementations.html#validators
+
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    example.ipynb
