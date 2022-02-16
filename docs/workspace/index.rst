@@ -3,7 +3,7 @@ Workspace
 
 Setting up the workspace includes installing and configuring
 :doc:`ipython/index` and :doc:`jupyter/index` with :doc:`jupyter/nbextensions/index`
-and :doc:`jupyter/ipywidgets/index`.
+and :doc:`jupyter/ipywidgets/index`, and :doc:`numpy/index`.
 
 .. toctree::
     :hidden:
@@ -12,3 +12,4 @@ and :doc:`jupyter/ipywidgets/index`.
 
     ipython/index
     jupyter/index
+    numpy/index
