@@ -139,6 +139,8 @@ This mode becomes available with ``Enter``.
 Own keyboard shortcuts
 ----------------------
 
-If necessary, you can also define your own keyboard shortcuts (see `Keyboard
-Shortcut Customization
-<https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Custom%20Keyboard%20Shortcuts.html>`_).
+You can also define your own keyboard shortcuts in :menuselection:`Help --> EditKeyboard Shortcuts`. 
+
+.. seealso::
+   * `Keyboard Shortcut Customization
+     <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Custom%20Keyboard%20Shortcuts.html>`_
