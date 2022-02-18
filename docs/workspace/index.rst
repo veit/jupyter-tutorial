@@ -13,3 +13,4 @@ and :doc:`jupyter/ipywidgets/index`, and :doc:`numpy/index`.
     ipython/index
     jupyter/index
     numpy/index
+    pandas/index
