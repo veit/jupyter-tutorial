@@ -139,7 +139,8 @@ This mode becomes available with ``Enter``.
 Own keyboard shortcuts
 ----------------------
 
-You can also define your own keyboard shortcuts in :menuselection:`Help --> EditKeyboard Shortcuts`. 
+You can also define your own keyboard shortcuts in :menuselection:`Help --> Edit
+Keyboard Shortcuts`.
 
 .. seealso::
    * `Keyboard Shortcut Customization
