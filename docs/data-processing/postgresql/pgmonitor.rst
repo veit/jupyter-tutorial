@@ -16,12 +16,12 @@ including:
 It combines multiple open-source software packages to create a robust PostgreSQL
 monitoring environment, including:
 
-`PostgreSQL Exporter <https://github.com/prometheus-community/postgres_exporter>`_
+`PostgreSQL Exporter <https://github.com/prometheus-community/postgres_exporter>`__
     an open-source data export to Prometheus that supports collecting metrics
     from any PostgreSQL server ≥ 9.1.
-`Prometheus <https://prometheus.io/>`_
+`Prometheus <https://prometheus.io/>`__
     an open-source metrics collector that is highly customisable.
-`Grafana <https://grafana.com/>`_
+`Grafana <https://grafana.com/>`__
     an open-source data visualiser that allows you to generate many different
     kinds of charts and graphs.
 
@@ -34,8 +34,8 @@ Installation and configuration
 Installation and configuration instructions for each package are provided:
 
 #. `PostgreSQL Exporter
-   <https://access.crunchydata.com/documentation/pgmonitor/latest/exporter>`_
+   <https://access.crunchydata.com/documentation/pgmonitor/latest/exporter>`__
 #. `Prometheus
-   <https://access.crunchydata.com/documentation/pgmonitor/latest/prometheus>`_
+   <https://access.crunchydata.com/documentation/pgmonitor/latest/prometheus>`__
 #. `Grafana
-   <https://access.crunchydata.com/documentation/pgmonitor/latest/grafana>`_
+   <https://access.crunchydata.com/documentation/pgmonitor/latest/grafana>`__
