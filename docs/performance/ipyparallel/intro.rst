@@ -121,16 +121,16 @@ Start
     Besides the possibility to start ``ipcontroller`` and ``ipengine`` locally,
     see *Starting the controller and engine on your local machine* in
     :ipyparallel:label:`ssh`, there are also the profiles for  ``MPI``, ``PBS``,
-    `SGE``, ``LSF``, ``HTCondor``, ``Slurm``, ``SSH`` and ``WindowsHPC``.
+    ``SGE``, ``LSF``, ``HTCondor``, ``Slurm``, ``SSH`` and ``WindowsHPC``.
 
     This can be configured in ``ipcluster_config.py`` for example with
-   ``c.IPClusterEngines.engine_launcher_class = 'SSH'`` or with
+    ``c.IPClusterEngines.engine_launcher_class = 'SSH'`` or with
 
-   .. code-block:: console
+    .. code-block:: console
 
         $ pipenv run ipcluster start --engines=MPI
 
-   .. seealso:: :doc:`mpi`
+    .. seealso:: :doc:`mpi`
 
 #. Starting the Jupyter Notebook and loading the IPython-Parallel-Extension:
 
