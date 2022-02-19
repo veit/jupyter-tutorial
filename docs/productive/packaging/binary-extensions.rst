@@ -240,7 +240,7 @@ values between 1 and 1000 was created.
    that this introduction only discusses the basic tools for creating extensions
    that are provided as part of CPython. Third-party tools such as `Cython
    <http://cython.org/>`_, `cffi <https://cffi.readthedocs.io/>`_, `SWIG
-   <http://www.swig.org/>`_, and `Numba <https://numba.pydata.org/>`_  offer
+   <http://www.swig.org/>`_, and `Numba <https://numba.pydata.org/>`__  offer
    both simpler and more sophisticated approaches to building C and C++
    extensions for Python.
 
