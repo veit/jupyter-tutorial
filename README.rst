@@ -1,10 +1,10 @@
 Quick start
 ===========
 
+.. _badges:
+
 Status
 ------
-
-.. badges::
 
 .. image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
    :alt: Contributors
@@ -22,7 +22,7 @@ Status
    :alt: DOI
    :target: https://zenodo.org/badge/latestdoi/199994535
 
-.. first-steps::
+.. _first-steps:
 
 Installation
 ------------
