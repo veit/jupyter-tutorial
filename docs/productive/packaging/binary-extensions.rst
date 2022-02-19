@@ -222,6 +222,7 @@ Alternatively, you can install our ``dataprep`` package and use ``mean``:
     $ pipenv run python
 
 .. code-block:: python
+
     >>> from dataprep.mean import mean
     >>> from random import randint
     >>> nums = [randint(1, 1_000) for _ in range(1_000_000)]
