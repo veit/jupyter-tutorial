@@ -42,7 +42,7 @@ postgres_fdw
     other PostgreSQL servers can be accessed.
 
     * `Git
-      <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/postgres_fdw;hb=HEAD>`_
+      <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/postgres_fdw;hb=HEAD>`__
     * `PGXN <https://pgxn.org/dist/postgres_fdw/>`__
     * `Docs <https://www.postgresql.org/docs/current/postgres-fdw.html>`__
 
@@ -99,7 +99,7 @@ File wrappers
 CSV
     Official extension for PostgreSQL 9.1
 
-    * `Git <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/file_fdw;hb=HEAD>`_
+    * `Git <https://git.postgresql.org/gitweb/?p=postgresql.git;a=tree;f=contrib/file_fdw;hb=HEAD>`__
     * `Docs <https://www.postgresql.org/docs/current/file-fdw.html>`__
 
 JSON
