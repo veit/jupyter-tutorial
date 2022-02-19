@@ -1,10 +1,10 @@
 Quick start
 ===========
 
-.. badges::
-
 Status
 ------
+
+.. badges::
 
 .. image:: https://img.shields.io/github/contributors/veit/jupyter-tutorial.svg
    :alt: Contributors
