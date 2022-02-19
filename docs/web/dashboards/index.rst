@@ -49,3 +49,4 @@ of the various libraries.
     /workspace/jupyter/nbviewer
     panel/index
     voila/index
+    jupyter-flex/index.rst
