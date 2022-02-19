@@ -27,8 +27,9 @@ The following are the main design principles of gRPC:
   example, the transport layer (OSI layer 4) can be developed independently of
   the application layer (OSI layer 7).
 * gRPC supports various serialisation formats, including
-  :doc:`../serialisation-formats/protobuf`, :doc:`../serialisation-formats/json`
-  [#]_, :doc:`../serialisation-formats/xml` and Thrift)
+  :doc:`../../serialisation-formats/protobuf`,
+  :doc:`../../serialisation-formats/json`
+  [#]_, :doc:`../../serialisation-formats/xml` and Thrift)
 * Asynchronous and synchronous (blocking) processing are supported in most
   languages.
 * Streaming of messages in a single RPC call is supported.
