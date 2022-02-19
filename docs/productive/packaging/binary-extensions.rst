@@ -125,7 +125,7 @@ number of other alternatives should be considered.
 The approaches described below do not simplify distribution, but they can
 significantly reduce the maintenance effort compared to wrapper modules.
 
-* `Cython <https://cython.org/>`_ is useful not only for creating accelerator
+* `Cython <https://cython.org/>`__ is useful not only for creating accelerator
   modules, but also for creating wrapper modules. Since the API still needs to
   be wrapped by hand, it is not a good choice when wrapping large APIs.
 
