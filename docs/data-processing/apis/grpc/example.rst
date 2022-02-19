@@ -37,7 +37,7 @@ parameters and return types specified as protocol buffer messages:
 
 .. literalinclude:: accounts.proto
    :language: proto
-   :lines: 8-23,32-34,36
+   :lines: 8-27
 
 Generate the gRPC Code
 ----------------------
