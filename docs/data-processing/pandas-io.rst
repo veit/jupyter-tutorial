@@ -94,5 +94,5 @@ data type information is already embedded in the format.
     :titlesonly:
     :maxdepth: 0
 
-    json-example.ipynb
+    serialisation-formats/json/example.ipynb
     excel-example.ipynb
