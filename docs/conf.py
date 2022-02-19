@@ -62,8 +62,8 @@ exclude_patterns = [
     ".DS_Store",
     "**/.ipynb_checkpoints",
     "**/.*.ipynb",
-    "input.ipynb",
-    "output.ipynb",
+    "**/input.ipynb",
+    "**/output.ipynb",
 ]
 
 
