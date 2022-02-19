@@ -152,6 +152,5 @@ call grpcurl, e.g. with:
     :titlesonly:
     :maxdepth: 0
 
-    install
     example
     test
