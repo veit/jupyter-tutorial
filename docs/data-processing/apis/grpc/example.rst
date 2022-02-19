@@ -1,8 +1,8 @@
 gRPC-Example
 ============
 
-By default, gRPC uses :doc:`../serialisation-formats/protobuf` for serialising
-data, although it also works with other data formats such as JSON.
+By default, gRPC uses :doc:`../../serialisation-formats/protobuf` for
+serialising data, although it also works with other data formats such as JSON.
 
 Define the data structure
 -------------------------
