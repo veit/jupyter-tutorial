@@ -63,8 +63,7 @@ exclude_patterns = [
     "**/.ipynb_checkpoints",
     "**/.*.ipynb",
     "**/input.ipynb",
-    "**/output.ipynb",
-    "output_2021-09-13_10\:42\:33.ipynb",
+    "**/output*.ipynb",
 ]
 
 
