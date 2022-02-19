@@ -41,28 +41,19 @@ Run the server with:
 Open your browser at http://127.0.0.1:8000/ and you will see:
 
 .. figure:: fastapi-example.png
-
    :alt: FastAPI root
-
-   FastAPI root
 
 You will also get an interactive API documentation provided by `Swagger UI
 <https://github.com/swagger-api/swagger-ui>`_ at http://127.0.0.1:8000/docs:
 
 .. figure:: fastapi-docs-example.png
-
    :alt: FastAPI swagger docs
-
-   FastAPI swagger docs
 
 You will also get an alternative automatic documentation provided by `ReDoc
 <https://github.com/Redocly/redoc>`_ at http://127.0.0.1:8000/redoc:
 
 .. figure:: fastapi-redoc-example.png
-
    :alt: FastAPI ReDoc documentation
-
-   FastAPI ReDoc documentation
 
 4. Update
 ---------
