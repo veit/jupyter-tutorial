@@ -88,7 +88,7 @@ alternatives should also be considered:
   own accelerator module.
 
 * For long-running applications, the JIT-compiled `PyPy
-  <https://www.pypy.org/>`_ interpreter can be a suitable alternative to the
+  <https://www.pypy.org/>`__ interpreter can be a suitable alternative to the
   standard CPython. The main difficulty with adopting PyPy is typically the
   dependence on other Binary Extensions modules. While PyPy emulates the
   CPython C API, modules that rely on it cause problems for the PyPy JIT, and
