@@ -61,7 +61,7 @@ it difficult to distribute the software. Today this disadvantage due to
 * The installation from the sources remains complicated.
 * Possibly there is no suitable :term:`wheel` for the build of the CPython
   interpreter or alternative interpreters such as `PyPy
-  <https://www.pypy.org/>`_, `IronPython <https://ironpython.net/>`_ or `Jython
+  <https://www.pypy.org/>`__, `IronPython <https://ironpython.net/>`_ or `Jython
   <https://ironpython.net/>`_.
 * The maintenance of the packages is more time-consuming because the maintainers
   not only have to be familiar with Python but also with another language and
@@ -95,7 +95,7 @@ alternatives should also be considered:
   the emulation often exposes defects in extension modules that CPython
   tolerates. (often with reference counting errors).
 
-* `Cython <https://cython.org/>`_ is a sophisticated static compiler that can
+* `Cython <https://cython.org/>`__ is a sophisticated static compiler that can
   compile most Python code into C-Extension modules. The initial compilation
   offers some speed increases (by bypassing the CPython interpreter level), and
   Cython’s optional static typing functions can provide additional speed
@@ -130,7 +130,7 @@ significantly reduce the maintenance effort compared to wrapper modules.
   be wrapped by hand, it is not a good choice when wrapping large APIs.
 
 * `cffi <https://cffi.readthedocs.io/>`_ is the project of some `PyPy
-  <https://pypy.org/>`_ developers to give developers who already know both
+  <https://pypy.org/>`__ developers to give developers who already know both
   Python and C the possibility to make their C modules available for Python
   applications. It makes wrapping a C module based on its header files
   relatively easy, even if you are not familiar with C itself.
@@ -170,7 +170,7 @@ Implementation
 --------------
 
 We now want to extend our ``dataprep`` package and integrate some C code. For
-this we use `Cython <https://cython.org/>`_ to translate the Python code from
+this we use `Cython <https://cython.org/>`__ to translate the Python code from
 :download:`dataprep/src/dataprep/cymean.pyx` into optimised C code during the
 build process. Cython files have the suffix ``pyx`` and can contain both Python
 and C code.
@@ -239,7 +239,7 @@ values between 1 and 1000 was created.
    <https://docs.python.org/3/extending/extending.html>`_. However, please note
    that this introduction only discusses the basic tools for creating extensions
    that are provided as part of CPython. Third-party tools such as `Cython
-   <http://cython.org/>`_, `cffi <https://cffi.readthedocs.io/>`_, `SWIG
+   <http://cython.org/>`__, `cffi <https://cffi.readthedocs.io/>`_, `SWIG
    <http://www.swig.org/>`_, and `Numba <https://numba.pydata.org/>`__  offer
    both simpler and more sophisticated approaches to building C and C++
    extensions for Python.
