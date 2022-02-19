@@ -28,7 +28,7 @@ The following are the main design principles of gRPC:
   the application layer (OSI layer 7).
 * gRPC supports various serialisation formats, including
   :doc:`../../serialisation-formats/protobuf`,
-  :doc:`../../serialisation-formats/json`
+  :doc:`../../serialisation-formats/json/index`
   [#]_, :doc:`../../serialisation-formats/xml` and Thrift)
 * Asynchronous and synchronous (blocking) processing are supported in most
   languages.
