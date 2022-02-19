@@ -51,7 +51,7 @@ Before installing Python packages, a few prerequisites must be met.
             $ sudo apt install python3-venv python3-pip
 
 Install Pipenv
--------------
+--------------
 
 :term:`pipenv` is a dependency manager for Python projects. It to install Python
 packages, but it simplifies dependency management. Pip can be used to install
