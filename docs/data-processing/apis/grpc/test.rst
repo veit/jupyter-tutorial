@@ -69,9 +69,9 @@ Wireshark
 `Wireshark <https://www.wireshark.org/>`_ is an open source tool for analysing
 network protocols. In the following, we will show you how to use the gRPC and
 Protobuf dissectors. They make it easier for you to decode gRPC messages that
-are serialised in :doc:`Protobuf <../serialisation-formats/protobuf>` or
-:doc:`../serialisation-formats/json` format. You can also use them to analyse
-server, client and bidirectional gRPC streaming.
+are serialised in :doc:`Protobuf <../../serialisation-formats/protobuf>` or
+:doc:`../serialisation-formats/json/index` format. You can also use them to
+analyse server, client and bidirectional gRPC streaming.
 
 .. note::
     Usually, Wireshark can only analyse gRPC messages in plain text. For
