@@ -65,9 +65,9 @@ Glossary
        A tool for installing Python packages.
 
 
-       `Docs <https://pip.pypa.io/>`_ |
-       `GitHub <https://github.com/pypa/pip>`_ |
-       `PyPI <https://pypi.org/project/pip/>`_ |
+       `Docs <https://pip.pypa.io/>`__ |
+       `GitHub <https://github.com/pypa/pip>`__ |
+       `PyPI <https://pypi.org/project/pip/>`__ |
 
    Pipfile
        User-friendly, on `TOML <https://github.com/toml-lang/toml>`_ based
@@ -76,7 +76,7 @@ Glossary
        A distinction can be made between two different groups of packages:
        ``[packages]`` and ``[dev-packages]``.
 
-       `GitHub <https://github.com/pypa/pipfile>`_
+       `GitHub <https://github.com/pypa/pipfile>`__
 
    Pipfile.lock
        Machine-readable file based on `JSON
@@ -91,9 +91,9 @@ Glossary
        to the Python world. It combines :term:`pipfile`, :term:`pip` and
        :term:`virtualenv` in a single toolchain.
 
-       `Docs <https://docs.pipenv.org/>`_ |
-       `GitHub <https://github.com/pypa/pipenv>`_ |
-       `PyPI <https://pypi.org/project/pipenv/>`_ |
+       `Docs <https://docs.pipenv.org/>`__ |
+       `GitHub <https://github.com/pypa/pipenv>`__ |
+       `PyPI <https://pypi.org/project/pipenv/>`__ |
 
    pypi.org
        `pypi.org  <https://pypi.org/>`_ is the domain name for the Python
@@ -135,8 +135,8 @@ Glossary
        coexist on the same system. Spack was developed for rapidly building
        scientific applications on clusters and supercomputers.
 
-       `Docs <https://spack.readthedocs.io/>`_ |
-       `GitHub <https://github.com/spack/spack>`_ |
+       `Docs <https://spack.readthedocs.io/>`__ |
+       `GitHub <https://github.com/spack/spack>`__ |
        `Slides <https://tgamblin.github.io/files/Gamblin-Spack-SC15-Talk.pdf>`_ |
        `The Spack package manager: bringing order to HPC software chaos
        <https://ieeexplore.ieee.org/document/7832814>`_ |
@@ -145,7 +145,7 @@ Glossary
        An isolated Python environment that allows packages to be installed for a
        specific application rather than installing them system-wide.
 
-       `Docs <https://docs.python.org/3/library/venv.html>`_ |
+       `Docs <https://docs.python.org/3/library/venv.html>`__ |
        `Creating Virtual Environments
        <https://packaging.python.org/tutorials/installing-packages/#creating-and-using-virtual-environments>`_ |
 
@@ -164,7 +164,7 @@ Glossary
        that they don’t have to compile during the installation.
 
        `Home <https://pythonwheels.com/>`_ |
-       `Docs <https://wheel.readthedocs.io/>`_ |
+       `Docs <https://wheel.readthedocs.io/>`__ |
        `PEP <https://www.python.org/dev/peps/pep-0427/>`_ |
-       `GitHub <https://github.com/pypa/wheel>`_ |
-       `PyPI <https://pypi.org/project/wheel/>`_ |
+       `GitHub <https://github.com/pypa/wheel>`__ |
+       `PyPI <https://pypi.org/project/wheel/>`__ |
