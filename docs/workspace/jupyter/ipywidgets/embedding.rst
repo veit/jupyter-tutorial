@@ -108,10 +108,11 @@ following options:
     with the option ``:show:`` to display the setup code as a code block
 ``ipywidgets-display``
     with the following options:
+``:hide-code:``
+    doesn’t show the code, only the widget
 
-    ``:hide-code:``
-        doesn’t show the code, only the widget
- Widget
+Widget
+
     ``:code-below:``
         shows the code after the widget
     ``:alt:``
