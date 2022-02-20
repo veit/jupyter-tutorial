@@ -131,7 +131,7 @@ The error can be corrected with:
 
    .. seealso::
       * `Sphinx objects.inv v2 Syntax
-      <https://sphobjinv.readthedocs.io/en/latest/syntax.html>`_
+        <https://sphobjinv.readthedocs.io/en/latest/syntax.html>`_
 
 #. Create a new ``objects.inv`` file:
 
