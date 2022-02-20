@@ -13,8 +13,8 @@ cuDF is a GPU DataFrame library that implements a `Pandas-like API
 
 .. seealso::
 
-    * `Docs <https://docs.rapids.ai/api/cudf/stable/>`_
-    * `GitHub <https://github.com/rapidsai/cudf>`_
+    * `Docs <https://docs.rapids.ai/api/cudf/stable/>`__
+    * `GitHub <https://github.com/rapidsai/cudf>`__
     * `PyPI <https://pypi.org/project/cudf/>`_
     * `Example notebooks
       <https://github.com/rapidsai-community/notebooks-contrib>`_
@@ -34,8 +34,8 @@ The restrictions refer to  ``pd.read_json``, which is only implemented for
 
 .. seealso::
 
-    * `Docs <https://modin.readthedocs.io/en/latest/>`_
-    * `GitHub <https://github.com/modin-project/modin>`_
+    * `Docs <https://modin.readthedocs.io/en/latest/>`__
+    * `GitHub <https://github.com/modin-project/modin>`__
 
 Dask
 ----
