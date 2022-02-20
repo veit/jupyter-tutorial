@@ -23,8 +23,8 @@ Overview
 +-----------------------+-------+-------------------------------------------------------+
 | Speed                 | -\-   | YAML is very slow to serialise and deserialise.       |
 +-----------------------+-------+-------------------------------------------------------+
-| File size             | +-    | YAML is in the medium range similar to :doc:`json`    |
-|                       |       | and :doc:`toml`.                                      |
+| File size             | +-    | YAML is in the medium range similar to                |
+|                       |       | :doc:`json/index` and :doc:`toml`.                    |
 +-----------------------+-------+-------------------------------------------------------+
 
 Example
