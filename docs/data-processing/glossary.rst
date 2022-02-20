@@ -199,32 +199,9 @@ Glossary
 
         There are different lock procedures, depending on the type of access:
 
-        Optimistic concurrency
-            Optimistic concurrency, also called optimistic locking, assumes that
-            there are few write accesses to the database and read accesses do
-            not trigger a lock. In the event of changes, a check is first made
-            to determine whether the time stamp has remained unchanged since the
-            data was read.
-        Pessimistic locking
-            Pessimistic locking assumes a lot of write accesses to the database.
-            Read access is therefore also blocked. The data is only released
-            again when the changes have been saved.
-        Two-phase locking (2PL)
-            The two-phase locking protocol distinguishes between two phases of
-            transactions:
-
-            #. The growth phase in which locks can only be set but not released.
-            #. The shrinkage phase, in which locks can only be released but not
-               requested.
-
-            The two-phase lock protocol knows three lock states:
-
-            SLOCK, shared lock or read lock
-                is set with read access to data
-            XLOCK, exclusive lock or write lock
-                is set with write access to data
-            UNLOCK
-                removes the locks SLOCK and XLOCK.
+        * :term:`Optimistic concurrency`
+        * :term:`Pessimistic locking`
+        * :term:`Two-phase locking (2PL)`
 
     MapReduce
         MapReduce is a framework introduced by Google Inc. in 2004, which is
@@ -246,9 +223,21 @@ Glossary
         it possible to coordinate competing accesses even without locking data
         records.
 
+    Optimistic concurrency
+        Optimistic concurrency, also called optimistic locking, is a form of
+        :term:`locking`, which assumes that there are few write accesses to the
+        database and read accesses do not trigger a lock. In the event of
+        changes, a check is first made to determine whether the time stamp has
+        remained unchanged since the data was read.
+
     Paxos
         Paxos is a family of protocols for building consensus on a network of
         unreliable or fallible processors.
+
+    Pessimistic locking
+        Pessimistic :term:`locking` assumes a lot of write accesses to the
+        database. Read access is therefore also blocked. The data is only
+        released again when the changes have been saved.
 
     Property graph model (PGM)
         Nodes and edges consist of objects with properties embedded in them. Not
@@ -268,6 +257,23 @@ Glossary
         consistent. Then we talk of consistent data. If this is not the case,
         the data is inconsistent. In SQL, the semantic integrity can be checked
         with ``TRIGGER`` and ``CONSTRAINT``
+
+    Two-phase locking (2PL)
+        The two-phase :term:`locking` protocol distinguishes between two phases
+        of transactions:
+
+        #. The growth phase in which locks can only be set but not released.
+        #. The shrinkage phase, in which locks can only be released but not
+           requested.
+
+        The two-phase lock protocol knows three lock states:
+
+        SLOCK, shared lock or read lock
+            is set with read access to data
+        XLOCK, exclusive lock or write lock
+            is set with write access to data
+        UNLOCK
+            removes the locks SLOCK and XLOCK.
 
     Vector clock
         A vector clock is a software component used to assign unique time stamps

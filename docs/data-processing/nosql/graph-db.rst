@@ -68,8 +68,8 @@ Typical graph databases are Neo4j, OrientDB InfiniteGraph and ArangoDB.
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
 | **Query langauge**     | REST, `Cypher`_, `Gremlin`_    | `Extended SQL`_, `Gremlin`_    | Traverser API, PQL             |`ArangoDB Query Language (AQL)`_|
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Transactions,        |* :term:`Two-phase locking(2PL)`| :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
-| concurrency**          |                                |                                |                                | :term:`MVCC – Multiversion     |
+| **Transactions,        |* :term:`Two-phase locking      | :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
+| concurrency**          |  (2PL)`                        |                                |                                | :term:`MVCC – Multiversion     |
 |                        |* single Server:                |                                |                                | Concurrency Control`           |
 |                        |  :term:`ACID`                  |                                |                                |                                |
 |                        |* distributed systems:          |                                |                                |                                |

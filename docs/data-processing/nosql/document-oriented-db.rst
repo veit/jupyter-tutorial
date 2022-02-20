@@ -34,7 +34,7 @@ OrientDB and ArangoDB.
 |                        |                                |                                | link walking, no ad-hoc        |                                |                                |
 |                        |                                |                                | queries possible               |                                |                                |
 +------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
-| **Transactions,        | :term:`Two-phase locking (2PL)`|* :term:`Two-phase locking (2PL)| :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
+| **Transactions,        | :term:`Two-phase locking (2PL)`|* :term:`Two-phase locking      | :term:`ACID`                   | :term:`ACID`                   | :term:`ACID`,                  |
 | concurrency**          |                                |  (2PL)`,                       |                                |                                | :term:`MVCC – Multiversion     |
 |                        |                                |* single server:                |                                |                                | Concurrency Control`           |
 |                        |                                |  :term:`ACID`,                 |                                |                                |                                |
