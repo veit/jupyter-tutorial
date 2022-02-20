@@ -109,7 +109,7 @@ The file contains all files and directories that are not already recorded with
 
 Further instructions in `Manifest.in` can be found in `Creating a source
 distribution
-<https://docs.python.org/3/distutils/commandref.html?highlight=manifest#creating-a-source-distribution-the-sdist-command>`_.
+<https://docs.python.org/3/distutils/commandref.html?highlight=manifest#creating-a-source-distribution-the-sdist-command>`__.
 
 .. note::
     Often people forget to update the ``Manifest.in`` file. To avoid this, you
@@ -233,7 +233,7 @@ This command should create the following two files for our distribution package:
    <https://www.python.org/dev/peps/pep-0427/#file-name-convention>`_.
 
     For more information, see `Creating a Source Distribution
-    <https://docs.python.org/2/distutils/sourcedist.html#creating-a-source-distribution>`_.
+    <https://docs.python.org/2/distutils/sourcedist.html#creating-a-source-distribution>`__.
     and `PEP 376 <https://www.python.org/dev/peps/pep-0376/>`_.
 
 Testing
