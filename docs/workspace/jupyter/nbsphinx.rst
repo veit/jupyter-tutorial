@@ -203,7 +203,7 @@ Markdown cells
 ~~~~~~~~~~~~~~
 
 Equations
-    Equations can be specified *inline* between ``$'' characters, e.g.
+    Equations can be specified *inline* between ``$`` characters, e.g.
 
     .. code-block:: latex
 
