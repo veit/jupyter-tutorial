@@ -59,14 +59,15 @@ Overview
 | Speed                 | ++    | JSON is one of the fastest human-readable formats to  |
 |                       |       | serialise and deserialise.                            |
 +-----------------------+-------+-------------------------------------------------------+
-| File size             | +-    | JSON is in the medium range similar to :doc:`yaml`    |
-|                       |       | and :doc:`toml`.                                      |
+| File size             | +-    | JSON is in the medium range similar to :doc:`../yaml` |
+|                       |       | and :doc:`../toml`.                                   |
 +-----------------------+-------+-------------------------------------------------------+
 
 Example
 -------
 
-Response of the :ref:`OSM-Nomination-API <Example-OSM-Nomination-API>`
+Response of the :ref:`OSM-Nomination-API
+</data-processing/requests/requests.ipynb#example-osm-nomination-api>`
 
 .. code-block:: javascript
 
