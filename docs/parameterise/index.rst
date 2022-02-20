@@ -49,19 +49,33 @@ Use
 
         execute_notebook(INPUT_NOTEBOOK, OUTPUT_NOTEBOOK, DICTIONARY_OF_PARAMETERS)
 
-     e.g. for :doc:`input.ipynb <input>`:
+     e.g. for ``input.ipynb``:
 
-     .. code-block:: python
+     .. code-block:: ipython
 
-        import papermill as pm
+        In [1]: import papermill as pm
 
-        pm.execute_notebook(
-            'PATH/TO/INPUT_NOTEBOOK.ipynb',
-            'PATH/TO/OUTPUT_NOTEBOOK.ipynb',
-            parameters=dict(salutation='Hello', name='pythonistas')
-        )
+        In [2]: pm.execute_notebook(
+                    'PATH/TO/INPUT_NOTEBOOK.ipynb',
+                    'PATH/TO/OUTPUT_NOTEBOOK.ipynb',
+                    parameters=dict(salutation='Hello', name='pythonistas')
+                )
 
-     The result is :doc:`output.ipynb <output>`.
+     The result is ``output.ipynb``:
+
+     .. code-block:: ipython
+
+        In [1]: salutation = None
+                name = None
+
+        In [2]: # Parameters
+                salutation = "Hello"
+                name = "pythonistas"
+
+        In [3]: from datetime import date
+                today = date.today()
+                print(salutation, name, "– welcome to our event on this " + today.strftime("%A, %d %B %Y"))
+        Out[3]: Hello pythonistas – welcome to our event on this Monday, 13 September 2021
 
      .. seealso::
         * `Workflow reference
