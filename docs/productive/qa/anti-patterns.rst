@@ -22,15 +22,16 @@ For example, three functions with ambiguous usage can be reorganised so, that
 method, and ``get_thumbnail()`` a property:
 
 .. code-block:: python
+
     class Image(object):
         thumbnail_resolution = 128
         def __init__(self, path):
-            …
+            ...
         def crop(self, width, height):
-            …
+            ...
         @property
         def thumbnail(self):
-            …
+            ...
             return thumb
 
 Objects that should be functions
