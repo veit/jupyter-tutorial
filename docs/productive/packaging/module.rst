@@ -28,9 +28,10 @@ and this can be imported into the notebook with
 
 Then you can use the method ``load_data`` to read for example the CSV file
 ``example.csv``:
-   .. code-block:: python
 
-        df = dataprep.load_and_preprocess_data(filename)
+.. code-block:: python
+
+    df = dataprep.load_and_preprocess_data(filename)
 
 If you change the Python script, the updated variant can be automatically
 adopted with :mod:`IPython.extensions.autoreload`:
