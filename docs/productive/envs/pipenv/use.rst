@@ -79,7 +79,7 @@ Options
 
 ``--pypi-mirror``
     indicates a PyPI mirror. The standard is the :term:`Python Package Index
-    PyPI)`.
+    (PyPI)`.
 
     However, you can also specify your own mirrors:
 
