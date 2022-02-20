@@ -72,14 +72,18 @@ Table of Contents
         .. toctree::
            :maxdepth: 2
 
-           rest
+           start
            docstrings
+           intersphinx
+           extensions
 
     .. toctree::
        :maxdepth: 2
 
-       rest
+       start
        docstrings
+       intersphinx
+       extensions
 
 Meta information
 
