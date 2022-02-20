@@ -57,7 +57,7 @@ limit the amount of results.
 
 With ``%config SqlMagic`` you can display the current configuration:
 
-.. code-block:: python
+.. code-block:: ipython
 
     In [4]: %config SqlMagic
     SqlMagic options
@@ -71,7 +71,7 @@ With ``%config SqlMagic`` you can display the current configuration:
     SqlMagic.autopandas=<Bool>
         Current: False
         Return Pandas DataFrames instead of regular result sets
-    …
+    ...
 
 .. note::
    If ``autopandas`` is set to ``True``, ``displaylimit`` is not applied. In
