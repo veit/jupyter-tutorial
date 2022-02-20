@@ -121,8 +121,8 @@ Examples
 * Coverage.py: `.github/workflows/kit.yml <https://github.com/nedbat/coveragepy/blob/master/.github/workflows/kit.yml>`_
 * matplotlib: `.github/workflows/cibuildwheel.yml <https://github.com/matplotlib/matplotlib/blob/master/.github/workflows/cibuildwheel.yml>`_
 * MyPy: `.github/workflows/build.yml
-  <https://github.com/mypyc/mypy_mypyc-wheels/blob/master/.github/workflows/build.yml>`_
+  <https://github.com/mypyc/mypy_mypyc-wheels/blob/master/.github/workflows/build.yml>`__
 * psutil: `.github/workflows/build.yml
-  <https://github.com/giampaolo/psutil/blob/master/.github/workflows/build.yml>`_
+  <https://github.com/giampaolo/psutil/blob/master/.github/workflows/build.yml>`__
 * scikit-learn: `build_tools/github/build_wheels.sh
   <https://github.com/scikit-learn/scikit-learn/blob/main/build_tools/github/build_wheels.sh>`_
