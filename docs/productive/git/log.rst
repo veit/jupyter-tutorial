@@ -24,7 +24,8 @@ Git log
     filters the commit history for regular expressions in the commit message.
 
     .. seealso::
-        * `Regular expressions <../../workspace/ipython/unix-shell/regex.ipynb>`Regular expressions_
+
+        * :doc:`../../workspace/ipython/unix-shell/regex`
 
 ``$ git log -S"foo"``
     filters commits according to certain lines in the source code.
