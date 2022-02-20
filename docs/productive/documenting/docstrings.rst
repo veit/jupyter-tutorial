@@ -23,7 +23,7 @@ file  ``docs/conf.py``:
 
     extensions = [
         'sphinx.ext.autodoc',
-        …
+        ...
     ]
 
 If your package and its documentation are part of the same repository, they will
