@@ -230,7 +230,7 @@ This command should create the following two files for our distribution package:
 
 .. seealso::
     The reference for the file names can be found in `File name convention
-   <https://www.python.org/dev/peps/pep-0427/#file-name-convention>`_.
+    <https://www.python.org/dev/peps/pep-0427/#file-name-convention>`_.
 
     For more information, see `Creating a Source Distribution
     <https://docs.python.org/2/distutils/sourcedist.html#creating-a-source-distribution>`__.
