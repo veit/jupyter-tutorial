@@ -33,8 +33,7 @@ and applications. For this purpose, Wily uses the following metrics:
     |                                | high risk                      |
     +--------------------------------+--------------------------------+
 
-`Halstead complexity measures
-<https://en.wikipedia.org/wiki/Halstead_complexity_measures>`_
+`Halstead complexity measures <https://en.wikipedia.org/wiki/Halstead_complexity_measures>`_
     Statically analysing procedure that calculates the difficulty of the
     programme, the effort and the implementation time from the number of
     operators and operands.
