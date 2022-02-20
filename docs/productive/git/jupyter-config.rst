@@ -2,7 +2,7 @@ Configuring Git for Jupyter Notebooks
 =====================================
 
 The results of the calculations can also be saved in the notebook file format
-:ref:`nbformat <what-is-a-ipynb-file>`. These can also be Base-64-coded blobs
+:ref:`nbformat <whats-an-ipynb-file>`. These can also be Base-64-coded blobs
 for images and other binary data that should not normally be included in a
 version management. These can be removed manually with :menuselection:`Cell -->
 All Output --> Clear`, but you have to carry out these steps before every ``git
