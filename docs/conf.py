@@ -32,6 +32,7 @@ release = "0.9.0"
 # ones.
 extensions = [
     "nbsphinx",
+    "IPython.sphinxext.ipython_console_highlighting",
     # 'jupyter_sphinx.execute',
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
