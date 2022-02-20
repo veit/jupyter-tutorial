@@ -84,7 +84,7 @@ current Python environment, e.g.:
     support the kernel selection. Metadata added here should have a namespace
     for the tool to read and write that metadata.
 
-You can edit this ``kernelspec` file at a later time.
+You can edit this ``kernelspec`` file at a later time.
 
 Show available kernels
 ----------------------
