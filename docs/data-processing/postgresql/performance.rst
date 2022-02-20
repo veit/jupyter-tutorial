@@ -48,7 +48,7 @@ Index hit ratio
          account               | 11                          |          5409
          activity              | 69                          |         58276
          application           | 93                          |          5345
-         …
+         ...
 
     Typically, we shouldn’t have more than 10,000 records in a table and the
     percentage of the index used should be greater than 90%.
@@ -112,7 +112,7 @@ on the system:
     ------------------+-------------------+------------------------------------------------------------
      295.761165833319 | 10.1374053278061  | SELECT id FROM account WHERE email LIKE ?
      219.138564283326 | 80.24530822355305 | SELECT * FROM account WHERE user_id = ? AND current = True
-    …
+    ...
 
 Typical response times should be ~1ms and in a few cases ~4-5ms. To start
 optimising performance, we usually weigh the total time against the average
