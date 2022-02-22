@@ -1,7 +1,7 @@
 Quick start
 ===========
 
-.. _badges:
+.. badges::
 
 Status
 ------
@@ -22,7 +22,7 @@ Status
    :alt: DOI
    :target: https://zenodo.org/badge/latestdoi/199994535
 
-.. _first-steps:
+.. first-steps::
 
 Installation
 ------------
