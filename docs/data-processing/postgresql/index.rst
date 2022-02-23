@@ -129,3 +129,4 @@ Cross platform
     sec
     performance
     pgmonitor
+    pganalyze
