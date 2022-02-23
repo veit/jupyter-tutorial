@@ -88,11 +88,3 @@ the data types of the columns are not part of the data format. This means that
 you don’t necessarily have to specify which columns are numeric, integer, boolean
 or string. With other data formats such as HDF5, ORC and Parquet, however, the
 data type information is already embedded in the format.
-
-.. toctree::
-    :hidden:
-    :titlesonly:
-    :maxdepth: 0
-
-    serialisation-formats/json/example.ipynb
-    serialisation-formats/excel.ipynb
