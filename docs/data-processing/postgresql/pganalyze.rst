@@ -117,6 +117,7 @@ configuration file you can test it with:
 
 .. code-block:: console
 
+    $ pganalyze-collector --test
 
 The result can then look like this, for example:
 
