@@ -8,7 +8,7 @@ Currently it collects information about
 * Statistics on tables indices, databases and queries
 * Operating system (OS, RAM, storage)
 
-   .. seealso::
+.. seealso::
    * `GitHub <https://github.com/pganalyze/collector>`_
    * `Docs <https://pganalyze.com/docs>`_
 
