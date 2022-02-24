@@ -188,9 +188,7 @@ Git best practices
 
     .. code-block:: console
 
-        $ git filter-repo --message-callback '
-              return re.sub(b"^git-svn-id:.*\n", b"", message, flags=re.MULTILINE)
-              '
+        $ git filter-repo --message-callback 'return re.sub(b"^git-svn-id:.*\n", b"", message, flags=re.MULTILINE)'
 
   .. seealso::
     * `git-filter-repo — Man Page <https://www.mankier.com/1/git-filter-repo>`_
