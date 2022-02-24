@@ -124,7 +124,7 @@ specifies the communication between clients and servers:
    frames. ``Status`` and ``Trailing-Metadata`` are sent as HTTP/2 trailing
    headers.
 
-Unlike :doc:`data-processing/apis/fastapi/index`, however, the gRPC API cannot
+Unlike :doc:`/data-processing/apis/fastapi/index`, however, the gRPC API cannot
 simply be tested on the command line with cURL. If necessary, you can use
 `grpcurl <https://github.com/fullstorydev/grpcurl>`_. This requires that the
 gRPC server supports the `GRPC Server Reflection Protocol
