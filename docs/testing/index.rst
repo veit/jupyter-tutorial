@@ -41,4 +41,4 @@ Tools
 
    unittest2.ipynb
    ipytest.ipynb
-   hypothesis
+   hypothesis.ipynb
