@@ -193,5 +193,6 @@ Git best practices
               '
 
   .. seealso::
+    * `git-filter-repo — Man Page <https://www.mankier.com/1/git-filter-repo>`_
     * `git-reflog <https://git-scm.com/docs/git-reflog>`_
     * `git-gc <https://git-scm.com/docs/git-gc>`_
