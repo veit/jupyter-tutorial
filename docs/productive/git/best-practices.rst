@@ -129,10 +129,8 @@ Git best practices
   With `Gitleaks <https://github.com/zricethezav/gitleaks>`_ you can regularly
   check your repositories for unintentionally saved access data.
 
-  With `Git Filter-Branch <https://git-scm.com/docs/git-filter-branch>`_,
-  `BFG Repo-Cleaner <https://rtyley.github.io/bfg-repo-cleaner/>`_ or
-  `git-filter-repo <https://github.com/newren/git-filter-repo>`_ you can remove
-  unwanted files, be it access data or large binary files, from your Git
+  With `git-filter-repo <https://github.com/newren/git-filter-repo>`_ you can
+  remove unwanted files, be it access data or large binary files, from your Git
   history.
 
   Alternatively, you can also delete the data on the command line.
@@ -179,26 +177,20 @@ Git best practices
 
     .. code-block:: console
 
-        $ git filter-branch -f --force --index-filter 'git rm -rf --cached \
-            --ignore-unmatch path/somefile' --prune-empty --tag-name-filter cat \
-            -- --all
-        $ rm -rf .git/refs/original/
-        $ git reflog expire --expire=now --all
-        $ git gc --prune=now
-        $ git gc --aggressive --prune=now
-        $ git push origin <branch> --force
+        $ git filter-repo --invert-paths --path path/somefile
+        $ git push --no-verify --mirror
+
+    .. note::
+       Inform the team members that they should create a clone of the
+       repository again.
 
   * Removing a string from the history
 
     .. code-block:: console
 
-        $ git filter-branch --force --tree-filter "[ -f <path>/<file> ] && \
-            sed -i 's/<secret password>//g' <path>/<file> || /bin/true" -- --all
-        …
-
-    .. note::
-        On macOS ``/usr/bin/true`` must be used instead of ``/bin/true`` on
-        Linux.
+        $ git filter-repo --message-callback '
+              return re.sub(b"^git-svn-id:.*\n", b"", message, flags=re.MULTILINE)
+              '
 
   .. seealso::
     * `git-reflog <https://git-scm.com/docs/git-reflog>`_
