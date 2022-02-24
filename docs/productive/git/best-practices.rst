@@ -1,7 +1,7 @@
 Git best practices
 ==================
 
-- Commit early!
+* Commit early!
 
   Make your first commit after you’ve finished the initial installation and
   before you make your first changes. For a cookiecutter template, for example,
@@ -46,13 +46,13 @@ Git best practices
   Each repository should also have a ``README.rst`` file that describes the
   deployment and the basic structure of the code.
 
-- Commit often!
+* Commit often!
 
   This makes it easier for you
 
-  - to isolate errors
-  - to understand the code
-  - to maintain the code in the future
+  * to isolate errors
+  * to understand the code
+  * to maintain the code in the future
 
   If you have made several changes to a file, you can split them up into several
   commits later with:
@@ -61,7 +61,7 @@ Git best practices
 
     $ git add -p my-changed-file.py
 
-- Don’t change the published history!
+* Don’t change the published history!
 
   Even if you later find out that a commit that has already been published with
   ``git push`` contains one or more errors, you should never try to undo this
@@ -69,14 +69,14 @@ Git best practices
   commits.
 
 
-- Choose a Git workflow!
+* Choose a Git workflow!
 
   Choose a workflow that fits best to your project. Projects are by no means
   identical and a workflow that fits one project does not necessarily have to
   fit in another project. A different workflow can be recommended initially than
   in the further progress of the project.
 
-- Make meaningful commits!
+* Make meaningful commits!
 
   By creating insightful and descriptive commit messages, you make working in a
   team a lot easier. They allow others to understand your changes. They are also
@@ -109,22 +109,22 @@ Git best practices
   You can find more good information in `A Note About Git Commit Messages
   <https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>`_.
 
-- Maintain your repository regularly!
+* Maintain your repository regularly!
 
   You should perform the following maintenance work regularly:
 
-  - Validate the repo with ``git fsck``.
-  - Compresses the repo with  ``git gc`` or ``git gc --aggressive``.
+  * Validate the repo with ``git fsck``.
+  * Compresses the repo with  ``git gc`` or ``git gc --aggressive``.
 
     .. seealso::
         * `git gc <https://git-scm.com/docs/git-gc>`_
         * `Git Internals - Maintenance and Data Recovery
           <https://git-scm.com/book/en/v2/Git-Internals-Maintenance-and-Data-Recovery>`_
 
-  - Clean up the remote tracking branches with ``git remote update --prune``.
-  - Checks forgotten work with ``git stash list``.
+  * Clean up the remote tracking branches with ``git remote update --prune``.
+  * Checks forgotten work with ``git stash list``.
 
-- Check your repositories regularly for unwanted files!
+* Check your repositories regularly for unwanted files!
 
   With `Gitleaks <https://github.com/zricethezav/gitleaks>`_ you can regularly
   check your repositories for unintentionally saved access data.
@@ -137,14 +137,14 @@ Git best practices
 
   Alternatively, you can also delete the data on the command line.
 
-  – Delete the last commit
+  * Delete the last commit
 
     .. code-block:: console
 
         $ git reset HEAD^ --hard
         $ git push origin -f
 
-  – Delete other commits
+  * Delete other commits
 
     .. code-block:: console
 
@@ -168,12 +168,12 @@ Git best practices
 
           $ git push origin HEAD:master -f
 
-  – Modifying a commit message
+  * Modifying a commit message
 
     This can also be easily with ``rebase``  by not deleting the line in your
     editor but replace ``pick`` with  ``r`` (*reword*).
 
-  – Remove a file from the history
+  * Remove a file from the history
 
     A file can be completely removed from the current branch’s Git history with:
 
@@ -188,7 +188,7 @@ Git best practices
         $ git gc --aggressive --prune=now
         $ git push origin <branch> --force
 
-  – Removing a string from the history
+  * Removing a string from the history
 
     .. code-block:: console
 
