@@ -18,6 +18,7 @@ closely related to the `Jupyter project <https://jupyter.org/>`_.
     :maxdepth: 0
 
     start
+    examples.ipynb
     magics.ipynb
     shell.ipynb
     unix-shell/index
