@@ -17,6 +17,8 @@ spack:
   - py-nbsphinx@0.8.7%gcc@11.2.0
   - py-sphinxcontrib-bibtex@2.2.1%gcc@11.2.0
   - py-sphinxcontrib-programoutput@0.15%gcc@11.2.0
+  - py-lxml@4.6.3%gcc@11.2.0
+  - py-html5lib@1.1%gcc@11.2.0
   - py-beautifulsoup4@4.10.0%gcc@11.2.0~html5lib~lxml
   - py-requests@2.25.1%gcc@11.2.0~socks
   - py-graphviz@0.13.2%gcc@11.2.0~dev~docs
