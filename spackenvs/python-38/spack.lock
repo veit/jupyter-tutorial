@@ -42,6 +42,10 @@
       "spec": "py-sphinx@4.1.2%gcc@11.2.0"
     },
     {
+      "hash": "3wqbwigoyhcsmqvalserzz5t6jz67iui",
+      "spec": "py-nbsphinx@0.8.7%gcc@11.2.0"
+    },
+    {
       "hash": "mmrje4z6627edcfn7s6ndstcoed3yq5s",
       "spec": "py-sphinxcontrib-bibtex@2.2.1%gcc@11.2.0"
     },
@@ -15448,6 +15452,225 @@
         }
       ],
       "hash": "tths5vs7ftqdodq54gxnug3evzvfe2t6"
+    },
+    "3wqbwigoyhcsmqvalserzz5t6jz67iui": {
+      "name": "py-nbsphinx",
+      "version": "0.8.7",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "pandoc",
+          "build_hash": "bfmjbhowyfwyqxvyegqtxwuupn3tf3lk",
+          "type": [
+            "run"
+          ]
+        },
+        {
+          "name": "py-docutils",
+          "build_hash": "ef2dmdoibquojyk5tjkpfncc6usxiazn",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-jinja2",
+          "build_hash": "wbr3zs32sh3inlvy4vzvne7fd6isj7ij",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-nbconvert",
+          "build_hash": "ym2fh77yqgdpi7g6zhmptlapfxhetysv",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-nbformat",
+          "build_hash": "skovfbzoelhhdfphhpwllzuafnrpalbo",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-sphinx",
+          "build_hash": "phv5jbuty4qmsvbrzwy52wdynpdhpcxg",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-traitlets",
+          "build_hash": "cqr4v536b4i4vdsolhxdvm7kmhpfaffj",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "lct3rzbbv65xloxstewxqslihpcuh6ju"
+    },
+    "bfmjbhowyfwyqxvyegqtxwuupn3tf3lk": {
+      "name": "pandoc",
+      "version": "2.14.0.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "texlive": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "texlive",
+          "build_hash": "rrug7mbyqsfa2rzyx7f2cw32nj4ihy3d",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "6v6k53mtvhtv647pg4ygrby4wla7gitx"
+    },
+    "rrug7mbyqsfa2rzyx7f2cw32nj4ihy3d": {
+      "name": "texlive",
+      "version": "live",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "scheme": "small",
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "perl",
+          "build_hash": "v4loedfifxtkebpnjnfgexo67gppqyke",
+          "type": [
+            "build"
+          ]
+        }
+      ],
+      "hash": "udyp34pttpfivhjek3cehfqcwve2ogpz"
     },
     "mmrje4z6627edcfn7s6ndstcoed3yq5s": {
       "name": "py-sphinxcontrib-bibtex",
