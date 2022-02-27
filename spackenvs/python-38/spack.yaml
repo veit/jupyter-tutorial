@@ -14,6 +14,7 @@ spack:
   - py-html5lib@1.1%gcc@11.2.0
   - py-beautifulsoup4@4.10.0%gcc@11.2.0~html5lib~lxml
   - py-requests@2.25.1%gcc@11.2.0~socks
+  - py-fuzzywuzzy@0.18.0%gcc@11.2.0+speedup
   - py-dask@2021.6.2%gcc@11.2.0+array+bag+dataframe+delayed~diagnostics+distributed+yaml
   - py-sphinx@4.1.2%gcc@11.2.0
   - py-nbsphinx@0.8.7%gcc@11.2.0
