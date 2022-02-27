@@ -14,18 +14,6 @@
       "spec": "py-jupyter@1.0.0%gcc@11.2.0"
     },
     {
-      "hash": "v2xn2givkzovqtzayc6ueqp5aqbfjidd",
-      "spec": "py-widgetsnbextension@3.5.1%gcc@11.2.0"
-    },
-    {
-      "hash": "sfqciugqgr7j7agrwfu5x4igkyvqzzne",
-      "spec": "py-yapf@0.30.0%gcc@11.2.0"
-    },
-    {
-      "hash": "sngqps57z2u7m33rplc7ee6vbjd4eo7l",
-      "spec": "py-ipycanvas@0.9.0%gcc@11.2.0"
-    },
-    {
       "hash": "f6vem357q2kzvlvim4wx237yxutgtjya",
       "spec": "py-numpy@1.21.3%gcc@11.2.0+blas+lapack"
     },
@@ -36,22 +24,6 @@
     {
       "hash": "h2ape6i2fkmgpkk3vkgacmpzdkobt5j4",
       "spec": "py-scipy@1.7.1%gcc@11.2.0"
-    },
-    {
-      "hash": "phv5jbuty4qmsvbrzwy52wdynpdhpcxg",
-      "spec": "py-sphinx@4.1.2%gcc@11.2.0"
-    },
-    {
-      "hash": "3wqbwigoyhcsmqvalserzz5t6jz67iui",
-      "spec": "py-nbsphinx@0.8.7%gcc@11.2.0"
-    },
-    {
-      "hash": "mmrje4z6627edcfn7s6ndstcoed3yq5s",
-      "spec": "py-sphinxcontrib-bibtex@2.2.1%gcc@11.2.0"
-    },
-    {
-      "hash": "inb5c66ztirq272ekdrr656ddsqpxfrk",
-      "spec": "py-sphinxcontrib-programoutput@0.15%gcc@11.2.0"
     },
     {
       "hash": "6htgu2thjuhvzv5larz53shtnjaci5wo",
@@ -68,6 +40,38 @@
     {
       "hash": "wjxjgdpsxoukz35qk4xjnau6iobk4luy",
       "spec": "py-requests@2.25.1%gcc@11.2.0~socks"
+    },
+    {
+      "hash": "5r45qgoq5lyqgabgcivjmrmjfpubyuv6",
+      "spec": "py-dask@2021.6.2%gcc@11.2.0+array+bag+dataframe+delayed~diagnostics+distributed+yaml"
+    },
+    {
+      "hash": "v2xn2givkzovqtzayc6ueqp5aqbfjidd",
+      "spec": "py-widgetsnbextension@3.5.1%gcc@11.2.0"
+    },
+    {
+      "hash": "sfqciugqgr7j7agrwfu5x4igkyvqzzne",
+      "spec": "py-yapf@0.30.0%gcc@11.2.0"
+    },
+    {
+      "hash": "sngqps57z2u7m33rplc7ee6vbjd4eo7l",
+      "spec": "py-ipycanvas@0.9.0%gcc@11.2.0"
+    },
+    {
+      "hash": "phv5jbuty4qmsvbrzwy52wdynpdhpcxg",
+      "spec": "py-sphinx@4.1.2%gcc@11.2.0"
+    },
+    {
+      "hash": "3wqbwigoyhcsmqvalserzz5t6jz67iui",
+      "spec": "py-nbsphinx@0.8.7%gcc@11.2.0"
+    },
+    {
+      "hash": "mmrje4z6627edcfn7s6ndstcoed3yq5s",
+      "spec": "py-sphinxcontrib-bibtex@2.2.1%gcc@11.2.0"
+    },
+    {
+      "hash": "inb5c66ztirq272ekdrr656ddsqpxfrk",
+      "spec": "py-sphinxcontrib-programoutput@0.15%gcc@11.2.0"
     },
     {
       "hash": "oq26eso7kws3byjhnjylzmzyljvb57ix",
@@ -112,10 +116,6 @@
     {
       "hash": "ljtsjzoz7vpfsqs74vxxlg4zlh3esnyn",
       "spec": "snappy@1.1.8%gcc@11.2.0~ipo+pic+shared"
-    },
-    {
-      "hash": "5r45qgoq5lyqgabgcivjmrmjfpubyuv6",
-      "spec": "py-dask@2021.6.2%gcc@11.2.0+array+bag+dataframe+delayed~diagnostics+distributed+yaml"
     },
     {
       "hash": "xct3jtpz5csepahixfbrwftmo7initnw",
@@ -13551,162 +13551,6 @@
       ],
       "hash": "7gppzwmq34rfhckh2txbjhwl6r3sm5oo"
     },
-    "sfqciugqgr7j7agrwfu5x4igkyvqzzne": {
-      "name": "py-yapf",
-      "version": "0.30.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "vtwgm5ruvh5if3v3tz7hg5hktvh7x7ny"
-    },
-    "sngqps57z2u7m33rplc7ee6vbjd4eo7l": {
-      "name": "py-ipycanvas",
-      "version": "0.9.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-ipywidgets",
-          "build_hash": "dcqohr3gcluoovypg3ofg2w2kvoll2gg",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-jupyter-packaging",
-          "build_hash": "tg6536qmthzaov3det5zgrkjlimnyvlu",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "py-jupyterlab",
-          "build_hash": "7m2rky42imdw3urdlxyh62lnu6y6cxet",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "py-numpy",
-          "build_hash": "f6vem357q2kzvlvim4wx237yxutgtjya",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-pillow",
-          "build_hash": "3ece4ulzvwsuexb5uvxb24lr5iby5gfv",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "bhdjtxubfisa5jngazeutjuqbmtkohi7"
-    },
     "f6vem357q2kzvlvim4wx237yxutgtjya": {
       "name": "py-numpy",
       "version": "1.21.3",
@@ -13848,91 +13692,6 @@
         }
       ],
       "hash": "bvzkrf4lsukow2a5qusj6ta23iqdqlug"
-    },
-    "3ece4ulzvwsuexb5uvxb24lr5iby5gfv": {
-      "name": "py-pillow",
-      "version": "8.0.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "freetype": false,
-        "imagequant": false,
-        "jpeg": true,
-        "jpeg2000": false,
-        "lcms": false,
-        "tiff": false,
-        "webp": false,
-        "webpmux": false,
-        "xcb": false,
-        "zlib": true,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "libjpeg-turbo",
-          "build_hash": "ar3izbjg6rudzuf2fo5gb3uyyzsqci3t",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "zlib",
-          "build_hash": "w7kwamfg7s4mygsywseqwyt2rshduftb",
-          "type": [
-            "build",
-            "link"
-          ]
-        }
-      ],
-      "hash": "m2jvz5odjejp64dbyx2ashafmjcw4w3r"
     },
     "27aazsiel6cqrcokt3vjadih7nbxdj5z": {
       "name": "py-pandas",
@@ -14690,6 +14449,2177 @@
         }
       ],
       "hash": "slmcnwkaryvcmspkyme3esqoqq2nn4bp"
+    },
+    "6htgu2thjuhvzv5larz53shtnjaci5wo": {
+      "name": "py-lxml",
+      "version": "4.6.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cssselect": false,
+        "html5": false,
+        "htmlsoup": false,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "libxml2",
+          "build_hash": "oat3zbvh6bcfyzuy54hxs47veeck7zzf",
+          "type": [
+            "build",
+            "link",
+            "run"
+          ]
+        },
+        {
+          "name": "libxslt",
+          "build_hash": "upapp2gjfrno7j3ofgzbliellb3uz727",
+          "type": [
+            "build",
+            "link",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "eqs57cpha5w4bojbw3aux4rmo4v7cvxf"
+    },
+    "upapp2gjfrno7j3ofgzbliellb3uz727": {
+      "name": "libxslt",
+      "version": "1.1.33",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "crypto": true,
+        "python": false,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "libgcrypt",
+          "build_hash": "gkcshoezpwuy66yb4obijokbdqi546vm",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libiconv",
+          "build_hash": "fv753kujex2muqwr3rtvtjkb2tk6dcso",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libxml2",
+          "build_hash": "oat3zbvh6bcfyzuy54hxs47veeck7zzf",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "pkgconf",
+          "build_hash": "4cw3o2rtp3slrxtghkvzvpenxir6p6fj",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "xz",
+          "build_hash": "ajmuqr7wmy55ejar7misteq7wwxuroie",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "zlib",
+          "build_hash": "w7kwamfg7s4mygsywseqwyt2rshduftb",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "iy3afhfrotujyuvduenmlomfwhem4slb"
+    },
+    "gkcshoezpwuy66yb4obijokbdqi546vm": {
+      "name": "libgcrypt",
+      "version": "1.9.3",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "libgpg-error",
+          "build_hash": "asaiamyqc6auxoufgrfwcuuwklqzokev",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "3okzbue4p6e7y7w2wqbopxoezdob4mdr"
+    },
+    "asaiamyqc6auxoufgrfwcuuwklqzokev": {
+      "name": "libgpg-error",
+      "version": "1.42",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "gawk",
+          "build_hash": "4ok7tr5dzmkklba25tlutbpnue6oqu3q",
+          "type": [
+            "build"
+          ]
+        }
+      ],
+      "hash": "qrm5xadc7b6c3ai5donlatav5vyl5lyr"
+    },
+    "4ok7tr5dzmkklba25tlutbpnue6oqu3q": {
+      "name": "gawk",
+      "version": "5.1.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "gettext",
+          "build_hash": "sb2yhgfe4yjrn5rur5xx22bwpuw4hbbn",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "gmp",
+          "build_hash": "22pyxsa7meanhsdkupi66je6jbqjhcyg",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libsigsegv",
+          "build_hash": "btgulvzuauiyznaflonhw2capegfa6qn",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "mpfr",
+          "build_hash": "mdlfq63eololi6bx7sxd3bxpu37rmntz",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "readline",
+          "build_hash": "q2upnbebyqbx653mrjuyypwtn4ozc3ji",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "svp7b4mchmldbl5fqniytyghg7uw3q2i"
+    },
+    "22pyxsa7meanhsdkupi66je6jbqjhcyg": {
+      "name": "gmp",
+      "version": "6.2.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "autoconf",
+          "build_hash": "slvj6lgxaiw7kzvseczt4jrybfb5kfrf",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "automake",
+          "build_hash": "kgmsfz5276gvgzkrd6nfkgo2hyfufmmc",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "libtool",
+          "build_hash": "mbxmyjxt7iqhit3jon6pzs43s3nam74k",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "m4",
+          "build_hash": "hz7h7hfigkqyrjywus6bjtq7zz76umum",
+          "type": [
+            "build"
+          ]
+        }
+      ],
+      "hash": "vuxbkngxmn5blsne3ox4xcdglcu4uthl"
+    },
+    "mdlfq63eololi6bx7sxd3bxpu37rmntz": {
+      "name": "mpfr",
+      "version": "4.1.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "autoconf",
+          "build_hash": "slvj6lgxaiw7kzvseczt4jrybfb5kfrf",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "autoconf-archive",
+          "build_hash": "g4bcoefs4bs4evw2qquwxs2suczwupto",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "automake",
+          "build_hash": "kgmsfz5276gvgzkrd6nfkgo2hyfufmmc",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "gmp",
+          "build_hash": "22pyxsa7meanhsdkupi66je6jbqjhcyg",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "libtool",
+          "build_hash": "mbxmyjxt7iqhit3jon6pzs43s3nam74k",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "m4",
+          "build_hash": "hz7h7hfigkqyrjywus6bjtq7zz76umum",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "texinfo",
+          "build_hash": "d5ucw6zwrqv3hob5avkxgehvge6mikwy",
+          "type": [
+            "build"
+          ]
+        }
+      ],
+      "hash": "iykvmaxh5rduiyrdxjjnmjn4oiu677jc"
+    },
+    "g4bcoefs4bs4evw2qquwxs2suczwupto": {
+      "name": "autoconf-archive",
+      "version": "2019.01.06",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "hash": "g4bcoefs4bs4evw2qquwxs2suczwupto"
+    },
+    "d5ucw6zwrqv3hob5avkxgehvge6mikwy": {
+      "name": "texinfo",
+      "version": "6.5",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "patches": [
+          "12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a",
+          "1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1"
+        ],
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "patches": [
+        "1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1",
+        "12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a"
+      ],
+      "dependencies": [
+        {
+          "name": "perl",
+          "build_hash": "v4loedfifxtkebpnjnfgexo67gppqyke",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "a736isq7qzttc4vjfqdokfihenp3s5yc"
+    },
+    "jyjjlebpiehymp4t6jugmphjje7p2u34": {
+      "name": "py-html5lib",
+      "version": "1.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-six",
+          "build_hash": "k3pqdct3kdxanyapj47b46z5pevbjczk",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-webencodings",
+          "build_hash": "uje2zxbqd4exqajqkavfcpqxmkgrwhof",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "fqgshhufzeevyvlg7wqqmdbn7ur5xlrm"
+    },
+    "mbalc6cqi2tpklwmdyusfrsvyhhntxko": {
+      "name": "py-beautifulsoup4",
+      "version": "4.10.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "html5lib": false,
+        "lxml": false,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-soupsieve",
+          "build_hash": "oqzua7l2bkh43rqentus6ut3xfb7thth",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "prygdp5fj7vc7f5gahomkbgs4ydhinb7"
+    },
+    "oqzua7l2bkh43rqentus6ut3xfb7thth": {
+      "name": "py-soupsieve",
+      "version": "2.2.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "d2tw6yq4v4zgcm4qzqcs4lloizuolldy"
+    },
+    "5r45qgoq5lyqgabgcivjmrmjfpubyuv6": {
+      "name": "py-dask",
+      "version": "2021.6.2",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "array": true,
+        "bag": true,
+        "dataframe": true,
+        "delayed": true,
+        "diagnostics": false,
+        "distributed": true,
+        "yaml": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-cloudpickle",
+          "build_hash": "p2p4uw7mcxtsnyghyazemlufbmra7jrd",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-distributed",
+          "build_hash": "w6y4edsnol57mkpb35huqdcscpt6zqgs",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-fsspec",
+          "build_hash": "xefjt4xbbqawamjkemahiapqybbdsmzn",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-numpy",
+          "build_hash": "f6vem357q2kzvlvim4wx237yxutgtjya",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-pandas",
+          "build_hash": "27aazsiel6cqrcokt3vjadih7nbxdj5z",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-partd",
+          "build_hash": "j3pmxw7xqh2aojokg2idqzu4p3jzqur6",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-pyyaml",
+          "build_hash": "olzfb763d54voe6e6vx4ixqxdf2aidht",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-toolz",
+          "build_hash": "nvupui5tqkcgwwb4sm7uyfflz76iezkl",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "eqgezi7bfc6zovjelsxokwblulrp5pyi"
+    },
+    "p2p4uw7mcxtsnyghyazemlufbmra7jrd": {
+      "name": "py-cloudpickle",
+      "version": "1.6.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "dumbe5642jrsei2qq5ktjzm6ysymmyyi"
+    },
+    "w6y4edsnol57mkpb35huqdcscpt6zqgs": {
+      "name": "py-distributed",
+      "version": "2021.6.2",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-click",
+          "build_hash": "ez3jksa7hczlma7ma2ijqk744vvdr5bw",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-cloudpickle",
+          "build_hash": "p2p4uw7mcxtsnyghyazemlufbmra7jrd",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-msgpack",
+          "build_hash": "kzzmupbzgsawmfx5c6ay4hdlacvmsojp",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-psutil",
+          "build_hash": "se4cq3hwullfyzw7epsawiu7pbpqxfvc",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-pyyaml",
+          "build_hash": "olzfb763d54voe6e6vx4ixqxdf2aidht",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-sortedcontainers",
+          "build_hash": "zo7zk6ydzwid7ccs6g6v4kx35qaizfx2",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-tblib",
+          "build_hash": "yusls5rpdifhwwx52dcc73iyyqgzturg",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-toolz",
+          "build_hash": "nvupui5tqkcgwwb4sm7uyfflz76iezkl",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-tornado",
+          "build_hash": "sbixx2wa7k52dgbenkxnqrdrpgp4doia",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-zict",
+          "build_hash": "nxevkulcuskxeitwuatpmjvljnyyiu67",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "vvlhemru3etrkttotgttznxsaps7kfos"
+    },
+    "ez3jksa7hczlma7ma2ijqk744vvdr5bw": {
+      "name": "py-click",
+      "version": "8.0.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "73knmlo62jh2eziyjavkojn4peeeff2v"
+    },
+    "kzzmupbzgsawmfx5c6ay4hdlacvmsojp": {
+      "name": "py-msgpack",
+      "version": "1.0.2",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "udhyvbho7c24c5aggftfzdjizxkfrjya"
+    },
+    "se4cq3hwullfyzw7epsawiu7pbpqxfvc": {
+      "name": "py-psutil",
+      "version": "5.8.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "2e7zr5dd5vwnh5233sieogmmftqcbzki"
+    },
+    "olzfb763d54voe6e6vx4ixqxdf2aidht": {
+      "name": "py-pyyaml",
+      "version": "5.3.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "libyaml": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "libyaml",
+          "build_hash": "pvz5hpsx22vy5kryzaave535jzsy2d4j",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "verpokbhmx5qe55rrs2uij7brzkt3nub"
+    },
+    "pvz5hpsx22vy5kryzaave535jzsy2d4j": {
+      "name": "libyaml",
+      "version": "0.2.5",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "hash": "pvz5hpsx22vy5kryzaave535jzsy2d4j"
+    },
+    "zo7zk6ydzwid7ccs6g6v4kx35qaizfx2": {
+      "name": "py-sortedcontainers",
+      "version": "2.1.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "ic6uj5rv6oprx4mjvuhztttaasvf6opl"
+    },
+    "yusls5rpdifhwwx52dcc73iyyqgzturg": {
+      "name": "py-tblib",
+      "version": "1.6.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "l2eil6vclszsxlepixvboq3gv2mjcedy"
+    },
+    "nvupui5tqkcgwwb4sm7uyfflz76iezkl": {
+      "name": "py-toolz",
+      "version": "0.9.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "yrzgfzl7aiznjcx3dzybhhxet7wtgfip"
+    },
+    "nxevkulcuskxeitwuatpmjvljnyyiu67": {
+      "name": "py-zict",
+      "version": "1.0.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-heapdict",
+          "build_hash": "fh6si2kt5sawi4ysmhylu2qrvtfkgizb",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "js6luzeckln3emfw43kxh5avhfhvlmjb"
+    },
+    "fh6si2kt5sawi4ysmhylu2qrvtfkgizb": {
+      "name": "py-heapdict",
+      "version": "1.0.1",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "gkjin2vpmapyrau5mad3yfk4dynve5yy"
+    },
+    "xefjt4xbbqawamjkemahiapqybbdsmzn": {
+      "name": "py-fsspec",
+      "version": "0.9.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "http": false,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "o5kxbe2dcdulg4xtxqhgfp3zbguxe7kq"
+    },
+    "j3pmxw7xqh2aojokg2idqzu4p3jzqur6": {
+      "name": "py-partd",
+      "version": "1.1.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-locket",
+          "build_hash": "ixu6mj5wscq7dh7oaurhkafz2een4e34",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-toolz",
+          "build_hash": "nvupui5tqkcgwwb4sm7uyfflz76iezkl",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "feq6q4jts7lhoqgoat2tjo3ah33zulrk"
+    },
+    "ixu6mj5wscq7dh7oaurhkafz2een4e34": {
+      "name": "py-locket",
+      "version": "0.2.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "qpg7zz335qpysf3yjxrtbq7i2dtg4v6f"
+    },
+    "sfqciugqgr7j7agrwfu5x4igkyvqzzne": {
+      "name": "py-yapf",
+      "version": "0.30.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "vtwgm5ruvh5if3v3tz7hg5hktvh7x7ny"
+    },
+    "sngqps57z2u7m33rplc7ee6vbjd4eo7l": {
+      "name": "py-ipycanvas",
+      "version": "0.9.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "py-ipywidgets",
+          "build_hash": "dcqohr3gcluoovypg3ofg2w2kvoll2gg",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-jupyter-packaging",
+          "build_hash": "tg6536qmthzaov3det5zgrkjlimnyvlu",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-jupyterlab",
+          "build_hash": "7m2rky42imdw3urdlxyh62lnu6y6cxet",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "py-numpy",
+          "build_hash": "f6vem357q2kzvlvim4wx237yxutgtjya",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-pillow",
+          "build_hash": "3ece4ulzvwsuexb5uvxb24lr5iby5gfv",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        }
+      ],
+      "hash": "bhdjtxubfisa5jngazeutjuqbmtkohi7"
+    },
+    "3ece4ulzvwsuexb5uvxb24lr5iby5gfv": {
+      "name": "py-pillow",
+      "version": "8.0.0",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "ubuntu20.04",
+        "target": {
+          "name": "sandybridge",
+          "vendor": "GenuineIntel",
+          "features": [
+            "aes",
+            "avx",
+            "mmx",
+            "pclmulqdq",
+            "popcnt",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3"
+          ],
+          "generation": 0,
+          "parents": [
+            "westmere"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "gcc",
+        "version": "11.2.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "freetype": false,
+        "imagequant": false,
+        "jpeg": true,
+        "jpeg2000": false,
+        "lcms": false,
+        "tiff": false,
+        "webp": false,
+        "webpmux": false,
+        "xcb": false,
+        "zlib": true,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "dependencies": [
+        {
+          "name": "libjpeg-turbo",
+          "build_hash": "ar3izbjg6rudzuf2fo5gb3uyyzsqci3t",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
+          "name": "py-setuptools",
+          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "python",
+          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
+          "type": [
+            "build",
+            "run"
+          ]
+        },
+        {
+          "name": "zlib",
+          "build_hash": "w7kwamfg7s4mygsywseqwyt2rshduftb",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "m2jvz5odjejp64dbyx2ashafmjcw4w3r"
     },
     "phv5jbuty4qmsvbrzwy52wdynpdhpcxg": {
       "name": "py-sphinx",
@@ -15921,109 +17851,6 @@
       ],
       "hash": "uwchxapg3uirjwlyn37c2ze5ly4i62cv"
     },
-    "olzfb763d54voe6e6vx4ixqxdf2aidht": {
-      "name": "py-pyyaml",
-      "version": "5.3.1",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "libyaml": true,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "libyaml",
-          "build_hash": "pvz5hpsx22vy5kryzaave535jzsy2d4j",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "verpokbhmx5qe55rrs2uij7brzkt3nub"
-    },
-    "pvz5hpsx22vy5kryzaave535jzsy2d4j": {
-      "name": "libyaml",
-      "version": "0.2.5",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "hash": "pvz5hpsx22vy5kryzaave535jzsy2d4j"
-    },
     "pgvdtehwd4dqbfvkydpyc2flas7neff3": {
       "name": "py-pybtex-docutils",
       "version": "1.0.0",
@@ -16165,837 +17992,6 @@
         }
       ],
       "hash": "5eswpy3n62gtkhzkwkwyb4w6lgtlw3yv"
-    },
-    "6htgu2thjuhvzv5larz53shtnjaci5wo": {
-      "name": "py-lxml",
-      "version": "4.6.3",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cssselect": false,
-        "html5": false,
-        "htmlsoup": false,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "libxml2",
-          "build_hash": "oat3zbvh6bcfyzuy54hxs47veeck7zzf",
-          "type": [
-            "build",
-            "link",
-            "run"
-          ]
-        },
-        {
-          "name": "libxslt",
-          "build_hash": "upapp2gjfrno7j3ofgzbliellb3uz727",
-          "type": [
-            "build",
-            "link",
-            "run"
-          ]
-        },
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "eqs57cpha5w4bojbw3aux4rmo4v7cvxf"
-    },
-    "upapp2gjfrno7j3ofgzbliellb3uz727": {
-      "name": "libxslt",
-      "version": "1.1.33",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "crypto": true,
-        "python": false,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "libgcrypt",
-          "build_hash": "gkcshoezpwuy66yb4obijokbdqi546vm",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "libiconv",
-          "build_hash": "fv753kujex2muqwr3rtvtjkb2tk6dcso",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "libxml2",
-          "build_hash": "oat3zbvh6bcfyzuy54hxs47veeck7zzf",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "pkgconf",
-          "build_hash": "4cw3o2rtp3slrxtghkvzvpenxir6p6fj",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "xz",
-          "build_hash": "ajmuqr7wmy55ejar7misteq7wwxuroie",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "zlib",
-          "build_hash": "w7kwamfg7s4mygsywseqwyt2rshduftb",
-          "type": [
-            "build",
-            "link"
-          ]
-        }
-      ],
-      "hash": "iy3afhfrotujyuvduenmlomfwhem4slb"
-    },
-    "gkcshoezpwuy66yb4obijokbdqi546vm": {
-      "name": "libgcrypt",
-      "version": "1.9.3",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "libgpg-error",
-          "build_hash": "asaiamyqc6auxoufgrfwcuuwklqzokev",
-          "type": [
-            "build",
-            "link"
-          ]
-        }
-      ],
-      "hash": "3okzbue4p6e7y7w2wqbopxoezdob4mdr"
-    },
-    "asaiamyqc6auxoufgrfwcuuwklqzokev": {
-      "name": "libgpg-error",
-      "version": "1.42",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "gawk",
-          "build_hash": "4ok7tr5dzmkklba25tlutbpnue6oqu3q",
-          "type": [
-            "build"
-          ]
-        }
-      ],
-      "hash": "qrm5xadc7b6c3ai5donlatav5vyl5lyr"
-    },
-    "4ok7tr5dzmkklba25tlutbpnue6oqu3q": {
-      "name": "gawk",
-      "version": "5.1.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "gettext",
-          "build_hash": "sb2yhgfe4yjrn5rur5xx22bwpuw4hbbn",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "gmp",
-          "build_hash": "22pyxsa7meanhsdkupi66je6jbqjhcyg",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "libsigsegv",
-          "build_hash": "btgulvzuauiyznaflonhw2capegfa6qn",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "mpfr",
-          "build_hash": "mdlfq63eololi6bx7sxd3bxpu37rmntz",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "readline",
-          "build_hash": "q2upnbebyqbx653mrjuyypwtn4ozc3ji",
-          "type": [
-            "build",
-            "link"
-          ]
-        }
-      ],
-      "hash": "svp7b4mchmldbl5fqniytyghg7uw3q2i"
-    },
-    "22pyxsa7meanhsdkupi66je6jbqjhcyg": {
-      "name": "gmp",
-      "version": "6.2.1",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "autoconf",
-          "build_hash": "slvj6lgxaiw7kzvseczt4jrybfb5kfrf",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "automake",
-          "build_hash": "kgmsfz5276gvgzkrd6nfkgo2hyfufmmc",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "libtool",
-          "build_hash": "mbxmyjxt7iqhit3jon6pzs43s3nam74k",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "m4",
-          "build_hash": "hz7h7hfigkqyrjywus6bjtq7zz76umum",
-          "type": [
-            "build"
-          ]
-        }
-      ],
-      "hash": "vuxbkngxmn5blsne3ox4xcdglcu4uthl"
-    },
-    "mdlfq63eololi6bx7sxd3bxpu37rmntz": {
-      "name": "mpfr",
-      "version": "4.1.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "autoconf",
-          "build_hash": "slvj6lgxaiw7kzvseczt4jrybfb5kfrf",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "autoconf-archive",
-          "build_hash": "g4bcoefs4bs4evw2qquwxs2suczwupto",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "automake",
-          "build_hash": "kgmsfz5276gvgzkrd6nfkgo2hyfufmmc",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "gmp",
-          "build_hash": "22pyxsa7meanhsdkupi66je6jbqjhcyg",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "libtool",
-          "build_hash": "mbxmyjxt7iqhit3jon6pzs43s3nam74k",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "m4",
-          "build_hash": "hz7h7hfigkqyrjywus6bjtq7zz76umum",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "texinfo",
-          "build_hash": "d5ucw6zwrqv3hob5avkxgehvge6mikwy",
-          "type": [
-            "build"
-          ]
-        }
-      ],
-      "hash": "iykvmaxh5rduiyrdxjjnmjn4oiu677jc"
-    },
-    "g4bcoefs4bs4evw2qquwxs2suczwupto": {
-      "name": "autoconf-archive",
-      "version": "2019.01.06",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "hash": "g4bcoefs4bs4evw2qquwxs2suczwupto"
-    },
-    "d5ucw6zwrqv3hob5avkxgehvge6mikwy": {
-      "name": "texinfo",
-      "version": "6.5",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "patches": [
-          "12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a",
-          "1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1"
-        ],
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "patches": [
-        "1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1",
-        "12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a"
-      ],
-      "dependencies": [
-        {
-          "name": "perl",
-          "build_hash": "v4loedfifxtkebpnjnfgexo67gppqyke",
-          "type": [
-            "build",
-            "link"
-          ]
-        }
-      ],
-      "hash": "a736isq7qzttc4vjfqdokfihenp3s5yc"
-    },
-    "jyjjlebpiehymp4t6jugmphjje7p2u34": {
-      "name": "py-html5lib",
-      "version": "1.1",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "py-six",
-          "build_hash": "k3pqdct3kdxanyapj47b46z5pevbjczk",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-webencodings",
-          "build_hash": "uje2zxbqd4exqajqkavfcpqxmkgrwhof",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "fqgshhufzeevyvlg7wqqmdbn7ur5xlrm"
-    },
-    "mbalc6cqi2tpklwmdyusfrsvyhhntxko": {
-      "name": "py-beautifulsoup4",
-      "version": "4.10.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "html5lib": false,
-        "lxml": false,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "py-soupsieve",
-          "build_hash": "oqzua7l2bkh43rqentus6ut3xfb7thth",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "prygdp5fj7vc7f5gahomkbgs4ydhinb7"
-    },
-    "oqzua7l2bkh43rqentus6ut3xfb7thth": {
-      "name": "py-soupsieve",
-      "version": "2.2.1",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "d2tw6yq4v4zgcm4qzqcs4lloizuolldy"
     },
     "oq26eso7kws3byjhnjylzmzyljvb57ix": {
       "name": "py-graphviz",
@@ -18588,65 +19584,6 @@
       ],
       "hash": "p6v7zw7lrfnyy73kbew2giaovh5e4cvx"
     },
-    "ez3jksa7hczlma7ma2ijqk744vvdr5bw": {
-      "name": "py-click",
-      "version": "8.0.1",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "73knmlo62jh2eziyjavkojn4peeeff2v"
-    },
     "i3qpsgsnvja65vpigijd3owtvd3b62tf": {
       "name": "py-click-plugins",
       "version": "1.0.4",
@@ -19650,943 +20587,6 @@
         }
       ],
       "hash": "4r6xgleigcocglegx4dzuiwi46y4lqx6"
-    },
-    "5r45qgoq5lyqgabgcivjmrmjfpubyuv6": {
-      "name": "py-dask",
-      "version": "2021.6.2",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "array": true,
-        "bag": true,
-        "dataframe": true,
-        "delayed": true,
-        "diagnostics": false,
-        "distributed": true,
-        "yaml": true,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-cloudpickle",
-          "build_hash": "p2p4uw7mcxtsnyghyazemlufbmra7jrd",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-distributed",
-          "build_hash": "w6y4edsnol57mkpb35huqdcscpt6zqgs",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-fsspec",
-          "build_hash": "xefjt4xbbqawamjkemahiapqybbdsmzn",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-numpy",
-          "build_hash": "f6vem357q2kzvlvim4wx237yxutgtjya",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-pandas",
-          "build_hash": "27aazsiel6cqrcokt3vjadih7nbxdj5z",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-partd",
-          "build_hash": "j3pmxw7xqh2aojokg2idqzu4p3jzqur6",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-pyyaml",
-          "build_hash": "olzfb763d54voe6e6vx4ixqxdf2aidht",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "py-toolz",
-          "build_hash": "nvupui5tqkcgwwb4sm7uyfflz76iezkl",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "eqgezi7bfc6zovjelsxokwblulrp5pyi"
-    },
-    "p2p4uw7mcxtsnyghyazemlufbmra7jrd": {
-      "name": "py-cloudpickle",
-      "version": "1.6.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "dumbe5642jrsei2qq5ktjzm6ysymmyyi"
-    },
-    "w6y4edsnol57mkpb35huqdcscpt6zqgs": {
-      "name": "py-distributed",
-      "version": "2021.6.2",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-click",
-          "build_hash": "ez3jksa7hczlma7ma2ijqk744vvdr5bw",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-cloudpickle",
-          "build_hash": "p2p4uw7mcxtsnyghyazemlufbmra7jrd",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-msgpack",
-          "build_hash": "kzzmupbzgsawmfx5c6ay4hdlacvmsojp",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-psutil",
-          "build_hash": "se4cq3hwullfyzw7epsawiu7pbpqxfvc",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-pyyaml",
-          "build_hash": "olzfb763d54voe6e6vx4ixqxdf2aidht",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-sortedcontainers",
-          "build_hash": "zo7zk6ydzwid7ccs6g6v4kx35qaizfx2",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-tblib",
-          "build_hash": "yusls5rpdifhwwx52dcc73iyyqgzturg",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-toolz",
-          "build_hash": "nvupui5tqkcgwwb4sm7uyfflz76iezkl",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-tornado",
-          "build_hash": "sbixx2wa7k52dgbenkxnqrdrpgp4doia",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-zict",
-          "build_hash": "nxevkulcuskxeitwuatpmjvljnyyiu67",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "vvlhemru3etrkttotgttznxsaps7kfos"
-    },
-    "kzzmupbzgsawmfx5c6ay4hdlacvmsojp": {
-      "name": "py-msgpack",
-      "version": "1.0.2",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "udhyvbho7c24c5aggftfzdjizxkfrjya"
-    },
-    "se4cq3hwullfyzw7epsawiu7pbpqxfvc": {
-      "name": "py-psutil",
-      "version": "5.8.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "2e7zr5dd5vwnh5233sieogmmftqcbzki"
-    },
-    "zo7zk6ydzwid7ccs6g6v4kx35qaizfx2": {
-      "name": "py-sortedcontainers",
-      "version": "2.1.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "ic6uj5rv6oprx4mjvuhztttaasvf6opl"
-    },
-    "yusls5rpdifhwwx52dcc73iyyqgzturg": {
-      "name": "py-tblib",
-      "version": "1.6.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "l2eil6vclszsxlepixvboq3gv2mjcedy"
-    },
-    "nvupui5tqkcgwwb4sm7uyfflz76iezkl": {
-      "name": "py-toolz",
-      "version": "0.9.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "yrzgfzl7aiznjcx3dzybhhxet7wtgfip"
-    },
-    "nxevkulcuskxeitwuatpmjvljnyyiu67": {
-      "name": "py-zict",
-      "version": "1.0.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-heapdict",
-          "build_hash": "fh6si2kt5sawi4ysmhylu2qrvtfkgizb",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "js6luzeckln3emfw43kxh5avhfhvlmjb"
-    },
-    "fh6si2kt5sawi4ysmhylu2qrvtfkgizb": {
-      "name": "py-heapdict",
-      "version": "1.0.1",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "gkjin2vpmapyrau5mad3yfk4dynve5yy"
-    },
-    "xefjt4xbbqawamjkemahiapqybbdsmzn": {
-      "name": "py-fsspec",
-      "version": "0.9.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "http": false,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "o5kxbe2dcdulg4xtxqhgfp3zbguxe7kq"
-    },
-    "j3pmxw7xqh2aojokg2idqzu4p3jzqur6": {
-      "name": "py-partd",
-      "version": "1.1.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "py-locket",
-          "build_hash": "ixu6mj5wscq7dh7oaurhkafz2een4e34",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "py-setuptools",
-          "build_hash": "qfv6beez4pzz3p3h3xgekuhkazcf5hhh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "py-toolz",
-          "build_hash": "nvupui5tqkcgwwb4sm7uyfflz76iezkl",
-          "type": [
-            "build",
-            "run"
-          ]
-        },
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "feq6q4jts7lhoqgoat2tjo3ah33zulrk"
-    },
-    "ixu6mj5wscq7dh7oaurhkafz2een4e34": {
-      "name": "py-locket",
-      "version": "0.2.0",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "sandybridge",
-          "vendor": "GenuineIntel",
-          "features": [
-            "aes",
-            "avx",
-            "mmx",
-            "pclmulqdq",
-            "popcnt",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3"
-          ],
-          "generation": 0,
-          "parents": [
-            "westmere"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "gcc",
-        "version": "11.2.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "dependencies": [
-        {
-          "name": "python",
-          "build_hash": "75553rpwmkezadvs53cvexyqi3fpxr72",
-          "type": [
-            "build",
-            "run"
-          ]
-        }
-      ],
-      "hash": "qpg7zz335qpysf3yjxrtbq7i2dtg4v6f"
     },
     "xct3jtpz5csepahixfbrwftmo7initnw": {
       "name": "py-s3fs",
