@@ -149,6 +149,11 @@ significantly reduce the maintenance effort compared to wrapper modules.
   contrast, the alternatives above can all work on the C API and use C header
   files to ensure consistency.
 
+* `pythoncapi_compat <https://github.com/python/pythoncapi_compat>`_ can be used
+  to write a C extension that supports multiple Python versions with a single
+  code base. It consists of the header file `pythoncapi_compat.h`` and the
+  script ``upgrade_pythoncapi.py``.
+
 … for low-level system access
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
