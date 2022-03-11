@@ -113,3 +113,25 @@ Delete
        .filter_by(email='info@veit-schiele.de').first()
     session.delete(contact)
     session.commit()
+
+Erweiterungen
+-------------
+
+`SQLAlchemy-Continuum <https://sqlalchemy-continuum.readthedocs.io/en/latest/>`_
+    Versionierungs- und Revisionserweiterung für SQLAlchemy 
+`SQLAlchemy-Utc <https://github.com/spoqa/sqlalchemy-utc>`_
+    SQLAlchemy-Typ zum Speichern von `datetime.datetime`-Werten
+`SQLAlchemy-Utils <https://sqlalchemy-utils.readthedocs.io/en/latest/>`_
+    Verschiedene Utility-Funktionen, neue Datentypen und Hilfsprogramme für
+    SQLAlchemy
+`DEPOT <https://depot.readthedocs.io/en/latest/>`_
+    Framework zur einfachen Speicherung und Bereitstellung von Dateien in
+    Webanwendungen
+`SQLAlchemy-ImageAttach <https://sqlalchemy-imageattach.readthedocs.io/>`_
+    SQLAlchemy-Erweiterung zum Anhängen von Bildern an Entitätsobjekte
+`SQLAlchemy-Searchable <https://sqlalchemy-searchable.readthedocs.io/en/latest/>`_
+    Im Volltext durchsuchbare Modelle für SQLAlchemy
+
+.. seealso::
+
+   * `Awesome SQLAlchemy <https://github.com/dahlia/awesome-sqlalchemy>`_
