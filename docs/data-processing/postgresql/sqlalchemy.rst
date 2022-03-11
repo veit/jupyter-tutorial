@@ -114,23 +114,21 @@ Delete
     session.delete(contact)
     session.commit()
 
-Erweiterungen
--------------
+Extensions
+----------
 
 `SQLAlchemy-Continuum <https://sqlalchemy-continuum.readthedocs.io/en/latest/>`_
-    Versionierungs- und Revisionserweiterung für SQLAlchemy 
+    Versioning and revision extension for SQLAlchemy
 `SQLAlchemy-Utc <https://github.com/spoqa/sqlalchemy-utc>`_
-    SQLAlchemy-Typ zum Speichern von `datetime.datetime`-Werten
+    SQLAlchemy type for storing `datetime.datetime` values
 `SQLAlchemy-Utils <https://sqlalchemy-utils.readthedocs.io/en/latest/>`_
-    Verschiedene Utility-Funktionen, neue Datentypen und Hilfsprogramme für
-    SQLAlchemy
+    Various utility functions, new data types and utilities for SQLAlchemy
 `DEPOT <https://depot.readthedocs.io/en/latest/>`_
-    Framework zur einfachen Speicherung und Bereitstellung von Dateien in
-    Webanwendungen
+    Framework for easy storage and retrieval of files in web applications
 `SQLAlchemy-ImageAttach <https://sqlalchemy-imageattach.readthedocs.io/>`_
-    SQLAlchemy-Erweiterung zum Anhängen von Bildern an Entitätsobjekte
+    RSQLAlchemy extension for attaching images to entity objects
 `SQLAlchemy-Searchable <https://sqlalchemy-searchable.readthedocs.io/en/latest/>`_
-    Im Volltext durchsuchbare Modelle für SQLAlchemy
+    Full-text searchable models for SQLAlchemy
 
 .. seealso::
 
