@@ -10,6 +10,13 @@ we also use several small, specialised libraries like :doc:`dedupe
 <hypothesis>`. We prefer these more lightweight solutions to large, universal
 systems like `Great Expectations <https://greatexpectations.io/>`_.
 
+.. seealso::
+   * `pandera <https://pandera.readthedocs.io/en/stable/>`_
+   * `pandas-validation <https://pandas-validation.readthedocs.io/en/latest/>`_
+   * `PandasSchema <https://multimeric.github.io/PandasSchema/>`_
+   * `Opulent-Pandas <https://github.com/danielvdende/opulent-pandas>`_
+   * `signpost <https://github.com/ilsedippenaar/signpost>`_
+
 .. toctree::
     :hidden:
     :titlesonly:
