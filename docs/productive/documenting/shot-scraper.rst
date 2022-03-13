@@ -47,7 +47,7 @@ shot-scraper can be used in two ways
 
    .. code-block:: console
 
-        $ pipenv run shot-scraper multi shot.yaml
+        $ pipenv run shot-scraper multi shots.yaml
         Screenshot of 'https://jupyter-tutorial.readthedocs.io/de/latest/clean-prep/index.html' written to '~(Downloads/clean-prep.png'
         Screenshot of 'https://www.example.org/' written to 'example.jpg'
 
