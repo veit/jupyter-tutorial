@@ -94,3 +94,4 @@ after each commit.
     docstrings
     intersphinx
     extensions
+    shot-scraper
