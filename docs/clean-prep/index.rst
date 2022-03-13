@@ -8,7 +8,8 @@ we also use several small, specialised libraries like :doc:`dedupe
 <deduplicate>`, :doc:`fuzzywuzzy <string-matching>`, :doc:`voluptuous
 <voluptuous>`, :doc:`bulwark <bulwark>`, :doc:`tdda <tdda>` and :doc:`hypothesis
 <hypothesis>`. We prefer these more lightweight solutions to large, universal
-systems like `Great Expectations <https://greatexpectations.io/>`_.
+systems like `Great Expectations <https://greatexpectations.io/>`_ or `MobyDQ
+<https://ubisoft.github.io/mobydq/>`_.
 
 Overview
 --------
