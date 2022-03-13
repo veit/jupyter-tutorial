@@ -8,6 +8,7 @@ dedupe = "*"
 pythreejs = "*"
 ipyvolume = "*"
 importlib-metadata = "*"
+shot-scraper = "*"
 
 [dev-packages]
 
