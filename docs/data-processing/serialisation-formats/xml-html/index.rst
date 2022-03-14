@@ -1,5 +1,5 @@
-XML
-===
+XML/HTML
+========
 
 Overview
 --------
@@ -45,3 +45,11 @@ Example
 
 .. _`XML schema`: https://www.w3.org/TR/xmlschema-0/
 .. _`RELAX NG`: https://relaxng.org/
+
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    xml-html-examples.ipynb
+    beautifulsoup.ipynb

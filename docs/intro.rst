@@ -42,7 +42,7 @@ project:
    :doc:`workspace/jupyter/ipywidgets/index`.
 4. **Collect data,** either through a :doc:`REST API
    <data-processing/requests/index>` or directly from an :doc:`HTML page
-   <data-processing/beautifulsoup>`.
+   <data-processing/serialisation-formats/xml-html/beautifulsoup>`.
 5. **Cleaning up data** is a recurring task that includes Remove or modify
    redundant, inconsistent, or incorrectly formatted data.
 6. **Analyse data** through exploratory analysis and :doc:`visualising data

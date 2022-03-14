@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<catalog>
+   <book id="1">
+      <title>Python basics</title>
+      <language>en</language>
+      <author>Veit Schiele</author>
+      <license>BSD-3-Clause</license>
+      <date>2021-10-28</date>
+   </book>
+   <book id="2">
+      <title>Jupyter Tutorial</title>
+      <language>en</language>
+      <author>Veit Schiele</author>
+      <license>BSD-3-Clause</license>
+      <date>2019-06-27</date>
+   </book>
+   <book id="3">
+      <title>Jupyter Tutorial</title>
+      <language>de</language>
+      <author>Veit Schiele</author>
+      <license>BSD-3-Clause</license>
+      <date>2020-10-26</date>
+   </book>
+   <book id="4">
+      <title>PyViz Tutorial</title>
+      <language>en</language>
+      <author>Veit Schiele</author>
+      <license>BSD-3-Clause</license>
+      <date>2020-04-13</date>
+   </book>
+</catalog> 

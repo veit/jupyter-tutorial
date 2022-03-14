@@ -11,7 +11,7 @@ media </data-processing/overview.rst#remote-storage-media>` and
 more detail that make data accessible:
 
 * :doc:`requests/index`
-* :doc:`beautifulsoup`
+* :doc:`/data-processing/serialisation-formats/xml-html/beautifulsoup`
 * :doc:`intake/index`
 
 .. seealso::
@@ -54,7 +54,6 @@ Python packages to :doc:`clean up and validate data <../clean-prep/index>`.
     pandas-io
     serialisation-formats/index
     requests/index
-    beautifulsoup
     intake/index
     postgresql/index
     nosql/index

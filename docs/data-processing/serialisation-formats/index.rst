@@ -67,6 +67,6 @@ booleans, and None.
     pickle
     protobuf
     toml
-    xml
+    xml-html/index
     yaml
     others
