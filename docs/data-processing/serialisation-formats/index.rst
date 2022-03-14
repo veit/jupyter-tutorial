@@ -64,7 +64,7 @@ booleans, and None.
     csv/index
     json/index
     excel.ipynb
-    pickle
+    pickle/index
     protobuf
     toml
     xml-html/index

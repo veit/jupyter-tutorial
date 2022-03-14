@@ -31,37 +31,6 @@ Overview
 |                       |       | <https://docs.python.org/3/library/archiving.html>`_. |
 +-----------------------+-------+-------------------------------------------------------+
 
-Example
--------
-
-#. Write
-
-   .. code-block:: python
-
-    import pickle
-
-    # An arbitrary collection of objects supported by pickle.
-    data = {
-        'a': [1, 2.0, 3, 4+6j],
-        'b': ("character string", b"byte string"),
-        'c': {None, True, False}
-    }
-
-    with open('data.pickle', 'wb') as f:
-        # Pickle the 'data' dictionary using the highest protocol available.
-        pickle.dump(data, f, pickle.HIGHEST_PROTOCOL)
-
-#. Read
-
-   .. code-block:: python
-
-    import pickle
-
-    with open('data.pickle', 'rb') as f:
-        # The protocol version used is detected automatically, so we do not
-        # have to specify it.
-        data = pickle.load(f)
-
 .. seealso::
 
     `pickle – Python object serialization <https://docs.python.org/3/library/pickle.html>`_
@@ -78,3 +47,10 @@ Example
 .. _`574`: https://www.python.org/dev/peps/pep-0574
 .. _`Don’t pickle your data`:
    https://www.benfrederickson.com/dont-pickle-your-data/
+
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    pickle-examples
