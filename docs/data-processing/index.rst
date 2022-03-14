@@ -49,12 +49,12 @@ Python packages to :doc:`clean up and validate data <../clean-prep/index>`.
     :maxdepth: 0
 
     opendata
-    remote-file-systems
-    geodata
     pandas-io
     serialisation-formats/index
-    requests/index
     intake/index
+    requests/index
+    remote-file-systems
+    geodata
     postgresql/index
     nosql/index
     apis/index
