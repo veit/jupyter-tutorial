@@ -11,7 +11,6 @@ media </data-processing/overview.rst#remote-storage-media>` and
 more detail that make data accessible:
 
 * :doc:`requests/index`
-* :doc:`/data-processing/serialisation-formats/xml-html/beautifulsoup`
 * :doc:`intake/index`
 
 .. seealso::
