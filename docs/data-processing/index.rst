@@ -4,12 +4,12 @@ Read, persist and provide data
 You can get an overview of public repositories with research data e.g. in
 :doc:`opendata`.
 
-In addition to specific Python libraries for accessing :ref:`remote storage
-media </data-processing/overview.rst#remote-storage-media>` and
-:ref:`/data-processing/overview.rst#geodata`, we will introduce you to different
-:doc:`serialisation formats <serialisation-formats/index>` and three tools in
-more detail that make data accessible:
+In addition to specific Python libraries for accessing
+:doc:`/data-processing/remote-file-systems` and :doc:`/data-processing/geodata`, we will
+introduce you to different :doc:`serialisation formats <serialisation-formats/index>` and
+three tools in more detail that make data accessible:
 
+* :doc:`/data-processing/pandas-io`
 * :doc:`requests/index`
 * :doc:`intake/index`
 
@@ -49,7 +49,8 @@ Python packages to :doc:`clean up and validate data <../clean-prep/index>`.
     :maxdepth: 0
 
     opendata
-    overview
+    remote-file-systems
+    geodata
     pandas-io
     serialisation-formats/index
     requests/index
