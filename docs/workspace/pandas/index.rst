@@ -21,6 +21,7 @@ pandas
     data-structures.ipynb
     python-data-structures.ipynb
     indexing.ipynb
+    transforming.ipynb
     dropping.ipynb
     select-filter.ipynb
     arithmetic.ipynb
