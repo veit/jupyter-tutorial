@@ -43,6 +43,7 @@ Overview
     :maxdepth: 0
 
     nulls.ipynb
+    outliers.ipynb
     string-matching.ipynb
     deduplicate.ipynb
     engarde.ipynb
