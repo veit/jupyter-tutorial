@@ -27,3 +27,4 @@ pandas
     arithmetic.ipynb
     descriptive-statistics.ipynb
     sorting-ranking.ipynb
+    discretisation.ipynb
