@@ -29,3 +29,4 @@ pandas
     sorting-ranking.ipynb
     discretisation.ipynb
     string-manipulation.ipynb
+    hierarchical-indexing.ipynb
