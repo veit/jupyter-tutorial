@@ -28,3 +28,4 @@ pandas
     descriptive-statistics.ipynb
     sorting-ranking.ipynb
     discretisation.ipynb
+    string-manipulation.ipynb
