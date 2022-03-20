@@ -30,3 +30,4 @@ pandas
     discretisation.ipynb
     string-manipulation.ipynb
     hierarchical-indexing.ipynb
+    group-operations.ipynb
