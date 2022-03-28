@@ -148,7 +148,7 @@ select the standard Windows console window.
 .. note::
     You can find a comprehensive example of a `~/.gitconfig` file in my
     `dotfiles <https://github.com/veit/dotfiles/>`__ repository: `.gitconfig
-    <https://github.com/veit/dotfiles/blob/main/.gitconfig>`_.
+    <https://github.com/veit/dotfiles/blob/main/.config/git/config>`_.
 
 The ``.gitignore`` file
 ~~~~~~~~~~~~~~~~~~~~~~~
