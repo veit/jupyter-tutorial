@@ -20,8 +20,8 @@ Work on a project
 ~~~~~~~~~~~~~~~~~
 
 ``$ git clone [project_url]``
-   downloads a project with all branches and the entire history from the remote
-   repository
+    downloads a project with all branches and the entire history from the remote
+    repository
 
     ``--depth``
         indicates the number of commits to be downloaded
