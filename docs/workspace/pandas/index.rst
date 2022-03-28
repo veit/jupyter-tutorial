@@ -1,7 +1,20 @@
 pandas
 ======
 
-`pandas <https://pandas.pydata.org/>`_ 
+`pandas <https://pandas.pydata.org/>`_  is a Python library used for processing
+data sets. It has functions for analysing, cleaning, manipulating and
+visualising data. With pandas, we can analyse large amounts of data and draw
+conclusions based on statistical theories. For example, we can use pandas to
+check whether there are correlations between two or more columns, what the
+average, maximum and minimum values are. Further possibilities of pandas are:
+
+* fast and efficient processing and analysis of data
+* inserting and deleting columns in tables and higher-dimensional objects
+* merging and connecting data sets
+* Condense and simplify data and display it in pivot tables.
+* powerful grouping functions to perform split-apply-combine operations.
+
+This has made pandas one of the most important libraries for data science.
 
 .. seealso::
     * `Home
