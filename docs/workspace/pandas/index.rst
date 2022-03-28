@@ -32,3 +32,4 @@ pandas
     hierarchical-indexing.ipynb
     group-operations.ipynb
     aggregation.ipynb
+    apply.ipynb
