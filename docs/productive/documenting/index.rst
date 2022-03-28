@@ -70,6 +70,9 @@ documentation of the Linux kernel: `Kernel documentation update
 documentation. Read the Docs makes it easy to create and publish documentation
 after each commit.
 
+For project documentation, the visualisation of Git feature branches and tags
+with :doc:`../git/git-big-picture` can be helpful.
+
 .. seealso::
    * `Eric Holscher: Why You Shouldn’t Use “Markdown” for Documentation
      <https://ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/>`_
