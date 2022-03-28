@@ -23,8 +23,8 @@ Work on a project
    downloads a project with all branches and the entire history from the remote
    repository
 
-   ``--depth``
-       indicates the number of commits to be downloaded
+    ``--depth``
+        indicates the number of commits to be downloaded
 
     ``-b``
         specifies the name of the remote branch to be downloaded
