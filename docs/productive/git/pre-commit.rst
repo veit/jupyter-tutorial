@@ -140,7 +140,8 @@ Example of GitHub Actions
 
 .. seealso::
 
-    `pre-commit/action <https://github.com/pre-commit/action>`_
+    * `pre-commit/action <https://github.com/pre-commit/action>`_
+    * `pre-commit ci <https://pre-commit.ci/>`_
 
 Example for GitLab Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
