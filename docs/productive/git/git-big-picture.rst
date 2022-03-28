@@ -5,15 +5,22 @@
 some filters to show only the interesting areas, e.g. the hierarchy of tags and
 branches.
 
-Example
--------
+Examples
+--------
 
-Here is the example of this tutorial with merges but without tags:
+.. code-block:: console
 
-.. image:: git-big-picture7r6bxfcw.svg
-   :alt: Git graph with merges and without tags
-   :width: 171 px
-   :height: 1374 px
+   git big-picture -o git-big-picture.svg
+
+.. image:: git-big-picture.svg
+   :alt: Git graph with merges and tags
+
+.. code-block:: console
+
+   $ git big-picture -ao git-big-picture_all.svg
+
+.. image:: git-big-picture_all.svg
+   :alt: Git graph with merges, tags and commits
 
 Installation
 ------------
