@@ -146,7 +146,7 @@ Git best practices
 
     .. code-block:: console
 
-        $ git rebase -i sha origin
+        $ git rebase -i SHA origin/main
 
     ``-i``
         Interactive mode, in which your standard editor is opened and a list of
