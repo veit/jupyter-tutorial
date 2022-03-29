@@ -90,6 +90,19 @@ Git best practices
   by which author the change was made. You can find more information on this in
   the Git documentation: `git-blame <https://git-scm.com/docs/git-blame>`_.
 
+  If you use gitmojis in your commit messages, you can easily see the intent of
+  the commit later.
+
+  .. note::
+
+    * `gitmoji.dev <https://gitmoji.dev/>`_
+    * `github.com/carloscuesta/gitmoji
+      <https://github.com/carloscuesta/gitmoji>`_
+    * `github.com/carloscuesta/gitmoji-cli
+      <https://github.com/carloscuesta/gitmoji-cli>`_
+    * `Visual Studio Code Extension
+      <https://marketplace.visualstudio.com/items?itemName=seatonjiang.gitmoji-vscode>`_
+
   GitLab also interprets certain commit messages as links, e.g.
 
   .. code-block:: console
