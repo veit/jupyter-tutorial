@@ -17,7 +17,7 @@ formats:
 python:
   version: 3.8
   install:
-    - requirements: docs/constraints.txt
+    - requirements: docs/requirements.txt
 
 build:
   image: latest
