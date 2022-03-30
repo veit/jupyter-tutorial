@@ -41,7 +41,7 @@ Git best practices
     $ git add .gitignore
     $ git commit -m 'Initial commit'
     $ git remote add origin ssh://git@github.com:veit/cusy.example.git
-    $ git push -u origin master
+    $ git push -u origin main
 
   Each repository should also have a ``README.rst`` file that describes the
   deployment and the basic structure of the code.
@@ -177,7 +177,7 @@ Git best practices
 
         .. code-block:: console
 
-          $ git push origin HEAD:master -f
+          $ git push origin HEAD:main -f
 
   * Modifying a commit message
 

@@ -8,8 +8,8 @@ Merge requests support a workflow for regular deployments.
 ==========================
 
 When you create a branch, you create a new environment in which to try new
-things. This does not affect the ``master`` branch. And you can be sure that the
-branch will not be merged with the ``master`` branch until it has been reviewed
+things. This does not affect the ``main`` branch. And you can be sure that the
+branch will not be merged with the ``main`` branch until it has been reviewed
 by someone you work with.
 
 .. note::
@@ -17,7 +17,7 @@ by someone you work with.
    ``refactor-user-model`` oder ``user-content-cache``.
 
 .. note::
-   Make sure that the ``master`` branch only contains code that is suitable for
+   Make sure that the ``main`` branch only contains code that is suitable for
    deployment.
 
 2. Adding commits
@@ -73,7 +73,7 @@ that the changes can be deployed.
 ========
 
 If the deployment of your changes was also successful, your changes can be
-merged with the ``master`` branch.
+merged with the ``main`` branch.
 
 .. note::
     By inserting certain keywords in the text of your merge request, you can

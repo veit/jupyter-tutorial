@@ -15,7 +15,7 @@ Workspaces
 ``git push``
     moves files from the staging area to the repository.
 
-    ``git push -u origin master``
+    ``git push -u origin main``
         ``-u`` defines the upstream reference for each branch, the arguments are
         then given and no longer have to be specified explicitly.  In our
-        example ``master`` in the external repository is referenced.
+        example ``main`` in the external repository is referenced.

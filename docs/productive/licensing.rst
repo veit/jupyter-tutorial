@@ -125,12 +125,12 @@ badge for you, which you can include in your ``README`` file, for example
     |License|
 
     .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
-       :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+       :target: https://github.com/veit/jupyter-tutorial/blob/main/LICENSE
 
 |License|
 
 .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
-   :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+   :target: https://github.com/veit/jupyter-tutorial/blob/main/LICENSE
 
 Standard format for licensing
 -----------------------------
