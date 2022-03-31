@@ -46,5 +46,6 @@ This has made pandas one of the most important libraries for data science.
     combining-merging.ipynb
     group-operations.ipynb
     aggregation.ipynb
+    convert-dtypes.ipynb
     apply.ipynb
     docs/workspace/pandas/index.rst
