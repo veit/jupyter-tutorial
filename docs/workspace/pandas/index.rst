@@ -42,6 +42,7 @@ This has made pandas one of the most important libraries for data science.
     sorting-ranking.ipynb
     discretisation.ipynb
     string-manipulation.ipynb
+    date-time.ipynb
     hierarchical-indexing.ipynb
     combining-merging.ipynb
     group-operations.ipynb
