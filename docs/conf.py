@@ -39,7 +39,8 @@ extensions = [
     "sphinx.ext.graphviz",
     "sphinx.ext.todo",
     "sphinxcontrib.cairosvgconverter",
-    "sphinxext.opengraph"
+    "sphinxext.opengraph",
+    "sphinx_copybutton"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
