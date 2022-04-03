@@ -116,7 +116,8 @@ Use
 
      This creates an output file whose file name contains a timestamp, for
      example
-     :doc:`output_2021-09-13_10:42:33.ipynb <output_2021-09-13_10:42:33>`.
+     :download:`output_2021-09-13_10:42:33.ipynb
+     <output_2021-09-13_10\:42\:33.ipynb>`.
 
      Finally, you can use ``crontab -e`` to execute the two commands
      automatically at certain times, e.g. on the first day of every month:
