@@ -57,6 +57,8 @@ Third-party extensions
     changes are made
 `Sphinxcontrib-mermaid <https://github.com/mgaitan/sphinxcontrib-mermaid>`_
     allows you to embed Mermaid graphics in your documents.
+`sphinxext-opengraph <https://github.com/wpilibsuite/sphinxext-opengraph>`_
+    generates `OpenGraph <https://ogp.me>`_ metadata
 
 Own Extensions
 --------------
