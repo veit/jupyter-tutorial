@@ -25,7 +25,7 @@ ipython==8.2.0
 jedi==0.18.1
 Jinja2==3.1.1
 jsonschema==4.4.0
-jupyter-client==7.2.0
+jupyter-client==7.2.1
 jupyter-core==4.9.2
 jupyterlab-pygments==0.1.2
 MarkupSafe==2.1.1
@@ -35,14 +35,14 @@ nbclient==0.5.13
 nbconvert==6.4.5
 nbformat==5.2.0
 nbsphinx==0.8.8
-nest-asyncio==1.5.4
+nest-asyncio==1.5.5
 numpy==1.22.3
 packaging==21.3
 pandocfilters==1.5.0
 parso==0.8.3
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==9.0.1
+Pillow==9.1.0
 prompt-toolkit==3.0.28
 ptyprocess==0.7.0
 pure-eval==0.2.2
