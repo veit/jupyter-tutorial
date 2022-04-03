@@ -163,7 +163,7 @@ Git best practices
 
     ``-i``
         Interactive mode, in which your standard editor is opened and a list of
-        all commits after the commit with the hash value  :samp:`{SHA}`to be
+        all commits after the commit with the hash value :samp:`{SHA}` to be
         removed is displayed, for example
 
         .. code-block:: console
