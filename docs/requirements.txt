@@ -9,3 +9,4 @@ Pillow
 nbsphinx
 sphinxcontrib-svg2pdfconverter[CairoSVG]
 sphinxext-opengraph
+sphinx-copybutton
