@@ -114,7 +114,8 @@ Use
         $ dt=$(date '+%Y-%m-%d_%H:%M:%S')
         $ pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
-     This creates an output file whose file name contains a timestamp, e.g.
+     This creates an output file whose file name contains a timestamp, for
+     example
      :doc:`output_2021-09-13_10:42:33.ipynb <output_2021-09-13_10:42:33>`.
 
      Finally, you can use ``crontab -e`` to execute the two commands
