@@ -59,6 +59,8 @@ Third-party extensions
     allows you to embed Mermaid graphics in your documents.
 `sphinxext-opengraph <https://github.com/wpilibsuite/sphinxext-opengraph>`_
     generates `OpenGraph <https://ogp.me>`_ metadata
+`sphinx-design <>https://github.com/executablebooks/sphinx-design`_
+    enables the simple creation of responsive design web components.
 
 Own Extensions
 --------------
