@@ -9,6 +9,7 @@ pythreejs = "*"
 ipyvolume = "*"
 importlib-metadata = "*"
 shot-scraper = "*"
+py-heat-magic = "*"
 
 [dev-packages]
 
