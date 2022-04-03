@@ -61,6 +61,8 @@ Third-party extensions
     generates `OpenGraph <https://ogp.me>`_ metadata
 `sphinx-design <>https://github.com/executablebooks/sphinx-design`_
     enables the simple creation of responsive design web components.
+`sphinx-copybutton <https://github.com/executablebooks/sphinx-copybutton>`_
+    adds a *Copy* button to code blocks.
 `sphinx-favicon <https://github.com/tcmetzger/sphinx-favicon>`_
     makes it easier to add your own favicons for different browsers and devices.
 
