@@ -49,3 +49,4 @@ This has made pandas one of the most important libraries for data science.
     aggregation.ipynb
     convert-dtypes.ipynb
     apply.ipynb
+    reshaping-pivoting.ipynb
