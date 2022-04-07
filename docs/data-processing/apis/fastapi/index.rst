@@ -37,3 +37,4 @@ Key features are:
 
     install
     example
+    extensions
