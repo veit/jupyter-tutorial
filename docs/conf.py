@@ -94,6 +94,10 @@ html_static_path = ["_static"]
 html_logo = "_static/images/logo/logo.svg"
 html_favicon = "_static/images/logo/favicon.ico"
 
+html_css_files = [
+    'css/alerts.css',
+]
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
