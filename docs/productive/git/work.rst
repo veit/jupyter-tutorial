@@ -67,11 +67,18 @@ Work on a project
     To be able to distinguish your hidden changes as well as possible, the
     following two options are recommended:
 
-    * ``git stash -p`` allows you to partially hide changes.
-    * ``git stash save MESSAGE`` adds a message to the changes.
-
-``$ git stash pop``
-    transfer the changes from the hiding place to the work area and empty the
-    hiding place.
-``$ git stash drop``
-    emptying a specific stash.
+    ``git stash -p``
+        allows you to partially hide changes.
+    ``git stash save MESSAGE``
+        adds a message to the changes.
+    ``git stash -u UNTRACKED_FILE``
+        hides unversioned files.
+    ``$ git stash list``
+        lists the hidden changes.
+    ``$ git stash show``
+        shows the changes in the hidden files.
+    ``$ git stash pop``
+        transfer the changes from the hiding place to the work area and empty
+        the hiding place.
+    ``$ git stash drop``
+        emptying a specific stash.
