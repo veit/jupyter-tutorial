@@ -67,7 +67,7 @@ Work on a project
     To be able to distinguish your hidden changes as well as possible, the
     following two options are recommended:
 
-    * ``git stash -p`` allows you to hide partial changes.
+    * ``git stash -p`` allows you to partially hide changes.
     * ``git stash save MESSAGE`` adds a message to the changes.
 
 ``$ git stash pop``
