@@ -63,6 +63,13 @@ Work on a project
     remove a file from the work and stage areas.
 ``$ git stash``
     move the current changes from the work area to the stash.
+
+    To be able to distinguish your hidden changes as well as possible, the
+    following two options are recommended:
+
+    * ``git stash -p`` allows you to hide partial changes.
+    * ``git stash save MESSAGE`` adds a message to the changes.
+
 ``$ git stash pop``
     transfer the changes from the hiding place to the work area and empty the
     hiding place.
