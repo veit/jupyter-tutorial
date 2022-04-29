@@ -108,7 +108,7 @@ increased if necessary, e.g. with:
 
 .. code-block:: console
 
-    $ git config credential.helper 'cache --timeout=3600'
+    $ git config --global credential.helper 'cache --timeout=3600'
 
 macOS
 :::::
