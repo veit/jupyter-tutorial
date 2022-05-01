@@ -312,3 +312,31 @@ working directory as an ignored file.
 .. note::
     You can omit the ``--cached`` option if you want to remove the file from
     both the repository and your local file system.
+
+Commit an ignored file
+::::::::::::::::::::::
+
+It is possible to force the commit of an ignored file to the repository with the
+``-f`` (or ``--force``) option on ``git add``:
+
+.. code-block:: console
+
+    $ cat data/.gitignore
+    *
+    $ git add -f data/iris.csv
+    $ git commit -m "Force add iris.csv"
+
+You might consider this if you have a general pattern (like ``*``) defined, but
+want to commit a specific file. However, a better solution is usually to define
+an exception to the general rule:
+
+.. code-block:: console
+
+    $ echo '!iris.csv' >> data/.gitignore
+    $ cat data/.gitignore
+    *
+    !iris.csv
+    $ git add data/iris.csv
+    $ git commit -m "Add iris.csv"
+
+This approach should be more obvious and less confusing for your team.
