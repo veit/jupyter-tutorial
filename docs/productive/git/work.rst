@@ -49,13 +49,13 @@ Work on a project
     shows the changed words.
 ``$ git checkout -- [file]``
     irrevocably discard changes in the work area.
-``$ git commit -m 'Commit message'``
+``$ git commit``
     make a new commit with the added changes.
-``git commit --dry-run --short``
-    ``--dry-run``
-        shows what would be committed.
-    ``--short``
-        shows the status in short format.
+
+    ``-m 'Commit message'``
+        write a commit message directly in the command line.
+    ``--dry-run --short``
+        shows what would be committed with the status in short format.
 
 ``$ git reset [file]``
     return to the current file from the stage area.
@@ -67,18 +67,18 @@ Work on a project
     To be able to distinguish your hidden changes as well as possible, the
     following two options are recommended:
 
-    ``git stash -p``
+    ``$ -p``
         allows you to partially hide changes.
-    ``git stash save MESSAGE``
+    ``$ save MESSAGE``
         adds a message to the changes.
-    ``git stash -u UNTRACKED_FILE``
+    ``$ -u UNTRACKED_FILE``
         hides unversioned files.
-    ``$ git stash list``
+    ``$ list``
         lists the hidden changes.
-    ``$ git stash show``
+    ``$ show``
         shows the changes in the hidden files.
-    ``$ git stash pop``
+    ``$ pop``
         transfer the changes from the hiding place to the work area and empty
         the hiding place.
-    ``$ git stash drop``
+    ``$ drop``
         emptying a specific stash.
