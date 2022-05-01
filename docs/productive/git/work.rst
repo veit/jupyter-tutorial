@@ -154,4 +154,10 @@ Work on a project
             git stash pop stash@{2}
 .
     ``drop``
-        emptying a specific stash.
+        emptying a specific stash, for example:
+
+
+        .. code-block:: console
+
+            $ git stash drop stash@{0}
+            stash@{0} (defcf56541b74a1ccfc59bc0a821adf0b39eaaba) deleted
