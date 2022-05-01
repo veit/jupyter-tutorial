@@ -8,3 +8,4 @@ nbsphinx
 sphinxcontrib-svg2pdfconverter[CairoSVG]
 sphinxext-opengraph
 sphinx-copybutton
+sphinx_inline_tabs
