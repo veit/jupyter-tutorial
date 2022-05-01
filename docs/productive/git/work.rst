@@ -71,8 +71,54 @@ Work on a project
     To be able to distinguish your hidden changes as well as possible, the
     following two options are recommended:
 
-    ``-p``
-        allows you to partially hide changes.
+    ``-p`` or ``--patch``
+        allows you to partially hide changes, for example:
+
+            .. code-block:: console
+
+                $ git show -p
+                diff --git a/docs/productive/git/work.rst b/docs/productive/git/work.rst
+                index cff338e..1988ab2 100644
+                --- a/docs/productive/git/work.rst
+                +++ b/docs/productive/git/work.rst
+                @@ -83,7 +83,16 @@
+                     ``list``
+                         lists the hidden changes.
+                     ``show``
+                -        shows the changes in the hidden files.
+                +        shows the changes in the hidden files, for example
+                +
+                +        .. code-block:: console
+                +
+                +            $ git show
+                +             index.rst | 1 +
+                +             work.rst | 3 +++
+                +             2 files changed, 4 insertions(+)
+                +
+                     ``pop``
+                         copies changes from the hiding place to the workspace
+                         and empties the hiding place, for example
+                (1/1) Stash this hunk [y,n,q,a,d,e,?]? y
+
+        With ``?`` you get a complete list of options. The most common are:
+
+        +---------------+-----------------------------------------------+
+        | Command       | Description                                   |
+        +===============+===============================================+
+        | ``/``         | searches for a change with a regular          |
+        |               | expression                                    |
+        +---------------+-----------------------------------------------+
+        | ``?``         | Help                                          |
+        +---------------+-----------------------------------------------+
+        | ``n``         | Do not apply this change                      |
+        +---------------+-----------------------------------------------+
+        | ``q``         | All changes already selected will be saved    |
+        +---------------+-----------------------------------------------+
+        | ``s``         | Split these changes                           |
+        +---------------+-----------------------------------------------+
+        | ``y``         | Hide this change                              |
+        +---------------+-----------------------------------------------+
+
     ``save MESSAGE``
         adds a message to the changes.
     ``-u UNTRACKED_FILE``
