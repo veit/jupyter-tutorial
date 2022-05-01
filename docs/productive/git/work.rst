@@ -119,6 +119,24 @@ Work on a project
         | ``y``         | Hide this change                              |
         +---------------+-----------------------------------------------+
 
+    ``branch``
+        creates a branch from hidden files, for example:
+
+        .. code-block :: console
+
+            $ git stash branch stash-example stash@{0}
+            On branch stash-example
+            Changes marked for commit:
+              (use "git restore --staged <file>..." to remove from staging area).
+                new file: docs/productive/git/work.rst
+
+            Changes not marked for commit:
+              (use "git add <file>..." to mark the changes for commit).
+              (use "git restore <file>..." to discard the changes in the working directory)
+                changed: docs/productive/git/index.rst
+
+            stash@{0} (6565fdd1cc7dff9e0e6a575e3e20402e3881a82e) gelöscht
+
     ``save MESSAGE``
         adds a message to the changes.
     ``-u UNTRACKED_FILE``
@@ -133,7 +151,7 @@ Work on a project
 
         .. code-block:: console
 
-            ``git stash pop stash@{2}``
+            git stash pop stash@{2}
 .
     ``drop``
         emptying a specific stash.
