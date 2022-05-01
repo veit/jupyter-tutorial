@@ -44,12 +44,68 @@ Work on a project
         the changes to be adopted can be edited in the standard editor.
 
 :samp:`$ git diff {FILE}`
-    shows differences between work and stage areas.
+    shows differences between work and stage areas, for example:
 
-    :samp:`--staged {FILE}`
+    .. code-block:: console
+
+        $ git diff docs/productive/git/work.rst
+        diff --git a/docs/productive/git/work.rst b/docs/productive/git/work.rst
+        index e2a5ea6..fd84434 100644
+        --- a/docs/productive/git/work.rst
+        +++ b/docs/productive/git/work.rst
+        @@ -46,7 +46,7 @@
+
+         :samp:`$ git diff {FILE}`
+        -    shows differences between work and stage areas.
+        +    shows differences between work and stage areas, for example:
+
+         ``--staged``
+             shows differences between the stage area and the repository.
+
+    ``index e2a5ea6..fd84434 100644`` displays some internal Git metadata that
+    you will probably never need. The numbers correspond to the hash
+    identifiers of the git object versions.
+
+    The rest of the output is a list of diff chunks whose header is enclosed in
+    ``@@`` symbols. It gives a summary of the changes made in the file. In our
+    example, 7 lines were extracted starting at line 46 and 7 lines were added
+    starting at line 46.
+
+    By default, ``git diff`` performs the comparison against ``HEAD``. If you
+    use ``git diff HEAD docs/productive/git/work.rst`` in the example above, it
+    will have the same effect.
+
+    ``--staged``, ``--cached``
         shows differences between the stage area and the repository.
     :samp:`--word-diff`
         shows the changed words.
+
+    ``git diff`` can also be applied to PDFs with the add-on ``pdftohtml``. It
+    can be installed for Debian/Ubuntu with ``sudo apt install poppler-utils``,
+    for macOS with ``brew install pdftohtml``. Then add the following section to
+    the global Git configuration ``~/.gitconfig``:
+
+    .. code-block:: ini
+
+        [diff "pdfconv"]
+        textconv=pdftohtml -stdout
+
+    Finally, in the global ``~/.gitattributes`` file, our ``pdfconf`` filter is
+    associated with PDF files:
+
+    .. code-block:: ini
+
+        *.pdf diff=pdfconv
+
+    Now, when ``git diff`` is called, the PDF file is first converted and then a
+    diff is performed over the output of the converter.
+
+    The same procedure can be used to obtain useful diffs from other binaries,
+    for example ``*.zip``, ``*.jar`` and other archives with ``unzip`` or for
+    changes in the meta information of images with ``exiv2``. There are also
+    conversion tools for converting ``*.odf``, ``.doc`` and other document
+    formats into plain text. For binary files for which there is no converter,
+    strings are often sufficient.
 
 :samp:`$ git checkout -- {FILE}`
     irrevocably discard changes in the work area.
