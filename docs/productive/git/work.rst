@@ -87,17 +87,7 @@ Work on a project
                      ``show``
                 -        shows the changes in the hidden files.
                 +        shows the changes in the hidden files, for example
-                +
-                +        .. code-block:: console
-                +
-                +            $ git show
-                +             index.rst | 1 +
-                +             work.rst | 3 +++
-                +             2 files changed, 4 insertions(+)
-                +
-                     ``pop``
-                         copies changes from the hiding place to the workspace
-                         and empties the hiding place, for example
+                …
                 (1/1) Stash this hunk [y,n,q,a,d,e,?]? y
 
         With ``?`` you get a complete list of options. The most common are:
