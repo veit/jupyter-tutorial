@@ -83,6 +83,11 @@ Work on a project
         shows the changes in the hidden files.
     ``pop``
         transfer the changes from the hiding place to the work area and empty
-        the hiding place.
+        the hiding place, for example
+
+        .. code-block:: console
+
+            ``git stash pop stash@{2}``
+.
     ``drop``
         emptying a specific stash.
