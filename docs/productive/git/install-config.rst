@@ -163,6 +163,93 @@ typical ``.gitignore`` file can look like this:
     /tmp
     *.swp
 
+In doing so, Git uses `Globbing <https://linux.die.net/man/7/glob>`_ patterns, among others:
+
++-------------------------------+-------------------------------+-------------------------------+
+| Pattern                       | Example                       | Description                   |
++===============================+===============================+===============================+
+| .. code-block:: console       | ``logs/instance.log``,        | You can put two asterisks to  |
+|                               | ``logs/instance/error.log``,  | prefix directories anywhere.  |
+|     **/logs                   | ``prod/logs/instance.log``    |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``logs/instance.log``,        | You can put two asterisks to  |
+|                               | ``prod/logs/instance.log``    | prefix files with their name  |
+|     **/logs/instance.log      | but not                       | in a parent directory.        |
+|                               | ``logs/prod/instance.log``    |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``instance.log``,             | An asterisk is a placeholder  |
+|                               | ``error.log``,                | for null or more characters.  |
+|     *.log                     | ``logs/instance.log``         |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``/logs/instance.log``,       | An exclamation mark in front  |
+|                               | ``/logs/error.log``,          | of a pattern ignores it. If a |
+|     /logs                     | but not                       | file matches a pattern, but   |
+|     !/logs/.gitkeep           | ``/logs/.gitkeep`` or         | also a negating one that is   |
+|                               | ``/instance.log``             | defined later, it is not      |
+|                               |                               | ignored.                      |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``/instance.log``,            | With a preceding slash, the   |
+|                               | but not                       | pattern only matches files    |
+|     /instance.log             | ``logs/instance.log``         | in the root directory of the  |
+|                               |                               | repository.                   |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``instance.log``,             | Usualy the pattern match      |
+|                               | ``logs/instance.log``         | files in any directory.       |
+|     instance.log              |                               |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``instance0.log``,            | A question mark fits exactly  |
+|                               | ``instance1.log``,            | on a charater.                |
+|     instance?.log             | aber nicht                    |                               |
+|                               | ``instance.log`` or           |                               |
+|                               | ``instance10.log``            |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``instance0.log``,            | Square brackets can be used   |
+|                               | ``instance1.log``,            | to find a single character    |
+|     instance[0-9].log         | aber nicht                    | from a specific range.        |
+|                               | ``instance.log`` or           |                               |
+|                               | ``instance10.log``            |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``instance0.log``,            | Square brackets match a       |
+|                               | ``instance1.log``,            | single character from a given |
+|     instance[01].log          | aber nicht                    | set.                          |
+|                               | ``instance2.log`` oder        |                               |
+|                               | ``instance01.log``            |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``instance2.log``,            | An exclamation mark can be    |
+|                               | aber nicht                    | used to find any character    |
+|     instance[!01].log         | ``instance0.log``,            | from a specified set.         |
+|                               | ``instance1.log`` oder        |                               |
+|                               | ``instance01.log``            |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``logs``                      | If no slash appended, the     |
+|                               | ``logs/instance.log``         | pattern fix both files and    |
+|     logs                      | ``prod/logs/instance.log``    | the contents of directories   |
+|                               |                               | witch this name.              |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``logs/instance.log``,        | Appending a slash indicates   |
+|                               | ``logs/prod/instance.log``,   | that the pattern is a         |
+|     logs/                     | ``prod/logs/instance.log``    | directory. The entire         |
+|                               |                               | contents of any directory in  |
+|                               |                               | the repository that matches   |
+|                               |                               | the name – including all its  |
+|                               |                               | files and subdirectories –    |
+|                               |                               | are ignored.                  |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       |``var/instance.log``,          | Two Asterisks match null or   |
+|                               |``var/logs/instance.log``,     | more directories.             |
+|     var/**/instance.log       |``var/logs/instance/error.log``|                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``logs/instance/error.log``,  | Wildcards can also be used in |
+|                               | ``logs/instance1/error.log``  | directory names.              |
+|     logs/instance*/error.log  |                               |                               |
++-------------------------------+-------------------------------+-------------------------------+
+| .. code-block:: console       | ``logs/instance.log``,        | Pattern, that specify a       |
+|                               | nicht jedoch                  | particular file in a          |
+|     logs/instance.log         | ``var/logs/instance.log``     | directory are relative to the |
+|                               | oder                          | root of the repository.       |
+|                               | ``instance.log``              |                               |
++-------------------------------+-------------------------------+-------------------------------+
+
 Git-commit empty folder
 :::::::::::::::::::::::
 
