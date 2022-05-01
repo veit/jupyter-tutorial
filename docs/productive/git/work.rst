@@ -161,3 +161,7 @@ Work on a project
 
             $ git stash drop stash@{0}
             stash@{0} (defcf56541b74a1ccfc59bc0a821adf0b39eaaba) deleted
+
+
+    ``clear``
+        delete all your hiding places.
