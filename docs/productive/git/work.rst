@@ -75,6 +75,27 @@ Work on a project
     use ``git diff HEAD docs/productive/git/work.rst`` in the example above, it
     will have the same effect.
 
+    ``git diff`` can be passed Git references. Besides ``HEAD``, some other
+    examples of references are tags and branch names, for example :samp:`git
+    diff {MAIN}..{FEATURE_BRANCH}`. The dot operator in this example indicates
+    that the diff input is the tips of the two branches. The same effect occurs
+    if the dots are omitted and a space is used between the branches. In
+    addition, there is a three-dot operator: :samp:`git diff
+    {MAIN}...{FEATURE_BRANCH}`, which initiates a diff where the first input
+    parameter :samp:`MAIN` is changed so that the reference is the common
+    ancestor of :samp:`{MAIN}` and :samp:`{FEATURE}`.
+
+    Every commit in Git has a commit ID, which you can get by running ``git
+    log``. You can then also pass this commit ID to ``git diff``:
+
+    .. code-block:: console
+
+        $ git log --pretty=oneline
+        af1a395a08221ffa83b46f562b6823cf044a108c (HEAD -> main, origin/main, origin/HEAD) :memo: Add some git diff examples
+        d650de52306b63b93e92bba4f15be95eddfea425 :memo: Add „Debug .gitignore files“ to git docs
+        …
+        $ git diff af1a395a08221ffa83b46f562b6823cf044a108c d650de52306b63b93e92bba4f15be95eddfea425
+
     ``--staged``, ``--cached``
         shows differences between the stage area and the repository.
     :samp:`--word-diff`
