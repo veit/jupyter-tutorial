@@ -292,3 +292,23 @@ purpose, you can set ``excludesfile`` in the ``~/.gitconfig`` file:
     You can find helpful templates in my `dotfiles
     <https://github.com/veit/dotfiles/tree/main/gitignores>`__ repository or
     on the `gitignore.io <https://gitignore.io/>`_ website.
+
+Ignoring a file from the repository
+:::::::::::::::::::::::::::::::::::
+
+If you want to ignore a file that has already been added to the repository in
+the past, you need to delete the file from your repository and then add a
+``.gitignore`` rule for it. Using the ``--cached`` option on ``git rm`` means
+that the file will be deleted from the repository but will remain in your
+working directory as an ignored file.
+
+.. code-block:: console
+
+    $ echo *.log >> .gitignore
+    $ git rm --cached *.log
+    rm 'instance.log'
+    $ git commit -m "Remove log files"
+
+.. note::
+    You can omit the ``--cached`` option if you want to remove the file from
+    both the repository and your local file system.
