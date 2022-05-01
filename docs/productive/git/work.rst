@@ -37,16 +37,20 @@ Work on a project
     changed and files already marked for commit.
 ``$ git add [file]``
     adds a file to the stage area.
-``$ git add -p [file]``
-    adds parts of a file to the stage area.
-``$ git add -e [file]``
-    the changes to be adopted can be edited in the standard editor.
+
+    ``-p [file]``
+        adds parts of a file to the stage area.
+    ``-e [file]``
+        the changes to be adopted can be edited in the standard editor.
+
 ``$ git diff [file]``
     shows differences between work and stage areas.
-``$ git diff --staged [file]``
-    shows differences between the stage area and the repository.
-``$ git diff --word-diff``
-    shows the changed words.
+
+    ``--staged [file]``
+        shows differences between the stage area and the repository.
+    ``--word-diff``
+        shows the changed words.
+
 ``$ git checkout -- [file]``
     irrevocably discard changes in the work area.
 ``$ git commit``
@@ -67,18 +71,18 @@ Work on a project
     To be able to distinguish your hidden changes as well as possible, the
     following two options are recommended:
 
-    ``$ -p``
+    ``-p``
         allows you to partially hide changes.
-    ``$ save MESSAGE``
+    ``save MESSAGE``
         adds a message to the changes.
-    ``$ -u UNTRACKED_FILE``
+    ``-u UNTRACKED_FILE``
         hides unversioned files.
-    ``$ list``
+    ``list``
         lists the hidden changes.
-    ``$ show``
+    ``show``
         shows the changes in the hidden files.
-    ``$ pop``
+    ``pop``
         transfer the changes from the hiding place to the work area and empty
         the hiding place.
-    ``$ drop``
+    ``drop``
         emptying a specific stash.
