@@ -7,10 +7,10 @@ Start working on a project
 Start your own project
 ~~~~~~~~~~~~~~~~~~~~~~
 
-``$ git init [my_project]``
+:samp:`$ git init {MY_PROJECT}`
     creates a new, local git repository
 
-    ``[my_project]``
+    :samp:`{MY_PROJECT}`
         if the project name is given, Git creates a new directory and
         initializes it
 
@@ -19,7 +19,7 @@ Start your own project
 Work on a project
 ~~~~~~~~~~~~~~~~~
 
-``$ git clone [project_url]``
+:samp:`$ git clone {PROJECT_URL}`
     downloads a project with all branches and the entire history from the remote
     repository
 
@@ -35,23 +35,23 @@ Work on a project
 ``$ git status``
     shows the status of the current branch in the working directory with new,
     changed and files already marked for commit.
-``$ git add [file]``
+:samp:`$ git add {FILE}`
     adds a file to the stage area.
 
-    ``-p [file]``
+    :samp:`-p {FILE}`
         adds parts of a file to the stage area.
-    ``-e [file]``
+    :samp:`-e {FILE}`
         the changes to be adopted can be edited in the standard editor.
 
-``$ git diff [file]``
+:samp:`$ git diff {FILE}`
     shows differences between work and stage areas.
 
-    ``--staged [file]``
+    :samp:`--staged {FILE}`
         shows differences between the stage area and the repository.
-    ``--word-diff``
+    :samp:`--word-diff`
         shows the changed words.
 
-``$ git checkout -- [file]``
+:samp:`$ git checkout -- {FILE}`
     irrevocably discard changes in the work area.
 ``$ git commit``
     make a new commit with the added changes.
@@ -61,9 +61,9 @@ Work on a project
     ``--dry-run --short``
         shows what would be committed with the status in short format.
 
-``$ git reset [file]``
+:samp:`$ git reset {FILE}`
     return to the current file from the stage area.
-``$ git rm [file]``
+:SAMP:`$ git rm {FILE}`
     remove a file from the work and stage areas.
 ``$ git stash``
     move the current changes from the work area to the stash.
