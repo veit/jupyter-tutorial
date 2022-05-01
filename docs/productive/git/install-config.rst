@@ -340,3 +340,25 @@ an exception to the general rule:
     $ git commit -m "Add iris.csv"
 
 This approach should be more obvious and less confusing for your team.
+
+Troubleshooting ``.gitignore`` files
+::::::::::::::::::::::::::::::::::::
+
+For complicated ``.gitignore`` patterns, or patterns that are spread across
+multiple ``.gitignore`` files, it can be difficult to figure out why a
+particular file is being ignored. You can use the ``git check-ignore`` command
+with the ``-v`` (or ``--verbose``) option to determine which pattern is causing
+a particular file to be ignored:
+
+.. code-block:: console
+
+    $ git check-ignore -v data/iris.csv
+    data/.gitignore:2:!iris.csv	data/iris.csv
+
+The output shows
+:samp:`{FILE_CONTAINING_THE_PATTERN}:{LINE_NUMBER_OF_THE_PATTERN}:{PATTERN}
+{FILE_NAME}`
+
+You can pass multiple filenames to ``git check-ignore`` if you like, and the
+names themselves don’t even have to match the files that exist in your
+repository.
