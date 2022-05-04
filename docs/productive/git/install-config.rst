@@ -6,41 +6,41 @@ Installation
 
 For iX distributions, Git should be in the standard repository.
 
-* For Debian/Ubuntu:
+.. tab:: Debian/Ubuntu
 
-  .. code-block:: console
+   .. code-block:: console
 
     $ sudo apt install git-all
 
-  The bash autocompletion makes Git easier to use on the command line:
+   The bash autocompletion makes Git easier to use on the command line:
 
-  .. code-block:: console
+   .. code-block:: console
 
     $ sudo apt install bash-completion
 
-* For macOS:
+.. tab:: macOS
 
-  There are several different ways to install Git on a Mac. Probably the easiest
-  eay to do is to install the Xcode Command Line Tools. For this you only have
-  to call up ``git`` in the terminal for the first time:
+   There are several different ways to install Git on a Mac. Probably the
+   easiest way to do is to install the Xcode Command Line Tools. For this you
+   only have to call up ``git`` in the terminal for the first time:
 
-  .. code-block:: console
+   .. code-block:: console
 
     $ git --version
 
-  ``git-completion`` you can install with `Homebrew <https://brew.sh/>`_:
+   ``git-completion`` you can install with `Homebrew <https://brew.sh/>`_:
 
-  Then you have to add the following line in ``~/.bash_profile``:
+   Then you have to add the following line in ``~/.bash_profile``:
 
-  .. code-block:: bash
+   .. code-block:: bash
 
     [[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
-* For Windows:
+.. tab:: Windows
 
-  You can simply go to https://git-scm.com/download/win to start the download
-  automatically. Further information can be found at
-  https://gitforwindows.org/.
+   You can simply go to https://git-scm.com/download/win to start the download
+   automatically. Further information can be found at
+   https://gitforwindows.org/.
 
 Configuration
 -------------
