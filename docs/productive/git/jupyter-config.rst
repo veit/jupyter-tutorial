@@ -18,17 +18,19 @@ query/filter language, but the default settings are usually well chosen.
 Installation
 ------------
 
-``jq`` for Debian/Ubuntu can be installed with:
+``jq`` can be installed with:
 
-.. code-block:: console
+.. tab:: Debian/Ubuntu 
 
-    $ sudo apt install jq
+   .. code-block:: console
 
-or for macOS with:
+      $ sudo apt install jq
 
-.. code-block:: console
+.. tab:: macOS
 
-    $ brew install jq
+   .. code-block:: console
+
+      $ brew install jq
 
 Example
 -------

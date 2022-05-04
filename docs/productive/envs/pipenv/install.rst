@@ -38,17 +38,17 @@ Before installing Python packages, a few prerequisites must be met.
 
    #. If Pip is not yet installed, you can install it
 
-      * for Python 2 with:
+      .. tab:: Python 3
 
-        .. code-block:: console
-
-            $ sudo apt install python-pip
-
-      * for Python 3 with:
-
-        .. code-block:: console
+         .. code-block:: console
 
             $ sudo apt install python3-venv python3-pip
+
+      .. tab:: Python 2
+
+         .. code-block:: console
+
+            $ sudo apt install python-pip
 
 Install Pipenv
 --------------
@@ -70,30 +70,40 @@ overwritten:
    If pipenv is not available in the shell after the installation, the
    ``USER_BASE/bin`` directory may have to be specified in ``PATH``.
 
-   * On Linux and MacOS the ``USER_BASE`` can be determined with:
+   .. tab:: Linux/macOS
 
-        $ python3 -m site --user-base
-        /Users/veit/.local
+      The ``USER_BASE`` can be determined with:
 
-     Then the ``bin`` directory must be appended and added to ``PATH``.
-     Alternatively, ``PATH`` can be set permanently by changing ``~/.profile``
-     or ``~/.bash_profile``, in my case::
+      .. code-block:: console
 
-        export PATH=/Users/veit/.local/bin:$PATH
+         $ python3 -m site --user-base
+         /Users/veit/.local
 
-   * On Windows, the directory can be determined with ``py -m site --user-site``
-     and then ``site-packages`` can be replaced by ``Scripts``. his then gives,
-     for example:
+      Then the ``bin`` directory must be appended and added to ``PATH``.
+      Alternatively, ``PATH`` can be set permanently by changing ``~/.profile``
+      or ``~/.bash_profile``, in my case:
 
-     .. code-block:: console
+      .. code-block:: console
 
-        C:\Users\veit\AppData\Roaming\Python38\Scripts
+         export PATH=/Users/veit/.local/bin:$PATH
 
-     In order to be permanently available, this path can be entered in ``PATH``
-     in the control panel
+   .. tab:: Windows
 
-Further information on user-specific installations can be found in `User
-Installs <https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_.
+      The directory can be determined with ``py -m site --user-site`` and then
+      ``site-packages`` can be replaced by ``Scripts``. this then gives, for
+      example:
+
+      .. code-block:: console
+
+         C:\Users\veit\AppData\Roaming\Python38\Scripts
+
+      In order to be permanently available, this path can be entered in ``PATH``
+      in the control panel.
+
+.. seealso::
+   Further information on user-specific installations can be found in `User
+   Installs
+   <https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_.
 
 Create virtual environments
 ---------------------------

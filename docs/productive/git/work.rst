@@ -101,10 +101,21 @@ Work on a project
     :samp:`--word-diff`
         shows the changed words.
 
-    ``git diff`` can also be applied to PDFs with the add-on ``pdftohtml``. It
-    can be installed for Debian/Ubuntu with ``sudo apt install poppler-utils``,
-    for macOS with ``brew install pdftohtml``. Then add the following section to
-    the global Git configuration ``~/.gitconfig``:
+    ``git diff`` can also be applied to PDFs with the add-on ``pdftohtml``:
+
+    .. tab:: Debian/Ubuntu
+
+       .. code-block:: console
+
+          $ sudo apt install poppler-utils
+
+    .. tab:: macOS
+
+       .. code-block:: console
+
+          $ brew install pdftohtml
+
+    add the following section to the global Git configuration ``~/.gitconfig``:
 
     .. code-block:: ini
 

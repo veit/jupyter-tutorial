@@ -25,19 +25,19 @@ Requirements
 
   * ``gnupg2``
 
-… for Debian/Ubuntu:
+.. tab:: Debian/Ubuntu
 
-.. code-block:: console
+   .. code-block:: console
 
-    $ sudo apt install build-essential patch tar gzip bzip2 git gnupg2
+      $ sudo apt install build-essential patch tar gzip bzip2 git gnupg2
 
-… or for macOS:
+.. tab:: macOS
 
-.. code-block:: console
+   .. code-block:: console
 
-    $ xcode-select --install
-    $ brew install make bash gzip bzip2 git gnupg
-    $ brew link gnupg
+      $ xcode-select --install
+      $ brew install make bash gzip bzip2 git gnupg
+      $ brew link gnupg
 
 Installation
 ------------

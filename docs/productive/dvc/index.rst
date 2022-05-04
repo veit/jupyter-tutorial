@@ -50,29 +50,31 @@ Finally, external dependencies can also be specified with Pipenv.
 
         $ pipenv install dvc[ssh]
 
-Alternatively, DVC can also be installed via the package management of
-Ubuntu/Debian with:
+Alternatively, DVC can also be installed via other package managers:
 
-.. code-block:: console
+.. tab:: Debian/Ubuntu
 
-    $ sudo wget https://dvc.org/deb/dvc.list -O /etc/apt/sources.list.d/dvc.list
-    $ sudo apt update
-    $ sudo apt install dvc
+   .. code-block:: console
 
-For macOS DVC can be installed with:
+      $ sudo wget https://dvc.org/deb/dvc.list -O /etc/apt/sources.list.d/dvc.list
+      $ sudo apt update
+      $ sudo apt install dvc
 
-.. code-block:: console
+.. tab:: macOS
 
-    $ brew install iterative/homebrew-dvc/dvc
+   .. code-block:: console
+
+      $ brew install iterative/homebrew-dvc/dvc
 
 .. note::
-    The following example was created with a current DVC version (1.0.0a9),
-    which partly uses a different syntax than earlier versions. You can
-    currently (8th June 2020) only install this with pip:
 
-     .. code-block:: console
+   The following example was created with a current DVC version (1.0.0a9),
+   which partly uses a different syntax than earlier versions. You can
+   currently (8th June 2020) only install this with pip:
 
-        $ pipenv install dvc[all]==1.0.0a9
+    .. code-block:: console
+
+       $ pipenv install dvc[all]==1.0.0a9
 
 .. toctree::
     :hidden:

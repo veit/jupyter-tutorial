@@ -22,7 +22,7 @@ Requirements
 ------------
 
 * All common Linux distributions are supported
-* MacOS ≥ 10.7 and Xcode ≥ 8
+* macOS ≥ 10.7 and Xcode ≥ 8
 * Windows with `WSL <https://docs.microsoft.com/en-us/windows/wsl/faq>`_.
   In addition, the following libraries must be installed:
 

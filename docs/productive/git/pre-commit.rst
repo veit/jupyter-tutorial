@@ -20,24 +20,24 @@ Installation
 
 Before you can hook the pre-commit package manager must be installed.
 
-… on macOS:
+.. tab:: macOS
 
-.. code-block:: console
+   .. code-block:: console
 
-    $ brew install pre-commit
+      $ brew install pre-commit
 
-… in your Python project:
+.. tab:: Python
 
-.. code-block:: console
+   .. code-block:: console
 
-    $ pipenv install pre-commit
+      $ pipenv install pre-commit
 
-Check the installation with, for example
+   Check the installation with, for example
 
-.. code-block:: console
+   .. code-block:: console
 
-    $ pipenv run pre-commit -V
-    pre-commit 2.6.0
+      $ pipenv run pre-commit -V
+      pre-commit 2.6.0
 
 Configuration
 -------------
