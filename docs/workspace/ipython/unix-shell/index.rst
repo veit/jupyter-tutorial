@@ -15,5 +15,4 @@ with ``!``. The results can then interact with the Jupyter namespace, see
     create-delete.ipynb
     pipes-filters.ipynb
     grep-find.ipynb
-    regex.ipynb
     shell-variables.ipynb
