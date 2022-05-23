@@ -53,4 +53,4 @@ Python code. Mostly pandas is used to
     aggregation.ipynb
     convert-dtypes.ipynb
     apply.ipynb
-    reshaping-pivoting.ipynb
+    pivoting-crosstab.ipynb
