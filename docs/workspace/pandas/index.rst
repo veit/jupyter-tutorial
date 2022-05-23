@@ -39,6 +39,7 @@ Python code. Mostly pandas is used to
     data-structures.ipynb
     python-data-structures.ipynb
     indexing.ipynb
+    date-time.ipynb
     select-filter.ipynb
     transforming.ipynb
     string-manipulation.ipynb
@@ -46,7 +47,6 @@ Python code. Mostly pandas is used to
     descriptive-statistics.ipynb
     sorting-ranking.ipynb
     discretisation.ipynb
-    date-time.ipynb
     combining-merging.ipynb
     group-operations.ipynb
     aggregation.ipynb
