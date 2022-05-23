@@ -50,6 +50,6 @@ Python code. Mostly pandas is used to
     combining-merging.ipynb
     group-operations.ipynb
     aggregation.ipynb
-    convert-dtypes.ipynb
     apply.ipynb
     pivoting-crosstab.ipynb
+    convert-dtypes.ipynb
