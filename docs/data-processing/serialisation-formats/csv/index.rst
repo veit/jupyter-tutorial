@@ -53,6 +53,7 @@ Example
 .. seealso::
 
     * `RFC 4180 <https://tools.ietf.org/html/rfc4180>`_
+    * `xsv <https://github.com/BurntSushi/xsv>`_
 
 .. _`csv`: https://docs.python.org/3/library/csv.html
 .. _`pandas`: https://pandas.pydata.org/
