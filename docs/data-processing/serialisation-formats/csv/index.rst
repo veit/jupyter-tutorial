@@ -36,6 +36,11 @@ Overview
 |                       |       |                                                       |
 +-----------------------+-------+-------------------------------------------------------+
 
+.. seealso::
+
+    * `RFC 4180 <https://tools.ietf.org/html/rfc4180>`_
+    * `xsv <https://github.com/BurntSushi/xsv>`_
+
 Example
 -------
 
@@ -49,11 +54,6 @@ Example
     4.6,0.083333333,3.1,0.458333333,1.5,0.084745763,0.2,0.041666667,setosa
     5,0.194444444,3.6,0.666666667,1.4,0.06779661,0.2,0.041666667,setosa
     ...
-
-.. seealso::
-
-    * `RFC 4180 <https://tools.ietf.org/html/rfc4180>`_
-    * `xsv <https://github.com/BurntSushi/xsv>`_
 
 .. _`csv`: https://docs.python.org/3/library/csv.html
 .. _`pandas`: https://pandas.pydata.org/
