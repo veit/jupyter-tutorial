@@ -42,7 +42,7 @@ mistune==2.0.2
 nbclient==0.6.4
 nbconvert==6.5.0
 nbformat==5.4.0
-nbsphinx==0.8.8
+nbsphinx==0.8.9
 nest-asyncio==1.5.5
 notebook==6.4.11
 numpy==1.22.3
