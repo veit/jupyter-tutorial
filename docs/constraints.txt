@@ -80,7 +80,7 @@ sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
 sphinxcontrib-svg2pdfconverter==1.2.0
 sphinxext-opengraph==0.6.3
-stack-data==0.2.0
+stack-data==0.3.0
 terminado==0.13.3
 tinycss2==1.1.1
 tornado==6.1
