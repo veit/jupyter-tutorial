@@ -50,10 +50,11 @@ project:
 7. **Refactoring** includes parameterisation, validation and performance
    optimisation, including through :doc:`concurrency
    <performance/concurrency>`.
-8. **Creating a product**
-   includes :doc:`productive/testing`, :doc:`productive/logging/index` and
-   :doc:`productive/documenting/index` the methods and functions as well
-   as :doc:`creating packages  <productive/packaging/index>`.
+8. **Creating a product** includes :doc:`productive/testing`,
+   :doc:`productive/logging/index` and :doc:`productive/documenting/index` the
+   methods and functions. :doc:`Creating libraries and packages
+   <productive/packaging>` can be found in our :doc:`Python Basics Tutorial
+   <python-basics:libs/index>`.
 9. **Web applications**
    can either generate dashboards from Jupyter notebooks or require more
    comprehensive application logic, such as demonstrated in

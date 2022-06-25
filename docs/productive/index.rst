@@ -20,7 +20,7 @@ can be tools on the one hand for the :doc:`versioning of the source code
 <git/index>` and the :doc:`training data <dvc/index>` as well as for the
 reproducibility of the :doc:`execution environments <envs/index>`, on the other
 hand for :doc:`testing`, :doc:`logging/index`, :doc:`documenting
-<documenting/index>` and :doc:`creating packages <packaging/index>`.
+<documenting/index>` and :doc:`creating packages <python-basics:libs/index>`.
 
 .. seealso::
 
@@ -44,7 +44,7 @@ hand for :doc:`testing`, :doc:`logging/index`, :doc:`documenting
     git/index
     dvc/index
     envs/index
-    packaging/index
+    packaging
     documenting/index
     licensing
     cite/index
