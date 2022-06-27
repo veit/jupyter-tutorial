@@ -54,7 +54,7 @@ pickleshare==0.7.5
 Pillow==9.1.1
 prometheus-client==0.14.1
 prompt-toolkit==3.0.30
-psutil==5.9.0
+psutil==5.9.1
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
