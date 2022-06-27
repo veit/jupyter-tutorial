@@ -25,7 +25,7 @@ Git log
 
     .. seealso::
 
-        * :doc:`../../workspace/ipython/unix-shell/regex`
+        * :doc:`python-basics:appendix/regex`
 
 ``$ git log -S"foo"``
     filters commits according to certain lines in the source code.
