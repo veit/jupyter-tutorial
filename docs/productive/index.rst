@@ -1,6 +1,16 @@
 Create a product
 ================
 
+With Jupyter Notebooks you can quickly build prototypes for data analysis. You
+can also use them to document and present your results. However, they are not
+well suited for reproducing your results with :menuselection:`Kernel ‣ Restart
+and Run All` in a few days or years. For example, the notebooks contain very
+little information about the environment, the :doc:`kernel
+</workspace/jupyter/kernels/index>`, with which they have been able to run
+successfully in the past. Although you can use ``pd.show_versions()`` to display
+:ref:`/workspace/ipython/examples.ipynb#Information-about-the-host-operating-system-and-the-versions-of-installed-Python-packages`,
+this is unfortunately not sufficient to reproduce such an environment.
+
     «Non-reproducible single occurrences are of no significance to science.»[#]_
 
 .. [#] Karl Popper in *The Logic of Scientific Discovery*, 1959
