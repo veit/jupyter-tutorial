@@ -118,7 +118,7 @@ Nested Dicts [#]_. Data classes save you from writing and managing these
 methods.
 
 .. seealso::
-   * `PEP 557 – Data Classes <https://www.python.org/dev/peps/pep-0557/>`_
+   * `PEP 557 – Data Classes <https://peps.python.org/pep-0557/>`_
 
 `attrs <https://www.attrs.org/en/stable/>`_  is a Python package that has been
 around much longer than ``dataclasses``, is more comprehensive and can also be
