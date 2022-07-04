@@ -70,7 +70,7 @@ six==1.16.0
 snowballstemmer==2.2.0
 soupsieve==2.3.2.post1
 Sphinx==5.0.2
-sphinx-basic-ng==0.0.1a11
+sphinx-basic-ng==0.0.1a12
 sphinx-copybutton==0.5.0
 sphinx-inline-tabs==2022.1.2b11
 sphinxcontrib-applehelp==1.0.2
