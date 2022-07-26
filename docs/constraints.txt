@@ -45,7 +45,6 @@ nbformat==5.4.0
 nbsphinx==0.8.9
 nest-asyncio==1.5.5
 notebook==6.4.12
-numpy==1.23.1
 packaging==21.3
 pandocfilters==1.5.0
 parso==0.8.3
