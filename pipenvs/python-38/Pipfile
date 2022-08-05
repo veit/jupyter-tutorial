@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 qgrid = "*"
+pandas-datareader = "*"
 dedupe = "*"
 pythreejs = "*"
 ipyvolume = "*"
