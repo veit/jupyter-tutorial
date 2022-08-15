@@ -142,6 +142,31 @@ Git best practices
   With `Gitleaks <https://github.com/zricethezav/gitleaks>`_ you can regularly
   check your repositories for unintentionally saved access data.
 
+  You can also run Gitleaks automatically as a GitLab action. To do this, you
+  need to include the `Secret-Detection.gitlab-ci.yml
+  <https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Secret-Detection.gitlab-ci.yml>`_ template, for example, in a stage called
+  ``secrets-detection`` in your ``.gitlab-ci.yml`` file:
+
+  .. code-block:: yaml
+
+     stages:
+       - secrets-detection
+
+     gitleaks:
+       stage: secrets-detection
+       include:
+         - template: Security/Secret-Detection.gitlab-ci.yml
+
+  The template creates secret detection jobs in your CI/CD pipeline and searches
+  the source code of your project for secrets. The results are saved as a
+  `Secret Detection Report Artefakt
+  <https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html#artifactsreportssecret_detection>`_ that you can download and analyse later.
+
+  .. seealso::
+
+     * `GitLab Secret Detection
+       <https://docs.gitlab.com/ee/user/application_security/secret_detection/>`_
+
   With `git-filter-repo <https://github.com/newren/git-filter-repo>`_ you can
   remove unwanted files, be it access data or large binary files, from your Git
   history.
