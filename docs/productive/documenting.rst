@@ -20,3 +20,6 @@ engineers:
 
 Together, they all need information about how the product is licensed
 (``LICENSE`` file or ``LICENSES`` folder and how they can get help if needed.
+
+.. seealso::
+   * :doc:`python-basics:document/index`
