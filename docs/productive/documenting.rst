@@ -23,3 +23,5 @@ Together, they all need information about how the product is licensed
 
 .. seealso::
    * :doc:`python-basics:document/index`
+   * `Read the Docs for Science
+     <https://docs.readthedocs.io/en/latest/science.html>`_
