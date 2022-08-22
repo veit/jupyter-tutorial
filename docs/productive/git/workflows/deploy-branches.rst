@@ -24,13 +24,13 @@ Release branches
 ================
 
 Release branches are recommended when software is to be delivered to customers.
-In this case each branch should contain a minor version, e.g. ``2.7`` or
+In this case each branch should contain a minor version, for example ``2.7`` or
 ``3.4``. Usually these branches are created from the ``main`` branch as late
 as possible. This reduces the number of merges that have to be distributed
 across multiple branches during bug fixes. Usually, these are first transferred
 to the  ``main`` and then transferred from there to the release branch with
 `git cherry-pick <https://git-scm.com/docs/git-cherry-pick>`_. This upstream
-first approach is e.g. used by `Google
+first approach is for example used by `Google
 <https://www.chromium.org/chromium-os/chromiumos-design-docs/upstream-first>`_
 and `Red Hat
 <https://www.redhat.com/en/blog/a-community-for-using-openstack-with-red-hat-rdo>`_.

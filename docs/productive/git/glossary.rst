@@ -22,7 +22,8 @@ Git glossary
         local version of a repository including all commits and branches
 
     ``remote``
-        shared repository, e.g. on GitLab, for exchanging changes in a team
+        shared repository, for example on GitLab, for exchanging changes in a
+        team
 
     ``fork``
         Copy of a repository on GitLab that belongs to another user

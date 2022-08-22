@@ -18,7 +18,8 @@ Glossary
 
        Conda does not install packages from PyPI and can only install from the
        official Continuum repositories or from `anaconda.org
-       <https://anaconda.org/>`_ or local ( e.g. intranet) package servers.
+       <https://anaconda.org/>`_ or local ( for example intranet) package
+       servers.
        Note, however, that Pip can be installed in conda and can work side by
        side to manage distributions of PyPI.
 
@@ -58,8 +59,8 @@ Glossary
            possibly associated ``.pyc``- and/or ``.pyo`` files).
 
        extension module
-           Usually a single dynamically loadable precompiled file, e.g. a common
-           object file (``.so``).
+           Usually a single dynamically loadable precompiled file, for example a
+           common object file (``.so``).
 
    pip
        A tool for installing Python packages.

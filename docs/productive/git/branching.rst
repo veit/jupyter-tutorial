@@ -15,7 +15,8 @@ Git branches
     ``-b``
         creates the specified branch if it does not already exist.
 ``$ git merge [from name]``
-    connects the given branch with the current branch you are currently in, e.g.
+    connects the given branch with the current branch you are currently in, for
+    example:
 
     .. code-block:: console
 

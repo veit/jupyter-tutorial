@@ -40,7 +40,7 @@ You can find practical examples in the `Pyre repository
 Use
 ---
 
-Pyre can be called, e.g. with
+Pyre can be called, for example with
 
 .. code-block:: console
 
@@ -62,7 +62,7 @@ Installation
 Use
 ~~~
 
-#. Parsing the JSON file, e.g. with
+#. Parsing the JSON file, for example with
 
    .. code-block:: console
 

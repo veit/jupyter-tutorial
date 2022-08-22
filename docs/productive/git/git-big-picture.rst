@@ -2,8 +2,8 @@
 ===================
 
 ``git-big-picture`` visualises Git repositories as DAGs. The tool comes with
-some filters to show only the interesting areas, e.g. the hierarchy of tags and
-branches.
+some filters to show only the interesting areas, for example the hierarchy of
+tags and branches.
 
 Examples
 --------
@@ -39,7 +39,7 @@ Git-Integration
 ---------------
 
 You can easily integrate the tool into Git by adding the script
-``git-big-picture`` to ``$PATH``. Then you can use it, e.g. with:
+``git-big-picture`` to ``$PATH``. Then you can use it, for example with:
 
 .. code-block:: console
 

@@ -2,7 +2,7 @@ Git tagging
 ===========
 
 ``$ git tag``
-    list all tags, e.g.
+    list all tags, for example:
 
     .. code-block:: console
 
@@ -26,7 +26,7 @@ Git tagging
     With ``sha`` the specific commit gets a tag, not the current one.
 
 ``$ git tag -a [name] [commit sha] [-m 'Commit message']``
-    creates a tag with the name ``name`` for the current commit, e.g.:
+    creates a tag with the name ``name`` for the current commit, for example:
 
     .. code-block:: console
 
@@ -42,7 +42,7 @@ Git tagging
     switches to the tagged version.
 
 ``git tag [-d name]``
-    delete a tag, e.g.
+    delete a tag, for example:
 
     .. code-block:: console
 

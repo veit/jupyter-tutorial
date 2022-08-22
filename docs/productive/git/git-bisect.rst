@@ -7,7 +7,7 @@ Find regressions with ``git bisect``
    down the area where a bug was introduced with  ``git bisect bad [COMMIT]``
    and ``git bisect good [COMMIT]``. Alternatively, you can use the short form
    ``git bisect start [BAD COMMIT] [GOOD COMMIT]``. ``git bisect`` then checks
-   out a commit in the middle and asks you to test it, e.g.:
+   out a commit in the middle and asks you to test it, for example:
 
    .. code-block:: console
 

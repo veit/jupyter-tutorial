@@ -84,7 +84,7 @@ Options
     However, you can also specify your own mirrors:
 
     * with the environment variable ``PIPENV_PYPI_MIRROR``
-    * in the command line, e.g. with:
+    * in the command line, for example with:
 
       .. code-block:: console
 
@@ -328,7 +328,8 @@ You can also install Python packages from version control, for example:
 Further information on pipenv and VCS can be found in `Pipfile spec
 <https://github.com/pypa/pipfile>`_.
 
-The version management credentials can also be specified in the pipfile, e.g.
+The version management credentials can also be specified in the pipfile, for
+example
 
 .. code-block:: ini
 

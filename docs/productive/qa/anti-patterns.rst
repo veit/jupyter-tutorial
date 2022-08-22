@@ -38,7 +38,7 @@ Objects that should be functions
 --------------------------------
 
 Sometimes, however, object-oriented code should also be better broken down into
-functions, e.g. if a class contains only one other method apart from
+functions, for example if a class contains only one other method apart from
 ``.__init__()`` or only static methods.
 
 .. note::
@@ -95,7 +95,7 @@ can be replaced by
    The `itertools <https://docs.python.org/3/library/itertools.html>`_ of the
    Python standard library are often also good for reducing the nesting depth by
    creating functions to create iterators from data structures. You can also
-   filter with itertools, e.g. with `filterfalse
+   filter with itertools, for example with `filterfalse
    <https://docs.python.org/3/library/itertools.html#itertools.filterfalse>`_.
 
 Query tools for complex dicts

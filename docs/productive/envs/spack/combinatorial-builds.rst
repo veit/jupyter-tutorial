@@ -196,7 +196,7 @@ Spack provides a ``spec`` syntax for describing custom DAGs:
 
 * Dependencies in Spack can be optional:
 
-  * You can define *named variants*, e.g. in
+  * You can define *named variants*, for example in
     ``~/spack/var/spack/repos/builtin/packages/vim/package.py``:
 
     .. code-block:: python
@@ -216,8 +216,8 @@ Spack provides a ``spec`` syntax for describing custom DAGs:
         $ spack install vim +python
         $ spack install vim –python
 
-  * Depending on other conditions, dependencies can optionally apply, e.g. gcc
-    dependency on mpc from version 4.5:
+  * Depending on other conditions, dependencies can optionally apply, for
+    example gcc dependency on mpc from version 4.5:
 
     .. code-block:: python
 

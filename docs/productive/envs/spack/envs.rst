@@ -283,7 +283,7 @@ looks like this:
 Configuration
 -------------
 
-``spack spec`` specifies the dependencies of certain packages, e.g.
+``spack spec`` specifies the dependencies of certain packages, for example
 
 .. code-block:: console
 

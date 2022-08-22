@@ -163,8 +163,7 @@ badge:
 CIR workflow
 ~~~~~~~~~~~~
 
-You can easily integrate REUSE into your continuous integration workflow, e.g.
-for GitLab in the ``.gitlab-ci.yml`` file with:
+You can easily integrate REUSE into your continuous integration workflow, for example for GitLab in the ``.gitlab-ci.yml`` file with:
 
 .. code-block:: yaml
 

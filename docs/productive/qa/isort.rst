@@ -14,7 +14,7 @@ Installation
 Configuration
 -------------
 
-``isort`` can be configured e.g. in the ``pyproject.toml`` file:
+``isort`` can be configured for example in the ``pyproject.toml`` file:
 
 .. code-block:: ini
 

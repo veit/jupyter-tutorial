@@ -16,7 +16,7 @@ Git log
 ``$ git log --author = "name"``
     filters the commit history by authors.
 
-    You can also search for several authors at the same time, e.g.
+    You can also search for several authors at the same time, for example
 
     ``$ git log --author="veit\|vsc"``
 
@@ -51,5 +51,5 @@ Git log
     List commits that exist in ``ref`` and are not merged with the current
     branch.
 ``$ git reflog``
-    List operations (e.g. ``checkout``, ``commit``) that have been performed in
-    the local repository.
+    List operations (for example ``checkout``, ``commit``) that have been
+    performed in the local repository.

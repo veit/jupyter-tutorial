@@ -55,7 +55,7 @@ with
 
     $ pipenv run pytype --generate-config pytype.cfg
 
-This then starts with e.g.
+This then starts with for example
 
 .. code-block:: ini
 

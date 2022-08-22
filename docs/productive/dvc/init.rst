@@ -47,7 +47,7 @@ integrated as follows, for example:
     In addition, other protocols are supported, which are preceded by the path,
     including ``ssh:``, ``hdfs:`` and ``https:``.
 
-Another remote data storage can simply be added, e.g. with:
+Another remote data storage can simply be added, for example with:
 
 .. code-block:: console
 
@@ -109,7 +109,7 @@ Import and update
 -----------------
 
 You can also import data and models from another project with the command ``dvc
-import``, e.g.:
+import``, for example:
 
 .. code-block:: console
 
@@ -121,7 +121,7 @@ This loads the file from the `dataset-registry
 directory, adds ``.gitignore`` and creates ``data.xml.dvc``.
 
 With ``dvc update`` we can update these data sources before we reproduce a
-pipeline that depends on these data sources,  e.g.
+pipeline that depends on these data sources, for example
 
 .. code-block:: console
 

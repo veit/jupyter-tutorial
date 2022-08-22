@@ -27,8 +27,8 @@ If an ``.env`` file exists in your virtual environment, ``$ pipenv shell`` and
     >>> os.environ['USERNAME']
     'Veit'
 
-The credentials, e.g. of the version management, can also be specified in the
-``Pipfile``, e.g.:
+The credentials of the version management, can also be specified in the
+``Pipfile``, for example:
 
 .. code-block:: ini
 

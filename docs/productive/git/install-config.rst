@@ -104,7 +104,7 @@ can, for example, specify the following:
     $ git config --global credential.helper Cache
 
 This will keep your password in the cache for 15 minutes. The timeout can be
-increased if necessary, e.g. with:
+increased if necessary, for example with:
 
 .. code-block:: console
 

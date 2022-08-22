@@ -103,7 +103,7 @@ Git best practices
     * `Visual Studio Code Extension
       <https://marketplace.visualstudio.com/items?itemName=seatonjiang.gitmoji-vscode>`_
 
-  GitLab also interprets certain commit messages as links, e.g.
+  GitLab also interprets certain commit messages as links, for example:
 
   .. code-block:: console
 

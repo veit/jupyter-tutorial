@@ -48,7 +48,7 @@ steps are required on the example of the Jupyter tutorial:
    .. figure:: zenodo-release.png
       :alt: Zenodo release
 
-#. Finally, you can include a badge in the readme of your software, e.g.:
+#. Finally, you can include a badge in the readme of your software, for example:
 
    Markdown:
     .. code-block:: md

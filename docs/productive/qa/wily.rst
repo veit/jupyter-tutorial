@@ -188,7 +188,7 @@ following to the ``pre-commit-config.yaml`` configuration file, for example:
 ~~~~~~~~~~~~~~~~~~~~~
 
 Usually Wily compares the complexity with the previous revision. However, you
-can also specify other references, e.g. ``HEAD^1`` with
+can also specify other references, for example ``HEAD^1`` with
 
 .. code-block:: console
 

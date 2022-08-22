@@ -10,8 +10,8 @@ sense to work with a monolithic repository or monorepo.
 Definition
 ==========
 
-* The repository contains several logical projects (e.g. an iOS client and a web
-  application)
+* The repository contains several logical projects (for example an iOS client
+  and a web application)
 * These projects are usually only loosely connected to one another
 * Most of these projects also have a linear history
 
@@ -30,8 +30,8 @@ example, from:
 
 a large number of commits
     Since Git uses DAGs ((*directed acyclic graphs*) to display the history of a
-    project, all operations that run through this graph, e.g. ``git log`` or
-    ``git blame``, will be slow.
+    project, all operations that run through this graph, for example ``git log``
+    or ``git blame``, will be slow.
 
 a large number of refs
     A large number of branches and tags also slow down git. With

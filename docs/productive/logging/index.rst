@@ -18,9 +18,9 @@ Logging usually serves two different purposes:
 
 * Monitoring:
 
-  * The logging records events for user-defined heuristics, e.g. for business
-    analyses. These records can be used for reports or optimisation of the
-    business goals and, if necessary, visualised.
+  * The logging records events for user-defined heuristics, for example for
+    business analyses. These records can be used for reports or optimisation of
+    the business goals and, if necessary, visualised.
 
 What are the advantages of  ``logging`` over  ``print``?
 

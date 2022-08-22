@@ -13,8 +13,8 @@ branch will not be merged with the ``main`` branch until it has been reviewed
 by someone you work with.
 
 .. note::
-   Make sure that the names of the branches are as meaningful as possible, e.g.
-   ``refactor-user-model`` oder ``user-content-cache``.
+   Make sure that the names of the branches are as meaningful as possible, for
+   example ``refactor-user-model`` oder ``user-content-cache``.
 
 .. note::
    Make sure that the ``main`` branch only contains code that is suitable for
@@ -54,9 +54,9 @@ questions or comments about your changes: The coding style may not match the
 project guidelines, or the lack of unit tests, or everything looks good. Merge
 requests are there to promote and document such discussions.
 
-You can also execute ``git push`` on this branch after a merge request, e.g. to
-include fixes that arose from these discussions in this merge request. GitLab
-shows this new commit in the view of this merge request.
+You can also execute ``git push`` on this branch after a merge request, for
+example to include fixes that arose from these discussions in this merge
+request. GitLab shows this new commit in the view of this merge request.
 
 .. note::
    The comments on your merge request are also written in Markdown so that you

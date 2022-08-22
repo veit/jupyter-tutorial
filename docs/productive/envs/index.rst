@@ -8,10 +8,11 @@ the Python package manager :term:`pip`, the call would look like this:
 
     $ python -m pip install --no-deps --require-hashes ----only-binary=:all:
 
-Dedicated environments (e.g. with :doc:`pipenv/index`, :doc:`devpi` and
+Dedicated environments (for example with :doc:`pipenv/index`, :doc:`devpi` and
 :doc:`Spack <spack/index>` simplify this if you save the file with ther
-specifications, e.g. ``Pipfile``, ``Pipfile.lock``, ``package-lock.json`` etc.
-In this way, you and others can reproduce the environments.
+specifications, for example ``Pipfile``, ``Pipfile.lock``, ``package-lock.json``
+:abbr:`etc (et cetera)`. In this way, you and others can reproduce the
+environments.
 
 .. toctree::
     :hidden:

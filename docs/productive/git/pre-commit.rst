@@ -9,7 +9,7 @@ development team. Yelp’s `pre-commit <https://pre-commit.com/>`_ manages such
 pre-commit hooks and distributes them to various projects and developers.
 
 Git pre-commit hooks are mostly used to automatically point out problems in the
-code before code reviews, e.g. to check the formatting or to find debug
+code before code reviews, for example to check the formatting or to find debug
 instructions. Pre-commit simplifies the cross-project sharing of the pre-commit
 hook. The language in which a linter was written, for example, is also
 abstracted away – ``scss-lint`` is written in Ruby, but you can use it with
@@ -81,7 +81,8 @@ done with ``pre-commit run --all-files``. Single hooks can then also be carried
 out separately, for example ``pre-commit run trailing-whitespace``.
 
 The first time a pre-commit hook is called, it is first downloaded and then
-installed. This can take some time, e.g. if a copy of ``node`` has to be made.
+installed. This can take some time, for example if a copy of ``node`` has to be
+made.
 
 .. code-block:: console
 

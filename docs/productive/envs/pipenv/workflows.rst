@@ -29,7 +29,7 @@ Upgrade workflow
 #. To update the Python packages, you have the following two options:
 
    * update everything with ``$ pipenv update``
-   * update individual packages, e.g. ``requests`` with
+   * update individual packages, for example ``requests`` with
      ``$ pipenv update requests``
 
 ``Pipfile`` vs. ``setup.py``

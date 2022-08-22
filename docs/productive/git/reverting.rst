@@ -3,7 +3,7 @@ Undo changes
 
 ``$ git reset [--hard] [target reference]``
    switches from the current branch to the target reference and leaves the
-   difference as an uncommitted change, e.g.
+   difference as an uncommitted change, for example
 
    .. code-block:: console
 
