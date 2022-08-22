@@ -161,7 +161,7 @@ Work on a project
 
             .. code-block:: console
 
-                $ git show -p
+                $ git stash -p
                 diff --git a/docs/productive/git/work.rst b/docs/productive/git/work.rst
                 index cff338e..1988ab2 100644
                 --- a/docs/productive/git/work.rst
@@ -180,18 +180,17 @@ Work on a project
         +---------------+-----------------------------------------------+
         | Command       | Description                                   |
         +===============+===============================================+
-        | ``/``         | searches for a change with a regular          |
-        |               | expression                                    |
-        +---------------+-----------------------------------------------+
-        | ``?``         | Help                                          |
+        | ``y``         | Hide this change                              |
         +---------------+-----------------------------------------------+
         | ``n``         | Do not apply this change                      |
         +---------------+-----------------------------------------------+
-        | ``q``         | All changes already selected will be saved    |
+        | ``q``         | All changes already selected will be hidden   |
         +---------------+-----------------------------------------------+
-        | ``s``         | Split these changes                           |
+        | ``a``         | Apply this and all subsequent changes         |
         +---------------+-----------------------------------------------+
-        | ``y``         | Hide this change                              |
+        | ``e``         | Edit this change manually                     |
+        +---------------+-----------------------------------------------+
+        | ``?``         | Help                                          |
         +---------------+-----------------------------------------------+
 
     ``branch``
