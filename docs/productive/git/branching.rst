@@ -9,8 +9,23 @@ Git branches
 
 ``$ git branch [branch_name]``
     creates a new branch based on the current ``HEAD``.
-``$ git checkout [-b] [branch_name]``
-    changes the working directory to the specified branch.
+
+``$ git switch [-c] [branch_name]``
+    switches between branches.
+
+    ``-c``
+        creates a new branch.
+
+    .. note::
+
+        In Git < 2.23, ``git switch`` is not yet available. In this case you
+        still need to use ``git checkout``:
+
+        ``$ git checkout [-b] [branch_name]``
+            changes the working directory to the specified branch.
+
+            ``-b``
+                creates the specified branch if it does not already exist.
 
     ``-b``
         creates the specified branch if it does not already exist.

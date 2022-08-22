@@ -136,7 +136,7 @@ Work on a project
     formats into plain text. For binary files for which there is no converter,
     strings are often sufficient.
 
-:samp:`$ git checkout -- {FILE}`
+:samp:`$ git restore {FILE}`
     irrevocably discard changes in the work area.
 ``$ git commit``
     make a new commit with the added changes.

@@ -51,5 +51,5 @@ Git log
     List commits that exist in ``ref`` and are not merged with the current
     branch.
 ``$ git reflog``
-    List operations (for example ``checkout``, ``commit``) that have been
+    List operations (for example ``switch``, ``commit``) that have been
     performed in the local repository.

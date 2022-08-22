@@ -51,7 +51,7 @@ branch to the branch of the current release, in our case to `v0.17.1`:
     Cloning into 'spack'...
     ...
     $ cd spack
-    $ git checkout v0.17.1
+    $ git switch v0.17.1
 
 Configure the shell
 -------------------

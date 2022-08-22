@@ -35,4 +35,4 @@ Git glossary
 
     ``HEAD``
         The ``HEAD`` pointer represents your current working directory and can
-        be moved to different branches, tags or commits with ``git checkout``.
+        be moved to different branches, tags or commits with ``git switch``.

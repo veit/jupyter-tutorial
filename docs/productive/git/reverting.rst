@@ -22,7 +22,7 @@ Undo changes
     updates and replaces the most recent commit with a new commit that combines
     any staged changes with the contents of the previous commit. With nothing
     currently staged, this just rewrites the previous commit message.
-``$ git checkout [file]``
+``$ git restore [file]``
     alters files in the working directory to a state previously known to Git. By
     default, git will checkout ``HEAD``, the last commit on the currently
     checked-out branch. Alternativly you could also choose a specific branch or
