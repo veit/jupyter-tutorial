@@ -59,9 +59,6 @@ Work on a project
         -    shows differences between work and stage areas.
         +    shows differences between work and stage areas, for example:
 
-         ``--staged``
-             shows differences between the stage area and the repository.
-
     ``index e2a5ea6..fd84434 100644`` displays some internal Git metadata that
     you will probably never need. The numbers correspond to the hash
     identifiers of the git object versions.
