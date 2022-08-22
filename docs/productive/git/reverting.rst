@@ -27,6 +27,13 @@ Undo changes
     default, git will checkout ``HEAD``, the last commit on the currently
     checked-out branch. Alternativly you could also choose a specific branch or
     SHA.
+
+    .. note::
+        In Git < 2.23, ``git restore`` is not yet available. In this case you
+        still need to use ``git checkout``:
+
+        ``$ git checkout [file]``
+
 ``$ git pull [remote]``
     pulls changes from the remote repository and merges the current branch with
     the upstream.
