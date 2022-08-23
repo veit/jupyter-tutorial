@@ -51,7 +51,7 @@ Git branches
         .. code-block:: console
 
             $ git checkout main
-            $ git merge #42
+            $ git merge '#42'
             Merge made by recursive.
              setup.py |    1 +
              1 files changed, 1 insertions(+), 0 deletions(-)
@@ -67,7 +67,7 @@ Occasionally, however, Git runs into issues with merging, such as:
 
     .. code-block:: console
 
-        $ git merge #17
+        $ git merge '#17'
         Auto-merging setup.py
         CONFLICT (content): Merge conflict in setup.py
         Automatic merge failed; fix conflicts and then commit the result.
