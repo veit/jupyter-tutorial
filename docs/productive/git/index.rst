@@ -48,6 +48,14 @@ Flexibility
 Git not only allows for very flexible workflows but is also suitable for both
 large and small projects on different platforms.
 
+criticisms
+----------
+
+A common criticism of Git is that it is difficult to learn: either large parts
+of the Git terminology are new or in other systems terms have a different
+meaning, such as for example ``revert`` in SVN or CVS. Git also offers a lot of
+functionality, but it takes some time to learn.
+
 Read more
 ---------
 
