@@ -56,6 +56,10 @@ of the Git terminology are new or in other systems terms have a different
 meaning, such as for example ``revert`` in SVN or CVS. Git also offers a lot of
 functionality, but it takes some time to learn.
 
+.. image:: git.png
+   :alt: xkcd comic
+   :target: https://xkcd.com/1597
+
 Read more
 ---------
 
