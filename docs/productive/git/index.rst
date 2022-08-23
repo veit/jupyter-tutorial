@@ -1,11 +1,55 @@
 Manage code with Git
 ====================
 
-In order to have better control over your source code, it is usually managed
-with  `Git <https://git-scm.com/>`_. However, I will only briefly explain the
-most important terms and provide brief :doc:`installation and configuration
-instructions <install-config>`. General introductions to Git are sufficiently
-available elsewhere.
+To gain better control over your source code, it is usually managed with  `Git
+<https://git-scm.com/>`_. `Git <https://github.com/git/git>`__ is a mature and
+very actively maintained open source project originally developed in 2005 by
+Linus Torvalds, the initiator of the Linux operating system kernel. Git can be
+combined well with many operating systems and :abbr:`IDEs (integrated
+development environments)`.
+
+With its distributed architecture, Git is an example of a :abbr:`DVCS
+(distributed version control system)`. This means that the entire version
+history no longer has to be in a single location, as was common with previously
+popular version control systems such as CVS or Subversion (SVN). In Git, each
+local repository can contain specific changes.
+
+However, Git can not only be used in a distributed way, it is also performant,
+secure and flexible.
+
+Performance
+-----------
+
+Git is very fast compared to many other version control systems in committing
+changes, branching and merging, and comparing with previous versions. This is
+also necessary when we look at the `Linux kernel repository
+<https://github.com/torvalds/linux>`_ with over a million commits. Git is not
+oriented towards file names, but focuses on changes in content so that files can
+be efficiently renamed, split and rearranged. Git achieves this by storing
+deltas for the differences in content, metadata of the files and compression.
+
+The distributed version control system also ensures that, for example,
+implementing a new function does not require network access to a remote server,
+thus avoiding delays. You can also carry out error correction locally on an
+earlier version. Later, both changes can be transmitted to a central server with
+a single command.
+
+Security
+--------
+
+The integrity of managed source code was a high priority in the design of Git.
+For example, the relationships between files and commits are protected by a
+hashing algorithm (SHA1), making accidental or deliberate changes more
+difficult and ensuring the actual history.
+
+Flexibility
+-----------
+
+Git not only allows for very flexible workflows but is also suitable for both
+large and small projects on different platforms.
+
+Read more
+---------
 
 .. seealso::
 
