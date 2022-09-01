@@ -91,6 +91,7 @@ Notebooks <first-steps>` can be  managed with Git, and on the other hand
     branch
     log
     tag
+    rebase
     revert
     best-practices
     workflows/index
