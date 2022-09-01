@@ -151,7 +151,7 @@ the search:
     user    0m0,171s
     sys     0m0,675s
     $ git fsmonitor--daemon status
-    fsmonitor-daemon beobachtet '/srv/jupyter/linux'
+    fsmonitor-daemon is watching '/srv/jupyter/linux'
 
 .. seealso::
    * `Improve Git monorepo performance with a file system monitor
