@@ -137,16 +137,16 @@ the search:
 .. code-block::
 
     $ time git status
-    Auf Branch master
-    Ihr Branch ist auf demselben Stand wie 'origin/master'.
+    On branch master
+    Your branch is up to date with 'origin/master'.
     real    0m1,969s
     user    0m0,237s
     sys     0m1,257s
     $ git config core.fsmonitor true
     $ git config core.untrackedcache true
     $ time git status
-    Auf Branch master
-    Ihr Branch ist auf demselben Stand wie 'origin/master'.
+    On branch master
+    Your branch is up to date with 'origin/master'.
     real    0m0,415s
     user    0m0,171s
     sys     0m0,675s
