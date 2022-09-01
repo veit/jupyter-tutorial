@@ -19,5 +19,4 @@ In the following, we discuss some of these Git workflows.
    git-flow
    feature-branches
    deploy-branches
-   branches-merge-requests
    monorepos
