@@ -88,12 +88,12 @@ Notebooks <first-steps>` can be  managed with Git, and on the other hand
     tools
     working-areas
     work
-    branching
+    branch
     log
-    tagging
-    reverting
+    tag
+    revert
     best-practices
     workflows/index
     git-big-picture
-    git-bisect
+    bisect
     glossary
