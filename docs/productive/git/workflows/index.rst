@@ -20,3 +20,4 @@ In the following, we discuss some of these Git workflows.
    feature-branches
    deploy-branches
    monorepos
+   split-repos
