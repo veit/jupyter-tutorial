@@ -97,4 +97,5 @@ Notebooks <first-steps>` can be  managed with Git, and on the other hand
     workflows/index
     git-big-picture
     bisect
+    advanced
     glossary
