@@ -188,3 +188,7 @@ Alternatives
 `FOSSology <https://www.fossology.org/>`_
     Free software compliance toolkit that stores information in a database with
     license, copyright, and export scanners
+
+.. seealso::
+    * `Python License tracker
+      <https://wagenrace.github.io/python_dep_frontend/>`_
