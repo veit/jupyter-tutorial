@@ -37,14 +37,14 @@ a large number of commits
     Since Git uses DAGs (directed acyclic graphs) to represent the history of a
     project, all operations that traverse this graph, for example ``git log`` or
     ``git blame``, will become slow.
-a large number of refs
+a large number of Git references
     A large number of branches and tags also slow down git. You can use ``git
-    ls-remote`` to view the *refs* in a repository, and ``git gc`` to combine
-    loose *refs* into a single file.
+    ls-remote`` to view the refs in a repository, and ``git gc`` to combine
+    loose refs into a single file.
 
     Any operation that must traverse the commit history of a repository and
-    account for the individual *refs*, such as with :samp:`git branch --contains
-    *{COMMIT}`, will be slow on a repo with many *refs*.
+    account for the individual refs, such as with :samp:`git branch --contains
+    *{COMMIT}`, will be slow on a repo with many refs.
 
 a large number of versioned files
     The directory cache index (``.git/index``) is used by Git to determine if
