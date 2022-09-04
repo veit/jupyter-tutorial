@@ -86,3 +86,4 @@ Alternatively, DVC can also be installed via other package managers:
     dag
     reproduce
     integration
+    fds
