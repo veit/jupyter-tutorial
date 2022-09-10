@@ -173,11 +173,18 @@ will help you.
 If you want to achieve the widest possible distribution of your package, for
 example, MIT or BSD versions are a good choice. The Apache licence protects you
 better from from patent infringement, but it is not compatible with the GPL v2.
-You should check what licences those packages have that you depend on and to
-which you should be compatible. To analyse licences you can use `license
-compatibility <https://en.wikipedia.org/wiki/License_compatibility>`_
-and the `licensechecker
-<https://boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_, a command line tool that scans installation directories for licences. for licences.
+
+Check dependencies
+~~~~~~~~~~~~~~~~~~
+
+Therefore, you should look at the licences of the packages you depend on and
+should be compatible with. To analyse licences, you can look at `license
+compatibility <https://en.wikipedia.org/wiki/License_compatibility>`_ and use
+`licensechecker
+<https://boyter.org/2018/03/licensechecker-command-line-application-identifies-software-license/>`_, a command line tool that scans installation directories for
+licences.
+
+It can also be useful to release a package under multiple licences. An example of this is cryptography/LICENSE.
 
 Furthermore, it can also be useful to publish a package under several licences.
 An example of this is `cryptography/LICENSE
