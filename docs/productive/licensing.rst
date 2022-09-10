@@ -65,6 +65,100 @@ In the case of public domain licenses, copyrights are transferred to the general
 public. The Creative Commons Zero license was created to identify the release of
 the greatest possible usage rights.
 
+Non-software licences
+---------------------
+
+Open source software licences can also be used for works that are not software.
+They are often also the best choice, especially if the works in question are
+edited and versioned as source code.
+
+Data, media, :abbr:`etc. (et cetera)`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`CC0-1.0 <https://creativecommons.org/publicdomain/zero/1.0/deed.de>`_,
+`CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/deed.de>`_ and
+`CC-BY-SA-4.0 <https://creativecommons.org/licenses/by-sa/4.0/deed.de>`_ are
+open licences used for non-software material, from datasets to videos. However,
+they are `not recommended for software
+<https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software>`_.
+
+The `Open Knowledge Foundation <https://okfn.org>`_ has also published a set of
+`Open Data Commons <https://opendatacommons.org>`_ licences for data/databases:
+
+`Open Data Commons Open Database License (ODbL) v1.0 <https://opendatacommons.org/licenses/odbl/1-0/>`_
+    Attribution and sharing under equal terms.
+`Open Data Commons Attribution License (ODC-By) v1.0 <https://opendatacommons.org/licenses/by/1-0/>`_
+    Attribution.
+`Open Data Commons Public Domain Dedication and License (PDDL) v1.0 <https://opendatacommons.org/licenses/pddl/1-0/>`_
+    The PDDL places the data in the public domain and waives all rights.
+
+`GovData <https://www.govdata.de>`_ has submitted the *Data Licence Germany* in two variants:
+
+* `Datenlizenz Deutschland – Namensnennung – Version 2.0
+  <https://www.govdata.de/dl-de/by-2-0>`_
+* `Datenlizenz Deutschland – Zero – Version 2.0
+  <https://www.govdata.de/dl-de/zero-2-0>`_
+
+When using the `Community Data License Agreement – Permissive, Version 2.0 <https://cdla.dev/permissive-2-0/>`_ the copyright notices must be retained.
+
+Another possible licence for artistic works is the `Free Art License 1.3
+<https://artlibre.org/licence/lal/en/>`_.
+
+Documentation
+~~~~~~~~~~~~~
+
+Any open source software licence or open media licence also applies to software
+documentation. If you use different licences for your software and its
+documentation, you should make sure that the source code examples in the
+documentation are also licensed under the software licence. In addition to the
+Creative Commons licences mentioned above, the following licences are available
+specifically for free documentation.
+
+`GNU Free Documentation License (FDL) <https://www.gnu.org/licenses/fdl-1.3.txt>`_
+    Copyleft licence for documentation to be used for all GNU manuals. Its
+    applicability is limited to textual works (books).
+`FreeBSD Documentation License <https://www.freebsd.org/copyright/freebsd-doc-license/>`_
+    Permissive documentation licence with copyleft, compatible with the GNU FDL.
+`Open Publication License, Version 1.0 <https://opencontent.org/openpub/>`_
+    Free documentation licence with copyleft, provided none of the licence
+    options in Section VI of the licence are used. In any case, it is
+    incompatible with the GNU FDL.
+
+Fonts
+~~~~~
+
+`SIL Open Font License 1.1 <https://opensource.org/licenses/OFL-1.1>`_
+    Font licence that can be freely used in other works.
+`GNU General Public License 3 <https://www.gnu.org/licenses/gpl-3.0>`_
+    It can also be used for fonts, but it may only be included in documents with
+    the `font exception
+    <https://www.gnu.org/licenses/gpl-faq.html#FontException>`_.
+
+    .. seealso::
+       * `Font Licensing <https://www.fsf.org/blogs/licensing/20050425novalis>`_
+
+`LaTeX ec fonts <https://dante.ctan.org/tex-archive/fonts/ec/src/copyrite.txt>`_
+    Free *European Computer Modern and Text Companion* fonts commonly used with
+    Latex.
+`Arphic Public License <https://spdx.org/licenses/Arphic-1999>`_
+    Free licence with copyleft.
+`IPA Font license <https://spdx.org/licenses/IPA.html>`_
+    Free licence with copyleft, but derived values may not use or contain the
+    name of the original.
+
+Hardware
+~~~~~~~~
+
+Designs for `open source hardware <https://www.oshwa.org/definition/>`_ are
+covered by the CERN Open Hardware licences:
+
+`CERN-OHL-P-2.0 <https://ohwr.org/cern_ohl_p_v2.txt>`_
+    permissive
+`CERN-OHL-W-2.0 <https://ohwr.org/cern_ohl_w_v2.txt>`_
+    weakly reciprocal
+`CERN-OHL-S-2.0 <https://ohwr.org/cern_ohl_s_v2.txt>`_
+    strongly reciprocal
+
 Choosing a suitable license
 ---------------------------
 
