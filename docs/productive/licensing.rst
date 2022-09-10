@@ -164,11 +164,11 @@ Choosing a suitable license
 
 Overviews of possible licenses can be found in the `SPDX License List
 <https://spdx.org/licenses/>`_ or `OSI Open Source Licenses by Category
-<https://opensource.org/licenses/category>`_. The websites
-`Choose an open source license <https://choosealicense.com/>`_ and `Comparison
-of free and open-source software licenses
+<https://opensource.org/licenses/category>`_. When choosing suitable licences,
+the websites `Choose an open source license <https://choosealicense.com/>`_ and
+`Comparison of free and open-source software licenses
 <https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses>`_
-supports you in choosing a suitable license.
+will help you.
 
 If you want to achieve the widest possible distribution of your package, for
 example, MIT or BSD versions are a good choice. The Apache licence protects you
