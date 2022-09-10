@@ -291,6 +291,28 @@ Alternatives
     Free software compliance toolkit that stores information in a database with
     license, copyright, and export scanners.
 
+Python package metadata
+-----------------------
+
+In Python packages there are other fields where licence information is stored,
+such as the `core metadata specifications
+<https://packaging.python.org/en/latest/specifications/core-metadata/>`_, which
+are also limited. This leads not only to problems for authors to specify the
+correct licence, but also to problems when re-packaging for various Linux
+distributions.
+
+Currently, although some common cases are covered and the licence classification
+can also be extended, there are some popular classifications such as
+:samp:`License :: OSI Approved :: BSD License` that will be abolished. However,
+this means that backwards compatibility is no longer guaranteed and the packages
+have to be relicensed. At least you have a way to check your trove
+classifications with `trove-classifiers
+<https://github.com/pypa/trove-classifiers>`_.
+
 .. seealso::
-    * `Python License tracker
-      <https://wagenrace.github.io/python_dep_frontend/>`_
+   * `PEP 639 – Improving License Clarity with Better Package Metadata
+     <https://peps.python.org/pep-0639/>`_
+   * `PEP 621 – Storing project metadata in pyproject.toml
+     <https://peps.python.org/pep-0621/>`_
+   * `PEP 643 – Metadata for Package Source Distributions
+     <https://peps.python.org/pep-0643/>`_
