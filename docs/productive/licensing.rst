@@ -1,10 +1,11 @@
 Licensing
 =========
 
-In order for others to use your software, it should be given a license that
-describes the terms of use. Otherwise, it should mostly be protected by
-copyright. Authors are those who originally contributed to the software. If
-software is to be relicensed, the consent of all authors is required.
+In order for others to use your software, it should have one or more licences
+that describe the terms of use. Otherwise, it is likely to be protected by
+copyright. Authors are those who have originally contributed to the software. If
+software is to be licensed, the consent of all those who can claim authorship is
+required.
 
 .. note::
    This does not constitute legal advice. If in doubt, contact a lawyer or the
