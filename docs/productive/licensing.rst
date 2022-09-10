@@ -193,8 +193,8 @@ An example of this is `cryptography/LICENSE
 GitHub
 ------
 
-On `GitHub <https://github.com/>`_ you can have an open source license created in
-your repository.
+On `GitHub <https://github.com/>`_ you can have an open source license created
+in your repository.
 
 #. Go to the main page of your repository.
 #. Click on *Create new file* and then enter ``LICENSE`` or ``LICENSE.md`` as
