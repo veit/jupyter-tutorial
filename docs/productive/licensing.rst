@@ -282,7 +282,7 @@ Alternatives
 
 `ClearlyDefined <https://clearlydefined.io/>`_
     It collects and displays information about the licensing and copyright
-    situation of a software project
+    situation of a software project.
 `OpenChain <https://www.openchainproject.org/>`_
     It recommends REUSE as a component to improve the clarity of the licensing
     and copyright situation, but has more stringent requirements to achieve full
