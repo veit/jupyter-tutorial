@@ -17,6 +17,8 @@ required.
    * `A Quick Guide to Software Licensing for the Scientist-Programmer
      <https://doi.org/10.1371/journal.pcbi.1002598>`_
    * Karl Fogel: `Producing Open Source Software <https://producingoss.com/>`_
+   * `Forschungsdaten veröffentlichen
+     <https://forschungsdaten.info/themen/rechte-und-pflichten/forschungsdaten-veroeffentlichen/>`_
 
 Proprietary software licenses
 -----------------------------
