@@ -201,26 +201,26 @@ In doing so, Git uses `Globbing <https://linux.die.net/man/7/glob>`_ patterns, a
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       | ``instance0.log``,            | A question mark fits exactly  |
 |                               | ``instance1.log``,            | on a charater.                |
-|     instance?.log             | aber nicht                    |                               |
+|     instance?.log             | but not                       |                               |
 |                               | ``instance.log`` or           |                               |
 |                               | ``instance10.log``            |                               |
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       | ``instance0.log``,            | Square brackets can be used   |
 |                               | ``instance1.log``,            | to find a single character    |
-|     instance[0-9].log         | aber nicht                    | from a specific range.        |
+|     instance[0-9].log         | but not                       | from a specific range.        |
 |                               | ``instance.log`` or           |                               |
 |                               | ``instance10.log``            |                               |
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       | ``instance0.log``,            | Square brackets match a       |
 |                               | ``instance1.log``,            | single character from a given |
-|     instance[01].log          | aber nicht                    | set.                          |
-|                               | ``instance2.log`` oder        |                               |
+|     instance[01].log          | but not                       | set.                          |
+|                               | ``instance2.log`` or          |                               |
 |                               | ``instance01.log``            |                               |
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       | ``instance2.log``,            | An exclamation mark can be    |
-|                               | aber nicht                    | used to find any character    |
+|                               | but not                       | used to find any character    |
 |     instance[!01].log         | ``instance0.log``,            | from a specified set.         |
-|                               | ``instance1.log`` oder        |                               |
+|                               | ``instance1.log`` or          |                               |
 |                               | ``instance01.log``            |                               |
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       | ``logs``                      | If no slash appended, the     |
@@ -239,6 +239,7 @@ In doing so, Git uses `Globbing <https://linux.die.net/man/7/glob>`_ patterns, a
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       |``var/instance.log``,          | Two Asterisks match null or   |
 |                               |``var/logs/instance.log``,     | more directories.             |
+|                               |but not                        |                               |
 |     var/**/instance.log       |``var/logs/instance/error.log``|                               |
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       | ``logs/instance/error.log``,  | Wildcards can also be used in |
@@ -246,9 +247,9 @@ In doing so, Git uses `Globbing <https://linux.die.net/man/7/glob>`_ patterns, a
 |     logs/instance*/error.log  |                               |                               |
 +-------------------------------+-------------------------------+-------------------------------+
 | .. code-block:: console       | ``logs/instance.log``,        | Pattern, that specify a       |
-|                               | nicht jedoch                  | particular file in a          |
+|                               | but not                       | particular file in a          |
 |     logs/instance.log         | ``var/logs/instance.log``     | directory are relative to the |
-|                               | oder                          | root of the repository.       |
+|                               | or                            | root of the repository.       |
 |                               | ``instance.log``              |                               |
 +-------------------------------+-------------------------------+-------------------------------+
 
