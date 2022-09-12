@@ -100,7 +100,7 @@ Set up
         smudge = cat
         required = true
 
-   #. Then you have to specify the following in the ``~/.gitattribute`` file:
+   #. Then you have to specify the following in the ``~/.gitattributes`` file:
 
       .. code-block:: ini
 
