@@ -33,7 +33,7 @@ Git log
 ``$ git log -G"ba*"``
     filters commits based on regular expressions in the source code.
 
-``$ git log - path/to/foo.py``
+``$ git log -- path/to/foo.py``
     filters the commit history for specific files.
 
 ``$ git log main ..feature``
