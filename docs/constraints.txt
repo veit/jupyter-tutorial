@@ -20,7 +20,7 @@ docutils==0.19
 entrypoints==0.4
 executing==1.0.0
 fastjsonschema==2.16.2
-furo==2022.6.21
+furo==2022.9.15
 idna==3.3
 imagesize==1.4.1
 importlib-metadata==4.12.0
