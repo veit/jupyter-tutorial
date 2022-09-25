@@ -9,16 +9,17 @@ They are recommended if, for example, you cannot determine the release time
 yourself, for example if an iOS application has to pass the app store validation
 or you only have a fixed time window available for deployment. In this case, a
 production branch ``prod``, that reflects the code provided is recommended. Such
-a workflow prevents the additional work of ``git flow`` for releasing, tagging
-and merging.
+a workflow prevents the additional work of ``git flow`` for releasing and
+tagging.
 
-Assuming you have a ``test``, ``stage`` and ``prod`` environment, a merge
-request is first made for the ``test`` branch. If the tests are passed, the
-changes can also be adopted in the ``stage`` branch. When the QA decides that
-the code is ready for production, it can be transferred to the  ``main``
-branch. This process can be repeated several times until, for example, the time
-for the going life of these changes has come and a ``prod`` branch can be
-created.
+
+Assuming that you have a ``development``, ``staging`` and ``production``
+environment, then a merge or pull request for a feature is first made to the
+``staging`` branch. As long as the quality check has been passed there, the
+changes and the code can be ready for production, the changes can be transferred
+to the ``main`` branch. This process can be repeated several times for new
+features until for example the time has come for the *going life* of these
+changes and a deployment branch can be created.
 
 .. _release-branches:
 
