@@ -174,7 +174,16 @@ Work on a project
     strings are often sufficient.
 
 :samp:`$ git restore {FILE}`
-    irrevocably discard changes in the work area.
+    changes files in the working directory to a state previously known to Git. By
+    default, Git checks out ``HEAD``, the last commit of the current branch.
+
+    .. note::
+
+        In Git < 2.23, ``git restore`` is not yet available. In this case you
+        still need to use ``git checkout``:
+
+        :samp:`$ git checkout {FILE}`
+
 ``$ git commit``
     make a new commit with the added changes.
 
@@ -183,8 +192,9 @@ Work on a project
     ``--dry-run --short``
         shows what would be committed with the status in short format.
 
-:samp:`$ git reset {FILE}`
-    return to the current file from the stage area.
+
+``$ git reset [--hard|--soft] [target-reference]``
+    resets the history to an earlier commit.
 :samp:`$ git rm {FILE}`
     remove a file from the work and stage areas.
 ``$ git stash``
