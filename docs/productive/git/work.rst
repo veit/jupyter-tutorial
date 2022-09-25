@@ -185,7 +185,7 @@ Work on a project
 
 :samp:`$ git reset {FILE}`
     return to the current file from the stage area.
-:SAMP:`$ git rm {FILE}`
+:samp:`$ git rm {FILE}`
     remove a file from the work and stage areas.
 ``$ git stash``
     move the current changes from the work area to the stash.
