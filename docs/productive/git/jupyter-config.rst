@@ -104,7 +104,7 @@ Set up
 
       .. code-block:: ini
 
-        *.ipynb filter=nbstrip_jq
+         *.ipynb filter=nbstrip_jq
 
       .. warning::
          If you want to do ``git rebase``, you should deactivate the line
