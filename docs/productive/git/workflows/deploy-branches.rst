@@ -49,3 +49,82 @@ Every time a bug fix has been adopted in a release branch, the release is
 increased by a patch version with a `Tag
 <https://git-scm.com/book/en/v2/Git-Basics-Tagging>`_, see also `Semantic
 Versioning <https://semver.org/>`_.
+
+ .. graphviz::
+
+     strict digraph ReleaseBranches {
+     nodesep=0.5;
+     ranksep=0.25;
+     splines=line;
+     forcelabels=false;
+
+     // general
+     node [style=filled, color="black",
+         fontcolor="black", font="Consolas", fontsize="8pt" ];
+     edge [arrowhead=vee, color="black", penwidth=2];
+
+     // tags
+     node [shape=cds, fixedsize=false, fillcolor="#C6C6C6", penwidth=1, margin="0.11,0.055"]
+     tag270 [label="2.7.0"]
+     tag278 [label="2.7.8"]
+     tag3100 [label="3.10.0"]
+     tag3101 [label="3.10.1"]
+
+     // graph
+     node [width=0.2, height=0.2, fixedsize=true, label="", margin="0.11,0.055", shape=circle, penwidth=2, fillcolor="#FF0000"]
+
+     // branches
+     node  [group="main", fillcolor="#27E4F9"];
+     main1;
+     main2;
+     main3;
+     subgraph {
+         rank=source;
+         mainstart [label="", width=0, height=0, penwidth=0];
+     }
+     mainstart -> main1 [color="#b0b0b0", style=dashed, arrowhead=none ];
+     main1 -> main2 -> main3;
+     main3 -> mainend [color="#b0b0b0", style=dashed, arrowhead=none ];
+
+     node  [group="27", fillcolor="#FFE333"];
+     release270;
+     release278;
+     release270 -> release278 [color="#b0b0b0", style=dashed];
+     release278 -> release27end [color="#b0b0b0", style=dashed, arrowhead=none];
+
+     node  [group="310", fillcolor="#52C322"];
+     release3100;
+     release3101;
+     release3100 -> release3101;
+     release3101 -> release310end [color="#b0b0b0", style=dashed, arrowhead=none ];
+
+     node  [group="hotfix", fillcolor="#FD5965"];
+     hotfix17;
+
+     // branching and merging
+     main1 -> release270;
+     main2 -> release3100;
+     main2 -> hotfix17;
+     hotfix17 -> main3;
+     main3 -> release278 [color="#6D031C", style=dashed];
+     main3 -> release3101 [color="#6D031C", style=dashed];
+
+     // tags connections
+     edge [color="#b0b0b0", style=dotted, len=0.3, arrowhead=none, penwidth=1];
+     subgraph  {
+         rank="same";
+         tag270 -> release270;
+     }
+     subgraph  {
+         rank="same";
+         tag278 -> release278;
+     }
+     subgraph  {
+         rank="same";
+         tag3100 -> release3100;
+     }
+     subgraph  {
+         rank="same";
+         tag3101 -> release3101;
+     }
+     }
