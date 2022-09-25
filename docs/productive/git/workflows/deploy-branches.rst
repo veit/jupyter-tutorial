@@ -175,19 +175,28 @@ Versioning <https://semver.org/>`_.
          rank=source;
          mainstart [label="", width=0, height=0, penwidth=0];
      }
-     mainstart -> main1 [color="#b0b0b0", style=dashed, arrowhead=none ];
+     subgraph {
+         mainend [label="", width=0, height=0, penwidth=0];
+     }
+     mainstart -> main1 [color="#b0b0b0", style=dashed, arrowhead=none];
      main1 -> main2 -> main3;
-     main3 -> mainend [color="#b0b0b0", style=dashed, arrowhead=none ];
+     main3 -> mainend [color="#b0b0b0", style=dashed, arrowhead=none];
 
      node  [group="27", fillcolor="#FFE333"];
      release270;
      release278;
+     subgraph {
+         release27end [label="", width=0, height=0, penwidth=0];
+     }
      release270 -> release278 [color="#b0b0b0", style=dashed];
      release278 -> release27end [color="#b0b0b0", style=dashed, arrowhead=none];
 
      node  [group="310", fillcolor="#52C322"];
      release3100;
      release3101;
+     subgraph {
+         release310end [label="", width=0, height=0, penwidth=0];
+     }
      release3100 -> release3101;
      release3101 -> release310end [color="#b0b0b0", style=dashed, arrowhead=none ];
 
