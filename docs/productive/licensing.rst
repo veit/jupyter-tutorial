@@ -264,6 +264,8 @@ badge:
 .. figure:: reuse-compliant.svg
    :alt: REUSE-compliant Badge
 
+.. _gitlab-ci-workflow:
+
 CI workflow
 ~~~~~~~~~~~
 

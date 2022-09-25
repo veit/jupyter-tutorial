@@ -2,6 +2,8 @@
 Deployment and release branches
 ===============================
 
+.. _deployment-branches:
+
 Deployment branches
 ===================
 

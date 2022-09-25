@@ -91,6 +91,7 @@ Notebooks <first-steps>` can be  managed with Git, and on the other hand
     log
     tag
     branch
+    gitlab/index
     workflows/index
     rebase
     bisect
