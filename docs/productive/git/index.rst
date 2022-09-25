@@ -91,12 +91,12 @@ Notebooks <first-steps>` can be  managed with Git, and on the other hand
     log
     tag
     branch
+    workflows/index
     rebase
     bisect
     cherry-pick
     revert
     best-practices
-    workflows/index
     git-big-picture
     advanced
     glossary
