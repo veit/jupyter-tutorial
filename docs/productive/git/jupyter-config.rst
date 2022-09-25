@@ -100,6 +100,11 @@ Set up
         smudge = cat
         required = true
 
+      ``clean``
+           is applied when adding changes to the stage area.
+       ``smudge``
+           is used when resetting the workspace by changes from the stage area.
+
    #. Then you have to specify the following in the ``~/.gitattributes`` file:
 
       .. code-block:: ini
