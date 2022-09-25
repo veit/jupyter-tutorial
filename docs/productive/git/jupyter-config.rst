@@ -110,17 +110,24 @@ Set up
          If you want to do ``git rebase``, you should deactivate the line
          beforehand.
 
-#. However, the problem remains that ``git status`` show changes to files when
-   the cells of a notebook have been executed, even though  ``git diff``  still
-   shows no changes. Therefore the following should be entered in the
-   ``~/.bashrc`` file in order to quickly clean the respective working
-   directory:
+#. If you then use ``git add`` to add your notebok to the stage area, the
+   ``nbstrip_jq`` filter will be applied.
+
+    .. note::
+       However, ``git diff`` will not show you any changes between the working
+       and stage areas. Only with ``git diff --staged`` you can see that only the
+       filtered changes have been applied.
+
+#. And there is another problem: If such a notebook is run again, ``git diff``
+   will not show any changes, but ``git status`` will. Therefore, the following
+   should be entered in the ``~/.bashrc`` file to be able to quickly clean the
+   respective working directory:
 
    .. code-block:: bash
 
-    function nbstrip_all_cwd {
-        for nbfile in *.ipynb; do
-            echo "$( nbstrip_jq $nbfile )" > $nbfile
-        done
-        unset nbfile
-    }
+      function nbstrip_all_cwd {
+          for nbfile in *.ipynb; do
+              echo "$( nbstrip_jq $nbfile )" > $nbfile
+          done
+          unset nbfile
+      }
