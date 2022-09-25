@@ -21,6 +21,98 @@ to the ``main`` branch. This process can be repeated several times for new
 features until for example the time has come for the *going life* of these
 changes and a deployment branch can be created.
 
+.. graphviz::
+
+     strict digraph DeploymentBranches {
+     nodesep=0.5;
+     ranksep=0.25;
+     splines=line;
+     forcelabels=false;
+
+     // general
+     node [style=filled, color="black",
+         fontcolor="black", font="Consolas", fontsize="8pt" ];
+     edge [arrowhead=vee, color="black", penwidth=2];
+
+     // graph
+     node [width=0.2, height=0.2, fixedsize=true, label="", margin="0.11,0.055", shape=circle, penwidth=2, fillcolor="#FF0000"]
+
+     // branches
+     node  [group="main", fillcolor="#27E4F9"];
+     main1;
+     main2;
+     main3;
+     subgraph {
+         mainstart [label="", width=0, height=0, penwidth=0];
+     }
+     subgraph {
+         mainend [label="", width=0, height=0, penwidth=0];
+     }
+     mainstart -> main1 [color="#b0b0b0", style=dashed, arrowhead=none];
+     main1 -> main2 -> main3;
+     main3 -> mainend [color="#b0b0b0", style=dashed, arrowhead=none];
+
+     node  [group="deployment", fillcolor="#52C322"];
+     deployment1;
+
+     node  [group="staging", fillcolor="#FFE333"];
+     staging1;
+     staging2;
+     staging3;
+     staging4;
+     subgraph {
+         stagingstart [label="", width=0, height=0, penwidth=0];
+     }
+     subgraph {
+         stagingend [label="", width=0, height=0, penwidth=0];
+     }
+     stagingstart -> staging1 [color="#b0b0b0", style=dashed, arrowhead=none ];
+     staging1 -> staging2 -> staging3 -> staging4;
+     staging4 -> stagingend [color="#b0b0b0", style=dashed, arrowhead=none ];
+
+     node  [group="17-some-feature", fillcolor="#FB3DB5"];
+     feature171;
+     feature172;
+     feature173;
+     subgraph features17 {
+         feature171 -> feature172 -> feature173;
+     }
+
+     node  [group="42-other-feature", fillcolor="#FB3DB5"];
+     feature421;
+     feature422;
+     feature423;
+     feature424;
+     feature425;
+     feature426;
+     subgraph{ rank=same; feature171; feature421; }
+     feature421 -> feature422 -> feature423 -> feature424 -> feature425 -> feature426;
+
+     node  [group="43-some-feature", fillcolor="#FB3DB5"];
+     feature431;
+     feature432;
+     feature433;
+     subgraph features43 {
+         feature431 -> feature432 -> feature433;
+     }
+
+     // branching and merging
+     main1 -> feature171;
+     feature173 -> staging1;
+     staging1 -> main2;
+     main2-> deployment1;
+
+     staging3 -> main3;
+
+     main2 -> feature431;
+     feature433 -> staging4;
+
+     main1 -> feature421;
+     feature424 -> staging2;
+     feature426 -> staging3;
+
+     }
+
 .. _release-branches:
 
 Release branches
