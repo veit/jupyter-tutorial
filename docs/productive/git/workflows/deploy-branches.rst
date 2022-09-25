@@ -31,8 +31,17 @@ In this case each branch should contain a minor version, for example ``2.7`` or
 as possible. This reduces the number of merges that have to be distributed
 across multiple branches during bug fixes. Usually, these are first transferred
 to the  ``main`` and then transferred from there to the release branch with
-:doc:`../cherry-pick`. This upstream first approach is for example used by
-`Google
+:doc:`../cherry-pick`, for example:
+
+.. code-block:: console
+
+     $ git checkout 3.10
+     $ git cherry-pick 61de025
+     [3.10 b600967] Fix bug #17
+      Date: Thu Sep 15 11:17:35 2022 +0200
+      1 file changed, 9 insertions(+)
+
+This upstream first approach is for example used by `Google
 <https://www.chromium.org/chromium-os/chromiumos-design-docs/upstream-first>`_
 and `Red Hat
 <https://www.redhat.com/en/blog/a-community-for-using-openstack-with-red-hat-rdo>`_.
