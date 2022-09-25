@@ -20,6 +20,8 @@ branch. This process can be repeated several times until, for example, the time
 for the going life of these changes has come and a ``prod`` branch can be
 created.
 
+.. _release-branches:
+
 Release branches
 ================
 

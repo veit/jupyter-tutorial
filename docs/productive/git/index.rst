@@ -93,6 +93,7 @@ Notebooks <first-steps>` can be  managed with Git, and on the other hand
     tag
     rebase
     revert
+    cherry-pick
     best-practices
     workflows/index
     git-big-picture
