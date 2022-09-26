@@ -19,7 +19,7 @@ defusedxml==0.7.1
 docutils==0.19
 entrypoints==0.4
 executing==1.1.0
-fastjsonschema==2.16.1
+fastjsonschema==2.16.2
 furo==2022.6.21
 idna==3.3
 imagesize==1.4.1
