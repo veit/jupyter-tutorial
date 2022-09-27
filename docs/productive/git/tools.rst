@@ -104,4 +104,6 @@ prevents unnecessary changes from being checked in.
 `nbstripout <https://github.com/kynan/nbstripout>`_ automates *Clear all
 outputs*. It uses `nbformat <https://nbformat.readthedocs.io/>`_ and a few auto
 magic to set up ``.git config``. In my opinion, however, it has two drawbacks:
-it is limited to the problematic metadata section, and it is slow.
+
+* it is limited to the problematic metadata section
+* it is slow.
