@@ -70,8 +70,25 @@ environment:
 To get started, follow the instructions in `Git-Friendly Jupyter
 <https://nbdev.fast.ai/tutorials/git_friendly_jupyter.html>`_.
 
+Other Git tools for notebooks
+-----------------------------
+
+ReviewNB
+~~~~~~~~
+
+`ReviewNB <https://www.reviewnb.com>`_ solves the problem of doing
+:doc:`gitlab/merge-requests` with notebooks. GitLab’s code review GUI only works
+with line-based file formats, such as Python scripts. Most of the time, however,
+I prefer to check the source code notebooks because:
+
+* I want to check the documentation and the tests, not just the implementation
+* I want to see the changes to the cell output, like charts and tables, not just
+  the code.
+
+For this purpose ReviewNB is perfect.
+
 ``nbdime``
-----------
+~~~~~~~~~~
 
 `nbdime <https://nbdime.readthedocs.io/>`_ is a GUI for diffs of `nbformat
 <https://nbformat.readthedocs.io/>`_ and replaces `nbdiff
@@ -82,7 +99,7 @@ prevents unnecessary changes from being checked in.
 .. _nbstripout_label:
 
 ``nbstripout``
---------------
+~~~~~~~~~~~~~~
 
 `nbstripout <https://github.com/kynan/nbstripout>`_ automates *Clear all
 outputs*. It uses `nbformat <https://nbformat.readthedocs.io/>`_ and a few auto
