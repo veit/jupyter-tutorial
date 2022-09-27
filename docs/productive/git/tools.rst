@@ -90,11 +90,12 @@ For this purpose ReviewNB is perfect.
 ``nbdime``
 ~~~~~~~~~~
 
-`nbdime <https://nbdime.readthedocs.io/>`_ is a GUI for diffs of `nbformat
-<https://nbformat.readthedocs.io/>`_ and replaces `nbdiff
-<https://github.com/tarmstrong/nbdiff>`_. It tries content-aware diffing as well
-as the merging of notebooks, is not limited to the display of diffs, but also
-prevents unnecessary changes from being checked in.
+`nbdime <https://nbdime.readthedocs.io/>`_ is a GUI for `nbformat
+<https://nbformat.readthedocs.io/>`_ diffs and replaces `nbdiff
+<https://github.com/tarmstrong/nbdiff>`_. It attempts content-aware diffing
+locally as well as merging notebooks, is not limited to displaying diffs, but
+also prevents unnecessary changes from being checked in. However, it is not
+compatible with ``nbdev2``.
 
 .. _nbstripout_label:
 
