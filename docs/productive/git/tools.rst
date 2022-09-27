@@ -29,6 +29,47 @@ There are several issues to manage Jupyter Notebooks with Git:
     between different installations, and so two people saving a notebook (even
     without other changes) will often have a conflict in the metadata.
 
+``nbdev2``
+----------
+
+`nbdev2 <https://nbdev.fast.ai>`_ has a set of git hooks that provide clean git
+diffs that automatically resolve most git conflicts and ensure that any
+remaining conflicts can be fully resolved within the standard Jupyter notebook
+environment:
+
+* A new ``git merge`` driver provides notebook-native conflict markers that
+  result in notebooks opening directly in Jupyter, even if there are Git
+  conflicts. Local and remote changes are each shown as separate cells in the
+  notebook, so you can simply delete the version you don’t want to keep or
+  combine the two cells as needed.
+
+  .. seealso::
+     `nbdev.merge docs <https://nbdev.fast.ai/api/merge.html>`_
+
+* Resolving git merges locally is extremely helpful, but we also need to resolve
+  them remotely. For example, if a :doc:`merge request <gitlab/merge-requests.>`
+  is submitted and then someone else submits the same notebook before the merge
+  request is merged, it could cause a conflict:
+
+  .. code-block:: javascript
+
+        "outputs": [
+         {
+     <<<<<< HEAD
+          "execution_count": 8,
+     ======
+          "execution_count": 5,
+     >>>>>> 83e94d58314ea43ccd136e6d53b8989ccf9aab1b
+          "metadata": {},
+
+  The *save hook* of nbdev2 automatically removes all unnecessary metadata
+  (including :samp:`execution_count`) and non-deterministic cell output; this
+  means that there are no pointless conflicts like the one above, since this
+  information is not stored in the commits in the first place.
+
+To get started, follow the instructions in `Git-Friendly Jupyter
+<https://nbdev.fast.ai/tutorials/git_friendly_jupyter.html>`_.
+
 ``nbdime``
 ----------
 
