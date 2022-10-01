@@ -12,6 +12,7 @@ ipyvolume = "*"
 importlib-metadata = "*"
 shot-scraper = "*"
 py-heat-magic = "*"
+pandas-profiling = {extras = ["notebook"], version = "*"}
 
 [dev-packages]
 
