@@ -62,6 +62,8 @@ conflict with the desire to use it in ways for which it was not designed.
 Nevertheless, there are a number of strategies that can be helpful when working
 with large repositories:
 
+.. _git-clone-depth:
+
 ``git clone --depth``
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -82,6 +84,8 @@ Shallow clones have been rather rare in Git until now, as some operations were
 hardly supported at the beginning. For some time now (in versions 1.9 and
 higher) you can even perform pull and push operations in repositories from a
 Shallow Clone.
+
+.. _git-filter-branch:
 
 ``git filter-branch``
 ~~~~~~~~~~~~~~~~~~~~~
@@ -126,6 +130,8 @@ repository. Git LFS accesses Git’s native push, pull, checkout and fetch
 operations to transfer and replace objects, meaning you can work with large
 files in your repository as usual.
 
+.. _fsmonitor:
+
 Git file system monitor (FSMonitor)
 -----------------------------------
 
@@ -158,3 +164,37 @@ the search:
      <https://github.blog/2022-06-29-improve-git-monorepo-performance-with-a-file-system-monitor/>`_
     * `Scaling monorepo maintenance
       <https://github.blog/2021-04-29-scaling-monorepo-maintenance/>`_
+
+Scalar
+------
+
+``scalar``, a repository management tool for large repositories from `Microsoft
+<https://devblogs.microsoft.com/devops/introducing-scalar/>`_, has been part of
+the Git core installation since version 2.38. To use it, you can either clone a
+new repository with ``scalar clone``:
+
+.. code-block:: console
+
+    $ scalar clone /path/to/repo
+
+or apply the configuration recommended by ``scalar`` to an existing clone:
+
+.. code-block:: console
+
+    $ cd /path/to/repo
+    $ scalar register
+
+The following functions are currently available for ``scalar``:
+
+* :ref:`FSMonitor <fsmonitor>`
+* `multi-pack-index (MIDX) <https://git-scm.com/docs/multi-pack-index>`_
+* `commit-graph <https://git-scm.com/docs/git-commit-graph>`_
+* `Git maintenance <https://git-scm.com/docs/git-maintenance>`_
+* Partial cloning with :ref:`git-clone-depth` and :ref:`git-filter-branch`
+* `sparse checkout <https://git-scm.com/docs/git-sparse-checkout>`_
+
+The configuration of ``scalar`` is updated when new features are introduced to
+Git. To ensure you are always using the latest configuration, you should run
+``scalar reconfigure /path/to/repo`` after a new Git version to update your
+repository’s configuration, or ``scalar reconfigure -a`` to update all your
+Scalar-registered repositories at once.
