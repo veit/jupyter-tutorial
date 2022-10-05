@@ -35,3 +35,26 @@ be the following:
     The published history should only be changed in very rare exceptional cases,
     as the old commits would be replaced by new ones and it would look as if
     this part of the project history had suddenly disappeared.
+
+Rebasing dependent branches with ``–update-refs``
+-------------------------------------------------
+
+When you are working on a large feature, it is often helpful to spread the work
+over several branches that build on each other.
+
+However, these branches can be cumbersome to manage if you need to overwrite the
+history in an earlier branch. Since each branch depends on the previous
+branches, rewriting commits in one branch will result in subsequent branches no
+longer being connected to the history.
+
+Git 2.38 ships with a new ``--update-refs`` option for ``git rebase`` that will
+perform such updates for you without you having to manually update each branch
+and without subsequent branches losing their history.
+
+If you want to use this option on every rebase, you can run ``git config
+--global rebase.updateRefs true`` to make Git behave as if the ``--update-refs``
+option is always specified.
+
+.. seealso::
+   `rebase: add --update-refs option
+   <https://lore.kernel.org/git/3ec2cc922f971af4e4a558188cf139cc0c0150d6.1657631226.git.gitgitgadget@gmail.com/>`_
