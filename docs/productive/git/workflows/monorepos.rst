@@ -171,32 +171,48 @@ Scalar
 ``scalar``, a repository management tool for large repositories from `Microsoft
 <https://devblogs.microsoft.com/devops/introducing-scalar/>`_, has been part of
 the Git core installation since version 2.38. To use it, you can either clone a
-new repository with ``scalar clone``:
+new repository with :samp:`scalar clone {/path/to/repo}` or apply ``scalar`` to
+an existing clone with :samp:`scalar register {/path/to/repo}`.
 
-.. code-block:: console
+Other options of ``scalar clone`` are:
 
-    $ scalar clone /path/to/repo
+``-b``, :samp:`--branch {BRANCH}`
+    Branch to be checked out after cloning.
+``--full-clone``
+    Create full working directory when cloning.
+``--single-branch``
+    Download only metadata of the branch that will be checked out.
 
-or apply the configuration recommended by ``scalar`` to an existing clone:
+With ``scalar list`` you can see which repositories are currently tracked by
+Scalar and with :samp:`scalar unregister {/path/to/repo}` the repository is
+removed from this list.
 
-.. code-block:: console
+By default, `Sparse-Checkout <https://git-scm.com/docs/git-sparse-checkout>`_ is
+enabled and only the files in the root of the git repository are shown. Use
+``git sparse-checkout set`` to expand the set of directories you want to see, or
+``git sparse-checkout disable`` to show all files. If you don’t know which
+directories are available in the repository, you can run ``git ls-tree -d
+--name-only HEAD`` to find the directories in the root directory, or :samp:`git
+ls-tree -d --name-only HEAD {/path/to/repo}` to find the directories in
+:samp:`{/path/to/repo}`.
 
-    $ cd /path/to/repo
-    $ scalar register
+To enable sparse-checkout afterwards, run ``git sparse-checkout init --cone``.
+This will initialise your sparse-checkout patterns to match only the files in
+the root directory.
 
-The following functions are currently available for ``scalar``:
+Currently, in addition to ``sparse-checkout``, the following functions are
+available for ``scalar``:
 
 * :ref:`FSMonitor <fsmonitor>`
 * `multi-pack-index (MIDX) <https://git-scm.com/docs/multi-pack-index>`_
 * `commit-graph <https://git-scm.com/docs/git-commit-graph>`_
 * `Git maintenance <https://git-scm.com/docs/git-maintenance>`_
 * Partial cloning with :ref:`git-clone-depth` and :ref:`git-filter-branch`
-* `sparse checkout <https://git-scm.com/docs/git-sparse-checkout>`_
 
-The configuration of ``scalar`` is updated when new features are introduced to
-Git. To ensure you are always using the latest configuration, you should run
-``scalar reconfigure /path/to/repo`` after a new Git version to update your
-repository’s configuration, or ``scalar reconfigure -a`` to update all your
+The configuration of ``scalar`` is updated as new features are introduced into
+Git. To ensure that you are always using the latest configuration, you should
+run :samp:`scalar reconfigure {/PATH/TO/REPO}` after a new Git version to update
+your repository’s configuration, or ``scalar reconfigure -a`` to update all your
 Scalar-registered repositories at once.
 
 .. seealso::
