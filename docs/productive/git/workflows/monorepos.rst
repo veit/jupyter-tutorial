@@ -198,3 +198,6 @@ Git. To ensure you are always using the latest configuration, you should run
 ``scalar reconfigure /path/to/repo`` after a new Git version to update your
 repository’s configuration, or ``scalar reconfigure -a`` to update all your
 Scalar-registered repositories at once.
+
+.. seealso::
+   * `Git - scalar Documentation <https://git-scm.com/docs/scalar>`_
