@@ -78,7 +78,7 @@ sphinxcontrib-htmlhelp==2.0.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
-sphinxcontrib-svg2pdfconverter==1.2.0
+sphinxcontrib-svg2pdfconverter==1.2.1
 sphinxext-opengraph==0.6.3
 stack-data==0.3.0
 terminado==0.15.0
