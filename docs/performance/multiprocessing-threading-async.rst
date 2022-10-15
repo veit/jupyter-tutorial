@@ -1,17 +1,5 @@
-Introduction to concurrency
-===========================
-
-When developing code, there can often be trade-offs between different
-implementations. However, at the beginning of the development of an algorithm,
-it is usually counterproductive to worry about the efficiency of the code.
-
-    «We should forget about small efficiencies, say about 97% of the time:
-    premature optimization is the root of all evil. Yet we should not pass up
-    our opportunities in that critical 3%.»[#]_
-
-.. [#] `Donald Knuth, founder of Literate Programming
-       <http://www.literateprogramming.com/>`_, in Computer Programming as an
-       Art (1974)
+Introduction to multithreading, multiprocessing and async
+=========================================================
 
 Martelli’s model of scalability
 -------------------------------
@@ -26,9 +14,9 @@ Martelli’s model of scalability
 | >8               | Distributed processing                 |
 +------------------+----------------------------------------+
 
-Martelli’s observation: In the course of time, the second category becomes more
-and more insignificant: individual cores are becoming more and more powerful and
-large data sets are getting bigger and bigger.
+Martelli’s observation was that over time the second category becomes less and
+less important as individual cores become more powerful and large data sets
+become larger.
 
 Global Interpreter Lock (GIL)
 -----------------------------
@@ -40,18 +28,19 @@ The GIL is not a big problem for I/O-heavy applications; however, using
 threading will slow down CPU-heavy applications. Accordingly, multi-processing
 is exciting for us to get more CPU cycles.
 
-*Literate programming* and *Martelli's model of scalability* determined the
-design decisions on Python’s performance for a long time. Little has changed in
-this assessment to this day: Contrary to intuitive expectations, more CPUs and
-threads in Python initially lead to less efficient applications. However, the
-`Gilectomy <https://pythoncapi.readthedocs.io/gilectomy.html>`_ project, which
-was supposed to replace the GIL, also encountered another problem: the Python C
-API exposes too many implementation details. With this, however, performance
-improvements would quickly lead to incompatible changes, which then seem
-unacceptable, especially in a language as popular as Python.
+`Literate programming <http://www.literateprogramming.com/>`_ and *Martelli's
+model of scalability* determined the design decisions on Python’s performance
+for a long time. Little has changed in this assessment to this day: Contrary to
+intuitive expectations, more CPUs and threads in Python initially lead to less
+efficient applications. However, the `Gilectomy
+<https://pythoncapi.readthedocs.io/gilectomy.html>`_ project, which was supposed
+to replace the GIL, also encountered another problem: the Python C API exposes
+too many implementation details. With this, however, performance improvements
+would quickly lead to incompatible changes, which then seem unacceptable,
+especially in a language as popular as Python.
 
-Multithreading, multiprocessing and asynchronous communication
---------------------------------------------------------------
+Overview
+--------
 
 +------------------+------------------+------------------+--------------------------------+
 | Criterion        | Multithreading   | Multiprocessing  | asyncio                        |
@@ -120,34 +109,6 @@ Multithreading, multiprocessing and asynchronous communication
 |                  |                  | synchronisation  |                                |
 |                  |                  | of the processes.|                                |
 +------------------+------------------+------------------+--------------------------------+
-
-Task schedulers
----------------
-
-:doc:`ipyparallel/index`, :doc:`dask` and `Ray <https://docs.ray.io/>`_
-can distribute tasks in a cluster.  In doing so, they have different focuses:
-
-* `ipyparallel` simply integrates into a
-  :doc:`../../workspace/jupyter/hub/index`.
-* Dask imitates pandas, NumPy iterators, Toolz und PySpark when it distributes
-  their tasks.
-* Ray provides a simple, universal API for building distributed applications.
-
-  * `RLlib <https://docs.ray.io/en/latest/rllib.html>`_ will scale reinforcement
-    learning in particular.
-  * A `backend for joblib <https://docs.ray.io/en/latest/joblib.html>`_ supports
-    distributed `scikit-learn <https://scikit-learn.org/stable/>`_ programs.
-  * `XGBoost-Ray <https://docs.ray.io/en/latest/xgboost-ray.html>`_ is a backend
-    for distributed `XGBoost <https://xgboost.readthedocs.io/en/latest/>`_.
-  * `LightGBM-Ray <https://docs.ray.io/en/latest/lightgbm-ray.html>`_ is a
-    backend for distributed `LightGBM
-    <https://lightgbm.readthedocs.io/en/latest/>`_.
-  * `Collective Communication Lib
-    <https://docs.ray.io/en/latest/ray-collective.html>`_ offers a set of native
-    collective primitives for `Gloo
-    <https://github.com/facebookincubator/gloo>`_ and the `NVIDIA Collective
-    Communication Library (NCCL)
-    <https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html>`_.
 
 Summary
 -------
