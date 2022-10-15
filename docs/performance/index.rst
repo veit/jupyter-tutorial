@@ -176,7 +176,8 @@ For intensive numerical operations, Python can be very slow, even if you have
 avoided all anti-patterns and used vectorisations with NumPy. In this case,
 translating code into `Cython <https://cython.org>`_ can be helpful.
 Unfortunately, the code often has to be restructured and thus increases in
-complexity. Explicit type annotations also become cumbersome.
+complexity. Explicit type annotations and the provision of code also become more
+cumbersome.
 
 Our example could then look like this:
 
