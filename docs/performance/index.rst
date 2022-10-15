@@ -197,6 +197,9 @@ scientific Python and NumPy code into fast machine code, for example:
 .. literalinclude:: nb_kmeans.py
     :lines: 1-23
 
+However, Numba requires `LLVM <https://en.wikipedia.org/wiki/LLVM>`_ and some
+Python constructs are not supported.
+
 6. Task planner
 ---------------
 
