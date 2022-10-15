@@ -18,6 +18,10 @@ GitLab is a completely packaged platform, while GitHub can be extended with apps
 from the Marketplace. However, this does not mean that GitLab cannot be
 integrated, for example with Asana, Jira, Microsoft Teams, Slack, etc.
 
+.. seealso::
+    `Visual Studio Code: GitLab Workflow
+    <https://marketplace.visualstudio.com/items?itemName=GitLab.gitlab-workflow>`_
+
 .. toctree::
    :hidden:
 
