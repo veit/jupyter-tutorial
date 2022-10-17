@@ -60,8 +60,10 @@ Git branches
         is a merge strategy that is used when the merge is only to be done to
         ``HEAD``.
 
-Merge conflict
---------------
+.. _merge-conflicts:
+
+Merge conflicts
+---------------
 
 Occasionally, however, Git runs into issues with merging, such as:
 
