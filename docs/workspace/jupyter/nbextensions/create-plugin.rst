@@ -96,7 +96,7 @@ following structure:
     also displayed in the :menuselection:`Nbextensions` tab.
 
 .. seealso::
-   * :doc:`internals`
+   * :doc:`jupyter-contrib-nbextensions:internals`
 
 Setup Jupyter Notebook Extension
 --------------------------------
