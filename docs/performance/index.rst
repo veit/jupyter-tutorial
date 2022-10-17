@@ -17,6 +17,38 @@ it is usually counterproductive to worry about the efficiency of the code.
        <http://www.literateprogramming.com/>`_, in Computer Programming as an
        Art (1974)
 
+k-Means example
+---------------
+
+In the following, I show examples of the `k-means algorithm
+<https://en.wikipedia.org/wiki/K-means_clustering>`_ to form a previously known
+number of groups from a set of objects. This can be achieved in the following
+three steps:
+
+#. Choose the first :samp:`k` elements as cluster centres
+#. Assign each new element to the cluster with the least increase in variance.
+#. Update the cluster centre
+
+Steps 2 and 3 are repeated until the assignments no longer change.
+
+A possible implementation with pure Python could look like this:
+
+.. literalinclude:: py_kmeans.py
+
+We can create sample data with:
+
+.. code-block:: python
+
+    from sklearn.datasets import make_blobs
+    points, labels_true = make_blobs(n_samples=1000, centers=3,
+                                 random_state=0, cluster_std=0.60)
+
+And finally, we can perform the calculation with:
+
+.. code-block:: python
+
+    kmeans(points, 10)
+
 Performance measurements
 ------------------------
 
@@ -40,6 +72,35 @@ this.
 
     ipython-profiler.ipynb
     scalene.ipynb
+
+Search for existing implementations
+-----------------------------------
+
+You should not try to reinvent the wheel: If there are existing implementations,
+you should use them. There are even two implementations for the k-means
+algorithm:
+
+* `sklearn.cluster.KMeans
+  <https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html>`_
+
+  .. code-block:: python
+
+        from sklearn.cluster import KMeans
+        KMeans(10).fit_predict(points)
+
+* `dask_ml.cluster.KMeans
+  <https://ml.dask.org/modules/generated/dask_ml.cluster.KMeans.html>`_
+
+  .. code-block:: python
+
+        from dask_ml.cluster import KMeans
+        KMeans(10).fit(points).predict(points)
+
+The best that could be said against these existing solutions is that they could
+create a considerable overhead in your project if you are not already using
+`scikit-learn <https://scikit-learn.org/stable/>`_ or `Dask-ML
+<https://ml.dask.org>`_ elsewhere. In the following, I will therefore show you
+further possibilities to optimise your own code.
 
 Find anti-patterns
 ------------------
@@ -67,35 +128,6 @@ fast execution time of C. You may be able to use
 <../workspace/numpy/vectorisation>` and
 :doc:`../workspace/numpy/indexing-slicing` in all combinations to move
 repetitive operations into compiled code to avoid slow loops.
-
-In the following I show an example of the `k-means algorithm
-<https://en.wikipedia.org/wiki/K-means_clustering>`_ to build a previously known
-number of groups from a set of objects. This can be achieved in the following
-three steps:
-
-#. Choose the first :samp:`k` elements as cluster centres
-#. Assign each new element to the cluster with the least increase in variance.
-#. Update the cluster centre
-
-Steps 2 and 3 are repeated until the assignments no longer change.
-
-A possible implementation with pure Python could look like this:
-
-.. literalinclude:: py_kmeans.py
-
-We can create sample data with:
-
-.. code-block:: python
-
-    from sklearn.datasets import make_blobs
-    points, labels_true = make_blobs(n_samples=1000, centers=3,
-                                 random_state=0, cluster_std=0.60)
-
-And finally, we can perform the calculation with:
-
-.. code-block:: python
-
-    kmeans(points, 10)
 
 With NumPy we can do without some loops:
 
