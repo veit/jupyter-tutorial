@@ -76,8 +76,8 @@ Read more
     * `Git reference <https://git-scm.com/docs>`_
 
 Essentially, in this tutorial, I show on the one hand how :doc:`Jupyter
-Notebooks <first-steps>` can be  managed with Git, and on the other hand
-:doc:`best practices <best-practices>` and typical :doc:`workflows/index`.
+Notebooks <../../first-steps/index>` can be  managed with Git, and on the other
+hand :doc:`best practices <best-practices>` and typical :doc:`workflows/index`.
 
 .. toctree::
     :hidden:
