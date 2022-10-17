@@ -47,7 +47,7 @@ environment:
      `nbdev.merge docs <https://nbdev.fast.ai/api/merge.html>`_
 
 * Resolving git merges locally is extremely helpful, but we also need to resolve
-  them remotely. For example, if a :doc:`merge request <gitlab/merge-requests.>`
+  them remotely. For example, if a :doc:`merge request <gitlab/merge-requests>`
   is submitted and then someone else submits the same notebook before the merge
   request is merged, it could cause a conflict:
 
