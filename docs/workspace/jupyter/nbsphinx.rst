@@ -1,7 +1,7 @@
 ``nbsphinx``
 ============
 
-:doc:`nbsphinx <nbsphinx:index>` is a :doc:`Sphinx <sphinx:contents>` extension
+:doc:`nbsphinx <nbsphinx:index>` is a :doc:`Sphinx <sphinx:index>` extension
 that provides a parser for ``*.ipynb`` files: Jupyter Notebook code cells are
 displayed in both HTML and LaTeX output. Notebooks with no output cells saved
 are automatically created during the Sphinx build process.
