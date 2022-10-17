@@ -34,4 +34,4 @@ change was supposed to be made and then cherry-pick the commit to that branch.
 
 However, cherry-picking usually results in duplicate commits, and in many cases
 we prefer to use git merges. Nevertheless, ``git cherry-pick`` can be very
-suitable for some scenarios, for example :ref:`release branches` workflows.
+suitable for some scenarios, for example :ref:`release-branches` workflows.
