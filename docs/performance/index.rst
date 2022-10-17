@@ -17,8 +17,8 @@ it is usually counterproductive to worry about the efficiency of the code.
        <http://www.literateprogramming.com/>`_, in Computer Programming as an
        Art (1974)
 
-1. Performance measurements
----------------------------
+Performance measurements
+------------------------
 
 Once you have worked with your code, it can be useful to examine its efficiency
 more closely. The :doc:`ipython-profiler` or :doc:`scalene` can be used for
@@ -41,8 +41,8 @@ this.
     ipython-profiler.ipynb
     scalene.ipynb
 
-2. Find anti-patterns
----------------------
+Find anti-patterns
+------------------
 
 Then you can use :doc:`perflint` to search your code for the most common
 performance anti-patterns in Python.
@@ -57,8 +57,8 @@ performance anti-patterns in Python.
 .. seealso::
    * `Effective Python <https://effectivepython.com>`_
 
-3. Vectorisations with NumPy
-----------------------------
+Vectorisations with NumPy
+-------------------------
 
 :doc:`../workspace/numpy/index` moves repetitive operations into a statically
 typed compiled layer, combining the fast development time of Python with the
@@ -107,8 +107,8 @@ not per array element. However, because NumPy uses a specific language for array
 operations, it also requires a different mindset when writing code. Finally, the
 batch operations can also lead to excessive memory consumption.
 
-4. Special data structures
---------------------------
+Special data structures
+-----------------------
 
 :doc:`../workspace/pandas/index`
     for SQL-like :doc:`../workspace/pandas/group-operations` and
@@ -145,8 +145,8 @@ batch operations can also lead to excessive memory consumption.
 
     parallelise-pandas
 
-5. Select compiler
-------------------
+Select compiler
+---------------
 
 Faster Cpython
 ~~~~~~~~~~~~~~
@@ -200,8 +200,8 @@ scientific Python and NumPy code into fast machine code, for example:
 However, Numba requires `LLVM <https://en.wikipedia.org/wiki/LLVM>`_ and some
 Python constructs are not supported.
 
-6. Task planner
----------------
+Task planner
+------------
 
 :doc:`ipyparallel/index`, :doc:`dask` and `Ray <https://docs.ray.io/>`_
 can distribute tasks in a cluster.  In doing so, they have different focuses:
@@ -241,8 +241,8 @@ Our example could look like this with Dask:
     ipyparallel/index
     dask.ipynb
 
-7 Multithreading, Multiprocessing and Async
--------------------------------------------
+Multithreading, Multiprocessing and Async
+-----------------------------------------
 
 After a brief :doc:`overview <multiprocessing-threading-async>`, three examples
 of :doc:`threading <threading-example>`, :doc:`multiprocessing
