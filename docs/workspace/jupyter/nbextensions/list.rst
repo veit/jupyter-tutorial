@@ -28,18 +28,18 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
     doc
     <https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/doc/documentation.pdf>`_).
 
-:doc:`nbextensions/code_prettify/README_autopep8`
+:doc:`jupyter-contrib-nbextensions:nbextensions/code_prettify/README_autopep8`
     formats/beautifies Python code in cells. The extension uses `autopep8
     <https://github.com/hhatto/autopep8>`_ and can therefore only be used with
     a Python kernel.
 
-:doc:`nbextensions/code_prettify/README_code_prettify`
+:doc:`jupyter-contrib-nbextensions:nbextensions/code_prettify/README_code_prettify`
     formats/beautifies code notebook code cells. The current notebook kernel is
     used, which is why the Prettifier package used must be available in this
     kernel. Sample implementations are provided for ipython, R, and Javascript
     kernels.
 
-:doc:`nbextensions/limit_output/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/limit_output/readme`
     limits the number of characters that a code cell outputs as text or HTML.
     This also breaks endless loops. You can set the number of characters with
     the ``ConfigManager``:
@@ -52,11 +52,11 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
 `Nbextensions edit menu item <https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator>`_
     adds an edit menu to open the configuration page of ``nbextensions``.
 
-:doc:`nbextensions/printview/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/printview/readme`
     adds an icon to display the print preview of the current notebook in a new
     browser tab.
 
-:doc:`nbextensions/ruler/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/ruler/readme`
     adds a ruler after a certain number of characters. The number of characters
     can be specified with the ``ConfigManager``:
 
@@ -67,11 +67,11 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
         cm = ConfigManager(parent=ip)
         cm.update('notebook', {"ruler_column": [80]})
 
-:doc:`nbextensions/scratchpad/README`
+:doc:`jupyter-contrib-nbextensions:nbextensions/scratchpad/README`
     adds a note cell to the notebook. In this cell you can run code from the
     current kernel without changing the document.
 
-:doc:`nbextensions/snippets/README`
+:doc:`jupyter-contrib-nbextensions:nbextensions/snippets/README`
     adds a configurable menu item to notebooks to insert snippets,
     boilerplate and code examples.
 
@@ -79,9 +79,9 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
        :alt: Snippets menu
 
     You can also define your own menu items, see also
-    :doc:`nbextensions/snippets/README`.
+    :doc:`jupyter-contrib-nbextensions:nbextensions/snippets/README`.
 
-:doc:`nbextensions/toc2/README`
+:doc:`jupyter-contrib-nbextensions:nbextensions/toc2/README`
     makes it possible to collect all headings and display them in a floating
     window, as a sidebar or in a navigation menu.
 
@@ -102,14 +102,14 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
     General documentation on templates can be found in
     :label:`nbconvert:external_exporters`.
 
-:doc:`nbextensions/tree-filter/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/tree-filter/readme`
     filters in the Jupyter dashboard by file name.
 
-:doc:`nbextensions/code_prettify/README_2to3`
+:doc:`jupyter-contrib-nbextensions:nbextensions/code_prettify/README_2to3`
     converts Python2 to Python3 code in a code cell using the `lib2to3
     <https://github.com/python/cpython/tree/3.7/Lib/lib2to3/>`_ library.
 
-:doc:`nbextensions/codefolding/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/codefolding/readme`
     enables code folding in code cells.
 
     .. image:: code-folding.png
@@ -128,18 +128,18 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
 
         $ jupyter nbconvert --to html --CodeFoldingPreprocessor.remove_folded_code=True mynotebook.ipynb
 
-:doc:`nbextensions/collapsible_headings/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/collapsible_headings/readme`
     enables notebooks to have collapsible sections separated by headings.
 
-:doc:`nbextensions/datestamper/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/datestamper/readme`
     inserts the current time and date in one cell.
 
-:doc:`nbextensions/hinterland/README`
+:doc:`jupyter-contrib-nbextensions:nbextensions/hinterland/README`
     enables autocompletion.
 
-:doc:`nbextensions/varInspector/README`
+:doc:`jupyter-contrib-nbextensions:nbextensions/varInspector/README`
     collects all defined variables and displays them in a floating window.
 
-:doc:`nbextensions/load_tex_macros/readme`
+:doc:`jupyter-contrib-nbextensions:nbextensions/load_tex_macros/readme`
     automatically loads a series of latex commands from the ``latexdefs.tex``
     file when a notebook is opened.
