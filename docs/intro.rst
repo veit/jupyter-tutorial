@@ -47,9 +47,8 @@ project:
    redundant, inconsistent, or incorrectly formatted data.
 6. **Analyse data** through exploratory analysis and :doc:`visualising data
    <viz/index>`.
-7. **Refactoring** includes parameterisation, validation and performance
-   optimisation, including through :doc:`concurrency
-   <performance/concurrency>`.
+7. **Refactoring** includes parameterisation, validation and :doc:`performance
+   optimisation <performance/index>`.
 8. **Creating a product** includes :doc:`productive/testing` and
    :doc:`productive/logging/index`. However, the :doc:`creation
    <productive/packaging>` and :doc:`python-basics:document/index` of libraries
