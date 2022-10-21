@@ -196,6 +196,9 @@ directories are available in the repository, you can run ``git ls-tree -d
 ls-tree -d --name-only HEAD {/path/to/repo}` to find the directories in
 :samp:`{/path/to/repo}`.
 
+.. seealso::
+   `git ls-tree <https://git-scm.com/docs/git-ls-tree>`_
+
 To enable sparse-checkout afterwards, run ``git sparse-checkout init --cone``.
 This will initialise your sparse-checkout patterns to match only the files in
 the root directory.
