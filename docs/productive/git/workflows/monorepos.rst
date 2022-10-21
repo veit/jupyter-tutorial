@@ -108,6 +108,8 @@ There are also helper scripts to identify large items: :samp:`git filter-branch
    * `How to tear apart a repository: the Git way
      <https://www.atlassian.com/blog/git/tear-apart-repository-git-way?>`_
 
+.. _git-clone-branch:
+
 ``git clone --branch``
 ~~~~~~~~~~~~~~~~~~~~~~
 

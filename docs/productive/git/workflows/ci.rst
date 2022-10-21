@@ -21,16 +21,26 @@ download.
 Use shallow clones
 ------------------
 
-Each time a build is run, your build server clones your repository into the
-current working directory. When doing this, Git usually clones the entire
-history of the repo, making this process take longer and longer over time.
-Unless you use so-called shallow clones, where only the current snapshot of the
-repository is pulled down. This shortens the build time, especially for
-repositories with a long history.
+Every time a build is executed, your build server clones your repository into
+the current working directory. Git usually clones the entire history of the
+repository, so this process takes longer and longer over time. Unless you use
+so-called shallow clones, where only the current snapshot of the repository is
+pulled down with :ref:`git-clone-depth` and only the relevant branch with
+:ref:`git-clone-branch`. This shortens the build time, especially for
+repositories with a long history and many branches.
 
 In doing so, since version 1.9, Git can make simple changes to files, such as
-updating a version number, without pushing the entire history. In many cases,
-however, the following tip will be required in addition.
+updating a version number, without pushing the entire history.
+
+.. warning::
+    In a shallow clone, git fetch can result in an almost complete commit
+    history being downloaded. Other git operations can also lead to unexpected
+    results and negate the supposed advantages of shallow clones, so we
+    recommend using shallow clones only for builds and deleting the repository
+    immediately afterwards.
+
+However, if you want to continue using the repositories, the following tip may
+be helpful.
 
 Cache the repo on build servers
 -------------------------------
