@@ -9,19 +9,19 @@ Installation
 ------------
 
 #. The Notebook Viewer requires several binary packages that have to be
-   installed on our system,
+   installed on our system, for
 
-   for Ubuntu and Debian:
+.. tab:: Debian/Ubuntu
 
-   .. code-block:: console
+    .. code-block:: console
 
-    $ sudo apt install libmemcached-dev libcurl4-openssl-dev pandoc libevent-dev
+        $ sudo apt install libmemcached-dev libcurl4-openssl-dev pandoc libevent-dev
 
-   for Mac OSX:
+.. tab:: macOS
 
-   .. code-block:: console
+    .. code-block:: console
 
-    $ brew install libmemcached openssl pandoc libevent
+        $ brew install libmemcached openssl pandoc libevent
 
 #. The Jupyter Notebook Viewer can then be installed in a new virtual
    environment with:
