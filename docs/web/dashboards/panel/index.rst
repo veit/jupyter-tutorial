@@ -23,3 +23,4 @@ apps and dashboards, which not only supports bokeh plots.
     deploy.ipynb
     pipelines.ipynb
     templates.ipynb
+    pyodide
