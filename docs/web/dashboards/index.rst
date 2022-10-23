@@ -14,7 +14,7 @@ Dashboards
     was developed on the basis of `Bokeh <https://docs.bokeh.org/>`_
     and `Param <https://github.com/holoviz/param>`_ and offers a toolkit
     especially for creating apps and dashboards, which not only supports bokeh
-    plots, see also `Panel: Ahigh-level app and dashboarding solution for the
+    plots, see also `Panel: A high-level app and dashboarding solution for the
     PyData ecosystem
     <https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52>`_.
 :doc:`voila/index`
