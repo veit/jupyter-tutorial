@@ -51,6 +51,10 @@ Now you can open ``http://localhost:40405`` in your browser and try out the app:
 You can now add the :download:`pyodide/overview.html` file to your Github pages
 or similar – no separate server is required.
 
+.. seealso::
+   * `Awesome Panel/Webassembly Apps
+     <https://awesome-panel.github.io/examples/>`_
+
 Options
 -------
 
