@@ -1,0 +1,111 @@
+FastAPI integration
+===================
+
+Panel usually runs on a :doc:`pyviz:bokeh/bokeh-server`, which in turn runs on
+`Tornado <https://www.tornadoweb.org/en/stable/>`_. However, it is also often
+useful to embed a Panel app into a large web application, such as a FastAPI web
+server. Integration with FastAPI is easier compared to others such as
+:doc:`Flask <pyviz:bokeh/embedding-export/flask>`, as it is a more lightweight
+framework. Using Panel with FastAPI requires only a little more effort than
+notebooks and Bokeh servers.
+
+Configuration
+-------------
+
+Before we start adding a Bokeh application to our FastApi server, we need to set
+up some of the basic configuration in :download:`fastAPI/main.py`:
+
+#. First, we import all the necessary elements:
+
+   .. literalinclude:: fastAPI/main.py
+      :linenos:
+      :lines: 1-3, 6
+
+#. Next, we define ``app`` as an instance of ``FastAPI`` and define the path to
+   the template directory:
+
+   .. literalinclude:: fastAPI/main.py
+      :lineno-start: 8
+      :lines: 8-9
+
+#. Now we create our first routine via an asynchronous function and refer it to
+   our BokehServer:
+
+   .. literalinclude:: fastAPI/main.py
+      :lineno-start: 11
+      :lines: 11-15
+
+#. As you can see from the code, a `Jinja2
+   <https://fastapi.tiangolo.com/advanced/templates/#using-jinja2templates>`_
+   template :download:`fastAPI/templates/base.html` is expected. This can have
+   the following content, for example:
+
+   .. literalinclude:: fastAPI/templates/base.html
+      :language: html
+      :linenos:
+      :lines: 1-
+
+#. Let’s now return to our :download:`fastAPI/main.py` file to start our bokeh
+   server with ``pn.serve()``:
+
+   .. literalinclude:: fastAPI/main.py
+      :lineno-start: 18
+      :lines: 18-
+
+   ``createApp``
+       calls up our panel app in this example, but this is not covered until the
+       next section.
+   ``address``, ``port``
+       Address and port at which the server listens for requests; in our case
+       ``http://127.0.0.1:5000``.
+   ``show=False``
+       ensures that the Bokeh server is started but is not immediately displayed
+       in the browser.
+   ``allow_websocket_origin``
+       lists the hosts that can connect to the websocket. In our example, this
+       should be ``fastApi``, so we use ``127.0.0.1:8000``.
+
+#. Now we define the ``sliders`` app based on a standard template for FastAPI
+   apps, which shows how Panel and FastAPI can be integrated:
+
+   :download:`fastAPI/sliders/sinewave.py`
+       a parameterised object that represents your existing code:
+
+       .. literalinclude:: fastAPI/sliders/sinewave.py
+          :linenos:
+          :lines: 1-
+
+   :download:`fastAPI/sliders/pn_app.py`
+       creates an app function from the ``SineWave`` class:
+
+       .. literalinclude:: fastAPI/sliders/pn_app.py
+          :linenos:
+          :lines: 1-
+
+#. Finally, we return to our :download:`fastAPI/main.py` and import the
+   ``createApp`` function:
+
+   .. literalinclude:: fastAPI/main.py
+      :lineno-start: 4
+      :lines: 4
+
+The file structure should now look like this:
+
+.. code-block:: console
+
+    fastAPI
+    ├── main.py
+    ├── sliders
+    │   ├── pn_app.py
+    │   └── sinewave.py
+    └── templates
+        └── base.html
+
+You can now start the server with:
+
+.. code-block:: console
+
+    $ uvicorn main:app --reload
+    …
+    INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+    INFO:     Started reloader process [191354] using StatReload
