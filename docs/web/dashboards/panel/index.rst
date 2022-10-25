@@ -24,3 +24,4 @@ apps and dashboards, which not only supports bokeh plots.
     pipelines.ipynb
     templates.ipynb
     pyodide
+    fastapi

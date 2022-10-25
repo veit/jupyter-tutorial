@@ -14,6 +14,8 @@ shot-scraper = "*"
 py-heat-magic = "*"
 pandas-profiling = {extras = ["notebook"], version = "*"}
 panel = {editable = true, git = "https://github.com/holoviz/panel.git"}
+fastapi = "*"
+uvicorn = "*"
 
 [dev-packages]
 
