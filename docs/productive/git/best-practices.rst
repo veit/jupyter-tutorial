@@ -4,8 +4,8 @@ Git best practices
 * Commit early!
 
   Make your first commit after you’ve finished the initial installation and
-  before you make your first changes. For a cookiecutter template, for example,
-  following the following steps:
+  before you make your first changes. For a cookie cutter template, for example,
+  proceed as follows:
 
   .. code-block:: console
 
