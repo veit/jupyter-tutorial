@@ -39,7 +39,7 @@ mistune==2.0.4
 nbclient==0.7.0
 nbconvert==7.2.5
 nbformat==5.7.0
-nbsphinx==0.8.9
+nbsphinx==0.8.10
 nest-asyncio==1.5.6
 packaging==21.3
 pandocfilters==1.5.0
