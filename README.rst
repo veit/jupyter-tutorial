@@ -21,6 +21,9 @@ Status
 .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.4147287.svg
    :alt: DOI
    :target: https://zenodo.org/badge/latestdoi/199994535
+.. image:: https://img.shields.io/badge/dynamic/json?label=Mastodon&query=totalItems&url=https%3A%2F%2Fmastodon.social%2F@JupyterTutorial%2Ffollowers.json&logo=mastodon
+   :alt: Mastodon
+   :target: https://mastodon.social/@JupyterTutorial
 
 .. _first-steps:
 
