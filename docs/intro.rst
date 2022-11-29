@@ -1,10 +1,6 @@
 Introduction
 ============
 
-.. include:: ../README.rst
-   :start-after: badges
-   :end-before: first-steps
-
 Target group
 ------------
 
