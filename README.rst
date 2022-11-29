@@ -163,6 +163,8 @@ Installation
     $ vale docs/
     ✔ 0 errors, 0 warnings and 0 suggestions in 201 files.
 
+.. _follow-us:
+
 Follow us
 ---------
 
