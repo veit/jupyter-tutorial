@@ -207,34 +207,34 @@ looks like this:
 
    .. code-block:: console
 
-  $ pipenv install --python=/srv/jupyter/spack/var/spack/environments/python-311/.spack-env/view/bin/python
-     Creating a virtualenv for this project...
-     Pipfile: /srv/jupyter/jupyter-tutorial/pipenvs/python-311/Pipfile
-     Using /srv/jupyter/spack/var/spack/environments/python-311/.spack-env/view/bin/python (3.11.0) to create virtualenv...
-    ⠹ Creating virtual environment...Using base prefix '/srv/jupyter/jupyterhub/spackenvs/python-374/.spack-env/view'
-       creator Venv(dest=/srv/jupyter/.local/share/virtualenvs/python-311-aGnPz55z, clear=False, no_vcs_ignore=False, global=False, describe=CPython3Posix)
-       seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/srv/jupyter/.local/share/virtualenv)
-         added seed packages: pip==22.3.1, setuptools==65.5.1, wheel==0.38.4
-       activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
-     ✔ Successfully created virtual environment!
-     Virtualenv location: /srv/jupyter/.local/share/virtualenvs/python-311-aGnPz55z
-     Creating a Pipfile for this project...
-     Pipfile.lock not found, creating...
-     Locking [packages] dependencies...
-     Locking [dev-packages] dependencies...
-     Updated Pipfile.lock (a3aa656db1de341c375390e74afd03f09eb681fe6881c58a71a85d6e08d77619)!
-     Installing dependencies from Pipfile.lock (d77619)...
-     To activate this project's virtualenv, run pipenv shell.
-     Alternatively, run a command inside the virtualenv with pipenv run.
+      $ pipenv install --python=/srv/jupyter/spack/var/spack/environments/python-311/.spack-env/view/bin/python
+         Creating a virtualenv for this project...
+         Pipfile: /srv/jupyter/jupyter-tutorial/pipenvs/python-311/Pipfile
+         Using /srv/jupyter/spack/var/spack/environments/python-311/.spack-env/view/bin/python (3.11.0) to create virtualenv...
+        ⠹ Creating virtual environment...Using base prefix '/srv/jupyter/jupyterhub/spackenvs/python-374/.spack-env/view'
+           creator Venv(dest=/srv/jupyter/.local/share/virtualenvs/python-311-aGnPz55z, clear=False, no_vcs_ignore=False, global=False, describe=CPython3Posix)
+           seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/srv/jupyter/.local/share/virtualenv)
+             added seed packages: pip==22.3.1, setuptools==65.5.1, wheel==0.38.4
+           activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+         ✔ Successfully created virtual environment!
+         Virtualenv location: /srv/jupyter/.local/share/virtualenvs/python-311-aGnPz55z
+         Creating a Pipfile for this project...
+         Pipfile.lock not found, creating...
+         Locking [packages] dependencies...
+         Locking [dev-packages] dependencies...
+         Updated Pipfile.lock (a3aa656db1de341c375390e74afd03f09eb681fe6881c58a71a85d6e08d77619)!
+         Installing dependencies from Pipfile.lock (d77619)...
+         To activate this project's virtualenv, run pipenv shell.
+         Alternatively, run a command inside the virtualenv with pipenv run.
 
    The installation can then be checked with:
 
    .. code-block:: console
 
-    $ pipenv run python
-     Python 3.11.0 (main, Nov 19 2022, 11:29:15) [GCC 12.2.0] on linux
-     Type "help", "copyright", "credits" or "license" for more information.
-     >>> import matplotlib.pyplot as plt
+        $ pipenv run python
+         Python 3.11.0 (main, Nov 19 2022, 11:29:15) [GCC 12.2.0] on linux
+         Type "help", "copyright", "credits" or "license" for more information.
+         >>> import matplotlib.pyplot as plt
 
 Configuration
 -------------
