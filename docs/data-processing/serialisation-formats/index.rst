@@ -29,32 +29,39 @@ Nested JSON style:
 Serialising data
 ----------------
 
-If the data to be serialised is in flat style, Python offers two methods to
-serialise the data.
+If the data is to be serialised flat, Python offers two functions:
 
 ``repr``
 ~~~~~~~~
 
+:func:`python:repr` outputs a printable representation of the input, for
+example:
+
 .. code-block:: python
 
-    a =  { "id" : "veit", "first_name": "Veit", "last_name": "Schiele" }
-
-    # Return a printable representation of the input
-    print(repr(a))
-
-    # Write contet to the file
-    with open('data.py', 'w') as f:f.write(repr(a))
+   >>> a = { "id" : "veit", "first_name": "Veit", "last_name": "Schiele" }
+   >>> print(repr(a))
+   {'id': 'veit', 'first_name': 'Veit', 'last_name': 'Schiele'}
+   >>> with open('data.py', 'w') as f:
+   ...     f.write(repr(a))
+   ...
+   60
 
 ``ast.literal_eval``
 ~~~~~~~~~~~~~~~~~~~~
 
-The ``literal_eval`` method parses and evaluates an expression for a Python
-datatype. Supported data types are: strings, numbers, tuples, lists, dicts,
-booleans, and None.
+
+the :func:`python:ast.literal_eval` function parses and analyses the Python data
+type of an expression. Supported data types are
+:doc:`python-basics:types/strings`, :doc:`python-basics:types/numbers`,
+:doc:`python-basics:types/tuples`, :doc:`python-basics:types/lists`,
+:doc:`python-basics:types/dicts` and :doc:`python-basics:types/none`.
 
 .. code-block:: python
 
-    with open('data.py', 'r') as f: inp = ast.literal_eval(f.read())
+   >>> import ast
+   >>> with open('data.py', 'r') as f:
+   ...     inp = ast.literal_eval(f.read())
 
 .. toctree::
     :hidden:
