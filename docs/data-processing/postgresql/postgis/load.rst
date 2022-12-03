@@ -61,6 +61,7 @@ this data is in the public domain:
         $ ogr2ogr -f PostgreSQL PG:dbname=postgis_db -progress \
             -nlt PROMOTE_TO_MULTI \
             /srv/jupyter/nedata/ne_110m_admin_0_countries.shp
+        0...10...20...30...40...50...60...70...80...90...100 - done.
 
       ``-f PostgreSQL``
         indicates that the target is a PostgreSQL database
