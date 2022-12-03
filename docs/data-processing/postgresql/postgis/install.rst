@@ -1,12 +1,12 @@
 Install PostGIS
 ===============
 
-For Ubuntu 20.04 and 18.04 as well as Debian 10 you can simply install PostGIS
+For Ubuntu 22.04 you can simply install PostGIS
 with:
 
 .. code-block:: console
 
-    $ sudo apt install postgis postgresql-12-postgis-3
+    $ sudo apt install postgis
 
 Then you can activate PostGIS.
 
@@ -28,7 +28,8 @@ Then you can activate PostGIS.
    .. code-block:: console
 
     $ psql -d postgis_db
-    psql (11.5 (Debian 11.5-3.pgdg100 + 1))
+    psql (14.5 (Ubuntu 14.5-0ubuntu0.22.04.1))
+     Type "help" for help.
 
 #. Activate the PostGIS extension in the database:
 
@@ -44,7 +45,7 @@ Then you can activate PostGIS.
     postgis_db=# SELECT PostGIS_version();
                 postgis_version
     ---------------------------------------
-     2.5 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
+     3.2 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
     (1 row)
 
 .. seealso::
