@@ -14,7 +14,7 @@ Before installing Python packages, a few prerequisites must be met.
    .. code-block:: console
 
     $ python --version
-    Python 3.8.12
+    Python 3.10.6
 
    .. note::
         In iPython or a Jupyter Notebook you can find out the version with:
@@ -23,7 +23,7 @@ Before installing Python packages, a few prerequisites must be met.
 
             In [1]: import sys
                     sys.version_info
-            sys.version_info(major=3, minor=8, micro=12, releaselevel='final', serial=0)
+            sys.version_info(major=3, minor=10, micro=6, releaselevel='final', serial=0)
 
    .. note::
         If you use the system Python of your Linux distribution, you should
@@ -34,7 +34,7 @@ Before installing Python packages, a few prerequisites must be met.
    .. code-block:: console
 
     $ pip --version
-    pip 21.3.1
+    pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
 
    #. If Pip is not yet installed, you can install it
 
@@ -77,7 +77,7 @@ overwritten:
       .. code-block:: console
 
          $ python3 -m site --user-base
-         /Users/veit/.local
+         /srv/jupyter/.local
 
       Then the ``bin`` directory must be appended and added to ``PATH``.
       Alternatively, ``PATH`` can be set permanently by changing ``~/.profile``
@@ -85,7 +85,7 @@ overwritten:
 
       .. code-block:: console
 
-         export PATH=/Users/veit/.local/bin:$PATH
+         export PATH=/srv/jupyter/.local/bin:$PATH
 
    .. tab:: Windows
 
@@ -119,7 +119,7 @@ not share libraries with other virtual environments:
     $ cd !$
     cd myproject
     $ pipenv install requests
-    Creating a virtualenv for this project..
+    Creating a virtualenv for this project...
     …
     Virtualenv location: /srv/jupyter/.local/share/virtualenvs/myproject-CZKj6mqJ
     Creating a Pipfile for this project...
