@@ -83,5 +83,5 @@ traitlets==5.7.1
 urllib3==1.26.13
 wcwidth==0.2.5
 webencodings==0.5.1
-widgetsnbextension==4.0.3
+widgetsnbextension==4.0.4
 zipp==3.10.0
