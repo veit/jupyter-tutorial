@@ -32,20 +32,17 @@ Example
 
 `CITATION.cff <https://citation-file-format.github.io/>`_
 
-.. code-block:: yaml
+.. literalinclude:: CITATION.cff
+   :language: yaml
 
-    # YAML 1.2
-    ---
-    cff-version: 1.1.0
-    message: If you use this software, please cite it as below.
-    authors:
-      - family-names: Druskat
-        given-names: Stephan
-        orcid: https://orcid.org/0000-0003-4925-7248
-    title: "My Research Software"
-    version: 2.0.4
-    doi: 10.5281/zenodo.1234
-    date-released: 2017-12-18
+You can output YAML files as Python :doc:`python-basics:types/dicts` with:
+
+.. code-block:: python
+
+    import yaml
+    with open('CITATION.cff', 'r') as file:
+        cite = yaml.safe_load(file)
+        print(cite)
 
 .. seealso::
 
