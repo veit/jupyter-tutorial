@@ -20,6 +20,17 @@ Installation
 
 Before you can hook the pre-commit package manager must be installed.
 
+.. tab:: Windows
+
+    .. code-block:: console
+
+       $ pipenv install pre-commit
+
+    In addition, the `Microsoft Build Tools for C++
+    <https://visualstudio.microsoft.com/de/visual-cpp-build-tools/>`_
+    must be downloaded and executed so that the *desktop development with C++*
+    can be installed with the standard options.
+
 .. tab:: macOS
 
    .. code-block:: console
