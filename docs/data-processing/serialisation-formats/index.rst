@@ -71,9 +71,9 @@ type of an expression. Supported data types are
     csv/index
     json/index
     excel.ipynb
-    pickle/index
-    protobuf
-    toml
     xml-html/index
     yaml
+    toml
+    pickle/index
+    protobuf
     others
