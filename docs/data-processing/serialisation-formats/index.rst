@@ -36,7 +36,7 @@ Nested JSON style:
     excel.ipynb
     xml-html/index
     yaml/index
-    toml
+    toml/index
     pickle/index
     protobuf
     others
