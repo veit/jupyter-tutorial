@@ -24,25 +24,8 @@ Overview
 | Speed                 | -\-   | YAML is very slow to serialise and deserialise.       |
 +-----------------------+-------+-------------------------------------------------------+
 | File size             | +-    | YAML is in the medium range similar to                |
-|                       |       | :doc:`json/index` and :doc:`toml`.                    |
+|                       |       | :doc:`../json/index` and :doc:`../toml`.              |
 +-----------------------+-------+-------------------------------------------------------+
-
-Example
--------
-
-`CITATION.cff <https://citation-file-format.github.io/>`_
-
-.. literalinclude:: CITATION.cff
-   :language: yaml
-
-You can output YAML files as Python :doc:`python-basics:types/dicts` with:
-
-.. code-block:: python
-
-    import yaml
-    with open('CITATION.cff', 'r') as file:
-        cite = yaml.safe_load(file)
-        print(cite)
 
 .. seealso::
 
@@ -54,3 +37,10 @@ You can output YAML files as Python :doc:`python-basics:types/dicts` with:
 
 .. _`Kwalify`: http://www.kuwata-lab.com/kwalify/
 .. _`Rx`: http://rx.codesimply.com/
+
+ .. toctree::
+     :hidden:
+     :titlesonly:
+     :maxdepth: 0
+
+     example.ipynb
