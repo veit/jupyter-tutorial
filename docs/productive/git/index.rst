@@ -82,12 +82,12 @@ hand :doc:`best practices <best-practices>` and typical :doc:`workflows/index`.
 .. toctree::
     :hidden:
 
+    working-areas
+    work
     install-config
     pre-commit
     jupyter-config
     tools
-    working-areas
-    work
     log
     tag
     branch

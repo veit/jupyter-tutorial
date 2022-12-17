@@ -92,8 +92,86 @@ diff``:
         # Highlight whitespace errors in git diff:
         whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
 
+``git diff``
+~~~~~~~~~~~~
+
+``git diff`` can also be applied to PDFs with the add-on ``pdftohtml``:
+
+.. tab:: Debian/Ubuntu
+
+   .. code-block:: console
+
+      $ sudo apt install poppler-utils
+
+.. tab:: macOS
+
+   .. code-block:: console
+
+      $ brew install pdftohtml
+
+add the following section to the global Git configuration ``~/.gitconfig``:
+
+.. code-block:: ini
+
+    [diff "pdfconv"]
+    textconv=pdftohtml -stdout
+
+Finally, in the global ``~/.gitattributes`` file, our ``pdfconf`` filter is
+associated with PDF files:
+
+.. code-block:: ini
+
+    *.pdf diff=pdfconv
+
+Now, when ``git diff`` is called, the PDF file is first converted and then a
+diff is performed over the output of the converter.
+
+Differences in Word documents can also be displayed. For this purpose
+Pandoc <https://pandoc.org/>`_ can be used, which can be easily installed
+with
+
+.. tab:: Windows
+
+   Download and install the ``..msi``. file from `GitHub
+   <https://github.com/jgm/pandoc/releases/tag/2.19.2>`_.
+
+.. tab:: Debian/Ubuntu
+
+   .. code-block:: console
+
+      $ sudo apt install pandoc
+
+.. tab:: macOS
+
+   .. code-block:: console
+
+      $ brew install pandoc
+
+   Then, in ``..gitattributes``., the ``..docx``. file extension is mapped to
+   an alternate ``.diff``. configuration:
+
+   .. code-block:: ini
+
+      *.docx diff=word
+
+   Finally, the following section can be inserted in the ``..gitconfig``. file:
+
+   .. code-block:: ini
+
+      [diff "word"]
+          textconv=pandoc --to=markdown
+          binary=true
+          prompt=false
+
+   The same procedure can be used to obtain useful diffs from other binaries,
+   for example ``*.zip``, ``*.jar`` and other archives with ``unzip`` or for
+   changes in the meta information of images with ``exiv2``. There are also
+   conversion tools for converting ``*.odf``, ``.doc`` and other document
+   formats into plain text. For binary files for which there is no converter,
+   strings are often sufficient.
+
 Manage login data
-:::::::::::::::::
+~~~~~~~~~~~~~~~~~
 
 Since Git version 1.7.9, the access data to git repositories can be managed with
 `gitcredentials <https://git-scm.com/docs/gitcredentials>`_. To use this, you
@@ -101,22 +179,22 @@ can, for example, specify the following:
 
 .. code-block:: console
 
-    $ git config --global credential.helper Cache
+$ git config --global credential.helper Cache
 
 This will keep your password in the cache for 15 minutes. The timeout can be
 increased if necessary, for example with:
 
 .. code-block:: console
 
-    $ git config --global credential.helper 'cache --timeout=3600'
+$ git config --global credential.helper 'cache --timeout=3600'
 
 .. tab:: macOS
 
-    With macOS you can use `osxkeychain` to store the login information.
-    `osxkeychain` requires Git version 1.7.10 or newer and can be installed in
-    the same directory as Git with:
+With macOS you can use `osxkeychain` to store the login information.
+`osxkeychain` requires Git version 1.7.10 or newer and can be installed in
+the same directory as Git with:
 
-    .. code-block:: console
+.. code-block:: console
 
         $ git credential-osxkeychain
         git: 'credential-osxkeychain' is not a git command. See 'git --help'.
