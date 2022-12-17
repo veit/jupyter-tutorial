@@ -49,9 +49,9 @@ Overview
 |                       |       | programming language.                                 |
 |                       |       |                                                       |
 |                       |       | The data structure of JSON closely represent objects  |
-|                       |       | in many languages e.g. a Python ``dict`` can be       |
-|                       |       | represented as JSON ``object``, and a Python ``list`` |
-|                       |       | by a JSON ``array``.                                  |
+|                       |       | in many languages for example a Python ``dict`` can   |
+|                       |       | be represented as JSON ``object``, and a Python       |
+|                       |       | ``list`` by a JSON ``array``.                         |
 +-----------------------+-------+-------------------------------------------------------+
 | Human readability     | +-    | JSON is a human-readable serialisation format but it  |
 |                       |       | does not support comments.                            |
@@ -59,8 +59,8 @@ Overview
 | Speed                 | ++    | JSON is one of the fastest human-readable formats to  |
 |                       |       | serialise and deserialise.                            |
 +-----------------------+-------+-------------------------------------------------------+
-| File size             | +-    | JSON is in the medium range similar to :doc:`../yaml` |
-|                       |       | and :doc:`../toml`.                                   |
+| File size             | +-    | JSON is in the medium range similar to                |
+|                       |       | :doc:`../yaml/index and :doc:`../toml/index`.         |
 +-----------------------+-------+-------------------------------------------------------+
 
 .. seealso::
