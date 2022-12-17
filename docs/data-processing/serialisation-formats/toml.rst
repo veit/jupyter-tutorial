@@ -31,23 +31,19 @@ Example
 `pyproject.toml
 <https://github.com/veit/jupyter-tutorial/blob/main/pyproject.toml>`_
 
-.. code-block:: toml
+.. literalinclude:: pyproject.toml
+   :language: yaml
+   
+.. tab:: Python < 3.11
 
-    [tool.black]
-    line-length = 79
+    You need the Python package `toml <https://pypi.org/project/toml/>`_ to
+    convert TOML files into Python :doc:`python-basics:types/dicts`. You can
+    then load TOML files, for example with:
 
-    [tool.isort]
-    atomic=true
-    force_grid_wrap=0
-    include_trailing_comma=true
-    lines_after_imports=2
-    lines_between_types=1
-    multi_line_output=3
-    not_skip="__init__.py"
-    use_parentheses=true
+    .. code-block:: python
 
-    known_first_party="jupyter-tutorial"
-    known_third_party=["mpi4py", "numpy", "requests"]
+        import toml
+        config = toml.load('pyproject.toml')
 
 .. seealso::
 
