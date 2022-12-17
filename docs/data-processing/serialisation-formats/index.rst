@@ -25,49 +25,12 @@ Nested JSON style:
         },
       }
 
-
-Serialising data
-----------------
-
-If the data is to be serialised flat, Python offers two functions:
-
-``repr``
-~~~~~~~~
-
-:func:`python:repr` outputs a printable representation of the input, for
-example:
-
-.. code-block:: python
-
-   >>> a = { "id" : "veit", "first_name": "Veit", "last_name": "Schiele" }
-   >>> print(repr(a))
-   {'id': 'veit', 'first_name': 'Veit', 'last_name': 'Schiele'}
-   >>> with open('data.py', 'w') as f:
-   ...     f.write(repr(a))
-   ...
-   60
-
-``ast.literal_eval``
-~~~~~~~~~~~~~~~~~~~~
-
-
-the :func:`python:ast.literal_eval` function parses and analyses the Python data
-type of an expression. Supported data types are
-:doc:`python-basics:types/strings`, :doc:`python-basics:types/numbers`,
-:doc:`python-basics:types/tuples`, :doc:`python-basics:types/lists`,
-:doc:`python-basics:types/dicts` and :doc:`python-basics:types/none`.
-
-.. code-block:: python
-
-   >>> import ast
-   >>> with open('data.py', 'r') as f:
-   ...     inp = ast.literal_eval(f.read())
-
 .. toctree::
     :hidden:
     :titlesonly:
     :maxdepth: 0
 
+    serialisation.ipynb
     csv/index
     json/index
     excel.ipynb
