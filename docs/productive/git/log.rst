@@ -1,55 +1,55 @@
 Git log
 =======
 
-``$ git log [-n count]``
+:samp:`$ git log [-n {COUNT}]`
     list the commit history of the current branch.
 
     ``-n``
         limits the number of commits to the specified number.
 
-``$ git log [--after="YYYY-MM-DD"] [--before="YYYY-MM-DD"]``
+:samp:`$ git log [--after="{YYYY-MM-DD}"] [--before="{YYYY-MM-DD}"]`
     Commit history filtered by date.
 
     Relative information such as ``1 week ago`` or ``yesterday`` is also
     permitted.
 
-``$ git log --author = "name"``
+:samp:`$ git log --author = "{NAME}"`
     filters the commit history by authors.
 
     You can also search for several authors at the same time, for example
 
-    ``$ git log --author="veit\|vsc"``
+    :samp:`$ git log --author="{VEIT}\|{VSC}"`
 
-``$ git log --grep = "term"``
+:samp:`$ git log --grep = "{TERM}"`
     filters the commit history for regular expressions in the commit message.
 
     .. seealso::
 
         * :doc:`python-basics:appendix/regex`
 
-``$ git log -S"foo"``
+:samp:`$ git log -S"{FOO}"`
     filters commits according to certain lines in the source code.
 
-``$ git log -G"ba*"``
+:samp:`$ git log -G"{BA*}"`
     filters commits based on regular expressions in the source code.
 
-``$ git log -- path/to/foo.py``
+:samp:`$ git log -- {PATH/TO/FOO.PY}`
     filters the commit history for specific files.
 
-``$ git log main ..feature``
+:samp:`$ git log {MAIN} ..{FEATURE}`
     filters for different commits in different branches, in our case between the
     branches ``main`` and ``feature``.
 
-``$ git log --oneline --graph --decorate``
+:samp:`$ git log --oneline --graph --decorate`
     Show the history diagram with references, one commit per line.
 
-``$ git log ref..``
+:samp:`$ git log {REF}..`
     List commits that exist in the current branch and are not merged into
     ``ref``. ``ref`` can be the name of a branch or a tag.
 
-``$ git log ..ref``
+:samp:`$ git log ..{REF}`
     List commits that exist in ``ref`` and are not merged with the current
     branch.
-``$ git reflog``
+:samp:`$ git reflog`
     List operations (for example ``switch``, ``commit``) that have been
     performed in the local repository.
