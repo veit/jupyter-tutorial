@@ -124,7 +124,7 @@ Cross platform
     orm
     sqlalchemy
     alembic
-    ipython-sql
+    jupysql
     postgis/index
     sec
     performance

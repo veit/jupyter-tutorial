@@ -1,22 +1,22 @@
-ipython-sql
+Jupysql
 ===========
 
-`ipython-sql <https://github.com/catherinedevlin/ipython-sql>`_ introduces the
+`Jupysql <https://github.com/ploomber/jupysql>`_ introduces the
 ``%sql`` or ``%%sql`` magics for iPython and Jupyter notebooks.
 
 Installation
 ------------
 
-You can easily install ipython-sql in your Jupyter kernel with:
+You can easily install jupysql in your Jupyter kernel with:
 
 .. code-block:: console
 
-    $ pipenv install ipython-sql
+    $ pipenv install jupysql
 
 First steps
 -----------
 
-#. First, ipython-sql is activated in your notebook with
+#. First, Jupysql is activated in your notebook with
 
    .. code-block:: python
 
@@ -103,7 +103,7 @@ If pandas is installed, the ``DataFrame`` method can be used:
 PostgreSQL features
 -------------------
 
-Meta-commands from ``psql`` can also be used in ipython-sql:
+Meta-commands from ``psql`` can also be used in jupysql:
 
 ``-l``, ``--connections``
     lists all active connections
@@ -126,7 +126,7 @@ Meta-commands from ``psql`` can also be used in ipython-sql:
    * `pgspecial <https://pypi.org/project/pgspecial/>`_
 
 .. warning::
-   Since ipython-sql processes ``--`` options such as ``-persist``, and at the
+   Since jupysql processes ``--`` options such as ``-persist``, and at the
    same time accepts ``--`` as a SQL comment, the parser has to make some
    assumptions: for example, ``--persist is great`` in the first line is
    processed as an argument and not as a comment.
