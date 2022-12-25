@@ -38,7 +38,7 @@ including
 | :doc:`pandas:reference/api/pandas.read_orc`        | reads Apache :abbr:`ORC (Optimized Row Columnar)`                                        |
 |                                                    | binary data                                                                              |
 +----------------------------------------------------+------------------------------------------------------------------------------------------+
-| :doc:`pandas:reference/api/pandas.read_parquet`    | reads `Apache Parquet R<https://parquet.apache.org>`_                                    |
+| :doc:`pandas:reference/api/pandas.read_parquet`    | reads `Apache Parquet <https://parquet.apache.org>`_                                     |
 |                                                    | binary file format                                                                       |
 +----------------------------------------------------+------------------------------------------------------------------------------------------+
 | :doc:`pandas:reference/api/pandas.read_pickle`     | reads any object stored in Python                                                        |
