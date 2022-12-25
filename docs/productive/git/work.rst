@@ -198,7 +198,7 @@ Work on a project
         .. code-block:: console
 
             git stash pop stash@{2}
-.
+
     ``drop``
         emptying a specific stash, for example:
 
