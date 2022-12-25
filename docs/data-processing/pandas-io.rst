@@ -32,7 +32,7 @@ including
 |                                                    | :doc:`serialisation-formats/json/index` file                                             |
 +----------------------------------------------------+------------------------------------------------------------------------------------------+
 | :doc:`pandas:reference/api/pandas.read_feather`    | reads the `Feather                                                                       |
-|                                                    | `<https://arrow.apache.org/docs/python/feather.html>`_                                   |
+|                                                    | <https://arrow.apache.org/docs/python/feather.html>`_                                    |
 |                                                    | binary file format                                                                       |
 +----------------------------------------------------+------------------------------------------------------------------------------------------+
 | :doc:`pandas:reference/api/pandas.read_orc`        | reads Apache :abbr:`ORC (Optimized Row Columnar)`                                        |
