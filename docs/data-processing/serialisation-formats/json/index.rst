@@ -60,7 +60,7 @@ Overview
 |                       |       | serialise and deserialise.                            |
 +-----------------------+-------+-------------------------------------------------------+
 | File size             | +-    | JSON is in the medium range similar to                |
-|                       |       | :doc:`../yaml/index and :doc:`../toml/index`.         |
+|                       |       | :doc:`../yaml/index` and :doc:`../toml/index`.        |
 +-----------------------+-------+-------------------------------------------------------+
 
 .. seealso::
