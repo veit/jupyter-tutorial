@@ -47,7 +47,7 @@ including
 | :doc:`pandas:reference/api/pandas.read_sas`        | reads a :abbr:`SAS (Statistical Analysis System)`                                        |
 |                                                    | data set                                                                                 |
 +----------------------------------------------------+------------------------------------------------------------------------------------------+
-| :doc:`pandas:reference/api/pandas.read_spss`       | reads a data file created by `SPSS                                                                     |
+| :doc:`pandas:reference/api/pandas.read_spss`       | reads a data file created by `SPSS                                                       |
 |                                                    | <https://en.wikipedia.org/wiki/SPSS>`_                                                   |
 +----------------------------------------------------+------------------------------------------------------------------------------------------+
 | :doc:`pandas:reference/api/pandas.read_sql`        | reads the results of an SQL query (with                                                  |
