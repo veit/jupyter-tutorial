@@ -9,7 +9,7 @@ cairocffi==1.4.0
 CairoSVG==2.5.2
 certifi==2022.12.7
 cffi==1.15.1
-charset-normalizer==2.1.1
+charset-normalizer==3.0.1
 comm==0.1.2
 cssselect2==0.7.0
 debugpy==1.6.4
