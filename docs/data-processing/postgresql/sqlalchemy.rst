@@ -13,6 +13,26 @@ SQLAlchemy differs fundamentally from other ORMs, as SQL and details of the
 object relation are not abstracted away: all processes are represented as a
 collection of individual tools.
 
+SQLAlchemy supports PostgreSQL as well as other dialects of relational
+databases:
+
++---------------+-------------------+---------------+-------------------+
+| Dialects      | Python package    | import        | Docs              |
++===============+===================+===============+===================+
+| postgresql    | psycopg2-binary   | psycopg2      | `Installation`_   |
++---------------+-------------------+---------------+-------------------+
+| mysql         | mysqlclient       | MySQLdb       | `README`_         |
++---------------+-------------------+---------------+-------------------+
+| mssql         | pyodbc            | pyodbc        | `Wiki`_           |
++---------------+-------------------+---------------+-------------------+
+| oracle        | cx_oracle         | cx_Oracle     | `cx_Oracle`_      |
++---------------+-------------------+---------------+-------------------+
+
+.. _`Installation`: https://www.psycopg.org/docs/install.html
+.. _`README`: https://github.com/PyMySQL/mysqlclient#readme
+.. _`Wiki`: https://github.com/mkleehammer/pyodbc/wiki
+.. _`cx_Oracle`: https://oracle.github.io/python-cx_Oracle/
+
 Database connection
 -------------------
 
