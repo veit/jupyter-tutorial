@@ -179,22 +179,31 @@ can, for example, specify the following:
 
 .. code-block:: console
 
-$ git config --global credential.helper Cache
+    $ git config --global credential.helper Cache
 
 This will keep your password in the cache for 15 minutes. The timeout can be
 increased if necessary, for example with:
 
 .. code-block:: console
 
-$ git config --global credential.helper 'cache --timeout=3600'
+    $ git config --global credential.helper 'cache --timeout=3600'
+
+.. tab:: Windows
+
+    For Windows, `Git Credential Manager (GCM)
+    <https://github.com/GitCredentialManager/git-credential-manager>`_ is
+    available. It is integrated in `Git for Windows
+    <https://git-scm.com/download/win>`_ and is installed by default. However,
+    there is also a standalone Installer in `Releases
+    <https://github.com/GitCredentialManager/git-credential-manager/releases/>`_.
 
 .. tab:: macOS
 
-With macOS you can use `osxkeychain` to store the login information.
-`osxkeychain` requires Git version 1.7.10 or newer and can be installed in
-the same directory as Git with:
+    With macOS you can use `osxkeychain` to store the login information.
+    `osxkeychain` requires Git version 1.7.10 or newer and can be installed in
+    the same directory as Git with:
 
-.. code-block:: console
+    .. code-block:: console
 
         $ git credential-osxkeychain
         git: 'credential-osxkeychain' is not a git command. See 'git --help'.
@@ -210,15 +219,6 @@ the same directory as Git with:
 
         [credential]
             helper = osxkeychain
-
-.. tab:: Windows
-
-    For Windows, `Git Credential Manager (GCM)
-    <https://github.com/GitCredentialManager/git-credential-manager>`_ is
-    available. It is integrated in `Git for Windows
-    <https://git-scm.com/download/win>`_ and is installed by default. However,
-    there is also a standalone Installer in `Releases
-    <https://github.com/GitCredentialManager/git-credential-manager/releases/>`_.
 
 .. note::
     You can find a comprehensive example of a `~/.gitconfig` file in my
