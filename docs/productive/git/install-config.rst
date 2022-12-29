@@ -213,13 +213,12 @@ the same directory as Git with:
 
 .. tab:: Windows
 
-    For Windows `Git Credential Manager for Windows
-    <https://github.com/Microsoft/Git-Credential-Manager-for-Windows>`_ is
-    available. First the `Installer
-    <https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest>`_
-    must be downloaded for the program. After double-clicking, it will guide
-    you through the rest of the installation. As a terminal emulator for Git,
-    you should select the standard Windows console window.
+    For Windows, `Git Credential Manager (GCM)
+    <https://github.com/GitCredentialManager/git-credential-manager>`_ is
+    available. It is integrated in `Git for Windows
+    <https://git-scm.com/download/win>`_ and is installed by default. However,
+    there is also a standalone Installer in `Releases
+    <https://github.com/GitCredentialManager/git-credential-manager/releases/>`_.
 
 .. note::
     You can find a comprehensive example of a `~/.gitconfig` file in my
