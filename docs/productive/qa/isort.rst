@@ -32,8 +32,7 @@ Configuration
     known_third_party=["mpi4py", "numpy", "requests"]
 
 In order to recognise third-party packages for your project imports, you can
-either install your project together with ``isort`` or use `seed-isort-config
-<https://github.com/asottile/seed-isort-config>`_.
+install your project together with ``isort``.
 
 .. note::
     With isort 5 you can use profiles. This simplifies the configuration of
