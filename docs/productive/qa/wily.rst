@@ -168,9 +168,9 @@ Use
 … as pre-commit hook
 ~~~~~~~~~~~~~~~~~~~~
 
-You can also use Wily as a :doc:`pre-commit hook
-<../../productive/git/pre-commit>`. To do this, you would have to add the
-following to the ``pre-commit-config.yaml`` configuration file, for example:
+You can also use Wily as a :ref:`pre-commit-framework`. To do this, you would
+have to add the following to the ``pre-commit-config.yaml`` configuration file,
+for example:
 
 .. code-block:: yaml
 

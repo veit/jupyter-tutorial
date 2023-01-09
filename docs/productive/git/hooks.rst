@@ -1,5 +1,44 @@
-Git pre-commit hooks
-====================
+Git hooks
+=========
+
+Git hooks are scripts that are automatically executed when certain events occur
+in a Git repository. They can be located either in local or server-side
+repositories. This allows Git repositories to be customised and user-defined
+actions to be triggered.
+
+Git hooks are located in the :file:`.git/hooks/` directory. When a repository is
+created, some sample scripts are already created there:
+
+.. code-block:: console
+
+    .git/hooks/
+    ├── applypatch-msg.sample
+    ├── commit-msg.sample
+    ├── fsmonitor-watchman.sample
+    ├── post-update.sample
+    ├── pre-applypatch.sample
+    ├── pre-commit.sample
+    ├── pre-merge-commit.sample
+    ├── prepare-commit-msg.sample
+    ├── pre-push.sample
+    ├── pre-rebase.sample
+    ├── pre-receive.sample
+    └── update.sample
+
+For the scripts to be executed, only the suffix ``.sample`` must be removed and,
+if necessary, the file permission must be executable, for example with
+:samp:`chmod +x .git/{prepare-commit-msg}`.
+
+The integrated scripts are shell and perl scripts, but any scripting language
+can be used. The shebang line (:samp:`#!/bin/sh`) determines how the file should
+be interpreted.
+
+However, they cannot be copied to the server-side repository.
+
+.. _pre-commit-framework:
+
+ pre-commit-Framework
+ --------------------
 
 Before you can execute the hooks, the `pre-commit <https://pre-commit.com/>`_
 framework must be installed:
@@ -10,7 +49,7 @@ pre-commit hooks and distributes them to various projects and developers.
 
 Git pre-commit hooks are mostly used to automatically point out problems in the
 code before code reviews, for example to check the formatting or to find debug
-instructions. Pre-commit simplifies the cross-project sharing of the pre-commit
+instructions. pre-commit simplifies the cross-project sharing of the pre-commit
 hook. The language in which a linter was written, for example, is also
 abstracted away – ``scss-lint`` is written in Ruby, but you can use it with
 pre-commit without having to add a gem file to your project.

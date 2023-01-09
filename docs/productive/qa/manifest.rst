@@ -96,8 +96,8 @@ file, for example:
 Integration with version control
 --------------------------------
 
-With :doc:`/productive/git/pre-commit`, `check-manifest` can be part of your Git
-workflow. To do this, add the following to your  `.pre-commit-config.yaml` file:
+With :ref:`pre-commit-framework`, `check-manifest` can be part of your Git
+workflow. To do this, add the following to your `.pre-commit-config.yaml` file:
 
 .. code-block:: yaml
 
