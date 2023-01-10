@@ -37,8 +37,8 @@ However, they cannot be copied to the server-side repository.
 
 .. _pre-commit-framework:
 
- pre-commit-Framework
- --------------------
+pre-commit-Framework
+--------------------
 
 Before you can execute the hooks, the `pre-commit <https://pre-commit.com/>`_
 framework must be installed:
