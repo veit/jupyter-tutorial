@@ -183,7 +183,7 @@ Pre-commit can also be used for :abbr:`CI (Continuous Integration)`.
 Examples for GitHub Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*pre-commit ci <https://pre-commit.ci>`_
+`pre-commit ci <https://pre-commit.ci>`_
     Service that adds the *pre-commit ci* app to your GitHub repository at
     :samp:`https://github.com/{PROFILE}/{REPOSITORY}/installations`.
 
