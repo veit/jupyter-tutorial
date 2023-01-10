@@ -101,9 +101,9 @@ Set up
         required = true
 
       ``clean``
-           is applied when adding changes to the stage area.
-       ``smudge``
-           is used when resetting the workspace by changes from the stage area.
+          is applied when adding changes to the stage area.
+      ``smudge``
+          is used when resetting the workspace by changes from the stage area.
 
    #. Then you have to specify the following in the ``~/.gitattributes`` file:
 
