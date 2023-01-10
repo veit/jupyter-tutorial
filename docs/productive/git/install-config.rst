@@ -120,8 +120,8 @@ Then the following section is added to the global Git configuration
 .. code-block:: ini
 
     [diff "excel"]
-    textconv=python3 /PATH/TO/exceltocsv.py
-    binary=true
+        textconv=python3 /PATH/TO/exceltocsv.py
+        binary=true
 
 Finally, in the global ``~/.gitattributes`` file, our ``excel`` converter is
 linked to :file:`*.xlsx` files:
@@ -152,7 +152,7 @@ Add the following section to the global Git configuration ``~/.gitconfig``:
 .. code-block:: ini
 
     [diff "pdf"]
-    textconv=pdftohtml -stdout
+        textconv=pdftohtml -stdout
 
 Finally, in the global ``~/.gitattributes`` file, our ``pdf`` converter is
 linked to :file:`*.pdf` files:
@@ -193,9 +193,9 @@ Then the following section is added to the global Git configuration
 .. code-block:: ini
 
     [diff "word"]
-    textconv=pandoc --to=markdown
-    binary=true
-    prompt=false
+        textconv=pandoc --to=markdown
+        binary=true
+        prompt=false
 
 Finally, in the global ``~/.gitattributes`` file, our ``word`` converter is
 linked to :file:`*.docx` files:
