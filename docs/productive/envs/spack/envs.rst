@@ -170,7 +170,7 @@ There you will find the two files ``spack.yaml`` and ``spack.lock``.
                    "features": [
                      "aes",
                      "avx",
-                     …
+                     ...
                    ]
                  }
                }
