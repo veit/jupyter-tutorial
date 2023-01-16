@@ -22,7 +22,7 @@ fastjsonschema==2.16.2
 furo==2022.12.7
 idna==3.4
 imagesize==1.4.1
-importlib-metadata==5.2.0
+importlib-metadata==6.0.0
 importlib-resources==5.10.1
 ipykernel==6.19.4
 ipython==8.7.0
