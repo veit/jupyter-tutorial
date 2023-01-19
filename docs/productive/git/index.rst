@@ -98,6 +98,7 @@ hand :doc:`best practices <best-practices>` and typical :doc:`workflows/index`.
     cherry-pick
     revert
     best-practices
+    vs-code
     git-big-picture
     advanced
     glossary
