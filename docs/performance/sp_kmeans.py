@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
+
 from scipy.spatial import cKDTree
+
 
 def find_labels(points, centers):
     """Assign points to a cluster."""

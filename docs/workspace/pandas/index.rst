@@ -2,8 +2,8 @@ pandas
 ======
 
 `pandas <https://pandas.pydata.org/>`_ is a Python library for data analysis
-that has become very popular in recent years. On the website, pandas is 
-escribed thus:
+that has become very popular in recent years. On the website, pandas is
+described thus:
 
     „pandas is a fast, powerful, flexible and easy to use open source data
     analysis and manipulation tool, built on top of the Python programming

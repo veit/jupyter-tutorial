@@ -27,7 +27,7 @@ ORMs
 ----
 
 `FastAPI-SQLAlchemy <https://github.com/mfreeborn/fastapi-sqlalchemy>`_
-    Easy integration between FastAPI, 
+    Easy integration between FastAPI,
     :doc:`/data-processing/postgresql/sqlalchemy` and application
 `FastAPIwee <https://github.com/Ignisor/FastAPIwee>`_
     Easy way to create a REST API based on `PeeWee

@@ -12,6 +12,9 @@ Status
 .. image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
    :alt: License
    :target: https://github.com/veit/jupyter-tutorial/blob/master/LICENSE
+.. image:: https://results.pre-commit.ci/badge/github/veit/jupyter-tutorial/main.svg
+   :alt: pre-commit.ci status
+   :target: https://results.pre-commit.ci/latest/github/veit/jupyter-tutorial/main
 .. image:: https://readthedocs.org/projects/jupyter-tutorial/badge/?version=latest
    :alt: Docs
    :target: https://jupyter-tutorial.readthedocs.io/en/latest/

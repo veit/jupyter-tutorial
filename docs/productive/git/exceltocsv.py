@@ -1,7 +1,9 @@
 import sys
+
 from io import StringIO
 
 import pandas as pd
+
 
 for sheet_name in pd.ExcelFile(sys.argv[1]).sheet_names:
     output = StringIO()

@@ -14,7 +14,7 @@ simple example :download:`accounts.proto`:
 
 .. literalinclude:: accounts.proto
    :language: proto
-   :lines: 1-6
+   :lines: 1-7
 
 .. warning::
     You shouldn’t simply use ``uint32`` for user or group IDs, as these would be
@@ -37,7 +37,7 @@ parameters and return types specified as protocol buffer messages:
 
 .. literalinclude:: accounts.proto
    :language: proto
-   :lines: 8-27
+   :lines: 8-
 
 Generate the gRPC Code
 ----------------------

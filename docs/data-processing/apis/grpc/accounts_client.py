@@ -1,9 +1,8 @@
 import logging
 
-import grpc
-
-import accounts_pb2_grpc as accounts_service
 import accounts_pb2 as accounts_messages
+import accounts_pb2_grpc as accounts_service
+import grpc
 
 
 def run():

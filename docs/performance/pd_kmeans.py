@@ -1,10 +1,11 @@
 import numpy as np
 import pandas as pd
 
+
 def find_labels(points, centers):
     """Assign points to a cluster."""
-    diff = (points[:, None, :] - centers)
-    distances = (diff ** 2).sum(-1)
+    diff = points[:, None, :] - centers
+    distances = (diff**2).sum(-1)
     return distances.argmin(1)
 
 

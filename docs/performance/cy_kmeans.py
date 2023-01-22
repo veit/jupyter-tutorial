@@ -32,14 +32,14 @@ def compute_centers(points, labels):
     """Calculate the cluster centres."""
     n_centers = len(set(labels))
     n_dims = len(points[0])
-    
+
     centers = [[0 for i in range(n_dims)] for j in range(n_centers)]
     counts = [0 for j in range(n_centers)]
-    
+
     for label, point in zip(labels, points):
         counts[label] += 1
         centers[label] = [a + b for a, b in zip(centers[label], point)]
-        
+
     return [[x / count for x in center] for center, count in zip(centers, counts)]
 
 

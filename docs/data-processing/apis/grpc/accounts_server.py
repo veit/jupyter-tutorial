@@ -1,10 +1,10 @@
-from concurrent import futures
 import logging
 
-import grpc
+from concurrent import futures
 
-import accounts_pb2_grpc as accounts_service
 import accounts_pb2 as accounts_messages
+import accounts_pb2_grpc as accounts_service
+import grpc
 
 
 class AccountsService(accounts_service.AccountsServicer):

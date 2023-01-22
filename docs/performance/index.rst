@@ -132,7 +132,7 @@ repetitive operations into compiled code to avoid slow loops.
 With NumPy we can do without some loops:
 
 .. literalinclude:: np_kmeans.py
-    :lines: 1-7
+    :lines: 1-8
 
 The advantages of NumPy are that the Python overhead only occurs per array and
 not per array element. However, because NumPy uses a specific language for array
@@ -149,7 +149,7 @@ Special data structures
     This way you can also bypass the loop in the ``compute_centers`` method:
 
     .. literalinclude:: pd_kmeans.py
-        :lines: 2-3, 11-14
+        :lines: 2-4, 11-15
 
 `scipy.spatial <https://docs.scipy.org/doc/scipy/reference/spatial.html>`_
     for spatial queries like distances, nearest neighbours, k-Means :abbr:`etc
@@ -158,7 +158,7 @@ Special data structures
     Our ``find_labels`` method can then be written more specifically:
 
     .. literalinclude:: sp_kmeans.py
-        :lines: 3-8
+        :lines: 4-10
 
 `scipy.sparse <https://docs.scipy.org/doc/scipy/reference/sparse.html>`_
     `sparse matrices <https://en.wikipedia.org/wiki/Sparse_matrix>`_
@@ -227,7 +227,7 @@ Numba
 scientific Python and NumPy code into fast machine code, for example:
 
 .. literalinclude:: nb_kmeans.py
-    :lines: 1-23
+    :lines: 1-25
 
 However, Numba requires `LLVM <https://en.wikipedia.org/wiki/LLVM>`_ and some
 Python constructs are not supported.
@@ -263,7 +263,7 @@ can distribute tasks in a cluster.  In doing so, they have different focuses:
 Our example could look like this with Dask:
 
 .. literalinclude:: ds_kmeans.py
-    :lines: 1-28
+    :lines: 1-32
 
 .. toctree::
     :hidden:

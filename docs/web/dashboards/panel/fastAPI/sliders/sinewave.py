@@ -18,12 +18,25 @@ class SineWave(param.Parameterized):
         super(SineWave, self).__init__(**params)
         x, y = self.sine()
         self.cds = ColumnDataSource(data=dict(x=x, y=y))
-        self.plot = figure(plot_height=400, plot_width=400,
-                           tools="crosshair, pan, reset, save, wheel_zoom",
-                           x_range=self.x_range, y_range=self.y_range)
-        self.plot.line('x', 'y', source=self.cds, line_width=3, line_alpha=0.6)
+        self.plot = figure(
+            plot_height=400,
+            plot_width=400,
+            tools="crosshair, pan, reset, save, wheel_zoom",
+            x_range=self.x_range,
+            y_range=self.y_range,
+        )
+        self.plot.line("x", "y", source=self.cds, line_width=3, line_alpha=0.6)
 
-    @param.depends('N', 'frequency', 'amplitude', 'offset', 'phase', 'x_range', 'y_range', watch=True)
+    @param.depends(
+        "N",
+        "frequency",
+        "amplitude",
+        "offset",
+        "phase",
+        "x_range",
+        "y_range",
+        watch=True,
+    )
     def update_plot(self):
         x, y = self.sine()
         self.cds.data = dict(x=x, y=y)
@@ -32,5 +45,8 @@ class SineWave(param.Parameterized):
 
     def sine(self):
         x = np.linspace(0, 4 * np.pi, self.N)
-        y = self.amplitude * np.sin(self.frequency * x + self.phase) + self.offset
+        y = (
+            self.amplitude * np.sin(self.frequency * x + self.phase)
+            + self.offset
+        )
         return x, y

@@ -20,7 +20,7 @@ Installation
 
 ``jq`` can be installed with:
 
-.. tab:: Debian/Ubuntu 
+.. tab:: Debian/Ubuntu
 
    .. code-block:: console
 

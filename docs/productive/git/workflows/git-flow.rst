@@ -66,14 +66,14 @@ initiates a directory, but also creates branches for you:
     Initialized empty Git repository in /home/veit/my_repo/.git/
     No branches exist yet. Base branches must be created now.
     Branch name for production releases: [master] main
-    Branch name for "next release" development: [develop] 
+    Branch name for "next release" development: [develop]
     How to name your supporting branch prefixes?
-    Feature branches? [feature/] 
-    Bugfix branches? [bugfix/] 
-    Release branches? [release/] 
-    Hotfix branches? [hotfix/] 
-    Support branches? [support/] 
-    Version tag prefix? [] 
+    Feature branches? [feature/]
+    Bugfix branches? [bugfix/]
+    Release branches? [release/]
+    Hotfix branches? [hotfix/]
+    Support branches? [support/]
+    Version tag prefix? []
     Hooks and filters directory? [.git/hooks]
 
 Alternatively, you could have entered the following:
@@ -486,7 +486,7 @@ branch should also be tagged with a new version number.
 
 .. code-block:: console
 
-    $ git switch main 
+    $ git switch main
     Switched to branch 'main'
     …
     $ git merge hotfix/37-some-bug

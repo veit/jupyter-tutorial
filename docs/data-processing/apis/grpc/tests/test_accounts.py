@@ -1,6 +1,8 @@
 from pathlib import Path
-import pytest
+
 import grpc
+import pytest
+
 from accounts_pb2 import CreateAccountRequest, GetAccountsRequest
 
 

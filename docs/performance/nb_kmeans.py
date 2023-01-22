@@ -1,5 +1,6 @@
 import numba
 
+
 @numba.jit(nopython=True)
 def dist(x, y):
     """Calculate the distance"""
@@ -7,6 +8,7 @@ def dist(x, y):
     for i in range(len(x)):
         dist += (x[i] - y[i]) ** 2
     return dist
+
 
 @numba.jit(nopython=True)
 def find_labels(points, centers):
@@ -35,7 +37,9 @@ def compute_centers(points, labels):
         counts[label] += 1
         centers[label] = [a + b for a, b in zip(centers[label], point)]
 
-    return [[x / count for x in center] for center, count in zip(centers, counts)]
+    return [
+        [x / count for x in center] for center, count in zip(centers, counts)
+    ]
 
 
 def kmeans(points, n_clusters):
