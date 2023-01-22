@@ -213,7 +213,7 @@ cumbersome.
 
 Our example could then look like this:
 
-.. literalinclude:: cy_kmeans.py
+.. literalinclude:: cy_kmeans.pyx
     :lines: 1-28
 
 .. seealso::
