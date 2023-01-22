@@ -4,15 +4,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  
+
   <head>
-    
+
       <meta charset="utf-8">
       <title>Panel Application</title>
-      
-      
-        
-          
+
+
+
+
         <link rel="stylesheet" href="https://cdn.holoviz.org/panel/0.14.1-rc.2/dist/css/card.css" type="text/css" />
         <link rel="stylesheet" href="https://cdn.holoviz.org/panel/0.14.1-rc.2/dist/css/markdown.css" type="text/css" />
         <link rel="stylesheet" href="https://cdn.holoviz.org/panel/0.14.1-rc.2/dist/css/widgets.css" type="text/css" />
@@ -22,43 +22,43 @@
         <link rel="stylesheet" href="https://cdn.holoviz.org/panel/0.14.1-rc.2/dist/css/debugger.css" type="text/css" />
         <link rel="stylesheet" href="https://cdn.holoviz.org/panel/0.14.1-rc.2/dist/css/dataframe.css" type="text/css" />
         <style>
-            
+
                     .bk.pn-loading.arc:before {
                       background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJtYXJnaW46IGF1dG87IGJhY2tncm91bmQ6IG5vbmU7IGRpc3BsYXk6IGJsb2NrOyBzaGFwZS1yZW5kZXJpbmc6IGF1dG87IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPiAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzNjM2MzIiBzdHJva2Utd2lkdGg9IjEwIiByPSIzNSIgc3Ryb2tlLWRhc2hhcnJheT0iMTY0LjkzMzYxNDMxMzQ2NDE1IDU2Ljk3Nzg3MTQzNzgyMTM4Ij4gICAgPGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBkdXI9IjFzIiB2YWx1ZXM9IjAgNTAgNTA7MzYwIDUwIDUwIiBrZXlUaW1lcz0iMDsxIj48L2FuaW1hdGVUcmFuc2Zvcm0+ICA8L2NpcmNsZT48L3N2Zz4=");
                       background-size: auto calc(min(50%, 400px));
                     }
-                    
+
         </style>
-        
-        
+
+
           <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.js"></script><script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.1.min.js"></script><script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.1.min.js"></script><script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.1.min.js"></script><script type="text/javascript" src="https://cdn.holoviz.org/panel/0.14.1-rc.2/dist/panel.min.js"></script><script type="text/javascript">
             Bokeh.set_log_level("info");
         </script>
         <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
-        
-      
-      
-    
+
+
+
+
   </head>
-  
-  
+
+
   <body class="bk pn-loading arc">
-    
-      
-        
-          
-          
-            
+
+
+
+
+
+
               <div class="bk-root" id="b40ec9cb-b569-467f-b44f-e1d4d016fbfd" data-root-id="1002"></div>
-            
-          
-            
+
+
+
               <div class="bk-root" id="def51892-6e94-4022-9a07-e24775e0f8f7" data-root-id="1009"></div>
-            
-          
-        
-      
-      
+
+
+
+
+
         <script type="text/javascript">
         async function main() {
           let pyodide = await loadPyodide();
@@ -78,7 +78,7 @@
         # coding: utf-8
 
         # # Überblick
-        # 
+        #
         # In einem Panel könnt ihr interaktive Steuerelemente hinzufügen. Dies erlaubt euch, einfache interaktive Apps, aber auch komplexe mehrseitige Dashboards zu erstellen.Wir beginnen zunächst mit einem einfachen Beispiel einer Funktion zum Zeichnen einer Sinuswelle mit Matplotlib:
 
         # In[1]:
@@ -102,7 +102,7 @@
 
 
         # ## Interaktive Panels
-        # 
+        #
         # Wenn wir viele Kombinationen dieser Werte ausprobieren möchten, um zu verstehen, wie sich Frequenz und Amplitude auf dieses Diagramm auswirken, könnten wir die oben genannte Zelle viele Male neu bewerten. Dies wäre jedoch ein langsamer und aufwändiger Prozess. Stattdessen die Werte im Code jedesmal neu angeben zu müssen, empfiehlt sich, die Werte mithilfe von Schiebereglern interaktiv anzupassen. Mit einer solchen Panel-App könnt ihr einfach die Parameter einer Funktion untersuchen. Dabei ähnelt \`pn.interact\` der Funktion von [ipywidgets interact](https://ipywidgets.readthedocs.io/en/stable/examples/Using%20Interact.html):
 
         # In[2]:
@@ -116,8 +116,8 @@
 
         # Solange ein Live-Python-Prozess ausgeführt wird, wird durch Ziehen dieser Widgets die \`sine\`-Callback-Funktion aufgerufen und auf die von euch ausgewählte Kombination von Parameterwerten ausgewertet und die Ergebnisse angezeigt. Mit einem solchen Panel könn ihr einfach alle Funktionen untersuchen, die ein visuelles Ergebnis eines unterstützten Objekttyps (s. [Supported object types and libraries](https://github.com/holoviz/panel/issues/2) liefern, z.B. Matplotlib, Bokeh, Plotly, Altair oder verschiedene Text- und Bildtypen.
 
-        # ## Komponenten von Panels 
-        # 
+        # ## Komponenten von Panels
+        #
         # \`interact\` ist praktisch, aber was ist, wenn Sie mehr Kontrolle darüber wünschen, wie es aussieht oder funktioniert? Lassen Sie uns zunächst sehen, was \`interact\` tatsächlich erstellt wird, indem Sie das Objekt greifen und seine Darstellung anzeigen:
 
         # In[3]:
@@ -144,16 +144,16 @@
 
 
         # ## Neue Panels
-        # 
+        #
         # Mit diesem kompositorischen Ansatz könnt ihr verschiedene Komponenten wie Widgets, Diagramme, Text und andere Elemente, die für eine App oder ein Dashboard benötigt werden, auf beliebige Weise kombinieren. Das \`interact\`-Beispiel baut auf einem reaktiven Programmiermodell auf, bei dem sich eine Eingabe für die Funktion ändert und das Bedienfeld die Ausgabe der Funktion reaktiv aktualisiert. \`interact\` ist eine praktische Möglichkeit, Widgets aus den Argumenten für eure Funktion automatisch zu erstellen. Panel bietet jedoch auch eine explizitere reaktive API, mit der ihr Verbindungen zwischen Widgets und Funktionsargumenten definieren und anschließend das resultierende Dashboard manuell von Grund auf neu erstellen können.
-        # 
-        # Im folgenden Beispiel deklarieren wir explizit jede Komponente einer App: 
-        # 
+        #
+        # Im folgenden Beispiel deklarieren wir explizit jede Komponente einer App:
+        #
         # 1. Widgets
         # 2. eine Funktion zum Berechnen von Sinuswerten
         # 3. Spalten- und Zeilencontainer
         # 4. die fertige \`sine_panel\`-App.
-        # 
+        #
         # Widget-Objekte haben mehrere Parameter (aktueller Wert, zulässige Bereiche usw.), und hier verwenden wir den \`depends\`-Decorator von Panel, um zu deklarieren, dass die Eingabewerte der Funktion von den \`value\`-Parametern der Widgets stammen sollen. Wenn nun die Funktion und die Widgets angezeigt werden, aktualisiert das Panel die angezeigte Ausgabe automatisch, wenn sich eine der Eingaben ändert:
 
         # In[6]:
@@ -175,7 +175,7 @@
 
 
         # ## Deploy-Panels
-        # 
+        #
         # Die obigen Panels funktionieren alle in einer Notebook-Zelle, aber im Gegensatz zu \`ipywidgets\` und anderen Ansätzen funktionieren \`Panel\`-Apps auch auf eigenständigen Servern. Die obige App kann beispielsweise als eigener Webserver gestartet werden, mit:
 
         # In[7]:
@@ -185,7 +185,7 @@
 
 
         # Dies startet den Bokeh-Server und öffnet ein Browser-Fenster mit der Anwendung.
-        # 
+        #
         # Oder ihr könnt einfach angeben, was ihr auf der Webseite sehen möchtet. \`servable()\`, und dann den Shell-Befehl \`pipenv run panel serve --show example.ipynb\`, um einen Server mit diesem Objekt zu starten:
 
         # In[17]:
@@ -197,9 +197,9 @@
         # Das Semikolon vermeidet, dass hier im Notizbuch eine weitere Kopie des Sinusfelds angezeigt wird.
 
         # ## Deklarative Panels
-        # 
+        #
         # Der obige Kompositionsansatz ist sehr flexibel, verknüpft jedoch domänenspezifischen Code (die Teile über Sinuswellen) mit dem Widget-Anzeigecode. Das ist üblich in prototypischen Projekten, aber in Projekten, bei denen der Code in vielen verschiedenen Kontexten verwendet werden soll, sollen Teile des Codes, die sich auf die zugrunde liegende Domänen (d.h. die Anwendung oder den Forschungsbereich) beziehen, von denen getrennt werden, die an bestimmte Anzeigetechnologien gebunden sind (wie Jupyter-Notebooks oder Webserver).
-        # 
+        #
         # Für solche Verwendungen unterstützt Panel Objekte, die mit der separaten [Param](https://param.holoviz.org/)-Bibliothek deklariert wurden. Dies bietet eine Möglichkeit, die Parameter eurer Objekte (Code, Parameter, Anwendung und Dashboard-Technologie) unabhängig zu erfassen und zu deklarieren. Der obige Code kann zum Beispiel in einem Objekt erfasst werden, das die Bereiche und Werte aller Parameter sowie die Generierung des Diagramms unabhängig von der Panel-Bibliothek oder einer anderen Art der Interaktion mit dem Objekt deklariert:
 
         # In[8]:
@@ -214,7 +214,7 @@
 
             def view(self):
                 return sine(self.frequency, self.amplitude, self.n)
-            
+
         sine_obj = Sine()
 
 
@@ -229,9 +229,9 @@
         # Um eine bestimmte Domäne zu unterstützen, könnt ihr Hierarchien solcher Klassen erstellen, in denen alle Parameter und Funktionen zusammengefasst sind, die ihr für verschiedene Objektfamilien benötigt. Dabei werden sowohl Parameter als auch Code in den Klassen übernommen, und zwar unabhängig von einer bestimmten GUI-Bibliothek oder sogar das Vorhandensein einer GUI überhaupt. Dieser Ansatz macht es praktisch, eine große Codebasis beizubehalten, die mit Panel vollständig angezeigt und bearbeitet werden kann, und zwar auf eine Weise, die im Laufe der Zeit beibehalten und angepasst werden kann.
 
         # ## Verknüpfen von Plots und Aktionen zwischen Panels
-        # 
+        #
         # Die oben genannten Ansätze arbeiten jeweils mit einer Vielzahl von anzeigbaren Objekten, einschließlich Bildern, Gleichungen, Tabellen und Diagrammen. In jedem Fall bietet das Panel interaktive Funktionen mithilfe von Widgets und aktualisiert die angezeigten Objekte entsprechend, wobei nur sehr wenige Annahmen darüber getroffen werden, was tatsächlich angezeigt wird. Panel unterstützt auch eine umfassendere und dynamischere Interaktivität, bei der das angezeigte Objekt selbst interaktiv ist, z.B. JavaScript-basierte Diagramme von Bokeh und Plotly.
-        # 
+        #
         # Wenn wir beispielsweise den mit Pandas gelieferten Matplotlib-Wrapper durch den[Bokeh](https://docs.bokeh.org/)-Wrapper [hvPlot](https://hvplot.holoviz.org/) ersetzen, erhalten wir automatisch interaktive Plots, die *zooming*, *panning* und *hovering* ermöglichen:
 
         # In[10]:
@@ -269,7 +269,7 @@
 
             vline  = hv.DynamicMap(hv.VLine,    streams=[tap]).opts(color='black')
             circle = hv.DynamicMap(unit_circle, streams=[tap])
-            
+
             return (plot * vline + circle).opts(toolbar="right")
 
         unit_curve = pn.interact(sine, view_fn=hvplot2, n=(1, 200), frequency=(0, 10.))
@@ -293,11 +293,11 @@
               Bokeh.safely(function() {
                 (function(root) {
                   function embed_document(root) {
-                    
+
                   const docs_json = document.getElementById('1010').textContent;
                   const render_items = [{"docid":"f1a56f42-0eb3-4912-9727-533b0ac8947e","root_ids":["1002","1009"],"roots":{"1002":"b40ec9cb-b569-467f-b44f-e1d4d016fbfd","1009":"def51892-6e94-4022-9a07-e24775e0f8f7"}}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
-                
+
                   }
                   if (root.Bokeh !== undefined) {
                     embed_document(root);
@@ -323,7 +323,7 @@
             else document.addEventListener("DOMContentLoaded", fn);
           })();
         </script>
-    
+
   </body>
-  
+
 </html>

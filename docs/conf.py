@@ -41,7 +41,7 @@ extensions = [
     "sphinxcontrib.cairosvgconverter",
     "sphinxext.opengraph",
     "sphinx_copybutton",
-    "sphinx_inline_tabs"
+    "sphinx_inline_tabs",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -96,7 +96,7 @@ html_logo = "_static/images/logo/logo.svg"
 html_favicon = "_static/images/logo/favicon.ico"
 
 html_css_files = [
-    'css/alerts.css',
+    "css/alerts.css",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -110,7 +110,7 @@ latex_elements = {
     # The font size ('10pt', '11pt' or '12pt').
     # 'pointsize': '9pt',
     # Additional stuff for the LaTeX preamble.
-    'preamble': r'\usepackage{pmboxdraw}',
+    "preamble": r"\usepackage{pmboxdraw}",
     # Latex figure (float) alignment
     # 'figure_align': 'htbp',
 }
