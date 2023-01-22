@@ -4,18 +4,21 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.2.0
     hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
-    -   id: check-yaml
-    -   id: check-added-large-files
-    -   id: check-json
-        types: [file]  # override `types: [json]`
-        files: \.(json|ipynb)$
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-added-large-files
+    - id: check-json
+      types: [file]  # override `types: [json]`
+      files: \.(json|ipynb)$
+  - repo: https://github.com/pycqa/isort
+    rev: 5.11.2
+    hooks:
+    - id: isort
+      additional_dependencies: ["toml"]
+      entry: isort --profile=black
+      name: isort (python)
   - repo: https://github.com/psf/black
-    rev: 19.10b0
+    rev: 22.12.0
     hooks:
-    -   id: black
-  - repo: https://github.com/asottile/seed-isort-config
-    rev: v2.2.0
-    hooks:
-      - id: seed-isort-config
+    - id: black
