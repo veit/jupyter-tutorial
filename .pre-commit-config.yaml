@@ -2,7 +2,7 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v4.4.0
     hooks:
     - id: trailing-whitespace
     - id: end-of-file-fixer
@@ -12,7 +12,7 @@ repos:
       types: [file]  # override `types: [json]`
       files: \.(json|ipynb)$
   - repo: https://github.com/pycqa/isort
-    rev: 5.11.2
+    rev: 5.11.4
     hooks:
     - id: isort
       additional_dependencies: ["toml"]
