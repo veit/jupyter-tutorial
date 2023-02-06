@@ -23,7 +23,7 @@ idna==3.4
 imagesize==1.4.1
 importlib-metadata==6.0.0
 importlib-resources==5.10.2
-ipykernel==6.20.2
+ipykernel==6.21.1
 ipython==8.9.0
 ipywidgets==8.0.4
 jedi==0.18.2
