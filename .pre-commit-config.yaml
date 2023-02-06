@@ -12,13 +12,13 @@ repos:
       types: [file]  # override `types: [json]`
       files: \.(json|ipynb)$
   - repo: https://github.com/pycqa/isort
-    rev: 5.11.4
+    rev: 5.12.0
     hooks:
     - id: isort
       additional_dependencies: ["toml"]
       entry: isort --profile=black
       name: isort (python)
   - repo: https://github.com/psf/black
-    rev: 22.12.0
+    rev: 23.1.0
     hooks:
     - id: black
