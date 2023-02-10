@@ -3,7 +3,7 @@ furo
 ipython
 ipywidgets
 nbsphinx
-sphinxcontrib-svg2pdfconverter[CairoSVG]
+sphinxcontrib-svg2pdfconverter
 sphinxext-opengraph
 sphinx-copybutton
 sphinx_inline_tabs
