@@ -19,21 +19,21 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
 
    .. literalinclude:: fastAPI/main.py
       :linenos:
-      :lines: 1-3, 6
+      :lines: 1-3, 5-7
 
 #. Next, we define ``app`` as an instance of ``FastAPI`` and define the path to
    the template directory:
 
    .. literalinclude:: fastAPI/main.py
-      :lineno-start: 8
-      :lines: 8-9
+      :lineno-start: 10
+      :lines: 10-11
 
 #. Now we create our first routine via an asynchronous function and refer it to
    our BokehServer:
 
    .. literalinclude:: fastAPI/main.py
-      :lineno-start: 11
-      :lines: 11-15
+      :lineno-start: 14
+      :lines: 14-19
 
 #. As you can see from the code, a `Jinja2
    <https://fastapi.tiangolo.com/advanced/templates/#using-jinja2templates>`_
@@ -49,8 +49,8 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
    server with ``pn.serve()``:
 
    .. literalinclude:: fastAPI/main.py
-      :lineno-start: 18
-      :lines: 18-
+      :lineno-start: 22
+      :lines: 22-
 
    ``createApp``
        calls up our panel app in this example, but this is not covered until the
