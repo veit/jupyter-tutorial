@@ -85,7 +85,7 @@ hand :doc:`best practices <best-practices>` and typical :doc:`workflows/index`.
     working-areas
     work
     install-config
-    hooks
+    hooks/index
     jupyter-config
     tools
     log
