@@ -21,7 +21,7 @@ furo==2022.12.7
 idna==3.4
 imagesize==1.4.1
 importlib-metadata==6.0.0
-importlib-resources==5.10.2
+importlib-resources==5.12.0
 ipykernel==6.21.2
 ipython==8.10.0
 ipywidgets==8.0.4
