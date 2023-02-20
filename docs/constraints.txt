@@ -85,4 +85,4 @@ urllib3==1.26.14
 wcwidth==0.2.6
 webencodings==0.5.1
 widgetsnbextension==4.0.5
-zipp==3.13.0
+zipp==3.14.0
