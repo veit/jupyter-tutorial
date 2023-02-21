@@ -21,14 +21,14 @@ furo==2022.12.7
 idna==3.4
 imagesize==1.4.1
 importlib-metadata==6.0.0
-importlib-resources==5.10.2
+importlib-resources==5.12.0
 ipykernel==6.21.2
 ipython==8.10.0
 ipywidgets==8.0.4
 jedi==0.18.2
 Jinja2==3.1.2
 jsonschema==4.17.3
-jupyter-client==8.0.2
+jupyter-client==8.0.3
 jupyter-core==5.2.0
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==3.0.5
@@ -85,4 +85,4 @@ urllib3==1.26.14
 wcwidth==0.2.6
 webencodings==0.5.1
 widgetsnbextension==4.0.5
-zipp==3.13.0
+zipp==3.14.0
