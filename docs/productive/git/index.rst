@@ -100,5 +100,6 @@ hand :doc:`best practices <best-practices>` and typical :doc:`workflows/index`.
     best-practices
     vs-code
     git-big-picture
+    etckeeper
     advanced
     glossary

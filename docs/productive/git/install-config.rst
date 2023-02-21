@@ -42,6 +42,8 @@ For iX distributions, Git should be in the standard repository.
    automatically. Further information can be found at
    https://gitforwindows.org/.
 
+.. _git-config:
+
 Configuration
 -------------
 
