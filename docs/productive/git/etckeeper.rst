@@ -26,7 +26,7 @@ Configuration
 
 #. The configuration of etckeeper is done in the :file:`etckeeper.conf` file:
 
-   .. code-block:: console
+   .. code-block:: bash
 
     # The VCS to use.
     #VCS="hg"
@@ -37,7 +37,7 @@ Configuration
 
 #. In addition, the following two automatic commits should be avoided:
 
-   .. code-block:: console
+   .. code-block:: bash
 
     # Uncomment to avoid etckeeper committing existing changes
     # to /etc automatically once per day.
@@ -74,7 +74,7 @@ Since Git itself does not record complete metadata, etckeeper has set up a
 hook logs the ``chmod`` and ``chgrp`` entries for all files that do not
 correspond to the standard permissions in the file :file:`/etc/.etckeeper`:
 
-.. code-block::
+.. code-block:: bash
 
     maybe chmod 0755 '.'
     maybe chmod 0700 './.etckeeper'
