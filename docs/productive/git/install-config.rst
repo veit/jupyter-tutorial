@@ -239,6 +239,33 @@ increased if necessary, for example with:
     there is also a standalone Installer in `Releases
     <https://github.com/GitCredentialManager/git-credential-manager/releases/>`_.
 
+    It is configured with
+
+    .. code-block:: console
+
+        $ git credential-manager configure
+        Configuring component 'Git Credential Manager'...
+        Configuring component 'Azure Repos provider'...
+
+    This will add the ``[credential]`` section to your ``~.gitconfig`` file:
+
+    .. code-block:: ini
+
+        [credential]
+            helper =
+            helper = C:/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+
+    Now, when cloning a repository, a *Git Credential Manager* window opens and asks you
+    to enter your credentials.
+
+    In addition, the ``~/.gitconfig`` file is supplemented, for example by the following
+    two lines:
+
+    .. code-block:: ini
+
+        [credential "https://ce.cusy.io"]
+            provider = generic
+
 .. tab:: macOS
 
     With macOS you can use `osxkeychain` to store the login information.
