@@ -79,8 +79,8 @@ Occasionally, however, Git runs into issues with merging, such as:
         * `Git Tools - Advanced Merging
           <https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging>`_
 
-Branches
---------
+Delete branches
+---------------
 
 :samp:`$ git branch -d [{BRANCH_NAME}]`
     deletes the selected branch if it has already been transferred to another.
