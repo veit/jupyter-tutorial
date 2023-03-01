@@ -7,10 +7,10 @@ Git branches
     ``-a``
         also shows all removed branches.
 
-:samp:`$ git branch [{BRANCHNAME}]`
+:samp:`$ git branch [{BRANCH_NAME}]`
     creates a new branch based on the current ``HEAD``.
 
-:samp:`$ git switch [-c] [{BRANCHNAME}]`
+:samp:`$ git switch [-c] [{BRANCH_NAME}]`
     switches between branches.
 
     ``-c``
@@ -21,13 +21,13 @@ Git branches
         In Git < 2.23, ``git switch`` is not yet available. In this case you
         still need to use ``git checkout``:
 
-        :samp:`$ git checkout [-b] [{BRANCHNAME}]`
+        :samp:`$ git checkout [-b] [{BRANCH_NAME}]`
             changes the working directory to the specified branch.
 
             ``-b``
                 creates the specified branch if it does not already exist.
 
-:samp:`$ git merge [{FROMBRANCHNAME}]`
+:samp:`$ git merge [{FROM_BRANCH_NAME}]`
     connects the given branch with the current branch you are currently in, for
     example:
 
@@ -82,7 +82,7 @@ Occasionally, however, Git runs into issues with merging, such as:
 Branches
 --------
 
-:samp:`$ git branch -d [{BRANCHNAME}]`
+:samp:`$ git branch -d [{BRANCH_NAME}]`
     deletes the selected branch if it has already been transferred to another.
 
     ``-D`` instead of ``-d`` forcing the deletion.
