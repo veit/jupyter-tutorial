@@ -99,7 +99,7 @@ command also works with remote branches. To work with remote branches, a remote
 repository must first be configured and added to the local repository
 configuration:
 
-:samp:`$ git remote add [{NEWREPO}] https://ce.cusy.io/veit/{NEWREPO}.git`
+:samp:`$ git remote add origin https://ce.cusy.io/veit/{NEWREPO}.git`
 
 Now the branch can also be added to the remote repository:
 
