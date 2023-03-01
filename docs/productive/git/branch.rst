@@ -90,3 +90,22 @@ Delete branches
 .. seealso::
     * `Git Branching - Branches in a Nutshell
       <https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell>`_
+
+Remote branches
+---------------
+
+So far, these examples have all shown local branches. However, the git branch
+command also works with remote branches. To work with remote branches, a remote
+repository must first be configured and added to the local repository
+configuration:
+
+:samp:`$ git remote add [{NEWREPO}] https://ce.cusy.io/veit/{NEWREPO}.git`
+
+Now the branch can also be added to the remote repository:
+
+:samp:`$ git push origin [{BRANCH_NAME}]`
+
+With ``git branch -d`` you delete the branches locally only. To delete them on
+the remote server as well, you can type the following:
+
+:samp:`$ git push origin --delete [{BRANCH_NAME}]`
