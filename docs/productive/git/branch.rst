@@ -109,3 +109,54 @@ With ``git branch -d`` you delete the branches locally only. To delete them on
 the remote server as well, you can type the following:
 
 :samp:`$ git push origin --delete [{BRANCH_NAME}]`
+
+Rename branches
+---------------
+
+You can rename branches, for example with
+
+.. code-block:: console
+
+   $ git branch --move master main
+
+This changes your local ``master`` branch to ``main``. In order for others to
+see the new branch, you must push it to the remote server. This will make the
+``main`` branch available on the remote server:
+
+.. code-block:: console
+
+   $ git push origin main
+
+The current state of your repository may now look like this:
+
+.. code-block:: console
+
+   $ git branch -a
+   * main
+     remotes/origin/HEAD -> origin/master
+     remotes/origin/main
+     remotes/origin/master
+
+* Your local ``master`` branch has disappeared because it has been replaced by
+  the ``main`` branch.
+* The ``main`` branch is also present on the remote computer.
+* However, the ``master`` branch is also still present on the remote server. So
+  presumably others will continue to use the the ``master`` branch for their
+  work until you make the following changes:
+
+  * For all projects that depend on this project, the code and/or configuration
+    must be updated.
+  * The test-runner configuration files may need to be updated.
+  * Build and release scripts need to be adjusted.
+  * The settings on your repository server, such as the default branch of the
+repository, merge rules and others, need to be adjusted.
+  * References to the old branch in the documentation need to be updated.
+  * Any pull or merge requests that target the ``master`` branch should be
+    closed.
+
+After you have done all these tasks and are sure that the ``main`` branch works
+the same as the ``master`` branch, you can delete the ``master`` branch:
+
+.. code-block:: console
+
+   $ git push origin --delete master
