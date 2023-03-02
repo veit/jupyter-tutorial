@@ -130,7 +130,7 @@ to the  ``main`` and then transferred from there to the release branch with
 
 .. code-block:: console
 
-     $ git checkout 3.10
+     $ git switch 3.10
      $ git cherry-pick 61de025
      [3.10 b600967] Fix bug #17
       Date: Thu Sep 15 11:17:35 2022 +0200

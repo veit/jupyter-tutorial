@@ -163,7 +163,7 @@ linear progression by moving the changes in the feature branch to the top of the
 
    .. code-block:: console
 
-      $ git checkout main
+      $ git switch main
       $ git pull origin main
       $ git merge --no-ff 17-some-feature
 
