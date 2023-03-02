@@ -160,3 +160,10 @@ the same as the ``master`` branch, you can delete the ``master`` branch:
 .. code-block:: console
 
    $ git push origin --delete master
+
+Team members can delete their locally still existing references to the
+``master`` branch with
+
+.. code-block:: console
+
+   $ git fetch origin --prune
