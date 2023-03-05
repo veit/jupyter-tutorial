@@ -15,75 +15,37 @@ clone the same repository twice:
 .. code-block:: console
 
     $ git clone git@github.com:veit/jupyter-tutorial.git
-    Cloning into 'jupyter-tutorial'...
+    Klone nach 'jupyter-tutorial'...
     $ git clone git@github.com:veit/jupyter-tutorial.git pyviz-tutorial
-    Cloning into 'pyviz-tutorial'...
+    Klone nach 'pyviz-tutorial' ...
 
 The next step is to filter out the unwanted histories from each of the two
-repos. To do this, however, we do not need to look at the directory path for
-each commit, but can use the ``filter-branch`` option ``-subdirectory-filter``
-to rewrite the history and keep those commits that actually concern the contents
-of a particular subfolder:
-
-.. note::
-   ``-subdirectory-filter`` also considers the subdirectory as the root of the
-   entire repo.
-
-The current branch, in this case ``main``, is rewritten and only the history of
-the desired folder is extracted:
+repos. To rewrite the history and keep only those commits that actually affect
+your content of a particular subfolder, we use `git-filter-repo
+<https://github.com/newren/git-filter-repo>`_:
 
 .. code-block:: console
 
-    $ git filter-branch --subdirectory-filter docs/viz/ -- main
-    …
-    Proceeding with filter-branch...
-    Ref 'refs/heads/main' was rewritten
+    $ curl https://raw.githubusercontent.com/newren/git-filter-repo/main/git-filter-repo -o git-filter-repo
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+    100  161k  100  161k    0     0   578k      0 --:--:-- --:--:-- --:--:--  584k
 
-.. warning::
-   However, ``git-filter-branch`` can also rewrite the history incorrectly.
-   Instead, it is better to use `git filter-repo
-   <https://github.com/newren/git-filter-repo/>`_, see also `filter-branch
-   <https://git-scm.com/docs/git-filter-branch>`_.
+    $ cd pyviz-tutorial
+    $ python3 ../git-filter-repo --path docs/viz
 
-Instead of overwriting only one branch, in this case ``main``, you can also
-overwrite several branches and even tags. Of course, not every tag in the new
-history can be successfully rewritten: the tagged commit must be within the
-rewritten commits for the tag to be reapplied.
+The only thing left to do now is to adjust the remote URL:
 
-As you might imagine, this process can be harmful. For this reason,
-``filter-branch`` creates a backup copy of each ref it modifies as
-``original/refs/*``. Git may have rewritten the commits and made a copy of it,
-but the old commits are preserved by the original references. So to restore a
-reference, you can restore it to the original with
+.. code-block:: console
+
+    $ git remote add origin git@github.com:veit/pyviz-tutorial.git
+    $ git push -u origin main
+
+For our Jupyter tutorial repository, we now invert the selected path:
 
 .. code-block::
 
-    $ git reset --hard original/refs/heads/main
-
-If you want to get rid of the old history immediately, you must delete all
-references to it and enforce an expiry date for these dead objects from the
-reflog, as the reflog could prevent these objects from actually being deleted.
-Once you have deleted all references, you can start a garbage collection for the
-reflog to remove these old objects for good.
-
-The only thing left to do now is to adjust the remotes of the new repo, as it
-will have the local copy of the Jupyter tutorial repo as its origin remote.
-
-For our Jupyter tutorial repository we can take a different approach, as we want
-to delete all the history belonging to the ``docs/viz/`` directory:
-
-.. code-block::
-
-   $ git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch docs/viz' --prune-empty
-    …
-    Proceeding with filter-branch...
-    Ref 'refs/heads/main' was rewritten
-
-This will take a while with a large repository: Git has to go through every
-commit and delete all occurrences of ``docs/viz from`` the diff.
-
-``git rm -r -cached -ignore-unmatch docs/viz``
-    is applied to the index of each transfer, deleting ``docs/viz`` from the
-    index but leaving the working tree unchanged.
-``-prune-empty``
-    removes possible empty commits that may have come from the operation.
+    $ cd jupyter-tutorial
+    $ python3 ../git-filter-repo --invert-paths --path docs/viz
+    $ git remote add origin git@github.com:veit/jupyter-tutorial.git
+    $ git push -f -u origin main
