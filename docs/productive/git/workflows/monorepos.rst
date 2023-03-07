@@ -132,6 +132,30 @@ repository. Git LFS accesses Git’s native push, pull, checkout and fetch
 operations to transfer and replace objects, meaning you can work with large
 files in your repository as usual.
 
++git-sizer
++---------
++
+`git-sizer <https://github.com/github/git-sizer>`_ calculates various metrics for
+a local Git repository and flags those that might cause you problems or
+inconvenience, for example:
+
+.. code-block:: console
+
+    $ git-sizer
+    Processing blobs: 1903
+    Processing trees: 4126
+    Processing commits: 1055
+    Matching commits to trees: 1055
+    Processing annotated tags: 2
+    Processing references: 5
+    | Name                         | Value     | Level of concern               |
+    | ---------------------------- | --------- | ------------------------------ |
+    | Biggest objects              |           |                                |
+    | * Blobs                      |           |                                |
+    |   * Maximum size         [1] |  35.8 MiB | ***                            |
+
+    [1]  9fe7b8048891965e476aac0410e08e050fd21354 (refs/heads/main:docs/workspace/pandas/descriptive-statistics.ipynb)
+
 .. _fsmonitor:
 
 Git file system monitor (FSMonitor)
