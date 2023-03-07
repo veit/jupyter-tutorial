@@ -132,9 +132,9 @@ repository. Git LFS accesses Git’s native push, pull, checkout and fetch
 operations to transfer and replace objects, meaning you can work with large
 files in your repository as usual.
 
-+git-sizer
-+---------
-+
+git-sizer
+---------
+
 `git-sizer <https://github.com/github/git-sizer>`_ calculates various metrics for
 a local Git repository and flags those that might cause you problems or
 inconvenience, for example:
