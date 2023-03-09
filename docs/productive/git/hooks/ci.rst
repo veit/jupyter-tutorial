@@ -38,12 +38,27 @@ Example for GitLab Actions
 
 .. code-block:: yaml
 
-    my_job:
+    stages:
+      - validate
+
+    pre-commit:
+      stage: validate
+      image:
+        name: python:3.10
       variables:
         PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+      only:
+        refs:
+          - merge_requests
+          - tags
+          - main
       cache:
         paths:
           - ${PRE_COMMIT_HOME}
+      before_script:
+        - pip install pre-commit
+      script:
+        - pre-commit run --all-files
 
 .. seealso::
 
