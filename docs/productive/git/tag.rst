@@ -1,5 +1,5 @@
-Git tagging
-===========
+Git tags
+========
 
 ``$ git tag``
     list all tags, for example:
