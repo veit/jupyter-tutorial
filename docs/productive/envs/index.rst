@@ -20,4 +20,3 @@ environments.
     spack/index
     pipenv/index
     devpi
-    glossary

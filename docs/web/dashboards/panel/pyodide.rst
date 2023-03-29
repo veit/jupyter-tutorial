@@ -22,7 +22,7 @@ using ``panel convert``. The only requirements are:
   other scripts or modules
 * the libraries have been `compiled for Pyodide
   <https://github.com/pyodide/pyodide/tree/main/packages>`_ or are available as
-  `Python wheels <Wheel>` on the :term:`Python Package Index (PyPI)`.
+  `Python wheels <Wheel>` on the :term:`Python Package Index` (:term:`PyPI`).
 
 Example
 -------

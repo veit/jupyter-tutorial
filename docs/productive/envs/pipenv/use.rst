@@ -78,8 +78,8 @@ Options
     enables site packages for the virtual environment.
 
 ``--pypi-mirror``
-    indicates a PyPI mirror. The standard is the :term:`Python Package Index
-    (PyPI)`.
+    indicates a PyPI mirror. The standard is the :term:`Python Package Index`
+    (:term:`PyPI`)`.
 
     However, you can also specify your own mirrors:
 
@@ -249,8 +249,9 @@ installed packages.
 ``sdist`` vs. ``wheel``
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Pip can install packages as :term:`Source Distribution (sdist)` or :term:`Wheel`
-If both are present on PyPI, pip will prefer a compatible :term:`Wheel`.
+:term:`pip` can install packages as :term:`Source Distribution` (:term:`sdist`)
+or :term:`Wheel` If both are present on :term:`PyPI`, pip will prefer a
+compatible :term:`Wheel`.
 
 .. note::
    However, dependencies on wheels are not covered by ``$ pipenv lock``.
