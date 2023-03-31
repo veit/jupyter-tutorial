@@ -85,3 +85,9 @@ Extensions
   <https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory>`_
 * `Git Lens
   <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens>`_
+* :doc:`gitlab-vscode-extension`
+
+.. toctree::
+    :hidden:
+
+    gitlab-vscode-extension
