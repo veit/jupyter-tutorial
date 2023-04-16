@@ -74,7 +74,7 @@ Use on the command line
 ``pdf``
     creates a PDF over latex. Supports the same templates as ``latex``.
 
- ``slides``
+``slides``
     creates `Reveal.js <https://revealjs.com/>`_ slides.
 
 ``script``
