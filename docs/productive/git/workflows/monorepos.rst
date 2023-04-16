@@ -132,6 +132,52 @@ repository. Git LFS accesses Git’s native push, pull, checkout and fetch
 operations to transfer and replace objects, meaning you can work with large
 files in your repository as usual.
 
+You can install Git LFS with
+
+.. tab:: Debian/Ubuntu
+
+   .. code-block:: console
+
+      $ sudo apt install git-lfs
+
+.. tab:: macOS
+
+   .. code-block:: console
+
+      $ brew install git-lfs
+
+.. tab:: Windows
+
+   Git LFS can be installed with `git for windows
+   <https://gitforwindows.org/>`_.
+
+Then you can install Git LFS in your repository with
+
+.. code-block:: console
+
+   $ git lfs install
+   Updated Git hooks.
+   Git LFS initialized.
+
+Now, to apply Git LFS to specific file types, you can for example specify:
+
+.. code-block:: console
+
+   $ git lfs track "*.pdf"
+   Tracking "*.pdf"
+
+This creates the following line in your :file:`.gitattributes` file:
+
+.. code-block::
+
+   *.pdf filter=lfs diff=lfs merge=lfs -text
+
+Finally, you should manage the :file:`.gitattributes` file with Git:
+
+.. code-block:: console
+
+   $ git add .gitattributes
+
 git-sizer
 ---------
 
