@@ -13,7 +13,7 @@ Git log
     Relative information such as ``1 week ago`` or ``yesterday`` is also
     permitted.
 
-:samp:`$ git log --author = "{NAME}"`
+:samp:`$ git log --author="{NAME}"`
     filters the commit history by authors.
 
     You can also search for several authors at the same time, for example
