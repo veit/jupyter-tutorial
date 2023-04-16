@@ -18,7 +18,7 @@ no further history of commits.
         the date. In addition, annotated tags have messages, similar to commits.
         You can create such tags, for example with :samp:`git tag -a {v3.9.16}
         -m '{Python 3.9.16}'`. You can then display this additional metadata for
-        example with :samp:`git show {v3.9.16}'.
+        example with :samp:`git show {v3.9.16}`.
     Lightweight tags
         Lightweight tags can be created, for example, with :samp:`git tag
         {v3.9.16}` without the :samp:`-a`, :samp:`-s` or :samp:`-m` options.
