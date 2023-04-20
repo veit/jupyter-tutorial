@@ -4,6 +4,8 @@ Configuration
 JupyterHub configuration
 ------------------------
 
+Create configuration file:
+
 .. code-block:: console
 
     $  pipenv run jupyterhub --generate-config
@@ -14,10 +16,10 @@ JupyterHub configuration
    * :doc:`JupyterHub Configuration Basics <jupyterhub:getting-started/index>`
    * :doc:`JupyterHub Networking basics <jupyterhub:getting-started/networking-basics>`
 
-System service for JupyterHub
+System Service for JupyterHub
 -----------------------------
 
-#. Finding the Python virtual environment:
+#. Determine the Python virtual environment:
 
    .. code-block:: console
 
@@ -25,13 +27,21 @@ System service for JupyterHub
     $ pipenv --venv
     /srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W
 
-#. Add a new systemd unit file ``/etc/systemd/system/jupyterhub.service`` with this command:
+#. Configure the absolute path to :file:`jupyterhub-singleuser` in the
+   :file:`jupyterhub_config.py` file:
+
+   .. code-block:: python
+
+    c.Spawner.cmd = ['/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser']
+
+#. Add a new systemd unit file ``/etc/systemd/system/jupyterhub.service`` with
+   the command:
 
    .. code-block:: console
 
-      # systemctl edit --force --full jupyterhub.service
+    $ sudo systemctl edit --force --full jupyterhub.service
 
-   Insert your according Python virtual environment.
+   Add your corresponding Python environment.
 
    .. code-block:: ini
 
@@ -40,28 +50,36 @@ System service for JupyterHub
 
     [Service]
     User=root
-    Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W/bin"
-    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyter-tutorial/jupyterhub_config.py
+    Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin"
+    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyterhub_env/jupyterhub_config.py
 
     [Install]
     WantedBy=multi-user.target
+
+#. Loading the configuration with:
+
+   .. code-block:: console
+
+    $ sudo systemctl daemon-reload
 
 #. The JupyterHub can be managed with:
 
    .. code-block:: console
 
-    # systemctl <start|stop|status> jupyterhub
+    $ sudo systemctl <start|stop|status> jupyterhub
 
-#. To ensure that the service is also loaded when the system is started, the
+#. To ensure that the service is also loaded during a system start, the
    following is called:
 
    .. code-block:: console
 
-    # systemctl enable jupyterhub.service
+    $ sudo systemctl enable jupyterhub.service
     Created symlink /etc/systemd/system/multi-user.target.wants/jupyterhub.service → /etc/systemd/system/jupyterhub.service.
 
-TLS encryption
---------------
+#. To be able to use the ``jupyterhub-singleuser`` and start your own server,
+   the ix users must be entered in the ``jupyter`` group, for example with
+   :samp:`usermod -aG jupyter {VEIT}`.
+
 
 Since JupyterHub includes authentication and allows the execution of any code,
 it should not be executed without SSL (HTTPS). To do this, an official,
