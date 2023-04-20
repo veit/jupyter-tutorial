@@ -1,30 +1,29 @@
 Installation
 ============
 
-#. Install Python≥3.5 and pip:
+#. Install Python≥3.6 and :term:`pip`:
 
    .. code-block:: console
 
-    # apt-get update
-    # apt install python3
-    # python3 -V
-    Python 3.7.3
-    # apt install python3-pip
+    $ sudo apt update
+    $ sudo apt install python3
+    $ python3 -V
+    Python 3.10.6
+    $ sudo apt install python3-pip
 
 #. Create service user ``jupyter``:
 
    .. code-block:: console
 
-    # useradd -s /bin/bash -rmd /srv/jupyter jupyter
+    $ sudo useradd -s /bin/bash -rmd /srv/jupyter jupyter
 
-#. Clone the repository as service user ``jupyter``:
+#. Switch to the service user ``jupyter``:
 
    .. code-block:: console
 
-    # su - jupyter
-    $ git clone https://github.com/veit/jupyter-tutorial.git
+    $ sudo -u jupyter -i
 
-#. Install `Pipenv <https://pipenv.pypa.io/>`_:
+#. Install :term:`Pipenv`:
 
    .. code-block:: console
 
@@ -39,70 +38,63 @@ Installation
     $  python3 -m site --user-base
     /srv/jupyter/.local
 
-   Then the  ``bin`` directory has to be appended and added to
-   ``PATH``, so:
+   Then the ``bin`` directory must be appended and added to ``PATH`` in
+   ``~/.profile``, so:
 
    .. code-block:: console
 
     export PATH=/srv/jupyter/.local/bin:$PATH
 
-   Finally the changed profile is read in with:
+   Finally, the changed profile is read in with:
 
    .. code-block:: console
 
     $  source ~/.profile
 
-#. Edit the ``Pipfile`` in the unpacked archive and enter your current Python version in this section:
-
-  .. code-block:: console
-
-    [requires]
-    python_version = ""
-
 #. Create a virtual environment and install JupyterHub:
 
    .. code-block:: console
 
-    $  cd jupyter-tutorial/
-    $  pipenv install
+    $ mkdir jupyterhub_env
+    $ cd jupyterhub_env
+    $ pipenv install jupyterhub
 
 #. Install ``nodejs`` and ``npm``:
 
    .. code-block:: console
 
-    # apt install curl
-    # cd ~
-    # curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
-    # bash nodesource_setup.sh
-    # apt install nodejs
-    # nodejs -v
-    v10.15.3
-    # npm -v
-    6.10.2
+    $ sudo apt install nodejs npm
+    $ node -v
+    v12.22.9
+    $ npm -v
+    8.5.1
 
-   ``10.x`` indicates the major version of ``nodejs``.
-
-#. Install the ``npm`` packages:
+#. Install the HTTP proxy:
 
    .. code-block:: console
 
-    # npm install
+    $ sudo npm install -g configurable-http-proxy
 
-#. Install the HTTP-Proxy:
+#. If JupyterLab and Notebook are to run in the same environment, they must also
+   be installed here:
 
    .. code-block:: console
 
-    # npm install -g configurable-http-proxy
-    /usr/local/bin/configurable-http-proxy -> /usr/local/lib/node_modules/configurable-http-proxy/bin/configurable-http-proxy
-    + configurable-http-proxy@4.1.0
-    added 47 packages from 62 contributors in 6.208s
+    $  pipenv install jupyterlab notebook
 
 #. Testing the installation:
 
    .. code-block:: console
 
+    $  pipenv run jupyterhub -h
+    $  configurable-http-proxy -h
+
+#. Starting the JupyterHub:
+
+   .. code-block:: console
+
     $  pipenv run jupyterhub
-    …
+    ...
     [I 2019-07-31 22:47:26.617 JupyterHub app:1912] JupyterHub is now running at http://:8000
 
-   With ``ctrl-c`` you can end the process again.
+   You can end the process again with :kbd:`ctrl-c`.
