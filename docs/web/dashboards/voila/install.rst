@@ -8,12 +8,9 @@ voilà can be installed with:
 
 .. code-block:: console
 
-    $ pipenv run voila docs/jupyter/ipywidgets/examples.ipynb
-    pipenv install voila
-    Installing voila…
-    …
-    Successfully installed jupyter-server-0.1.1 jupyterlab-pygments-0.1.0 voila-0.1.10
-    …
+   $ pipenv install voila
+   Installing voila...
+   ...
 
 Start
 -----
@@ -25,10 +22,10 @@ You can check the installation, e.g. with:
 
 .. code-block:: console
 
-    $ pipenv run voila pipenv run voila docs/workspace/jupyter/ipywidgets/examples.ipynb
-    …
-    [Voila] Voila is running at:
-    http://localhost:8866/
+   $ pipenv run voila docs/workspace/jupyter/ipywidgets/examples.ipynb
+   ...
+   [Voila] Voilà is running at:
+   http://localhost:8866/
 
 Your standard browser should open and display the ``ipywidget`` examples from
 our tutorial:
@@ -42,7 +39,7 @@ contains:
 .. code-block:: console
 
     $ pipenv run voila docs/workspace/jupyter/ipywidgets
-    …
+    ...
 
 .. image:: voila-example-2.png
    :alt: Voilà example of a directory view
@@ -52,7 +49,7 @@ It is also possible to display the source code with:
 .. code-block:: console
 
     $ pipenv run voila --strip_sources=False docs/workspace/jupyter/ipywidgets/examples.ipynb
-    …
+    ...
 
 .. note::
     Note that the code is only displayed. Voilà does not allow users to edit or
@@ -67,7 +64,7 @@ theme:
 .. code-block:: console
 
     $ pipenv run voila --theme=dark docs/workspace/jupyter/ipywidgets/examples.ipynb
-    …
+    ...
 
 … as an extension of the Jupyter server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,7 +74,7 @@ Alternatively you can start voilà as an extension of the Jupyter server:
 .. code-block:: console
 
     $ pipenv run jupyter notebook
-    …
+    ...
 
 Then you can call up voilà, e.g. under the URL
 ``http://localhost:8888/voila``.
