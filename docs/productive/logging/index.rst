@@ -2,9 +2,8 @@ Logging
 =======
 
 The `logging <https://docs.python.org/3/library/logging.html#module-logging>`_
-module is part of the Python standard library. It is described in `PEP 0282
-<https://www.python.org/dev/peps/pep-0282>`_. You can get a first introduction
-to the module in the `Basic Logging Tutorial
+module is part of the Python standard library. It is described in :pep:`0282`.r
+You can get a first introduction to the module in the `Basic Logging Tutorial
 <https://docs.python.org/3/howto/logging.html#logging-basic-tutorial>`_.
 
 Logging usually serves two different purposes:

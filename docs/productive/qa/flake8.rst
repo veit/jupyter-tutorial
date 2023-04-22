@@ -2,9 +2,8 @@
 ==========
 
 `flake8 <https://pypi.org/project/flake8/>`_ ensures that most of your code
-follows `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_. However, automatic
-formatting, for example with :doc:`black`, is even more convenient. In addition
-``flake8`` also checks for unused imports.
+follows :pep:`8`. However, automatic formatting, for example with :doc:`black`,
+is even more convenient. In addition ``flake8`` also checks for unused imports.
 
 Installation
 ------------

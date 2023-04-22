@@ -333,9 +333,6 @@ classifications with `trove-classifiers
 <https://github.com/pypa/trove-classifiers>`_.
 
 .. seealso::
-   * `PEP 639 – Improving License Clarity with Better Package Metadata
-     <https://peps.python.org/pep-0639/>`_
-   * `PEP 621 – Storing project metadata in pyproject.toml
-     <https://peps.python.org/pep-0621/>`_
-   * `PEP 643 – Metadata for Package Source Distributions
-     <https://peps.python.org/pep-0643/>`_
+   * :pep:`639` – Improving License Clarity with Better Package Metadata
+   * :pep:`621` – Storing project metadata in pyproject.toml
+   * :pep:`643` – Metadata for Package Source Distributions

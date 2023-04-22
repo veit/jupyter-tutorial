@@ -122,9 +122,8 @@ Options
 ``check``
 ---------
 
-``pipenv check`` checks for security holes and for `PEP 508
-<https://www.python.org/dev/peps/pep-0508/>` markers in the pipfile. For this it
-uses `safety <https://github.com/pyupio/safety>`_.
+``pipenv check`` checks for security holes and for :pep:`508` markers in the pip
+ile. For this it uses `safety <https://github.com/pyupio/safety>`_.
 
 Example:
 
