@@ -137,6 +137,8 @@ There you will find the two files ``spack.yaml`` and ``spack.lock``.
         * `spack.yaml
           <https://spack.readthedocs.io/en/latest/environments.html#spack-yaml>`_
 
+.. _spack_lock:
+
 ``spack.lock``
     With ``spack install`` the specs are concretised, written in ``spack.lock``
     and installed. In contrast to ``spack.yaml`` ``spack.lock`` is written in

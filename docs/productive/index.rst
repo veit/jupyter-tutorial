@@ -61,3 +61,4 @@ and :doc:`creating packages <python-basics:libs/index>`.
     testing
     logging/index
     qa/index
+    security

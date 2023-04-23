@@ -236,6 +236,8 @@ badge for you, which you can include in your ``README`` file, for example
 .. |License| image:: https://img.shields.io/github/license/veit/jupyter-tutorial.svg
    :target: https://github.com/veit/jupyter-tutorial/blob/main/LICENSE
 
+.. _standard_format_licensing:
+
 Standard format for licensing
 -----------------------------
 
@@ -250,6 +252,8 @@ add to the header of your licence files:
     # SPDX-FileCopyrightText: [year] [copyright holder] <[email address]>
     #
     # SPDX-License-Identifier: [identifier]
+
+.. _check_conformity:
 
 Check conformity
 ----------------
@@ -294,25 +298,6 @@ Alternatives
 `FOSSology <https://www.fossology.org/>`_
     Free software compliance toolkit that stores information in a database with
     license, copyright, and export scanners.
-
-.. _open_chain:
-
-ISO/IEC 5230/OpenChain
-----------------------
-
-`ISO/IEC 5230 <https://en.wikipedia.org/wiki/ISO/IEC_5230>`_ is based on the
-`OpenChain Specification 2.1
-<https://github.com/OpenChain-Project/License-Compliance-Specification/raw/master/2.1/en/openchainspec-2.1.pdf>`_
-and is an international standard on software supply chains, simplified
-procurement and open source licence compliance.
-
-.. seealso::
-
-   * `OpenChain project <https://www.openchainproject.org>`_
-   * `OpenChain Self Certification
-     <https://certification.openchainproject.org>`_
-   * `Reference-Material
-     <https://github.com/OpenChain-Project/Reference-Material>`_
 
 Python package metadata
 -----------------------

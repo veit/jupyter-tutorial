@@ -119,6 +119,8 @@ Options
 
     You can find more options at `pipenv <https://docs.pipenv.org/#pipenv>`_.
 
+.. _pipenv_check:
+
 ``check``
 ---------
 
@@ -343,6 +345,8 @@ example
    and the environment variables are also written to ``Pipfile.lock``, so that
    no credentials need to be stored in the version control.
 
+.. _pipenv_lock:
+
 ``lock``
 --------
 
@@ -424,6 +428,8 @@ the following two options:
 ``--all-dev``
     removes all development packages from the virtual environment and removes
     them from the ``Pipfile``.
+
+.. _pipenv_update:
 
 ``update``
 ----------
