@@ -170,8 +170,10 @@ Example:
     hardened for production use and should be used only as a development aid.
 
 .. note::
-   ``pipenv`` embeds an API client key from ``pyup.io``, instead of including a
-   full copy of the CC-BY-NC-SA licensed database.
+   :term`Pipenv` embeds an API client key from `pyup.io <>https://pyup.io`_,
+   instead of including a full copy of the `CC BY-NC-SA
+   <https://creativecommons.org/licenses/by-nc-sa/3.0/de/deed.en>`_ licensed
+   database.
 
 In order to install the complete database you can check it out with:
 
