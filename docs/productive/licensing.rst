@@ -77,9 +77,9 @@ edited and versioned as source code.
 Data, media, :abbr:`etc. (et cetera)`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`CC0-1.0 <https://creativecommons.org/publicdomain/zero/1.0/deed.de>`_,
-`CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/deed.de>`_ and
-`CC-BY-SA-4.0 <https://creativecommons.org/licenses/by-sa/4.0/deed.de>`_ are
+`CC0 1.0 <https://creativecommons.org/publicdomain/zero/1.0/deed.de>`_,
+`CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/deed.de>`_ and
+`CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/deed.de>`_ are
 open licences used for non-software material, from datasets to videos. However,
 they are `not recommended for software
 <https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software>`_.
