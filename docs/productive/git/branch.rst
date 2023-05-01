@@ -149,7 +149,7 @@ The current state of your repository may now look like this:
   * The test-runner configuration files may need to be updated.
   * Build and release scripts need to be adjusted.
   * The settings on your repository server, such as the default branch of the
-repository, merge rules and others, need to be adjusted.
+    repository, merge rules and others, need to be adjusted.
   * References to the old branch in the documentation need to be updated.
   * Any pull or merge requests that target the ``master`` branch should be
     closed.
