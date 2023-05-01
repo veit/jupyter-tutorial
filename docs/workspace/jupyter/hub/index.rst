@@ -12,4 +12,5 @@ Jupyter Notebooks and which acts as a proxy.
 
     install
     config
+    systemdspawner
     nbviewer-service
