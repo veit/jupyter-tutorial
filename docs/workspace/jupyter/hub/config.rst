@@ -13,8 +13,10 @@ Create configuration file:
 
 .. seealso::
 
-   * :doc:`JupyterHub Configuration Basics <jupyterhub:getting-started/index>`
-   * :doc:`JupyterHub Networking basics <jupyterhub:getting-started/networking-basics>`
+   * :doc:`JupyterHub Configuration Basics
+     <jupyterhub:tutorial/getting-started/config-basics>`
+   * :doc:`JupyterHub Networking basics
+     <jupyterhub:tutorial/getting-started/networking-basics>`
 
 System Service for JupyterHub
 -----------------------------
