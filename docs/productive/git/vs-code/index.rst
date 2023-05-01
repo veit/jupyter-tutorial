@@ -2,7 +2,7 @@ Visual Studio Code
 ==================
 
 `Visual Studio Code <https://code.visualstudio.com/>`_ can use an existing
-:doc:`Git installation <install-config>` to provide the corresponding
+:doc:`Git installation <../install-config>` to provide the corresponding
 functionalities.
 
 Clone
