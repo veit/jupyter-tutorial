@@ -133,4 +133,19 @@ Delete kernel
 
 .. code-block:: console
 
-    $ pipenv run jupyter kernelspec uninstall python3
+   $ pipenv run jupyter kernelspec uninstall mykernel
+
+Uninstall the Starndard kernel
+------------------------------
+
+If not already done, a configuration file can be created, for example with
+
+.. code-block:: console
+
+   $ pipenv run jupyter lab --generate-config
+
+Then you can add the following line to this configuration file:
+
+.. code-block:: python
+
+   c.KernelSpecManager.ensure_native_kernel = False
