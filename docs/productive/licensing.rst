@@ -293,15 +293,15 @@ Alternatives
     packages to determine the origin and licence (provenance) of open source
     software (and other third-party software).
 `ClearlyDefined <https://clearlydefined.io/>`_
-    It collects and displays information about the licensing and copyright
+    collects and displays information about the licensing and copyright
     situation of a software project.
 :ref:`open_chain`
-    It recommends REUSE as a component to improve the clarity of the licensing
-    and copyright situation, but has more stringent requirements to achieve full
+    recommends REUSE as a component to improve the clarity of the licensing and
+    copyright situation, but has more stringent requirements to achieve full
     compliance.
 `FOSSology <https://www.fossology.org/>`_
-    Free software compliance toolkit that stores information in a database with
-    license, copyright, and export scanners.
+    is a free software compliance toolkit that stores information in a database
+    with license, copyright, and export scanners.
 
 Python package metadata
 -----------------------
