@@ -288,6 +288,10 @@ example for GitLab in the ``.gitlab-ci.yml`` file with:
 Alternatives
 ~~~~~~~~~~~~
 
+`ScanCode <https://www.aboutcode.org/projects/scancode.html>`_
+    offers a range of tools and applications for scanning software codebases and
+    packages to determine the origin and licence (provenance) of open source
+    software (and other third-party software).
 `ClearlyDefined <https://clearlydefined.io/>`_
     It collects and displays information about the licensing and copyright
     situation of a software project.
