@@ -255,3 +255,20 @@ Alternatively, Git2PROV also provides a web server with:
    * `Git2PROV: Exposing Version Control System Content as W3C PROV
      <http://ceur-ws.org/Vol-1035/iswc2013_demo_32.pdf>`_
    * `GitHub-Repository <https://github.com/IDLabResearch/Git2PROV>`_
+
+hermes
+------
+
+`hermes <https://project.software-metadata.pub>`_ simplifies the publication of
+research software by continuously retrieving existing metadata in :ref:`cff`,
+:ref:`codemeta` and :doc:Git <../git/index>`. Subsequently, the metadata is also
+compiled appropriately for `InvenioRDM
+<https://invenio-software.org/products/rdm/>`_ and `Dataverse
+<https://dataverse.org/>`_. Finally, :ref:`CITATION.cff <cff>` and
+:ref:`codemeta.json <codemeta>` are also updated for the publication
+repositories. You can find an example GitHub Action in
+`TEMPLATE_hermes_github_to_zenodo.yml
+<https://github.com/hermes-hmc/ci-templates/blob/main/TEMPLATE_hermes_github_to_zenodo.yml>`_.
+
+.. seealso::
+   * `GitHub <https://github.com/hermes-hmc/workflow>`_
