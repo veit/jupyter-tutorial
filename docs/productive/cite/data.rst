@@ -97,39 +97,3 @@ PNG and SVG formats.
      Huynh
    * `PROV Tutorial.ipynb
      <https://nbviewer.jupyter.org/github/trungdong/notebooks/blob/master/PROV%20Tutorial.ipynb>`_
-
-Git2PROV
-~~~~~~~~
-
-`Git2PROV <http://git2prov.org/>`_ generates PROV data from the information in a
-Git repository.
-
-On the command line, the conversion can be easily executed with:
-
-.. code-block:: console
-
-    $ git2prov git_url [serialization]
-
-For example:
-
-.. code-block:: console
-
-    $ git2prov git@github.com:veit/jupyter-tutorial.git PROV-JSON
-
-In total, the following serialisation formats are available:
-
-* ``PROV-N``
-* ``PROV-JSON``
-* ``PROV-O``
-* ``PROV-XML``
-
-Alternatively, Git2PROV also provides a web server with:
-
-.. code-block:: console
-
-    $ git2prov-server [port]
-
-.. seealso::
-   * `Git2PROV: Exposing Version Control System Content as W3C PROV
-     <http://ceur-ws.org/Vol-1035/iswc2013_demo_32.pdf>`_
-   * `GitHub-Repository <https://github.com/IDLabResearch/Git2PROV>`_
