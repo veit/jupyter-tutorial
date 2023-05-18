@@ -108,3 +108,10 @@ domain-driven data stores.
 
 However, you can also create and run the examples in the Jupyter tutorial
 locally.
+
+.. include:: ../README.rst
+   :start-after: badges
+   :end-before: first-steps
+
+.. include:: ../README.rst
+   :start-after: follow-us
