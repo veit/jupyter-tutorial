@@ -13,3 +13,4 @@ First steps
 
 .. include:: ../../README.rst
    :start-after: first-steps
+   :end-before: follow-us
