@@ -1,7 +1,7 @@
 Undo changes
 ============
 
-:samp:`$ git reset [--hard|--soft] [{TARGET-REFERENCE}]`
+:samp:`$ git reset [--hard|--soft] [{TARGET_REFERENCE}]`
     resets the history to a previous commit, for example:
 
     .. code-block:: console
@@ -75,3 +75,23 @@ Undo changes
         still have to use ``git checkout``:
 
        :samp:`$ git checkout [{FILE}]`
+
+If you have accidentally committed to an existing branch instead of creating a
+new branch first, you can change this in the following three steps:
+
+:samp:`$ git branch [{NEW_BRANCH}]`
+    create a new branch
+:samp:`$ git reset HEAD~ --hard`
+     resets the last commit in your active branch
+:samp:`$ git switch [{NEW_BRANCH}]`
+    applies the changes to the new branch
+
+The procedure is similar if you have accidentally made a commit in the wrong
+branch:
+
+:samp:`$ git reset HEAD~`
+    resets the last commit, and its changes are now reapplied to the stage area.
+:samp:`$ git switch [{DESIRED_BRANCH}]`
+    switches to the desired branch.
+:samp:`$ git commit -m '[{COMMIT_MESSAGE}]'`
+    Commit the changes from the stage area to the desired branch.
