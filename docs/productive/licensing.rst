@@ -292,6 +292,10 @@ Alternatives
     offers a range of tools and applications for scanning software codebases and
     packages to determine the origin and licence (provenance) of open source
     software (and other third-party software).
+
+    `DeltaCode <https://github.com/nexB/deltacode>`_
+        compares two codebase scans to detect significant changes.
+
 `ClearlyDefined <https://clearlydefined.io/>`_
     collects and displays information about the licensing and copyright
     situation of a software project.
