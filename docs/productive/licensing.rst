@@ -325,6 +325,21 @@ Alternatives
     is a free software compliance toolkit that stores information in a database
     with license, copyright, and export scanners.
 
+`OSS Review Toolkit (ORT) <https://github.com/oss-review-toolkit/ort>`_
+    is a toolkit for automating and orchestrating FOSS policies, allowing you to
+    manage your (open source) software dependencies. It
+
+    * generates `OWASP CycloneDX <https://cyclonedx.org>`_, `SPDX Software Bill
+      of Materials (SBOM)
+      <https://github.com/opensbom-generator/spdx-sbom-generator>`_ or custom
+      FOSS attribution documentation for your software project
+    * automates your FOSS policy to check your software project and its
+      dependencies for licensing, security vulnerabilities, source code and
+      technical standards
+    * create a source code archive for your software project and its
+      dependencies to comply with specific licenses
+    * correct package metadata or license findings yourself
+
 Python package metadata
 -----------------------
 
