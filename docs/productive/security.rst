@@ -110,8 +110,8 @@ OSSF-Scorecard uses the `GitHub License API
 for projects hosted on GitHub, otherwise it uses its own heuristics to detect a
 published license file. Files in a :file:`LICENSES` directory should be named
 with their :ref:`SPDX <standard_format_licensing>` licence identifier followed
-by an appropriate file extension as described in the :ref:`REUSE
-<check_conformity>` specification.
+by an appropriate file extension as described in the :ref:`REUSE <reuse>`
+specification.
 
 Are the best practices of the :abbr:`CII (Core Infrastructure Initiative)` being followed?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -268,22 +268,3 @@ reduce this risk by
 * automated tools that notify you when dependencies in your project are out of
   date
 * update applications that lock dependencies quickly.
-
-.. _open_chain:
-
-ISO/IEC 5230/OpenChain
-----------------------
-
-`ISO/IEC 5230 <https://en.wikipedia.org/wiki/ISO/IEC_5230>`_ is based on the
-`OpenChain Specification 2.1
-<https://github.com/OpenChain-Project/License-Compliance-Specification/raw/master/2.1/de/OpenChain-2.1_original_de.pdf>`_ and is an international standard on
-software supply chains, simplified procurement and open source licence
-compliance.
-
-.. seealso::
-
-   * `OpenChain project <https://www.openchainproject.org>`_
-   * `OpenChain Self Certification
-     <https://certification.openchainproject.org>`_
-   * `Reference-Material
-     <https://github.com/OpenChain-Project/Reference-Material>`_
