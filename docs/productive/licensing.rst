@@ -340,6 +340,11 @@ Alternatives
       dependencies to comply with specific licenses
     * correct package metadata or license findings yourself
 
+    .. seealso::
+       * `GitHub Action for ORT
+         <https://github.com/oss-review-toolkit/ort-ci-github-action>`_
+       * `ORT for GitLab <https://github.com/oss-review-toolkit/ort-gitlab-ci>`_
+
 Python package metadata
 -----------------------
 
