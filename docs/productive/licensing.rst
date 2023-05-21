@@ -348,6 +348,11 @@ Alternatives
 Python package metadata
 -----------------------
 
+With :pep:`658` the :file:`METADATA` file from distributions becomes available
+in the :pep:`503` repository API on :term:`PyPI`. This allows the metadata of
+:doc:`distribution packages <python-basics:libs/distribution>` to be analysed
+without having to download the whole package.
+
 In Python packages there are other fields where licence information is stored,
 such as the `core metadata specifications
 <https://packaging.python.org/en/latest/specifications/core-metadata/>`_, which
