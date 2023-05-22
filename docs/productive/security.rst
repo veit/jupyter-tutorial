@@ -101,9 +101,9 @@ Does the project contain a usable licence?
 
 Risk: Low
 
-A :doc:`Lizenz </productive/licensing>` indicates how the source code may or may
-not be used. The absence of a licence complicates any kind of security review or
-audit and poses a legal risk for potential use.
+A :doc:`license </productive/licensing>` indicates how the source code may or
+may not be used. The absence of a licence complicates any kind of security
+review or audit and poses a legal risk for potential use.
 
 OSSF-Scorecard uses the `GitHub License API
 <https://docs.github.com/en/rest/licenses#get-the-license-for-a-repository>`_
