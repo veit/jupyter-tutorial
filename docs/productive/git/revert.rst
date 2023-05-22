@@ -1,7 +1,7 @@
 Undo changes
 ============
 
-:samp:`$ git reset [--hard|--soft] [{TARGET_REFERENCE}]`
+:samp:`$ git reset [--hard|--soft] {TARGET_REFERENCE}`
     resets the history to a previous commit, for example:
 
     .. code-block:: console
@@ -56,16 +56,16 @@ Undo changes
         ``git reflog``, as Git usually deletes all orphaned commits after 30
         days.
 
-:samp:`$ git revert [{COMMIT SHA}]`
+:samp:`$ git revert {COMMIT SHA}`
     creates a new commit and reverts the changes of the specified commit so that
     the changes are inverted.
-:samp:`$ git fetch --prune [{REMOTE}]`
+:samp:`$ git fetch --prune {REMOTE}`
     Remote refs are removed when they are removed from the remote repository.
 :samp:`$ git commit --amend`
     updates and replaces the last commit with a new commit that combines all
     deployed changes with the contents of the previous commit. If nothing is
     provided, only the previous commit message is rewritten.
-:samp:`$ git restore [{FILE}]`
+:samp:`$ git restore {FILE}`
     changes files in the working directory to a state previously known to Git.
     By default, Git ``HEAD`` checks out the last commit of the current branch.
 
@@ -74,16 +74,16 @@ Undo changes
         In Git < 2.23, ``git restore`` is not yet available. In this case you
         still have to use ``git checkout``:
 
-       :samp:`$ git checkout [{FILE}]`
+       :samp:`$ git checkout {FILE}`
 
 If you have accidentally committed to an existing branch instead of creating a
 new branch first, you can change this in the following three steps:
 
-:samp:`$ git branch [{NEW_BRANCH}]`
+:samp:`$ git branch {NEW_BRANCH}`
     create a new branch
 :samp:`$ git reset HEAD~ --hard`
      resets the last commit in your active branch
-:samp:`$ git switch [{NEW_BRANCH}]`
+:samp:`$ git switch {NEW_BRANCH}`
     applies the changes to the new branch
 
 The procedure is similar if you have accidentally made a commit in the wrong
@@ -91,7 +91,7 @@ branch:
 
 :samp:`$ git reset HEAD~`
     resets the last commit, and its changes are now reapplied to the stage area.
-:samp:`$ git switch [{DESIRED_BRANCH}]`
+:samp:`$ git switch {DESIRED_BRANCH}`
     switches to the desired branch.
-:samp:`$ git commit -m '[{COMMIT_MESSAGE}]'`
+:samp:`$ git commit -m '{COMMIT_MESSAGE}'`
     Commit the changes from the stage area to the desired branch.
