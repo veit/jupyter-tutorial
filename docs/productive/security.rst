@@ -95,6 +95,8 @@ the project. This file should contain information
      <https://github.com/ossf/oss-vulnerability-guide/blob/main/maintainer-guide.md>`_
    * `Adding a security policy to your repository
      <https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository>`_
+   * `Runbook
+     <https://github.com/ossf/oss-vulnerability-guide/blob/main/runbook.md>`_
 
 Does the project contain a usable licence?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
