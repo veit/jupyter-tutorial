@@ -18,6 +18,8 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
 #. First, we import all the necessary elements:
 
    .. literalinclude:: fastAPI/main.py
+      :caption: fastAPI/main.py
+      :name: fastAPI/main.py
       :linenos:
       :lines: 1-3, 5-7
 
@@ -41,6 +43,8 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
    the following content, for example:
 
    .. literalinclude:: fastAPI/templates/base.html
+      :caption: fastAPI/templates/base.html
+      :name: fastAPI/templates/base.html
       :language: html
       :linenos:
       :lines: 1-
@@ -72,6 +76,8 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
        a parameterised object that represents your existing code:
 
        .. literalinclude:: fastAPI/sliders/sinewave.py
+          :caption: fastAPI/sliders/sinewave.py
+          :name: fastAPI/sliders/sinewave.py
           :linenos:
           :lines: 1-
 
@@ -79,6 +85,8 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
        creates an app function from the ``SineWave`` class:
 
        .. literalinclude:: fastAPI/sliders/pn_app.py
+          :caption: fastAPI/sliders/pn_app.py
+          :name: fastAPI/sliders/pn_app.py
           :linenos:
           :lines: 1-
 
@@ -86,6 +94,8 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
    ``createApp`` function:
 
    .. literalinclude:: fastAPI/main.py
+      :caption: fastAPI/main.py
+      :name: fastAPI/main.py
       :lineno-start: 4
       :lines: 4
 

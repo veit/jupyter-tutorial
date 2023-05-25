@@ -13,6 +13,8 @@ information containing a series of name-value pairs called *fields*. Here’s a
 simple example :download:`accounts.proto`:
 
 .. literalinclude:: accounts.proto
+   :caption: accounts.proto
+   :name: accounts.proto
    :language: proto
    :lines: 1-7
 
@@ -36,6 +38,8 @@ gRPC services are also defined in the ``.proto`` files, with RPC method
 parameters and return types specified as protocol buffer messages:
 
 .. literalinclude:: accounts.proto
+   :caption: accounts.proto
+   :name: accounts.proto
    :language: proto
    :lines: 8-
 
@@ -62,6 +66,8 @@ Create server
 For this we write the file :download:`accounts_server.py`:
 
 .. literalinclude:: accounts_server.py
+   :caption: accounts_server.py
+   :name: accounts_server.py
    :language: python
 
 Create client
@@ -70,6 +76,8 @@ Create client
 For this we create :download:`accounts_client.py`:
 
 .. literalinclude:: accounts_client.py
+   :caption: accounts_client.py
+   :name: accounts_client.py
    :language: python
 
 Run client and server

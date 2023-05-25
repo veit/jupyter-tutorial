@@ -114,6 +114,8 @@ Then we can use :doc:`pandas:reference/api/pandas.DataFrame.to_csv` in
 :file:`exceltocsv.py` to convert the Excel files:
 
 .. literalinclude:: exceltocsv.py
+    :caption: exceltocsv.py
+    :name: exceltocsv.py
     :language: python
 
 Then the following section is added to the global Git configuration

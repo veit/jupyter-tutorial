@@ -20,6 +20,8 @@ gRPC can be tested automatically with `pytest-grpc
 +. Then we create a :term:`Test Fixture` for our :doc:`example` with:
 
    .. literalinclude:: tests/test_accounts.py
+      :caption: tests/test_accounts.py
+      :name: tests/test_accounts.py
       :language: python
       :lines: 3-27
 
