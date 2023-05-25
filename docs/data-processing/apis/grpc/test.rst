@@ -34,7 +34,7 @@ gRPC can be tested automatically with `pytest-grpc
       :language: python
       :lines: 30-39
 
-#. Authentication can also be tested, e.g. with:
+#. Authentication can also be tested, for example with:
 
    .. literalinclude:: tests/test_accounts.py
       :language: python
