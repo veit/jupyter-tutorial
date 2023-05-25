@@ -298,6 +298,8 @@ increased if necessary, for example with:
     * `Git Credential Manager: authentication for everyone
       <https://github.blog/2022-04-07-git-credential-manager-authentication-for-everyone/>`_
 
+.. _gitignore:
+
 The ``.gitignore`` file
 ~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -18,7 +18,7 @@ others will hardly be able to cite your software directly if you send it to
 them as an email attachment. Even a download link is not really useful here. It
 is better to provide a `persistent identifier (PID)
 <https://en.wikipedia.org/wiki/Persistent_identifier>`_ to ensure the long-term
-availability of your software. Both `Zenodo <https://zenodo.org/>`_ and
+availability of your software. Both `Zenodo <https://zenodo.org/>`__ and
 `figshare <https://figshare.com/>`_ repositories accept source code including
 binaries and provide `Digital Object Identifiers (DOI)
 <https://en.wikipedia.org/wiki/Digital_object_identifier>`_ for them. The same
@@ -52,12 +52,14 @@ citation information for software.
    * `schema.json
      <https://github.com/citation-file-format/citation-file-format/blob/main/schema.json>`_
 
+.. _zenodo:
+
 Create a DOI with Zenodo
 ------------------------
 
-`Zenodo <https://zenodo.org/>`_ enables software to be
-archived and a DOI to be provided for it. In the following I will show which
-steps are required on the example of the Jupyter tutorial:
+`Zenodo <https://zenodo.org/>`__ enables software to be archived and a DOI to be
+provided for it. In the following I will show which steps are required on the
+example of the Jupyter tutorial:
 
 #. If you haven’t already, `create an account on Zenodo
    <https://zenodo.org/signup/>`_, preferably with GitHub.
@@ -256,19 +258,87 @@ Alternatively, Git2PROV also provides a web server with:
      <http://ceur-ws.org/Vol-1035/iswc2013_demo_32.pdf>`_
    * `GitHub-Repository <https://github.com/IDLabResearch/Git2PROV>`_
 
-hermes
+HERMES
 ------
 
-`hermes <https://project.software-metadata.pub>`_ simplifies the publication of
+`HERMES <https://project.software-metadata.pub>`_ simplifies the publication of
 research software by continuously retrieving existing metadata in :ref:`cff`,
 :ref:`codemeta` and :doc:Git <../git/index>`. Subsequently, the metadata is also
 compiled appropriately for `InvenioRDM
 <https://invenio-software.org/products/rdm/>`_ and `Dataverse
 <https://dataverse.org/>`_. Finally, :ref:`CITATION.cff <cff>` and
 :ref:`codemeta.json <codemeta>` are also updated for the publication
-repositories. You can find an example GitHub Action in
-`TEMPLATE_hermes_github_to_zenodo.yml
-<https://github.com/hermes-hmc/ci-templates/blob/main/TEMPLATE_hermes_github_to_zenodo.yml>`_.
+repositories.
 
-.. seealso::
-   * `GitHub <https://github.com/hermes-hmc/workflow>`_
+#. Add ``.hermes/`` to the :ref:`.gitignore <gitignore>` file
+#. Provide :ref:`CITATION.cff <cff>` file with additional metadata
+
+   .. important::
+      Make sure  ``license`` is defined in the :ref:`CITATION.cff <cff>` file;
+      otherwise, your release will not be accepted as open access by the
+      :ref:`Zenodo <zenodo>` sandbox.
+
+#. Configure HERMES workflow
+
+   The HERMES workflow is configured in the file
+   :doc:`/data-processing/serialisation-formats/toml/index`, where each step
+   gets its own section.
+
+   If you want to configure HERMES to use the metadata from :doc:`Git
+   <../git/index>` and :ref:`CITATION.cff <cff>`, and to file in the Zenodo sandbox built on InvenioRDM, the :file:`hermes.toml` file looks like this:
+
+   .. literalinclude:: hermes.toml
+      :caption: hermes.toml
+      :name: hermes.toml
+
+#. Access token for Zenodo Sandbox
+
+   In order for GitHub Actions to publish your repository in the `Zenodo Sandbox
+   <https://sandbox.zenodo.org/>`_, you need a personal access token. To do
+   this, you need to log in to Zenodo Sandbox and then create a `personal access
+   token
+   <https://sandbox.zenodo.org/account/settings/applications/tokens/new/>`_ in
+   your user profile with the name :samp:`HERMES workflow` and the scopes
+   :guilabel:`deposit:actions` und :guilabel:`deposit:write`:
+
+   .. image:: zenodo-personal-access-token.png
+      :alt: Zenodo: Neues persönliches Zugangstoken
+
+#. Copy the newly created token to a new `GitHub secret
+   <https://docs.github.com/de/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository>`_
+   named :samp:`ZENODO_SANDBOX` in your repository: `Settings --> Secrets and
+   Variables --> Actions --> New repository secret`:
+
+   .. image:: github-new-action-secret.png
+      :alt: GitHub: Neues Action-Secret
+
+#. Configure the GitHub action
+
+   The HERMES project provides templates for continuous integration in a special
+   repository: `hermes-hmc/ci-templates
+   <https://github.com/hermes-hmc/ci-templates>`_. Copy the template file
+   `TEMPLATE_hermes_github_to_zenodo.yml
+   <https://github.com/hermes-hmc/ci-templates/blob/main/TEMPLATE_hermes_github_to_zenodo.yml>`_
+   into the :file:`.github/workflows/` directory of your repository and rename
+   it, for example to :file:`hermes_github_to_zenodo.yml`.
+
+   Then you should go through the file and look for comments marked :samp:`#
+   ADAPT`. Modify the file to suit your needs.
+
+   Finally, add the workflow file to version control and push it to the GitHub
+   server:
+
+   .. code-block:: console
+
+      $ git add .github/workflows/hermes_github_to_zenodo.yml
+      $ git commit -m ":construction_worker: GitHub action for automatic publication with HERMES"
+      $ git push
+
+#. GitHub actions should be allowed to create pull requests in your repository
+
+   The HERMES workflow will not publish metadata without your approval. Instead,
+   it will create a pull request so that you can approve or change the metadata
+   that is stored. To enable this, go to :menuselection:`Settings --> Actions
+   --> General` in your repository and in the :guilabel:`Workflow permissions`
+   section, enable :guilabel:`Allow GitHub Actions to create and approve pull
+   requests`.
