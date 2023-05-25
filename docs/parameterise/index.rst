@@ -91,6 +91,8 @@ Use
      ``params.yaml``:
 
      .. literalinclude:: params.yaml
+        :caption: params.yaml
+        :name: params.yaml
 
      .. code-block:: console
 
