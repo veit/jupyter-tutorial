@@ -10,51 +10,20 @@ different. However, one of the great strengths of Jupyter notebooks is that they
 allow these different experts to work closely together in cross-functional
 teams.
 
-* **Data scientists** explore data with different parameters and summarise the
-  results.
-* **Data engineers** check the quality of the code and make it more robust,
-  efficient and scalable.
-* **Data analysts** use the code provided by data engineers to systematically
-  analyse the data.
-* **System engineers** provide the research platform based on the
-  :doc:`workspace/jupyter/hub/index` on which the other roles can perform their
-  work.
+Data scientists
+    explore data with different parameters and summarise the results.
+Data engineers
+    check the quality of the code and make it more robust, efficient and
+    scalable.
+Data analysts
+    use the code provided by data engineers to systematically analyse the data.
+System engineers
+    provide the research platform based on the :doc:`hub/index` on which the
+    other roles can perform their work.
 
-In this tutorial, we primarily address system engineers who want to build and
-operate a platform based on Jupyter notebooks. Then, we explain how this
-platform can be used effectively by data scientists, data engineers, and
-analysts.
-
-Structure of the Jupyter tutorial
----------------------------------
-
-From Chapter 3, the Jupyter tutorial follows the prototype of a research
-project:
-
-3. **Set up the workspace** with the installation and configuration of
-   :doc:`workspace/ipython/index`,
-   :doc:`workspace/jupyter/index` with
-   :doc:`workspace/jupyter/nbextensions/index` and
-   :doc:`workspace/jupyter/ipywidgets/index`.
-4. **Collect data,** either through a :doc:`REST API
-   <data-processing/requests/index>` or directly from an :doc:`HTML page
-   <data-processing/serialisation-formats/xml-html/beautifulsoup>`.
-5. **Cleaning up data** is a recurring task that includes Remove or modify
-   redundant, inconsistent, or incorrectly formatted data.
-6. **Analyse data** through exploratory analysis and :doc:`visualising data
-   <viz/index>`.
-7. **Refactoring** includes parameterisation, validation and :doc:`performance
-   optimisation <performance/index>`.
-8. **Creating a product** includes :doc:`productive/testing` and
-   :doc:`productive/logging/index`. However, the :doc:`creation
-   <productive/packaging>` and :doc:`python-basics:document/index` of libraries
-   and packages can be found in our :doc:`Python Basics Tutorial
-   <python-basics:libs/index>`.
-9. **Web applications**
-   can either generate dashboards from Jupyter notebooks or require more
-   comprehensive application logic, such as demonstrated in
-   :doc:`pyviz:bokeh/embedding-export/flask`, or provide data via a `RESTful API
-   <https://en.wikipedia.org/wiki/Representational_state_transfer>`_.
+In this tutorial we address system engineers who want to build and run a
+platform based on Jupyter notebooks. We then explain how this platform can be
+used effectively by data scientists, data engineers and analysts.
 
 Why Jupyter?
 ------------
@@ -85,7 +54,7 @@ Interactive Computing Protocol
     Computing Protocol*, an open network protocol based on JSON data via `ZMQ
     <https://zeromq.org/>`_ and `WebSockets
     <https://en.wikipedia.org/wiki/WebSocket>`_.
-:doc:`workspace/jupyter/kernels/index`
+:doc:`/kernels/index`
     Kernels are processes that execute interactive code in a specific
     programming language and return the output to the user.
 
@@ -109,9 +78,9 @@ domain-driven data stores.
 However, you can also create and run the examples in the Jupyter tutorial
 locally.
 
-.. include:: ../README.rst
-   :start-after: badges
-   :end-before: first-steps
+Workspace
+---------
 
-.. include:: ../README.rst
-   :start-after: follow-us
+Setting up the workspace includes installing and configuring
+:doc:`python4datascience:workspace/ipython/index` and :doc:`Jupyter notebooks
+<notebook/install>`, :doc:`nbextensions/index` and :doc:`ipywidgets/index`.

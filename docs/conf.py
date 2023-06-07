@@ -161,6 +161,10 @@ intersphinx_mapping = {
         "https://python-basics-tutorial.readthedocs.io/en/latest/",
         None,
     ),
+    "python4datascience": (
+        "https://python4datascience.readthedocs.io/en/latest/",
+        None,
+    ),
 }
 
 
