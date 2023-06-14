@@ -7,6 +7,8 @@ repos:
     - id: trailing-whitespace
     - id: end-of-file-fixer
     - id: check-yaml
+      types: [file]
+      files: \.(yml|yaml|cff)$
     - id: check-added-large-files
     - id: check-json
       types: [file]  # override `types: [json]`

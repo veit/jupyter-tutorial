@@ -1,28 +1,31 @@
-cff-version: "1.1.0"
-message: "If you use this tutorial, please cite it as below."
+cff-version: 1.2.0
+title: Jupyter Tutorial
+message: >-
+  If you use this tutorial, please cite it using the
+  metadata from this file.
+type: software
 authors:
-  -
+  - given-names: Veit
     family-names: Schiele
-    given-names: Veit
-    orcid: "https://orcid.org/https://orcid.org/0000-0002-2448-8958"
+    email: veit@cusy.io
 identifiers:
-  -
-    type: doi
-    value: "10.5281/zenodo.4147287"
+  - type: doi
+    value: 10.5281/zenodo.8039242
+  - type: url
+    value: "https://github.com/veit/jupyter-tutorial/tree/v1.0.0"
+repository-code: "https://github.com/veit/jupyter-tutorial/"
+url: "https://jupyter-tutorial.readthedocs.io/en/v1.0.0/"
+abstract: >-
+  Training materials for setting up and using a research
+  infrastructure based on Jupyter notebooks.
 keywords:
-  - "data-science"
-  - jupyter
-  - "jupyter-notebooks"
-  - "jupyter-kernels"
-  - ipython
-  - pandas
-  - spack
-  - pipenv
+  - Jupyter
+  - Notebook
+  - JupyterHub
   - ipywidgets
-  - "ipython-widget"
-  - dvc
-title: "Jupyter tutorial"
-version: "0.8.0"
-date-released: 2020-10-08
-license: "BSD-3-Clause"
-repository-code: "https://github.com/veit/jupyter-tutorial"
+  - Jupyter Widgets
+  - Dashboard
+  - nbsphinx
+license: BSD-3-Clause
+version: 1.0.0
+date-released: "2023-06-14"
