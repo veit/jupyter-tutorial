@@ -1,9 +1,10 @@
 Parameterisation and scheduling
 ===============================
 
-With `papermill <https://papermill.readthedocs.io/en/latest/>`_ you can
-parameterise and automate notebooks. You can run the notebooks time-controlled
-or event-controlled.
+With :doc:`../../jupyterlab/index` you can use the :doc:`Jupyter Scheduler
+<../../jupyterlab/scheduler>` for parameterisation and time-controlled
+execution. For Jupyter Notebooks, `papermill
+<https://papermill.readthedocs.io/en/latest/>`_ is available.
 
 Install
 -------
