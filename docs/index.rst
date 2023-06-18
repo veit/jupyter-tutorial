@@ -12,9 +12,12 @@ expand the original limits of their use and enable new uses.
 .. graphviz::
 
     digraph decide_jupyter {
-        graph [fontname = "Calibri", fontsize="16"];
-        node [fontname = "Calibri", fontsize="16"];
-        edge [fontname = "Calibri", fontsize="16"];
+        graph [fontname = "Calibri", fontsize="10", penwidth="1px",
+               overlap=false];
+        node [fontname = "Calibri", fontsize="10", style="bold",
+              penwidth="1px", fontcolor="#640FFB"; color="#640FFB";];
+        edge [fontname = "Calibri", fontsize="10", style="bold",
+              penwidth="1px", fontcolor="#640FFB"; color="#640FFB";];
         tooltip="How do I decide which Jupyter packages I need?";
         // Top Level
         what [
@@ -113,6 +116,7 @@ expand the original limits of their use and enable new uses.
         extensions -> {widgets extend viz dash}
         embed -> {html sphinx}
         // Arrangement
+        rankdir="LR"
         {rank = same; what;}
         {rank = same; singleuser; hub; nbconvert; kernels; extensions; embed;
                 examples;}
