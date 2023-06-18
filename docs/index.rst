@@ -29,11 +29,10 @@ expand the original limits of their use and enable new uses.
              shape=plaintext,
              label=" ",
              tooltip="Single user"]
-        hub [
-            label="JupyterHub",
-            tooltip="Install\nJupyterHub",
-            target="_top",
-            href="../hub/index.html"]
+        team [
+            shape=plaintext,
+            label=" ",
+            tooltip="Team"]
         nbconvert [
             label="nbconvert",
             tooltip="Install and\nuse nbconvert",
@@ -73,6 +72,21 @@ expand the original limits of their use and enable new uses.
              tooltip="Install JupyterLab locally",
              target="_top",
              href="../jupyterlab/index.html"]
+         hub [
+             label="JupyterHub",
+             tooltip="Install\nJupyterHub",
+             target="_top",
+             href="../hub/index.html"]
+         binder [
+             label="Binder",
+             tooltip="Binder tools",
+             target="_top",
+             href="../binder.html"]
+         nbviewer [
+             label="nbviewer",
+             tooltip="Install and use nbviewer",
+             target="_top",
+             href="../nbviewer.html"]
         widgets [
             label="Widgets",
             tooltip="Install and\nuse ipywidgets",
@@ -110,7 +124,7 @@ expand the original limits of their use and enable new uses.
             href="../sphinx/executablebooks.html"]
         // Edges
         what -> singleuser [label="Single\nuser"]
-        what -> hub [label="Teamwork"]
+        what -> team [label="Teamwork"]
         what -> nbconvert [label="Convert"]
         nbconvert -> nbviewer [label="Conversion\nservice"]
         what -> kernels [label="Java, R,\nJulia etc."]
@@ -118,15 +132,15 @@ expand the original limits of their use and enable new uses.
         what -> embed [label="Embed\nnotebooks"]
         what -> examples [label="Examples"]
         singleuser -> {notebook jupyterlab}
+        team -> {hub binder}
         extensions -> {widgets extend viz dash}
         embed -> {html nbsphinx executablebooks}
         // Arrangement
         rankdir="LR"
         {rank = same; what;}
-        {rank = same; singleuser; hub; nbconvert; kernels; extensions; embed;
-                examples;}
+        {rank = same; notebook; jupyterlab; hub; binder; widgets; extend; viz;
+                dash; html}
         {rank = same; widgets; extend; viz; dash;}
-        {rank = same; html; sphinx}
     }
 
 .. toctree::
@@ -138,6 +152,7 @@ expand the original limits of their use and enable new uses.
     notebook/index
     jupyterlab/index
     hub/index
+    binder
     nbconvert
     nbviewer
     kernels/index
