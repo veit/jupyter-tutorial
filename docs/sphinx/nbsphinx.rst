@@ -1,5 +1,5 @@
-Sphinx
-======
+``nbsphinx``
+============
 
 :doc:`nbsphinx <nbsphinx:index>` is a :doc:`Sphinx <sphinx:index>` extension
 that provides a parser for ``*.ipynb`` files: Jupyter Notebook code cells are
@@ -16,7 +16,7 @@ Installation
 Requirements
 ~~~~~~~~~~~~
 
-* :doc:`nbconvert`
+* :doc:`../nbconvert`
 
 Configuration
 -------------

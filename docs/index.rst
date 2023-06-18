@@ -98,11 +98,16 @@ expand the original limits of their use and enable new uses.
             tooltip="Embed notebooks in\nstatic HTML",
             target="_top",
             href="../ipywidgets/embedding.html"]
-        sphinx [
-            label="in Sphinx",
+        nbsphinx [
+            label="nbsphinx",
             tooltip="Embed notebooks in the\nSphinx Document Generator",
             target="_top",
-            href="../nbsphinx.html"]
+            href="../sphinx/nbsphinx.html"]
+        executablebooks [
+            label="Executable Books",
+            tooltip="Bücher aus Jupyter Notebooks und MyST",
+            target="_top",
+            href="../sphinx/executablebooks.html"]
         // Edges
         what -> singleuser [label="Single\nuser"]
         what -> hub [label="Teamwork"]
@@ -114,7 +119,7 @@ expand the original limits of their use and enable new uses.
         what -> examples [label="Examples"]
         singleuser -> {notebook jupyterlab}
         extensions -> {widgets extend viz dash}
-        embed -> {html sphinx}
+        embed -> {html nbsphinx executablebooks}
         // Arrangement
         rankdir="LR"
         {rank = same; what;}
@@ -140,7 +145,7 @@ expand the original limits of their use and enable new uses.
     nbextensions/index
     viz/index
     dashboards/index
-    nbsphinx
+    sphinx/index
     use-cases
     genindex
 
