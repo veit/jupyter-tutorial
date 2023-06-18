@@ -22,11 +22,10 @@ expand the original limits of their use and enable new uses.
             label="What do you want to do?",
             tooltip="Jupyter offers you different ways how you can use the notebooks"]
         // Second Level
-        jupyter [
-            label="Jupyter\nNotebook",
-            tooltip="Install Jupyter locally",
-            target="_top",
-            href="../notebook/index.html"]
+        singleuser [
+             shape=plaintext,
+             label=" ",
+             tooltip="Single user"]
         hub [
             label="JupyterHub",
             tooltip="Install\nJupyterHub",
@@ -61,6 +60,16 @@ expand the original limits of their use and enable new uses.
             target="_top",
             href="../use-cases.html"]
         // 3rd Level
+        notebook [
+             label="Jupyter-\nNotebook",
+             tooltip="Install notebook locally",
+             target="_top",
+             href="../notebook/index.html"]
+         jupyterlab [
+             label="JupyterLab",
+             tooltip="Install JupyterLab locally",
+             target="_top",
+             href="../jupyterlab/index.html"]
         widgets [
             label="Widgets",
             tooltip="Install and\nuse ipywidgets",
@@ -72,7 +81,7 @@ expand the original limits of their use and enable new uses.
             target="_top",
             href="../nbextensions/index.html"]
         viz [
-            label="Visualise data",
+            label="Visualise\ndata",
             tooltip="Data visualisation libraries",
             target="_top",
             href="../viz/index.html"]
@@ -92,7 +101,7 @@ expand the original limits of their use and enable new uses.
             target="_top",
             href="../nbsphinx.html"]
         // Edges
-        what -> jupyter [label="Single\nuser"]
+        what -> singleuser [label="Single\nuser"]
         what -> hub [label="Teamwork"]
         what -> nbconvert [label="Convert"]
         nbconvert -> nbviewer [label="Conversion\nservice"]
@@ -100,11 +109,13 @@ expand the original limits of their use and enable new uses.
         what -> extensions [label="Extend\nnotebooks"]
         what -> embed [label="Embed\nnotebooks"]
         what -> examples [label="Examples"]
+        singleuser -> {notebook jupyterlab}
         extensions -> {widgets extend viz dash}
         embed -> {html sphinx}
         // Arrangement
         {rank = same; what;}
-        {rank = same; jupyter; hub; nbconvert; kernels; extensions; embed; examples;}
+        {rank = same; singleuser; hub; nbconvert; kernels; extensions; embed;
+                examples;}
         {rank = same; widgets; extend; viz; dash;}
         {rank = same; html; sphinx}
     }
@@ -116,6 +127,7 @@ expand the original limits of their use and enable new uses.
 
     intro
     notebook/index
+    jupyterlab/index
     hub/index
     nbconvert
     nbviewer
