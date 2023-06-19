@@ -149,6 +149,7 @@ expand the original limits of their use and enable new uses.
     :maxdepth: 0
 
     intro
+    whatsnew
     notebook/index
     jupyterlab/index
     hub/index
