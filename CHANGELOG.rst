@@ -12,8 +12,8 @@ The versions follow `Semantic Versioning <https://semver.org/lang/de/>`_:
     is increased if the changes include only compatible bug fixes.
 
 .. _changelog
+
 1.0.0
------
 
 * 🔧 Moving the Data Science content into Python4DataScience
 

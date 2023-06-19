@@ -22,9 +22,6 @@ Dashboards
 :doc:`jupyter-flex/index`
     Jupyter extension that turns notebooks into dashboards.
 
-Activities and licenses
------------------------
-
 With this tabular overview you can quickly compare the activities and licenses
 of the various libraries.
 
