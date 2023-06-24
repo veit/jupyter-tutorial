@@ -1,0 +1,73 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+papermill = "*"
+ipython-unittest = "*"
+mock = "*"
+ipytest = "*"
+hypothesis = {extras = ["numpy", "pandas"], version = "*"}
+ipykernel = "*"
+ipywidgets = "*"
+bqplot = "*"
+ipycanvas = "*"
+pythreejs = "*"
+ipyvolume = "*"
+ipyleaflet = "*"
+ipywebrtc = "*"
+ipysheet = "*"
+ipyvuetify = "*"
+ipympl = "*"
+qgrid = "*"
+ipylayout = "*"
+mpl-scatter-density = "*"
+fiona = "*"
+descartes = "*"
+geopandas = "*"
+geodatasets = "*"
+folium = "*"
+seaborn = "*"
+plotnine = {extras = ["all"], version = "*"}
+networkx = "*"
+graphviz = "*"
+cartopy = "*"
+rtree = "*"
+geopy = "*"
+mapclassify = "*"
+yt = "*"
+altair = "*"
+vega-datasets = "*"
+pdvega = "*"
+bokeh = "*"
+flask = "*"
+hvplot = "*"
+intake = "*"
+intake-parquet = "*"
+s3fs = "*"
+pyviz-comms = "*"
+datashader = "*"
+# datashader requires Numba
+# Numba requires NumPy ≤ 1.24
+numpy = "<=1.24"
+geoviews = "*"
+plotly = "*"
+toyplot = "*"
+xarray-leaflet = "*"
+jupyter-dashboards = "*"
+appmode = "*"
+panel = "*"
+holoviews = {extras = ["recommended"], version = "*"}
+fastapi = "*"
+voila = "*"
+voila-vuetify = "*"
+voila-reveal = "*"
+jupyter-flex = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.4"
