@@ -5,7 +5,7 @@ Installation
 
    .. code-block:: console
 
-    $ pipenv install ipython[all]
+    $ pipenv install "ipython[all]"
 
 #. Activate notebook server extension:
 
