@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+jupyterlab = "*"
+jupyterhub = "*"
+jupyterhub-systemdspawner = "*"
+ipython = {extras = ["all"], version = "*"}
+nbconvert = "*"
+nbviewer = "*"
+nb2xls = "*"
+jupyter-contrib-nbextensions = "*"
+jupyter-latex-envs = "*"
+yapf = "*"
+autopep8 = "*"
+jupyter-nbextensions-configurator = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.4"

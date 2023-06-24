@@ -4,6 +4,10 @@
 # IPython
 .ipynb_checkpoints
 
+# JupyterHub
+jupyterhub.sqlite
+jupyterhub_cookie_secret
+
 # Intersphinx objects
 _intersphinx
 
