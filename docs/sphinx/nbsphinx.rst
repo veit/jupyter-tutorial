@@ -2,9 +2,9 @@
 ============
 
 :doc:`nbsphinx <nbsphinx:index>` is a :doc:`Sphinx <sphinx:index>` extension
-that provides a parser for ``*.ipynb`` files: Jupyter Notebook code cells are
-displayed in both HTML and LaTeX output. Notebooks with no output cells saved
-are automatically created during the Sphinx build process.
+that provides a parser for :file:`*.ipynb` files: Jupyter Notebook code cells
+are displayed in both HTML and LaTeX output. Notebooks with no output cells
+saved are automatically created during the Sphinx build process.
 
 Installation
 ------------
@@ -28,11 +28,11 @@ Configure Sphinx
 
    .. code-block:: console
 
-    $ pipenv run python3 -m sphinx.cmd.quickstart
+    $ pipenv run python -m sphinx.cmd.quickstart
 
-#. The Sphinx configuration file ``conf.py` is then located in the newly created
-   directory. In this, ``nbsphinx`` is added as an extension and notebook
-   checkpoints are excluded:
+#. The Sphinx configuration file :file:`conf.py` is then located in the newly
+   created directory. In this, ``nbsphinx`` is added as an extension and
+   notebook checkpoints are excluded:
 
    .. code-block:: python
 
@@ -54,12 +54,8 @@ You can make further configurations for ``nbsphinx``.
 
 Timeout
     In the standard setting of ``nbsphinx``, the timeout for a cell is set to 30
-    seconds. You can change this for your Sphinx project in the  ``conf.py``
-    file with
-
-    .. code-block:: python
-
-        nbsphinx_timeout = 60
+    seconds. You can change this for your Sphinx project in the  :file:`conf.py`
+    file with :samp:`nbsphinx_timeout = {60}`.
 
     Alternatively, you can also specify this for individual code cells in the
     metadata of the code cell:
@@ -81,20 +77,20 @@ Timeout
 
 Custom formats
     Libraries such as `jupytext <https://github.com/mwouts/jupytext>`_ save
-    notebooks in other formats, e.g. as R-Markdown with the suffix ``Rmd``. So
-    that these can also be executed by  ``nbsphinx``, further formats can be
-    specified in the Sphinx configuration file  ``conf.py`` with
-    ``nbsphinx_custom_formats``, e.g.
+    notebooks in other formats, for example as R-Markdown with the suffix
+    ``Rmd``. So that these can also be executed by  ``nbsphinx``, further
+    formats can be specified in the Sphinx configuration file :file:`conf.py`
+    with ``nbsphinx_custom_formats``, for example
 
-        .. code-block:: python
+    .. code-block:: python
 
-            import jupytext
+       import jupytext
 
-            nbsphinx_custom_formats = {
-                '.Rmd': lambda s: jupytext.reads(s, '.Rmd'),
-            }
+       nbsphinx_custom_formats = {
+           '.Rmd': lambda s: jupytext.reads(s, '.Rmd'),
+       }
 
-COnfigure cells
+Configure cells
 ~~~~~~~~~~~~~~~
 
 Don’t show cell
@@ -113,7 +109,7 @@ Don’t show cell
 
 ``nbsphinx-toctree``
     With this instruction Sphinx will create a table of contents within a
-    notebook cell, e.g.
+    notebook cell, for example
 
     .. code-block:: json
 
@@ -150,49 +146,28 @@ Build
    `Python4DataScience/workspace/ipython/index.rst
    <https://github.com/veit/Python4DataScience/blob/master/docs/workspace/ipython/index.rst>`_.
 
-#. Finally, you can generate the pages, e.g. HTML with
+#. Finally, you can generate the pages, for example HTML with :samp:`$ pipenv
+   run python -m sphinx {SOURCE_DIR} {BUILD_DIR}` or :samp:`$ pipenv run python
+   -m sphinx {SOURCE_DIR} {BUILD_DIR} -j NUMBER_OF_PROCESSES` where ``-j`` is
+   the number of processes to run in parallel.
 
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx <source-dir> <build-dir>
-
-   or
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx <source-dir> <build-dir> -j <number-of-processes>
-
-   where ``-j`` is the number of processes to run in parallel.
-
-   If you want to create a LaTeX file, you can do so with
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx <source-dir> <build-dir> -b latex
+   If you want to create a LaTeX file, you can do so with :samp:`$ pipenv run
+   python -m sphinx {SOURCE_DIR} {BUILD_DIR} -b latex`.
 
 #. Alternatively, you can have the documentation generated automatically with
-   ``sphinx-autobuild``. It can be installed with
+   ``sphinx-autobuild``. It can be installed with :samp:`$ pipenv run python -m
+   pip install sphinx-autobuild`.
 
-   .. code-block:: console
-
-    $ pipenv run python3 -m pip install sphinx-autobuild
-
-   The automatic creation can then be started with
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx_autobuild <source-dir> <build-dir>
+   The automatic creation can then be started with :samp:`$ pipenv run python -m
+   sphinx_autobuild {SOURCE_DIR} {BUILD_DIR}`.
 
    This starts a local web server that provides the generated HTML pages at
    ``http://localhost:8000/``. And every time you save changes in the Sphinx
    documentation, the corresponding HTML pages are regenerated and the browser
    view is updated.
 
-   You can also use this to automatically generate the LaTeX output:
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx_autobuild <source-dir> <build-dir> -b latex
+   You can also use this to automatically generate the LaTeX output: :samp:`$
+   pipenv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR} -b latex`.
 
 #. Another alternative is publication on `readthedocs.org
    <https://readthedocs.org/>`_.
@@ -204,13 +179,13 @@ Markdown cells
 ~~~~~~~~~~~~~~
 
 Equations
-    Equations can be specified *inline* between ``$`` characters, e.g.
+    Equations can be specified *inline* between ``$`` characters, for example
 
     .. code-block:: latex
 
         $\text{e}^{i\pi} = -1$
 
-    Equations can also be expressed line by line e.g.
+    Equations can also be expressed line by line, for example
 
     .. code-block:: latex
 
@@ -238,19 +213,16 @@ Info and warning boxes
         </div>
 
 Links to other notebooks
-
     .. code-block:: md
 
         a link to a notebook in a subdirectory](subdir/notebook-in-a-subdir.ipynb)
 
 Links to ``*.rst`` files
-
     .. code-block:: md
 
         [reStructuredText file](rst-file.rst)
 
 Links to local files
-
     .. code-block:: md
 
         [Pipfile](Pipfile)
@@ -259,7 +231,7 @@ Code cells
 ~~~~~~~~~~
 
 Javascript
-    Javascript can be used for the generated HTML, e.g .:
+    Javascript can be used for the generated HTML, for example:
 
     .. code-block:: javascript
 
@@ -294,7 +266,7 @@ Configuration
 ~~~~~~~~~~~~~
 
 In order for Sphinx-Gallery to be used, it must also be entered into the
-``conf.py`` file:
+:file:`conf.py` file:
 
 .. code-block:: python
 
