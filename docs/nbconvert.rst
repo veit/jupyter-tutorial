@@ -47,7 +47,14 @@ A ``.tex`` file is created, which is converted into a PDF by the XeTeX engine.
 
 .. tab:: macOS
 
-    `MacTeX <http://tug.org/mactex/>`_
+    .. code-block:: console
+
+        $ eval "$(/usr/libexec/path_helper)"
+        $ brew install --cask mactex
+
+    .. seealso::
+
+        `MacTeX <http://tug.org/mactex/>`_
 
 Use on the command line
 -----------------------
