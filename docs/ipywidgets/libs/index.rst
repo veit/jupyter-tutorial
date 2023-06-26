@@ -50,15 +50,6 @@ Popular widget libraries are
 
        ipysheet.ipynb
 
-``qgrid``
-    Widget based on  `SlickGrid <https://github.com/mleibman/SlickGrid>`_ for
-    rendering pandas DataFrames in Jupyter notebooks
-
-    .. toctree::
-       :maxdepth: 1
-
-       qgrid.ipynb
-
 ``ipydatagrid``
     `ipydatagrid <https://github.com/bloomberg/ipydatagrid>`_ is a fast and
     versatile datagrid widget.
