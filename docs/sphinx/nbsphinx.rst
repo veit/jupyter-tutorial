@@ -38,12 +38,12 @@ Configure Sphinx
 
     extensions = [
         ...
-        'nbsphinx',
+        "nbsphinx",
     ]
     ...
     exclude_patterns = [
         ...
-        '**/.ipynb_checkpoints',
+        "**/.ipynb_checkpoints",
     ]
 
    You can find an example in the `conf.py
@@ -62,16 +62,16 @@ Timeout
 
     .. code-block:: json
 
-     {
-      "cells": [
        {
-        "cell_type": "markdown",
-        "nbsphinx": {
-          "timeout": 60
-        },
+        "cells": [
+         {
+          "cell_type": "markdown",
+          "nbsphinx": {
+            "timeout": 60
+          }
+         }
+        ]
        }
-      ],
-     }
 
     If the timeout is to be deactivated, ``-1`` can be specified.
 
@@ -86,8 +86,9 @@ Custom formats
 
        import jupytext
 
+
        nbsphinx_custom_formats = {
-           '.Rmd': lambda s: jupytext.reads(s, '.Rmd'),
+           ".Rmd": lambda s: jupytext.reads(s, ".Rmd"),
        }
 
 Configure cells
@@ -96,16 +97,16 @@ Configure cells
 Don’t show cell
     .. code-block:: json
 
-     {
-      "cells": [
        {
-        "cell_type": "markdown",
-        "metadata": {
-         "nbsphinx": "hidden"
-        },
+        "cells": [
+         {
+          "cell_type": "markdown",
+          "metadata": {
+           "nbsphinx": "hidden"
+          }
+         }
+        ]
        }
-      ],
-     }
 
 ``nbsphinx-toctree``
     With this instruction Sphinx will create a table of contents within a
@@ -113,27 +114,27 @@ Don’t show cell
 
     .. code-block:: json
 
-     {
-      "cells": [
        {
-        "cell_type": "markdown",
-        "metadata": {
-         "nbsphinx-toctree": {
-           "maxdepth": 2
+        "cells": [
+         {
+          "cell_type": "markdown",
+          "metadata": {
+           "nbsphinx-toctree": {
+             "maxdepth": 2
+           },
+          "source": [
+           "The following title is rendered as ``toctree caption``.\n",
+           "\n",
+           "## Content\n",
+           "\n",
+           "[A notebook](a-notebook.ipynb)\n",
+           "\n",
+           "[An external HTML link](https://jupyter-tutorial.readthedocs.io/)\n"
+          ]
+          }
          }
-        "source": [
-         "The following title is rendered as ``toctree caption``.\n",
-         "\n",
-         "## COntent\n",
-         "\n",
-         "[A notebook](a-notebook.ipynb)\n",
-         "\n",
-         "[An external HTML link](https://jupyter-tutorial.readthedocs.io/)\n",
         ]
-        },
        }
-      ],
-     }
 
     Further options you will find in the :label:`Sphinx documentation
     <sphinx:toctree-directive>`.
@@ -270,10 +271,10 @@ In order for Sphinx-Gallery to be used, it must also be entered into the
 
 .. code-block:: python
 
-    extensions = [
-       'nbsphinx',
-       'sphinx_gallery.load_style',
-    ]
+   extensions = [
+       "nbsphinx",
+       "sphinx_gallery.load_style",
+   ]
 
 You can then use Sphinx-Gallery in two different ways:
 
