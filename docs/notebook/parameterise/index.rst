@@ -27,14 +27,14 @@ Use
 
 #. Inspect
 
-   You can inspect a notebook e.g. with:
+   You can inspect a notebook for example with:
 
    .. code-block:: console
 
-        $ pipenv run papermill --help-notebook docs/refactoring/parameterise/input.ipynb
+        $ pipenv run papermill --help-notebook docs/notebook/parameterise/input.ipynb
         Usage: papermill [OPTIONS] NOTEBOOK_PATH [OUTPUT_PATH]
 
-        Parameters inferred for notebook 'docs/refactoring/parameterise/input.ipynb':
+        Parameters inferred for notebook 'docs/notebook/parameterise/input.ipynb':
           msg: Unknown type (default None)
 
 #. Execute
@@ -43,26 +43,26 @@ Use
 
    * … via the Python API
 
-     The ``execute_notebook`` function can be called to execute a notebook with a
-     dict of parameters:
+     The ``execute_notebook`` function can be called to execute a notebook with
+     a dict of parameters:
 
      .. code-block:: python
 
         execute_notebook(INPUT_NOTEBOOK, OUTPUT_NOTEBOOK, DICTIONARY_OF_PARAMETERS)
 
-     e.g. for ``input.ipynb``:
+     for example for :file:`input.ipynb`:
 
      .. code-block:: ipython
 
         In [1]: import papermill as pm
 
         In [2]: pm.execute_notebook(
-                    'PATH/TO/INPUT_NOTEBOOK.ipynb',
-                    'PATH/TO/OUTPUT_NOTEBOOK.ipynb',
-                    parameters=dict(salutation='Hello', name='pythonistas')
+                    "PATH/TO/INPUT_NOTEBOOK.ipynb",
+                    "PATH/TO/OUTPUT_NOTEBOOK.ipynb",
+                    parameters=dict(salutation="Hello", name="pythonistas"),
                 )
 
-     The result is ``output.ipynb``:
+     The result is :file:`output.ipynb`:
 
      .. code-block:: ipython
 
@@ -74,9 +74,16 @@ Use
                 name = "pythonistas"
 
         In [3]: from datetime import date
+
+
                 today = date.today()
-                print(salutation, name, "– welcome to our event on this " + today.strftime("%A, %d %B %Y"))
-        Out[3]: Hello pythonistas – welcome to our event on this Monday, 13 September 2021
+                print(
+                    salutation,
+                    name,
+                    "– welcome to our event on this " + today.strftime("%A, %d %B %Y"),
+                )
+
+        Out[3]: Hello pythonistas – welcome to our event on this Monday, 26 June 2023
 
      .. seealso::
         * `Workflow reference
@@ -88,8 +95,8 @@ Use
 
         $ pipenv run papermill input.ipynb output.ipynb -p salutation 'Hello' -p name 'pythonistas'
 
-     Alternatively, a YAML file can be specified with the parameters, e.g.
-     ``params.yaml``:
+     Alternatively, a YAML file can be specified with the parameters, for
+     example :file:`params.yaml`:
 
      .. literalinclude:: params.yaml
         :caption: params.yaml
@@ -118,12 +125,11 @@ Use
         $ pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
      This creates an output file whose file name contains a timestamp, for
-     example
-     :download:`output_2021-09-13_10:42:33.ipynb
-     <output_2021-09-13_10\:42\:33.ipynb>`.
+     example :download:`output_2023-06-26_15:57:33.ipynb`.
 
      Finally, you can use ``crontab -e`` to execute the two commands
-     automatically at certain times, e.g. on the first day of every month:
+     automatically at certain times, for example on the first day of every
+     month:
 
      .. code-block::
 

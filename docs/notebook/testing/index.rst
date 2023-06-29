@@ -39,6 +39,5 @@ Tools
    :titlesonly:
    :maxdepth: 3
 
-   unittest2.ipynb
    ipytest.ipynb
    hypothesis.ipynb
