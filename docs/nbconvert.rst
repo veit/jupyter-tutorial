@@ -1,7 +1,7 @@
 ``nbconvert``
 =============
 
-`nbconvert <https://nbconvert.readthedocs.io/>`_
+`nbconvert <https://nbconvert.readthedocs.io/en/latest/>`_
     converts notebooks to other formats
 
 Installation
@@ -54,7 +54,7 @@ A ``.tex`` file is created, which is converted into a PDF by the XeTeX engine.
 
     .. seealso::
 
-        `MacTeX <http://tug.org/mactex/>`_
+        `MacTeX <https://tug.org/mactex/>`_
 
 Use on the command line
 -----------------------
@@ -89,16 +89,17 @@ Use on the command line
         If a notebook contains *Magics*, then this can possibly only be carried
         out in one Jupyter session.
 
-    We can e.g. vonvert `docs/ipython/mypackage/foo.ipynb
-    <../ipython/mypackage/foo.ipynb>`_ into a Python script with:
+    We can for example convert
+    :doc:`python4datascience:workspace/ipython/mypackage/foo` into a Python
+    script with:
 
     .. code-block:: console
 
-        $ pipenv run jupyter nbconvert --to script docs/basics/ipython/mypackage/foo.ipynb
+        $ pipenv run jupyter nbconvert --to script workspace/ipython/mypackage/foo.ipynb
         [NbConvertApp] Converting notebook docs/basics/ipython/mypackage/foo.ipynb to script
         [NbConvertApp] Writing 245 bytes to docs/basics/ipython/mypackage/foo.py
 
-    The result is then ``foo.py`` with:
+    The result is then :file:`foo.py` with:
 
     .. code-block:: python
 
@@ -113,7 +114,7 @@ Use on the command line
 
         # In[2]:
         def has_ip_syntax():
-            listing = get_ipython().getoutput('ls')
+            listing = get_ipython().getoutput("ls")
             return listing
 
         # In[3]:

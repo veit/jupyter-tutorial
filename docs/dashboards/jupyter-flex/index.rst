@@ -12,7 +12,7 @@ Jupyter extension that turns notebooks into dashboards:
 * :doc:`/ipywidgets/index` support
 
 .. seealso::
-   * `Docs <https://jupyter-flex.extrapolations.dev/>`_
+   * `Docs <https://jupyter-flex.danielfrg.com>`_
    * `GitHub <https://github.com/danielfrg/jupyter-flex>`_
 
 Examples
@@ -24,11 +24,11 @@ Examples
 
 .. figure:: data-scoring.png
    :alt: NBA scoring
-   :target: https://jupyter-flex.extrapolations.dev/examples/nba-scoring.html
+   :target: https://jupyter-flex.danielfrg.com/examples/nba-scoring.html
 
 .. figure:: altair.png
    :alt: Altair plots
-   :target: https://jupyter-flex.extrapolations.dev/examples/altair.html
+   :target: https://jupyter-flex.danielfrg.com/examples/altair.html
 
 Installation
 ------------

@@ -2,12 +2,13 @@ Jupyter Dashboards
 ==================
 
 The `Jupyter Dashboards Layout Extension
-<https://jupyter-dashboards-layout.readthedocs.io/>`_ is an add-on for Jupyter
-notebooks, with which outputs (text, plots, widgets, etc.) can be arranged in a
-design grid or in report form. It saves the information on the layout directly
-in the notebook so that other users of this extension can also see the notebook
-in the same layout. For examples of dashboards, see `Jupyter Dashboards Demos
-<https://github.com/jupyter/dashboards/tree/master/etc/notebooks>`_.
+<https://jupyter-dashboards-layout.readthedocs.io/en/latest/>`_ is an add-on for
+Jupyter notebooks, with which outputs (text, plots, widgets, :abbr:`etc. (et
+cetera)`) can be arranged in a design grid or in report form. It saves the
+information on the layout directly in the notebook so that other users of this
+extension can also see the notebook in the same layout. For examples of
+dashboards, see `Jupyter Dashboards Demos
+<https://github.com/jupyter-attic/dashboards/tree/master/etc/notebooks>`_.
 
 Use case
 --------

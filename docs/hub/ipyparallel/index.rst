@@ -2,8 +2,8 @@
 ===============
 
 This section provides an overview of `ipyparallel
-<https://ipyparallel.readthedocs.io/>`_ which supports different types of
-parallelisation, including:
+<https://ipyparallel.readthedocs.io/en/latest/>`_ which supports different types
+of parallelisation, including:
 
 - Single Program, Multiple Data (SPMD)
 - Multiple program, multiple data (MPMD)

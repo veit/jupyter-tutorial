@@ -28,7 +28,7 @@ system with
 
 To limit memory and CPU allocations, certain kernel options must also be
 available. This can be checked with `check-kernel.bash
-<https://github.com/jupyterhub/systemdspawner/blob/master/check-kernel.bash>`_.
+<https://github.com/jupyterhub/systemdspawner/blob/main/check-kernel.bash>`_.
 
 If the default setting :samp:`c.SystemdSpawner.dynamic_users = False` is used,
 the server is started with the local Unix user account. Therefore, this spawner

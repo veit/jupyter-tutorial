@@ -22,16 +22,16 @@ the outdated :doc:`../jupyter-dashboards/index`.
 voila-vuetify
 -------------
 
-`voila-vuetify <https://github.com/QuantStack/voila-vuetify>`_ is a template for
-using Voilà with the `Material Design Component Framework
-<https://material.io/>`_ `Vuetify.js <https://vuetifyjs.com/>`_.
+`voila-vuetify <https://github.com/voila-dashboards/voila-vuetify>`_ is a
+template for using Voilà with the `Material Design Component Framework
+<https://m3.material.io>`_ `Vuetify.js <https://vuetifyjs.com/>`_.
 
 Installation
 ~~~~~~~~~~~~
 
 .. code-block:: console
 
-    $ pipenv install bqplot ipyvuetify voila-vuetify==voila-vuetify 0.0.1a8
+    $ pipenv install bqplot ipyvuetify voila-vuetify
 
 Usage
 ~~~~~
@@ -89,8 +89,8 @@ Example for Voilà-vuetify with the monitor resolution of an iPhone X:
 voila-debug
 -----------
 
-`voila-debug <https://github.com/QuantStack/voila-debug>`_ is a template for
-displaying debug information when working on Voilà applications.
+`voila-debug <https://github.com/voila-dashboards/voila-debug>`_ is a template
+for displaying debug information when working on Voilà applications.
 
 Installation
 ~~~~~~~~~~~~

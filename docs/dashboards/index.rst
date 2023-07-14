@@ -10,7 +10,7 @@ Dashboards
     It's great for viewing static reports, but it can also be used in
     conjunction with :doc:`interaktiven Widgets </ipywidgets/embedding>`.
 :doc:`panel/index`
-    was developed on the basis of `Bokeh <https://docs.bokeh.org/>`_
+    was developed on the basis of `Bokeh <https://docs.bokeh.org/en/latest/>`_
     and `Param <https://github.com/holoviz/param>`_ and offers a toolkit
     especially for creating apps and dashboards, which not only supports bokeh
     plots, see also `Panel: A high-level app and dashboarding solution for the

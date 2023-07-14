@@ -11,7 +11,7 @@ Concepts
 
         .. seealso::
             * `pytest fixtures
-              <https://docs.pytest.org/en/stable/fixture.html>`_
+              <https://docs.pytest.org/en/stable/explanation/fixtures.html>`_
 
     Test Fixture
         is a consistent test environment.

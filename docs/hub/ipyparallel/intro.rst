@@ -119,10 +119,10 @@ Start
 
    Batch systems
     Besides the possibility to start ``ipcontroller`` and ``ipengine`` locally,
-    see *Starting the controller and engine on your local machine* in
-    :ref:`ipyparallel:/tutorial/process.md#starting-a-cluster-with-ssh`, there
-    are also the profiles for  ``MPI``, ``PBS``, ``SGE``, ``LSF``, ``HTCondor``,
-    ``Slurm``, ``SSH`` and ``WindowsHPC``.
+    see `Starting a cluster with SSH
+    <https://ipyparallel.readthedocs.io/en/latest/tutorial/process.html#starting-a-cluster-with-ssh>`_,
+    there are also the profiles for  ``MPI``, ``PBS``, ``SGE``, ``LSF``,
+    ``HTCondor``, ``Slurm``, ``SSH`` and ``WindowsHPC``.
 
     This can be configured in ``ipcluster_config.py`` for example with
     ``c.IPClusterEngines.engine_launcher_class = 'SSH'`` or with

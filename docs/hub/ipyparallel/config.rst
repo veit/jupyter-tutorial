@@ -8,16 +8,16 @@ when the IPython hub is started, usually in
 #. If we don’t want to use the ``default`` profile, we should first create a new
    IPython profile with:
 
-.. code-block:: console
+   .. code-block:: console
 
-    $ pipenv run ipython profile create --parallel --profile=local
-    [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipython_config.py'
-    [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipython_kernel_config.py'
-    [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcontroller_config.py'
-    [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipengine_config.py'
-    [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcluster_config.py
+      $ pipenv run ipython profile create --parallel --profile=local
+      [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipython_config.py'
+      [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipython_kernel_config.py'
+      [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcontroller_config.py'
+      [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipengine_config.py'
+      [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcluster_config.py
 
-``--parallel``
+   ``--parallel``
     includes the configuration files for *Parallel Computing* (``ipengine``, ``ipcontroller`` etc.).
 
 #. When the IPython controller and the engines are started, the files
@@ -27,7 +27,7 @@ when the IPython hub is started, usually in
 ``ipcluster`` in ``mpiexec``/``mpirun`` mode
 --------------------------------------------
 
-#. Creating the profile::
+#. Creating the profile:
 
    .. code-block:: console
 

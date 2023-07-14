@@ -46,7 +46,7 @@ and data analysis. In 2017, Jupyter received the `ACM Software Systems Award
 To understand why Jupyter notebooks are so successful, let’s take a closer look
 at the core functions:
 
-`Jupyter Notebook Format <https://nbformat.readthedocs.io/>`_
+`Jupyter Notebook Format <https://nbformat.readthedocs.io/en/latest/>`_
     Jupyter Notebooks are an open, JSON-based document format with full records
     of the user’s sessions and the code they contain.
 Interactive Computing Protocol

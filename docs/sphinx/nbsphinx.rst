@@ -245,7 +245,8 @@ Galleries
 ---------
 
 nbsphinx provides support for `creating thumbnail galleries from a list of
-Jupyter notebooks <https://nbsphinx.readthedocs.io/subdir/gallery.html>`_. This
+Jupyter notebooks
+<https://nbsphinx.readthedocs.io/en/0.9.2/subdir/gallery.html>`_. This
 functionality is based on `Sphinx-Gallery <https://sphinx-gallery.github.io/>`_
 and extends nbsphinx to work with Jupyter notebooks instead of Python scripts.
 
@@ -281,7 +282,7 @@ You can then use Sphinx-Gallery in two different ways:
 
    .. seealso::
       `Thumbnail Galleries
-      <https://nbsphinx.readthedocs.io/a-normal-rst-file.html#thumbnail-galleries>`_
+      <https://nbsphinx.readthedocs.io/en/0.9.2/a-normal-rst-file.html#thumbnail-galleries>`_
 
 #. In a Jupyter notebook, by adding an ``nbsphinx-gallery`` tag to the metadata
    of a cell:

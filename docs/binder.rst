@@ -34,7 +34,7 @@ Binder provides a full open-source infrastructure stack. The main tools are
     creates reproducible Docker images from a Git repository.
 
     .. seealso::
-       * `Repository <https://github.com/jupyter/repo2docker>`__
+       * `Repository <https://github.com/jupyterhub/repo2docker>`__
        * `Docs <https://repo2docker.readthedocs.io/en/latest/>`__
 
 `mybinder.org <https://mybinder.org/>`_
