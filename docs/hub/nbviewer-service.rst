@@ -18,7 +18,7 @@ Create service ``nbviewer``
     ]
 
    ``name``
-    The path name under which the notebook viewer can be reached:: ``/services/<name>``
+    The path name under which the notebook viewer can be reached: :samp:`/services/{NAME}`
    ``url``
     Protocol, address and port used by ``nbviewer``
    ``cwd``

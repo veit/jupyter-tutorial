@@ -98,7 +98,7 @@ execution requests by default.
 .. warning::
     The current version of Voilà does not respond to the first ``GET`` request
     until all cells have been executed. This can take longer. However, work is
-    being done to enable progressive rendering, s. `feat: progressive cell
+    being done to enable progressive rendering, see `feat: progressive cell
     rendering
     <https://github.com/maartenbreddels/voila/commit/cfd0204231313ebe5dd110c488a5cc6254c85a65>`_.
 

@@ -8,7 +8,7 @@ Jupyter extension that turns notebooks into dashboards:
 * flexible and easy way to define row- and column-oriented layouts
 * uses :doc:`/nbconvert` for static reports
 * uses :doc:`../voila/index` for dynamic applications with a Jupyter
-  :doc:`/kernels/index`
+  :doc:`kernel </kernels/index>`
 * :doc:`/ipywidgets/index` support
 
 .. seealso::

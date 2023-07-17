@@ -98,7 +98,7 @@ Start
     The possible routing scheme. ``leastload`` always assigns tasks to the
     engine with the fewest open tasks. Alternatively, ``lru`` (Least Recently
     Used), ``plainrandom``,  ``twobin`` and ``weighted`` can be selected, the
-    latter two also need Numpy.
+    latter two also need NumPy.
 
     This can be configured in ``ipcontroller_config.py``, for example with
     ``c.TaskScheduler.scheme_name = 'leastload'`` or with

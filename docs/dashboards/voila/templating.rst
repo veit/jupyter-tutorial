@@ -42,7 +42,7 @@ To use ``voila-vuetify`` in a notebook, you first have to import ``ipyvuetify``:
 
     import ipyvuetify as v
 
-Then you can create a layout, e.g. with:
+Then you can create a layout, for example with:
 
 .. code-block:: python
 
@@ -153,8 +153,8 @@ You can use the template with:
 
     $ pipenv run voila --template=reveal reveal.ipynb
 
-Additional options can be used to override the default settings, e.g. to change
-the default value for transition ``Fade`` to ``Zoom`` with:
+Additional options can be used to override the default settings, for example to
+change the default value for transition ``Fade`` to ``Zoom`` with:
 
 .. code-block:: console
 
@@ -232,14 +232,14 @@ A Voilà template is a folder that is located in the virtual environment at
         └── tree.html
 
 ``conf.json``
-    Configuration file that e.g. refers to the basic template:
+    Configuration file that for example refers to the basic template:
 
     .. code-block:: json
 
         {"base_template": "default"}
 
 ``nbconvert_templates``
-    Custom templates for nbconvert :doc:`/nbconvert`.
+    Custom templates for :doc:`/nbconvert`.
 ``static``
     Directory for static files.
 ``templates``

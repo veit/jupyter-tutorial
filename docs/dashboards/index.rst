@@ -3,7 +3,8 @@ Dashboards
 
 :doc:`Jupyter Dashboards Layout Extension <jupyter-dashboards/index>`
     Add-on for Jupyter notebooks, with which outputs (text, plots, widgets,
-    etc.) can be arranged in a design grid or in report form.
+    :abbr:`etc. (et cetera)`) can be arranged in a design grid or in report
+    form.
 :doc:`appmode/index`
     Jupyter extension that turns notebooks into web applications.
 :doc:`/nbviewer`

@@ -26,7 +26,7 @@ information:
    :scale: 53%
    :alt: Dashboard info
 
-With :menuselection:`Dashboard Preview` you get a preview, e.g. for the
+With :menuselection:`Dashboard Preview` you get a preview, for example for the
 :doc:`matplotlib-example`:
 
 .. image:: dashboard-matplotlib-example.png

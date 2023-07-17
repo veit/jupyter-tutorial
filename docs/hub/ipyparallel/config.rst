@@ -3,7 +3,7 @@ Configuration
 
 For the configuration, a configuration file is created for the client and engine
 when the IPython hub is started, usually in
-``~/.ipython/profile_default/security/``.
+:file:`~/.ipython/profile_default/security/`.
 
 #. If we don’t want to use the ``default`` profile, we should first create a new
    IPython profile with:
@@ -18,11 +18,12 @@ when the IPython hub is started, usually in
       [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcluster_config.py
 
    ``--parallel``
-    includes the configuration files for *Parallel Computing* (``ipengine``, ``ipcontroller`` etc.).
+    includes the configuration files for *Parallel Computing* (``ipengine``,
+    ``ipcontroller`` :abbr:`etc. (et cetera)`).
 
 #. When the IPython controller and the engines are started, the files
-   ``ipcontroller-engine.json`` and ``ipcontroller-client.json`` are generated
-   in ``~/.ipython/profile_default/security/``.
+   :file:`ipcontroller-engine.json` and :file:`ipcontroller-client.json` are
+   generated in :file:`~/.ipython/profile_default/security/`.
 
 ``ipcluster`` in ``mpiexec``/``mpirun`` mode
 --------------------------------------------
@@ -38,7 +39,7 @@ when the IPython hub is started, usually in
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipengine_config.py'
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipcluster_config.py'
 
-#. Editing of ``ipcluster_config.py``:
+#. Editing of :file:`ipcluster_config.py`:
 
    #. so that the MPI launcher can be used:
 

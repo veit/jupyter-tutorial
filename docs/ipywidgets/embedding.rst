@@ -63,40 +63,40 @@ Configuration
 :::::::::::::
 
 Adds ``jupyter_sphinx.embed_widgets`` to the list of extensions in the
-``conf.py`` file.
+:file:`conf.py` file.
 
 Then you can use the following directives in reStructuredText:
 
 ``ipywidgets-setup``
-    ::
+    .. code-block:: python
 
-        from ipywidgets import VBox, jsdlink, IntSlider, Button
+       from ipywidgets import Button, IntSlider, VBox, jsdlink
 
 ``ipywidgets-display``
-    ::
+    .. code-block:: python
 
-        s1, s2 = IntSlider(max=200, value=100), IntSlider(value=40)
-        b = Button(icon='legal')
-        jsdlink((s1, 'value'), (s2, 'max'))
-        VBox([s1, s2, b])
+       s1, s2 = IntSlider(max=200, value=100), IntSlider(value=40)
+       b = Button(icon="legal")
+       jsdlink((s1, "value"), (s2, "max"))
+       VBox([s1, s2, b])
 
 
 Example
 :::::::
 
-::
+.. code-block:: rest
 
-    .. ipywidgets-setup::
+   .. ipywidgets-setup::
 
-        from ipywidgets import VBox, jsdlink, IntSlider, Button
+      from ipywidgets import VBox, jsdlink, IntSlider, Button
 
-    .. ipywidgets-display::
-        :hide-code:
+   .. ipywidgets-display::
+      :hide-code:
 
-        s1, s2 = IntSlider(max=200, value=100), IntSlider(value=40)
-        b = Button(icon='legal')
-        jsdlink((s1, 'value'), (s2, 'max'))
-        VBox([s1, s2, b])
+      s1, s2 = IntSlider(max=200, value=100), IntSlider(value=40)
+      b = Button(icon="legal")
+      jsdlink((s1, "value"), (s2, "max"))
+      VBox([s1, s2, b])
 
 Options
 :::::::
@@ -113,10 +113,10 @@ following options:
 
 Widget
 
-    ``:code-below:``
-        shows the code after the widget
-    ``:alt:``
-        Alternate text if the widget cannot be rendered
+``:code-below:``
+    shows the code after the widget
+``:alt:``
+    Alternate text if the widget cannot be rendered
 
 .. seealso::
    `Options <https://jupyter-sphinx.readthedocs.io/en/latest/#configuration-options>`_

@@ -12,7 +12,7 @@ Python projects, including `NumPy <https://numpy.org/devdocs/>`_ and `SciPy
 <https://pandas.pydata.org/docs/>`_ and `SQLAlchemy
 <https://docs.sqlalchemy.org/en/20/>`_.
 
-With :doc:`nbsphinx` , Jupyter Notebooks can also be integrated into Sphinx.
+With :doc:`nbsphinx`, Jupyter Notebooks can also be integrated into Sphinx.
 :doc:`executablebooks`, on the other hand, is a collection of open-source tools
 that allow you to write Markdown and Jupyter Notebooks, execute content and
 insert it into your book, among other things.

@@ -135,8 +135,8 @@ Delete kernel
 
    $ pipenv run jupyter kernelspec uninstall mykernel
 
-Uninstall the Starndard kernel
-------------------------------
+Uninstall the Standard kernel
+-----------------------------
 
 If not already done, a configuration file can be created, for example with
 

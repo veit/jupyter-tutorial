@@ -36,8 +36,8 @@ System Service for JupyterHub
 
     c.Spawner.cmd = ['/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser']
 
-#. Add a new systemd unit file ``/etc/systemd/system/jupyterhub.service`` with
-   the command:
+#. Add a new systemd unit file :file:`/etc/systemd/system/jupyterhub.service`
+   with the command:
 
    .. code-block:: console
 
@@ -182,7 +182,7 @@ authentication.
 
     $ chmod 600 /srv/jupyterhub/venv/jupyterhub_cookie_secret
 
-#. Finally it will be entered in the ``jupyterhub_config.py`` file:
+#. Finally it will be entered in the :file:`jupyterhub_config.py` file:
 
    .. code-block:: python
 
@@ -202,7 +202,7 @@ to be restarted every time unless the proxy is a subprocess of the hub.
 
     $ openssl rand -hex 32
 
-#. It can then be entered in the configuration file, e.g. with
+#. It can then be entered in the configuration file, for example with
 
    .. code-block:: python
 

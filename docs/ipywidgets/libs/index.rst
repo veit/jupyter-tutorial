@@ -22,8 +22,8 @@ Popular widget libraries are
     * :doc:`pyviz:js/pythreejs`
 
 ``ipyvolume``
-    IPyvolume is a Python library for visualizing 3D volumes and glyphs (e.g.
-    3D scatter plots).
+    IPyvolume is a Python library for visualizing 3D volumes and glyphs (for
+    example 3D scatter plots).
 
     * :doc:`pyviz:js/ipyvolume`
 
