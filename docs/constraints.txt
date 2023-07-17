@@ -41,7 +41,7 @@ nbconvert==7.7.1
 nbformat==5.9.1
 nbsphinx==0.9.2
 nest-asyncio==1.5.6
-numpy==1.25.0
+numpy==1.25.1
 packaging==23.1
 pandocfilters==1.5.0
 parso==0.8.3
