@@ -7,7 +7,7 @@ Install a kernel
 Kernels are searched for in the following directories, for example:
 
 * :samp:`/srv/jupyter/.local/share/jupyter/kernels`
-* :samp:`'/usr/local/share/jupyter/kernels`
+* :samp:`/usr/local/share/jupyter/kernels`
 * :samp:`/usr/share/jupyter/kernels`
 * :samp:`/srv/jupyter/.ipython/kernels`
 
