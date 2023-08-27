@@ -14,7 +14,7 @@ not share libraries with other virtual environments:
     $ python3 -m venv myproject
     $ cd myproject
     $ . bin/activate
-    $ python install jupyter
+    $ pip install jupyter
 
 Start ``jupyter notebook``
 --------------------------
