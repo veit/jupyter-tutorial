@@ -21,7 +21,7 @@ fonttools==4.42.1
 furo==2023.8.19
 idna==3.4
 imagesize==1.4.1
-ipykernel==6.24.0
+ipykernel==6.25.1
 ipython==8.14.0
 ipywidgets==8.0.7
 jedi==0.18.2
