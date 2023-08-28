@@ -18,7 +18,7 @@ docutils==0.20.1
 executing==1.2.0
 fastjsonschema==2.18.0
 fonttools==4.42.1
-furo==2023.5.20
+furo==2023.8.19
 idna==3.4
 imagesize==1.4.1
 ipykernel==6.24.0
