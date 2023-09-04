@@ -1,6 +1,6 @@
 alabaster==0.7.13
 appnope==0.1.3
-asttokens==2.2.1
+asttokens==2.4.0
 attrs==23.1.0
 Babel==2.12.1
 backcall==0.2.0
