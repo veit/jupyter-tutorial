@@ -78,7 +78,7 @@ sphinxcontrib-svg2pdfconverter==1.2.2
 sphinxext-opengraph==0.8.2
 stack-data==0.6.2
 tinycss2==1.2.1
-tornado==6.3.2
+tornado==6.3.3
 traitlets==5.9.0
 urllib3==2.0.3
 wcwidth==0.2.6
