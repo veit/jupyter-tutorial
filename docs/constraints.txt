@@ -63,7 +63,7 @@ requests==2.31.0
 rpds-py==0.10.2
 six==1.16.0
 snowballstemmer==2.2.0
-soupsieve==2.4.1
+soupsieve==2.5
 Sphinx==7.0.1
 sphinx-basic-ng==1.0.0b2
 sphinx-copybutton==0.5.2
