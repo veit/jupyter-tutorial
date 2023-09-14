@@ -126,7 +126,7 @@ Start kernel
 
     In [1]:
 
-With ``ctrl`` + ``d`` you can exit the kernel again.
+With :kbd:`ctrl-d` you can exit the kernel again.
 
 Delete kernel
 -------------
