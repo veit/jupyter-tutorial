@@ -76,7 +76,7 @@ stack-data==0.6.3
 tinycss2==1.2.1
 tornado==6.3.3
 traitlets==5.10.1
-urllib3==2.0.4
+urllib3==2.0.6
 wcwidth==0.2.6
 webencodings==0.5.1
 widgetsnbextension==4.0.9
