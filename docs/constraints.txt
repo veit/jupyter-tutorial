@@ -20,7 +20,7 @@ fonttools==4.43.1
 furo==2023.9.10
 idna==3.4
 imagesize==1.4.1
-ipython==8.15.0
+ipython==8.16.1
 ipywidgets==8.1.1
 jedi==0.19.0
 Jinja2==3.1.2
