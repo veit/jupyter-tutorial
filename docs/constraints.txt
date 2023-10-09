@@ -15,7 +15,7 @@ decorator==5.1.1
 defusedxml==0.7.1
 docutils==0.20.1
 executing==2.0.0
-fastjsonschema==2.18.0
+fastjsonschema==2.18.1
 fonttools==4.42.1
 furo==2023.9.10
 idna==3.4
