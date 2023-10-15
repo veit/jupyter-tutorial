@@ -74,7 +74,7 @@ In the following I explain some of the options of ``panel convert``.
         separate thread. This is the most powerful option, but the files must be
         hosted on a static file server.
     ``pyscript``
-        creates an HTML file that uses `PyScript <https://pyscript.net>`. This
+        creates an HTML file that uses `PyScript <https://pyscript.net>`_. This
         creates standalone HTML files with ``<py-env>`` and ``<py-script>`` tags
         containing the dependencies and application code. This output is the
         most readable and should have the same performance as the ``pyodide``

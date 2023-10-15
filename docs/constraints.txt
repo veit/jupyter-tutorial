@@ -47,6 +47,7 @@ pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==10.0.1
 platformdirs==3.10.0
+polib==1.2.0
 prompt-toolkit==3.0.39
 ptyprocess==0.7.0
 pure-eval==0.2.2
@@ -55,6 +56,7 @@ pyparsing==3.1.1
 python-dateutil==2.8.2
 pyzmq==25.1.1
 referencing==0.30.2
+regex==2023.10.3
 requests==2.31.0
 rpds-py==0.10.3
 six==1.16.0
@@ -63,6 +65,7 @@ soupsieve==2.5
 Sphinx==7.2.6
 sphinx-basic-ng==1.0.0b2
 sphinx-copybutton==0.5.2
+sphinx-lint==0.7.0
 sphinx_inline_tabs==2023.4.21
 sphinxcontrib-applehelp==1.0.7
 sphinxcontrib-devhelp==1.0.5

@@ -24,3 +24,9 @@ repos:
     rev: 23.9.1
     hooks:
     - id: black
+  - repo: https://github.com/sphinx-contrib/sphinx-lint
+    rev: v0.7.0
+    hooks:
+    - id: sphinx-lint
+      args: [--jobs=1]
+      types: [rst]

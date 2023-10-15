@@ -7,3 +7,4 @@ sphinxcontrib-svg2pdfconverter
 sphinxext-opengraph
 sphinx-copybutton
 sphinx_inline_tabs
+sphinx-lint
