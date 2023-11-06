@@ -16,7 +16,7 @@ defusedxml==0.7.1
 docutils==0.20.1
 executing==2.0.1
 fastjsonschema==2.18.1
-fonttools==4.43.1
+fonttools==4.44.0
 furo==2023.9.10
 idna==3.4
 imagesize==1.4.1
