@@ -39,7 +39,7 @@ parso==0.8.3
 pexpect==4.9.0
 platformdirs==4.0.0
 polib==1.2.0
-prompt-toolkit==3.0.39
+prompt-toolkit==3.0.41
 ptyprocess==0.7.0
 pure-eval==0.2.2
 Pygments==2.16.1
