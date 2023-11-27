@@ -36,7 +36,7 @@ nbsphinx==0.9.3
 packaging==23.2
 pandocfilters==1.5.0
 parso==0.8.3
-pexpect==4.8.0
+pexpect==4.9.0
 platformdirs==3.11.0
 polib==1.2.0
 prompt-toolkit==3.0.39
