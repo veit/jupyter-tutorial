@@ -14,7 +14,7 @@ docutils==0.20.1
 executing==2.0.1
 fastjsonschema==2.19.0
 furo==2023.9.10
-idna==3.4
+idna==3.6
 imagesize==1.4.1
 ipython==8.17.2
 ipywidgets==8.1.1
