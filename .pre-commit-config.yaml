@@ -14,18 +14,18 @@ repos:
       types: [file]  # override `types: [json]`
       files: \.(json|ipynb)$
   - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
+    rev: 5.13.2
     hooks:
     - id: isort
       additional_dependencies: ["toml"]
       entry: isort --profile=black
       name: isort (python)
   - repo: https://github.com/psf/black
-    rev: 23.11.0
+    rev: 23.12.1
     hooks:
     - id: black
   - repo: https://github.com/sphinx-contrib/sphinx-lint
-    rev: v0.9.0
+    rev: v0.9.1
     hooks:
     - id: sphinx-lint
       args: [--jobs=1]
