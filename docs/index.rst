@@ -37,17 +37,17 @@ expand the original limits of their use and enable new uses.
             label="nbconvert",
             tooltip="Install and\nuse nbconvert",
             target="_top",
-            href="../nbconvert.html"]
+            href="nbconvert.html"]
         nbviewer [
             label="nbviewer",
             tooltip="Install and\nuse nbviewer",
             target="_top",
-            href="../nbviewer.html"]
+            href="nbviewer.html"]
         kernels [
             label="Kernels",
             tooltip="Install, view and\nstart kernels",
             target="_top",
-            href="../kernels/install.html"]
+            href="kernels/install.html"]
         extensions [
             shape=plaintext,
             label=" ",
@@ -60,68 +60,68 @@ expand the original limits of their use and enable new uses.
             label="Enterprise\napplications",
             tooltip="Application examples at\nNetflix, Bloomberg etc.",
             target="_top",
-            href="../use-cases.html"]
+            href="use-cases.html"]
         // 3rd Level
         notebook [
              label="Jupyter-\nNotebook",
              tooltip="Install notebook locally",
              target="_top",
-             href="../notebook/index.html"]
+             href="notebook/index.html"]
          jupyterlab [
              label="JupyterLab",
              tooltip="Install JupyterLab locally",
              target="_top",
-             href="../jupyterlab/index.html"]
+             href="jupyterlab/index.html"]
          hub [
              label="JupyterHub",
              tooltip="Install\nJupyterHub",
              target="_top",
-             href="../hub/index.html"]
+             href="hub/index.html"]
          binder [
              label="Binder",
              tooltip="Binder tools",
              target="_top",
-             href="../binder.html"]
+             href="binder.html"]
          nbviewer [
              label="nbviewer",
              tooltip="Install and use nbviewer",
              target="_top",
-             href="../nbviewer.html"]
+             href="nbviewer.html"]
         widgets [
             label="Widgets",
             tooltip="Install and\nuse ipywidgets",
             target="_top",
-            href="../ipywidgets/index.html"]
+            href="ipywidgets/index.html"]
         extend [
             label="nbextensions",
             tooltip="Install and use various\nnotebook extensions",
             target="_top",
-            href="../nbextensions/index.html"]
+            href="nbextensions/index.html"]
         viz [
             label="Visualise\ndata",
             tooltip="Data visualisation libraries",
             target="_top",
-            href="../viz/index.html"]
+            href="viz/index.html"]
         dash [
             label="Dashboards",
             tooltip="Install and\nuse Dashboards",
             target="_top",
-            href="../dashboards/index.html"]
+            href="dashboards/index.html"]
         html [
             label="in HTML",
             tooltip="Embed notebooks in\nstatic HTML",
             target="_top",
-            href="../ipywidgets/embedding.html"]
+            href="ipywidgets/embedding.html"]
         nbsphinx [
             label="nbsphinx",
             tooltip="Embed notebooks in the\nSphinx Document Generator",
             target="_top",
-            href="../sphinx/nbsphinx.html"]
+            href="sphinx/nbsphinx.html"]
         executablebooks [
             label="Executable Books",
             tooltip="Bücher aus Jupyter Notebooks und MyST",
             target="_top",
-            href="../sphinx/executablebooks.html"]
+            href="sphinx/executablebooks.html"]
         // Edges
         what -> singleuser [label="Single\nuser"]
         what -> team [label="Teamwork"]
