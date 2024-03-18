@@ -30,7 +30,7 @@ matplotlib-inline==0.1.6
 mistune==3.0.2
 nbclient==0.10.0
 nbconvert==7.16.2
-nbformat==5.9.2
+nbformat==5.10.3
 nbsphinx==0.9.3
 packaging==23.2
 pandocfilters==1.5.1
