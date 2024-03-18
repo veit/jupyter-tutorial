@@ -32,7 +32,7 @@ nbclient==0.10.0
 nbconvert==7.16.2
 nbformat==5.10.3
 nbsphinx==0.9.3
-packaging==23.2
+packaging==24.0
 pandocfilters==1.5.1
 parso==0.8.3
 pexpect==4.9.0
