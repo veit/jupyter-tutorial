@@ -22,23 +22,23 @@ You can check the installation, e.g. with:
 
 .. code-block:: console
 
-   $ pipenv run voila docs/workspace/jupyter/ipywidgets/examples.ipynb
+   $ pipenv run voila docs/dashboards/voila/bqplot_vuetify_example.ipynb
    ...
    [Voila] Voilà is running at:
    http://localhost:8866/
 
-Your standard browser should open and display the ``ipywidget`` examples from
+Your standard browser should open and display the ``voila`` examples from
 our tutorial:
 
 .. image:: voila-example-1.png
-   :alt: Voilà example examples.ipynb
+   :alt: Voilà example
 
 Alternatively, you can also display a directory with all the notebooks it
 contains:
 
 .. code-block:: console
 
-    $ pipenv run voila docs/workspace/jupyter/ipywidgets
+    $ pipenv run voila docs/dashboards/voila
     ...
 
 .. image:: voila-example-2.png
@@ -48,7 +48,7 @@ It is also possible to display the source code with:
 
 .. code-block:: console
 
-    $ pipenv run voila --strip_sources=False docs/workspace/jupyter/ipywidgets/examples.ipynb
+    $ pipenv run voila --strip_sources=False docs/dashboards/voila/bqplot_vuetify_example.ipynb
     ...
 
 .. note::
@@ -63,7 +63,7 @@ theme:
 
 .. code-block:: console
 
-    $ pipenv run voila --theme=dark docs/workspace/jupyter/ipywidgets/examples.ipynb
+    $ pipenv run voila --theme=dark docs/dashboards/voila/bqplot_vuetify_example.ipynb
     ...
 
 … as an extension of the Jupyter server
