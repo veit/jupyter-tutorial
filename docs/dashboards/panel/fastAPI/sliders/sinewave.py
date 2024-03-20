@@ -19,8 +19,8 @@ class SineWave(param.Parameterized):
         x, y = self.sine()
         self.cds = ColumnDataSource(data=dict(x=x, y=y))
         self.plot = figure(
-            plot_height=400,
-            plot_width=400,
+            height=400,
+            width=400,
             tools="crosshair, pan, reset, save, wheel_zoom",
             x_range=self.x_range,
             y_range=self.y_range,
