@@ -111,7 +111,7 @@ You can use the template :doc:`debug` with:
 This will open your default browser with the URL ``localhost:8866``.
 
 Then you can take a closer look at how it works at
-``http://localhost:8866/voila/render/docs/jupyter/dashboards/voila/debug.ipynb``.
+``http://localhost:8866/voila/render/docs/dashboards/voila/debug.ipynb``.
 
 .. image:: voila-debug.png
    :scale: 53%
