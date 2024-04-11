@@ -5,6 +5,8 @@ ipywidgets
 nbsphinx
 sphinxcontrib-svg2pdfconverter
 sphinxext-opengraph
+# matplotlib is required for social cards
+matplotlib
 sphinx-copybutton
 sphinx_inline_tabs
 sphinx-lint
