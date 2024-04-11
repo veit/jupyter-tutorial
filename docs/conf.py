@@ -14,15 +14,18 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import os
+import re
+
 
 # -- Project information -----------------------------------------------------
 
 project = "Jupyter Tutorial"
-copyright = "2019–2023, Veit Schiele"
 author = "Veit Schiele"
+copyright = f"2019–2024, {author}"
 
 # The full version, including alpha/beta/rc tags
-release = "1.1.0"
+release = re.sub("^v", "", os.popen("git describe --abbrev=0").read().strip())
 
 
 # -- General configuration ---------------------------------------------------
@@ -82,7 +85,7 @@ html_theme = "furo"
 # documentation.
 #
 # Change default HTML title
-html_title = "Jupyter Tutorial 1.1.0"
+html_title = f"{project} {release}"
 #
 # html_theme_options = {}
 # html_sidebars = {}
