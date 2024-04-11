@@ -10,11 +10,11 @@ authors:
     email: veit@cusy.io
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8053980
+    value: 10.5281/zenodo.10961038
   - type: url
-    value: "https://github.com/veit/jupyter-tutorial/tree/v1.1.0"
+    value: "https://github.com/veit/jupyter-tutorial/tree/24.1.0"
 repository-code: "https://github.com/veit/jupyter-tutorial/"
-url: "https://jupyter-tutorial.readthedocs.io/en/v1.1.0/"
+url: "https://jupyter-tutorial.readthedocs.io/en/24.1.0"
 abstract: >-
   Training materials for setting up and using a research
   infrastructure based on Jupyter notebooks.
@@ -35,5 +35,5 @@ keywords:
   - MyST
   - nbsphinx
 license: BSD-3-Clause
-version: 1.1.0
-date-released: "2023-06-19"
+version: 24.1.0
+date-released: "2024-04-11"

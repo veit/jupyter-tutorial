@@ -13,6 +13,21 @@ The versions follow `Semantic Versioning <https://semver.org/lang/de/>`_:
 
 .. _changelog
 
+24.1.0
+
+* 🌱 Add matplotlib for social cards
+* 🔧 Use git tag for versioning the docs
+* 📝 Switch voila example to bqplot vueitfy
+* 📝 Switch to panel sampledata
+* 🔧 Add sphinx-lint
+* 📝 Add more alert boxes
+* 🔥 Remove node env
+* 🔥 Remove nbviewer env
+* 📝 Remove qgrid as it is not being developed further
+* 📝 Update MacTex install
+* 🔧 Add JupyterHub env
+* 🔧 Add Python 3.11 kernel config
+
 1.1.0
 
 * 🔖 Jupyter-Tutorial 1.1.0
