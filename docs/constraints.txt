@@ -54,7 +54,7 @@ python-dateutil==2.9.0.post0
 pyzmq==26.0.3
 referencing==0.35.1
 regex==2024.5.15
-requests==2.31.0
+requests==2.32.0
 rpds-py==0.18.1
 six==1.16.0
 snowballstemmer==2.2.0
