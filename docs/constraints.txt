@@ -30,7 +30,7 @@ jupyterlab_pygments==0.3.0
 jupyterlab_widgets==3.0.10
 kiwisolver==1.4.5
 MarkupSafe==2.1.5
-matplotlib==3.8.4
+matplotlib==3.9.0
 matplotlib-inline==0.1.7
 mistune==3.0.2
 nbclient==0.10.0
@@ -43,7 +43,7 @@ pandocfilters==1.5.1
 parso==0.8.4
 pexpect==4.9.0
 pillow==10.3.0
-platformdirs==4.2.1
+platformdirs==4.2.2
 polib==1.2.0
 prompt-toolkit==3.0.43
 ptyprocess==0.7.0
@@ -53,8 +53,8 @@ pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 pyzmq==26.0.3
 referencing==0.35.1
-regex==2024.5.10
-requests==2.31.0
+regex==2024.5.15
+requests==2.32.1
 rpds-py==0.18.1
 six==1.16.0
 snowballstemmer==2.2.0
