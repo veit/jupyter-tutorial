@@ -14,7 +14,7 @@ defusedxml==0.7.1
 docutils==0.21.2
 executing==2.0.1
 fastjsonschema==2.19.1
-fonttools==4.51.0
+fonttools==4.52.1
 furo==2024.5.6
 idna==3.7
 imagesize==1.4.1
@@ -24,7 +24,7 @@ jedi==0.19.1
 Jinja2==3.1.4
 jsonschema==4.22.0
 jsonschema-specifications==2023.12.1
-jupyter_client==8.6.1
+jupyter_client==8.6.2
 jupyter_core==5.7.2
 jupyterlab_pygments==0.3.0
 jupyterlab_widgets==3.0.10
@@ -54,7 +54,7 @@ python-dateutil==2.9.0.post0
 pyzmq==26.0.3
 referencing==0.35.1
 regex==2024.5.15
-requests==2.32.1
+requests==2.32.2
 rpds-py==0.18.1
 six==1.16.0
 snowballstemmer==2.2.0
