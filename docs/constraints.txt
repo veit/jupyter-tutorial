@@ -45,7 +45,7 @@ pexpect==4.9.0
 pillow==10.3.0
 platformdirs==4.2.2
 polib==1.2.0
-prompt_toolkit==3.0.46
+prompt_toolkit==3.0.47
 ptyprocess==0.7.0
 pure-eval==0.2.2
 Pygments==2.18.0
