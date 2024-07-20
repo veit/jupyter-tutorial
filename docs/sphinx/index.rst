@@ -17,6 +17,14 @@ With :doc:`nbsphinx`, Jupyter Notebooks can also be integrated into Sphinx.
 that allow you to write Markdown and Jupyter Notebooks, execute content and
 insert it into your book, among other things.
 
+.. tip::
+   cusy seminars:
+
+   * `Software documentation with Sphinx
+     <https://cusy.io/en/our-training-courses/software-documentation-with-sphinx>`_
+   * `Technical writing
+     <https://cusy.io/en/our-training-courses/technical-writing>`_
+
 .. toctree::
     :hidden:
     :titlesonly:

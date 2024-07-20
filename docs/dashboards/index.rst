@@ -36,6 +36,16 @@ of the various libraries.
     "`Voilà <https://github.com/voila-dashboards/voila>`_",".. image:: https://raster.shields.io/github/stars/voila-dashboards/voila",".. image:: https://raster.shields.io/github/contributors/voila-dashboards/voila",".. image:: https://raster.shields.io/github/commit-activity/y/voila-dashboards/voila",".. image:: https://raster.shields.io/github/license/voila-dashboards/voila"
     "`jupyter-flex <https://github.com/danielfrg/jupyter-flex>`_",".. image:: https://raster.shields.io/github/stars/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/contributors/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/commit-activity/y/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/license/danielfrg/jupyter-flex"
 
+.. tip::
+   cusy seminars:
+
+   * `Visualising data with Python
+     <https://cusy.io/en/our-training-courses/visualising-data-with-python>`_
+   * `Designing data visualisations
+     <https://cusy.io/en/our-training-courses/designing-data-visualisations>`_
+   * `Create dashboards
+     <https://cusy.io/en/our-training-courses/create-dashboards>`_
+
 .. toctree::
     :titlesonly:
     :hidden:
