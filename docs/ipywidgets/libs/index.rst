@@ -51,8 +51,8 @@ Popular widget libraries are
        ipysheet.ipynb
 
 ``ipydatagrid``
-    `ipydatagrid <https://github.com/bloomberg/ipydatagrid>`_ is a fast and
-    versatile datagrid widget.
+    `ipydatagrid <https://github.com/jupyter-widgets/ipydatagrid>`_ is a fast
+    and versatile datagrid widget.
 
 ``ipyvuetify``
     `Vuetify <https://v15.vuetifyjs.com/en/>`_ widgets in Jupyter notebooks

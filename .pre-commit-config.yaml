@@ -34,3 +34,10 @@ repos:
     - id: sphinx-lint
       args: [--jobs=1]
       types: [rst]
+  - repo: local
+    hooks:
+    - id: linkcheck
+      entry: sphinx-build -b linkcheck docs _build/html
+      name: linkcheck
+      language: system
+      files: $(git diff --staged --name-only "*")

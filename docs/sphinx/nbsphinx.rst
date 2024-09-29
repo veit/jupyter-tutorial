@@ -170,10 +170,11 @@ Build
    pipenv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR} -b latex`.
 
 #. Another alternative is publication on `readthedocs.org
-   <https://readthedocs.org/>`_.
+   <https://about.readthedocs.com>`_.
 
-   To do this, you first have to create an account at https://readthedocs.org/
-   and then connect your GitLab, GitHub or Bitbucket account.
+   To do this, you first have to create an account at
+   https://about.readthedocs.com and then connect your GitLab, GitHub or
+   Bitbucket account.
 
 Markdown cells
 ~~~~~~~~~~~~~~
