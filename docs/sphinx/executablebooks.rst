@@ -15,8 +15,8 @@ Jupyter Book
        * `gallery.jupyterbook.org
          <https://executablebooks.org/en/latest/gallery/>`_ is a gallery of
          Jupyter books.
-       * `github.com/executablebooks/jupyter-book
-         <https://github.com/executablebooks/jupyter-book>`_ is the project’s
+       * `github.com/jupyter-book/jupyter-book
+         <https://github.com/jupyter-book/jupyter-book>`_ is the project’s
          repository.
 
 MyST
@@ -29,7 +29,7 @@ MyST
        * `spec.mystmd.org <https://mystmd.org/spec>`_ describes the MyST
          specification.
        * `MyST Enhancement Proposals
-         <https://github.com/executablebooks/myst-enhancement-proposals>`_ is a
+         <https://github.com/jupyter-book/myst-enhancement-proposals>`_ is a
          process for proposing and deciding on changes to the MyST
          specification.
 
@@ -39,5 +39,5 @@ JupyterLab MyST Extension
     grids.
 
     .. seealso::
-       * `github.com/executablebooks/jupyterlab-myst
-         <https://github.com/executablebooks/jupyterlab-myst>`_
+       * `github.com/jupyter-book/jupyterlab-myst
+         <https://github.com/jupyter-book/jupyterlab-myst>`_

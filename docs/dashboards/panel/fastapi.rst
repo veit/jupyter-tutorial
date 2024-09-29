@@ -19,7 +19,6 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
 
    .. literalinclude:: fastAPI/main.py
       :caption: fastAPI/main.py
-      :name: fastAPI/main.py
       :linenos:
       :lines: 1-3, 5-7
 
@@ -44,7 +43,6 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
 
    .. literalinclude:: fastAPI/templates/base.html
       :caption: fastAPI/templates/base.html
-      :name: fastAPI/templates/base.html
       :language: html
       :linenos:
       :lines: 1-
