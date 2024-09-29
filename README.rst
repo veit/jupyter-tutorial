@@ -119,19 +119,15 @@ Installation
 
    You can find the PDF at ``docs/_build/latex/jupytertutorial.pdf``.
 
-#. Install vnd run ale to check spelling
+#. Run Vale to check spelling
 
-   You can install Vale with:
-
-   .. code-block:: console
-
-    $ brew install vale
-
-   You can install the parser for Restructuredtext with:
+   You can install download cusy-vale with:
 
    .. code-block:: console
 
-    $ brew install docutils
+      $ vale sync
+      Syncing cusy-vale [1/1] ██████████████████████████████████████████████ 100% | 0s
+       SUCCESS  Synced 1 package(s) to '/Users/veit/cusy/trn/jupyter-tutorial/styles'.
 
    .. seealso::
       * `Vale installation <https://docs.errata.ai/vale/install>`_

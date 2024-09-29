@@ -48,7 +48,7 @@ Now you can open ``http://localhost:40405`` in your browser and try out the app:
 .. figure:: pyodide-example.png
    :alt: Pyodide example
 
-You can now add the :download:`pyodide/overview.html` file to your Github pages
+You can now add the :download:`pyodide/overview.html` file to your GitHub pages
 or similar – no separate server is required.
 
 .. seealso::
@@ -120,7 +120,7 @@ In the following I explain some of the options of ``panel convert``.
 
           $ panel convert overview.ipynb --out pyodide --requirements pandas matplotlib
 
-       AAlternatively, you can provide a ``requirements.txt`` file:
+       Alternatively, you can provide a ``requirements.txt`` file:
 
        .. code-block:: console
 

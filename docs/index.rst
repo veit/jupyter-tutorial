@@ -149,7 +149,7 @@ analysis and visualisation:
 * :doc:`python-basics:index`
 * :doc:`python4datascience:index`
 * :doc:`PyViz Tutorial <pyviz:index>`
-* `cusy Design-System: Datenvisualisierung
+* `cusy Design-System: Data visualisation
   <https://www.cusy.design/de/latest/viz/index.html>`_
 
 All tutorials serve as seminar documents for our harmonised training courses:

@@ -173,7 +173,7 @@ Build
    <https://readthedocs.org/>`_.
 
    To do this, you first have to create an account at https://readthedocs.org/
-   and then connect your GitLab, Github or Bitbucket account.
+   and then connect your GitLab, GitHub or Bitbucket account.
 
 Markdown cells
 ~~~~~~~~~~~~~~

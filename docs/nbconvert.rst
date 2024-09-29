@@ -82,7 +82,7 @@ Use on the command line
     creates `Reveal.js <https://revealjs.com/>`_ slides.
 
 ``script``
-    kconverts the notebook into an executable script. This is the easiest way to
+    converts the notebook into an executable script. This is the easiest way to
     create a Python script or a script in another language.
 
     .. note::

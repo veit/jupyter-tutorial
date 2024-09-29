@@ -24,3 +24,6 @@ panel-examples
 deploy-panel.html
 test.png
 pyviz.pkl
+
+# vale
+/styles/*
