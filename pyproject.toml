@@ -1,3 +1,45 @@
+[project]
+name = "jupyter-tutorial"
+version = "24.1.0"
+authors = [
+  { name="Veit Schiele", email="veit@cusy.io" },
+]
+description = "Training materials for setting up and using a research infrastructure based on Jupyter notebooks: https://cusy.io/en/seminars"
+readme = "README.rst"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+docs = [
+    "furo",
+    "ipython",
+    "ipywidgets",
+    "nbsphinx",
+    "sphinxext.opengraph", # matplotlib is required for social cards
+    "matplotlib",
+    "sphinx_copybutton",
+    "sphinx-inline-tabs",
+    "sphinxcontrib-svg2pdfconverter",
+    "sphinx-lint",
+]
+
+dev = [
+    "jupyter-tutorial[docs]",
+    "pre-commit",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/veit/jupyter-tutorial/"
+"Bug Tracker" = "https://github.com/veit/jupyter-tutorial/issues"
+
+[tool.setuptools]
+packages = []
+
 [tool.black]
 line-length = 79
 

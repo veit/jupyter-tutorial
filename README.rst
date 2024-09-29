@@ -45,10 +45,11 @@ Installation
 
    .. code-block:: console
 
-    $ cd jupyter-tutorial-main
-    $ python3 -m venv .
-    $ . bin/activate
-    $ python -m pip install -r docs/requirements.txt
+      $ cd jupyter-tutorial-main
+      $ python3 -m venv .venv
+      $ . .venv/bin/activate
+      $ python -m pip install --upgrade pip
+      $ python -m pip install -e ".[dev]"
 
 #. Install the `Jupyter Notebook Extensions
    <https://jupyter-contrib-nbextensions.readthedocs.io/>`_ Javascript and CSS
