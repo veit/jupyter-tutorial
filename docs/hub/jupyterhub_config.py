@@ -1097,7 +1097,7 @@ c.SystemdSpawner.disable_user_sudo = True
 ## The URL the single-user server should connect to the Hub.
 #
 #  If the Hub URL set in your JupyterHub config is not reachable from spawned
-#  notebooks, you can set differnt URL by this config.
+#  notebooks, you can set different URL by this config.
 #
 #  Is None if you don't need to change the URL.
 #  Default: None
@@ -1474,7 +1474,7 @@ c.SystemdSpawner.disable_user_sudo = True
 #
 #  This function is called after the user has passed all authentication checks
 #  and is ready to successfully authenticate. This function must return the
-#  authentication dict reguardless of changes to it.
+#  authentication dict regardless of changes to it.
 #
 #  This maybe a coroutine.
 #
