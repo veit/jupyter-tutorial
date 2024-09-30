@@ -40,6 +40,10 @@ repos:
       args: [--line-length=79]
       additional_dependencies:
       - black
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.3.0
+    hooks:
+    - id: codespell
   - repo: local
     hooks:
     - id: linkcheck
