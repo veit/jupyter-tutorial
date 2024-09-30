@@ -108,14 +108,17 @@ Use on the command line
 
         # # `foo.ipynb`
 
+
         # In[1]:
         def bar():
             return "bar"
+
 
         # In[2]:
         def has_ip_syntax():
             listing = get_ipython().getoutput("ls")
             return listing
+
 
         # In[3]:
         def whatsmyname():

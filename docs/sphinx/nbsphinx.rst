@@ -36,15 +36,13 @@ Configure Sphinx
 
    .. code-block:: python
 
-    extensions = [
-        ...
-        "nbsphinx",
-    ]
-    ...
-    exclude_patterns = [
-        ...
-        "**/.ipynb_checkpoints",
-    ]
+      extensions = [
+          "nbsphinx",
+      ]
+
+      exclude_patterns = [
+          "**/.ipynb_checkpoints",
+      ]
 
    You can find an example in the :download:`/conf.py` file of the Jupyter
    tutorial.

@@ -49,7 +49,7 @@ Then you can activate it in :file:`jupyterhub_config.py` with
 
 .. code-block:: python
 
-   c.JupyterHub.spawner_class = 'systemdspawner.SystemdSpawner'
+   c.JupyterHub.spawner_class = "systemdspawner.SystemdSpawner"
 
 There are many other configuration options open to you, for example
 

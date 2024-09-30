@@ -120,7 +120,7 @@ Hereinafter I will give a brief overview of some of the notebook extensions.
 
     .. code-block:: python
 
-        c.CodeFoldingPreprocessor.remove_folded_code=True = True
+        c.CodeFoldingPreprocessor.remove_folded_code = True
 
     or on the command line with:
 

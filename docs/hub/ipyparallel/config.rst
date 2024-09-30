@@ -45,7 +45,7 @@ when the IPython hub is started, usually in
 
    .. code-block:: python
 
-        c.IPClusterEngines.engine_launcher_class = 'MPIEngineSetLauncher'
+        c.IPClusterEngines.engine_launcher_class = "MPIEngineSetLauncher"
 
 #. The cluster can then be started with:
 
