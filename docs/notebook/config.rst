@@ -52,7 +52,7 @@ supplemented with  ``append``, ``extend``, ``prepend``, ``add`` and
 
 .. code-block:: python
 
-    c.TemplateExporter.template_path.append('./templates')
+    c.TemplateExporter.template_path.append("./templates")
 
 … with the command line
 ~~~~~~~~~~~~~~~~~~~~~~~
