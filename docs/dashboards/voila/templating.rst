@@ -46,26 +46,38 @@ Then you can create a layout, for example with:
 
 .. code-block:: python
 
-    v.Tabs(_metadata={'mount_id': 'content-main'}, children=[
-        v.Tab(children=['Tab1']),
-        v.Tab(children=['Tab2']),
-        v.TabItem(children=[
-            v.Layout(row=True, wrap=True, align_center=True, children=[
-                v.Flex(xs12=True, lg6=True, xl4=True, children=[
-                    fig, slider
-                ]),
-                v.Flex(xs12=True, lg6=True, xl4=True, children=[
-                    figHist2, sliderHist2
-                ]),
-                v.Flex(xs12=True, xl4=True, children=[
-                    fig2
-                ]),
-            ])
-        ]),
-        v.TabItem(children=[
-            v.Container(children=['Lorum ipsum'])
-        ])
-    ])
+    v.Tabs(
+        _metadata={"mount_id": "content-main"},
+        children=[
+            v.Tab(children=["Tab1"]),
+            v.Tab(children=["Tab2"]),
+            v.TabItem(
+                children=[
+                    v.Layout(
+                        row=True,
+                        wrap=True,
+                        align_center=True,
+                        children=[
+                            v.Flex(
+                                xs12=True,
+                                lg6=True,
+                                xl4=True,
+                                children=[fig, slider],
+                            ),
+                            v.Flex(
+                                xs12=True,
+                                lg6=True,
+                                xl4=True,
+                                children=[figHist2, sliderHist2],
+                            ),
+                            v.Flex(xs12=True, xl4=True, children=[fig2]),
+                        ],
+                    )
+                ]
+            ),
+            v.TabItem(children=[v.Container(children=["Lorum ipsum"])]),
+        ],
+    )
 
 You can use :doc:`bqplot_vuetify_example` with:
 
@@ -124,8 +136,10 @@ kernel:
 
     import os
 
+
     def kill_kernel(change):
         os._exit(0)
+
 
     button = widgets.Button(description="Kill Kernel")
     button.on_click(kill_kernel)

@@ -34,7 +34,9 @@ System Service for JupyterHub
 
    .. code-block:: python
 
-    c.Spawner.cmd = ['/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser']
+    c.Spawner.cmd = [
+        "/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser"
+    ]
 
 #. Add a new systemd unit file :file:`/etc/systemd/system/jupyterhub.service`
    with the command:
@@ -186,7 +188,7 @@ authentication.
 
    .. code-block:: python
 
-    c.JupyterHub.cookie_secret_file = 'jupyterhub_cookie_secret'
+    c.JupyterHub.cookie_secret_file = "jupyterhub_cookie_secret"
 
 Proxy authentication token
 --------------------------
@@ -206,4 +208,6 @@ to be restarted every time unless the proxy is a subprocess of the hub.
 
    .. code-block:: python
 
-    c.JupyterHub.proxy_auth_token = '18a0335b7c2e7edeaf7466894a32bea8d1c3cff4b07860298dbe353ecb179fc6'
+    c.JupyterHub.proxy_auth_token = (
+        "18a0335b7c2e7edeaf7466894a32bea8d1c3cff4b07860298dbe353ecb179fc6"
+    )
