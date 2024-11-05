@@ -61,7 +61,7 @@ Extending the Notebook Viewer
 
 The notebook viewer can be extended to include providers, see
 `Extending the Notebook Viewer
-<https://github.com/jupyter/nbviewer/tree/main#extending-the-notebook-viewer>`_.
+<https://github.com/jupyter/nbviewer#extending-the-notebook-viewer>`_.
 
 
 Access control
