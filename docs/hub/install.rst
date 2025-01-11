@@ -23,41 +23,25 @@ Installation
 
     $ sudo -u jupyter -i
 
-#. Install :term:`Pipenv`:
+#. Install :term:`uv`:
 
    .. code-block:: console
 
-    $  python3 -m pip install --user pipenv
+    $  curl -LsSf https://astral.sh/uv/install.sh | sh
 
-   This installs Pipenv in ``USER_BASE``.
-
-#. Determine ``USER_BASE`` and enter it in ``PATH``:
+#. Activate automatic shell completion:
 
    .. code-block:: console
 
-    $  python3 -m site --user-base
-    /srv/jupyter/.local
-
-   Then the ``bin`` directory must be appended and added to ``PATH`` in
-   ``~/.profile``, so:
-
-   .. code-block:: console
-
-    export PATH=/srv/jupyter/.local/bin:$PATH
-
-   Finally, the changed profile is read in with:
-
-   .. code-block:: console
-
-    $  source ~/.profile
+    $ echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 
 #. Create a virtual environment and install JupyterHub:
 
    .. code-block:: console
 
-    $ mkdir jupyterhub_env
+    $ uv init --package jupyterhub_env
     $ cd jupyterhub_env
-    $ pipenv install jupyterhub
+    $ uv add jupyterhub
 
 #. Install ``nodejs`` and ``npm``:
 
@@ -65,9 +49,9 @@ Installation
 
     $ sudo apt install nodejs npm
     $ node -v
-    v12.22.9
+    v23.3.0
     $ npm -v
-    8.5.1
+    10.9.0
 
 #. Install the HTTP proxy:
 
@@ -80,21 +64,21 @@ Installation
 
    .. code-block:: console
 
-    $  pipenv install jupyterlab notebook
+    $  uv add jupyterlab notebook
 
 #. Testing the installation:
 
    .. code-block:: console
 
-    $  pipenv run jupyterhub -h
+    $  uv run jupyterhub -h
     $  configurable-http-proxy -h
 
 #. Starting the JupyterHub:
 
    .. code-block:: console
 
-    $  pipenv run jupyterhub
+    $  uv run jupyterhub
     ...
-    [I 2019-07-31 22:47:26.617 JupyterHub app:1912] JupyterHub is now running at http://:8000
+    [I 2025-01-10 18:07:29.993 JupyterHub app:3770] JupyterHub is now running at http://:8000
 
    You can end the process again with :kbd:`ctrl-c`.

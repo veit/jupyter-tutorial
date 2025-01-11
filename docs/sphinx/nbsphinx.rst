@@ -11,7 +11,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install sphinx nbsphinx
+    $ uv add sphinx nbsphinx
 
 Requirements
 ~~~~~~~~~~~~
@@ -28,7 +28,9 @@ Configure Sphinx
 
    .. code-block:: console
 
-    $ pipenv run python -m sphinx.cmd.quickstart
+    $ mkdir docs
+    $ cd docs
+    $ uv run python -m sphinx.cmd.quickstart
 
 #. The Sphinx configuration file :file:`conf.py` is then located in the newly
    created directory. In this, ``nbsphinx`` is added as an extension and
@@ -144,19 +146,19 @@ Build
    `jupyter-tutorial/notebook/testing/index.rst
    <https://jupyter-tutorial.readthedocs.io/de/latest/_sources/notebook/testing/index.rst.txt>`_
 
-#. Finally, you can generate the pages, for example HTML with :samp:`$ pipenv
-   run python -m sphinx {SOURCE_DIR} {BUILD_DIR}` or :samp:`$ pipenv run python
-   -m sphinx {SOURCE_DIR} {BUILD_DIR} -j NUMBER_OF_PROCESSES` where ``-j`` is
-   the number of processes to run in parallel.
+#. Finally, you can generate the pages, for example HTML with :samp:`$ uv run
+   python -m sphinx {SOURCE_DIR} {BUILD_DIR}` or :samp:`$ uv run python -m
+   sphinx {SOURCE_DIR} {BUILD_DIR} -j NUMBER_OF_PROCESSES` where ``-j`` is the
+   number of processes to run in parallel.
 
-   If you want to create a LaTeX file, you can do so with :samp:`$ pipenv run
-   python -m sphinx {SOURCE_DIR} {BUILD_DIR} -b latex`.
+   If you want to create a LaTeX file, you can do so with :samp:`$ uv run python
+   -m sphinx {SOURCE_DIR} {BUILD_DIR} -b latex`.
 
 #. Alternatively, you can have the documentation generated automatically with
-   ``sphinx-autobuild``. It can be installed with :samp:`$ pipenv run python -m
-   pip install sphinx-autobuild`.
+   ``sphinx-autobuild``. It can be installed with :samp:`$ uv add
+   sphinx-autobuild`.
 
-   The automatic creation can then be started with :samp:`$ pipenv run python -m
+   The automatic creation can then be started with :samp:`$ uv run python -m
    sphinx_autobuild {SOURCE_DIR} {BUILD_DIR}`.
 
    This starts a local web server that provides the generated HTML pages at
@@ -165,7 +167,7 @@ Build
    view is updated.
 
    You can also use this to automatically generate the LaTeX output: :samp:`$
-   pipenv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR} -b latex`.
+   uv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR} -b latex`.
 
 #. Another alternative is publication on `readthedocs.org
    <https://about.readthedocs.com>`_.
@@ -284,7 +286,7 @@ Sphinx-Gallery can be installed for Sphinx ≥ 1.8.3 with
 
 .. code-block:: console
 
-    $ pipenv install sphinx-gallery
+    $ uv add sphinx-gallery
 
 Configuration
 ~~~~~~~~~~~~~

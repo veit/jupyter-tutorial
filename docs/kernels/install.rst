@@ -16,13 +16,13 @@ directories, you should install ipykernel:
 
 .. code-block:: console
 
-   $ pipenv install ipykernel
+   $ uv add ipykernel
 
 You can then register your kernel, for example with
 
 .. code-block:: console
 
-   $ pipenv run python -m ipykernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
+   $ uv run python -m ipykernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
 
 :samp:`--prefix={/PATH/TO/KERNEL}`
     specifies the path where the Jupyter kernel is to be installed.
@@ -108,18 +108,18 @@ Show available kernels
 
 .. code-block:: console
 
-    $ pipenv run jupyter kernelspec list
-    Available kernels:
-      mykernel    /Users/veit/Library/Jupyter/kernels/mykernel
-      python2    /Users/veit/Library/Jupyter/kernels/python2
-      python3    /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/bin/../share/jupyter/kernels/python3
+   $ uv run jupyter kernelspec list
+   Available kernels:
+     mykernel   /Users/veit/Library/Jupyter/kernels/mykernel
+     python311  /Users/veit/Library/Jupyter/kernels/python311
+     python313  /Users/veit/Library/Jupyter/kernels/python313
 
 Start kernel
 ------------
 
 .. code-block:: console
 
-    $ pipenv run jupyter console --kernel mykernel
+    $ uv run jupyter console --kernel mykernel
     Jupyter console 6.0.0
     Python 2.7.15 (default, Oct 22 2018, 19:33:46)
     ...
@@ -133,7 +133,7 @@ Delete kernel
 
 .. code-block:: console
 
-   $ pipenv run jupyter kernelspec uninstall mykernel
+   $ uv run jupyter kernelspec uninstall mykernel
 
 Uninstall the Standard kernel
 -----------------------------
@@ -142,7 +142,7 @@ If not already done, a configuration file can be created, for example with
 
 .. code-block:: console
 
-   $ pipenv run jupyter lab --generate-config
+   $ uv run jupyter lab --generate-config
 
 Then you can add the following line to this configuration file:
 

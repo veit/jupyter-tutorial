@@ -10,7 +10,7 @@ when the IPython hub is started, usually in
 
    .. code-block:: console
 
-      $ pipenv run ipython profile create --parallel --profile=local
+      $ uv run ipython profile create --parallel --profile=local
       [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipython_config.py'
       [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipython_kernel_config.py'
       [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcontroller_config.py'
@@ -32,7 +32,7 @@ when the IPython hub is started, usually in
 
    .. code-block:: console
 
-    $ pipenv run ipython profile create --parallel --profile=mpi
+    $ uv run ipython profile create --parallel --profile=mpi
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipython_config.py'
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipython_kernel_config.py'
     [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipcontroller_config.py'
@@ -51,7 +51,7 @@ when the IPython hub is started, usually in
 
    .. code-block:: console
 
-    $ pipenv run ipcluster start -n 4 --profile=mpi
+    $ uv run ipcluster start -n 4 --profile=mpi
     [IPClusterStart] Starting ipcluster with [daemon=False]
     [IPClusterStart] Creating pid file: /Users/veit/.ipython/profile_mpi/pid/ipcluster.pid
     [IPClusterStart] Starting Controller with LocalControllerLauncher

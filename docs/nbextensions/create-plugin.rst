@@ -7,69 +7,64 @@ located can be found with ``pip show``:
 
 .. code-block:: console
 
-    $ pipenv run pip show jupyter_contrib_nbextensions
-    Name: jupyter-contrib-nbextensions
-    Version: 0.5.1
-    Summary: A collection of Jupyter nbextensions.
-    Home-page: https://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
-    Author: ipython-contrib and jupyter-contrib developers
-    Author-email: jupytercontrib@gmail.com
-    License: BSD
-    Location: /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/lib/python3.7/site-packages
-    Requires: lxml, jupyter-contrib-core, nbconvert, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-nbextensions-configurator, notebook, traitlets, jupyter-highlight-selected-word, tornado, ipython-genutils
-    Required-by:
+   $ uv pip show jupyter_contrib_nbextensions
+   Name: jupyter-contrib-nbextensions
+   Version: 0.7.0
+   Location: /Users/veit/cusy/trn/jupyter-tutorial/.venv/lib/python3.13/site-packages
+   Requires: ipython-genutils, jupyter-contrib-core, jupyter-core, jupyter-highlight-selected-word, jupyter-nbextensions-configurator, lxml, nbconvert, notebook, tornado, traitlets
+   Required-by: jupyter-tutorial
 
 This directory contains the individual notebook extensions, e.g. with the
 following structure:
 
 .. code-block:: console
 
-    $ tree
-    .
-    ├── main.js
-    ├── main.yaml
-    └── readme.md
+   $ tree
+   .
+   ├── main.js
+   ├── main.yaml
+   └── readme.md
 
 ``main.js``
     contains the actual logic of the extension, e.g .:
 
     .. code-block:: javascript
 
-        define([
-            'require',
-            'base/js/namespace',
-        ], function (
-            requirejs
-            $,
-            Jupyter,
-        ) {
-            "use strict";
+       define([
+           'require',
+           'base/js/namespace',
+       ], function (
+           requirejs
+           $,
+           Jupyter,
+       ) {
+           "use strict";
 
-            // define default values for config parameters
-            var params = {
-                my_config_value : 100
-            };
+           // define default values for config parameters
+           var params = {
+               my_config_value : 100
+           };
 
-            var initialize = function () {
-                $.extend(true, params, Jupyter.notebook.config.myextension);
+           var initialize = function () {
+               $.extend(true, params, Jupyter.notebook.config.myextension);
 
-                $('<link/>')
-                    .attr({
-                        rel: 'stylesheet',
-                        type: 'text/css',
-                        href: requirejs.toUrl('./myextension.css')
-                    })
-                    .appendTo('head');
-            };
+               $('<link/>')
+                   .attr({
+                       rel: 'stylesheet',
+                       type: 'text/css',
+                       href: requirejs.toUrl('./myextension.css')
+                   })
+                   .appendTo('head');
+           };
 
-            var load_ipython_extension = function () {
-                return Jupyter.notebook.config.loaded.then(initialize);
-            };
+           var load_ipython_extension = function () {
+               return Jupyter.notebook.config.loaded.then(initialize);
+           };
 
-            return {
-                load_ipython_extension : load_ipython_extension
-            };
-        });
+           return {
+               load_ipython_extension : load_ipython_extension
+           };
+       });
 
 ``main.yaml``
     `yaml <https://en.wikipedia.org/wiki/YAML>`_ file that describes the
@@ -77,15 +72,14 @@ following structure:
 
     .. code-block:: yaml
 
-        Type: Jupyter Notebook Extension
-        Compatibility: 3.x, 4.x, 5.x, 6.x
-        Name: My notebook extensions
-        Main: main.js
-        Link: README.md
-        Description: |
-          My notebook extension helps with the use of Jupyter notebooks.
-        Parameters:
-        - none
+       Compatibility: 3.x, 4.x, 5.x, 6.x
+       Name: My notebook extensions
+       Main: main.js
+       Link: README.md
+       Description: |
+         My notebook extension helps with the use of Jupyter notebooks.
+       Parameters:
+       - none
 
     More information about the options supported by the configurator can be
     found on GitHub: `jupyter_nbextensions_configurator
@@ -116,17 +110,12 @@ Installation
 
    .. code-block:: console
 
-        $ pipenv run pip show jupyter_contrib_nbextensions
-        Name: jupyter-contrib-nbextensions
-        Version: 0.5.1
-        Summary: A collection of Jupyter nbextensions.
-        Home-page: https://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
-        Author: ipython-contrib and jupyter-contrib developers
-        Author-email: jupytercontrib@gmail.com
-        License: BSD
-        Location: /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/lib/python3.7/site-packages
-        Requires: lxml, jupyter-contrib-core, nbconvert, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-nbextensions-configurator, notebook, traitlets, jupyter-highlight-selected-word, tornado, ipython-genutils
-        Required-by:
+      $ uv pip show jupyter_contrib_nbextensions
+      Name: jupyter-contrib-nbextensions
+      Version: 0.7.0
+      Location: /Users/veit/cusy/trn/jupyter-tutorial/.venv/lib/python3.13/site-packages
+      Requires: ipython-genutils, jupyter-contrib-core, jupyter-core, jupyter-highlight-selected-word, jupyter-nbextensions-configurator, lxml, nbconvert, notebook, tornado, traitlets
+      Required-by: jupyter-tutorial
 
 #. Download the `Setup
    <https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup>`_ directory in
@@ -136,7 +125,7 @@ Installation
 
    .. code-block:: console
 
-        $ pipenv run jupyter contrib nbextensions install --user
+        $ uv run --with jupyter jupyter contrib nbextensions install --user
         …
         [I 10:54:46 InstallContribNbextensionsApp] Installing /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/lib/python3.7/site-packages/jupyter_contrib_nbextensions/nbextensions/setup -> setup
         [I 10:54:46 InstallContribNbextensionsApp] Making directory: /Users/veit/Library/Jupyter/nbextensions/setup/

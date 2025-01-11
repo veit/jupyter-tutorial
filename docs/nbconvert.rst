@@ -9,7 +9,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install nbconvert
+    $ uv add nbconvert
 
 .. important::
     To be able to use all functions of ``nbconvert``, Pandoc and TeX
@@ -95,7 +95,7 @@ Use on the command line
 
     .. code-block:: console
 
-        $ pipenv run jupyter nbconvert --to script workspace/ipython/mypackage/foo.ipynb
+        $ uv run --with jupyter jupyter nbconvert --to script workspace/ipython/mypackage/foo.ipynb
         [NbConvertApp] Converting notebook docs/basics/ipython/mypackage/foo.ipynb to script
         [NbConvertApp] Writing 245 bytes to docs/basics/ipython/mypackage/foo.py
 

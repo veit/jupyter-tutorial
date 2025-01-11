@@ -42,19 +42,19 @@ Installation
 
         .. code-block:: console
 
-            $ pipenv install "tornado<6.0"
+            $ uv add "tornado<6.0"
 
    Now ``nbviewer`` can also be installed:
 
    .. code-block:: console
 
-    $ pipenv install nbviewer
+    $ uv add nbviewer
 
 #. For testing, the server can be started with:
 
    .. code-block:: console
 
-    $ pipenv run python -m nbviewer --debug --no-cache
+    $ uv run python -m nbviewer --debug --no-cache
 
 Extending the Notebook Viewer
 -----------------------------

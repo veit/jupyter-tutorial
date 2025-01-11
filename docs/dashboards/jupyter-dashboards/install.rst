@@ -3,13 +3,11 @@ Installation of Jupyter dashboards
 
 .. code-block:: console
 
-    $ pipenv install jupyter_dashboards
-    Installing jupyter_dashboards…
-    …
-    $ pipenv run jupyter dashboards quick-setup --sys-prefix
+    $ uv add jupyter_dashboards
+    $ uv run jupyter dashboards quick-setup --sys-prefix
     …
     Enabling notebook extension jupyter_dashboards/notebook/main...
           - Validating: OK
-    $ pipenv run jupyter nbextension enable jupyter_dashboards --py --sys-prefix
+    $ uv run jupyter nbextension enable jupyter_dashboards --py --sys-prefix
     Enabling notebook extension jupyter_dashboards/notebook/main...
           - Validating: OK

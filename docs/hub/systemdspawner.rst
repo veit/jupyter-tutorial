@@ -43,7 +43,7 @@ You can install systemdspawner with
 
 .. code-block:: console
 
-   $ pipenv install jupyterhub-systemdspawner
+   $ uv add jupyterhub-systemdspawner
 
 Then you can activate it in :file:`jupyterhub_config.py` with
 

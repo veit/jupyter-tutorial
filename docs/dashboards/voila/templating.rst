@@ -31,7 +31,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install bqplot ipyvuetify voila-vuetify
+    $ uv add bqplot ipyvuetify voila-vuetify
 
 Usage
 ~~~~~
@@ -83,7 +83,7 @@ You can use :doc:`bqplot_vuetify_example` with:
 
 .. code-block:: console
 
-    $ pipenv run voila --template vuetify-default bqplot_vuetify_example.ipynb
+    $ uv run voila --template vuetify-default bqplot_vuetify_example.ipynb
 
 Then your standard browser will open the URL ``http://localhost:8866/`` and show
 you the plots in Responsive Material Design.
@@ -98,53 +98,6 @@ Example for Voilà-vuetify with the monitor resolution of an iPhone X:
 .. image:: voila-vuetify-iphone.png
    :scale: 53%
 
-voila-debug
------------
-
-`voila-debug <https://github.com/voila-dashboards/voila-debug>`_ is a template
-for displaying debug information when working on Voilà applications.
-
-Installation
-~~~~~~~~~~~~
-
-.. code-block:: console
-
-    $ pipenv install voila-debug
-
-Usage
-~~~~~
-
-You can use the template :doc:`debug` with:
-
-.. code-block:: console
-
-    $ pipenv run voila --template=debug --VoilaExporter.template_file=debug.tpl
-
-This will open your default browser with the URL ``localhost:8866``.
-
-Then you can take a closer look at how it works at
-``http://localhost:8866/voila/render/docs/dashboards/voila/debug.ipynb``.
-
-.. image:: voila-debug.png
-   :scale: 53%
-   :alt: Example of voila-debug
-
-In addition to an example widget, it contains a code cell for exiting the
-kernel:
-
-.. code-block:: python
-
-    import os
-
-
-    def kill_kernel(change):
-        os._exit(0)
-
-
-    button = widgets.Button(description="Kill Kernel")
-    button.on_click(kill_kernel)
-    button
-
 voila-reveal
 ------------
 
@@ -156,7 +109,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install voila-reveal
+    $ uv add voila-reveal
 
 Usage
 ~~~~~
@@ -165,14 +118,14 @@ You can use the template with:
 
 .. code-block:: console
 
-    $ pipenv run voila --template=reveal reveal.ipynb
+    $ uv run voila --template=reveal reveal.ipynb
 
 Additional options can be used to override the default settings, for example to
 change the default value for transition ``Fade`` to ``Zoom`` with:
 
 .. code-block:: console
 
-    $ pipenv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
+    $ uv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
 
 If configuration options are to be saved permanently, a  ``conf.json`` file can
 be created in ``share/jupyter/voila/templates/reveal/``:

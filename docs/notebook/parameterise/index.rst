@@ -11,11 +11,7 @@ Install
 
 .. code-block:: console
 
-    $ pipenv install papermill
-    Installing papermill…
-    Adding papermill to Pipfile's [packages]…
-    ✔ Installation Succeeded
-    …
+    $ uv add papermill
 
 Use
 ---
@@ -31,7 +27,7 @@ Use
 
    .. code-block:: console
 
-        $ pipenv run papermill --help-notebook docs/notebook/parameterise/input.ipynb
+        $ uv run papermill --help-notebook docs/notebook/parameterise/input.ipynb
         Usage: papermill [OPTIONS] NOTEBOOK_PATH [OUTPUT_PATH]
 
         Parameters inferred for notebook 'docs/notebook/parameterise/input.ipynb':
@@ -93,7 +89,7 @@ Use
 
      .. code-block:: console
 
-        $ pipenv run papermill input.ipynb output.ipynb -p salutation 'Hello' -p name 'pythonistas'
+        $ uv run papermill input.ipynb output.ipynb -p salutation 'Hello' -p name 'pythonistas'
 
      Alternatively, a YAML file can be specified with the parameters, for
      example :file:`params.yaml`:
@@ -104,14 +100,14 @@ Use
 
      .. code-block:: console
 
-        $ pipenv run papermill input.ipynb output.ipynb -f params.yaml
+        $ uv run papermill input.ipynb output.ipynb -f params.yaml
 
      With ``-b``, a base64-encoded YAML string can be provided, containing the
      parameter values:
 
      .. code-block:: console
 
-        $ pipenv run papermill input.ipynb output.ipynb -b c2FsdXRhdGlvbjogIkhlbGxvIgpuYW1lOiAiUHl0aG9uaXN0YXMi
+        $ uv run papermill input.ipynb output.ipynb -b c2FsdXRhdGlvbjogIkhlbGxvIgpuYW1lOiAiUHl0aG9uaXN0YXMi
 
      .. seealso::
         * `CLI reference
@@ -122,7 +118,7 @@ Use
      .. code-block:: console
 
         $ dt=$(date '+%Y-%m-%d_%H:%M:%S')
-        $ pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
+        $ uv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
      This creates an output file whose file name contains a timestamp, for
      example :download:`output_2023-06-26_15:57:33.ipynb`.
@@ -134,7 +130,7 @@ Use
      .. code-block::
 
         dt=$(date '+%Y-%m-%d_%H:%M:%S')
-        0 0 1 * * cd ~/jupyter-notebook && pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
+        0 0 1 * * cd ~/jupyter-notebook && uv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
 #. Store
 

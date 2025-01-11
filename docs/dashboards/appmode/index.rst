@@ -27,23 +27,11 @@ For the Jupyter service ``appmode`` must be installed with
 
 .. code-block:: console
 
-    $ pipenv install appmode
-    Installing appmode…
-    Collecting appmode
-    …
-    Installing collected packages: appmode
-    Successfully installed appmode-0.6.0
-    Adding appmode to Pipfile's [packages]…
-    Locking [dev-packages] dependencies…
-    Locking [packages] dependencies…
-    Updated Pipfile.lock (ea9a56)!
-    Installing dependencies from Pipfile.lock (ea9a56)…
-      🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 128/128 — 00:09:58
-    …
-    $ pipenv run jupyter nbextension enable --py --sys-prefix appmode
+    $ uv add appmode
+    $ uv run jupyter nbextension enable --py --sys-prefix appmode
     Enabling notebook extension appmode/main...
           - Validating: OK
-    $ pipenv run jupyter serverextension enable --py --sys-prefix appmode
+    $ uv run jupyter serverextension enable --py --sys-prefix appmode
     Enabling: appmode.server_extension
     - Writing config: /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/bin/../etc/jupyter
         - Validating...
