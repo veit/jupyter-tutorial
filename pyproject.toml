@@ -16,6 +16,7 @@ dependencies = []
 
 [project.optional-dependencies]
 docs = [
+    "sphinx<8.2",
     "furo",
     "ipython",
     "ipywidgets",
