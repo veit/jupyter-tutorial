@@ -7,36 +7,24 @@ You can install Panel in the virtual environment of your Jupyter kernel with:
 
     $ uv add panel
 
-For some of the following examples additional packages are required such as
-`Holoviews <https://holoviews.org/>`_ and `hvPlot
-<https://hvplot.holoviz.org/>`_. They can be installed with:
-
-.. code-block:: console
-
-    $ uv add "holoviews[recommended hvplot
-
-Examples
---------
-
-#. Download
+.. tip::
+   `watchfiles
+   <https://watchfiles.helpmanual.io>`_ supports the autoreload functions of
+   Panel if the ``--dev`` mode is activated:
 
    .. code-block:: console
 
-    $ uv run panel sampledata
-    Creating /Users/veit/.bokeh/data directory
-    Using data directory: /Users/veit/.bokeh/data
-    Fetching 'CGM.csv'
-    Downloading: CGM.csv (1589982 bytes)
-     1589982   [100.00%%]
-    …
+      $ uv add --dev watchfiles
 
-#. View
-
-   Then you can look at the examples, for example ``Introduction.ipynb`` with
+.. tip::
+   For syntax highlighting, `pygments <https://pygments.org/>`_ should also be
+   installed:
 
    .. code-block:: console
 
-    $ uv run panel serve panel-examples/getting_started/Introduction.ipynb
-    2019-08-18 10:55:44,056 Starting Bokeh server version 1.3.4 (running on Tornado 6.0.3)
-    2019-08-18 10:55:44,067 Bokeh app running at: http://localhost:5006/Introduction
-    2019-08-18 10:55:44,067 Starting Bokeh server with process id: 86677
+      $ uv add pygments
+
+.. seealso::
+   If you want to use Panel for example in VSCode or Google Colab, have a look
+   at `Develop in other notebook environments
+   <https://panel.holoviz.org/how_to/notebook/other_nb.html>`_.

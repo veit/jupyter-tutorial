@@ -21,8 +21,8 @@ async def bkapp_page(request: Request):
 
 pn.serve(
     {"/app": createApp},
-    address="127.0.0.1",
     port=5000,
-    show=False,
     allow_websocket_origin=["127.0.0.1:8000"],
+    address="127.0.0.1",
+    show=False,
 )

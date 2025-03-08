@@ -60,6 +60,14 @@ up some of the basic configuration in :download:`fastAPI/main.py`:
    ``address``, ``port``
        Address and port at which the server listens for requests; in our case
        ``http://127.0.0.1:5000``.
+
+       If necessary, the environment variable ``BOKEH_ALLOW_WS_ORIGIN`` must be
+       set with :
+
+       .. code-block:: console
+
+          $ export BOKEH_ALLOW_WS_ORIGIN=127.0.0.1:5000
+
    ``show=False``
        ensures that the Bokeh server is started but is not immediately displayed
        in the browser.
@@ -113,7 +121,7 @@ You can now start the server with:
 
 .. code-block:: console
 
-    $ bin/uvicorn main:app --reload
+    $ uv run uvicorn main:app --reload
     INFO:     Will watch for changes in these directories: ['/srv/jupyter/jupyter-tutorial/docs/web/dashboards/panel/fastAPI']
     INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
     INFO:     Started reloader process [218214] using StatReload

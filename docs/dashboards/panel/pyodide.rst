@@ -27,12 +27,12 @@ using ``panel convert``. The only requirements are:
 Example
 -------
 
-In the following example we will convert the :doc:`overview` notebook into a
+In the following example we will convert the :doc:`deploy` notebook into a
 standalone HTML page with
 
 .. code-block:: console
 
-    $ panel convert overview.ipynb --out pyodide
+    $ uv run panel convert .ipynb --out pyodide
     Column
         [0] Column
             [0] FloatSlider(end=3.0, name='frequency', start=-1.0, value=1.0)
@@ -48,8 +48,8 @@ Now you can open ``http://localhost:40405`` in your browser and try out the app:
 .. figure:: pyodide-example.png
    :alt: Pyodide example
 
-You can now add the :download:`pyodide/overview.html` file to your GitHub pages
-or similar – no separate server is required.
+You can now add the :download:`pyodide/deploy.html` file to your GitHub pages or
+similar – no separate server is required.
 
 .. seealso::
    * `Awesome Panel/Webassembly Apps
@@ -118,18 +118,18 @@ In the following I explain some of the options of ``panel convert``.
 
        .. code-block:: console
 
-          $ panel convert overview.ipynb --out pyodide --requirements pandas matplotlib
+          $ uv run panel convert deploy.ipynb --out pyodide --requirements pandas matplotlib
 
        Alternatively, you can provide a ``requirements.txt`` file:
 
        .. code-block:: console
 
-          $ panel convert overview.ipynb --out pyodide --requirements requirements.txt
+          $ uv run panel convert deploy.ipynb --out pyodide --requirements requirements.txt
 
 ``--watch``
     Observe the source files.
 
-You can get a complete overview with ``panel convert -u``.
+You can get a complete overview with ``uv run panel convert -u``.
 
 .. tip::
 

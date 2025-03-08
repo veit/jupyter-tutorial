@@ -1,10 +1,11 @@
 Panel
 =====
 
-`Panel <https://panel.holoviz.org/>`_ was developed on the basis of `Bokeh
+`Panel <https://panel.holoviz.org/>`_ as developed on the basis of `Bokeh
 <https://docs.bokeh.org/en/latest/>`_ and `Param
-<https://github.com/holoviz/param>`_ and offers a toolkit especially for
-creating apps and dashboards, which not only supports bokeh plots.
+<https://github.com/holoviz/param>`_ and offers a Python toolkit specifically
+for creating apps and dashboards, but it does not only support Bokeh plots. It
+allows multi-level and multi-page workflows.
 
 .. seealso::
     * `Panel Announcement <https://blog.holoviz.org/panel_announcement.html>`_
