@@ -6,49 +6,65 @@ Install a kernel
 
 Kernels are searched for in the following directories, for example:
 
-* :samp:`/srv/jupyter/.local/share/jupyter/kernels`
-* :samp:`/usr/local/share/jupyter/kernels`
-* :samp:`/usr/share/jupyter/kernels`
-* :samp:`/srv/jupyter/.ipython/kernels`
+* :file:`/srv/jupyter/.local/share/jupyter/kernels`
+* :file:`/usr/local/share/jupyter/kernels`
+* :file:`/usr/share/jupyter/kernels`
+* :file:`/srv/jupyter/.ipython/kernels`
 
 To make your new environment available as a Jupyter kernel in one of the
 directories, you should install ipykernel:
 
 .. code-block:: console
 
-   $ uv add ipykernel
+   $ uv add --dev ipykernel
 
 You can then register your kernel, for example with
 
 .. code-block:: console
 
-   $ uv run python -m ipykernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
+   $ uv run ipython kernel install --user --env VIRTUAL_ENV $(pwd)/.venv --prefix /srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
 
-:samp:`--prefix={/PATH/TO/KERNEL}`
-    specifies the path where the Jupyter kernel is to be installed.
 :samp:`--user`
-    installs the kernel for the current user and not system-wide
+    installs the kernel for the current user and not system-wide.
+:samp:`--env {ENV} {VALUE}`
+    sets environment variables for the kernel.
+:samp:`--prefix {/PATH/TO/KERNEL}`
+    specifies the path where the Jupyter kernel is to be installed.
 :samp:`name {NAME}`
     gives a name for the ``kernelspec``. This is required in order to be able to
     use several IPython kernels at the same time.
+:samp:`display-name {DISPLAY_NAME}`
+    specifies the display name for the kernelspec.
 
-``ipykernel install`` creates a ``kernelspec`` file in JSON format for the
+``ipython kernel install`` creates a ``kernelspec`` file in JSON format for the
 current Python environment, for example:
 
 .. code-block:: json
 
     {
-     "display_name": "My Kernel",
-     "language": "python"
      "argv": [
-      "/srv/jupyter/.ipython/kernels/python311_kernel-7y9G693U/bin/python",
+      "/srv/jupyter/.ipython/kernels/python311/.venv/bin/python",
+      "-Xfrozen_modules=off",
       "-m",
       "ipykernel_launcher",
       "-f",
       "{connection_file}"
      ],
+     "display_name": "project",
+     "language": "python",
+     "metadata": {
+      "debugger": true
+     },
+     "env": {
+      "VIRTUAL_ENV": "/srv/jupyter/.ipython/kernels/python311/.venv"
+     }
     }
 
+:samp:`argv`
+    A list of command line arguments used to start the kernel.
+    ``{connection_file}`` refers to a file that contains the IP address, ports,
+    and authentication key required for the connection. Usually this JSON file
+    is saved in a safe place of the current profile:
 :samp:`display_name`
     The name of the kernel as it should be displayed in the browser. In contrast
     to the kernel name used in the API, it can contain any Unicode characters.
@@ -58,11 +74,6 @@ current Python environment, for example:
     this way, a notebook written for a Python or Julia kernel can be linked to
     the user’s Python or Julia kernel, even if it does not have the same name as
     the author’s.
-:samp:`argv`
-    A list of command line arguments used to start the kernel.
-    ``{connection_file}`` refers to a file that contains the IP address, ports,
-    and authentication key required for the connection. Usually this JSON file
-    is saved in a safe place of the current profile:
 
     :samp:`{connection_file}` refers to a file containing the IP address, ports
     and authentication key needed for the connection. Typically, this JSON file
