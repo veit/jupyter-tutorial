@@ -14,6 +14,7 @@ repos:
       types: [file]
       files: \.(yml|yaml|cff)$
     - id: check-added-large-files
+      args: ['--maxkb=1024']
     - id: check-json
       types: [file]  # override `types: [json]`
       files: \.(json|ipynb)$

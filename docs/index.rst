@@ -6,8 +6,31 @@ Jupyter Tutorial
 growing in popularity with data scientists and have become the de facto standard
 for rapid prototyping and exploratory analysis. They inspire experiments and
 innovations enormously and as well they make the entire research process faster
-and more reliable. In addition, many additional components are created that
-expand the original limits of their use and enable new uses.
+and more reliable.
+
+    *“A spike in Jupyter Notebooks use shows that open source underscores a
+    growing community, especially as Python surges to become the most used
+    language … Since 2018, we have seen the use of Jupyter Notebooks steadily
+    grow—and that growth surged in 2022 as research and experimentation with
+    generative AI and machine learning took off. Since 2022, Jupyter Notebooks
+    usage … has spiked more than 170%. And since last year, usage has increased
+    by 92%. Data scientists and machine learning researchers commonly use the
+    open source application for machine learning, data visualization, and
+    more.”*
+
+    .. figure:: octoverse-jupyter-notebooks-usage.png
+       :alt: Graph from GitHub’s Octoverse 2024 report showing a spike in
+             utilization of Jupyter Notebooks across GitHub. This is calculated
+             by looking at the distinct number of public repositories with at
+             least one Jupyter Notebook by the year the repository was created.
+             Since 2016, we have seen this number surge from near zero to more
+             than 1.5 million repositories using Jupyter Notebooks.
+
+– `Octoverse: AI leads Python to top language as the number of global developers
+surges <https://github.blog/news-insights/octoverse/octoverse-2024/>`_
+
+In addition, many additional components are created that expand the original
+limits of their use and enable new uses.
 
 .. graphviz::
 
