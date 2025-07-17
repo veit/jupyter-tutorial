@@ -256,11 +256,15 @@ Voilà currently supports the following hooks:
     for authentication cookies, access request header details or modify the
     notebook before rendering for example:
 
+    .. blacken-docs:off
+
     .. code-block:: python
 
        def prelaunch_hook(req: tornado.web.RequestHandler,
                 notebook: nbformat.NotebookNode,
                 cwd: str) -> Optional[nbformat.NotebookNode]:
+
+    .. blacken-docs:on
 
     ``req``
         refers to the Tornado RequestHandler, which you can use to check
@@ -305,9 +309,11 @@ There are two ways to add the hook function to Voilà:
          """Add your prelaunch hook heere"""
          return notebook
 
+
      def page_config_hook_function(current_page_config, **kwargs):
          """Modify the current_page_config"""
          return new_page_config
+
 
      c.VoilaConfiguration.prelaunch_hook = hook_function
      c.VoilaConfiguration.page_config_hook = page_config_hook
@@ -337,7 +343,7 @@ There are two ways to add the hook function to Voilà:
              # these two blocks are done to avoid triggering errors i
              # papermill’s notebook loading logic
              for cell in notebook.cells:
-                 if 'tags' not in cell.metadata:
+                 if "tags" not in cell.metadata:
                      cell.metadata.tags = []
                  if "papermill" not in notebook.metadata:
                      notebook.metadata.papermill = {}
@@ -347,15 +353,15 @@ There are two ways to add the hook function to Voilà:
 
 
      def page_config_hook(
-        current_page_config: Dict[str, Any],
-        base_url: str,
-        settings: Dict[str, Any],
-        log: Logger,
-        voila_configuration: VoilaConfiguration,
-        notebook_path: str
-        ):
-        page_config['fullLabextensionsUrl'] = '/custom/labextensions_url'
-        return page_config
+         current_page_config: Dict[str, Any],
+         base_url: str,
+         settings: Dict[str, Any],
+         log: Logger,
+         voila_configuration: VoilaConfiguration,
+         notebook_path: str,
+     ):
+         page_config["fullLabextensionsUrl"] = "/custom/labextensions_url"
+         return page_config
 
 You can use both hooks at the same time by adding the following to your Voilà
 app:

@@ -61,4 +61,4 @@ known_first_party="jupyter-tutorial-de"
 known_third_party=["Cython", "accounts_pb2", "accounts_pb2_grpc", "dataprep", "google", "grpc", "mpi4py", "numpy", "pandas", "pydantic", "pytest", "requests", "setuptools"]
 
 [tool.codespell]
-skip = "*.html, *.ipynb"
+skip = "*.html, *.ipynb, docs/hub/jupyterhub_config.py"
