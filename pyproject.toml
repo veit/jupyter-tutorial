@@ -14,7 +14,7 @@ classifiers = [
 ]
 dependencies = []
 
-[project.optional-dependencies]
+[dependency-groups]
 docs = [
     "furo",
     "ipython",
@@ -31,7 +31,7 @@ docs = [
 ]
 
 dev = [
-    "jupyter-tutorial[docs]",
+    { include-group = "docs" },
     "pre-commit",
     "codespell",
     "vale",

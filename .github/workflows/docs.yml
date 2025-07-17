@@ -23,7 +23,7 @@ jobs:
       run: |
         uv venv
         echo "$PWD/.venv/bin" >> $GITHUB_PATH
-        uv pip install -e ".[docs]"
+        uv pip install --group=docs
     - name: Build HTML and check links
       run: |
         uv run make html
