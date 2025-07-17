@@ -40,17 +40,18 @@ release = re.sub("^v", "", os.popen("git describe --abbrev=0").read().strip())
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "nbsphinx",
     "IPython.sphinxext.ipython_console_highlighting",
-    # 'jupyter_sphinx.execute',
+    # "jupyter_sphinx.execute",
+    "nbsphinx",
+    "notfound.extension",
     "sphinx.ext.autodoc",
-    "sphinx.ext.intersphinx",
     "sphinx.ext.graphviz",
+    "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
-    "sphinxcontrib.cairosvgconverter",
-    "sphinxext.opengraph",
     "sphinx_copybutton",
     "sphinx_inline_tabs",
+    "sphinxcontrib.cairosvgconverter",
+    "sphinxext.opengraph",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
