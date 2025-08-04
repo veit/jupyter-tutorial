@@ -25,6 +25,7 @@ docs = [
     "sphinx-inline-tabs",
     "sphinx-lint",
     "sphinx-notfound-page",
+    "sphinx-sitemap",
     "sphinx_copybutton",
     "sphinxcontrib-svg2pdfconverter",
     "sphinxext.opengraph"

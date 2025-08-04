@@ -50,6 +50,7 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx_copybutton",
     "sphinx_inline_tabs",
+    "sphinx_sitemap",
     "sphinxcontrib.cairosvgconverter",
     "sphinxext.opengraph",
 ]
@@ -203,3 +204,13 @@ def setup(app):
 # -- graphviz configuration --------------------------------------------------
 
 graphviz_output_format = "svg"
+
+# -- sitemap configuration ---------------------------------------------------
+
+sitemap_url_scheme = "{link}"
+sitemap_excludes = [
+    "404.html",
+    "search.html",
+    "genindex.html",
+]
+sitemap_show_lastmod = True
