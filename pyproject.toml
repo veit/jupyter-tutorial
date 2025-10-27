@@ -6,10 +6,11 @@ authors = [
 ]
 description = "Training materials for setting up and using a research infrastructure based on Jupyter notebooks: https://cusy.io/en/seminars"
 readme = "README.rst"
+license = "BSD-3-Clause"
+license-files = [ "LICENSE" ]
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
 ]
 dependencies = []
