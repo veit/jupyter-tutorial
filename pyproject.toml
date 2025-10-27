@@ -1,66 +1,83 @@
 [project]
 name = "jupyter-tutorial"
 version = "24.1.0"
-authors = [
-  { name="Veit Schiele", email="veit@cusy.io" },
-]
 description = "Training materials for setting up and using a research infrastructure based on Jupyter notebooks: https://cusy.io/en/seminars"
 readme = "README.rst"
 license = "BSD-3-Clause"
 license-files = [ "LICENSE" ]
+authors = [
+  { name = "Veit Schiele", email = "veit@cusy.io" },
+]
 requires-python = ">=3.9"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
 ]
-dependencies = []
+dependencies = [  ]
+
+urls."Bug Tracker" = "https://github.com/veit/jupyter-tutorial/issues"
+urls."Homepage" = "https://github.com/veit/jupyter-tutorial/"
 
 [dependency-groups]
-docs = [
-    "furo",
-    "ipython",
-    "ipywidgets",
-    "matplotlib", # matplotlib is required for social cards
-    "nbsphinx",
-    "sphinx<8.2",
-    "sphinx-inline-tabs",
-    "sphinx-lint",
-    "sphinx-notfound-page",
-    "sphinx-sitemap",
-    "sphinx_copybutton",
-    "sphinxcontrib-svg2pdfconverter",
-    "sphinxext.opengraph"
-]
-
 dev = [
-    { include-group = "docs" },
-    "pre-commit",
-    "codespell",
-    "vale",
+  "codespell",
+  "pre-commit",
+  "vale",
+  { include-group = "docs" },
 ]
-
-[project.urls]
-"Homepage" = "https://github.com/veit/jupyter-tutorial/"
-"Bug Tracker" = "https://github.com/veit/jupyter-tutorial/issues"
+docs = [
+  "furo",
+  "ipython",
+  "ipywidgets",
+  "matplotlib",                     # matplotlib is required for social cards
+  "nbsphinx",
+  "sphinx<8.2",
+  "sphinx-copybutton",
+  "sphinx-inline-tabs",
+  "sphinx-lint",
+  "sphinx-notfound-page",
+  "sphinx-sitemap",
+  "sphinxcontrib-svg2pdfconverter",
+  "sphinxext-opengraph",
+]
 
 [tool.setuptools]
-packages = []
+packages = [  ]
 
 [tool.black]
 line-length = 79
 
 [tool.isort]
-atomic=true
-force_grid_wrap=0
-include_trailing_comma=true
-lines_after_imports=2
-lines_between_types=1
-multi_line_output=3
-not_skip="__init__.py"
-use_parentheses=true
+atomic = true
+force_grid_wrap = 0
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+multi_line_output = 3
+not_skip = "__init__.py"
+use_parentheses = true
 
-known_first_party="jupyter-tutorial-de"
-known_third_party=["Cython", "accounts_pb2", "accounts_pb2_grpc", "dataprep", "google", "grpc", "mpi4py", "numpy", "pandas", "pydantic", "pytest", "requests", "setuptools"]
+known_first_party = "jupyter-tutorial-de"
+known_third_party = [
+  "Cython",
+  "accounts_pb2",
+  "accounts_pb2_grpc",
+  "dataprep",
+  "google",
+  "grpc",
+  "mpi4py",
+  "numpy",
+  "pandas",
+  "pydantic",
+  "pytest",
+  "requests",
+  "setuptools",
+]
 
 [tool.codespell]
 skip = "*.html, *.ipynb, docs/hub/jupyterhub_config.py"

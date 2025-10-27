@@ -8,16 +8,25 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-    - id: trailing-whitespace
-    - id: end-of-file-fixer
-    - id: check-yaml
-      types: [file]
-      files: \.(yml|yaml|cff)$
     - id: check-added-large-files
       args: ['--maxkb=1024']
     - id: check-json
       types: [file]  # override `types: [json]`
       files: \.(json|ipynb)$
+    - id: check-toml
+    - id: check-yaml
+      types: [file]
+      files: \.(yml|yaml|cff)$
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+  - repo: https://github.com/tox-dev/pyproject-fmt
+    rev: v2.7.0
+    hooks:
+    - id: pyproject-fmt
+  - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.24.1
+    hooks:
+    - id: validate-pyproject
   - repo: https://github.com/sphinx-contrib/sphinx-lint
     rev: v1.0.0
     hooks:
