@@ -85,7 +85,6 @@ Custom formats
 
        import jupytext
 
-
        nbsphinx_custom_formats = {
            ".Rmd": lambda s: jupytext.reads(s, ".Rmd"),
        }

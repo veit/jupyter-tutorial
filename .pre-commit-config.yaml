@@ -6,7 +6,7 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c # v6.0.0
     hooks:
     - id: check-added-large-files
       args: ['--maxkb=1024']
@@ -20,38 +20,38 @@ repos:
     - id: end-of-file-fixer
     - id: trailing-whitespace
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: v2.14.2
+    rev: 6e10264313f53d6247a8b1b984f5b5ccf50ba539 # 2.21.0
     hooks:
     - id: pyproject-fmt
   - repo: https://github.com/abravalheri/validate-pyproject
-    rev: v0.25
+    rev: 4b2e70d08cb2ccd26d1fba73588de41c7a5d50b7 # v0.25
     hooks:
     - id: validate-pyproject
   - repo: https://github.com/sphinx-contrib/sphinx-lint
-    rev: v1.0.2
+    rev: c883505f64b59c3c5c9375191e4ad9f98e727ccd # v1.0.2
     hooks:
     - id: sphinx-lint
       types: [rst]
   - repo: https://github.com/pycqa/isort
-    rev: 7.0.0
+    rev: a333737ed43df02b18e6c95477ea1b285b3de15a # 8.0.1
     hooks:
     - id: isort
       additional_dependencies: ["toml"]
       entry: isort --profile=black
       name: isort (python)
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 26.1.0
+    rev: fa505ab9c3e0fedafe1709fd7ac2b5f8996c670d # 26.3.1
     hooks:
     - id: black
   - repo: https://github.com/adamchainz/blacken-docs
-    rev: "1.20.0"
+    rev: fda77690955e9b63c6687d8806bafd56a526e45f # 1.20.0
     hooks:
     - id: blacken-docs
       args: [--line-length=79]
       additional_dependencies:
       - black
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: 2ccb47ff45ad361a21071a7eedda4c37e6ae8c5a # v2.4.2
     hooks:
     - id: codespell
   - repo: local
