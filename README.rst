@@ -98,7 +98,7 @@ Installation
 
    .. code-block:: console
 
-    $ brew cask install mactex
+    $ brew install mactex
     …
     🍺  mactex was successfully installed!
     $ curl --remote-name https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts
