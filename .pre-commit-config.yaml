@@ -20,7 +20,7 @@ repos:
     - id: end-of-file-fixer
     - id: trailing-whitespace
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: 6e10264313f53d6247a8b1b984f5b5ccf50ba539 # 2.21.0
+    rev: a007bb7dd9043d022292401abc3061cb1906b4bc # v2.21.2
     hooks:
     - id: pyproject-fmt
   - repo: https://github.com/abravalheri/validate-pyproject
@@ -33,7 +33,7 @@ repos:
     - id: sphinx-lint
       types: [rst]
   - repo: https://github.com/pycqa/isort
-    rev: a333737ed43df02b18e6c95477ea1b285b3de15a # 8.0.1
+    rev: dac090ce4d9ee313d086e2e89ab1acb8c2664fa1 # 9.0.0a3
     hooks:
     - id: isort
       additional_dependencies: ["toml"]
