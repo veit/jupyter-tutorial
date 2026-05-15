@@ -371,7 +371,6 @@ app:
    from voila.app import Voila
    from voila.config import VoilaConfiguration
 
-
    config = VoilaConfiguration()
    config.prelaunch_hook = parameterize_with_papermill
    config.page_config_hook = page_config_hook

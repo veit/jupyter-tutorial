@@ -1,7 +1,10 @@
 [project]
 name = "jupyter-tutorial"
 version = "24.1.0"
-description = "Training materials for setting up and using a research infrastructure based on Jupyter notebooks: https://cusy.io/en/seminars"
+description = """\
+  Training materials for setting up and using a research infrastructure based on Jupyter notebooks: \
+  https://cusy.io/en/seminars\
+  """
 readme = "README.rst"
 license = "BSD-3-Clause"
 license-files = [ "LICENSE" ]
@@ -18,10 +21,9 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
 ]
-dependencies = [  ]
-
+dependencies = []
 urls."Bug Tracker" = "https://github.com/veit/jupyter-tutorial/issues"
-urls."Homepage" = "https://github.com/veit/jupyter-tutorial/"
+urls.Homepage = "https://github.com/veit/jupyter-tutorial/"
 
 [dependency-groups]
 dev = [
@@ -47,26 +49,23 @@ docs = [
 ]
 
 [tool.setuptools]
-packages = [  ]
+packages = []
 
 [tool.black]
 line-length = 79
 
 [tool.isort]
 atomic = true
-force_grid_wrap = 0
+multi_line_output = 3
+use_parentheses = true
 include_trailing_comma = true
+force_grid_wrap = 0
 lines_after_imports = 2
 lines_between_types = 1
-multi_line_output = 3
-not_skip = "__init__.py"
-use_parentheses = true
-
-known_first_party = "jupyter-tutorial-de"
 known_third_party = [
-  "Cython",
   "accounts_pb2",
   "accounts_pb2_grpc",
+  "Cython",
   "dataprep",
   "google",
   "grpc",
@@ -78,6 +77,7 @@ known_third_party = [
   "requests",
   "setuptools",
 ]
+known_first_party = "jupyter-tutorial"
 
 [tool.codespell]
 skip = "*.html, *.ipynb, docs/hub/jupyterhub_config.py"
