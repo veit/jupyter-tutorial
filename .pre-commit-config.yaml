@@ -6,7 +6,7 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c # v6.0.0
+    rev: v6.0.0 # v6.0.0
     hooks:
     - id: check-added-large-files
       args: ['--maxkb=1024']
@@ -20,31 +20,31 @@ repos:
     - id: end-of-file-fixer
     - id: trailing-whitespace
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: 59e7b26529dc6f15c43063064b8b06ded60d0910 # frozen: v2.29.4
+    rev: 50e0f3aee9dc5747a5f173f79a7417403c18dda6  # frozen: v2.30.3
     hooks:
     - id: pyproject-fmt
   - repo: https://github.com/abravalheri/validate-pyproject
-    rev: 17e12779811926f000bdfa1795f9e3735dd71ac3 # frozen: 0.26
+    rev: 82d21874c3242e4dc27bb47641c996902ef64eef  # frozen: v0.27
     hooks:
     - id: validate-pyproject
   - repo: https://github.com/sphinx-contrib/sphinx-lint
-    rev: c883505f64b59c3c5c9375191e4ad9f98e727ccd # v1.0.2
+    rev: v1.0.2 # v1.0.2
     hooks:
     - id: sphinx-lint
       types: [rst]
   - repo: https://github.com/pycqa/isort
-    rev: 9f905615631c545f5aea2516508109350d1d2f7d # frozen: 9.0.2
+    rev: 5d9c96196def28a1819b6a755a669ec0a3add6aa  # frozen: 10.0.0b2
     hooks:
     - id: isort
       additional_dependencies: ["toml"]
       entry: isort --profile=black
       name: isort (python)
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 4160603246a6b365d4a2af661c6d71b0a0f50478 # 26.5.1
+    rev: 26.10.1 # 26.5.1
     hooks:
     - id: black
   - repo: https://github.com/adamchainz/blacken-docs
-    rev: fda77690955e9b63c6687d8806bafd56a526e45f # 1.20.0
+    rev: 1.20.0 # 1.20.0
     hooks:
     - id: blacken-docs
       args: [--line-length=79]
