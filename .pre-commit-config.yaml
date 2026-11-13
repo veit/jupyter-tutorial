@@ -19,6 +19,10 @@ repos:
       files: \.(yml|yaml|cff)$
     - id: end-of-file-fixer
     - id: trailing-whitespace
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: 06a39750ec31860bb44f2acf67182c40016cd1e7  # frozen: v1.32.0
+    hooks:
+    - id: zizmor
   - repo: https://github.com/tox-dev/pyproject-fmt
     rev: 59e7b26529dc6f15c43063064b8b06ded60d0910 # frozen: v2.29.4
     hooks:
