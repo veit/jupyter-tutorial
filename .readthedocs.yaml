@@ -12,7 +12,7 @@ build:
     # graphviz is required for sphinx.ext.graphviz
     - graphviz
   tools:
-    python: "3.14"
+    python: latest
 
 python:
   # See https://docs.readthedocs.com/platform/stable/build-customization.html#install-dependencies-with-uv
