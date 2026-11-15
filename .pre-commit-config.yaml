@@ -24,11 +24,11 @@ repos:
     hooks:
     - id: zizmor
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: 59e7b26529dc6f15c43063064b8b06ded60d0910 # frozen: v2.29.4
+    rev: 44297c38117367c60ae9aeb270694de876ddcddf # frozen: v2.31.1
     hooks:
     - id: pyproject-fmt
   - repo: https://github.com/abravalheri/validate-pyproject
-    rev: 17e12779811926f000bdfa1795f9e3735dd71ac3 # frozen: 0.26
+    rev: 82d21874c3242e4dc27bb47641c996902ef64eef # frozen: v0.27
     hooks:
     - id: validate-pyproject
   - repo: https://github.com/sphinx-contrib/sphinx-lint
@@ -37,14 +37,14 @@ repos:
     - id: sphinx-lint
       types: [rst]
   - repo: https://github.com/pycqa/isort
-    rev: 9f905615631c545f5aea2516508109350d1d2f7d # frozen: 9.0.2
+    rev: eb62da318ea543b82340f3d0a52bc0509c7e626e # frozen: 10.0.0b3
     hooks:
     - id: isort
       additional_dependencies: ["toml"]
       entry: isort --profile=black
       name: isort (python)
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 4160603246a6b365d4a2af661c6d71b0a0f50478 # 26.5.1
+    rev: a5439e9af2ff9371297bb1a76a01b8ad17989b88 # frozen: 26.10.1
     hooks:
     - id: black
   - repo: https://github.com/adamchainz/blacken-docs

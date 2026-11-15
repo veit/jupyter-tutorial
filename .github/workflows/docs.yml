@@ -20,8 +20,8 @@ jobs:
       with:
         persist-credentials: false
     - uses: pandoc/actions/setup@v1.1.1
-    - uses: ts-graphviz/setup-graphviz@v2.0.2
-    - uses: actions/setup-python@v7.0.0
+    - uses: ts-graphviz/setup-graphviz@v2.0.3
+    - uses: actions/setup-python@v7.1.0
       with:
         # Keep in sync with .readthedocs.yaml
         python-version-file: .python-version
